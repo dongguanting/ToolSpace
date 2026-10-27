@@ -1,0 +1,26 @@
+[project]
+name = "harvey-labs"
+version = "0.1.0"
+description = "A benchmark and harness for evaluating agents on real-world legal work."
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    # Document extraction (read tool)
+    # Also requires pandoc CLI: brew install pandoc (or apt-get install pandoc)
+    "pdfplumber>=0.10.0",
+    "openpyxl>=3.1.0",
+    "markitdown>=0.1.0",
+    # Document generation
+    "python-docx>=1.1.0",
+    "python-pptx>=0.6.23",
+    # Model provider SDKs
+    "anthropic>=0.40.0",
+    "openai>=1.50.0",
+    "google-genai>=1.0.0",
+    # Utilities
+    "pandas>=2.0.0",
+    # Visualization
+    "matplotlib>=3.8.0",
+    "seaborn>=0.13.0",
+    # Testing
+    "pytest>=8.0.0",
+]

@@ -1,0 +1,1237 @@
+{
+  "allocation_method": "largest-remainder-proportional-by-practice-area",
+  "ordering_method": "POSIX-bytewise-task-id-within-practice-area",
+  "population_count": 1251,
+  "practice_area_counts": {
+    "antitrust-competition": 33,
+    "arbitration-international-dispute-resolution": 37,
+    "banking-finance": 37,
+    "bankruptcy-restructuring": 36,
+    "capital-markets": 35,
+    "corporate-governance": 97,
+    "corporate-ma": 161,
+    "data-privacy-cybersecurity": 44,
+    "emerging-companies-venture-capital": 43,
+    "employment-labor": 39,
+    "energy-natural-resources": 31,
+    "environmental-esg": 44,
+    "funds-asset-management": 66,
+    "healthcare-life-sciences": 43,
+    "immigration": 27,
+    "insurance": 31,
+    "intellectual-property": 147,
+    "international-trade-sanctions": 41,
+    "litigation-dispute-resolution": 52,
+    "real-estate": 44,
+    "structured-finance-securitization": 31,
+    "tax": 34,
+    "trusts-estates-private-client": 77,
+    "white-collar-defense-investigations": 21
+  },
+  "sample_count": 120,
+  "schema_version": "harvey-native-fixed-sample-v2-120",
+  "source_commit": "813305193c0c61f712252e35db2c9bf8c3fc2a5e",
+  "source_repository": "https://github.com/harveyai/harvey-labs",
+  "tasks": [
+    {
+      "area_quota": 3,
+      "documents_sha256": "1a180077470503533aa3c0ff4ef67da404cca712ec3b9941469f872789ee9927",
+      "index": 0,
+      "practice_area": "antitrust-competition",
+      "task_id": "antitrust-competition/analyze-antitrust-hsr-strategy",
+      "task_json_relative_path": "tasks/antitrust-competition/analyze-antitrust-hsr-strategy/task.json",
+      "task_json_sha256": "4b71ebf68ca5986b17a636a35403350084f2f6edb4c0c283ef45328449a7a986",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "64c79f49fef9a7240e09466fd5b6b51c5fd5c492152111fd6e7a43568be9b7b4",
+      "index": 1,
+      "practice_area": "antitrust-competition",
+      "task_id": "antitrust-competition/analyze-counterparty-markup-of-protective-order",
+      "task_json_relative_path": "tasks/antitrust-competition/analyze-counterparty-markup-of-protective-order/task.json",
+      "task_json_sha256": "71cd3ad8a9143b2a00f931ab6117d33b070664c16005139a077646498ec57c55",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "333a7326a1ff1754197ae7309a70346a6e693c1605f6ccce82478f4263456f65",
+      "index": 2,
+      "practice_area": "antitrust-competition",
+      "task_id": "antitrust-competition/analyze-iss-antitrust-transaction-structure",
+      "task_json_relative_path": "tasks/antitrust-competition/analyze-iss-antitrust-transaction-structure/task.json",
+      "task_json_sha256": "6cfd7dce8877c9f99f4251f4fa11c76388feb356440adba34974754c65412575",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "ed81ae245b7d564b19667abd254d07197b3d1bbf9c11564471bbe72a176e140d",
+      "index": 3,
+      "practice_area": "arbitration-international-dispute-resolution",
+      "task_id": "arbitration-international-dispute-resolution/analyze-arbitration-agreement-markup-analysis",
+      "task_json_relative_path": "tasks/arbitration-international-dispute-resolution/analyze-arbitration-agreement-markup-analysis/task.json",
+      "task_json_sha256": "70418f5368f4535253cc286de740c304e1748c7f7241ab69412756b6a7d72d2b",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "7f6965891c8f25625a6ee46adb7e28648ad76a9cd4061a815a7b5064b63f9411",
+      "index": 4,
+      "practice_area": "arbitration-international-dispute-resolution",
+      "task_id": "arbitration-international-dispute-resolution/analyze-arbitration-award-for-new-york-convention-enforcement-defenses",
+      "task_json_relative_path": "tasks/arbitration-international-dispute-resolution/analyze-arbitration-award-for-new-york-convention-enforcement-defenses/task.json",
+      "task_json_sha256": "f7995dd1852003bb4d339e3a725428e9c213148b0ebf50a4118d32b5dc796fb4",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "a8753cf1d5e684b56874f347e44e882da2524b97dee6a5167e0b0ec0b1936403",
+      "index": 5,
+      "practice_area": "arbitration-international-dispute-resolution",
+      "task_id": "arbitration-international-dispute-resolution/analyze-counterparty-markup-of-arbitration-agreement",
+      "task_json_relative_path": "tasks/arbitration-international-dispute-resolution/analyze-counterparty-markup-of-arbitration-agreement/task.json",
+      "task_json_sha256": "04f1fe7f17f1233ca79be7d4e5ba7744f24fbe12b6b66a10b040a795fe6d3568",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "16a2d759176c20df870ce94f90dbad36c194add8e0f94e2b8f85738fa8d9bd39",
+      "index": 6,
+      "practice_area": "arbitration-international-dispute-resolution",
+      "task_id": "arbitration-international-dispute-resolution/analyze-counterparty-markup-of-procedural-order",
+      "task_json_relative_path": "tasks/arbitration-international-dispute-resolution/analyze-counterparty-markup-of-procedural-order/task.json",
+      "task_json_sha256": "89d0e57143369c3aaea78763957a154b4d3f7a792607fa8e5ff3664949153d42",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "bfb7a0fb6530e23e87b50789f959005cbd0f6cf4ddadda607d73b398e39a6f8e",
+      "index": 7,
+      "practice_area": "banking-finance",
+      "task_id": "banking-finance/analyze-counterparty-markup-of-senior-secured-credit-facility-term-sheet",
+      "task_json_relative_path": "tasks/banking-finance/analyze-counterparty-markup-of-senior-secured-credit-facility-term-sheet/task.json",
+      "task_json_sha256": "cc8d77f964cb5c9c57fcb363b5ca453acf753ea1392ce1547885a165b634962a",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "2f08226b77235487238f55b49184caf7bacef7e57ba1619928e4384467da7516",
+      "index": 8,
+      "practice_area": "banking-finance",
+      "task_id": "banking-finance/analyze-credit-agreement-markup",
+      "task_json_relative_path": "tasks/banking-finance/analyze-credit-agreement-markup/task.json",
+      "task_json_sha256": "3a5979d74d5b5cba63339d4436c75808b2951249c9705b1345abcf0f09e2cad4",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "99fdea1e820d7ba7b1dd388d5b4d27dbe54f3b016b407a73fe33b9ad4ed195ba",
+      "index": 9,
+      "practice_area": "banking-finance",
+      "task_id": "banking-finance/compare-borrower-covenant-compliance-analysis",
+      "task_json_relative_path": "tasks/banking-finance/compare-borrower-covenant-compliance-analysis/task.json",
+      "task_json_sha256": "2aeebd1cafdfa9f53566571327005df821c21eaa1a0a7604e9b87dc91331e9aa",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "af1217df71616e2b8c4aa0c3cd9ca69e27644f18b86c147184ced9bd7ca7bbd2",
+      "index": 10,
+      "practice_area": "banking-finance",
+      "task_id": "banking-finance/compare-borrower-disclosures-against-due-diligence-findings",
+      "task_json_relative_path": "tasks/banking-finance/compare-borrower-disclosures-against-due-diligence-findings/task.json",
+      "task_json_sha256": "f5d607bcb3fe150ac956ff3db2ec150b82e3d7d6610922ae0a67e69e2feaba73",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "556b786a6640c70053293d6289d2d30443700a4ed381b3dda9e36ff53d9e53ce",
+      "index": 11,
+      "practice_area": "bankruptcy-restructuring",
+      "task_id": "bankruptcy-restructuring/analyze-counterparty-markup-of-plan-of-reorganization",
+      "task_json_relative_path": "tasks/bankruptcy-restructuring/analyze-counterparty-markup-of-plan-of-reorganization/task.json",
+      "task_json_sha256": "a674590b2080890da9b7d4069e4b65dff3431a318f41298af56c9ff175193da6",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "e72a5db717f60b1937173b55a48ba80028237424ccad22176df962dfbf37e680",
+      "index": 12,
+      "practice_area": "bankruptcy-restructuring",
+      "task_id": "bankruptcy-restructuring/analyze-counterparty-markup-of-restructuring-support-agreement",
+      "task_json_relative_path": "tasks/bankruptcy-restructuring/analyze-counterparty-markup-of-restructuring-support-agreement/task.json",
+      "task_json_sha256": "170f64634de3fb1d2bce834a33514b50e3e222ffe6c8eef657751b022ab58c21",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "2da31ba7b0e244e00a105aeb4529adb437a6d754da6be4a42c6e3cde70f1ef74",
+      "index": 13,
+      "practice_area": "bankruptcy-restructuring",
+      "task_id": "bankruptcy-restructuring/analyze-counterparty-plan-objection-for-meritorious-and-deficient-arguments",
+      "task_json_relative_path": "tasks/bankruptcy-restructuring/analyze-counterparty-plan-objection-for-meritorious-and-deficient-arguments/task.json",
+      "task_json_sha256": "70c3663c0f44d067ee37623d2a07bc0208ff0719985293b8fd19f1143d72cc16",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "6448ae58e250828fc28a2c00905b673e949cf59000da05a3414bc9db96eb6545",
+      "index": 14,
+      "practice_area": "bankruptcy-restructuring",
+      "task_id": "bankruptcy-restructuring/compare-competing-bid-terms-against-stalking-horse-asset-purchase-agreement",
+      "task_json_relative_path": "tasks/bankruptcy-restructuring/compare-competing-bid-terms-against-stalking-horse-asset-purchase-agreement/task.json",
+      "task_json_sha256": "90de09dd8d05cf31cc18264302d5fa6870f038a0ccbc44123ca7bcdf47004f73",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "9ef06e57e7ac8513a38cc5201e811118689240d519aed98b6d3c931454a728c3",
+      "index": 15,
+      "practice_area": "capital-markets",
+      "task_id": "capital-markets/analyze-counterparty-markup-of-underwriting-agreement",
+      "task_json_relative_path": "tasks/capital-markets/analyze-counterparty-markup-of-underwriting-agreement/task.json",
+      "task_json_sha256": "f72c0d64638df14e966fc03cc891c0e989edd3d0090433e48cc375ca901abdf1",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "782abfebc91671cf179cdb165626bdfe88489e846316119bcde8c4143b1e0291",
+      "index": 16,
+      "practice_area": "capital-markets",
+      "task_id": "capital-markets/compare-charter-against-offering",
+      "task_json_relative_path": "tasks/capital-markets/compare-charter-against-offering/task.json",
+      "task_json_sha256": "cfe8eae10d777b9f263e80b1f55f3ade49e824ee9993e44c7f9d927e2d4045f3",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "838de3a2255a0620b5021d733d2bc822500478e8f8fda7e98612cc4ed662489f",
+      "index": 17,
+      "practice_area": "capital-markets",
+      "task_id": "capital-markets/compare-closing-documents-against-closing-checklist",
+      "task_json_relative_path": "tasks/capital-markets/compare-closing-documents-against-closing-checklist/task.json",
+      "task_json_sha256": "52b2b3bf190ae395943b29252f81b50c7fa262ebfcbbd8537713b2a0829c768b",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "b8a41b0f1a729895dc10b04f34fa3fa6754ad365db928fd54dda46db52e8f483",
+      "index": 18,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/analyze-compliance-program-gaps",
+      "task_json_relative_path": "tasks/corporate-governance/analyze-compliance-program-gaps/task.json",
+      "task_json_sha256": "dd19cb857b440c3e008ee7c2c6ef54eba0bbb4fb5097f5c8333507ecf24faf3e",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "232d1ca4da8eab3185fa9ebec9e27d209382a919671999496e8cc4dc335b0789",
+      "index": 19,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/analyze-eu-ai-act-high",
+      "task_json_relative_path": "tasks/corporate-governance/analyze-eu-ai-act-high/task.json",
+      "task_json_sha256": "ff18a75fcfe14cdc9e42783952f69ce98f0a289a7c7d4e0f74ba8449556dab18",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "98ff2581af53ef5f8d49db8f42703aa83b150c90851e69beaedc5c8fec989ee0",
+      "index": 20,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/analyze-flsa-overtime-rule-gap-against-current-employee-classifications",
+      "task_json_relative_path": "tasks/corporate-governance/analyze-flsa-overtime-rule-gap-against-current-employee-classifications/task.json",
+      "task_json_sha256": "4e1a2e70fe6f91d8265cd0b9bb00e21eaa12f1f32e4f5cd43c03b7751117c9d0",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "d27bd2df6aa2fe2e18043b8bdb973ac91adb122f746729ca6c64142e8e35f04b",
+      "index": 21,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/analyze-sec-climate-disclosure-rule-compliance-gaps",
+      "task_json_relative_path": "tasks/corporate-governance/analyze-sec-climate-disclosure-rule-compliance-gaps/task.json",
+      "task_json_sha256": "3c4928a4a7c4f3fee2382cccfef585a4055c7da532690b5ad61f8099fc928b4e",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "db8df0762aec35a41a02941aa5edb2d31818fa0819824127eb50180d7353cf0b",
+      "index": 22,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/assess-compliance-timeline-for-new-sec-reporting-requirements",
+      "task_json_relative_path": "tasks/corporate-governance/assess-compliance-timeline-for-new-sec-reporting-requirements/task.json",
+      "task_json_sha256": "bf7ffa99b05a82e9db7e349f2a0916013c956d69b49aa987594cab73d0df124e",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "02f1cd13d2ec7eb56e8f8ef59691d94e1a5df1a6dfa32a2d8cd260baffc0578b",
+      "index": 23,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/assess-compliance-timeline-for-new-state-wage-theft-prevention-act",
+      "task_json_relative_path": "tasks/corporate-governance/assess-compliance-timeline-for-new-state-wage-theft-prevention-act/task.json",
+      "task_json_sha256": "bc5f1ae3494456c79ecb7e09287567a1543d93b46658fb36111efd2b8728d5f3",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "7e57817d27fc7a71188c01d1101acc555895d42111232026af5f03493c928461",
+      "index": 24,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/assess-compliance-timeline-for-newly-enacted-state-privacy-law",
+      "task_json_relative_path": "tasks/corporate-governance/assess-compliance-timeline-for-newly-enacted-state-privacy-law/task.json",
+      "task_json_sha256": "d288372df078c9d3aa582b15527c59b7a114a7f4d6ab3a067564975097bb8aef",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "e6f9171cfee03d68348e75dc1c35f44dc36a8c02032028a0e74674ea5562bceb",
+      "index": 25,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/assess-impact-of-cfpb-open-banking-rule-on-existing-data-sharing-agreements",
+      "task_json_relative_path": "tasks/corporate-governance/assess-impact-of-cfpb-open-banking-rule-on-existing-data-sharing-agreements/task.json",
+      "task_json_sha256": "9e2ba76dad3aed7d5e87b7614607e23fbcb7914ee5852e26e728f2ec20189a4c",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 9,
+      "documents_sha256": "89b302751d076076aa887b82c8502a077b0ef443ec0bd9a8d9a4d7be649e1d6a",
+      "index": 26,
+      "practice_area": "corporate-governance",
+      "task_id": "corporate-governance/assess-impact-of-eu-ai-act-on-company-ai-product-portfolio",
+      "task_json_relative_path": "tasks/corporate-governance/assess-impact-of-eu-ai-act-on-company-ai-product-portfolio/task.json",
+      "task_json_sha256": "ba3bad80162dd11573523844c55d871a6cc399af6257bc5c59c009c4df5bc04e",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "eef980907ac69e6b01438466375fad960a5a2c17a6e92412277af75c0370e391",
+      "index": 27,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-change-of-control-provisions-across-targets-material-contracts",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-change-of-control-provisions-across-targets-material-contracts/task.json",
+      "task_json_sha256": "b03ae6f8b42c6f794888d822d734cc7dfb7c35f234d9644af2f8793eab437911",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "ffd1738a5a2252ca62865e8958fd1deec86c3b62a4c0538fc5238b2d67f3bd83",
+      "index": 28,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-cim-deal-teaser/scenario-01",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-cim-deal-teaser/scenario-01/task.json",
+      "task_json_sha256": "8c7a55806d7927e91e8514efcf321ddd87b999bed9e143a688fb2d80fb4a0f3d",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "ffd1738a5a2252ca62865e8958fd1deec86c3b62a4c0538fc5238b2d67f3bd83",
+      "index": 29,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-cim-deal-teaser/scenario-02",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-cim-deal-teaser/scenario-02/task.json",
+      "task_json_sha256": "d670772b910333651126403e00841d12f0a4e9033f980846c48c81e9915f8a13",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "c6edbf1b6f4202d6cf8c2f63b240969dddce48dccfdb620597ad7abe3294acce",
+      "index": 30,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-counterparty-spa-markup",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-counterparty-spa-markup/task.json",
+      "task_json_sha256": "a1ff2c998f2e8ef3b162de4590b9b4571ee917dbda16bf17fa06b6bf448eabf0",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "595d73101c5abd7238f1653f7920b17a3f810a50083fd3445550de05f078b564",
+      "index": 31,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-credit-agreement-markup",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-credit-agreement-markup/task.json",
+      "task_json_sha256": "70b88e51a894c2505b9444cc23bd399b92605c9cf43d2d6232d7fc0c71e80fcd",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "92b6fab7a13cbd830e4931c59e1d04e8e3bb1933ca1bc1f23d433a66a29d6ecf",
+      "index": 32,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-dd-summary-memo",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-dd-summary-memo/task.json",
+      "task_json_sha256": "17a24beb78e973d3591df0c01a37e67d8a02435db01b7b6c83ec7d2d55782460",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "c9f2b00f4c4c370c665ccf0f9479e51d9e76cab4ec0f6f3cc39712e754f0e302",
+      "index": 33,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-disclosure-schedule-markup-against-merger-agreement",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-disclosure-schedule-markup-against-merger-agreement/task.json",
+      "task_json_sha256": "7a7dc489291e080c51a8f5a10710aaf7e62fe46cc2dd3ad4af338724edb6a928",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "f3bfce7d37593dc883a6dc5c45302e4e29265a912a4d11f989bbe814a39ccddc",
+      "index": 34,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-environmental-liability-exposure-in-targets-operations",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-environmental-liability-exposure-in-targets-operations/task.json",
+      "task_json_sha256": "f04fe11b3349e559dd700850c5358835a2af359bde29f08a00d88c3ad546f08c",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "338ff7dff4247bc9297e2083e8d5a62401bebb831fd4dc78702888c3e95dc10e",
+      "index": 35,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-escrow-agreement-markup",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-escrow-agreement-markup/task.json",
+      "task_json_sha256": "968cf5bf3c59d16f650829fd88c4698c860e5a3910953746a9315ab4772f2ff1",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "11b9489e4bd1b0988b12754c102ff73c4ca33c3a7d10e382b1c444e23d2af23f",
+      "index": 36,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-qoe-reconciliation",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-qoe-reconciliation/task.json",
+      "task_json_sha256": "d80656c1ecdc8d4220930d6e0a79777fc76f4256f25c555d739d9addc07d419d",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "0abd78854d8e7a564167f903ef3882cbaff15eeaf1dc86b4f78a00d6fd3495e8",
+      "index": 37,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-responses-to-ddrl/scenario-01",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-responses-to-ddrl/scenario-01/task.json",
+      "task_json_sha256": "a7f40321cfe48b2cb1182a6c6cbedf084e5aca8f2f8d4a10ce399bfad176309e",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "0abd78854d8e7a564167f903ef3882cbaff15eeaf1dc86b4f78a00d6fd3495e8",
+      "index": 38,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-responses-to-ddrl/scenario-02",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-responses-to-ddrl/scenario-02/task.json",
+      "task_json_sha256": "429b975cce0d7feb916b93bf01065762a2ba934d5d39f42242ed5ca365bc320f",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "57cf7ede0ce357bbcd98078b5d5149b6f7fe16cc93554cf9f339bb84a420f0f8",
+      "index": 39,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-sellers-counsel-markup-of-stock-purchase-agreement",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-sellers-counsel-markup-of-stock-purchase-agreement/task.json",
+      "task_json_sha256": "da34488a7c99f2ef2c726059cda121c99191d68e66139b05c8a1a495044c6c22",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "29c048151bb823a2b23e62823342c7a06c48422e5470ad20df56e07b2e6db4fc",
+      "index": 40,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-term-sheet-markup/scenario-01",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-term-sheet-markup/scenario-01/task.json",
+      "task_json_sha256": "9cebb2101b5bffee1f9f4a75847f506fe48c65e37c8300159ef28708fd6fbcf2",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "27d48c0405a070a92e37c0c35b04ad581b46792373bf1b1aea28300d86b66869",
+      "index": 41,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-term-sheet-markup/scenario-02",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-term-sheet-markup/scenario-02/task.json",
+      "task_json_sha256": "de6af186fe13402696390de7793ff5d5e6f01fd43161c765977a4be87ec6e506",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 16,
+      "documents_sha256": "89a07ac08ac348e66c00fc73d7037fe451658bdd4447d4ee6635d81aaccf827d",
+      "index": 42,
+      "practice_area": "corporate-ma",
+      "task_id": "corporate-ma/analyze-transaction-restrictions/scenario-01",
+      "task_json_relative_path": "tasks/corporate-ma/analyze-transaction-restrictions/scenario-01/task.json",
+      "task_json_sha256": "ebce8132aae4b8d0003bb17ca1d9261d7667c564e79c172bd44442964b29d5a1",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "0af423df4915f41a457841e77fc2cd7562a2b5df337a4006493d67b67ad07cd4",
+      "index": 43,
+      "practice_area": "data-privacy-cybersecurity",
+      "task_id": "data-privacy-cybersecurity/analyze-counterparty-markup-of-cross",
+      "task_json_relative_path": "tasks/data-privacy-cybersecurity/analyze-counterparty-markup-of-cross/task.json",
+      "task_json_sha256": "ae95cbb20b424c0726814f197cf094ebb1685d74965657d6e7c316cd8f65a97c",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "594d8a2a9729949efc5ab76718d005b6764c701813bdc492e316ae942c013db9",
+      "index": 44,
+      "practice_area": "data-privacy-cybersecurity",
+      "task_id": "data-privacy-cybersecurity/analyze-counterparty-markup-of-data-processing-agreement",
+      "task_json_relative_path": "tasks/data-privacy-cybersecurity/analyze-counterparty-markup-of-data-processing-agreement/task.json",
+      "task_json_sha256": "e336ffdb06db515d4648df606e03531e7c74f342b5b10907bb8ed667d4bb379f",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "8d967f898e4367072860b0e24e69ffd824c04e58973097555ca3bac50a43791c",
+      "index": 45,
+      "practice_area": "data-privacy-cybersecurity",
+      "task_id": "data-privacy-cybersecurity/analyze-cpra-compliance-gaps-against-current-privacy-program",
+      "task_json_relative_path": "tasks/data-privacy-cybersecurity/analyze-cpra-compliance-gaps-against-current-privacy-program/task.json",
+      "task_json_sha256": "520fcf16d2d6f2c1553a00673ef552eeac0eeba1c8123e29ed18b72f8d4573ee",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "71f9702582ff57bf5cd6e1186eebcf61a29d9ffef016806048ba79bc238610cc",
+      "index": 46,
+      "practice_area": "data-privacy-cybersecurity",
+      "task_id": "data-privacy-cybersecurity/analyze-gdpr-amendment-impact-on-data-processing-agreement-portfolio",
+      "task_json_relative_path": "tasks/data-privacy-cybersecurity/analyze-gdpr-amendment-impact-on-data-processing-agreement-portfolio/task.json",
+      "task_json_sha256": "a96066bd8479307bf2715f92a60367e1c50105b7bf2fbd04a4d3a157049edeb3",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "ac1c5bbe38f0b2d7100cdc08572bac4cbf8a4ac1d0ab144848edd19506a23f51",
+      "index": 47,
+      "practice_area": "emerging-companies-venture-capital",
+      "task_id": "emerging-companies-venture-capital/analyze-counterparty-markup-of-bridge-loan-agreement",
+      "task_json_relative_path": "tasks/emerging-companies-venture-capital/analyze-counterparty-markup-of-bridge-loan-agreement/task.json",
+      "task_json_sha256": "886ff0e7f415340b5129f4e20859dee948eb21f16366571db9958db436e439f1",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "6593da37cd6b83dff8bd9c286de9370dbb1efca4154b481e192c35c68b6c0e36",
+      "index": 48,
+      "practice_area": "emerging-companies-venture-capital",
+      "task_id": "emerging-companies-venture-capital/analyze-counterparty-markup-of-investors-rights-agreement",
+      "task_json_relative_path": "tasks/emerging-companies-venture-capital/analyze-counterparty-markup-of-investors-rights-agreement/task.json",
+      "task_json_sha256": "39b3f361bba0dc747a0265015eb6789c316b6ded46dba667efc735082a1aa081",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "6a1e485d0420b798f0506daac1ffea41dead235a1520d38863e59903697e7b47",
+      "index": 49,
+      "practice_area": "emerging-companies-venture-capital",
+      "task_id": "emerging-companies-venture-capital/analyze-counterparty-markup-of-stock-purchase-agreement",
+      "task_json_relative_path": "tasks/emerging-companies-venture-capital/analyze-counterparty-markup-of-stock-purchase-agreement/task.json",
+      "task_json_sha256": "4d1f1d1f0fa98978edfea9ab9c871bef3735f34f0963a5d14048d5279bf0cb49",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "566595a22f6a81bf89d385c67c037640fe2d6795044748bd255b0441743a129c",
+      "index": 50,
+      "practice_area": "emerging-companies-venture-capital",
+      "task_id": "emerging-companies-venture-capital/compare-term-sheet-against-stock-purchase-agreement",
+      "task_json_relative_path": "tasks/emerging-companies-venture-capital/compare-term-sheet-against-stock-purchase-agreement/task.json",
+      "task_json_sha256": "209532c7a994ea09414ed2e28978726c1086bce2b95aae9f751f01fc83fdad4d",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "d7cba72a91eb752aeb0b9cc7bbe1990dab337bfd24dd44f6959d1a5c23845156",
+      "index": 51,
+      "practice_area": "employment-labor",
+      "task_id": "employment-labor/analyze-counterparty-markup-of-executive-employment-agreement",
+      "task_json_relative_path": "tasks/employment-labor/analyze-counterparty-markup-of-executive-employment-agreement/task.json",
+      "task_json_sha256": "5ac337815df5eaa80d529c918567bb824a5e36d3dfcc5f61bb87933032408e44",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "4dcb2135b8d0d418fa1a3473665c8fb2ec095d057db8d8a6471da6a2a8107c48",
+      "index": 52,
+      "practice_area": "employment-labor",
+      "task_id": "employment-labor/analyze-iss-employment-complaint",
+      "task_json_relative_path": "tasks/employment-labor/analyze-iss-employment-complaint/task.json",
+      "task_json_sha256": "305b60e6f9080d7d3ea519359993f4cc629b176534ff27600ce398191cf65952",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "61b30c0684de50323b3fb2a478f030a0a64f8d8b3424542ff6e165240bc708b2",
+      "index": 53,
+      "practice_area": "employment-labor",
+      "task_id": "employment-labor/analyze-reasonable-accommodation-request-under-ada-requirements",
+      "task_json_relative_path": "tasks/employment-labor/analyze-reasonable-accommodation-request-under-ada-requirements/task.json",
+      "task_json_sha256": "153340364998e472f65860339a4c508fa0b9cf37a353e5687f2fb33c09d9103b",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "6b04992e9cef6462461ce6f096fe73ef09f73637dff7b5c8992d90328ee0f2ac",
+      "index": 54,
+      "practice_area": "employment-labor",
+      "task_id": "employment-labor/assess-legal-risk-of-proposed-employee-termination",
+      "task_json_relative_path": "tasks/employment-labor/assess-legal-risk-of-proposed-employee-termination/task.json",
+      "task_json_sha256": "4074deaaab8ea11ad978b40da078141bd59496c5779bb40a60fc43abe88c52e7",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "0ed94f41bd14f2f2c327f36bf29f4ad23284d933afaf105e680ae762d8f28a3f",
+      "index": 55,
+      "practice_area": "energy-natural-resources",
+      "task_id": "energy-natural-resources/analyze-counterparty-markup-of-concession-agreement",
+      "task_json_relative_path": "tasks/energy-natural-resources/analyze-counterparty-markup-of-concession-agreement/task.json",
+      "task_json_sha256": "3fbccdf9f056c1248fa761af14455f31a3d9450722da4dbd14755c9cc917a18e",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "e09d38f3c4d61895161a50c994398a1834e304834854c461cea5fd160e3833d9",
+      "index": 56,
+      "practice_area": "energy-natural-resources",
+      "task_id": "energy-natural-resources/analyze-counterparty-markup-of-credit-agreement",
+      "task_json_relative_path": "tasks/energy-natural-resources/analyze-counterparty-markup-of-credit-agreement/task.json",
+      "task_json_sha256": "02e66a67a50409a21c984f37db282a216b2d8379c05ac8edbdc776a2cff85fb4",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "494898fb490121399c26f28937bab03c613db12ced1a2a06fe367f460200594f",
+      "index": 57,
+      "practice_area": "energy-natural-resources",
+      "task_id": "energy-natural-resources/analyze-counterparty-markup-of-engineering-procurement-construction-contract",
+      "task_json_relative_path": "tasks/energy-natural-resources/analyze-counterparty-markup-of-engineering-procurement-construction-contract/task.json",
+      "task_json_sha256": "401b7868aaa0d3158bdfc1e47ac34c88d655ce14468778c0fb4afc3a019132c2",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "41b5a322d7c05daed23ee1d62691453b70d999dac619a297748ec5abc2000df8",
+      "index": 58,
+      "practice_area": "environmental-esg",
+      "task_id": "environmental-esg/analyze-counterparty-markup-of-administrative-settlement-agreement",
+      "task_json_relative_path": "tasks/environmental-esg/analyze-counterparty-markup-of-administrative-settlement-agreement/task.json",
+      "task_json_sha256": "432b5d6040758694a4674cb0d3c216d0b208cb54bd1110bf78766599126aa937",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "9db89c3f5198c724946d5a31bdb16150c80d5d9a419106be0fd6eef500f6d174",
+      "index": 59,
+      "practice_area": "environmental-esg",
+      "task_id": "environmental-esg/analyze-counterparty-markup-of-environmental-indemnity-agreement",
+      "task_json_relative_path": "tasks/environmental-esg/analyze-counterparty-markup-of-environmental-indemnity-agreement/task.json",
+      "task_json_sha256": "bcccd0ff0fb44789f13833623f3d56341d60acdd3f38bd71a4bae0f9f10de366",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "d29c2718db5f919315dc8dcec4ab2b873f4d01adb59aa1d32c999b4dd8a01176",
+      "index": 60,
+      "practice_area": "environmental-esg",
+      "task_id": "environmental-esg/analyze-counterparty-markup-of-settlement-agreement",
+      "task_json_relative_path": "tasks/environmental-esg/analyze-counterparty-markup-of-settlement-agreement/task.json",
+      "task_json_sha256": "ca062b83d4a58137438c6d80a9b42a50d5ae5ac409be4d190c0d4f4c9584884f",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "95dfe94d7380df8af0791d6ad5e66de21853134a4ba2fec62395c1a1fecdfbad",
+      "index": 61,
+      "practice_area": "environmental-esg",
+      "task_id": "environmental-esg/assess-recall-and-reporting-obligations-for-product-safety-issue",
+      "task_json_relative_path": "tasks/environmental-esg/assess-recall-and-reporting-obligations-for-product-safety-issue/task.json",
+      "task_json_sha256": "5aab335e6d148758acae4b6572dc6905bc06a57d113f808c137f2bbc01dab08d",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 6,
+      "documents_sha256": "d41d20427b47af0be6fb050b9654ff3584a90d5c967f32d50b9892844479b1d4",
+      "index": 62,
+      "practice_area": "funds-asset-management",
+      "task_id": "funds-asset-management/analyze-counterparty-markup-of-investment-advisory-agreement",
+      "task_json_relative_path": "tasks/funds-asset-management/analyze-counterparty-markup-of-investment-advisory-agreement/task.json",
+      "task_json_sha256": "2c7e4fb0472c79cd7b34cbc781e8d9b78058163e75bbc7e85da769772c0368b1",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 6,
+      "documents_sha256": "32374f85cc1458d915f718cdf4d9c0b03047a31085ebd95261a75dfdf1d77ecb",
+      "index": 63,
+      "practice_area": "funds-asset-management",
+      "task_id": "funds-asset-management/analyze-counterparty-markup-of-limited-partnership-agreement",
+      "task_json_relative_path": "tasks/funds-asset-management/analyze-counterparty-markup-of-limited-partnership-agreement/task.json",
+      "task_json_sha256": "0d6b29c6bb5fb32893630d4ad3e61cbc8430f85b0e50ac87d5019d94a8dadfcd",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 6,
+      "documents_sha256": "ec2c4cd266d83d65ccb616963c68e19f327acef0fb3067e4fc71442e87fee939",
+      "index": 64,
+      "practice_area": "funds-asset-management",
+      "task_id": "funds-asset-management/analyze-counterparty-markup-of-limited-partnership-interest-transfer-agreement",
+      "task_json_relative_path": "tasks/funds-asset-management/analyze-counterparty-markup-of-limited-partnership-interest-transfer-agreement/task.json",
+      "task_json_sha256": "e1a2fe845e8f5e687c71f2bb251c52d2c0eafafc36e9dfb6434eb7d8ad6ed640",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 6,
+      "documents_sha256": "306905229b4dc34377fba9633d7437dd1d1548e5b9679b8c27134712108b7799",
+      "index": 65,
+      "practice_area": "funds-asset-management",
+      "task_id": "funds-asset-management/analyze-counterparty-markup-of-side-letter",
+      "task_json_relative_path": "tasks/funds-asset-management/analyze-counterparty-markup-of-side-letter/task.json",
+      "task_json_sha256": "763862eb5e8bdc578dc4b9c973cee847d5067f8b7ef54e6a8704d96fd9cbf99e",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 6,
+      "documents_sha256": "99e9abdc1027a728da065d7695bd238a03fe9284ac3a4b1e63d0095534174e12",
+      "index": 66,
+      "practice_area": "funds-asset-management",
+      "task_id": "funds-asset-management/analyze-fund-economics-comparison",
+      "task_json_relative_path": "tasks/funds-asset-management/analyze-fund-economics-comparison/task.json",
+      "task_json_sha256": "0caaa5dac478dc30486e770f047e8285e128f090679ba349543ade472aeed0ad",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 6,
+      "documents_sha256": "8b9890a59d0080181adce211ee865c0d929b6bf4dfb93d608b983cc48c9fdaf8",
+      "index": 67,
+      "practice_area": "funds-asset-management",
+      "task_id": "funds-asset-management/analyze-lp-comment-memo",
+      "task_json_relative_path": "tasks/funds-asset-management/analyze-lp-comment-memo/task.json",
+      "task_json_sha256": "806dafb59f94f54520fa21dd716c9f5bb5e661739b6cd9ac6dbce7c2f3f74acd",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "b8a41b0f1a729895dc10b04f34fa3fa6754ad365db928fd54dda46db52e8f483",
+      "index": 68,
+      "practice_area": "healthcare-life-sciences",
+      "task_id": "healthcare-life-sciences/analyze-compliance-program-gaps",
+      "task_json_relative_path": "tasks/healthcare-life-sciences/analyze-compliance-program-gaps/task.json",
+      "task_json_sha256": "aa035e705aa22c9d5449049142f64089989a96e4e2df10ae276d6fd4d4b7341a",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "8a16a49277547d183dc96899c5c1d43d5e88e0ce6534aa786a48818ade343d2c",
+      "index": 69,
+      "practice_area": "healthcare-life-sciences",
+      "task_id": "healthcare-life-sciences/analyze-counterparty-markup-of-clinical-trial-agreement",
+      "task_json_relative_path": "tasks/healthcare-life-sciences/analyze-counterparty-markup-of-clinical-trial-agreement/task.json",
+      "task_json_sha256": "760f8365b4650e7da797de5392e7315df96ac5d87d59bf5c7a7aa67dc408f9d3",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "e6ec58224d0d9543761732e6af794242d90f006d8fac93ec4ebaa4a9c730d21b",
+      "index": 70,
+      "practice_area": "healthcare-life-sciences",
+      "task_id": "healthcare-life-sciences/analyze-counterparty-markup-of-merger-agreement",
+      "task_json_relative_path": "tasks/healthcare-life-sciences/analyze-counterparty-markup-of-merger-agreement/task.json",
+      "task_json_sha256": "27843a968ac15ccb83cd2d5ba1292fff843d267dc601c8a14161f07774f87118",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "e44e6ddda08d9e527523bed6a76bb1f32dc3f4a16892258a5daba677b736f364",
+      "index": 71,
+      "practice_area": "healthcare-life-sciences",
+      "task_id": "healthcare-life-sciences/compare-clinical-trial-protocol-against-fda-regulatory-requirements",
+      "task_json_relative_path": "tasks/healthcare-life-sciences/compare-clinical-trial-protocol-against-fda-regulatory-requirements/task.json",
+      "task_json_sha256": "c63073c6dc40e1ac0b1e61cf89b32a104cb782f583852f6fcb633c051e289ad3",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "e3554c3b8c0ee299b1f42dc9f8db412d4bed01397a2c6b56a95f544aac2f2b69",
+      "index": 72,
+      "practice_area": "immigration",
+      "task_id": "immigration/compare-draft-eb",
+      "task_json_relative_path": "tasks/immigration/compare-draft-eb/task.json",
+      "task_json_sha256": "b6a89cd4b45d8cae8549155e35a25f59ada9a299ac53f2dc9f34ffb636dd08f1",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "76e51f6e72090017d6e6e7dc8bdbdda2a86e98d82b67be6562d15c1dd02cf9af",
+      "index": 73,
+      "practice_area": "immigration",
+      "task_id": "immigration/compare-employer-corrective-action-plans-against-ice-regulatory-standards",
+      "task_json_relative_path": "tasks/immigration/compare-employer-corrective-action-plans-against-ice-regulatory-standards/task.json",
+      "task_json_sha256": "465bf9b2621292cfaa3c2b41e9809d4235038bcc43015a64890d97bee0f9e7d4",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "f48ed95d69026abf4d67bfe0fedeb698beb8574ea5c6ac02c8fe43892670b687",
+      "index": 74,
+      "practice_area": "immigration",
+      "task_id": "immigration/compare-i",
+      "task_json_relative_path": "tasks/immigration/compare-i/task.json",
+      "task_json_sha256": "d439383a4fee4f7419f7606ed53276815ed8f6a02b013337ed9a9d2db07eb09a",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "9975b966ec7c0b7f8ab0d12f9102297da406e15225af59c15b64205fa4c6a404",
+      "index": 75,
+      "practice_area": "insurance",
+      "task_id": "insurance/analyze-counterparty-markup-of-reinsurance-treaty",
+      "task_json_relative_path": "tasks/insurance/analyze-counterparty-markup-of-reinsurance-treaty/task.json",
+      "task_json_sha256": "37987c99f4311ea98653667d6c4744caa818575faaf56e7aae1c65f357cd39e3",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "ce7b8632541514e9b93739d084e54e1d09bc23e72cbda66ab646155c5fecaf42",
+      "index": 76,
+      "practice_area": "insurance",
+      "task_id": "insurance/analyze-property-damage-claim-against-commercial-policy-exclusions",
+      "task_json_relative_path": "tasks/insurance/analyze-property-damage-claim-against-commercial-policy-exclusions/task.json",
+      "task_json_sha256": "f19ba3c3ddd5626f705b89027d3cb8689dafbe96e5ed4834f92cc6f6c6776451",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "db09a4f872fe40aa8e41d10fab08e62ae177437395f3499f7a574c7eb177405c",
+      "index": 77,
+      "practice_area": "insurance",
+      "task_id": "insurance/compare-commercial-insurance-policy-terms-against-coverage-specifications",
+      "task_json_relative_path": "tasks/insurance/compare-commercial-insurance-policy-terms-against-coverage-specifications/task.json",
+      "task_json_sha256": "247624775876a38dae740a100375a09bca311175b7f0fbceeb0061d82988071d",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "781f84c0d151802dc7dd1c8cd2ddedd8f6b772206b92241686b612730a92126f",
+      "index": 78,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-counterparty-markup-of-contract-amendment",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-counterparty-markup-of-contract-amendment/task.json",
+      "task_json_sha256": "5c8a1c825d56b923d74e6c08a66cb62568d736436ac8fcaf610468ab37efba8a",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "3528d5fcc3e3f1ced662015c22877b88c691fc50e848c379557115b5e0cf9c52",
+      "index": 79,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-counterparty-markup-of-ip-assignment-agreement",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-counterparty-markup-of-ip-assignment-agreement/task.json",
+      "task_json_sha256": "c991e9694c5ea9c42790f9a4798e16a4ea0fc8d8b644fa540270195399a35c30",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "e4b7a660836cbfdcc3a8a0a25e1791d0dd870f45dbac48d0f86d29e641338f67",
+      "index": 80,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-counterparty-markup-of-joint-development-agreement",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-counterparty-markup-of-joint-development-agreement/task.json",
+      "task_json_sha256": "c21cc51b620e163c8677c24701122e8a0d496c5b801fe6557bdec39ca16ef4fa",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "5a8f51519144b2f8d05a1ba39c5d012f98813a7dba45551d152875cba3c0d261",
+      "index": 81,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-counterparty-markup-of-master-services-agreement",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-counterparty-markup-of-master-services-agreement/task.json",
+      "task_json_sha256": "ab2aa4ede81cc353d6fbdebeaba28b808a585ec7d488287e3d72a150fbf8efa8",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "25bf424f4ecffdf2f6c9bb3895edccdaca89232697611faf15f4074fd10b7707",
+      "index": 82,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-counterparty-markup-of-saas-agreement",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-counterparty-markup-of-saas-agreement/task.json",
+      "task_json_sha256": "2f0cac9e5fb2eae4af19dbe28f9b447f265228d9c5ad3e41e373a50ecc89a02a",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "a23f1e959184ef83454137887f7856689e8041dbda67c5019a3a4cf02d77a815",
+      "index": 83,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-counterparty-markup-of-saas-subscription-agreement",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-counterparty-markup-of-saas-subscription-agreement/task.json",
+      "task_json_sha256": "63e7f1e73ab84cacc867075e5c4a0fcee968ec38b5e51ea851f7a5218d6c966e",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "de0202a8cfe47fadb5c7386660ce5028f8c45b005ab3c6a5a8274788dbb8eda8",
+      "index": 84,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-counterparty-markup-of-supply-agreement",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-counterparty-markup-of-supply-agreement/task.json",
+      "task_json_sha256": "91c0a2a4e17ce594db0682d294932d24854729e819bf06613526cc32a8b512e4",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "19a6901d3db5f21e467731dfdd6180fb53daa367fa9185cf174f9c31953356d9",
+      "index": 85,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-counterparty-markup-of-technology-license-agreement",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-counterparty-markup-of-technology-license-agreement/task.json",
+      "task_json_sha256": "f77c9e56d7d16ae190e7d3e393832132c0d6b695645c57b5adf20a470382bb83",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "5d5b6e026650cddea700883dcb1b1106942cfc5491e7daf33d037abde97173eb",
+      "index": 86,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-master-service-agreement-limitation-of-liability-clause",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-master-service-agreement-limitation-of-liability-clause/task.json",
+      "task_json_sha256": "e7c4960794782cc8c93cdf65d6cbc85e8d85dbbbc72c4029c14ab2f79954c767",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "f99f088af6e6a3cf31975e35a667fbbf80b544e5d2ef8a7deac5f4580c7012f6",
+      "index": 87,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-restrictive-covenant-enforceability-across-multiple-jurisdictions",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-restrictive-covenant-enforceability-across-multiple-jurisdictions/task.json",
+      "task_json_sha256": "1ee5d348867ae372fc313f25864c84a2ae006ad9f3801c724c51b5acd657349f",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "808818471c3bf1f0dcb067dfb2b7f3e600614ef81c8f4f416aaf8341199b8472",
+      "index": 88,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/analyze-restrictive-covenant-enforceability-across-six-employment-agreements",
+      "task_json_relative_path": "tasks/intellectual-property/analyze-restrictive-covenant-enforceability-across-six-employment-agreements/task.json",
+      "task_json_sha256": "f48d0472532f48addf5c9481a9366f4df0778c7035511fdb163b609d1a9a0321",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "08992529fbe3e8449a5d9763cbb4a3c4cd0377a27b11325001e94245ae97ac95",
+      "index": 89,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/assess-msa-renewal-terms-against-historical-business-performance",
+      "task_json_relative_path": "tasks/intellectual-property/assess-msa-renewal-terms-against-historical-business-performance/task.json",
+      "task_json_sha256": "e178a3f6a6e5df7c779f5855008a0244f8b89eac1bbd4b3a268d4c3fbd0a7637",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "f8a23fe1b598d40d591e73b145fa6dcb448c082803124c227e610f83a05925e0",
+      "index": 90,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/assess-saas-renewal-pricing-and-sla-changes",
+      "task_json_relative_path": "tasks/intellectual-property/assess-saas-renewal-pricing-and-sla-changes/task.json",
+      "task_json_sha256": "8ad2c8f0d24e7b74ba1b00dad68c447a02527b4449c05efd1bdc22847658b230",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 14,
+      "documents_sha256": "a76851cd2bba939a571be2e2211b2ae66e8945059f41c9767de676e6e7d747ce",
+      "index": 91,
+      "practice_area": "intellectual-property",
+      "task_id": "intellectual-property/compare-asserted-patent-claims-against-accused-product",
+      "task_json_relative_path": "tasks/intellectual-property/compare-asserted-patent-claims-against-accused-product/task.json",
+      "task_json_sha256": "ec69b97c0b51ec004b0cf429bd9a66b5c9350ea300a7b7f722a8c46d8879e07d",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "b7d9b4c199e23cb8ca93424afbf3e83f154a4b65a7a4c303007be6ffdaedd5cd",
+      "index": 92,
+      "practice_area": "international-trade-sanctions",
+      "task_id": "international-trade-sanctions/analyze-counterparty-markup-of-mitigation-agreement",
+      "task_json_relative_path": "tasks/international-trade-sanctions/analyze-counterparty-markup-of-mitigation-agreement/task.json",
+      "task_json_sha256": "d2ba79fe62a0af98d14e16974896e300135faa5a938d5fed5e2516ea64bdcfa1",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "5cb42541ce2d7ed8ebb92a7cf951e8549ca9f37502d2310ed77047b45c800f5f",
+      "index": 93,
+      "practice_area": "international-trade-sanctions",
+      "task_id": "international-trade-sanctions/analyze-cross",
+      "task_json_relative_path": "tasks/international-trade-sanctions/analyze-cross/task.json",
+      "task_json_sha256": "4f547d103a23a9e01c54499c2469dfdd5dfb07e06241cfa898f2dfcf58af2167",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "41dd6be765807a8f87a994f5206e6ec3eb44d2b95744a06f1b726a726aad29af",
+      "index": 94,
+      "practice_area": "international-trade-sanctions",
+      "task_id": "international-trade-sanctions/analyze-ofac-investigative-demand-and-related-transaction-records",
+      "task_json_relative_path": "tasks/international-trade-sanctions/analyze-ofac-investigative-demand-and-related-transaction-records/task.json",
+      "task_json_sha256": "fbac098a609d7fdbaecf7e680d8c7531ae90eb5b92a60ed89576cb66abceb750",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "331b0eb6ce1ec227d507e1cdc24f848484f5af5334b23ce945b676764aa486ad",
+      "index": 95,
+      "practice_area": "international-trade-sanctions",
+      "task_id": "international-trade-sanctions/compare-country-of-origin-declarations-against-trade-preference-rules",
+      "task_json_relative_path": "tasks/international-trade-sanctions/compare-country-of-origin-declarations-against-trade-preference-rules/task.json",
+      "task_json_sha256": "06b2db35b54e291188eb891f8dc737ae5ac7aca0ec2d83c019f0e781fd87ed17",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 5,
+      "documents_sha256": "ad255595da674c44db8acd0def0f82bb214125a6c6b2979f26d09da932aec6d0",
+      "index": 96,
+      "practice_area": "litigation-dispute-resolution",
+      "task_id": "litigation-dispute-resolution/analyze-counterparty-motion-to-dismiss",
+      "task_json_relative_path": "tasks/litigation-dispute-resolution/analyze-counterparty-motion-to-dismiss/task.json",
+      "task_json_sha256": "1db4e39dcd8a665f0291c065b6caca378cb66d5fc4f1384c379b1c43a8564c35",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 5,
+      "documents_sha256": "c767f44c3bd0dcdb607ef3104889943ead2ffa4754e1fb5e3b6f84fddf2d94b2",
+      "index": 97,
+      "practice_area": "litigation-dispute-resolution",
+      "task_id": "litigation-dispute-resolution/analyze-counterparty-requests-for-production-for-objectionable-and-overbroad-discovery-demands",
+      "task_json_relative_path": "tasks/litigation-dispute-resolution/analyze-counterparty-requests-for-production-for-objectionable-and-overbroad-discovery-demands/task.json",
+      "task_json_sha256": "39b16da628d6fb40c5ebba36a2cdf25e2cad3487805bde5d310208e6ddd50c32",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 5,
+      "documents_sha256": "01ac91997f12e00205d74f317aa6cc73bc3bb08ea5ab73cbf067ed1fd2e0fdaa",
+      "index": 98,
+      "practice_area": "litigation-dispute-resolution",
+      "task_id": "litigation-dispute-resolution/analyze-counterpartys-motion-for-summary-judgment",
+      "task_json_relative_path": "tasks/litigation-dispute-resolution/analyze-counterpartys-motion-for-summary-judgment/task.json",
+      "task_json_sha256": "f9c2db53dc19938acb067e37bb58d0687ae71e6f2d69b496b16db001d63d271f",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 5,
+      "documents_sha256": "34ec6b73e1ef323c8c39732545c84c389979b9c5a62e4c9e332fc3437ca39963",
+      "index": 99,
+      "practice_area": "litigation-dispute-resolution",
+      "task_id": "litigation-dispute-resolution/assess-litigation-hold-scope-for-custodian-identification",
+      "task_json_relative_path": "tasks/litigation-dispute-resolution/assess-litigation-hold-scope-for-custodian-identification/task.json",
+      "task_json_sha256": "71d85b48441f6f9ebb141cdcb365b6748bcadade813231c0716d1560dd35c8fe",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 5,
+      "documents_sha256": "d4716ba92d29d3dbb9b4e4dceaab204687de02ab4d5e5c06f4861c7066facc4e",
+      "index": 100,
+      "practice_area": "litigation-dispute-resolution",
+      "task_id": "litigation-dispute-resolution/assess-reasonableness-of-staffing-levels-on-litigation-invoice",
+      "task_json_relative_path": "tasks/litigation-dispute-resolution/assess-reasonableness-of-staffing-levels-on-litigation-invoice/task.json",
+      "task_json_sha256": "7659a599802bbcfd173fd40409575c72c38d4d8ff34681d6e3bee6269cf63c09",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "064051c72ad8fc13eb86c6c034129fa0472c173a52c313bd7b2cdb2f91bef922",
+      "index": 101,
+      "practice_area": "real-estate",
+      "task_id": "real-estate/analyze-counterparty-markup-of-commercial-lease-agreement",
+      "task_json_relative_path": "tasks/real-estate/analyze-counterparty-markup-of-commercial-lease-agreement/task.json",
+      "task_json_sha256": "c3c1f150c31dc3ad1b34c7256d6cd07d0b591350a93f19f5d7e081535497b61b",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "025bf9946c59030f3061d94de72dbf807bbfa753688c4ae29cb66a5730e9f56c",
+      "index": 102,
+      "practice_area": "real-estate",
+      "task_id": "real-estate/analyze-counterparty-markup-of-commercial-real-estate-loan-agreement",
+      "task_json_relative_path": "tasks/real-estate/analyze-counterparty-markup-of-commercial-real-estate-loan-agreement/task.json",
+      "task_json_sha256": "8279c49896d11c39471a4465190bbc4f1896ed612d287208b8d03e505932fbc2",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "b87dfb9ac24ea92e2257707020df38012b51793c5d81a4e5d28600f0451b5499",
+      "index": 103,
+      "practice_area": "real-estate",
+      "task_id": "real-estate/analyze-counterparty-markup-of-construction-contract",
+      "task_json_relative_path": "tasks/real-estate/analyze-counterparty-markup-of-construction-contract/task.json",
+      "task_json_sha256": "f16e727f65a91a0de1e676cb145438e3a225ecbe02330aee73530551b46cf662",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 4,
+      "documents_sha256": "3884221f500c3e0a5b7e91796bd3e684528c7e4563a8e9f4921276d05230356f",
+      "index": 104,
+      "practice_area": "real-estate",
+      "task_id": "real-estate/analyze-counterparty-markup-of-purchase-and-sale-agreement",
+      "task_json_relative_path": "tasks/real-estate/analyze-counterparty-markup-of-purchase-and-sale-agreement/task.json",
+      "task_json_sha256": "26d762ce00828dec46fd270e13f16c5313b5ab3ecf22521b2eb301e882c5e808",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "3a1e05df173de58026e0478eba23300276887f48bd0dcacd147bfabdbc7da3f5",
+      "index": 105,
+      "practice_area": "structured-finance-securitization",
+      "task_id": "structured-finance-securitization/analyze-counterparty-markup-of-indenture",
+      "task_json_relative_path": "tasks/structured-finance-securitization/analyze-counterparty-markup-of-indenture/task.json",
+      "task_json_sha256": "d177a84776f936bca00025d2b0610e7cc4c7c70398f7213361448ae7e5b7903b",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "e510f6b540ae31e06768adc629e90ac5e59ac6eed2cd85cc2c906a35c29ed927",
+      "index": 106,
+      "practice_area": "structured-finance-securitization",
+      "task_id": "structured-finance-securitization/analyze-counterparty-markup-of-pooling-and-servicing-agreement",
+      "task_json_relative_path": "tasks/structured-finance-securitization/analyze-counterparty-markup-of-pooling-and-servicing-agreement/task.json",
+      "task_json_sha256": "13153e2a871f870c5aa9fd54a3782a725b2600dfb57cbe7caa33f6c5810cb118",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "177ad9e0dc3d586ceb4fa63d377b3ff495bb1cf688ecc876a7d7f6cba9c52088",
+      "index": 107,
+      "practice_area": "structured-finance-securitization",
+      "task_id": "structured-finance-securitization/compare-closing-checklist-against-transaction-documents",
+      "task_json_relative_path": "tasks/structured-finance-securitization/compare-closing-checklist-against-transaction-documents/task.json",
+      "task_json_sha256": "2a0e2601f44082c90ad084be29befb5466500078d9c866edddfa0917c0899850",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "dcca04f037ba81d6c4ffe9b5bff0d226ab1db00c8e8b561bbea1d0dcd7d1a10e",
+      "index": 108,
+      "practice_area": "tax",
+      "task_id": "tax/analyze-counterparty-markup-of-proposed-stipulation-of-facts",
+      "task_json_relative_path": "tasks/tax/analyze-counterparty-markup-of-proposed-stipulation-of-facts/task.json",
+      "task_json_sha256": "037495202d10683035d198c31d7f999237e89fc50b5a71e5fbc7eda38011ea46",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "b8a91740b2403c8d890f95a608964b1ec4d43ea8c5b57b87e5470101c722e168",
+      "index": 109,
+      "practice_area": "tax",
+      "task_id": "tax/analyze-counterparty-markup-of-tax-closing-agreement",
+      "task_json_relative_path": "tasks/tax/analyze-counterparty-markup-of-tax-closing-agreement/task.json",
+      "task_json_sha256": "68c880ed940c74a151c6547c9b1840522a1e7b2605728de27018147b2596d35a",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 3,
+      "documents_sha256": "9de135cb51c36624835365d9d141f5c737f09f8bd06d0fde0d4319d4b1a8d2a6",
+      "index": 110,
+      "practice_area": "tax",
+      "task_id": "tax/analyze-irs-information-document-request-for-completeness-and-risk-issues",
+      "task_json_relative_path": "tasks/tax/analyze-irs-information-document-request-for-completeness-and-risk-issues/task.json",
+      "task_json_sha256": "c3228cbf54f62398c770b82e7e277db6dac10b392756105beb5b9dc476e5da09",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 7,
+      "documents_sha256": "e625fbbb5f505d15c8b68d16515c52da51038721c11164a12ca5e85ac7c0fd94",
+      "index": 111,
+      "practice_area": "trusts-estates-private-client",
+      "task_id": "trusts-estates-private-client/analyze-counterparty-markup-of-parenting-plan",
+      "task_json_relative_path": "tasks/trusts-estates-private-client/analyze-counterparty-markup-of-parenting-plan/task.json",
+      "task_json_sha256": "c8811bc4f7f1b3ae7523fdf5181acd7eaa5f482a86a84748ef467f3a3250f1a2",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 7,
+      "documents_sha256": "db795beb04c74b5c84b60f3b70d1fe3fa3954e9419e142c1272d494f9fdb61e5",
+      "index": 112,
+      "practice_area": "trusts-estates-private-client",
+      "task_id": "trusts-estates-private-client/analyze-counterparty-markup-of-postnuptial-agreement",
+      "task_json_relative_path": "tasks/trusts-estates-private-client/analyze-counterparty-markup-of-postnuptial-agreement/task.json",
+      "task_json_sha256": "f03db4b8d762041f17c7fbcb542a3036b87553a0929d8920fe3af7cb346ead30",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 7,
+      "documents_sha256": "8f42f5b1290a3b0b130bbfa9cda8d39f81fd5e1bbc2296bf32b9b5642f8de26c",
+      "index": 113,
+      "practice_area": "trusts-estates-private-client",
+      "task_id": "trusts-estates-private-client/analyze-counterparty-markup-of-prenuptial-agreement",
+      "task_json_relative_path": "tasks/trusts-estates-private-client/analyze-counterparty-markup-of-prenuptial-agreement/task.json",
+      "task_json_sha256": "46195cc7588c40083c00c45701b6454d7631a760f0769418f490c43e4dd3d274",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 7,
+      "documents_sha256": "fc96e4b190f87893a3438f43f1fe0729a9dcdbeb4c14162040751746d09c2295",
+      "index": 114,
+      "practice_area": "trusts-estates-private-client",
+      "task_id": "trusts-estates-private-client/compare-charitable-trust-structures-against-client-goals",
+      "task_json_relative_path": "tasks/trusts-estates-private-client/compare-charitable-trust-structures-against-client-goals/task.json",
+      "task_json_sha256": "859fac66c9a8c894b5d1a6bfc79bda3057b37b3681b1af8be69de8847aca1bca",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 7,
+      "documents_sha256": "e2dfc9da5d884ffdb9139c25fa7a203b381fdb97c8d02cbdefe8d92ddea6731c",
+      "index": 115,
+      "practice_area": "trusts-estates-private-client",
+      "task_id": "trusts-estates-private-client/compare-creditor-claims-against-estate-assets",
+      "task_json_relative_path": "tasks/trusts-estates-private-client/compare-creditor-claims-against-estate-assets/task.json",
+      "task_json_sha256": "49edc331c9ec28f5eb106cdcdedd56e0b88e208129611f32a9721c56bc32fbb9",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 7,
+      "documents_sha256": "00869ab5e550140e997134865adf01698c0e917a3f0068cb9c74ac6a99bc82d1",
+      "index": 116,
+      "practice_area": "trusts-estates-private-client",
+      "task_id": "trusts-estates-private-client/compare-estate-plan-against-federal-tax-exemption-schedules",
+      "task_json_relative_path": "tasks/trusts-estates-private-client/compare-estate-plan-against-federal-tax-exemption-schedules/task.json",
+      "task_json_sha256": "24000075d10e83c15e7721f819b9d6e705c290edd2f5b23cfa970695339281a9",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 7,
+      "documents_sha256": "96873767e35b3008ab08de11f51bddc7da3309e5cf81696f1f647cbcb99e6570",
+      "index": 117,
+      "practice_area": "trusts-estates-private-client",
+      "task_id": "trusts-estates-private-client/compare-final-decree-of-divorce-against-mediated-settlement-agreement",
+      "task_json_relative_path": "tasks/trusts-estates-private-client/compare-final-decree-of-divorce-against-mediated-settlement-agreement/task.json",
+      "task_json_sha256": "de1416b1b5ae086ec2cab7c1ee62ae5fc7b5e153425268fe4d7ff4cbae16b247",
+      "work_type": "review"
+    },
+    {
+      "area_quota": 2,
+      "documents_sha256": "700513d95cb0bc311c147037ac6acfdbf79123e8c18ccf5ca6fd20f3f117d3c9",
+      "index": 118,
+      "practice_area": "white-collar-defense-investigations",
+      "task_id": "white-collar-defense-investigations/analyze-counterparty-markup-of-deferred-prosecution-agreement",
+      "task_json_relative_path": "tasks/white-collar-defense-investigations/analyze-counterparty-markup-of-deferred-prosecution-agreement/task.json",
+      "task_json_sha256": "2e49bf5223ff2feca2d8c4ce858a6f081b6107a0d3dd36af3d9035a6c5a2b026",
+      "work_type": "analyze"
+    },
+    {
+      "area_quota": 2,
+      "documents_sha256": "92eccab5f77c2d856992ae697cb88efc1da93a27680a762972a8a0869a98fe19",
+      "index": 119,
+      "practice_area": "white-collar-defense-investigations",
+      "task_id": "white-collar-defense-investigations/compare-document-production-set-against-subpoena-request-categories",
+      "task_json_relative_path": "tasks/white-collar-defense-investigations/compare-document-production-set-against-subpoena-request-categories/task.json",
+      "task_json_sha256": "535fc25bc4f50bb11e73c32a3a4d50e2f8e3207a8e29fb981ed4700f77a34211",
+      "work_type": "analyze"
+    }
+  ]
+}

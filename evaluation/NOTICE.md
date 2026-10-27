@@ -1,0 +1,3 @@
+Third-party benchmark sources retain their upstream licenses. AutomationBench and Harvey LAB are MIT; tau2-bench is MIT; BFCL, SkillsBench, and OfficeQA scoring code are Apache-2.0; JobBench retains its included LICENSE. OfficeQA question data are CC-BY-SA-4.0 and are downloaded from the upstream dataset. The OpenHands SDK and OpenCode are installed or downloaded separately under their upstream licenses. ToolSpace launchers adapt API transport, local paths, task selection, and result collection. The Tau3 snapshot includes the Banking Knowledge extensions and retrieval fixes used for the 97-task evaluation.
+
+BFCL latency statistics support single-case runs.
