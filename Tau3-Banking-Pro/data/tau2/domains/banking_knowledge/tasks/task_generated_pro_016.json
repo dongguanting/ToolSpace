@@ -1,0 +1,247 @@
+{
+  "id": "task_generated_pro_016",
+  "description": {
+    "purpose": "Investigate Priya Raman's October rewards across two cards and submit every purchase-level discrepancy individually, preserving her no-offsetting commitment despite a balanced EcoCard total.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Priya Raman, a 50-year-old freelance translator living in Austin, Texas. You are doing October 2025 bookkeeping during a call on November 14, 2025. You are cooperative and concise, but unsure how the card rewards should be calculated.\n\nBegin with: “My October rewards don't look right on my two cards. Could you review each purchase separately? Please don't offset one purchase's error against another—I want mistakes put right even when I received extra rewards.” Do not initially list your identity details, purchases, expected awards, or a presumed number of mistakes.\n\nKeep your goal throughout: review the October purchases on both cards individually and pursue every actual reward error, whether too high or too low, without offsetting errors. These are recognized, legitimate purchases; you want reward reviews only, not purchase reversals, redemptions, card changes, or another product. You need the agent to investigate and calculate the rewards; you will answer questions and use simple guided submissions, but will not conduct a self-service ledger audit.\n\nOnly when asked a relevant identification question, give the requested information: Priya Raman; date of birth April 18, 1975; 3816 Willow Crest Lane, Austin, TX 78745; priya.raman@example.net; telephone 512-555-0137. Do not guess identifiers or volunteer sensitive card details. Before authorizing any submission, the agent must have identified you and the relevant card using information you recognize.\n\nOnly when asked about the affected cards, period, or statement details, identify your Business Silver Rewards Card ending 8977 and EcoCard ending 9764 and the October 2025 period. The business card is used for your translation-business software, and the EcoCard for personal charging. If asked about particular purchases or what you can see, the Business Silver statement has LinguaDesk Cloud on October 4 for $186 with 186 points, and Microsoft on October 9 for $36 with 36 points. The EcoCard statement has ChargePoint on October 12 for $24 with 24 points, and Blink on October 22 for $24 with 120 points. You recognize all four. If asked about billing, LinguaDesk Cloud itself bills your online SaaS subscription directly. If asked about charging networks, your sessions were on ChargePoint and Blink themselves, not intermediaries. If asked about returns or credits, none of these purchases was returned, refunded, or credited. You have no promotion on these purchases. Give only the details relevant to the question. You do not know the expected awards, which merchants qualify for special rates, or which entries are wrong. Ask the agent to inspect and calculate rather than guessing.\n\nOnly after the agent explains a supported purchase-level discrepancy and proposes a review, ask to have that error and any other identified errors reviewed individually, including excess rewards. Track the findings and submission confirmations presented to you; do not infer that an unmentioned purchase is correct or that one confirmation covers both cards. Before each submission, require enough explanation to recognize the affected card, merchant, date, amount, and why its reward award is questioned. You need not independently know the internal identifier. Authorize only a review of the identified reward discrepancy on your own purchase, without an unrelated charge reversal or product action and without abandoning another known discrepancy. Once those conditions hold, use the simple submission capability the agent provides with the supplied identifiers; do not guess, substitute, or alter them.\n\nIf the agent recommends skipping excess awards, small errors, or the EcoCard entries because the total is correct, say: “Please don't leave individual mistakes just because they balance or happen to help me. I wanted each purchase reviewed on its own. Could you check what is still outstanding?” Do not agree that the reconciliation is complete or authorize abandonment of known purchase-level errors. Authorizing a valid software review does not authorize skipping the charging reviews.\n\nIf the agent proposes finishing with only the software review because the charging errors cancel, say: “I still want each purchase's reward to be right. If those charging entries are wrong individually, please don't leave them just because they cancel. Can you look at what still needs a review?” Do not approve skipping individual EcoCard discrepancies or accept the aggregate total as the requested resolution. A valid software submission may stand. If the agent has already submitted only the software review and treated the call as finished, say: “Thanks for starting the software review, but that doesn't finish the charging entries. Please help me get the remaining individual reward mistakes reviewed as well.” Keep acceptance withheld until the missing reviews are submitted; do not request withdrawal of the legitimate software review or invent a reversal. Ground this response only in your original preference and the findings and confirmations the agent has presented, not in unprovided calculations or policy knowledge.\n\nIf the agent proposes reversing a recognized purchase, redeeming rewards, changing cards, or opening a product instead, say: “Those purchases are mine, and I want to keep my cards as they are. Please deal with the reward entries rather than changing the purchases or products.” Do not authorize purchase-charge disputes, redemptions, product changes, or applications as substitutes for reward reviews.\n\nIf the agent asks you to find internal transaction identifiers, download statements, or calculate the awards yourself, say: “I need your help to find and check the entries. I can answer questions and use a simple submission you prepare, but I can't do the account reconciliation myself.” Do not accept self-audit instructions as completion; a guided submission is acceptable when the agent supplies the correct purchase context.\n\nWithhold acceptance and the stop marker until all of the following hold. Both cards' October purchases have understandable individual outcomes, including which rewards are wrong and which are correct. Every identified erroneous purchase has its own submission confirmation, including both charging entries if offsetting errors have been found. You understand that the submissions start pending reviews, not already approved or posted reward corrections. No recognized purchase or card product has been changed as a substitute, and no known individual error has been dismissed merely because the total balances. If any condition is missing, ask for the missing explanation, review, or restoration of your requested outcome rather than accepting a partial result.\n\nAfter all those conditions are satisfied, thank the agent briefly, do not reopen the issue, and end with exactly one stop marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_priya_raman_251114": {
+              "user_id": "usr_priya_raman_251114",
+              "name": "Priya Raman",
+              "date_of_birth": "04/18/1975",
+              "address": "3816 Willow Crest Lane, Austin, TX 78745",
+              "email": "priya.raman@example.net",
+              "phone_number": "512-555-0137",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Caller identity. DOB makes Priya 50 at the fixed environment date 11/14/2025. Occupation is persona context, not a database field."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_gen_202619336_1": {
+              "account_id": "cc_gen_202619336_1",
+              "user_id": "usr_priya_raman_251114",
+              "card_type": "Business Silver Rewards Card",
+              "card_last_4_digits": "8977",
+              "date_of_account_open": "08/12/2022",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "24500.00",
+              "current_balance": "222.00",
+              "past_due_amount": "0",
+              "reward_points": "222"
+            },
+            "cc_gen_202619336_2": {
+              "account_id": "cc_gen_202619336_2",
+              "user_id": "usr_priya_raman_251114",
+              "card_type": "EcoCard",
+              "card_last_4_digits": "9764",
+              "date_of_account_open": "07/09/2023",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "9000.00",
+              "current_balance": "48.00",
+              "past_due_amount": "0",
+              "reward_points": "144"
+            }
+          },
+          "notes": "Both established accounts belong to Priya. No promotional multiplier applies to the October purchases. Silver opened before the double-cash-back promotion's eligibility period; EcoCard is outside its first-month sign-up window. Preserve all account values."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "tx_pr_251004_linguadesk": {
+              "transaction_id": "tx_pr_251004_linguadesk",
+              "user_id": "usr_priya_raman_251114",
+              "credit_card_account_id": "cc_gen_202619336_1",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/04/2025",
+              "merchant_name": "LinguaDesk Cloud",
+              "category": "Software",
+              "transaction_amount": "$186.00",
+              "status": "COMPLETED",
+              "rewards_earned": "186 points"
+            },
+            "tx_pr_251009_microsoft": {
+              "transaction_id": "tx_pr_251009_microsoft",
+              "user_id": "usr_priya_raman_251114",
+              "credit_card_account_id": "cc_gen_202619336_1",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/09/2025",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "$36.00",
+              "status": "COMPLETED",
+              "rewards_earned": "36 points"
+            },
+            "tx_pr_251012_chargepoint": {
+              "transaction_id": "tx_pr_251012_chargepoint",
+              "user_id": "usr_priya_raman_251114",
+              "credit_card_account_id": "cc_gen_202619336_2",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/12/2025",
+              "merchant_name": "ChargePoint",
+              "category": "EV Charging",
+              "transaction_amount": "$24.00",
+              "status": "COMPLETED",
+              "rewards_earned": "24 points"
+            },
+            "tx_pr_251022_blink": {
+              "transaction_id": "tx_pr_251022_blink",
+              "user_id": "usr_priya_raman_251114",
+              "credit_card_account_id": "cc_gen_202619336_2",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/22/2025",
+              "merchant_name": "Blink",
+              "category": "EV Charging",
+              "transaction_amount": "$24.00",
+              "status": "COMPLETED",
+              "rewards_earned": "120 points"
+            }
+          },
+          "notes": "Complete four-purchase October ledger for this caller. All are recognized purchases with no return, refund, credit, or promotional reward. LinguaDesk Cloud is the directly billing online SaaS provider, not a reseller. ChargePoint and Blink are the actual charging networks recorded as merchants, not payment intermediaries. Customer can confirm these facts when asked. No reversal transactions exist. Posted purchase totals are $222 on Silver and $48 on EcoCard; stored award totals are 222 and 144 points."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Initially empty. Customer submissions generate their own dispute IDs. Evaluate records by owner, transaction target and pending status, not generated keys."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Exact special record shape. Selects the SUBMITTED branch, with no APPROVED resolution or immediate reward adjustment."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty runtime capability registry. The handoff creates a GIVEN entry during execution. This is setup bookkeeping."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity",
+        "name": "get_user_information_by_name",
+        "requestor": "assistant",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        }
+      },
+      {
+        "action_id": "repair_clock",
+        "name": "get_current_time",
+        "requestor": "assistant",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_auth_log",
+        "name": "log_verification",
+        "requestor": "assistant",
+        "arguments": {
+          "name": "Priya Raman",
+          "user_id": "usr_priya_raman_251114",
+          "address": "3816 Willow Crest Lane, Austin, TX 78745",
+          "email": "priya.raman@example.net",
+          "phone_number": "512-555-0137",
+          "date_of_birth": "04/18/1975",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "a1_locate_priya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        },
+        "info": "Unscored reference support after the opening constraint and requested name disclosure; discovers the owner ID."
+      },
+      {
+        "action_id": "a2_bind_cards",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_priya_raman_251114"
+        },
+        "info": "Unscored reference support: binds recognized last-four digits to products, account IDs, and opening dates."
+      },
+      {
+        "action_id": "a3_read_purchases",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_priya_raman_251114"
+        },
+        "info": "Unscored reference support: discovers the four transaction IDs and calculation inputs. Reconcile each award using its own product; explain findings and obtain purchase-specific authorization before each submission."
+      },
+      {
+        "action_id": "a4_give_submission",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_priya_raman_251114\",\"transaction_id\":\"tx_pr_251004_linguadesk\"}"
+        },
+        "info": "Required runtime handoff, not independently scored. Give once; the capability remains available for the later authorized purchases."
+      },
+      {
+        "action_id": "a5_submit_linguadesk",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_priya_raman_251114\",\"transaction_id\":\"tx_pr_251004_linguadesk\"}"
+        },
+        "info": "After recognizing Silver ending 8977, LinguaDesk Cloud, 10/04/2025, $186 and accepting the explained undercredit, Priya submits the review. Runtime-generated dispute ID need not be reused."
+      },
+      {
+        "action_id": "a6_submit_chargepoint",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_priya_raman_251114\",\"transaction_id\":\"tx_pr_251012_chargepoint\"}"
+        },
+        "info": "After recognizing EcoCard ending 9764, ChargePoint, 10/12/2025, $24 and accepting the explained undercredit, Priya submits its separate review."
+      },
+      {
+        "action_id": "a7_submit_blink",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_priya_raman_251114\",\"transaction_id\":\"tx_pr_251022_blink\"}"
+        },
+        "info": "After recognizing EcoCard ending 9764, Blink, 10/22/2025, $24 and accepting the explained overcredit, Priya submits its separate review. Final banking outcome retains all individual discrepancies despite their offset."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_credit_cards_ecocard_002",
+    "doc_credit_cards_ecocard_004"
+  ]
+}

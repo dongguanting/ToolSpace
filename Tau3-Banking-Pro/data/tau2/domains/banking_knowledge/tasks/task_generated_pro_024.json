@@ -1,0 +1,223 @@
+{
+  "id": "task_generated_pro_024",
+  "description": {
+    "purpose": "Select and open the higher eligible savings-APY pairing from Jonah's two affordable shortlisted pairs, preserve savings-opening eligibility, and retire his empty mature checking account without a fee or agent funding.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “My transfer has cleared and my old checking account is empty. I'd like to replace it and start saving. Can you help me choose between two account pairings?”\n\nWhen asked for identity, give the requested details: Jonah Mercer, 34, independent event planner in Richmond, Virginia; DOB 04/09/1991; 1826 Floyd Avenue, Richmond, VA 23220; jonah.mercer@example.com; 804-555-0168.\n\nWhen asked about pairings, budget, or goals, explain: compare only Green savings/Evergreen checking and Silver Plus savings/Blue checking; choose one pair for its higher eligible savings APY, not unrelated perks or extra products. You have exactly $6,000 total, can reserve the checking fee-waiver balance, and want the remainder in one savings account for a year, with no additional committed money. You have no Rho-Bank credit card and will not open or apply for one.\n\nWhen asked about the existing account, funding, or statements, explain: your Light Blue checking has been open since November 2024; yesterday's $286.40 external transfer emptied it. You want it retired without a closure charge. You will fund externally after the call, do not authorize agent transfers, and accept paperless statements.\n\nYou do not know the rates, eligibility rules, or safe processing order. After identity verification, authorize the complete switch only when the agent names the recommended pair, explains relevant minimums and fees, and you recognize that it fits your plan. Do not knowingly authorize a replacement-checking-only plan or deferred savings as the completed service.\n\nFor any visibly incompatible proposal or unfinished outcome, withhold authorization or acceptance, restate the relevant preference, and ask the agent to check again. If an incompatible action has already happened, request correction and completion; if savings is missing, ask what can be done to resolve it. Remain uncertain about the cause rather than supplying policy explanations.\n\nAccept only after both agreed accounts are confirmed open with their details, the old account is confirmed closed without a fee, and your remaining self-funding deadline is explained, with every boundary intact. Then thank the agent briefly and end with:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "jm_8d41c7": {
+              "user_id": "jm_8d41c7",
+              "name": "Jonah Mercer",
+              "date_of_birth": "04/09/1991",
+              "address": "1826 Floyd Avenue, Richmond, VA 23220",
+              "email": "jonah.mercer@example.com",
+              "phone_number": "804-555-0168",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh fixture customer. Age 34 at the fixed operational date 11/14/2025. Occupation, external budget, preferences and consent are conversational facts, not invented user columns."
+        },
+        "accounts": {
+          "data": {
+            "chk_jm_72b9": {
+              "account_id": "chk_jm_72b9",
+              "user_id": "jm_8d41c7",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "account_type": "checking",
+              "account_class": "Light Blue Account",
+              "date_opened": "11/14/2024",
+              "status": "OPEN",
+              "current_holdings": "0.00"
+            }
+          },
+          "notes": "Exactly one supplied customer-owned account; sole mature active checking prerequisite. This is a patch, not table replacement. Downstream merged-state validation must find no additional Jonah-linked accounts and no collision with either new opening ID. New account IDs use adc00eeafb154348 and 92e62cd56c565d39 aliases; no new accounts are seeded."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_jm_4c28": {
+              "transaction_id": "txn_jm_4c28",
+              "account_id": "chk_jm_72b9",
+              "date": "11/13/2025",
+              "description": "CUSTOMER TRANSFER TO EXTERNAL BANK",
+              "amount": -286.4,
+              "type": "ach_transfer_out",
+              "status": "posted"
+            }
+          },
+          "notes": "The sole supplied old-account transaction is posted. Its history read establishes absence of pending transactions for closure, not a lifetime balance reconstruction. The account's zero current_holdings is authoritative. Validate no additional pending rows bind to this fresh account after merging."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No supplied credit-card accounts; no Jonah-owned credit-card accounts may exist in the merged fixture or be added. Unrelated default rows are preserved."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No applications supplied or authorized. No Jonah-named application may exist initially or be added."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty supplied audit fixture. Do not pre-seed verification or clear unrelated default rows. Require no Jonah verification collision, then one current-session log_verification with the fixed timestamp."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty invocation-support table. Availability comes from the catalog and unlocks, never seeded descriptors."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "g_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Jonah Mercer"
+        },
+        "info": "Unscored identity/ID discovery support. Match customer-provided DOB and address, and obtain the other matching identity fields."
+      },
+      {
+        "action_id": "g_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Unscored support; fixed return timestamp is 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "g_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Jonah Mercer",
+          "user_id": "jm_8d41c7",
+          "address": "1826 Floyd Avenue, Richmond, VA 23220",
+          "email": "jonah.mercer@example.com",
+          "phone_number": "804-555-0168",
+          "date_of_birth": "04/09/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Exactly one direct verification write after confirming at least DOB and address against the caller's responses."
+      },
+      {
+        "action_id": "g_unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Ephemeral support, not independently scored."
+      },
+      {
+        "action_id": "g_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"jm_8d41c7\"}"
+        },
+        "info": "Unscored support: supplies old ID, sole mature checking, product counts, account standing, zero balance and absence of Rho credit cards."
+      },
+      {
+        "action_id": "g_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        },
+        "info": "Ephemeral support."
+      },
+      {
+        "action_id": "g_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_jm_72b9\"}"
+        },
+        "info": "Unscored support necessary to establish no pending transactions for closure."
+      },
+      {
+        "action_id": "g_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        },
+        "info": "Ephemeral support."
+      },
+      {
+        "action_id": "g_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        },
+        "info": "Ephemeral support."
+      },
+      {
+        "action_id": "g_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"jm_8d41c7\",\"account_type\":\"savings\",\"account_class\":\"Green Account\"}"
+        },
+        "info": "PART 1. After comparison, relevant minimum/fee disclosure, paperless acceptance and informed consent to the complete pair. Mature checking remains OPEN. Bind returned ID as adc00eeafb154348. Funding declined; disclose $100 required opening funding within 30 days, by 12/14/2025, or closure. This is not a claimed execution result."
+      },
+      {
+        "action_id": "g_open_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"jm_8d41c7\",\"account_type\":\"checking\",\"account_class\":\"Evergreen Account\"}"
+        },
+        "info": "PART 1. Authorized same-profile checking; bind 92e62cd56c565d39. Both new accounts stay unfunded. No stored APY, linkage or paperless fields are invented."
+      },
+      {
+        "action_id": "g_close_old",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"chk_jm_72b9\",\"reason\":\"Customer requested replacement checking and savings pair\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "PART 2. Authorized fee-free retirement after both openings; no fee applies at 365 days and no waiver is requested."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_001",
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_checking_accounts_blue_account_001",
+    "doc_checking_accounts_blue_account_003",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_evergreen_account_002",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_green_account_(savings)_005",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_silver_plus_account_004",
+    "doc_savings_accounts_silver_plus_account_005"
+  ]
+}

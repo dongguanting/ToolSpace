@@ -1,0 +1,431 @@
+{
+  "id": "task_generated_pro_034",
+  "description": {
+    "purpose": "Reconcile a complete Evergreen ATM ledger using per-withdrawal percentage caps and floors, incorporate positive and negative discrepancies, and persist one exact net fee correction while preserving original activity.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Elena Park, a 55-year-old small-business bookkeeper in Austin, Texas. Be concise, concerned, and cooperative.\nBegin: \"Hi, some ATM fees in my November checking activity look higher than I expected. Could you review them and fix anything that was charged incorrectly?\"\nIf asked for identity details, provide only those requested: Elena Park; birth date April 18, 1970; 2816 Willow Bend Drive, Austin, TX 78745; phone 512-555-0148; email elena.park74@example.com. If asked which account, identify your Evergreen checking account. Answer verification questions naturally.\nIf asked about your concern, expected charges, or travel, say: \"I thought Evergreen capped ATM fees, but I may be remembering it wrong. These are my withdrawals, including my Montreal visit November 7–10; I need you to check the November charges.\" You do not know which fees are incorrect or what the correction should be. Do not supply rates, calculations, or an expected refund. If the agent explains the actual terms, acknowledge that you may have mixed them up and ask them to use those terms; ask for clarification if the explanation is unsupported.\nYou want the November bank ATM fee issue fully reviewed and any resulting correction applied to your existing Evergreen account, not just explained or replaced with future-use advice. Your cash withdrawals and ordinary purchases were authorized; you want bank fee errors corrected, not your legitimate activity reversed.\nIf offered advice alone, a product change, or an explicitly unfinished review or partial resolution, say: \"Please finish checking these charges and correct what is wrong on this account first.\" Do not authorize a substitute product action or accept an explicitly incomplete resolution.\nIf the agent proposes reversing authorized cash or purchases or treating them as fraud, say: \"Those withdrawals and purchases were mine. I only want the bank fee issue corrected.\" Withhold consent to those reversals or a fraud claim. If such an action already occurred, request that the visible mistake be corrected and do not accept closure until your legitimate activity is restored.\nOnly after answering verification questions and hearing the findings and a stated correction presented as addressing the full November bank fee review on your Evergreen account, authorize that scoped correction. Revise your uncertain belief after a grounded explanation. Do not independently diagnose hidden arithmetic or eligibility errors, and do not adopt a proposed action that conflicts with your boundaries.\nIf the agent says the correction was applied but omits the amount or balance, ask how much was credited to Evergreen and what the balance is now. Accept only after the agent confirms the review is complete, the correction has actually been applied to Evergreen, and the credited amount and resulting balance are stated, with no recognizable reversal of legitimate activity or unfinished correction remaining. A proposed amount alone is not completion. Do not add another issue or request escalation. Once these conditions hold, briefly thank the agent and end with exactly one stop marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_elena_park_74c": {
+              "user_id": "usr_elena_park_74c",
+              "name": "Elena Park",
+              "date_of_birth": "04/18/1970",
+              "address": "2816 Willow Bend Drive, Austin, TX 78745",
+              "phone_number": "512-555-0148",
+              "email": "elena.park74@example.com",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh caller identity; age 55 at the fixed banking clock. Narrative occupation is not a database field."
+        },
+        "accounts": {
+          "data": {
+            "chk_ep_evergreen_74c": {
+              "account_id": "chk_ep_evergreen_74c",
+              "user_id": "usr_elena_park_74c",
+              "class": "checking",
+              "account_class": "checking",
+              "account_type": "checking",
+              "level": "Evergreen Account",
+              "status": "OPEN",
+              "date_opened": "02/12/2021",
+              "current_holdings": "$5478.95",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Complete replacement accounts table for this task: exactly one initial account, with no unrelated default accounts. Opening balance before the supplied ledger was $6150.00."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Empty inventory for the account lookup; Elena has no credit card accounts."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "ep74_01": {
+              "transaction_id": "ep74_01",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/02/2025",
+              "type": "atm_withdrawal",
+              "amount": -160,
+              "status": "posted",
+              "description": "ATM WITHDRAWAL - RHO-BANK AUSTIN TX USA, IN-NETWORK, REF EP02"
+            },
+            "ep74_02": {
+              "transaction_id": "ep74_02",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/02/2025",
+              "type": "atm_fee",
+              "amount": -2,
+              "status": "posted",
+              "description": "RHO ATM WITHDRAWAL FEE - REF EP02, RHO-BANK AUSTIN TX USA"
+            },
+            "ep74_03": {
+              "transaction_id": "ep74_03",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/03/2025",
+              "type": "atm_withdrawal",
+              "amount": -70,
+              "status": "posted",
+              "description": "ATM WITHDRAWAL - CHASE AUSTIN TX USA, OUT-OF-NETWORK, REF EP03"
+            },
+            "ep74_04": {
+              "transaction_id": "ep74_04",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/03/2025",
+              "type": "atm_fee",
+              "amount": -0.7,
+              "status": "posted",
+              "description": "RHO OUT-OF-NETWORK ATM FEE - REF EP03"
+            },
+            "ep74_05": {
+              "transaction_id": "ep74_05",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/04/2025",
+              "type": "atm_withdrawal",
+              "amount": -250,
+              "status": "posted",
+              "description": "ATM WITHDRAWAL - WELLS FARGO AUSTIN TX USA, OUT-OF-NETWORK, REF EP04"
+            },
+            "ep74_06": {
+              "transaction_id": "ep74_06",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/04/2025",
+              "type": "atm_fee",
+              "amount": -2.5,
+              "status": "posted",
+              "description": "RHO OUT-OF-NETWORK ATM FEE - REF EP04"
+            },
+            "ep74_07": {
+              "transaction_id": "ep74_07",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/05/2025",
+              "type": "atm_withdrawal",
+              "amount": -480,
+              "status": "posted",
+              "description": "ATM WITHDRAWAL - INDEPENDENT ATM AUSTIN TX USA, OUT-OF-NETWORK, REF EP05"
+            },
+            "ep74_08": {
+              "transaction_id": "ep74_08",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/05/2025",
+              "type": "atm_fee",
+              "amount": -4.8,
+              "status": "posted",
+              "description": "RHO OUT-OF-NETWORK ATM FEE - REF EP05"
+            },
+            "ep74_09": {
+              "transaction_id": "ep74_09",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/05/2025",
+              "type": "atm_fee",
+              "amount": -3.25,
+              "status": "posted",
+              "description": "THIRD-PARTY ATM OPERATOR SURCHARGE - REF EP05; NOT A RHO FEE"
+            },
+            "ep74_10": {
+              "transaction_id": "ep74_10",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/06/2025",
+              "type": "atm_withdrawal",
+              "amount": -540,
+              "status": "posted",
+              "description": "ATM WITHDRAWAL - CHASE AUSTIN TX USA, OUT-OF-NETWORK, REF EP06"
+            },
+            "ep74_11": {
+              "transaction_id": "ep74_11",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/06/2025",
+              "type": "atm_fee",
+              "amount": -2.5,
+              "status": "posted",
+              "description": "RHO OUT-OF-NETWORK ATM FEE - REF EP06"
+            },
+            "ep74_12": {
+              "transaction_id": "ep74_12",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/07/2025",
+              "type": "atm_withdrawal",
+              "amount": -90,
+              "status": "posted",
+              "description": "FOREIGN ATM CASH WITHDRAWAL - RBC MONTREAL CANADA, OUT-OF-NETWORK, USD CASH EQUIVALENT, REF EP07"
+            },
+            "ep74_13": {
+              "transaction_id": "ep74_13",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/07/2025",
+              "type": "atm_fee",
+              "amount": -1.8,
+              "status": "posted",
+              "description": "RHO FOREIGN ATM WITHDRAWAL FEE - REF EP07"
+            },
+            "ep74_14": {
+              "transaction_id": "ep74_14",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/08/2025",
+              "type": "atm_withdrawal",
+              "amount": -150,
+              "status": "posted",
+              "description": "FOREIGN ATM CASH WITHDRAWAL - RBC MONTREAL CANADA, OUT-OF-NETWORK, USD CASH EQUIVALENT, REF EP08"
+            },
+            "ep74_15": {
+              "transaction_id": "ep74_15",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/08/2025",
+              "type": "atm_fee",
+              "amount": -3,
+              "status": "posted",
+              "description": "RHO FOREIGN ATM WITHDRAWAL FEE - REF EP08"
+            },
+            "ep74_16": {
+              "transaction_id": "ep74_16",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/09/2025",
+              "type": "atm_withdrawal",
+              "amount": -320,
+              "status": "posted",
+              "description": "FOREIGN ATM CASH WITHDRAWAL - INDEPENDENT ATM MONTREAL CANADA, OUT-OF-NETWORK, USD CASH EQUIVALENT, REF EP09"
+            },
+            "ep74_17": {
+              "transaction_id": "ep74_17",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/09/2025",
+              "type": "atm_fee",
+              "amount": -9.6,
+              "status": "posted",
+              "description": "RHO FOREIGN ATM WITHDRAWAL FEE - REF EP09"
+            },
+            "ep74_18": {
+              "transaction_id": "ep74_18",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/09/2025",
+              "type": "atm_fee",
+              "amount": -4.5,
+              "status": "posted",
+              "description": "THIRD-PARTY ATM OPERATOR SURCHARGE - REF EP09; NOT A RHO FEE"
+            },
+            "ep74_19": {
+              "transaction_id": "ep74_19",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/10/2025",
+              "type": "atm_withdrawal",
+              "amount": -120,
+              "status": "posted",
+              "description": "FOREIGN ATM CASH WITHDRAWAL - RBC MONTREAL CANADA, OUT-OF-NETWORK, USD CASH EQUIVALENT, REF EP10A"
+            },
+            "ep74_20": {
+              "transaction_id": "ep74_20",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/10/2025",
+              "type": "atm_fee",
+              "amount": -3,
+              "status": "posted",
+              "description": "RHO FOREIGN ATM WITHDRAWAL FEE - REF EP10A"
+            },
+            "ep74_21": {
+              "transaction_id": "ep74_21",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/10/2025",
+              "type": "atm_withdrawal",
+              "amount": -220,
+              "status": "posted",
+              "description": "FOREIGN ATM CASH WITHDRAWAL - BMO MONTREAL CANADA, OUT-OF-NETWORK, USD CASH EQUIVALENT, REF EP10B"
+            },
+            "ep74_22": {
+              "transaction_id": "ep74_22",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/10/2025",
+              "type": "atm_fee",
+              "amount": -4.4,
+              "status": "posted",
+              "description": "RHO FOREIGN ATM WITHDRAWAL FEE - REF EP10B"
+            },
+            "ep74_23": {
+              "transaction_id": "ep74_23",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/11/2025",
+              "type": "atm_withdrawal",
+              "amount": -200,
+              "status": "posted",
+              "description": "ATM WITHDRAWAL - RHO-BANK AUSTIN TX USA, IN-NETWORK, REF EP11"
+            },
+            "ep74_24": {
+              "transaction_id": "ep74_24",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/12/2025",
+              "type": "atm_withdrawal",
+              "amount": -140,
+              "status": "posted",
+              "description": "ATM WITHDRAWAL - CHASE AUSTIN TX USA, OUT-OF-NETWORK, REF EP12"
+            },
+            "ep74_25": {
+              "transaction_id": "ep74_25",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/01/2025",
+              "type": "direct_deposit",
+              "amount": 1850,
+              "status": "posted",
+              "description": "PAYROLL DIRECT DEPOSIT - LANTERN BOOKKEEPING"
+            },
+            "ep74_26": {
+              "transaction_id": "ep74_26",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/05/2025",
+              "type": "debit_card_purchase",
+              "amount": -73.45,
+              "status": "posted",
+              "description": "GROCERY PURCHASE - AUSTIN TX"
+            },
+            "ep74_27": {
+              "transaction_id": "ep74_27",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/12/2025",
+              "type": "bill_pay",
+              "amount": -96.8,
+              "status": "posted",
+              "description": "ELECTRIC UTILITY PAYMENT"
+            },
+            "ep74_28": {
+              "transaction_id": "ep74_28",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "11/13/2025",
+              "type": "ach_transfer_in",
+              "amount": 425,
+              "status": "posted",
+              "description": "HOUSEHOLD EXPENSE REIMBURSEMENT"
+            },
+            "ep74_29": {
+              "transaction_id": "ep74_29",
+              "account_id": "chk_ep_evergreen_74c",
+              "date": "10/24/2025",
+              "type": "fee_refund",
+              "amount": 6.25,
+              "status": "posted",
+              "description": "PRIOR RESOLVED FEE ADJUSTMENT - SEPTEMBER ACTIVITY"
+            }
+          },
+          "notes": "Complete replacement review inventory: 29 original posted rows, no other corrections or transactions in scope. Preserve all original rows. References and origin are descriptive business data, not calculated annotations."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be performed; no pre-existing audit record."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty operational telemetry. Tool availability comes from the catalog; telemetry is excluded from monetary evaluation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "ep74_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        },
+        "info": "Reference scaffolding to locate identity; not an independently scored read."
+      },
+      {
+        "action_id": "ep74_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Use the fixed banking clock for current-session verification."
+      },
+      {
+        "action_id": "ep74_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "usr_elena_park_74c",
+          "address": "2816 Willow Bend Drive, Austin, TX 78745",
+          "email": "elena.park74@example.com",
+          "phone_number": "512-555-0148",
+          "date_of_birth": "04/18/1970",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After confirming at least two identity fields with the caller. Procedural audit only, not an independent success criterion."
+      },
+      {
+        "action_id": "ep74_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "ep74_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_elena_park_74c\"}"
+        },
+        "info": "Bind the destination ID, checking class, ownership, and product; read telemetry is unscored."
+      },
+      {
+        "action_id": "ep74_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "ep74_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_ep_evergreen_74c\"}"
+        },
+        "info": "Evidence for signed reconciliation and prior-credit timing; not independently evaluated."
+      },
+      {
+        "action_id": "ep74_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829"
+        }
+      },
+      {
+        "action_id": "ep74_credit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"chk_ep_evergreen_74c\",\"amount\":4.90,\"credit_type\":\"fee_refund\"}"
+        },
+        "info": "After full reconciliation, explanation, and scoped consent. Sole evaluated monetary operation; compare persistent balance, new credit, and original-row preservation, not invocation telemetry."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_017",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_evergreen_account_002",
+    "doc_checking_accounts_evergreen_account_008"
+  ]
+}

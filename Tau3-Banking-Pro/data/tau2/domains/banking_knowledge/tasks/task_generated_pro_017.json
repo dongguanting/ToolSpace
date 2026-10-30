@@ -1,0 +1,239 @@
+{
+  "id": "task_generated_pro_017",
+  "description": {
+    "purpose": "Materialize Caleb Moreno's tenure-preserving migration to unfunded Gold savings and Blue checking, one customer-submitted pending Silver Rewards Card application, and closure of his emptied Light Blue checking account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin practical and mildly impatient: “My last transfer out has cleared and my Light Blue checking is empty. I'd like to close it and replace it with something more useful. I also want to set up savings for money I have at another bank.”\n\nWhen asked for identity or contact details, provide the requested facts: Caleb Moreno, 34, physical therapy assistant in Columbus, Ohio; DOB 03/09/1991; 728 East Maynard Avenue, Columbus, OH 43202; 614-555-0186; caleb.moreno@example.com. If asked about the cleared transfer, it was $1,836.40 to your own external account on November 13; your balance is now zero.\n\nWhen asked about products, functions, or savings plans, explain: you want one replacement checking account and one savings account, closing only the old Light Blue account. Your shortlist is Blue or Green checking, Gold or Silver Plus savings, and Bronze or Silver Rewards cards—not every bank product. Within that shortlist, prefer the higher supported savings return for your planned deposit, subject to your required functions and acceptance of the disclosed costs. Checking must offer linked-account overdraft transfers, savings must rebate out-of-network ATM fees, and the prospective card must have documented travel insurance for work trips. Optional setup later is fine; do not enroll overdraft protection now. You will deposit exactly $10,000 externally yourself into one savings account and leave it for a year without further deposits or withdrawals. Do not authorize money movement, splitting that allocation, payroll deposits into savings, or automatic round-ups during this call. You do not know the eligibility rules or exact rates.\n\nWhen asked about applying, income, credit history, or subscription, give annual income $68,200, latest personally reported credit score 712, and no Rho-Bank+. You pay balances in full and hold no Rho-Bank credit card. Personally submit just one application; a pending decision is acceptable, not an approved card or active benefit. Before submitting, establish the official card name, accurate personal details, income and subscription, credit-check consent, and conditional benefits; agree to provide requested underwriting documents.\n\nIf keeping the old checking open is proposed, ask why you cannot close it first. Accept postponement only after a practical explanation of how it protects the migration. Authorize the named account choices only after answering identity questions and understanding costs, required functions, and that explanation. Once a suitable arrangement is explained, ask to proceed and become reassured by progress. Submit your own application after the new deposit arrangement exists. Report its displayed status accurately when confirmation arrives and ask what remains. Authorize old-account closure only after both new accounts are confirmed open and the agent identifies Light Blue as the account to close.\n\nFor any recognizable mismatch with these boundaries or your confirmations, withhold consent, point out only that mismatch, and ask the agent to check again. If already done, request correction and do not accept it as resolved. If service still cannot be completed after clarification, ask for a human; do not escalate on success or diagnose hidden banking errors.\n\nAccept only when both selected deposit accounts are confirmed open, old Light Blue is confirmed closed, and you have your submitted application's actual-status confirmation. External funding, approval and activation, and optional overdraft next steps must be clear, with no unauthorized transfer or visibly incorrect outcome unresolved. Then thank the agent and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "cm_8f41d2a6": {
+              "user_id": "cm_8f41d2a6",
+              "name": "Caleb Moreno",
+              "date_of_birth": "03/09/1991",
+              "address": "728 East Maynard Avenue, Columbus, OH 43202",
+              "phone_number": "614-555-0186",
+              "email": "caleb.moreno@example.com",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh caller identity. Income, reported score, occupation and preferences are customer context in the instructions, not additional table fields. Initialization is a patch; validate key and identity uniqueness in the merged state."
+        },
+        "accounts": {
+          "data": {
+            "chk_cm_legacy_41": {
+              "account_id": "chk_cm_legacy_41",
+              "user_id": "cm_8f41d2a6",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "account_type": "checking",
+              "account_class": "Light Blue Account",
+              "date_opened": "10/01/2025",
+              "status": "OPEN",
+              "current_holdings": "0.00"
+            }
+          },
+          "notes": "Exactly one supplied customer-owned initial account. The effective merged Caleb-owned inventory must contain only this account initially, with no negative, collections or closed-for-cause accounts. Validate absence of both deterministic new-account keys before replay. No table replacement is asserted."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_cm_out_731": {
+              "transaction_id": "txn_cm_out_731",
+              "account_id": "chk_cm_legacy_41",
+              "date": "11/13/2025",
+              "description": "ACH TRANSFER TO OWN EXTERNAL ACCOUNT",
+              "amount": -1836.4,
+              "type": "ach_transfer_out",
+              "status": "posted"
+            }
+          },
+          "notes": "Service-review window, not lifetime ledger: settled outward transfer exhausted the prior $1836.40 balance. The authoritative current balance is zero. No pending transaction or hold exists for this account; validate the merged account-linked stream."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No issued card is supplied. Validate that no merged row belongs to cm_8f41d2a6. Preserve unrelated default rows; the application does not issue a card."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "Starts without authored applications. Validate absence of Caleb's applicant tuple in merged initial state. Capture the application_id returned by the single direct customer submission; do not fabricate its derivation."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty supplied session-audit fixture. Exactly one fresh direct log_verification is required after matching identity answers and get_current_time. Preserve unrelated merged verification rows; validate that no existing key prevents the fresh insertion."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "No seeded capability or CALLED rows. Catalog access is unlocked through session mechanics. Wrapper bookkeeping and all read-call telemetry are excluded from banking-outcome evaluation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "cm_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        },
+        "info": "Unscored identity lookup. Obtain matching DOB and address answers, or another valid pair, before verification."
+      },
+      {
+        "action_id": "cm_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Unscored support returning the fixed session timestamp."
+      },
+      {
+        "action_id": "cm_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "cm_8f41d2a6",
+          "address": "728 East Maynard Avenue, Columbus, OH 43202",
+          "email": "caleb.moreno@example.com",
+          "phone_number": "614-555-0186",
+          "date_of_birth": "03/09/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Sole current-session verification audit mutation."
+      },
+      {
+        "action_id": "cm_unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "cm_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"cm_8f41d2a6\"}"
+        },
+        "info": "Unscored complete-inventory scaffolding establishes ownership, tenure, account counts, standing and absence of held cards."
+      },
+      {
+        "action_id": "cm_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "cm_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_cm_legacy_41\"}"
+        },
+        "info": "Unscored closure-precondition scaffolding to establish no pending transactions; not a redundant balance confirmation."
+      },
+      {
+        "action_id": "cm_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "cm_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"cm_8f41d2a6\",\"account_type\":\"savings\",\"account_class\":\"Gold Account\"}"
+        },
+        "info": "After bounded comparison and informed consent, open savings while mature Light Blue remains OPEN. Bind returned account_id as 8abadca3ad07e832. External funding is deferred, not executed."
+      },
+      {
+        "action_id": "cm_open_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"cm_8f41d2a6\",\"account_type\":\"checking\",\"account_class\":\"Blue Account\"}"
+        },
+        "info": "Open the accepted replacement; bind returned account_id as 95d8a1d5aad54821. Does not enroll overdraft transfers."
+      },
+      {
+        "action_id": "cm_apply",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Silver Rewards Card",
+          "customer_name": "Caleb Moreno",
+          "annual_income": 68200,
+          "rho_bank_subscription": false
+        },
+        "info": "One direct customer application after consent to credit checking and conditional benefits. Bind its actual returned application_id to the unique applicant tuple; endpoint is PENDING, not approval."
+      },
+      {
+        "action_id": "cm_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "cm_close_old",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"chk_cm_legacy_41\",\"reason\":\"Customer requested replacement of old checking account\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "After both openings and closure consent, retire only Light Blue. Its 44-day age, zero balance and no pending transactions support fee-free closure without waiver."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_001",
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_checking_accounts_blue_account_003",
+    "doc_checking_accounts_blue_account_004",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_005",
+    "doc_credit_cards_silver_rewards_card_009",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_silver_plus_account_003",
+    "doc_savings_accounts_silver_plus_account_004",
+    "doc_savings_accounts_silver_plus_account_005",
+    "doc_savings_accounts_silver_plus_account_009"
+  ]
+}

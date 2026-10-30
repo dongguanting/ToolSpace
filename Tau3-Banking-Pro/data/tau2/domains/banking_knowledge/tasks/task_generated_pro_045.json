@@ -1,0 +1,356 @@
+{
+  "id": "task_generated_pro_045",
+  "description": {
+    "purpose": "Review nine November purchases across Priya Raman's four existing credit cards and submit the six genuine transaction-specific reward discrepancies for review without changing rewards or balances.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Priya Raman, a 27-year-old self-employed photographer in Sacramento, California. Your bookkeeper has just handed you a November activity printout. You are concerned but cooperative.\n\nOpen with: \"The November credit-card rewards on the printout I just received look uneven. Can you check all my cards for mistakes, whether they helped me or hurt me?\"\n\nOnly when asked for identification or contact information, provide the requested facts: Priya Raman; date of birth February 18, 1998; phone 916-555-0148; email priya.raman@example.com; address 1846 Cedar Grove Lane, Sacramento, CA 95818. Do not volunteer these details before a relevant question or invent additional personal information.\n\nIf asked about the cards, period, or why the rewards look odd, explain that the printout covers November 1–12, 2025, on Diamond Elite, Business Platinum Rewards, Business Silver Rewards, and EcoCard. Say you thought points worked the same way on the cards but may be mistaken. You need the agent to access and review the activity; you cannot provide an independently audited list. Do not invent rates, exceptions, error counts, or correct reward amounts. After a grounded explanation of the different reward systems, acknowledge and revise your assumption. If something conflicts with your visible facts, ask for clarification; do not claim to know an undisclosed policy answer.\n\nKeep your goal: a complete review of that period across all four cards, pursuing every genuine mistake in either direction without knowingly disputing correct rewards. The agent must identify the transactions and explain the findings; you can use a provided submission capability with help, but cannot do the investigation yourself.\n\nOnly after the agent presents discrepancies and offers submission assistance, ask to put every actual mismatch forward for review, including excess rewards. Before authorizing or performing any submission, require the agent to identify your own activity, explain that this concerns rewards rather than reversing valid purchases, and identify the affected card, merchant, date, and purchase amount for each proposed filing. You may rely on an explained transaction-specific finding and the corresponding identifier supplied by the agent; you do not independently know the policy calculation. Once these conditions hold, cooperate with the provided submission capability as directed, without intentionally submitting the same purchase twice.\n\nIf the agent proposes checking only selected cards, pursuing only missing rewards, disputing everything indiscriminately, or making you identify the errors yourself, say: \"I need help checking the whole printout, not just getting more rewards. Please identify the actual mistakes across the cards and help me send those for review.\" Do not authorize a knowingly partial, indiscriminate, or self-audit-dependent substitute. If such an action has already happened, ask the agent to complete or correct it before you accept the outcome. Use this shared response for visible omissions; do not diagnose hidden calculation errors or supply hints about exceptions.\n\nAccept and stop only after the agent confirms the whole period across all four cards has been accounted for, every identified mismatch has a successful submission confirmation, and no visible omission or unauthorized substitute remains. Understand that approval and any later reward correction are still pending. Instructions to submit alone are not completion. Until these conditions hold, ask for the outstanding help rather than closing. Once they hold, briefly thank the agent and acknowledge that the reward questions are awaiting review, then end with the following marker exactly once:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_pr_681": {
+              "user_id": "usr_pr_681",
+              "name": "Priya Raman",
+              "date_of_birth": "02/18/1998",
+              "address": "1846 Cedar Grove Lane, Sacramento, CA 95818",
+              "phone_number": "916-555-0148",
+              "email": "priya.raman@example.com"
+            }
+          },
+          "notes": "Fresh caller and sole owner of the four reviewed credit-card accounts. Age 27 at 11/14/2025; occupation is a persona fact, not a table field."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "pr_card_de": {
+              "account_id": "pr_card_de",
+              "user_id": "usr_pr_681",
+              "card_type": "Diamond Elite Card",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "date_of_account_open": "01/16/2023",
+              "credit_limit": "60000",
+              "current_balance": "286",
+              "past_due_amount": "0",
+              "reward_points": "1144"
+            },
+            "pr_card_bp": {
+              "account_id": "pr_card_bp",
+              "user_id": "usr_pr_681",
+              "card_type": "Business Platinum Rewards Card",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "date_of_account_open": "03/20/2023",
+              "credit_limit": "100000",
+              "current_balance": "478",
+              "past_due_amount": "0",
+              "reward_points": "1347"
+            },
+            "pr_card_bs": {
+              "account_id": "pr_card_bs",
+              "user_id": "usr_pr_681",
+              "card_type": "Business Silver Rewards Card",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "date_of_account_open": "06/12/2023",
+              "credit_limit": "25000",
+              "current_balance": "420",
+              "past_due_amount": "0",
+              "reward_points": "2580"
+            },
+            "pr_card_ec": {
+              "account_id": "pr_card_ec",
+              "user_id": "usr_pr_681",
+              "card_type": "EcoCard",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "date_of_account_open": "09/18/2023",
+              "credit_limit": "10000",
+              "current_balance": "340",
+              "past_due_amount": "0",
+              "reward_points": "572"
+            }
+          },
+          "notes": "Existing approved, activated accounts in good standing. No promotional reward rates or reward-posting delays apply. All opened in 2023, well before any first-month signup window. Balances and reward_points reconcile to the supplied purchases and must remain unchanged during review."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "pr_nov_104": {
+              "transaction_id": "pr_nov_104",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_de",
+              "credit_card_type": "Diamond Elite Card",
+              "transaction_date": "11/02/2025",
+              "merchant_name": "Lens & Light Studio Supply",
+              "category": "Shopping",
+              "transaction_amount": "286.00",
+              "rewards_earned": "1144",
+              "status": "COMPLETED"
+            },
+            "pr_nov_118": {
+              "transaction_id": "pr_nov_118",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_bp",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "11/03/2025",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "240.00",
+              "rewards_earned": "360",
+              "status": "COMPLETED"
+            },
+            "pr_nov_127": {
+              "transaction_id": "pr_nov_127",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_bp",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "11/04/2025",
+              "merchant_name": "Willow Media Agency",
+              "category": "Media Advertising",
+              "transaction_amount": "180.00",
+              "rewards_earned": "900",
+              "status": "COMPLETED"
+            },
+            "pr_nov_136": {
+              "transaction_id": "pr_nov_136",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "11/05/2025",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "240.00",
+              "rewards_earned": "2400",
+              "status": "COMPLETED"
+            },
+            "pr_nov_142": {
+              "transaction_id": "pr_nov_142",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_ec",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/06/2025",
+              "merchant_name": "EVgo",
+              "category": "EV Charging",
+              "transaction_amount": "42.00",
+              "rewards_earned": "42",
+              "status": "COMPLETED"
+            },
+            "pr_nov_151": {
+              "transaction_id": "pr_nov_151",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_ec",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/07/2025",
+              "merchant_name": "RivetCharge",
+              "category": "EV Charging",
+              "transaction_amount": "58.00",
+              "rewards_earned": "290",
+              "status": "COMPLETED"
+            },
+            "pr_nov_159": {
+              "transaction_id": "pr_nov_159",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "11/08/2025",
+              "merchant_name": "Willow Media Agency",
+              "category": "Media Advertising",
+              "transaction_amount": "180.00",
+              "rewards_earned": "180",
+              "status": "COMPLETED"
+            },
+            "pr_nov_168": {
+              "transaction_id": "pr_nov_168",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_bp",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "11/10/2025",
+              "merchant_name": "RivetCharge",
+              "category": "EV Charging",
+              "transaction_amount": "58.00",
+              "rewards_earned": "87",
+              "status": "COMPLETED"
+            },
+            "pr_nov_177": {
+              "transaction_id": "pr_nov_177",
+              "user_id": "usr_pr_681",
+              "credit_card_account_id": "pr_card_ec",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/12/2025",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "240.00",
+              "rewards_earned": "240",
+              "status": "COMPLETED"
+            }
+          },
+          "notes": "Complete November 1–12 review window for usr_pr_681. COMPLETED means posted and settled ordinary purchases, not pending authorizations. No returns, refunds, credits, fees, cash equivalents, balance transfers, signup bonuses, or promotions affect these records. Categories are merchant-submitted classifications. Microsoft entries are directly billed ordinary software purchases, not hardware or green purchases. Willow Media Agency entries are directly billed digital advertising coded Media Advertising, not consulting or production coded professional services. EVgo and RivetCharge identify the actual charging networks; RivetCharge is not an intermediary for any certified partner. Lens & Light Studio Supply is an eligible retail purchase. All rewards_earned values are points. Repeated merchants and amounts on different cards are distinct purchases."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "No pre-existing disputes. The six successful customer submissions create tool-generated dispute IDs; select outputs by customer and transaction rather than guessing IDs."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty operational delivery log. Tool availability comes from the catalog. Delivery telemetry is incidental."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Submission-only review workflow: auto-resolution is disabled and remains disabled."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Priya Raman",
+          "user_id": "usr_pr_681",
+          "address": "1846 Cedar Grove Lane, Sacramento, CA 95818",
+          "email": "priya.raman@example.com",
+          "phone_number": "916-555-0148",
+          "date_of_birth": "02/18/1998",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "pr_review_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        },
+        "info": "Reference scaffolding to discover the caller's ID after she supplies her name; not independently scored."
+      },
+      {
+        "action_id": "pr_review_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_pr_681"
+        },
+        "info": "Reference evidence for four-card scope, existing account dates and Diamond standing; not independently scored."
+      },
+      {
+        "action_id": "pr_review_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_pr_681"
+        },
+        "info": "Reference evidence for reward calculations and exact transaction bindings; not independently scored."
+      },
+      {
+        "action_id": "pr_review_give",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_pr_681\",\"transaction_id\":\"pr_nov_104\"}"
+        },
+        "info": "Provide the customer capability after explaining the findings and obtaining consent. Delivery is unscored setup."
+      },
+      {
+        "action_id": "pr_submit_104",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_pr_681\",\"transaction_id\":\"pr_nov_104\"}"
+        }
+      },
+      {
+        "action_id": "pr_submit_118",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_pr_681\",\"transaction_id\":\"pr_nov_118\"}"
+        }
+      },
+      {
+        "action_id": "pr_submit_127",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_pr_681\",\"transaction_id\":\"pr_nov_127\"}"
+        }
+      },
+      {
+        "action_id": "pr_submit_136",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_pr_681\",\"transaction_id\":\"pr_nov_136\"}"
+        }
+      },
+      {
+        "action_id": "pr_submit_142",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_pr_681\",\"transaction_id\":\"pr_nov_142\"}"
+        }
+      },
+      {
+        "action_id": "pr_submit_151",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_pr_681\",\"transaction_id\":\"pr_nov_151\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_diamond_elite_card_003",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_credit_cards_ecocard_002",
+    "doc_credit_cards_ecocard_004"
+  ]
+}

@@ -1,0 +1,7 @@
+.env
+.venv/
+.runtime/
+.embeddings_cache/
+outputs/
+__pycache__/
+*.py[cod]

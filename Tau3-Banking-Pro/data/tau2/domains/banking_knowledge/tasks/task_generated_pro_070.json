@@ -1,0 +1,312 @@
+{
+  "id": "task_generated_pro_070",
+  "description": {
+    "purpose": "Submit Maya Iqbal's dedicated Business Platinum Rewards Card application under accurate ordinary terms, then resolve the related personal Platinum Rewards Card closure request through verified, policy-compliant retention.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “My bookkeeping report says I have been mixing business and personal spending. I would like to apply for a dedicated business card for my photography work.” Do not mention the personal-card issue yet.\n\nIf asked about income, credit profile, business status, spending, or desired features, say that you are an established self-employed photographer earning $188,000 annually, with a personal credit score of 792 and a business PAYDEX score of 82. Explain that major expenses include airfare, hotels, editing software, cloud storage, and digital advertising, and that avoiding foreign transaction fees matters. You do not have a Rho-Bank+ subscription. Do not volunteer the later personal-card request at this stage.\n\nYou want exactly one Business Platinum Rewards Card application. You understand that you are already a Rho-Bank customer, do not qualify as a new customer, and would still apply under the ordinary $450 annual-fee terms. Before authorizing the application, make sure the agent identifies the Business Platinum Rewards Card, confirms the $188,000 income, and makes clear that the application is under ordinary terms rather than a new-customer waiver. If a different business card is proposed, say: “The travel, software, advertising, and international-purchase features are why I chose the Business Platinum card. Please continue with that card under the terms we discussed.” Do not authorize any other card type or any application representing you as a new customer.\n\nOnly after the agent confirms that the Business Platinum Rewards Card application has been submitted, say: “The same bookkeeping report also highlighted the upcoming annual fee on my personal Platinum card. Now that the business application is in, I want to close the personal card rather than convert it to a lower-tier card.”\n\nIf asked to verify your identity for the personal-card request, provide these details exactly: Maya Iqbal; date of birth 06/18/1971; 418 W Sycamore Street, Columbus, OH 43215; maya.iqbal.oh@example.com; +1-614-555-2847. Before authorizing any change to the personal card, require identity verification and a clear description of whether the proposed outcome keeps the card as Platinum and whether it is a one-time credit, downgrade, fee waiver, or closure.\n\nIf offered a personal Bronze Rewards Card downgrade, decline and say you do not want to replace the Platinum account with a lower-tier card; unless there is a worthwhile one-time offer for keeping the existing card, you still want to close it. Do not authorize a downgrade or another card product.\n\nIf offered a $50 one-time statement credit for keeping the personal Platinum card, accept and authorize that credit, provided the account remains open as a Platinum Rewards Card and neither a downgrade nor an annual-fee arrangement is substituted. After accepting the credit, do not authorize closure.\n\nIf the agent proposes or applies an annual-fee waiver instead of the one-time credit, say: “I do not authorize a change to how next year's annual fee is handled. Please reconsider whether there is a simple one-time offer for keeping my existing Platinum card.” Maya must not approve an annual-fee waiver, downgrade, closure, or any resolution that omits the accepted one-time statement credit. If a waiver was already applied, say: “I did not agree to that fee arrangement, I still do not see the one-time credit I accepted, and I need you to correct the remaining problem and complete the keep-the-card offer.” Do not claim to know any internal eligibility threshold or system flag.\n\nIf the agent tries to end the call while the personal card remains open without the accepted credit, or closes it after the credit was accepted, say: “The personal-card decision is not resolved as agreed. Please finish the outcome I accepted.” Before accepting the credit, leaving the card unchanged does not resolve the closure request; after accepting it, closure is not authorized.\n\nPreserve these commitments throughout: one accurate Business Platinum Rewards Card application under ordinary terms; closure of the personal Platinum card unless you accept the worthwhile one-time credit; and, after accepting that credit, keeping the existing Platinum card open without a downgrade or fee-waiver substitute.\n\nDo not accept the overall resolution until the Business Platinum Rewards Card application is confirmed submitted with the accurate $188,000 income and no claim of new-customer status, and the personal Platinum Rewards Card is confirmed open and unchanged with the accepted $50 credit applied and no downgrade or annual-fee waiver. If any condition is missing, ask for that outcome directly. Only after every condition is satisfied, respond briefly with thanks and exactly one stop marker: “Thank you, that resolves both parts. ###STOP###”"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_maya_iqbal_cbus_71f4": {
+              "user_id": "usr_maya_iqbal_cbus_71f4",
+              "name": "Maya Iqbal",
+              "date_of_birth": "06/18/1971",
+              "address": "418 W Sycamore Street, Columbus, OH 43215",
+              "email": "maya.iqbal.oh@example.com",
+              "phone_number": "+1-614-555-2847",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Authoritative customer identity. The MM/DD/YYYY date represents the supplied 1971-06-18 birth date and is used consistently for verification."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No application exists initially for Maya; the successful user action creates the Business Platinum Rewards Card application."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification audit table starts empty as required."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_maya_platinum_6041_8b2d": {
+              "account_id": "ccacct_maya_platinum_6041_8b2d",
+              "user_id": "usr_maya_iqbal_cbus_71f4",
+              "card_type": "Platinum Rewards Card",
+              "date_of_account_open": "05/20/2024",
+              "current_balance": "0.00",
+              "reward_points": "28640",
+              "credit_limit": "48000.00",
+              "card_last_4_digits": "6041",
+              "account_status": "open",
+              "status": "open",
+              "past_due_amount": "0.00"
+            }
+          },
+          "notes": "Maya's existing personal Platinum Rewards Card. It is open, over 60 days old, premium-tier by product policy, has a zero balance, and began her Rho-Bank relationship on 05/20/2024."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "cctxn_maya_archived_dispute_2d91": {
+              "transaction_id": "cctxn_maya_archived_dispute_2d91",
+              "user_id": "usr_maya_iqbal_cbus_71f4",
+              "credit_card_account_id": "ccacct_maya_platinum_6041_8b2d",
+              "credit_card_type": "Platinum Rewards Card",
+              "merchant_name": "Midwest Camera Supply",
+              "transaction_amount": "219.40",
+              "transaction_date": "08/12/2024",
+              "category": "photography_equipment",
+              "rewards_earned": "21.94",
+              "status": "posted"
+            }
+          },
+          "notes": "Historical posted purchase connected to the closed dispute. No retention credit exists initially."
+        },
+        "transaction_disputes": {
+          "data": {
+            "disp_maya_closed_camera_43ac": {
+              "dispute_id": "disp_maya_closed_camera_43ac",
+              "transaction_id": "cctxn_maya_archived_dispute_2d91",
+              "user_id": "usr_maya_iqbal_cbus_71f4",
+              "full_name": "Maya Iqbal",
+              "email": "maya.iqbal.oh@example.com",
+              "phone": "+1-614-555-2847",
+              "address": "418 W Sycamore Street, Columbus, OH 43215",
+              "card_last_4_digits": "6041",
+              "purchase_date": "08/12/2024",
+              "issue_noticed_date": "08/13/2024",
+              "submitted_at": "08/14/2024",
+              "dispute_reason": "duplicate_charge",
+              "contacted_merchant": true,
+              "partial_refund_amount": null,
+              "resolution_requested": "reverse_duplicate",
+              "card_action": "keep_open",
+              "eligible_for_provisional_credit": false,
+              "provisional_credit_given": false,
+              "status": "closed"
+            }
+          },
+          "notes": "One genuine closed historical dispute; there are no open or under_review disputes."
+        },
+        "credit_card_orders": {
+          "data": {
+            "ccorder_maya_delivered_6041_5e7c": {
+              "order_id": "ccorder_maya_delivered_6041_5e7c",
+              "user_id": "usr_maya_iqbal_cbus_71f4",
+              "credit_card_account_id": "ccacct_maya_platinum_6041_8b2d",
+              "order_date": "02/03/2025",
+              "expected_delivery": "02/10/2025",
+              "reason": "damaged",
+              "shipping_address": "418 W Sycamore Street, Columbus, OH 43215",
+              "expedited_shipping": false,
+              "status": "delivered"
+            }
+          },
+          "notes": "The only replacement order is final and delivered; no pending or shipped replacement exists."
+        },
+        "credit_card_closure_reasons": {
+          "data": {
+            "ccreason_maya_old_20241001_6c3e": {
+              "record_id": "ccreason_maya_old_20241001_6c3e",
+              "credit_card_account_id": "ccacct_maya_platinum_6041_8b2d",
+              "user_id": "usr_maya_iqbal_cbus_71f4",
+              "closure_reason": "not_using_card",
+              "logged_at": "10/01/2024",
+              "status": "logged"
+            }
+          },
+          "notes": "The sole initial closure-reason record is older than one year at the fixed time, so it does not suppress a new retention offer."
+        },
+        "credit_card_account_flags": {
+          "data": {},
+          "notes": "No annual-fee-waiver or other account flag exists initially."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discoverable-tool audit state starts empty; availability is supplied by the tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_maya_iqbal_cbus_71f4",
+          "address": "418 W Sycamore Street, Columbus, OH 43215",
+          "email": "maya.iqbal.oh@example.com",
+          "phone_number": "+1-614-555-2847",
+          "date_of_birth": "06/18/1971",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "gold_01_apply_business_platinum",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Business Platinum Rewards Card",
+          "customer_name": "Maya Iqbal",
+          "annual_income": 188000,
+          "rho_bank_subscription": false
+        }
+      },
+      {
+        "action_id": "gold_02_lookup_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        }
+      },
+      {
+        "action_id": "gold_03_lookup_personal_cards",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_maya_iqbal_cbus_71f4"
+        }
+      },
+      {
+        "action_id": "gold_04_get_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_06_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "gold_07_read_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_cbus_71f4\"}"
+        }
+      },
+      {
+        "action_id": "gold_08_unlock_replacement_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "gold_09_read_replacement_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_maya_platinum_6041_8b2d\"}"
+        }
+      },
+      {
+        "action_id": "gold_10_unlock_closure_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293"
+        }
+      },
+      {
+        "action_id": "gold_11_read_closure_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_maya_platinum_6041_8b2d\"}"
+        }
+      },
+      {
+        "action_id": "gold_12_unlock_log_reason",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "gold_13_log_annual_fee_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_maya_platinum_6041_8b2d\",\"user_id\":\"usr_maya_iqbal_cbus_71f4\",\"closure_reason\":\"annual_fee\"}"
+        }
+      },
+      {
+        "action_id": "gold_14_unlock_statement_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_statement_credit_8472"
+        }
+      },
+      {
+        "action_id": "gold_15_apply_retention_credit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_statement_credit_8472",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_cbus_71f4\",\"credit_card_account_id\":\"ccacct_maya_platinum_6041_8b2d\",\"amount\":50.0,\"reason\":\"retention_offer\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_platinum_rewards_card_001",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_business_credit_cards_business_platinum_rewards_card_008",
+    "doc_business_credit_cards_business_platinum_rewards_card_011",
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_credit_cards_credit_card_account_logistics_008",
+    "doc_credit_cards_credit_card_account_logistics_009",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_016",
+    "doc_credit_cards_credit_cards_(general)_017",
+    "doc_credit_cards_platinum_rewards_card_001"
+  ]
+}

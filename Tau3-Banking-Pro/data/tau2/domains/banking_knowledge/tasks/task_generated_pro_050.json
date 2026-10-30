@@ -1,0 +1,186 @@
+{
+  "id": "task_generated_pro_050",
+  "description": {
+    "purpose": "Compare sustainable savings returns within Marcus's shortlist, then open and immediately fund one savings account while preserving his existing checking account and household reserve.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Marcus Okafor, a 29-year-old restaurant manager living in Austin, Texas. You are practical, concise, and cooperative, but careful about keeping money for household bills separate from your inheritance. This conversation takes place on November 14, 2025.\n\nBegin with only: \"An inheritance payment just cleared into my checking account. Can you help me put it in the savings option that will earn me the most?\"\n\nWhen asked for identity or authentication information, provide the requested details accurately: your full name is Marcus Okafor; your date of birth is April 23, 1996; your address is 2418 Willow Bend Lane, Austin, Texas 78745; your email is marcus.okafor@example.net; your phone number is 512-555-0186. Answer the bank's authentication questions, but do not volunteer these details before a relevant question. Do not authorize account changes until you have supplied the requested identity details and completed the bank's authentication questions.\n\nWhen asked about the funds, current account, products you are considering, or savings preferences, explain that an $86,400 estate distribution cleared on November 13. Your Purple Account now shows $92,900, including that deposit, and $6,500 is reserved for household bills. Your checking account has been open since November 1, 2024. You have no other bank accounts or credit cards and no paid bank subscription. Your shortlist is Gold Account, Platinum Account, and Platinum Plus Account. You expect to leave the inheritance and its earnings in savings for a year without withdrawals. You cannot add money later. Give this coherent set of preferences in response to the relevant question, not in your opening. Say: \"I thought having enough for the opening deposit meant I could keep that account, but I may be mistaken.\"\n\nKeep your objective fixed: choose the shortlisted savings account with the greatest projected annual savings interest that you can maintain using only the inheritance; prestige and unrelated perks are not reasons to change your goal. Put all $86,400 in exactly one new personal savings account, never a split allocation. Keep your existing Purple Account open and unchanged as a product, with the $6,500 household reserve untouched. Do not add another checking account, any credit card, or a paid subscription, even if it could improve a quoted return. Finish opening and immediately funding the savings account during this call; advice alone or an unfunded account is not enough.\n\nYou do not initially know the correct account, the applicable relationship bonuses, the projected interest, or the bank's internal eligibility rules. Do not volunteer those answers or pretend to have calculated them. If the agent explains the distinction between opening and ongoing requirements with a grounded explanation, acknowledge that you may have misunderstood and ask which shortlisted account gives the best earnings without needing more money. If an explanation is unsupported or contradicts your visible balances, ask for clarification rather than simply agreeing.\n\nOnly after the agent explains the ongoing requirements and presents a supported comparison that respects your restrictions, acknowledge any correction to your belief and ask to open the suitable account and move the whole inheritance now. Before authorizing opening, require the agent to identify the proposed savings product and explain its suitability and comparison with your shortlist using the fixed inheritance amount and ongoing requirements. Before authorizing the transfer, confirm that the source is your existing Purple Account, the destination is the agreed new savings account, the amount is $86,400, and $6,500 will remain in checking. Authorize only a plan with one new savings account, no split, no future top-up, no checking change, and no additional credit or subscription product.\n\nIf the agent recommends a product for status, perks, or a headline rate without resolving whether you can maintain it, or offers a lower-earning eligible choice without a relevant explanation, say: \"I am choosing for the earnings on this money, and I cannot add more later. Can you compare what I can actually keep with this amount?\" Do not authorize a recommendation with an unresolved ongoing-balance issue or a substituted objective. If such an account has already been opened, ask the agent to revisit the choice and correct the problem before treating your request as complete.\n\nIf the agent proposes splitting the inheritance or leaving only part of it in the final savings allocation, say: \"I want the whole inheritance together in one savings account. Please find the best choice on that basis.\" Do not authorize a split or partial final allocation. If it has already happened, ask to have the inheritance brought together as originally requested and do not accept the result while it remains divided or incomplete.\n\nIf the agent proposes using your reserve, closing your Purple Account, or changing its product, say: \"That money is for household bills, and I need to keep my current checking account. Please leave both alone.\" Do not authorize any debit into the protected $6,500, a checking closure, or a checking product change. If already done, request restoration of your usable reserve and original checking arrangement before accepting completion.\n\nIf the agent promotes another checking account, a credit card, or a subscription, say: \"I do not want another product to manage. Please compare the savings choices using what I already have.\" Do not authorize any such addition, even if financially persuasive. If an unwanted addition has already occurred, ask the agent to address it and continue toward your original savings goal; do not accept completion while it remains unresolved.\n\nIf the agent tries to finish after advice, after opening an empty account, or after moving only part of the inheritance, say: \"I would like to finish this now. Has the whole inheritance actually reached the new savings account?\" Do not accept completion or stop while opening or full funding remains unfinished. Authorize only the previously agreed account and funding amount.\n\nDo not copy a proposed product, amount, allocation, or added service into your authorization if it conflicts with these commitments. Challenge mistakes using your fixed inheritance, visible balances, household needs, and stated preferences, not supposed knowledge of bank policy. If the agent corrects an error, de-escalate and continue without inventing another issue.\n\nAccept only when the agreed savings account is confirmed open in your name. Require confirmation that the full $86,400 is in that account now, not merely scheduled or waiting for a later deposit. Require confirmation that your existing Purple Account remains usable with $6,500 and that no excluded product or split allocation has been introduced. Do not accept or end while any of these conditions or any requested correction remains outstanding. Once all are satisfied, briefly thank the agent and end with exactly one stop marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "fresh_marcus_okafor_1005": {
+              "user_id": "fresh_marcus_okafor_1005",
+              "name": "Marcus Okafor",
+              "date_of_birth": "04/23/1996",
+              "address": "2418 Willow Bend Lane, Austin, Texas 78745",
+              "email": "marcus.okafor@example.net",
+              "phone_number": "512-555-0186",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh sole customer for this task. Age is 29 at the fixed environment date. Occupation and allocation preferences are user instructions, not database fields."
+        },
+        "accounts": {
+          "data": {
+            "fresh_mo_purple_6318": {
+              "account_id": "fresh_mo_purple_6318",
+              "user_id": "fresh_marcus_okafor_1005",
+              "class": "checking",
+              "level": "Purple Account",
+              "status": "OPEN",
+              "current_holdings": "92900.00",
+              "date_opened": "11/01/2024",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Marcus's only initial deposit account. Balance already includes the cleared inheritance and is available without holds. No initial savings, collections, or negative balances exist for this fresh customer."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "fresh_mo_estate_20251113": {
+              "transaction_id": "fresh_mo_estate_20251113",
+              "account_id": "fresh_mo_purple_6318",
+              "date": "11/13/2025",
+              "type": "deposit",
+              "amount": 86400.0,
+              "available_amount": 86400.0,
+              "hold_amount": 0.0,
+              "hold_release_date": null,
+              "status": "COMPLETED",
+              "description": "Estate distribution"
+            }
+          },
+          "notes": "Genuine pre-existing triggering deposit. The credit is already included in checking holdings and must not be added again. No transaction-history read or new transfer-history entry is required."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Starts empty. Successful current-session authentication creates the verification record using the exact fixed timestamp."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Marcus holds no credit cards, so card-dependent savings bonuses and minimum-balance exceptions do not apply."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No pre-existing application for Marcus; no new application is authorized."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Starts empty. Tool availability comes from the catalog; discovery and read-call telemetry are excluded from evaluated banking outcomes."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "golden_01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Reference lookup after Marcus supplies his name. Compare his requested authentication answers with the returned profile; this read is not an evaluated outcome."
+      },
+      {
+        "action_id": "golden_02",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns 2025-11-14 03:40:00 EST for the session verification timestamp."
+      },
+      {
+        "action_id": "golden_03",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "fresh_marcus_okafor_1005",
+          "address": "2418 Willow Bend Lane, Austin, Texas 78745",
+          "email": "marcus.okafor@example.net",
+          "phone_number": "512-555-0186",
+          "date_of_birth": "04/23/1996",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After Marcus accurately answers the date-of-birth and address questions, record current-session authentication. The remaining logged fields match his retrieved profile."
+      },
+      {
+        "action_id": "golden_04",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "golden_05",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"fresh_marcus_okafor_1005\"}"
+        },
+        "info": "Reference support for ownership, source ID, checking tenure, balances, account count, status, and absence of credit cards. Neither this read nor its telemetry is evaluated."
+      },
+      {
+        "action_id": "golden_06",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "golden_07",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"fresh_marcus_okafor_1005\",\"account_type\":\"savings\",\"account_class\":\"Platinum Account\"}"
+        },
+        "info": "After the supported shortlist comparison and Marcus's product confirmation, open the single selected savings account. Bind the returned account identifier for subsequent funding."
+      },
+      {
+        "action_id": "golden_08",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "golden_09",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"fresh_mo_purple_6318\",\"destination_account_id\":\"a2ac10f125ce8870\",\"amount\":86400.0}"
+        },
+        "info": "After Marcus confirms immediate funding from his Purple Account to the agreed new savings account, transfer the whole inheritance and preserve the $6,500 reserve."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_purple_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_platinum_account_001",
+    "doc_savings_accounts_platinum_plus_account_001",
+    "doc_savings_accounts_platinum_plus_account_002"
+  ]
+}

@@ -1,0 +1,346 @@
+{
+  "id": "task_generated_pro_023",
+  "description": {
+    "purpose": "Dispute Jonah Mercer's unauthorized family-member ATM withdrawal, freeze the affected debit card, and correct two related foreign-ATM fee overcharges.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Jonah Mercer, a 42-year-old small-business bookkeeper in Madison, Wisconsin. Begin concisely: “I found an ATM withdrawal on my Blue checking account that I didn't approve, and the bank's ATM fees from the same Canada activity look higher than I expected. Can you dispute the withdrawal and review those fees?” Do not initially provide identifiers, identity details, the family circumstances, fee formulas, or a desired credit amount.\n\nIf asked to verify your identity, provide your date of birth as 04/22/1983, address as 1847 Linden Grove Drive, Madison, WI 53704, email as jonah.mercer@northmail.example, and phone number as 608-555-0147. Answer the requested identity-verification questions before authorizing protected changes.\n\nIf asked who made the withdrawal, whether it was authorized, whether you suspect fraud, whether you possess the card, or whether the PIN was shared, explain that your adult son made the withdrawal without permission after you had previously shared the PIN for an authorized errand. You now have the physical card, do not suspect an unknown fraudster, and noticed the withdrawal on November 13. You thought having the card might mean it could remain usable, but you may be mistaken; if the agent explains that an unauthorized-use dispute requires a temporary protective lock, agree to that lock. Do not abandon the request to dispute the $180 withdrawal merely because your son used the card, and insist that further use of the affected card be prevented during the investigation. Do not authorize the dispute until the agent has identified the $180 Blue Account withdrawal and acknowledged that it was unauthorized family use after prior PIN sharing.\n\nIf asked about merchant contact, a police report, or a written statement, say that you have not contacted the ATM owner, have not filed a police report, and agree that this conversation may serve as your written statement.\n\nIf asked which fees, accounts, or travel activity are affected, say the Blue Account shows a $9 Rho-Bank foreign ATM fee beside the $180 Toronto foreign-currency withdrawal, while the Green Account shows an $8 Rho-Bank foreign ATM fee beside your legitimate $120 Toronto foreign-currency withdrawal. Say you do not know the exact correct fees and want the records reviewed. You want only the exact Rho-Bank foreign-fee overcharge on each account corrected, with no estimate, excess credit, or refund of the separate ATM-operator fee. Both the Blue and Green discrepancies must be resolved before you end the call. Withhold authorization for fee credits until the agent recognizes that the target lines are separate Rho-Bank foreign ATM fees on two different accounts and excludes the separate operator fee.\n\nIf the agent proposes leaving the withdrawal undisputed solely because you recognize your son, say: “I understand who used it, but I did not give permission for this withdrawal. Please check whether it can still be disputed on that basis.” Do not authorize closure of the issue without a filed dispute while the unauthorized withdrawal remains unresolved.\n\nIf the agent proposes filing the dispute while leaving the affected card fully usable, say: “I do not want another withdrawal to happen while this is being reviewed. Please make sure the affected card is temporarily secured.” Do not authorize a dispute resolution that knowingly leaves the affected card available for further use.\n\nIf the agent proposes credits based on ordinary domestic out-of-network rates, includes an operator fee, combines both corrections on one account, or leaves either account unresolved, say: “Those withdrawals were in foreign currency and the lines I am asking about say Rho-Bank foreign ATM fee. Please recheck each account separately before posting anything.” Jonah withholds authorization for fee credits until the agent distinguishes the two foreign bank-fee lines from any operator fee and identifies a separate correction for each account.\n\nIf the agent proposes or applies $7.20 to Blue and $5.00 to Green, or otherwise says ordinary out-of-network rates control, say: “These were foreign-currency withdrawals in Canada, and the fee lines say foreign ATM fee. Please check that detail again before I agree to those credits.” Jonah does not authorize any fee credit based on an ordinary domestic out-of-network schedule or any amount that includes the separate ATM-operator fee. If those credits have already been posted, Jonah says the entries still do not appear to match the foreign transactions and asks the agent to review and correct both account entries before ending the call.\n\nDo not accept the resolution or stop until the agent confirms that the $180 Blue Account withdrawal was disputed, the Blue card ending 6842 was temporarily locked, a separate exact Blue Account correction was completed, a separate exact Green Account correction was completed, and neither correction includes the separate operator fee. If any confirmation is missing, ask directly about it. Once every condition is satisfied, briefly thank the agent and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_jm_8f4c21": {
+              "user_id": "usr_jm_8f4c21",
+              "name": "Jonah Mercer",
+              "date_of_birth": "04/22/1983",
+              "email": "jonah.mercer@northmail.example",
+              "phone_number": "608-555-0147",
+              "address": "1847 Linden Grove Drive, Madison, WI 53704"
+            }
+          },
+          "notes": "Fresh customer identity for Jonah Mercer; occupation is intentionally represented only in scenario instructions because the users schema has no occupation field."
+        },
+        "accounts": {
+          "data": {
+            "acct_blue_jm_71c9": {
+              "account_id": "acct_blue_jm_71c9",
+              "user_id": "usr_jm_8f4c21",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "OPEN",
+              "date_opened": "03/18/2022",
+              "current_holdings": "2430.25"
+            },
+            "acct_green_jm_4de2": {
+              "account_id": "acct_green_jm_4de2",
+              "user_id": "usr_jm_8f4c21",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "status": "OPEN",
+              "date_opened": "06/07/2023",
+              "current_holdings": "1288.10"
+            }
+          },
+          "notes": "Two OPEN checking accounts owned by Jonah. Holdings are the starting balances before the two correction credits."
+        },
+        "debit_cards": {
+          "data": {
+            "card_blue_jm_6842_a9": {
+              "card_id": "card_blue_jm_6842_a9",
+              "account_id": "acct_blue_jm_71c9",
+              "user_id": "usr_jm_8f4c21",
+              "cardholder_name": "Jonah Mercer",
+              "cvv": "417",
+              "expiration_date": "08/29",
+              "issue_date": "03/22/2022",
+              "issue_reason": "first_card",
+              "last_4_digits": "6842",
+              "status": "ACTIVE",
+              "daily_atm_limit": 500,
+              "daily_atm_used": 180,
+              "international_enabled": true
+            },
+            "card_green_jm_2719_b6": {
+              "card_id": "card_green_jm_2719_b6",
+              "account_id": "acct_green_jm_4de2",
+              "user_id": "usr_jm_8f4c21",
+              "cardholder_name": "Jonah Mercer",
+              "cvv": "853",
+              "expiration_date": "04/29",
+              "issue_date": "06/12/2023",
+              "issue_reason": "first_card",
+              "last_4_digits": "2719",
+              "status": "ACTIVE",
+              "daily_atm_limit": 600,
+              "daily_atm_used": 120,
+              "international_enabled": true
+            }
+          },
+          "notes": "Active debit cards linked to the corresponding checking accounts. The Blue card is the affected card."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty so Jonah must be verified and logged during the current session."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_blue_atm_180_5c1a": {
+              "transaction_id": "txn_blue_atm_180_5c1a",
+              "account_id": "acct_blue_jm_71c9",
+              "date": "11/08/2025",
+              "description": "MAPLE CASH ATM TORONTO CA — NON-RHO-BANK ATM — FOREIGN-CURRENCY CASH WITHDRAWAL, USD EQUIVALENT $180.00",
+              "amount": -180,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "txn_blue_rho_fee_900_2bd4": {
+              "transaction_id": "txn_blue_rho_fee_900_2bd4",
+              "account_id": "acct_blue_jm_71c9",
+              "date": "11/09/2025",
+              "description": "RHO-BANK FOREIGN ATM FEE — FOREIGN-CURRENCY WITHDRAWAL txn_blue_atm_180_5c1a",
+              "amount": -9,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "txn_blue_operator_325_f18e": {
+              "transaction_id": "txn_blue_operator_325_f18e",
+              "account_id": "acct_blue_jm_71c9",
+              "date": "11/08/2025",
+              "description": "MAPLE CASH ATM OPERATOR SURCHARGE — THIRD-PARTY OPERATOR FEE, NOT RHO-BANK",
+              "amount": -3.25,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "txn_green_atm_120_8a73": {
+              "transaction_id": "txn_green_atm_120_8a73",
+              "account_id": "acct_green_jm_4de2",
+              "date": "11/10/2025",
+              "description": "SUCCESSFUL MAPLE CASH ATM TORONTO CA — FOREIGN-CURRENCY CASH WITHDRAWAL, USD EQUIVALENT $120.00",
+              "amount": -120,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "txn_green_rho_fee_800_76d1": {
+              "transaction_id": "txn_green_rho_fee_800_76d1",
+              "account_id": "acct_green_jm_4de2",
+              "date": "11/11/2025",
+              "description": "RHO-BANK FOREIGN ATM FEE — FOREIGN-CURRENCY WITHDRAWAL txn_green_atm_120_8a73",
+              "amount": -8,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "txn_green_purchase_2640_c03f": {
+              "transaction_id": "txn_green_purchase_2640_c03f",
+              "account_id": "acct_green_jm_4de2",
+              "date": "11/12/2025",
+              "description": "CAPITOL GROCER MADISON WI — UNRELATED DEBIT CARD PURCHASE",
+              "amount": -26.4,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            }
+          },
+          "notes": "The target withdrawals and Rho-Bank fee lines are explicit and adjacent in time. The Maple Cash operator surcharge and grocery purchase are distractors. No fee_refund appears in the preceding 14 days."
+        },
+        "debit_card_disputes": {
+          "data": {},
+          "notes": "Initially empty: no duplicate dispute exists and the Blue Account has zero open debit-card disputes."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational call telemetry starts empty; discoverable capability availability comes from the environment tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity",
+        "name": "get_user_information_by_name",
+        "requestor": "assistant",
+        "arguments": {
+          "customer_name": "Jonah Mercer"
+        }
+      },
+      {
+        "action_id": "repair_clock",
+        "name": "get_current_time",
+        "requestor": "assistant",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_auth_log",
+        "name": "log_verification",
+        "requestor": "assistant",
+        "arguments": {
+          "name": "Jonah Mercer",
+          "user_id": "usr_jm_8f4c21",
+          "address": "1847 Linden Grove Drive, Madison, WI 53704",
+          "email": "jonah.mercer@northmail.example",
+          "phone_number": "608-555-0147",
+          "date_of_birth": "04/22/1983",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_lookup_user",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Jonah Mercer"
+        }
+      },
+      {
+        "action_id": "act_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_jm_8f4c21\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_read_blue_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_blue_jm_71c9\"}"
+        }
+      },
+      {
+        "action_id": "act_read_green_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_green_jm_4de2\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_cards",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "act_read_blue_cards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_blue_jm_71c9\"}"
+        }
+      },
+      {
+        "action_id": "act_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_unlock_dispute",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281"
+        }
+      },
+      {
+        "action_id": "act_file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_blue_atm_180_5c1a\",\"account_id\":\"acct_blue_jm_71c9\",\"card_id\":\"card_blue_jm_6842_a9\",\"user_id\":\"usr_jm_8f4c21\",\"dispute_category\":\"unauthorized_transaction\",\"transaction_date\":\"11/08/2025\",\"discovery_date\":\"11/13/2025\",\"disputed_amount\":180.0,\"transaction_type\":\"atm_withdrawal\",\"card_in_possession\":true,\"pin_compromised\":\"yes_shared\",\"contacted_merchant\":false,\"police_report_filed\":false,\"written_statement_provided\":true,\"provisional_credit_eligible\":false,\"customer_max_liability_amount\":50.0,\"card_action\":\"freeze_pending_investigation\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_freeze",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "freeze_debit_card_3892"
+        }
+      },
+      {
+        "action_id": "act_freeze_blue_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "freeze_debit_card_3892",
+          "arguments": "{\"card_id\":\"card_blue_jm_6842_a9\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829"
+        }
+      },
+      {
+        "action_id": "act_credit_blue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_blue_jm_71c9\",\"amount\":3.6,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "act_credit_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_green_jm_4de2\",\"amount\":3.0,\"credit_type\":\"fee_refund\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_017",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_028",
+    "doc_bank_accounts_bank_accounts_(general)_031",
+    "doc_bank_accounts_bank_accounts_(general)_032",
+    "doc_bank_accounts_bank_accounts_(general)_033",
+    "doc_bank_accounts_bank_accounts_(general)_037",
+    "doc_checking_accounts_blue_account_001",
+    "doc_checking_accounts_blue_account_012",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_green_account_(checking)_012"
+  ]
+}

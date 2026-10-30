@@ -1,0 +1,385 @@
+{
+  "id": "task_generated_pro_040",
+  "description": {
+    "purpose": "Reconcile October rewards across Leila Haddad's four existing credit cards and submit all seven genuine discrepancies for pending review without changing rewards or balances.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Leila Haddad, a 27-year-old restaurant manager in Madison, Wisconsin, managing your family's restaurant. Begin: “My October reward summary arrived, and something looks off. Could you check the rewards across my cards, including anything that might be too high as well as too low?”\n\nIf asked for identity or contact information, provide only the requested facts: name Leila Haddad, date of birth April 17, 1998, address 418 Willow Bend Lane, Apt 3, Madison, WI 53703, phone 608-555-0146, email leila.haddad@example.com. Do not invent other verification information.\n\nIf asked which cards, which period, or about accessing individual transactions, explain that the period is October 2025 and the cards are Diamond Elite, Business Platinum Rewards, Business Silver Rewards, and EcoCard. Transaction screens are difficult for you. You need the agent to investigate the records; you can follow a supplied submission capability but cannot independently locate and diagnose the errors. Do not volunteer these details before a relevant question.\n\nYour goal remains an accurate October reconciliation across all four existing cards, including excess rewards, not a larger payout or a substitute benefit. You do not know the exact errors, their count, the reward rates, category rules, or refund calculations. If asked to diagnose them, say you are not sure and ask the agent to work from the records. Do not infer policy from merchant names or supply calculations or internal identifiers you have not learned from the agent.\n\nOnce the agent identifies a discrepancy and explains submitting it for review, ask to put the actual errors through for review, including any that favored you. Use the provided submission capability as guided, using the identifiers supplied for your own transactions. Authorize a submission only after the agent associates it with your own card and a recognizable transaction and explains why it appears discrepant; you may rely on the agent's policy analysis.\n\nIf the agent proposes reviewing only missing rewards or one card, filing indiscriminately, offering a bonus or another card instead, or leaving you to find the errors yourself, respond: “I need help checking the whole October summary, not just getting more rewards. Please finish that review and help me submit the actual errors.” Do not authorize blanket submissions or an unrelated substitute service. If an incomplete action has already happened, request completion rather than accepting it; if an unauthorized substitute was added, ask the agent to address it and return to your original request. Keep the same consent and completion requirements. Challenge only visibly incomplete scope, an unauthorized substitute, or a reported failure to submit; do not pretend to recognize hidden policy mistakes.\n\nAccept and stop only after the agent confirms that the October review covered all four cards and every identified discrepancy, including excess rewards, has been submitted, with submission confirmations available and review clearly still pending. If a portion is unfinished, ask for it to be completed. Once these conditions hold, briefly thank the agent, acknowledge that review is pending, and end with the following marker exactly once:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_leila_haddad_251114": {
+              "user_id": "usr_leila_haddad_251114",
+              "name": "Leila Haddad",
+              "date_of_birth": "04/17/1998",
+              "address": "418 Willow Bend Lane, Apt 3, Madison, WI 53703",
+              "phone_number": "608-555-0146",
+              "email": "leila.haddad@example.com",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh caller, age 27 at 11/14/2025; sole owner of the four existing cards."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_lh25_diamond": {
+              "account_id": "cc_lh25_diamond",
+              "user_id": "usr_leila_haddad_251114",
+              "card_type": "Diamond Elite Card",
+              "date_of_account_open": "06/15/2022",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$60000.00",
+              "current_balance": "$186.00",
+              "reward_points": "186 points"
+            },
+            "cc_lh25_business_platinum": {
+              "account_id": "cc_lh25_business_platinum",
+              "user_id": "usr_leila_haddad_251114",
+              "card_type": "Business Platinum Rewards Card",
+              "date_of_account_open": "08/10/2022",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$85000.00",
+              "current_balance": "$1060.00",
+              "reward_points": "1500 points"
+            },
+            "cc_lh25_business_silver": {
+              "account_id": "cc_lh25_business_silver",
+              "user_id": "usr_leila_haddad_251114",
+              "card_type": "Business Silver Rewards Card",
+              "date_of_account_open": "03/21/2023",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$25000.00",
+              "current_balance": "$390.00",
+              "reward_points": "3900 points"
+            },
+            "cc_lh25_eco": {
+              "account_id": "cc_lh25_eco",
+              "user_id": "usr_leila_haddad_251114",
+              "card_type": "EcoCard",
+              "date_of_account_open": "09/12/2023",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$7500.00",
+              "current_balance": "$110.00",
+              "reward_points": "646 points"
+            }
+          },
+          "notes": "Longstanding accounts, not applications. Balances and reward balances equal the recorded October transaction sums; no earlier unredeemed rewards. Opening dates make the Silver new-account promotion and EcoCard first-month offer inactive. Last-four fields are unnecessary and omitted."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "LH25-D1": {
+              "transaction_id": "LH25-D1",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_diamond",
+              "credit_card_type": "Diamond Elite Card",
+              "transaction_date": "10/04/2025",
+              "merchant_name": "Juniper Kitchenware",
+              "category": "Shopping",
+              "transaction_amount": "$186.00",
+              "rewards_earned": "186 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted ordinary eligible merchant purchase; no return, credit, or promotion."
+            },
+            "LH25-P1": {
+              "transaction_id": "LH25-P1",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_business_platinum",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/07/2025",
+              "merchant_name": "Navan",
+              "category": "Travel",
+              "transaction_amount": "$236.00",
+              "rewards_earned": "354 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted merchant purchase submitted under Travel; gross amount retained. Partial refund recorded separately as LH25-PC; no other return, credit, or promotion. Separate purchase from LH25-S1."
+            },
+            "LH25-P2": {
+              "transaction_id": "LH25-P2",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_business_platinum",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/12/2025",
+              "merchant_name": "Balance transfer from external issuer",
+              "category": "Balance Transfer",
+              "transaction_amount": "$860.00",
+              "rewards_earned": "1290 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted balance transfer, not a merchant purchase; no return, credit, or promotion."
+            },
+            "LH25-PC": {
+              "transaction_id": "LH25-PC",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_business_platinum",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/10/2025",
+              "merchant_name": "Navan",
+              "category": "Travel",
+              "transaction_amount": "$-36.00",
+              "rewards_earned": "-144 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted partial refund of LH25-P1; original purchase remains recorded at its gross amount. Merchant-submitted Travel category; no promotional adjustment."
+            },
+            "LH25-S1": {
+              "transaction_id": "LH25-S1",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_business_silver",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/07/2025",
+              "merchant_name": "Navan",
+              "category": "Travel",
+              "transaction_amount": "$236.00",
+              "rewards_earned": "2360 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted purchase billed by Navan under merchant-submitted Travel category. Separate purchase from LH25-P1 on Business Platinum; no return, credit, or promotion."
+            },
+            "LH25-SC": {
+              "transaction_id": "LH25-SC",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_business_silver",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/16/2025",
+              "merchant_name": "Suppertime Scheduling SaaS",
+              "category": "Software",
+              "transaction_amount": "$154.00",
+              "rewards_earned": "1540 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted online subscription billed directly by the software service provider under merchant-submitted Software category; no return, credit, or promotional adjustment."
+            },
+            "LH25-E1": {
+              "transaction_id": "LH25-E1",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_eco",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/18/2025",
+              "merchant_name": "Blink",
+              "category": "EV Charging",
+              "transaction_amount": "$38.00",
+              "rewards_earned": "190 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted EV charging session on the Blink network; merchant-submitted EV Charging category; no return, credit, or promotion."
+            },
+            "LH25-E2": {
+              "transaction_id": "LH25-E2",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_eco",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/20/2025",
+              "merchant_name": "Amazon",
+              "category": "Shopping",
+              "transaction_amount": "$72.00",
+              "rewards_earned": "360 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted online marketplace order for eco-labeled household goods; processed and billed by Amazon under merchant-submitted Shopping category; no return, credit, or promotion."
+            },
+            "LH25-EC": {
+              "transaction_id": "LH25-EC",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_eco",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/22/2025",
+              "merchant_name": "ChargePoint",
+              "category": "EV Charging",
+              "transaction_amount": "$24.00",
+              "rewards_earned": "120 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted EV charging session on the ChargePoint network; merchant-submitted EV Charging category. Original gross purchase and reward credit retained; full refund separately recorded as LH25-E3. No other return, credit, or promotion."
+            },
+            "LH25-E3": {
+              "transaction_id": "LH25-E3",
+              "user_id": "usr_leila_haddad_251114",
+              "credit_card_account_id": "cc_lh25_eco",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/25/2025",
+              "merchant_name": "ChargePoint",
+              "category": "EV Charging",
+              "transaction_amount": "$-24.00",
+              "rewards_earned": "-24 points",
+              "status": "COMPLETED",
+              "credit_reason": "Posted full refund of LH25-EC; original transaction remains recorded with its original reward credit. ChargePoint network, merchant-submitted EV Charging category; no promotional adjustment."
+            }
+          },
+          "notes": "Exactly ten posted October entries: seven errors and three controls. Categories are submitted merchant categories. Negative records preserve explicit refund links. No additional unrecorded refunds or promotional rewards."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Initially empty. Submission results supply dispute identifiers; do not predict their derivation."
+        },
+        "task_config": {
+          "data": {},
+          "notes": "Absent dispute_settings leaves auto_resolve_disputes at the documented false default. Keep empty."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty operational access bookkeeping; availability comes from the catalog and give operation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Leila Haddad",
+          "user_id": "usr_leila_haddad_251114",
+          "address": "418 Willow Bend Lane, Apt 3, Madison, WI 53703",
+          "email": "leila.haddad@example.com",
+          "phone_number": "608-555-0146",
+          "date_of_birth": "04/17/1998",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "lh25_find_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Support only: obtain the caller's identifier after she supplies her name."
+      },
+      {
+        "action_id": "lh25_read_cards",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_leila_haddad_251114"
+        },
+        "info": "Support only: establish product holdings, longstanding opening dates, and recorded reward totals."
+      },
+      {
+        "action_id": "lh25_read_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_leila_haddad_251114"
+        },
+        "info": "Support only: obtain transaction identifiers and evidence for the four product calculations."
+      },
+      {
+        "action_id": "lh25_give_submission",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_251114\",\"transaction_id\":\"LH25-D1\"}"
+        },
+        "info": "Provide the submission capability after explaining findings. Access bookkeeping is not an independent banking outcome."
+      },
+      {
+        "action_id": "lh25_submit_d1",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_251114\",\"transaction_id\":\"LH25-D1\"}"
+        }
+      },
+      {
+        "action_id": "lh25_submit_p1",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_251114\",\"transaction_id\":\"LH25-P1\"}"
+        }
+      },
+      {
+        "action_id": "lh25_submit_p2",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_251114\",\"transaction_id\":\"LH25-P2\"}"
+        }
+      },
+      {
+        "action_id": "lh25_submit_s1",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_251114\",\"transaction_id\":\"LH25-S1\"}"
+        }
+      },
+      {
+        "action_id": "lh25_submit_e1",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_251114\",\"transaction_id\":\"LH25-E1\"}"
+        }
+      },
+      {
+        "action_id": "lh25_submit_e2",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_251114\",\"transaction_id\":\"LH25-E2\"}"
+        }
+      },
+      {
+        "action_id": "lh25_submit_e3",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_251114\",\"transaction_id\":\"LH25-E3\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_diamond_elite_card_003",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_credit_cards_ecocard_002",
+    "doc_credit_cards_ecocard_004"
+  ]
+}

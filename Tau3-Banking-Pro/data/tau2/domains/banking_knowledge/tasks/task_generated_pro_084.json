@@ -1,0 +1,280 @@
+{
+  "id": "task_generated_pro_084",
+  "description": {
+    "purpose": "Advance an eligible goods-not-received provisional-credit issue to human assistance and submit exactly one suitable savings-linked credit-card application while preserving Marcus Okafor's existing accounts.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I just got confirmation that an order on my credit card is not going to arrive. I already disputed it—can you help with temporary credit while it is being reviewed?” Do not initially mention the savings account, candidate cards, eligibility thresholds, or a preferred card.\n\nIf asked to identify yourself or provide verification or contact details, say that you are Marcus Okafor and provide only the requested fields: date of birth April 19, 1991; 1847 Alder Grove Lane, Sacramento, CA 95818; marcus.okafor@example.com; and 916-555-0148.\n\nIf asked about the purchase, dispute, card, reason, or merchant contact, identify the $1,180 Northstar Office Supply purchase dated September 30 on the Silver Rewards card ending 4627. Explain that you made the purchase yourself, the goods never arrived, and the merchant confirmed on November 14 that they will not be delivered. Do not claim to know the bank's internal eligibility thresholds or dispute-count calculation.\n\nOnly after the agent says that the dispute qualifies for temporary-credit handling or that specialist assistance is needed because temporary credit cannot be issued in this channel, introduce the related second request. Explain that the failed purchase has made you reluctant to rely on that card for upcoming purchases and ask for one suitable new card that complements your existing Silver Plus savings account. Say that you want to keep mailed statements available, will accept an annual fee no higher than $50, do not want a minimum credit-score requirement, and want the strongest documented Silver Plus-linked bonus among the compared cards.\n\nDo not abandon the unresolved temporary-credit request merely because this channel cannot issue the credit. If the agent proposes ending the interaction while no temporary credit has been received and no handoff has been arranged, say: “The temporary-credit issue is still unresolved, so please arrange for someone who can continue handling it.” Do not accept closure of the interaction or authorize abandonment of the dispute request until a handoff is recognizable.\n\nKeep the active Silver Rewards card and existing Silver Plus savings account unchanged. If the agent proposes treating the purchase as unauthorized fraud, closing or replacing the card, or reporting it stolen, say: “I made the purchase and I still have the card; the problem is that the merchandise was not delivered. Please reconsider that card action.” Do not authorize closure, replacement, freezing, or a stolen-card report for this non-delivery dispute.\n\nKeep your existing Silver Plus account and mailed statements. Do not agree to Green, Gold, or another new savings account. If a recommendation relies on unrelated purchase rewards, a higher base savings rate, or another metric without addressing your fee ceiling, statement delivery, score requirement, and Silver Plus-linked bonus, say: “That does not yet address the features I asked for. Please compare the cards using my existing Silver Plus account, mailed statements, the $50 fee ceiling, no minimum-score requirement, and the Silver Plus-linked bonus.” Do not authorize a card application until one proposed card is shown to meet all of those constraints.\n\nAuthorize exactly one card application and no savings-account opening, split strategy, or additional card. If multiple applications or products are proposed, say: “No, I want to keep my current savings account and submit only one card application.” Authorize no more than one credit-card application and no savings-account opening.\n\nBefore agreeing to the handoff, ensure the agent has identified this as the goods-not-received dispute, acknowledged that the merchant was contacted, and established that temporary credit has not been issued through the current channel. Before agreeing to an application, ensure the agent identifies one card with an annual fee no higher than $50, no minimum credit-score requirement, and the largest documented Silver Plus-linked bonus among the compared candidates. When the agent identifies EcoCard, states its $50 annual fee, and asks for permission, explicitly agree to one application in the name Marcus Okafor using annual income of $78,000 and no Rho-Bank+ subscription.\n\nDo not accept the overall resolution until you receive recognizable confirmation that exactly one EcoCard application was submitted and no competing card application was submitted; that human assistance was requested for the still-uncredited temporary-credit issue; and that nothing indicates the existing Silver Rewards card or Silver Plus savings account was closed, replaced, or changed. If any one of these outcomes is missing, ask for that missing outcome and continue. After all of them are satisfied, thank the agent briefly and end with exactly one ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_mok_91a7c3": {
+              "user_id": "usr_mok_91a7c3",
+              "name": "Marcus Okafor",
+              "date_of_birth": "04/19/1991",
+              "address": "1847 Alder Grove Lane, Sacramento, CA 95818",
+              "email": "marcus.okafor@example.com",
+              "phone_number": "916-555-0148",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Marcus Okafor is the sole relevant customer. He is a 34-year-old software support specialist living in Sacramento, California."
+        },
+        "accounts": {
+          "data": {
+            "sav_silverplus_mok_4f28bd": {
+              "account_id": "sav_silverplus_mok_4f28bd",
+              "user_id": "usr_mok_91a7c3",
+              "class": "savings",
+              "level": "Silver Plus Account",
+              "current_holdings": "8400",
+              "date_opened": "02/10/2023",
+              "status": "active"
+            }
+          },
+          "notes": "Marcus's existing Silver Plus savings account is active and must remain unchanged."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cca_silver_mok_4627_d31e8a": {
+              "account_id": "cca_silver_mok_4627_d31e8a",
+              "user_id": "usr_mok_91a7c3",
+              "card_type": "Silver Rewards Card",
+              "current_balance": "1180",
+              "reward_points": "6420",
+              "date_of_account_open": "06/01/2025",
+              "account_status": "active",
+              "status": "active",
+              "card_last_4_digits": "4627",
+              "credit_limit": "15000",
+              "past_due_amount": "0"
+            }
+          },
+          "notes": "The active Silver Rewards card is possessed by Marcus and must not be closed, replaced, frozen, or reported stolen."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_northstar_1180_7c42ef": {
+              "transaction_id": "txn_northstar_1180_7c42ef",
+              "user_id": "usr_mok_91a7c3",
+              "credit_card_account_id": "cca_silver_mok_4627_d31e8a",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Northstar Office Supply",
+              "transaction_amount": "1180",
+              "transaction_date": "09/30/2025",
+              "status": "posted",
+              "category": "office_supplies",
+              "rewards_earned": "11.80"
+            },
+            "txn_capitolbooks_6450_b8061d": {
+              "transaction_id": "txn_capitolbooks_6450_b8061d",
+              "user_id": "usr_mok_91a7c3",
+              "credit_card_account_id": "cca_silver_mok_4627_d31e8a",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Capitol Books",
+              "transaction_amount": "64.50",
+              "transaction_date": "03/04/2025",
+              "status": "posted",
+              "category": "books",
+              "rewards_earned": "0.65"
+            }
+          },
+          "notes": "Two posted transactions support the current and sole prior dispute records."
+        },
+        "transaction_disputes": {
+          "data": {
+            "dsp_northstar_gnr_5a19e7": {
+              "dispute_id": "dsp_northstar_gnr_5a19e7",
+              "transaction_id": "txn_northstar_1180_7c42ef",
+              "user_id": "usr_mok_91a7c3",
+              "full_name": "Marcus Okafor",
+              "email": "marcus.okafor@example.com",
+              "phone": "916-555-0148",
+              "address": "1847 Alder Grove Lane, Sacramento, CA 95818",
+              "card_last_4_digits": "4627",
+              "dispute_reason": "goods_services_not_received",
+              "purchase_date": "09/30/2025",
+              "issue_noticed_date": "11/13/2025",
+              "contacted_merchant": true,
+              "eligible_for_provisional_credit": true,
+              "provisional_credit_given": false,
+              "partial_refund_amount": null,
+              "resolution_requested": "provisional_credit",
+              "card_action": "none",
+              "status": "under_review",
+              "submitted_at": "11/13/2025"
+            },
+            "dsp_capitolbooks_dup_3e74b2": {
+              "dispute_id": "dsp_capitolbooks_dup_3e74b2",
+              "transaction_id": "txn_capitolbooks_6450_b8061d",
+              "user_id": "usr_mok_91a7c3",
+              "full_name": "Marcus Okafor",
+              "email": "marcus.okafor@example.com",
+              "phone": "916-555-0148",
+              "address": "1847 Alder Grove Lane, Sacramento, CA 95818",
+              "card_last_4_digits": "4627",
+              "dispute_reason": "duplicate_charge",
+              "purchase_date": "03/04/2025",
+              "issue_noticed_date": "03/09/2025",
+              "contacted_merchant": true,
+              "eligible_for_provisional_credit": true,
+              "provisional_credit_given": true,
+              "partial_refund_amount": null,
+              "resolution_requested": "provisional_credit",
+              "card_action": "none",
+              "status": "closed",
+              "submitted_at": "03/10/2025"
+            }
+          },
+          "notes": "The current dispute and exactly one prior dispute fall in the rolling twelve-month window."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "Starts empty so the successful path creates exactly one application."
+        },
+        "human_transfer_requests": {
+          "data": {},
+          "notes": "Starts empty. The no-argument transfer tool creates one generic persistent request, so no dispute linkage fields are assumed."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_mok_91a7c3",
+          "address": "1847 Alder Grove Lane, Sacramento, CA 95818",
+          "email": "marcus.okafor@example.com",
+          "phone_number": "916-555-0148",
+          "date_of_birth": "04/19/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "act_lookup_marcus",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        }
+      },
+      {
+        "action_id": "act_read_card_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_mok_91a7c3"
+        }
+      },
+      {
+        "action_id": "act_read_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_mok_91a7c3"
+        }
+      },
+      {
+        "action_id": "act_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "act_read_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_mok_91a7c3\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_all_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_read_all_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_mok_91a7c3\"}"
+        }
+      },
+      {
+        "action_id": "act_apply_ecocard",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "EcoCard",
+          "customer_name": "Marcus Okafor",
+          "annual_income": 78000,
+          "rho_bank_subscription": false
+        }
+      },
+      {
+        "action_id": "act_request_human_handoff",
+        "requestor": "user",
+        "name": "request_human_agent_transfer",
+        "arguments": {}
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card",
+    "request_human_agent_transfer"
+  ],
+  "required_documents": [
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016",
+    "doc_credit_cards_ecocard_001",
+    "doc_credit_cards_platinum_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_green_account_(savings)_003",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_silver_plus_account_009"
+  ]
+}

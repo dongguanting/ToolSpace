@@ -1,0 +1,219 @@
+{
+  "id": "task_generated_pro_026",
+  "description": {
+    "purpose": "Establish the highest-savings-APY checking-and-savings pairing within Naomi's three-product shortlist, leave funding to her, and retire her dormant checking account without a charge.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Naomi Bennett, a 39-year-old small-business bookkeeper living in Boise, Idaho. You are calling on November 14, 2025, after opening your November statement and noticing your unused checking account still has a zero balance. Be concise, practical, and cooperative, but protect your preferences rather than simply accepting whatever is suggested.\n\nBegin with only: \"My old checking account is sitting unused. Could you help me switch to a checking-and-savings setup that gives my savings the best rate? I don't want another credit card.\"\n\nWhen asked for your name or verification details, provide only the requested information accurately: Naomi Bennett; date of birth April 22, 1986; address 1846 W Alder Lane, Boise, ID 83702; email naomi.bennett82@example.com; phone 208-555-0146. Confirm that these are your details. Answer relevant identity questions, including date of birth and email if asked, before authorizing account changes. Do not volunteer these details in the opening.\n\nWhen asked about preferred savings products, explain that you have already narrowed your choices to Bronze Account, Green Account savings, and Silver Plus Account. You want the highest savings APY within those three, with a suitable checking account, not the lowest fees, the highest checking rate, or promotional rewards. Do not broaden that shortlist.\n\nWhen asked about money, requirements, or the intended switch, explain that you have $8,200 outside this bank for one personal savings account and no additional lump sum. The entire $8,200 must stay together in one savings account; do not split it, divert any into checking, or promise extra money. You accept paperless statements, but that is not consent to unrelated add-ons or additional products. You will make the external savings deposit yourself on November 18. You do not authorize any transfer, deposit, or debit during this call. You will not open or apply for a credit card, even to improve the advertised return. A broad relevant question permits this coherent group of facts, but do not volunteer it before a relevant question.\n\nWhen asked about the existing account or statement, identify your unused Light Blue checking account, with a zero balance, opened August 20, 2024. If asked about activity, the last payment was a $95 City utility payment on October 31; it has posted, and nothing else is pending or expected. Do not turn that payment into a complaint. You have no Rho-Bank savings account or Rho-Bank credit card. Do not invent additional funds or relationships.\n\nYou do not know the winning pairing, the applicable APYs, eligibility thresholds, or the bank's internal opening sequence. Let the agent investigate and explain. If several choices are offered without a recommendation, ask for one recommendation based on the savings rate on your whole $8,200 within your three choices. Authorize the new accounts only after your identity questions have been answered and the agent identifies one checking-and-savings recommendation, explains why it best meets your savings-rate objective within your shortlist and budget, and confirms there will be no credit card, split allocation, unrelated add-on, or immediate money movement. You may accept a grounded explanation, but do not copy an incompatible proposed product or allocation as your own choice.\n\nKeep the operative request to close old checking for the next stage. Only after the agent confirms that both new accounts are open and explains that savings remains unfunded, say: \"Great. Can we finish the switch by closing my old Light Blue account now? I don't want to keep an unused extra checking account.\" Until that event, do not initiate the closure request. If the agent explains that old checking must remain available temporarily to finish the replacement, accept that practical explanation without claiming to know an eligibility rule. Your commitment is to finish the new checking-and-savings arrangement and then retire the unused account, not to keep it indefinitely or close it in a way that prevents completion. Authorize old-account closure only after both new accounts are confirmed open, the agent correctly identifies the old Light Blue account, and closure involves no fee or money movement.\n\nIf the agent recommends an outside savings product, chooses by fees or checking yield, or relies on an unexplained headline bonus, say: \"I have already narrowed the savings choices to those three. Please compare the savings rate I would actually get on my balance, rather than changing the shortlist or choosing by another benefit.\" Withhold opening authorization until the recommendation is explained consistently with that goal. If an incompatible account was already opened, request correction and do not accept it as the finished arrangement.\n\nIf the agent proposes splitting your savings, parking part in checking, or relying on extra money, say: \"That is all the money I have set aside for this, and I want it together in one savings account. Please find the best fit without splitting it or assuming I can add more.\" Never authorize that split, reallocation, or an account dependent on unavailable funds. If it has already happened, ask to restore the agreed single-account arrangement before accepting resolution.\n\nIf a card or unrelated add-on is proposed, say: \"No additional card or add-on, please. Paperless statements are fine, but I only want the checking-and-savings arrangement we discussed.\" Never authorize a credit-card application or unrelated product. If one was already initiated, ask the agent to address it and continue toward the requested deposit-account arrangement; do not accept the departure as resolved merely because the accounts were opened.\n\nIf the agent proposes moving money or says money was moved, say: \"Please don't move any money now. I said I would make the external deposit myself. If something has already moved, please check what happened and help put that right.\" Do not authorize a transfer, deposit, or debit during this call, and do not accept an unresolved movement of money.\n\nIf the agent proposes stopping with advice only, opening only one account, closing old checking before the replacement is ready, or keeping old checking indefinitely, say: \"I want to finish the switch today, not just get a recommendation. Please make sure the new arrangement is in place, then finish closing the unused account. If something already prevents that, please investigate how we can complete the switch.\" Withhold closure authorization while either new account is unconfirmed. If only the recommendation or one new account is complete, ask to finish setting up the agreed arrangement before discussing retirement. These are conditional responses to mistakes, not extra requests to introduce on a successful call.\n\nAccept the result only when the agent confirms that the agreed checking and savings accounts are open and belong to you. Also require confirmation that the old Light Blue account is closed without a charge. Require confirmation that no money moved during the call and an explanation of the deadline for your own external savings deposit, including what happens if you do not fund it. Do not accept or end while any departure from your shortlist, single allocation, or no-credit-card commitment remains unresolved. Do not stop after a recommendation or only one opening. Once all these conditions hold, briefly thank the agent and end with exactly this one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "fresh_naomi_bennett_1103": {
+              "user_id": "fresh_naomi_bennett_1103",
+              "name": "Naomi Bennett",
+              "date_of_birth": "04/22/1986",
+              "address": "1846 W Alder Lane, Boise, ID 83702",
+              "email": "naomi.bennett82@example.com",
+              "phone_number": "208-555-0146",
+              "parent_user_id": null,
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh sole-owner customer; age 39 on the fixed environment date. Occupation, external funding capacity, consent, and preferences are customer narrative, not added database fields."
+        },
+        "accounts": {
+          "data": {
+            "fresh_naomi_light_blue_1103": {
+              "account_id": "fresh_naomi_light_blue_1103",
+              "user_id": "fresh_naomi_bennett_1103",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "0.00",
+              "date_opened": "08/20/2024",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Naomi's only initial bank account. No other default record uses this fresh user_id. No collections, negative balances, savings, or linked debt. The two deterministic new-account keys are absent initially."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Current-session verification must be created after matching at least two identity fields."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "fresh_naomi_utility_1103": {
+              "transaction_id": "fresh_naomi_utility_1103",
+              "account_id": "fresh_naomi_light_blue_1103",
+              "date": "10/31/2025",
+              "type": "payment",
+              "description": "City utility payment",
+              "amount": -95,
+              "status": "POSTED",
+              "hold_amount": 0,
+              "hold_release_date": null
+            }
+          },
+          "notes": "Settled historical activity; no pending transactions or holds for the old account. This is not a complete lifetime ledger and does not change the authoritative current balance. No refund, dispute, or transfer is requested."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Naomi has no credit-card holdings; unrelated default customers do not share her fresh user_id."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No pre-existing application for Naomi and no application authorized during this call."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty operational table. Tool availability comes from the supplied catalog. Read-call telemetry and discovery infrastructure are excluded from banking-outcome evaluation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a01_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Naomi Bennett"
+        },
+        "info": "Reference scaffolding only: discover user_id and compare the customer's requested date-of-birth and email answers against the record. Not an independently evaluated action."
+      },
+      {
+        "action_id": "a02_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns 2025-11-14 03:40:00 EST; read telemetry is not evaluated."
+      },
+      {
+        "action_id": "a03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Naomi Bennett",
+          "user_id": "fresh_naomi_bennett_1103",
+          "address": "1846 W Alder Lane, Boise, ID 83702",
+          "email": "naomi.bennett82@example.com",
+          "phone_number": "208-555-0146",
+          "date_of_birth": "04/22/1986",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Only after Naomi supplies and confirms matching date of birth and email during this session."
+      },
+      {
+        "action_id": "a04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "a05_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"fresh_naomi_bennett_1103\"}"
+        },
+        "info": "Reference eligibility evidence: one OPEN checking account, 451 days of tenure, zero holdings, no savings, collections, negatives, or Rho-Bank cards. Read telemetry is not evaluated."
+      },
+      {
+        "action_id": "a06_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "a07_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"fresh_naomi_bennett_1103\",\"account_type\":\"savings\",\"account_class\":\"Green Account\"}"
+        },
+        "info": "After recommendation and customer consent, create the selected savings while old checking remains OPEN. Bind returned account_id to SHA256(UTF-8 'account:fresh_naomi_bennett_1103:savings:Green Account').hexdigest()[:16]. Naomi declines immediate transfer, accepts paperless, and acknowledges external funding by 12/14/2025 or closure."
+      },
+      {
+        "action_id": "a08_open_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"fresh_naomi_bennett_1103\",\"account_type\":\"checking\",\"account_class\":\"Evergreen Account\"}"
+        },
+        "info": "Create the selected checking under the same profile, unfunded. Bind returned account_id to SHA256(UTF-8 'account:fresh_naomi_bennett_1103:checking:Evergreen Account').hexdigest()[:16]. The product holdings automatically establish the relationship."
+      },
+      {
+        "action_id": "a09_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "a10_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"fresh_naomi_light_blue_1103\"}"
+        },
+        "info": "After the replacement is confirmed and Naomi requests retirement, establish the no-pending-transactions closure precondition. Not a balance-reconfirmation read or independently evaluated outcome."
+      },
+      {
+        "action_id": "a11_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "a12_close_old",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"fresh_naomi_light_blue_1103\",\"reason\":\"Customer requested retirement of unused checking after replacement checking and savings were established\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Close only after both new accounts are confirmed open and Naomi authorizes fee-free retirement. Age 451 days; no early-closure charge, waiver, notice delay, or money movement."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_blue_account_003",
+    "doc_checking_accounts_bluest_account_001",
+    "doc_checking_accounts_dark_green_account_001",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_green_fee-free_account_005",
+    "doc_savings_accounts_bronze_account_001",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_green_account_(savings)_005",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002"
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "id": "task_generated_pro_044",
+  "description": {
+    "purpose": "Complete Priya Raman's business and personal account reorganization while preserving opening eligibility and her funding allocation.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Priya Raman, a 42-year-old freelance translator in Madison, Wisconsin. Be concise, practical, and cooperative. Your newly formed Mapleword Translation LLC, which you solely own, received its registration confirmation today, November 14, 2025.\n\nBegin: “My LLC registration confirmation arrived today, and I'd like to simplify my personal accounts and set up business banking. I thought we'd clear out the old accounts first—can you help?” Do not give the detailed plan or identity information until asked a relevant question.\n\nIf asked for identification or verification, provide the requested facts: Priya Raman; priya.raman@mapleword.example; 608-555-0146; date of birth June 18, 1983; 1846 Maple Grove Drive, Madison, WI 53719. Cooperate with identity verification.\n\nIf asked what should change, which funds are involved, or what features you need, answer only the relevant portion of these known facts. You want both new accounts and both requested closures completed during this call, while retaining Light Blue. Close your empty Bronze savings and Evergreen checking, replacing them with business checking for your LLC and new personal savings. Move the entire $3,250 Evergreen balance into replacement savings; leave Light Blue and its $275 untouched, leave business checking unfunded for future client receipts, and add no other products. Bronze opened April 14, Evergreen July 14, and Light Blue November 1. You gave both closure notices on November 4 and left the accounts open while arranging replacements. For business checking, you need basic service with the lowest maintenance cost, without a balance-dependent monthly-fee waiver or an expiring startup free period. Your business balances will be low and variable. For savings, you can maintain about $3,250, expect roughly 12 withdrawals monthly, and want daily compounding. You do not know the opening eligibility rules or whether closure fees apply.\n\nBefore authorizing financial changes, require the agent to identify the proposed products and funding arrangement, obtain your agreement, and explain any change from your assumed closures-first approach. If openings are proposed first without a reason, briefly ask why clearing out the old accounts first would not work. Once the agent explains why the existing accounts matter, acknowledge that you had not realized order mattered. If the described products meet your needs and the complete arrangement is preserved, authorize the revised reorganization as a whole; you need not approve each internal step separately. Your cleanup-first belief is revisable, not a demand to sacrifice your goals.\n\nIf a proposal leaves an opening or closure unfinished, uses Light Blue, redirects or splits the funds, or adds a product, briefly identify the mismatch and ask for a plan that completes your arrangement without moving protected funds. Do not authorize changed scope or allocation; an explained change in order is acceptable. If an incompatible action already happened, identify the remaining visible problem and request correction rather than accepting completion.\n\nIf a recommendation relies on higher interest, a temporary free period, or keeping extra business funds despite your needs, say that low maintenance costs without tying up a balance matter more, and ask for a suitable alternative. Authorize products only when their described terms meet your needs; do not adopt a different allocation to make an unsuitable product attractive. React only to terms and outcomes the agent describes. Do not invent fee schedules, calculate eligibility ages, diagnose undisclosed policy mistakes, or volunteer internal identifiers or policy answers.\n\nAccept only after the agent confirms business checking is open and unfunded, replacement savings is open with Evergreen's full balance, Bronze and Evergreen are closed, and Light Blue is unchanged. If any outcome is missing or contradicted, ask about it and withhold acceptance and the stop marker, including after an acknowledged incompatible action. After all these outcomes are confirmed, briefly thank the agent and end with exactly one stop marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_priya_raman_714": {
+              "user_id": "usr_priya_raman_714",
+              "name": "Priya Raman",
+              "date_of_birth": "06/18/1983",
+              "email": "priya.raman@mapleword.example",
+              "phone_number": "608-555-0146",
+              "address": "1846 Maple Grove Drive, Madison, WI 53719",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh customer identity; no parent user. Occupation and LLC context remain narrative rather than invented columns."
+        },
+        "accounts": {
+          "data": {
+            "acct_pr_bronze_714": {
+              "account_id": "acct_pr_bronze_714",
+              "user_id": "usr_priya_raman_714",
+              "class": "savings",
+              "level": "Bronze Account",
+              "account_type": "savings",
+              "account_class": "Bronze Account",
+              "current_holdings": "$0.00",
+              "status": "OPEN",
+              "date_opened": "04/14/2025",
+              "closure_reason": "Customer requested closure as part of account reorganization; notice received 11/04/2025; awaiting final instruction.",
+              "early_closure_fee_waived": false
+            },
+            "acct_pr_evergreen_714": {
+              "account_id": "acct_pr_evergreen_714",
+              "user_id": "usr_priya_raman_714",
+              "class": "checking",
+              "level": "Evergreen Account",
+              "account_type": "checking",
+              "account_class": "Evergreen Account",
+              "current_holdings": "$3250.00",
+              "status": "OPEN",
+              "date_opened": "07/14/2025",
+              "closure_reason": "Customer requested closure as part of account reorganization; notice received 11/04/2025; awaiting final instruction.",
+              "early_closure_fee_waived": false
+            },
+            "acct_pr_lightblue_714": {
+              "account_id": "acct_pr_lightblue_714",
+              "user_id": "usr_priya_raman_714",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "account_type": "checking",
+              "account_class": "Light Blue Account",
+              "current_holdings": "$275.00",
+              "status": "OPEN",
+              "date_opened": "11/01/2025"
+            }
+          },
+          "notes": "Exactly three initial accounts belong to this fresh user. No other default-database account is attached to her. Both replacement accounts are absent; opening-result aliases identify them subsequently. Prior notices are genuine instructions, not completed closures."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be created during the interaction."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No pending transactions, holds, fees, or other transaction obligations for these accounts. The internal transfer writes account balances only."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Priya has no credit-card accounts; supports complete account retrieval and good-standing checks."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty normal tool-call telemetry table."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "pr714_identity",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        },
+        "info": "Unscored identity lookup; match customer-supplied verification fields."
+      },
+      {
+        "action_id": "pr714_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Unscored timestamp support."
+      },
+      {
+        "action_id": "pr714_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Priya Raman",
+          "user_id": "usr_priya_raman_714",
+          "address": "1846 Maple Grove Drive, Madison, WI 53719",
+          "email": "priya.raman@mapleword.example",
+          "phone_number": "608-555-0146",
+          "date_of_birth": "06/18/1983",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "pr714_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "pr714_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_priya_raman_714\"}"
+        },
+        "info": "Unscored support: discover account IDs, balances, tenure, statuses, prior notices, and counts."
+      },
+      {
+        "action_id": "pr714_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "pr714_bronze_pending",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_pr_bronze_714\"}"
+        },
+        "info": "Unscored support for no-pending-transactions closure precondition."
+      },
+      {
+        "action_id": "pr714_evergreen_pending",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_pr_evergreen_714\"}"
+        },
+        "info": "Unscored support for no-pending-transactions closure precondition, not a redundant funding-history check."
+      },
+      {
+        "action_id": "pr714_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "pr714_open_business",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_priya_raman_714\",\"account_type\":\"business_checking\",\"account_class\":\"Navy Blue\"}"
+        },
+        "info": "After product and allocation agreement and explanation of revised order. Returned account ID is a990dc6f065667ac."
+      },
+      {
+        "action_id": "pr714_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_priya_raman_714\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        },
+        "info": "Returned account ID is 4ec7b4acceb1262c. Evergreen remains qualifying and OPEN."
+      },
+      {
+        "action_id": "pr714_unlock_transfer",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "pr714_transfer",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_pr_evergreen_714\",\"destination_account_id\":\"4ec7b4acceb1262c\",\"amount\":3250.0}"
+        }
+      },
+      {
+        "action_id": "pr714_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "pr714_close_bronze",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_pr_bronze_714\",\"reason\":\"Customer requested closure as part of account reorganization\",\"waive_early_closure_fee\":false}"
+        }
+      },
+      {
+        "action_id": "pr714_close_evergreen",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_pr_evergreen_714\",\"reason\":\"Customer requested closure as part of account reorganization\",\"waive_early_closure_fee\":false}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_003",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_006",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_business_checking_accounts_navy_blue_001",
+    "doc_business_checking_accounts_cobalt_blue_001",
+    "doc_business_checking_accounts_sky_blue_001",
+    "doc_savings_accounts_silver_plus_account_001"
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "task_generated_pro_031",
+  "description": {
+    "purpose": "Compare Leila's two requested deposit-account pairings, establish Green savings and Evergreen checking without moving her external savings pot, and retire her mature Light Blue account without destroying savings-opening eligibility.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “My empty Light Blue account is still showing on my dashboard. I’d like to replace it with a checking-and-savings setup that works better for me.”\n\nYou are Leila Haddad, 34, a physical therapy assistant in Boise, Idaho. When asked to verify identity, provide DOB 04/09/1991, address 2186 West Hazel Street, Boise, ID 83702, phone 208-555-0146, and email leila.haddad@example.com. Cooperate with verification before account changes.\n\nWhen asked about the replacement, money, or preferences, explain: Your shortlist is Green savings/Evergreen checking versus Silver Plus savings/Blue checking. Choose between these using the savings APY, not checking interest. Exactly $6,000 is elsewhere, reserved entirely for one savings account for a year without withdrawals or additions; you will deposit it yourself after the call, with no splitting, extra savings money, or movement now. You have no Rho credit cards or applications and authorize no new credit card. You have no other Rho deposit accounts and no active or planned direct deposit. Digital statements are fine. Disclosed checking maintenance costs are acceptable, without reserving savings money to waive them. You moved the last $428.60 out of Light Blue on November 13; it is empty. You want both replacement accounts established today and the old account retired only if closure is free, not a checking-only setup or indefinite wait.\n\nBefore agreeing to products, require the proposed pair, savings-rate basis, material minimums, fees, paperless requirement, other material terms, and self-funding arrangement to be explained. Acknowledge the explained funding deadline and consequence of not funding. Authorization covers only the accepted pair and fee-free closure as a completed replacement.\n\nWhen sequencing is discussed, say you thought an empty account normally closed first; ask why another order is needed and accept a practical explanation. If closing first is proposed, ask whether the whole replacement can still finish today. You do not know the eligibility rules and may rely on an assurance of complete service, but must not knowingly authorize abandoning or postponing savings.\n\nFor any conflicting proposal, withhold approval, restate only the affected preference or missing outcome, and ask the agent to check again. If already done, request correction; if savings was not opened, say the replacement is incomplete and ask what the bank can do to correct it. Do not invent a policy diagnosis or workaround.\n\nAccept only after confirmation that the accepted checking and savings accounts are open, Light Blue is closed without a closure charge, no money moved or new credit card was requested, and you know how long you have to fund savings yourself. Until then, ask about the missing outcome; once complete, briefly thank the agent and end with:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "lh_91b7e260": {
+              "user_id": "lh_91b7e260",
+              "name": "Leila Haddad",
+              "date_of_birth": "04/09/1991",
+              "address": "2186 West Hazel Street, Boise, ID 83702",
+              "email": "leila.haddad@example.com",
+              "phone_number": "208-555-0146",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh caller identity. External savings and conversational consent are in user instructions, not invented user fields."
+        },
+        "accounts": {
+          "data": {
+            "chk_lh_7d4902": {
+              "account_id": "chk_lh_7d4902",
+              "user_id": "lh_91b7e260",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "account_type": "checking",
+              "account_class": "Light Blue Account",
+              "date_opened": "11/14/2024",
+              "status": "OPEN",
+              "current_holdings": "0.00"
+            }
+          },
+          "notes": "One supplied customer-owned account. No other supplied accounts, collections, negative balances, or closure-for-cause history. Initialization is a patch, not table replacement. Validate that no default records collide with these fresh IDs or link to this caller."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_lh_904d72": {
+              "transaction_id": "txn_lh_904d72",
+              "account_id": "chk_lh_7d4902",
+              "date": "11/13/2025",
+              "description": "EXTERNAL TRANSFER - REMAINING CHECKING FUNDS",
+              "amount": "-428.60",
+              "type": "ach_transfer_out",
+              "status": "posted"
+            }
+          },
+          "notes": "Final outgoing activity is posted, not pending. This is a recent-history fixture, not an opening-to-date ledger; the authoritative current balance is zero. No active direct deposit."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No supplied credit-card holdings. No default holding may be linked to the fresh caller."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No pre-existing application for Leila; no application is requested."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Starts empty. Current-session verification must be written by the direct verification tool."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Starts empty; tool availability comes from the catalog. Invocation telemetry is excluded from banking outcome evaluation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "locate_leila",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Reference read to identify the caller and match customer-supplied identity fields; not independently scored."
+      },
+      {
+        "action_id": "verification_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Use the fixed returned timestamp for session verification."
+      },
+      {
+        "action_id": "verify_leila",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Leila Haddad",
+          "user_id": "lh_91b7e260",
+          "address": "2186 West Hazel Street, Boise, ID 83702",
+          "email": "leila.haddad@example.com",
+          "phone_number": "208-555-0146",
+          "date_of_birth": "04/09/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "unlock_opening",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "unlock_closure",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "read_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"lh_91b7e260\"}"
+        },
+        "info": "Establish ownership, account counts, good standing, tenure, and the old account ID. Unscored reference support."
+      },
+      {
+        "action_id": "read_closure_activity",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_lh_7d4902\"}"
+        },
+        "info": "Establish absence of pending transactions for closure, not merely corroborate the balance. Unscored reference support."
+      },
+      {
+        "action_id": "open_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"lh_91b7e260\",\"account_type\":\"checking\",\"account_class\":\"Evergreen Account\"}"
+        },
+        "info": "After informed authorization of the pair. Bind returned account ID as d7991fb779e43150."
+      },
+      {
+        "action_id": "open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"lh_91b7e260\",\"account_type\":\"savings\",\"account_class\":\"Green Account\"}"
+        },
+        "info": "Old mature checking remains OPEN. Bind returned account ID as 7643ab86ff0b0f72. Funding is deferred with the customer's acknowledgment."
+      },
+      {
+        "action_id": "close_old",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"chk_lh_7d4902\",\"reason\":\"Customer requested replacement of unused checking account\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Complete the authorized migration after both replacements exist; no fee applies."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_001",
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_blue_account_001",
+    "doc_checking_accounts_blue_account_003",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_evergreen_account_002",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_green_account_(savings)_002",
+    "doc_savings_accounts_green_account_(savings)_005",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_silver_plus_account_004",
+    "doc_savings_accounts_silver_plus_account_005"
+  ]
+}

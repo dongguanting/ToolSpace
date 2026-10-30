@@ -1,0 +1,259 @@
+{
+  "id": "task_generated_pro_071",
+  "description": {
+    "purpose": "Restore enough same-day ATM access on Maya Haddad’s Light Green Account card, then open exactly one travel-suitable Purple Account for Leila Haddad.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “My daughter’s Light Green debit card was declined at the ATM when we tried to get cash. Can you help us get access today?” You are Leila Haddad, a 61-year-old physical therapy assistant in Phoenix, Arizona. You initially think the machine itself may simply have had a low limit, but present that only as an assumption. If the agent explains from the card details that its remaining daily allowance caused the decline, acknowledge that you may have been mistaken.\n\nIf asked to verify your identity or relationship to the cardholder, provide your configured full name, date of birth 03/22/1964, address 1847 East Mariposa Street, Phoenix, AZ 85016, email leila.haddad@example.com, phone number 602-555-0174, and state that Maya Haddad is your teenage daughter. Do not volunteer the ATM amounts or your later account request until their triggers occur.\n\nIf asked about the attempted withdrawal, earlier cash use, affected account, or card, say that the failed attempt was for $180, no cash came out, Maya had already withdrawn $20 earlier that day, and the affected card is her Light Green Account card.\n\nLeila needs the Light Green card to have enough authorized same-day ATM allowance for the $180 withdrawal after the earlier $20 use; an explanation alone is not completion. If the agent proposes waiting, retrying without a change, or a limit that would leave less than $180 available today, say: “I understand the explanation, but I still need to be able to take out the $180 today. Could you check whether there is a temporary option that would actually cover it?” Leila does not authorize a limit change unless the agent confirms it leaves enough same-day allowance for the requested $180.\n\nLeila will not authorize a banking change until her identity is verified and the recognizable terms are clear. If a card change or account opening is proposed too early or unclearly, say: “Before I approve anything, please verify me and tell me clearly what would change and which account you would be opening.” Leila withholds authorization until verification and the relevant user-visible terms are established. For the card change, authorization requires the affected card, the earlier $20 use, the requested $180, the temporary duration, and the sufficiency of the proposed limit to be established.\n\nOnly after the agent confirms that a temporary limit sufficient for the $180 need has been applied, explain that this experience made you unwilling to rely on the teen card as the main travel-cash source for an upcoming trip. Ask to open one personal checking account of your own. It must offer eligible direct deposit up to at least two days early, at least $600 in daily ATM capacity, no Rho-Bank foreign-ATM withdrawal fee, mitigation of ATM-operator fees, and no opening requirement above $8,000.\n\nLeila will open exactly one personal checking account of her own that meets all stated travel, early-deposit, daily-cash, age, and $8,000 opening-funds constraints; she will not accept a split allocation or added product. If the agent recommends a product missing any stated constraint, requiring more than $8,000, intended for an older customer, or proposes multiple accounts, say: “I only want one new personal checking account, and that option does not meet the constraint I gave you. Please compare again using all of my travel and payroll needs.” Leila does not authorize opening any account until one named account satisfies every stated constraint, and she never authorizes a second new account or add-on product. Authorization requires the agent to identify one personal checking account meeting every preference, confirm that its opening requirement does not exceed $8,000, and confirm that no additional product will be opened.\n\nDo not accept the ATM portion as complete until you are told that the temporary card limit is active for 24 hours and leaves enough allowance for the $180 withdrawal today. Do not accept the account portion as complete until you are told that exactly one Purple Account personal checking account is open in your name and no additional account or product was created. Preserve these requirements even if the agent proposes a different amount, product, allocation, or added service.\n\nOnly after both visible outcomes are complete, say: “That resolves the cash issue and gives me the one travel account I wanted. Thank you. ###STOP###”"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_leila_haddad_7c91": {
+              "user_id": "usr_leila_haddad_7c91",
+              "name": "Leila Haddad",
+              "date_of_birth": "03/22/1964",
+              "address": "1847 East Mariposa Street, Phoenix, AZ 85016",
+              "email": "leila.haddad@example.com",
+              "phone_number": "602-555-0174"
+            },
+            "usr_maya_haddad_2e64": {
+              "user_id": "usr_maya_haddad_2e64",
+              "name": "Maya Haddad",
+              "date_of_birth": "06/18/2009",
+              "address": "1847 East Mariposa Street, Phoenix, AZ 85016",
+              "email": "maya.haddad@example.com",
+              "phone_number": "602-555-0186",
+              "parent_user_id": "usr_leila_haddad_7c91"
+            }
+          },
+          "notes": "Fresh Leila and Maya identities. Maya is 16 at the fixed time and is Leila’s daughter at the same household address."
+        },
+        "accounts": {
+          "data": {
+            "acct_maya_light_green_a31d": {
+              "account_id": "acct_maya_light_green_a31d",
+              "user_id": "usr_maya_haddad_2e64",
+              "class": "checking",
+              "level": "Light Green Account",
+              "status": "OPEN",
+              "date_opened": "09/01/2025",
+              "current_holdings": "540.00"
+            },
+            "acct_leila_green_5b82": {
+              "account_id": "acct_leila_green_5b82",
+              "user_id": "usr_leila_haddad_7c91",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "status": "OPEN",
+              "date_opened": "04/10/2022",
+              "current_holdings": "8000.00"
+            }
+          },
+          "notes": "Maya’s Light Green Account is 74 days old at the fixed date. Leila initially owns exactly one open personal checking account and no closed checking account or Purple Account."
+        },
+        "debit_cards": {
+          "data": {
+            "card_maya_light_green_8d47": {
+              "card_id": "card_maya_light_green_8d47",
+              "account_id": "acct_maya_light_green_a31d",
+              "user_id": "usr_maya_haddad_2e64",
+              "cardholder_name": "Maya Haddad",
+              "status": "ACTIVE",
+              "cvv": "418",
+              "expiration_date": "08/2028",
+              "issue_date": "09/01/2025",
+              "issue_reason": "NEW_ACCOUNT",
+              "last_4_digits": "7316",
+              "daily_atm_limit": 150,
+              "daily_atm_used": 20,
+              "daily_purchase_limit": 300,
+              "daily_purchase_used": 0,
+              "international_enabled": true,
+              "online_enabled": true
+            }
+          },
+          "notes": "The active Light Green debit card has the documented baseline ATM limit and $20 of same-day ATM usage. No prior temporary increase record is supplied."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_maya_atm_20251114_20_f6c2": {
+              "transaction_id": "txn_maya_atm_20251114_20_f6c2",
+              "account_id": "acct_maya_light_green_a31d",
+              "date": "11/14/2025",
+              "description": "ATM WITHDRAWAL - RHO-BANK ATM PHOENIX AZ",
+              "amount": -20.0,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            }
+          },
+          "notes": "The only transaction for Maya’s fresh account is the posted $20 same-day ATM withdrawal. There is no overdraft_fee transaction in the preceding 30 days. The declined $180 attempt dispensed no cash and is intentionally not stored as a transaction."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initially. Current-session verification must be created during the interaction."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_lookup_leila",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        }
+      },
+      {
+        "action_id": "act_02_lookup_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Haddad"
+        }
+      },
+      {
+        "action_id": "act_03_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_04_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Leila Haddad",
+          "user_id": "usr_leila_haddad_7c91",
+          "address": "1847 East Mariposa Street, Phoenix, AZ 85016",
+          "email": "leila.haddad@example.com",
+          "phone_number": "602-555-0174",
+          "date_of_birth": "03/22/1964",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_05_unlock_accounts_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_06_lookup_maya_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_maya_haddad_2e64\"}"
+        }
+      },
+      {
+        "action_id": "act_07_unlock_cards_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "act_08_lookup_light_green_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_maya_light_green_a31d\"}"
+        }
+      },
+      {
+        "action_id": "act_09_unlock_transactions_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_10_lookup_light_green_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_maya_light_green_a31d\"}"
+        }
+      },
+      {
+        "action_id": "act_11_unlock_limit_increase",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "request_temporary_debit_card_limit_increase_8374"
+        }
+      },
+      {
+        "action_id": "act_12_apply_limit_increase",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "request_temporary_debit_card_limit_increase_8374",
+          "arguments": "{\"card_id\":\"card_maya_light_green_8d47\",\"limit_type\":\"atm\",\"new_limit\":225}"
+        }
+      },
+      {
+        "action_id": "act_13_lookup_leila_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_7c91\"}"
+        }
+      },
+      {
+        "action_id": "act_14_unlock_account_opening",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "act_15_open_purple_account",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_7c91\",\"account_type\":\"checking\",\"account_class\":\"Purple Account\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_001",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_040",
+    "doc_checking_accounts_bluest_account_001",
+    "doc_checking_accounts_bluest_account_003",
+    "doc_checking_accounts_bluest_account_007",
+    "doc_checking_accounts_bluest_account_010",
+    "doc_checking_accounts_gold_years_account_001",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_green_account_(checking)_012",
+    "doc_checking_accounts_light_green_account_005",
+    "doc_checking_accounts_purple_account_001",
+    "doc_checking_accounts_purple_account_004"
+  ]
+}

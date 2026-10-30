@@ -1,0 +1,301 @@
+{
+  "id": "task_generated_pro_029",
+  "description": {
+    "purpose": "Complete Maya Iqbal's LLC-related deposit-account migration, selecting suitable replacement products, preserving opening eligibility, funding the agreed destinations, and closing the two retired accounts.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Maya Iqbal, a 46-year-old small-business bookkeeper in Boise, Idaho. Your sole-owner bookkeeping LLC registration has just been confirmed. You are cooperative and practical, but want the whole banking move completed correctly.\n\nBegin: \"My bookkeeping LLC registration just came through, and I'd like to reorganize my bank accounts before I start using it. I thought clearing out the old accounts first would make sense. Can you help?\"\n\nOnly when asked relevant identity questions, provide the requested details: Maya Iqbal; date of birth 06/22/1979; address 2846 W Aldercrest Lane, Boise, Idaho 83703; email maya.iqbal@example.net; phone +1-208-555-0146. Answer verification questions and permit successful verification to be recorded for this call only after you have answered them.\n\nWhen asked about the move or affected accounts, explain that you want both replacement accounts opened and both old accounts closed in this call if eligible: replace Bronze savings, establish business checking, and retire Evergreen checking. Keep Light Blue open and untouched for everyday use. Your clean-up-first idea is tentative, not a condition of the move.\n\nWhen asked about balances or allocation, explain: move all $420 from Bronze to the replacement savings; from Evergreen's $4,780, put $3,180 into replacement savings and $1,600 into business checking. Light Blue holds $240 and must not fund the move. Do not change these allocations or add other products.\n\nWhen asked about account history or notice, say both closure notices were acknowledged on November 6. Evergreen was opened March 12, Bronze July 9, and Light Blue November 1, all this year.\n\nWhen asked about business-account needs, say you saw Navy Blue, Cobalt Blue, and Sky Blue and want the cheapest regular option. Require an ongoing $0 monthly maintenance fee, no minimum balance, no reliance on a balance waiver, and no expiring free period. When asked about savings needs, say you can keep about $3,600, want daily compounding, and may need up to 15 withdrawals a month without an excess-withdrawal charge. Relationship or ATM benefits would be nice but are not conditions; you do not know their eligibility rules. Do not name a preferred replacement as a predetermined answer.\n\nIf the agent proposes opening accounts first without explaining why, briefly ask why the old ones cannot be cleared out first. After a clear practical explanation that still allows the whole move, acknowledge that you had not realized order mattered and ask them to proceed with the agreed move. Before authorizing any account or balance changes, require the agent to identify the proposed products and affected accounts, confirm your allocation, and explain a departure from your tentative closures-first order. You may then authorize the complete plan; approving its order does not approve changes to your requirements.\n\nIf a proposal or reported result conflicts with these requirements, withhold consent and briefly point out only the affected personal requirement. For example: \"That doesn't match the move I asked for. Can you check a plan that finishes the whole change while keeping my everyday account alone and the money going where we agreed?\" Mention a quoted fee, balance condition, expiring offer, unsuitable savings feature, added product, or missing opening or closure only when it is the actual conflict. Do not copy an incompatible product or allocation merely because the agent recommends it. If a conflicting action has already happened, ask for it to be corrected and continue toward the same complete move rather than accepting completion. Do not diagnose hidden eligibility rules, supply policy calculations, or introduce another banking request.\n\nAccept only after the agent confirms both new accounts and their agreed funded balances, closure of both Bronze and Evergreen, and Light Blue still open and unchanged, with no conflicting product, allocation, extra account, or charge. If anything is missing, ask about that missing outcome; do not stop after a partial result. Once all these visible conditions hold, thank the agent briefly and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_miq_627": {
+              "user_id": "usr_miq_627",
+              "name": "Maya Iqbal",
+              "date_of_birth": "06/22/1979",
+              "address": "2846 W Aldercrest Lane, Boise, Idaho 83703",
+              "email": "maya.iqbal@example.net",
+              "phone_number": "+1-208-555-0146",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Customer identity; age 46 on the fixed environment date 11/14/2025. Occupation and LLC context are user instructions, not additional user fields."
+        },
+        "accounts": {
+          "data": {
+            "acct_miq_evergreen_627": {
+              "account_id": "acct_miq_evergreen_627",
+              "user_id": "usr_miq_627",
+              "class": "checking",
+              "level": "Evergreen Account",
+              "account_type": "checking",
+              "account_class": "Evergreen Account",
+              "status": "OPEN",
+              "current_holdings": "$4780.00",
+              "date_opened": "03/12/2025"
+            },
+            "acct_miq_bronze_627": {
+              "account_id": "acct_miq_bronze_627",
+              "user_id": "usr_miq_627",
+              "class": "savings",
+              "level": "Bronze Account",
+              "account_type": "savings",
+              "account_class": "Bronze Account",
+              "status": "OPEN",
+              "current_holdings": "$420.00",
+              "date_opened": "07/09/2025"
+            },
+            "acct_miq_lightblue_627": {
+              "account_id": "acct_miq_lightblue_627",
+              "user_id": "usr_miq_627",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "account_type": "checking",
+              "account_class": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "$240.00",
+              "date_opened": "11/01/2025"
+            }
+          },
+          "notes": "These are the only initial accounts of the fresh user usr_miq_627. No closed, collection, negative-balance, or business accounts. Replacement accounts are absent initially; opening-result aliases resolve their returned IDs. Light Blue is retained unchanged."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No credit-card account belongs to fresh user usr_miq_627. Included for the all-accounts eligibility lookup; unrelated default customers are outside this task."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "hist_miq_evergreen_notice_627": {
+              "transaction_id": "hist_miq_evergreen_notice_627",
+              "account_id": "acct_miq_evergreen_627",
+              "date": "11/06/2025",
+              "type": "notice",
+              "amount": "$0.00",
+              "status": "COMPLETED",
+              "description": "Closure notice received and accepted on 11/06/2025. Account remains open until customer completes balance disposition and confirms closure."
+            },
+            "hist_miq_bronze_notice_627": {
+              "transaction_id": "hist_miq_bronze_notice_627",
+              "account_id": "acct_miq_bronze_627",
+              "date": "11/06/2025",
+              "type": "notice",
+              "amount": "$0.00",
+              "status": "COMPLETED",
+              "description": "Closure notice received and accepted on 11/06/2025. Account remains open until customer completes balance disposition and confirms closure."
+            }
+          },
+          "notes": "Genuine pre-existing nonfinancial closure notices. These are the only history entries for Maya's initial accounts; pending count is zero. Initial holdings are authoritative balances. Transfers persist holdings only and do not create history rows."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Current-session identity verification must be logged after matching at least two identity fields."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty runtime invocation telemetry. Neither telemetry nor read/unlock behavior is an evaluated banking outcome."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "locate_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        },
+        "info": "Unscored support: discover user ID and match requested identity answers."
+      },
+      {
+        "action_id": "session_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Unscored support; returns 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "verify_maya",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_miq_627",
+          "address": "2846 W Aldercrest Lane, Boise, Idaho 83703",
+          "email": "maya.iqbal@example.net",
+          "phone_number": "+1-208-555-0146",
+          "date_of_birth": "06/22/1979",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After Maya supplies matching date of birth and address and permits recording verification."
+      },
+      {
+        "action_id": "unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Unscored tool availability."
+      },
+      {
+        "action_id": "read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_miq_627\"}"
+        },
+        "info": "Unscored support for ownership, IDs, status, balances, counts, and tenure."
+      },
+      {
+        "action_id": "unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        },
+        "info": "Unscored tool availability."
+      },
+      {
+        "action_id": "read_bronze_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_miq_bronze_627\"}"
+        },
+        "info": "Unscored support for accepted notice and absence of pending transactions."
+      },
+      {
+        "action_id": "read_evergreen_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_miq_evergreen_627\"}"
+        },
+        "info": "Unscored support for accepted notice and absence of pending transactions."
+      },
+      {
+        "action_id": "unlock_opening",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        },
+        "info": "Unscored tool availability."
+      },
+      {
+        "action_id": "open_business",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_miq_627\",\"account_type\":\"business_checking\",\"account_class\":\"Navy Blue\"}"
+        },
+        "info": "After product comparison, explanation of opening before closure, and Maya's consent to Navy Blue, Silver Plus Account, the specified allocation, both closures, and unchanged Light Blue. Returned account ID is bound as 9cbaf4418d766fb4."
+      },
+      {
+        "action_id": "open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_miq_627\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        },
+        "info": "Confirmed savings selection; Evergreen is still open. Returned account ID is bound as c4e5a7aedb01fd4f."
+      },
+      {
+        "action_id": "unlock_transfer",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        },
+        "info": "Unscored tool availability."
+      },
+      {
+        "action_id": "fund_savings_from_evergreen",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_miq_evergreen_627\",\"destination_account_id\":\"c4e5a7aedb01fd4f\",\"amount\":3180.0}"
+        },
+        "info": "Authorized immediate opening deposit; Evergreen becomes $1600.00 and savings becomes $3180.00."
+      },
+      {
+        "action_id": "move_bronze",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_miq_bronze_627\",\"destination_account_id\":\"c4e5a7aedb01fd4f\",\"amount\":420.0}"
+        },
+        "info": "Authorized balance disposition; Bronze becomes $0.00 and savings becomes $3600.00."
+      },
+      {
+        "action_id": "unlock_closure",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        },
+        "info": "Unscored tool availability."
+      },
+      {
+        "action_id": "close_bronze",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_miq_bronze_627\",\"reason\":\"Customer requested account reorganization after LLC registration\",\"waive_early_closure_fee\":false}"
+        }
+      },
+      {
+        "action_id": "fund_business",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_miq_evergreen_627\",\"destination_account_id\":\"9cbaf4418d766fb4\",\"amount\":1600.0}"
+        },
+        "info": "Authorized remaining allocation; Evergreen becomes $0.00 and business checking becomes $1600.00."
+      },
+      {
+        "action_id": "close_evergreen",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_miq_evergreen_627\",\"reason\":\"Customer requested account reorganization after LLC registration\",\"waive_early_closure_fee\":false}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_003",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_006",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_business_checking_accounts_navy_blue_001",
+    "doc_business_checking_accounts_cobalt_blue_001",
+    "doc_business_checking_accounts_sky_blue_001",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002"
+  ]
+}

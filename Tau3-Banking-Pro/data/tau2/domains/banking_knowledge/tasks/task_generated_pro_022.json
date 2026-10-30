@@ -1,0 +1,386 @@
+{
+  "id": "task_generated_pro_022",
+  "description": {
+    "purpose": "Resolve Marcus Okafor's four-card closure request with account-specific eligibility, replacement and payment blockers, and an accepted Crypto-Cash Back retention credit.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Marcus Okafor, a 53-year-old independent event planner living in Baltimore, Maryland. You want to simplify your finances after receiving your monthly card-summary email. Be concise and cooperative, with mild frustration if your recollections do not match the bank's records.\n\nOpen with: \"My monthly card summary reminded me how many cards I'm still carrying. I'd like to close my four credit-card accounts. Can you help?\"\n\nWhen asked for identity information, give the requested details: Marcus Okafor; date of birth 04/17/1972; address 2816 Remington Avenue, Apt 3, Baltimore, MD 21211; phone 410-555-0168; email marcus.okafor@example.net. Do not volunteer account beliefs during verification unless separately asked. If asked, you have an active Rho-Bank+ subscription.\n\nWhen asked which cards are involved, name Green Rewards, EcoCard, Gold Rewards, and Crypto-Cash Back. Answer relevant account questions without dumping unrelated details: Green is unused; you think an Eco replacement envelope arrived yesterday, but do not know which order it represents; you tried paying Gold in the app this morning and thought it succeeded. Your summary showed $286.40 due on Gold and you have $68.00 in checking. You do not know whether the attempted payment posted. Crypto's ongoing fee does not seem worthwhile. If asked about choices, state your existing preferences below; do not suggest an offer amount or volunteer your later Platinum belief.\n\nKeep all four cards in the closure review. Choosing to keep Crypto does not withdraw your requests concerning the other three. Do not change card products or accept points instead of cash. A Gold payoff may use only your existing checking account and only if it covers the full payoff; do not authorize partial payment, borrowing, or another funding source.\n\nOnly after meaningful progress on the initial closure review, when the agent discusses whether you would keep eligible Crypto-Cash Back, ask whether a cash statement credit might make keeping it worthwhile. At that point say you thought you might also have a Platinum card and ask whether that matters. Treat this as a revisable belief, not a demand for a particular benefit. Decline a product change: you would rather close Crypto than change cards or take points, but are willing to consider cash. After a grounded explanation of the applicable cash offer, accept it and explicitly agree to keep Crypto in its current product. Do not invent eligibility rules or calculate an offer yourself.\n\nIf the agent explains that the currently shipped Eco order is separate from an older delivered order, or that Gold's payment is not reflected and a balance remains, express mild frustration but accept the records-based explanation and defer that card. Do not demand a delivery override, invented payment, or other funding.\n\nIf the agent leaves a card unaddressed, applies one card's blocker to all four, or treats Crypto retention as permission to keep the others, say: \"I still want the other cards dealt with separately. Please tell me which you can close and what is stopping each of the others.\" Do not authorize abandoning any of those requests without an account-specific explanation.\n\nFor a proposed product change, points substitution, unauthorized funding or partial payoff, or closing Crypto after you agree to keep it, use one shared response: \"That isn't what I agreed to. Please keep to the accounts and choices we've discussed; if you've already changed something else, please help correct it.\" Do not authorize the incompatible action or copy its proposed choice. If it already happened, request correction and do not accept completion while a known unauthorized change remains unresolved.\n\nAuthorize service only after you have answered the requested identity questions and the agent has identified the account concerned. Before authorizing a financial or closure action, require an explanation of its recognizable result: which card will close, the proposed payment source and amount, or the cash credit and agreement to keep Crypto. You are not certifying hidden eligibility or calculations.\n\nAccept completion only when the agent confirms Green is closed and separately explains why Eco and Gold are deferred, including whether your delivery and payment recollections are reflected. Also require confirmation that the accepted cash credit was applied to Crypto, that it stays open as the same product, and that no known unauthorized funding, points substitution, or product change remains unresolved. If only some accounts are resolved or an offer has merely been announced, ask about what remains rather than ending. Once all these outcomes are confirmed, acknowledge the four dispositions, briefly thank the agent, and end with exactly one stop marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "u_mo_5281": {
+              "user_id": "u_mo_5281",
+              "name": "Marcus Okafor",
+              "date_of_birth": "04/17/1972",
+              "address": "2816 Remington Avenue, Apt 3, Baltimore, MD 21211",
+              "phone_number": "410-555-0168",
+              "email": "marcus.okafor@example.net",
+              "rho_bank_plus_subscription": true
+            }
+          },
+          "notes": "Fresh caller identity. Age 53 on 11/14/2025; occupation is user guidance, not a database field."
+        },
+        "accounts": {
+          "data": {
+            "a_mo_checking_5281": {
+              "account_id": "a_mo_checking_5281",
+              "user_id": "u_mo_5281",
+              "class": "checking",
+              "account_class": "checking",
+              "account_type": "personal",
+              "current_holdings": "$68.00",
+              "date_opened": "12/06/2023",
+              "status": "OPEN"
+            }
+          },
+          "notes": "Marcus's only deposit account and earliest banking relationship, including closed-account history. No additional funding source exists. Product tier is unspecified."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_mo_green_5281": {
+              "account_id": "cc_mo_green_5281",
+              "user_id": "u_mo_5281",
+              "card_type": "Green Rewards Card",
+              "status": "OPEN",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$5000.00",
+              "reward_points": "0 points",
+              "date_of_account_open": "03/12/2024"
+            },
+            "cc_mo_eco_5281": {
+              "account_id": "cc_mo_eco_5281",
+              "user_id": "u_mo_5281",
+              "card_type": "EcoCard",
+              "status": "OPEN",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$3000.00",
+              "reward_points": "0 points",
+              "date_of_account_open": "07/09/2024"
+            },
+            "cc_mo_gold_5281": {
+              "account_id": "cc_mo_gold_5281",
+              "user_id": "u_mo_5281",
+              "card_type": "Gold Rewards Card",
+              "status": "OPEN",
+              "current_balance": "$286.40",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$12000.00",
+              "reward_points": "0 points",
+              "date_of_account_open": "02/19/2025"
+            },
+            "cc_mo_crypto_5281": {
+              "account_id": "cc_mo_crypto_5281",
+              "user_id": "u_mo_5281",
+              "card_type": "Crypto-Cash Back Card",
+              "status": "OPEN",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$2500.00",
+              "reward_points": "0 points",
+              "date_of_account_open": "09/10/2025"
+            }
+          },
+          "notes": "Complete credit-card relationship: four personal cards, no Platinum or earlier closed card. Gold balance is legitimate carried purchase principal, not a fee or disputed charge. No redundant account_status or derived last-four fields are seeded."
+        },
+        "credit_card_orders": {
+          "data": {
+            "co_mo_eco_old_5281": {
+              "order_id": "co_mo_eco_old_5281",
+              "credit_card_account_id": "cc_mo_eco_5281",
+              "user_id": "u_mo_5281",
+              "order_date": "08/18/2025",
+              "expected_delivery": "08/25/2025",
+              "status": "delivered",
+              "reason": "damaged",
+              "shipping_address": "2816 Remington Avenue, Apt 3, Baltimore, MD 21211",
+              "expedited_shipping": false,
+              "old_card_cancelled": true
+            },
+            "co_mo_eco_current_5281": {
+              "order_id": "co_mo_eco_current_5281",
+              "credit_card_account_id": "cc_mo_eco_5281",
+              "user_id": "u_mo_5281",
+              "order_date": "11/10/2025",
+              "expected_delivery": "11/17/2025",
+              "status": "shipped",
+              "reason": "damaged",
+              "shipping_address": "2816 Remington Avenue, Apt 3, Baltimore, MD 21211",
+              "expedited_shipping": false,
+              "old_card_cancelled": true
+            }
+          },
+          "notes": "Genuine historical orders. Old physical cards were cancelled when replacements were ordered. Neither order status nor the OPEN credit account changes during service. No loss, theft, fraud, or activation event exists."
+        },
+        "credit_card_closure_reasons": {
+          "data": {
+            "cr_mo_green_20250418": {
+              "record_id": "cr_mo_green_20250418",
+              "credit_card_account_id": "cc_mo_green_5281",
+              "user_id": "u_mo_5281",
+              "closure_reason": "simplifying_finances",
+              "logged_at": "04/18/2025",
+              "status": "LOGGED"
+            }
+          },
+          "notes": "Only pre-existing attempt, scoped to Green. Crypto's current reason must be created during this interaction."
+        },
+        "credit_card_transaction_history": {
+          "data": {},
+          "notes": "No initial transactions requiring correction, pending purchases, or annual fees within 37 days. Balances are authoritative opening balances. Successful service adds only Crypto's retention credit."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No credit-card disputes for Marcus; no active or pending dispute blocks Green or Crypto."
+        },
+        "payment_history": {
+          "data": {},
+          "notes": "No posted Gold payment. The customer's app attempt causes no asynchronous payment or balance change."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be created after matching at least two identity fields and obtaining the fixed timestamp."
+        },
+        "credit_card_account_flags": {
+          "data": {},
+          "notes": "No initial flags and no authorized new waiver or other flag."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty operational telemetry. Tool availability comes from the catalog. Calls and read telemetry are excluded from banking outcome evaluation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "mo5281_locate",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Unscored lookup binds the caller and supplies identity fields for comparison."
+      },
+      {
+        "action_id": "mo5281_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Unscored timestamp support."
+      },
+      {
+        "action_id": "mo5281_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "u_mo_5281",
+          "address": "2816 Remington Avenue, Apt 3, Baltimore, MD 21211",
+          "email": "marcus.okafor@example.net",
+          "phone_number": "410-555-0168",
+          "date_of_birth": "04/17/1972",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After Marcus supplies matching date of birth and email, record fresh verification."
+      },
+      {
+        "action_id": "mo5281_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "mo5281_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"u_mo_5281\"}"
+        },
+        "info": "Unscored discovery binds all account IDs, balances, opening dates, complete holdings, and tenure; a duplicate credit-card-list read is unnecessary."
+      },
+      {
+        "action_id": "mo5281_unlock_disputes",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "mo5281_disputes",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"u_mo_5281\"}"
+        },
+        "info": "Unscored eligibility support, correctly scoped to Marcus's credit disputes."
+      },
+      {
+        "action_id": "mo5281_unlock_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "mo5281_green_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_mo_green_5281\"}"
+        },
+        "info": "Unscored Green closure-precondition support."
+      },
+      {
+        "action_id": "mo5281_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293"
+        }
+      },
+      {
+        "action_id": "mo5281_green_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"cc_mo_green_5281\"}"
+        },
+        "info": "Unscored support for closing Green without retention."
+      },
+      {
+        "action_id": "mo5281_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834"
+        }
+      },
+      {
+        "action_id": "mo5281_close_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834",
+          "arguments": "{\"credit_card_account_id\":\"cc_mo_green_5281\",\"user_id\":\"u_mo_5281\"}"
+        },
+        "info": "After explaining Green's closure and obtaining account-specific confirmation, permanently close it without another award."
+      },
+      {
+        "action_id": "mo5281_eco_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_mo_eco_5281\"}"
+        },
+        "info": "Unscored support distinguishing delivered history from the independent shipped blocker; Eco is deferred without mutation."
+      },
+      {
+        "action_id": "mo5281_unlock_payment",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "mo5281_gold_payment",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"cc_mo_gold_5281\",\"months\":1}"
+        },
+        "info": "Unscored support for the claimed morning app payment. No payment is reflected; $68 cannot fund the $286.40 full payoff. Defer Gold."
+      },
+      {
+        "action_id": "mo5281_crypto_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_mo_crypto_5281\"}"
+        },
+        "info": "Unscored Crypto eligibility support."
+      },
+      {
+        "action_id": "mo5281_crypto_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"cc_mo_crypto_5281\"}"
+        },
+        "info": "Unscored support establishes no prior Crypto attempt before this call's reason is created."
+      },
+      {
+        "action_id": "mo5281_unlock_reason",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "mo5281_log_crypto_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"cc_mo_crypto_5281\",\"user_id\":\"u_mo_5281\",\"closure_reason\":\"annual_fee\"}"
+        },
+        "info": "After Marcus explains the ongoing annual-fee concern, record this interaction's reason."
+      },
+      {
+        "action_id": "mo5281_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_statement_credit_8472"
+        }
+      },
+      {
+        "action_id": "mo5281_credit_crypto",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_statement_credit_8472",
+          "arguments": "{\"user_id\":\"u_mo_5281\",\"credit_card_account_id\":\"cc_mo_crypto_5281\",\"amount\":5.0,\"reason\":\"retention_offer\"}"
+        },
+        "info": "After the personal Bronze downgrade is declined, explain the entry-tier cash offer, resolve the unsupported Platinum belief using the complete account list, and obtain explicit acceptance and agreement to keep Crypto. Apply one credit only."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_credit_cards_credit_card_account_logistics_008",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016",
+    "doc_credit_cards_credit_cards_(general)_017"
+  ]
+}

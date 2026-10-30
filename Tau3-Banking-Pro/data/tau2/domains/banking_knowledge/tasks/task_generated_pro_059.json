@@ -1,0 +1,357 @@
+{
+  "id": "task_generated_pro_059",
+  "description": {
+    "purpose": "Secure and replace the debit and credit cards stolen from Theo Alvarez's wallet and file a full-refund dispute for the related unauthorized EcoCard purchase.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “My wallet was stolen this morning, and my Rho-Bank debit card was inside. I need that card secured and replaced.” Stay concise and concerned. Do not initially mention the EcoCard or any transaction on it.\n\nIf asked to verify your identity, provide your full name Theo Alvarez, date of birth 04/18/1977, registered address 417 W Bannock St, Boise, ID 83702, registered phone number +1-208-555-6842, and email theo.alvarez6842@example.com accurately and cooperatively. Do not speculate about internal eligibility checks or records.\n\nIf asked whether a temporary freeze is enough, say you initially thought it might be, but you may be mistaken. If the agent explains that a confirmed theft needs permanent protection, agree that the stolen debit card should be made unusable as long as a replacement is ordered.\n\nIf asked about delivery speed, design, destination, or fees, choose expedited delivery, the ordinary CLASSIC debit-card design, and your registered Boise address, and accept the disclosed applicable fee. For the credit-card replacement, also choose expedited delivery to the same registered address and accept the disclosed applicable fee.\n\nOnly after the agent says an EcoCard is on file and identifies the posted $186.40 Trailhead Electronics purchase, say that you now realize the EcoCard was also in the stolen wallet. State that you did not make or authorize that purchase, did not contact the merchant, noticed it on 11/14/2025, and want the EcoCard replaced and that specific charge disputed for a full refund.\n\nKeep the confirmed-stolen debit card unusable and require a replacement; a temporary lock without replacement is not acceptable. Once you recognize that the EcoCard was in the same stolen wallet, keep its old card unusable and require a replacement. Continue requesting a full-refund dispute for the single $186.40 Trailhead Electronics purchase, truthfully state that you did not contact the merchant, and ask whether temporary credit is included. Keep expedited delivery for both replacements, the CLASSIC debit-card design, and delivery to your registered Boise address; accept the applicable fees once disclosed.\n\nIf the agent recommends only freezing the debit card or leaving it capable of later reactivation, say: “The wallet was stolen, not just misplaced, and I no longer control the physical card. I need a permanent security outcome and a replacement.” Do not authorize a freeze-only resolution, and do not accept completion while the old debit card can be reactivated.\n\nIf the agent proposes leaving the stolen EcoCard usable, omitting its replacement, disputing another transaction, or declining to file the identified charge after you deny it, say: “The EcoCard was in the stolen wallet, and the $186.40 Trailhead Electronics purchase is not mine. Please protect that card and address that specific charge.” Do not authorize keeping the old EcoCard active, changing the selected transaction, or ending the call without the requested dispute.\n\nIf the agent proposes standard shipping, a paid decorative debit design, or a different destination, say: “Speed matters after this theft. Please keep expedited delivery, the ordinary CLASSIC debit design, and my registered Boise address.” Do not authorize standard shipping, a non-CLASSIC debit design, or a different destination.\n\nBefore authorizing card closure or either replacement, make sure your identity, the affected card, the confirmed theft, the shipping destination, the selected delivery speed, and any applicable fee have been established. Before authorizing the dispute, make sure the merchant, $186.40 amount, 11/14/2025 purchase date, your denial of authorization, your merchant-contact answer, and the requested full-refund outcome have been established for that exact purchase.\n\nDo not accept the debit-card resolution until you are told that the old debit card is permanently unusable and its expedited CLASSIC replacement is ordered. Do not accept the EcoCard resolution until you are told that the old EcoCard is unusable and its expedited replacement is ordered. Do not accept the dispute resolution until you are told that a full-refund dispute was filed for the $186.40 Trailhead Electronics purchase and whether temporary credit is included.\n\nIf an in-scope action still cannot be completed after the correct identity, ownership, theft, address, and transaction details are supplied and the agent has retried, ask for a human. Do not request escalation when everything is completed successfully.\n\nOnly after all three outcomes are confirmed, say: “Thank you, that takes care of everything. ###STOP###”"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_6842": {
+              "user_id": "usr_theo_alvarez_6842",
+              "name": "Theo Alvarez",
+              "date_of_birth": "04/18/1977",
+              "address": "417 W Bannock St, Boise, ID 83702",
+              "email": "theo.alvarez6842@example.com",
+              "phone_number": "+1-208-555-6842"
+            }
+          },
+          "notes": "Theo Alvarez is the 48-year-old Boise customer whose identity must be verified during the current session."
+        },
+        "accounts": {
+          "data": {
+            "acct_mid_7148": {
+              "account_id": "acct_mid_7148",
+              "user_id": "usr_theo_alvarez_6842",
+              "class": "checking",
+              "level": "MID TIER",
+              "status": "OPEN",
+              "date_opened": "06/07/2021",
+              "current_holdings": "640.00"
+            }
+          },
+          "notes": "Open mid-tier checking account with enough funds for the $15 expedited debit-card fee."
+        },
+        "debit_cards": {
+          "data": {
+            "dc_49017": {
+              "card_id": "dc_49017",
+              "account_id": "acct_mid_7148",
+              "user_id": "usr_theo_alvarez_6842",
+              "cardholder_name": "Theo Alvarez",
+              "last_4_digits": "4901",
+              "cvv": "417",
+              "expiration_date": "11/2029",
+              "issue_date": "11/10/2025",
+              "issue_reason": "lost",
+              "status": "ACTIVE"
+            },
+            "dc_19244": {
+              "card_id": "dc_19244",
+              "account_id": "acct_mid_7148",
+              "user_id": "usr_theo_alvarez_6842",
+              "cardholder_name": "Theo Alvarez",
+              "last_4_digits": "1924",
+              "cvv": "244",
+              "expiration_date": "03/2029",
+              "issue_date": "03/03/2025",
+              "issue_reason": "damaged",
+              "status": "CLOSED"
+            }
+          },
+          "notes": "The active card is four days old and confirmed stolen during the interaction. These two qualifying issues establish two replacements in the rolling year before the new order."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No pending or processing checking transactions, pending refunds, or pre-existing fee records are present."
+        },
+        "debit_card_orders": {
+          "data": {},
+          "notes": "No debit-card order is pending initially."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_60831": {
+              "account_id": "ccacct_60831",
+              "user_id": "usr_theo_alvarez_6842",
+              "card_type": "EcoCard",
+              "card_last_4_digits": "6382",
+              "date_of_account_open": "08/19/2022",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "current_balance": "412.75",
+              "reward_points": "1260"
+            }
+          },
+          "notes": "Theo's active EcoCard was in the same stolen wallet and has no pending replacement order."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "cctx_914406": {
+              "transaction_id": "cctx_914406",
+              "user_id": "usr_theo_alvarez_6842",
+              "credit_card_account_id": "ccacct_60831",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Trailhead Electronics",
+              "transaction_amount": "186.40",
+              "transaction_date": "11/14/2025",
+              "status": "POSTED",
+              "category": "electronics",
+              "rewards_earned": "1.86"
+            },
+            "cctx_hist_6842_0108": {
+              "transaction_id": "cctx_hist_6842_0108",
+              "user_id": "usr_theo_alvarez_6842",
+              "credit_card_account_id": "ccacct_60831",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Gem State Fuel",
+              "transaction_amount": "72.18",
+              "transaction_date": "01/07/2025",
+              "status": "POSTED",
+              "category": "gas",
+              "rewards_earned": "0.72"
+            },
+            "cctx_hist_6842_0719": {
+              "transaction_id": "cctx_hist_6842_0719",
+              "user_id": "usr_theo_alvarez_6842",
+              "credit_card_account_id": "ccacct_60831",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Boise Office Supply",
+              "transaction_amount": "94.55",
+              "transaction_date": "07/18/2025",
+              "status": "POSTED",
+              "category": "office_supplies",
+              "rewards_earned": "0.95"
+            }
+          },
+          "notes": "The Trailhead Electronics purchase is the single newly challenged posted transaction. The other transactions support the two genuine historical disputes."
+        },
+        "transaction_disputes": {
+          "data": {
+            "disp_hist_theo_0108": {
+              "dispute_id": "disp_hist_theo_0108",
+              "transaction_id": "cctx_hist_6842_0108",
+              "user_id": "usr_theo_alvarez_6842",
+              "card_action": "keep_active",
+              "card_last_4_digits": "6382",
+              "full_name": "Theo Alvarez",
+              "phone": "+1-208-555-6842",
+              "email": "theo.alvarez6842@example.com",
+              "address": "417 W Bannock St, Boise, ID 83702",
+              "contacted_merchant": true,
+              "purchase_date": "01/07/2025",
+              "issue_noticed_date": "01/08/2025",
+              "dispute_reason": "duplicate_charge",
+              "resolution_requested": "full_refund",
+              "partial_refund_amount": null,
+              "eligible_for_provisional_credit": true,
+              "provisional_credit_given": true,
+              "status": "closed",
+              "submitted_at": "01/08/2025"
+            },
+            "disp_hist_theo_0719": {
+              "dispute_id": "disp_hist_theo_0719",
+              "transaction_id": "cctx_hist_6842_0719",
+              "user_id": "usr_theo_alvarez_6842",
+              "card_action": "keep_active",
+              "card_last_4_digits": "6382",
+              "full_name": "Theo Alvarez",
+              "phone": "+1-208-555-6842",
+              "email": "theo.alvarez6842@example.com",
+              "address": "417 W Bannock St, Boise, ID 83702",
+              "contacted_merchant": true,
+              "purchase_date": "07/18/2025",
+              "issue_noticed_date": "07/19/2025",
+              "dispute_reason": "goods_services_not_as_described",
+              "resolution_requested": "full_refund",
+              "partial_refund_amount": null,
+              "eligible_for_provisional_credit": false,
+              "provisional_credit_given": false,
+              "status": "closed",
+              "submitted_at": "07/19/2025"
+            }
+          },
+          "notes": "Exactly two disputes are associated with Theo in the preceding twelve months, and neither references the new Trailhead Electronics transaction."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No EcoCard replacement order is pending initially."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be created through log_verification; no prior record is seeded."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable-tool availability comes from the tool catalog, not seeded database metadata."
+        },
+        "task_config": {
+          "data": {
+            "config_theo_wallet_6842": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "The new dispute remains open while provisional-credit eligibility and issuance are recorded."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_find_theo",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        }
+      },
+      {
+        "action_id": "act_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_6842",
+          "address": "417 W Bannock St, Boise, ID 83702",
+          "email": "theo.alvarez6842@example.com",
+          "phone_number": "+1-208-555-6842",
+          "date_of_birth": "04/18/1977",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_close_debit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721"
+        }
+      },
+      {
+        "action_id": "act_05_close_debit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"dc_49017\",\"reason\":\"stolen\"}"
+        }
+      },
+      {
+        "action_id": "act_06_unlock_order_debit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739"
+        }
+      },
+      {
+        "action_id": "act_07_order_debit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739",
+          "arguments": "{\"account_id\":\"acct_mid_7148\",\"user_id\":\"usr_theo_alvarez_6842\",\"delivery_option\":\"EXPEDITED\",\"delivery_fee\":15,\"card_design\":\"CLASSIC\",\"design_fee\":0,\"shipping_address\":\"417 W Bannock St, Boise, ID 83702\",\"excess_replacement_fee\":null}"
+        }
+      },
+      {
+        "action_id": "act_08_find_credit_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_theo_alvarez_6842"
+        }
+      },
+      {
+        "action_id": "act_09_find_credit_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_theo_alvarez_6842"
+        }
+      },
+      {
+        "action_id": "act_10_unlock_credit_replacement",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291"
+        }
+      },
+      {
+        "action_id": "act_11_order_credit_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_60831\",\"user_id\":\"usr_theo_alvarez_6842\",\"shipping_address\":\"417 W Bannock St, Boise, ID 83702\",\"reason\":\"stolen\",\"expedited_shipping\":true}"
+        }
+      },
+      {
+        "action_id": "act_12_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "act_13_read_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_6842\"}"
+        }
+      },
+      {
+        "action_id": "act_14_unlock_dispute",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "act_15_file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"cctx_914406\",\"card_action\":\"cancel_and_reissue\",\"card_last_4_digits\":\"6382\",\"full_name\":\"Theo Alvarez\",\"user_id\":\"usr_theo_alvarez_6842\",\"phone\":\"+1-208-555-6842\",\"email\":\"theo.alvarez6842@example.com\",\"address\":\"417 W Bannock St, Boise, ID 83702\",\"contacted_merchant\":false,\"purchase_date\":\"11/14/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"unauthorized_fraudulent_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true,\"partial_refund_amount\":null}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_023",
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_026",
+    "doc_bank_accounts_bank_accounts_(general)_029",
+    "doc_bank_accounts_bank_accounts_(general)_030",
+    "doc_credit_cards_credit_card_replacements_001",
+    "doc_credit_cards_credit_card_replacements_002",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

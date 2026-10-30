@@ -1,0 +1,232 @@
+{
+  "id": "task_generated_pro_052",
+  "description": {
+    "purpose": "Select and establish Marcus's affordable savings-linked banking arrangement, retain mature-checking eligibility through savings opening, submit one customer-controlled pending card application, and retire the empty legacy checking account without moving money.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “A client payment just cleared, and I’d like help putting my savings to work and replacing my basic checking account. Can we sort that out?”\n\nWhen asked to identify or verify yourself, give the requested details: Marcus Okafor, 34, freelance translator in Phoenix, Arizona; DOB 04/09/1991; 2618 E Clarendon Avenue, Phoenix, AZ 85016; marcus.okafor@example.net; 602-555-0148.\n\nWhen asked about your plan, budget, or accounts: your Light Blue checking is empty. Choose one Green or Gold savings account and one Evergreen or Blue replacement checking account, and retire Light Blue. Your $6,000 at an external bank is exclusively for one savings account for a year without additions or withdrawals; a separate $800 is your sustainable checking buffer. You will fund externally within a week; the agent must not move money. Electronic statements are fine. Choose by annual savings return after recurring costs, not purchase promotions or other perks.\n\nWhen asked about cards, eligibility, or income: you have no Rho card or premium subscription and do not want a subscription. Consider at most one application, only Silver Rewards or EcoCard, if worthwhile for savings after fees. Your annual income is $82,400, your recent personal credit report shows 704, and you pay card balances in full.\n\nBefore authorizing account changes, answer verification questions and agree to named products after the agent explains minimums, recurring costs, paperless requirements, and deferred funding. Only after the savings arrangement and recommended card's costs and terms are explained, review the terms, consent to the credit check if consistent with your boundaries, and submit the application yourself using your application facility. Report its actual receipt, not approval. Once both new bank accounts are confirmed open, ask to finish closing Light Blue if outstanding and acknowledge the explained funding deadline.\n\nFor any recognizable conflict with your budget, shortlist, permissions, or unfinished outcomes, withhold authorization or acceptance, briefly restate the affected fact, and ask the agent to reconsider. For a card fee, ask whether the savings benefit justifies it. If an action already caused a visible problem, request correction or an honest explanation of remaining options and timing; do not accept an incomplete setup. You do not know the processing-order risk if the agent suggests closing Light Blue first. Consent to closing it is not consent to abandoning savings; if told savings must now wait, say opening it was part of your request and ask what can be done. Do not invent a remedy or diagnose an unseen eligibility rule.\n\nAccept only when you have details and confirmation for both new bank accounts, confirmation Light Blue is closed, and the single application receipt with a decision outstanding. You must understand that no deposit was made and know the savings funding deadline; you do not require card approval or a currently available card bonus. Then thank the agent and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "mo8c6f2a9": {
+              "user_id": "mo8c6f2a9",
+              "name": "Marcus Okafor",
+              "date_of_birth": "04/09/1991",
+              "address": "2618 E Clarendon Avenue, Phoenix, AZ 85016",
+              "email": "marcus.okafor@example.net",
+              "phone_number": "602-555-0148",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh customer identity at the supplied 11/14/2025 clock. Occupation, financial plans, and reported score are customer facts in instructions, not database columns."
+        },
+        "accounts": {
+          "data": {
+            "chk_mo8c6f2a9_legacy": {
+              "account_id": "chk_mo8c6f2a9_legacy",
+              "user_id": "mo8c6f2a9",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "current_holdings": "0.00",
+              "date_opened": "02/10/2025",
+              "status": "OPEN"
+            }
+          },
+          "notes": "Exactly one customer-owned initial account in this supplied fixture. Patch, not table replacement. No other rows are linked to this fresh user; no savings, collections, negative balances, or for-cause checking closures. Target accounts are absent."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_mo8c6f2a9_sweep": {
+              "transaction_id": "txn_mo8c6f2a9_sweep",
+              "account_id": "chk_mo8c6f2a9_legacy",
+              "date": "10/06/2025",
+              "description": "ACH TRANSFER OUT - PERSONAL EXTERNAL ACCOUNT",
+              "amount": "-1730.00",
+              "type": "ach_transfer_out",
+              "status": "posted"
+            }
+          },
+          "notes": "Recent posted sweep corroborates the empty legacy account. No pending transactions for this account. This is not a complete lifetime ledger; current holdings come from the account, not a sum of this history."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No card belongs to Marcus. No card account is created by the requested application; unrelated default rows are not replaced."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No prior Marcus Okafor application. The user creates the sole scoped PENDING application."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Starts empty. Exactly one current-session verification is logged after matching identity responses and obtaining the fixed timestamp."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Starts empty; normal call telemetry only. Availability comes from the tool catalog, not seeded rows."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "lookup_marcus",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Reference lookup supplies identity comparison and the customer ID; read telemetry is not scored."
+      },
+      {
+        "action_id": "verification_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verify_marcus",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "mo8c6f2a9",
+          "address": "2618 E Clarendon Avenue, Phoenix, AZ 85016",
+          "email": "marcus.okafor@example.net",
+          "phone_number": "602-555-0148",
+          "date_of_birth": "04/09/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After customer responses match at least two identity fields; all four supplied fields match."
+      },
+      {
+        "action_id": "unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "read_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"mo8c6f2a9\"}"
+        },
+        "info": "Discovers the legacy ID and customer-scoped eligibility inventory; no independent read reward."
+      },
+      {
+        "action_id": "unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "read_legacy_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_mo8c6f2a9_legacy\"}"
+        },
+        "info": "Checks the no-pending closure condition, not balance reconstruction."
+      },
+      {
+        "action_id": "unlock_opening",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "open_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"mo8c6f2a9\",\"account_type\":\"savings\",\"account_class\":\"Green Account\"}"
+        },
+        "info": "After informed selection and paperless consent. Marcus defers funding. Returned account ID is represented by dc127f6bccd12ba2."
+      },
+      {
+        "action_id": "open_evergreen",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"mo8c6f2a9\",\"account_type\":\"checking\",\"account_class\":\"Evergreen Account\"}"
+        },
+        "info": "After informed product consent. Returned account ID is represented by a973cd9bfac3ec89."
+      },
+      {
+        "action_id": "apply_silver",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Silver Rewards Card",
+          "customer_name": "Marcus Okafor",
+          "annual_income": 82400,
+          "rho_bank_subscription": false
+        },
+        "info": "Customer reviews terms and consents to credit check before personally submitting. Bind the actual returned application_id; no synthetic ID is assumed."
+      },
+      {
+        "action_id": "unlock_closure",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "close_legacy",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"chk_mo8c6f2a9_legacy\",\"reason\":\"Replacing basic checking as part of savings setup\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Completes the authorized migration after both new bank accounts exist. Exact reason wording is not independently scored."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_001",
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_evergreen_account_002",
+    "doc_checking_accounts_blue_account_001",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_green_account_(savings)_002",
+    "doc_savings_accounts_green_account_(savings)_003",
+    "doc_savings_accounts_green_account_(savings)_005",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_gold_account_009",
+    "doc_savings_accounts_gold_account_013",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_ecocard_001"
+  ]
+}

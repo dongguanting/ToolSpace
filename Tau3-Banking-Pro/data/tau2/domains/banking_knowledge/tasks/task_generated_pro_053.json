@@ -1,0 +1,389 @@
+{
+  "id": "task_generated_pro_053",
+  "description": {
+    "purpose": "Approve a $6,000 increase on Marcus Okafor's existing Silver Rewards Card before filing an accurately identified nonreceipt dispute, preserving the active card and unchanged posted balance.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “The kitchen range I paid for hasn't arrived, and the seller won't answer me. Can you help me dispute the charge on my Silver Rewards Card?”\n\nYou are Marcus Okafor, 34, a laboratory technician in Sacramento, California. Give identity details only when asked: DOB 07/08/1991; 1846 Juniper Grove Lane, Sacramento, CA 95818; marcus.okafor@example.com; 916-555-0148. For relevant purchase questions, explain that you authorized the $2,864.70 Alder Home Appliances purchase on 10/02/2025, received nothing, noticed non-delivery on 10/16, and contacted the merchant on 10/16, 10/24, and 11/07 without a response or refund promise. Seek a full refund through a dispute for this range only. You recognize Capitol Rail ($212.35, 10/23) and SketchDesk ($31.80, 11/03) if asked. Keep your current card active: this is a delivery problem, not fraud or a lost card.\n\nOnly when the agent identifies the Alder purchase and amount, before finalizing its dispute, add: “Since I need to buy a replacement elsewhere while this charge is still there, could you also raise my existing limit from $12,000 to $18,000? I'd like more breathing room.” You want that total on the same card, not another card or substitute product. If asked, you have held it about a year and paid on time each month.\n\nYour card is safely at home. If asked for its digits, request help looking them up; use the retrieval option supplied and report its actual result. Only after doing so, at the next card-confirmation question or summary, say once: “I keep remembering 6363, though I may be mixing that up. I don't have the card here.” Accept a grounded reconciliation with the lookup rather than insisting on your memory.\n\nAuthorize service only after the agent confirms your identity and identifies your existing Silver card and Alder purchase. Once the related request is disclosed, authorize both requested services without prescribing their internal order. A full-refund request is not a guaranteed completed refund.\n\nIf a proposal conflicts with these preferences, leaves either request unfinished, or visibly settles conflicting digits without support, say what concerns you and ask the agent to check. Do not authorize a substitute or abandonment of either request. If a wrong action has already been reported, ask for correction or what can be done about the remaining request, and withhold acceptance. For a visible digit mismatch, admit uncertainty and ask to confirm the current card. Do not diagnose an undisclosed mistake or invent a way to undo a filing.\n\nAccept only after confirmation of the requested new total limit, the Alder full-refund dispute filed on that same card, and the card remaining usable. An ongoing investigation is acceptable; an immediate posted refund is not required. Then thank the agent and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "u_mok_20260923060": {
+              "user_id": "u_mok_20260923060",
+              "name": "Marcus Okafor",
+              "date_of_birth": "07/08/1991",
+              "address": "1846 Juniper Grove Lane, Sacramento, CA 95818",
+              "email": "marcus.okafor@example.com",
+              "phone_number": "916-555-0148"
+            }
+          },
+          "notes": "Fresh owner identity; age 34 at the fixed service clock."
+        },
+        "accounts": {
+          "data": {
+            "chk_mok_20260923060": {
+              "account_id": "chk_mok_20260923060",
+              "user_id": "u_mok_20260923060",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "OPEN",
+              "date_opened": "11/01/2024",
+              "current_holdings": "$6350.00"
+            }
+          },
+          "notes": "Required owned inventory; not a funding source."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_maxcombined36_20260923060_silver": {
+              "account_id": "cc_maxcombined36_20260923060_silver",
+              "user_id": "u_mok_20260923060",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "6633",
+              "date_of_account_open": "11/01/2024",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "current_balance": "$9000.00",
+              "credit_limit": "$12000.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "14320 points"
+            }
+          },
+          "notes": "Exact supplied account ID and precomputed lookup digits; downstream replay must verify derivation. Shared target for both services."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_mok_range_1002": {
+              "transaction_id": "txn_mok_range_1002",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Alder Home Appliances",
+              "transaction_amount": "$2864.70",
+              "transaction_date": "10/02/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "2864 points"
+            },
+            "txn_mok_rail_1023": {
+              "transaction_id": "txn_mok_rail_1023",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Capitol Rail",
+              "transaction_amount": "$212.35",
+              "transaction_date": "10/23/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "849 points"
+            },
+            "txn_mok_software_1103": {
+              "transaction_id": "txn_mok_software_1103",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "SketchDesk",
+              "transaction_amount": "$31.80",
+              "transaction_date": "11/03/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "127 points"
+            }
+          },
+          "notes": "Three owned purchases support selection of the sole disputed range. This is a sample, not a balance-reconstruction ledger. Nonreceipt and merchant-contact facts come from the customer."
+        },
+        "payment_history": {
+          "data": {
+            "pay_mok_202506": {
+              "payment_id": "pay_mok_202506",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "payment_date": "06/10/2025",
+              "amount": "$430.00",
+              "status": "ON_TIME"
+            },
+            "pay_mok_202507": {
+              "payment_id": "pay_mok_202507",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "payment_date": "07/10/2025",
+              "amount": "$455.00",
+              "status": "ON_TIME"
+            },
+            "pay_mok_202508": {
+              "payment_id": "pay_mok_202508",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "payment_date": "08/10/2025",
+              "amount": "$470.00",
+              "status": "ON_TIME"
+            },
+            "pay_mok_202509": {
+              "payment_id": "pay_mok_202509",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "payment_date": "09/10/2025",
+              "amount": "$510.00",
+              "status": "ON_TIME"
+            },
+            "pay_mok_202510": {
+              "payment_id": "pay_mok_202510",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "payment_date": "10/10/2025",
+              "amount": "$485.00",
+              "status": "ON_TIME"
+            },
+            "pay_mok_202511": {
+              "payment_id": "pay_mok_202511",
+              "user_id": "u_mok_20260923060",
+              "credit_card_account_id": "cc_maxcombined36_20260923060_silver",
+              "payment_date": "11/10/2025",
+              "amount": "$525.00",
+              "status": "ON_TIME"
+            }
+          },
+          "notes": "Six consecutive owned on-time months required by the retained workload; latest three establish approval eligibility. All precede fixed time."
+        },
+        "credit_limit_increase_requests": {
+          "data": {},
+          "notes": "No supplied pre-existing requests. Fresh owner/account scopes must have no historical requests after default merging; this patch does not replace the global table."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No supplied pre-existing disputes. Fresh caller scope must be empty before service. Filing creates the live approval blocker."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No supplied replacement orders; fresh selected account has no outstanding orders."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty tool-produced telemetry. Availability comes from the catalog. Excluded from domain reward."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty tool-produced telemetry."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity",
+        "name": "get_user_information_by_name",
+        "requestor": "assistant",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        }
+      },
+      {
+        "action_id": "repair_clock",
+        "name": "get_current_time",
+        "requestor": "assistant",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_auth_log",
+        "name": "log_verification",
+        "requestor": "assistant",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "u_mok_20260923060",
+          "address": "1846 Juniper Grove Lane, Sacramento, CA 95818",
+          "email": "marcus.okafor@example.com",
+          "phone_number": "916-555-0148",
+          "date_of_birth": "07/08/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "locate_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        }
+      },
+      {
+        "action_id": "read_cards",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "u_mok_20260923060"
+        }
+      },
+      {
+        "action_id": "identify_purchase",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "u_mok_20260923060"
+        }
+      },
+      {
+        "action_id": "give_last_four",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923060_silver\"}"
+        }
+      },
+      {
+        "action_id": "retrieve_last_four",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923060_silver\"}"
+        }
+      },
+      {
+        "action_id": "unlock_submit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392"
+        }
+      },
+      {
+        "action_id": "submit_cli",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923060_silver\",\"user_id\":\"u_mok_20260923060\",\"requested_increase_amount\":6000}"
+        }
+      },
+      {
+        "action_id": "unlock_cli_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829"
+        }
+      },
+      {
+        "action_id": "read_cli_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923060_silver\"}"
+        }
+      },
+      {
+        "action_id": "unlock_payments",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "read_payments",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923060_silver\",\"months\":3}"
+        }
+      },
+      {
+        "action_id": "unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "read_disputes",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"u_mok_20260923060\"}"
+        }
+      },
+      {
+        "action_id": "unlock_replacements",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "read_replacements",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923060_silver\"}"
+        }
+      },
+      {
+        "action_id": "unlock_approve",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847"
+        }
+      },
+      {
+        "action_id": "approve_cli",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923060_silver\",\"user_id\":\"u_mok_20260923060\",\"new_credit_limit\":18000}"
+        }
+      },
+      {
+        "action_id": "unlock_file",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_mok_range_1002\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"6633\",\"full_name\":\"Marcus Okafor\",\"user_id\":\"u_mok_20260923060\",\"phone\":\"916-555-0148\",\"email\":\"marcus.okafor@example.com\",\"address\":\"1846 Juniper Grove Lane, Sacramento, CA 95818\",\"contacted_merchant\":true,\"purchase_date\":\"10/02/2025\",\"issue_noticed_date\":\"10/16/2025\",\"dispute_reason\":\"goods_services_not_received\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_004",
+    "doc_credit_cards_credit_card_account_logistics_005",
+    "doc_credit_cards_credit_card_account_logistics_006",
+    "doc_credit_cards_credit_card_account_logistics_007",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_013",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

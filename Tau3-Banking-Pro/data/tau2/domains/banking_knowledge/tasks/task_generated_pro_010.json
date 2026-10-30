@@ -1,0 +1,239 @@
+{
+  "id": "task_generated_pro_010",
+  "description": {
+    "purpose": "Reconcile Marcus Okafor's personal and Business Silver rewards, submitting genuine discrepancies while preserving the business account's pre-promotion opening-date boundary.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Marcus Okafor, a 60-year-old small-business bookkeeper operating a bookkeeping practice in Madison, Wisconsin. The call takes place on November 14, 2025. Be concise, cooperative, and concerned with accurate bookkeeping rather than maximizing a claim.\n\nOpen with: “I was reconciling last December's rewards for my bookkeeping records, and the cash back on my two Silver cards doesn't seem to line up. Could we start with the personal one? My Business Silver account opened on November 13, 2024, and I only want to flag actual errors.”\n\nOnly when asked for identifying or contact information, provide the requested facts: Marcus Okafor; birth date February 8, 1965; address 1846 Juniper Hollow Lane, Madison, WI 53704; email marcus.okafor@example.net; telephone 608-555-0163; your own customer ID is usr_marcus_okafor_020v2 if needed. Do not invent credentials or provide full card numbers or security codes.\n\nOnly when asked which cards, purchases, period, or statements are involved, identify personal Silver ending 0027 and Business Silver ending 8884 and the December 2024 entries. Your line-item export is unavailable during the call, so you do not know exact transaction identifiers or correct reward percentages. These are old completed billing cycles, not pending purchases. Answer relevant questions about purchase context: the Microsoft charges were separate personal and business software licenses bought directly from Microsoft; the airline purchase was airfare bought directly from Delta; CedarLedger Cloud was your recurring accounting software subscription billed online directly by its provider. None was a gift card, stored-value purchase, person-to-person payment, fee, interest, insurance premium, or wallet payment. None was returned, refunded, adjusted, or recoded, and the rewards you are comparing are the final amounts from the completed statements. Do not volunteer this entire context without a relevant question or diagnose the errors yourself. Your Business Silver was your first such account, with no other Business Silver account; answer that if asked.\n\nOnly after the agent identifies the personal Microsoft rewards discrepancy, ask: “I paid Microsoft for the business too. Does what you found mean those business software purchases need attention, or are that card's terms different?” Keep the original opening date unchanged and continue until that related comparison is addressed. Do not introduce another unrelated issue.\n\nKeep your goal fixed: have both cards reviewed under their respective terms, submit only actual reward discrepancies, and leave correctly rewarded purchases alone. Never change or retract the November 13, 2024 business opening date to obtain a more attractive reward. You want genuine discrepancies actually submitted, not merely explained, and you will not accept an unsupported claim that cash has already been credited.\n\nIf asked to work out rates or identify erroneous rows yourself, say that you noticed inconsistency but do not know the percentages or which entries are wrong, and ask the agent to investigate. Learn rates and findings only from the agent; do not supply an expected amount or promotion eligibility answer yourself.\n\nIf the agent proposes disputing every software purchase, using the personal card's terms for the business card, or stopping after one card, say: “These are separate personal and business cards. Please check each one's terms and only flag the entries that are actually wrong; I still need the other card addressed too.” Do not authorize blanket filings, filings justified solely by the other card's rate, or abandonment of the remaining review.\n\nIf the agent proposes additional business disputes because December purchases receive a promotion without reconciling the opening date, or says the account opened on or after November 14, say: “The account really opened on November 13, 2024. Please check whether that offer covered an account opened then before flagging another purchase on that basis.” Withhold authorization for any extra filing justified by changing the opening date or assuming eligibility from purchase dates alone.\n\nIf the agent proposes an extra business Microsoft filing based on doubled rewards or says the December purchase dates alone establish eligibility, say: “Before I submit another one, please check that against the November 13, 2024 account opening I mentioned. I don't want to claim a bonus that didn't apply to my account.” Do not approve or execute the extra business Microsoft filing while its justification overlooks or changes the original opening date; a financially attractive extra claim is not enough. Do not claim to know the offer's qualifying dates, multiplier, or correct reward calculation until the agent explains them. If the extra filing has already happened, do not accept or stop. Say that the submission may have used the wrong assumption about when the account opened, ask the bank to investigate and correct any unnecessary filing, and continue seeking proper handling of the genuine discrepancies. Do not prescribe a cancellation method or assume the filing can silently disappear.\n\nBefore every submission, require the agent to identify the card, merchant, date, and purchase amount so you recognize the entry, and to supply its transaction identifier. Use only your own customer identity. Authorize a filing only after it is explained as an actual discrepancy under that card's own terms, preserving the original business opening date where relevant; do not authorize bulk or unexplained filings. When those conditions hold and the agent supplies a customer-operated submission capability, use it with the supplied identifier for that particular purchase. Do not originate or guess transaction identifiers. Reuse the supplied capability for another supported discrepancy when instructed.\n\nIf the agent gives calculations without completing submissions or promises an unconfirmed immediate credit, say: “Please help me get the actual discrepancies submitted. If this is only a review request, that's fine, but I need to know what has really been done.” Do not approve closure while an identified discrepancy remains unsubmitted, and do not accept a claimed credit solely from an explanation. If a submission is described as cash already credited, ask whether rewards actually changed or a review was only submitted.\n\nAccept completion only after you receive a coherent comparison for both cards and a successful submission confirmation tied to every recognizable purchase identified as genuinely underrewarded. Require correctly rewarded entries to remain undisputed and any concern about an incorrect opening date or unsupported promotional filing to be resolved before accepting completion. Accept pending review, not an unconfirmed cash credit; ensure you understand what was actually submitted. Withhold acceptance and the stop marker until all these conditions hold. Do not stop after a partial explanation, an unsupported extra filing, or a promise to submit later. Once all conditions hold, briefly thank the agent and end with exactly this marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_marcus_okafor_020v2": {
+              "user_id": "usr_marcus_okafor_020v2",
+              "name": "Marcus Okafor",
+              "date_of_birth": "02/08/1965",
+              "address": "1846 Juniper Hollow Lane, Madison, WI 53704",
+              "email": "marcus.okafor@example.net",
+              "phone_number": "608-555-0163",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Caller identity, age 60 at fixed environment date 11/14/2025. Occupation is persona context only."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_gen_202619312_1": {
+              "account_id": "cc_gen_202619312_1",
+              "user_id": "usr_marcus_okafor_020v2",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "0027",
+              "date_of_account_open": "07/19/2023",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "$12000.00",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "1110"
+            },
+            "cc_gen_202619312_2": {
+              "account_id": "cc_gen_202619312_2",
+              "user_id": "usr_marcus_okafor_020v2",
+              "card_type": "Business Silver Rewards Card",
+              "card_last_4_digits": "8884",
+              "date_of_account_open": "11/13/2024",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "$25000.00",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "1590"
+            }
+          },
+          "notes": "These are Marcus's two cards. cc_gen_202619312_2 is his first and only Business Silver account; no earlier Business Silver account exists. Preserve both opening dates, balances, and aggregate rewards. Account IDs and corresponding last-four digits are the supplied precomputed pairs."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_mo_personal_ms_241204": {
+              "transaction_id": "txn_mo_personal_ms_241204",
+              "user_id": "usr_marcus_okafor_020v2",
+              "credit_card_account_id": "cc_gen_202619312_1",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_date": "12/04/2024",
+              "transaction_amount": "$150.00",
+              "status": "POSTED",
+              "rewards_earned": "150 points"
+            },
+            "txn_mo_personal_air_241208": {
+              "transaction_id": "txn_mo_personal_air_241208",
+              "user_id": "usr_marcus_okafor_020v2",
+              "credit_card_account_id": "cc_gen_202619312_1",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Delta Air Lines",
+              "category": "Travel",
+              "transaction_date": "12/08/2024",
+              "transaction_amount": "$240.00",
+              "status": "POSTED",
+              "rewards_earned": "960 points"
+            },
+            "txn_mo_business_ms_241205": {
+              "transaction_id": "txn_mo_business_ms_241205",
+              "user_id": "usr_marcus_okafor_020v2",
+              "credit_card_account_id": "cc_gen_202619312_2",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_date": "12/05/2024",
+              "transaction_amount": "$150.00",
+              "status": "POSTED",
+              "rewards_earned": "150 points"
+            },
+            "txn_mo_business_cloud_241210": {
+              "transaction_id": "txn_mo_business_cloud_241210",
+              "user_id": "usr_marcus_okafor_020v2",
+              "credit_card_account_id": "cc_gen_202619312_2",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "CedarLedger Cloud",
+              "category": "Software",
+              "transaction_date": "12/10/2024",
+              "transaction_amount": "$360.00",
+              "status": "POSTED",
+              "rewards_earned": "1440 points"
+            }
+          },
+          "notes": "Exactly four scoped purchases. txn_mo_personal_ms_241204 and txn_mo_business_ms_241205 are separate ordinary software licenses billed directly by Microsoft. txn_mo_personal_air_241208 is airfare bought directly from Delta Air Lines. txn_mo_business_cloud_241210 is a recurring accounting SaaS subscription billed online directly by CedarLedger Cloud, which is not any named excluded merchant. All categories are final merchant-submitted categories. All four have final recorded rewards from completed December 2024 billing cycles at fixed date 11/14/2025. None involves a wallet or third-party processor, gift card, stored value, person-to-person payment, fee, interest, insurance premium, refund, return, adjustment, or merchant recoding. This purchase context is available through relevant customer questions; no unsupported transaction-description or billing-cycle column is introduced."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "No initial disputes. Only customer-operated submissions create rows, with tool-generated IDs."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Submission queues review; it does not resolve disputes or credit rewards."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty runtime discovery bookkeeping. The handoff is executable support, not an independently evaluated banking outcome."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_marcus_okafor_020v2",
+          "address": "1846 Juniper Hollow Lane, Madison, WI 53704",
+          "email": "marcus.okafor@example.net",
+          "phone_number": "608-555-0163",
+          "date_of_birth": "02/08/1965",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "g01_bind_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Reference-only lookup after the opening-date disclosure and requested name. Discovers the caller ID; neither this read nor its position is scored."
+      },
+      {
+        "action_id": "g02_read_cards",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_marcus_okafor_020v2"
+        },
+        "info": "Reference-only account binding and opening-date evidence needed for product-specific classification."
+      },
+      {
+        "action_id": "g03_read_purchases",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_marcus_okafor_020v2"
+        },
+        "info": "Reference-only discovery of purchase identifiers and calculation inputs. Relevant customer answers confirm direct purchase and completed-cycle context."
+      },
+      {
+        "action_id": "g04_give_submission",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_marcus_okafor_020v2\",\"transaction_id\":\"txn_mo_personal_ms_241204\"}"
+        },
+        "info": "Runtime prerequisite only, not an independent DB reward. The agent identifies personal Silver, Microsoft, December 4, 2024, $150.00 and supplies the identifier after explaining its discrepancy."
+      },
+      {
+        "action_id": "g05_submit_personal",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_marcus_okafor_020v2\",\"transaction_id\":\"txn_mo_personal_ms_241204\"}"
+        },
+        "info": "Marcus recognizes and confirms the personal purchase and requests review of the established $4.50 underaward using his own identity. No sensitive card details are collected. Evaluated effect: one SUBMITTED dispute."
+      },
+      {
+        "action_id": "g06_submit_business",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_marcus_okafor_020v2\",\"transaction_id\":\"txn_mo_business_cloud_241210\"}"
+        },
+        "info": "After the related comparison, Marcus confirms Business Silver, CedarLedger Cloud, December 10, 2024, $360.00 and its supplied identifier. The agent establishes a $21.60 underaward without doubling rewards, preserving the 11/13/2024 opening date. Marcus requests review with his own identity and no sensitive card details. Evaluated effect: one additional SUBMITTED dispute, with both correct purchases undisputed."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_business_credit_cards_business_silver_rewards_card_012",
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_silver_rewards_card_002"
+  ]
+}

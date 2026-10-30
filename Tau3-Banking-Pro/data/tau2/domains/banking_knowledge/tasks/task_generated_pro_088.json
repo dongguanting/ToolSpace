@@ -1,0 +1,213 @@
+{
+  "id": "task_generated_pro_088",
+  "description": {
+    "purpose": "Help Marcus Okafor select and apply for the qualifying highest-cashback personal card, fund his recently opened Green savings account from his redundant Light Blue checking account, and close that checking account after it is emptied.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin cautiously by saying: “I got a reminder that my new savings account still needs funding, and I want to finish the rewards-card and account setup I planned with it. Can you help me choose the right card and finish the setup?”\n\nIf asked to identify yourself, say that you are Marcus Okafor. If the agent needs matching contact details, provide your date of birth as June 18, 1980, your address as 1847 Winnebago Street, Madison, Wisconsin 53704, your email as marcus.okafor860003@example.com, and your phone number as 608-555-0147. Do not volunteer these details before a relevant request.\n\nIf asked about card preferences, expected spending, or what “right card” means, explain that you expect about $20,000 a year in ordinary purchases outside special bonus categories, will not pay an annual fee, need virtual card management for online photography purchases, and want the strongest cash back under those constraints. Do not yet volunteer your income, credit score, subscription status, account balances, or consolidation instructions.\n\nIf asked for application eligibility or financial details, say that your current reported credit score is 735, your annual income is $132,000, and your Rho-Bank+ premium subscription is active. Do not state internal eligibility rules or calculations.\n\nIf asked how to fund the savings account or which existing account is being consolidated, say that you want exactly $12,400 transferred from the Light Blue Account to the Green Account (savings), followed by closure of Light Blue only after it is empty, and that the Evergreen Account must remain open.\n\nThe selected card must maximize cash back for your stated ordinary-purchase profile while having no annual fee and virtual card management. Exactly $12,400 must move from the Light Blue Account to the Green Account (savings), with no split allocation and no different funding source. Only the Light Blue Account may be closed, and only after it is empty; the Evergreen Account and Green Account (savings) must remain open.\n\nIf the agent recommends a fee-bearing card, a card without virtual card management, an added card, or a card selected mainly for savings yield, respond: “I don't want to pay an annual fee or give up virtual card access, and my main card goal is cash back on those ordinary purchases. Please check which single card actually meets all of that.” Do not authorize or submit an application until the proposed card is confirmed to satisfy all three visible requirements.\n\nIf the agent proposes a smaller transfer, a split allocation, another source account, or leaving money in Light Blue, respond: “I want the full $12,400 moved from Light Blue into the Green savings account, not split or taken from Evergreen.” Authorize no transfer unless the source is Light Blue, the destination is Green Account (savings), and the amount is exactly $12,400.\n\nIf the agent proposes closing Light Blue before the transfer is complete, closing Evergreen, or closing Green savings, respond: “Please keep Evergreen and Green savings open. Light Blue is the only account I want closed, and only after its money has reached savings.” Do not authorize closure while Light Blue still holds funds or if the proposed account is not Light Blue.\n\nBefore authorizing the card application, require a recognizable confirmation that the proposed card has no annual fee, supports virtual card management, fits your disclosed eligibility facts, and is the strongest cash-back choice for your stated purchase profile. Once the agent identifies a card satisfying those requirements, agree to submit one application using your disclosed income and active subscription status.\n\nBefore authorizing the transfer, require confirmation that the source is Light Blue, the destination is Green Account (savings), and the amount is exactly $12,400.\n\nBefore authorizing closure, require confirmation that the transfer completed and that Light Blue has no remaining balance or pending activity. After that confirmation, authorize closure of Light Blue and reiterate that Evergreen and Green savings must remain open.\n\nDo not accept the result until you are told that the Gold Rewards Card application was submitted using your $132,000 income and active premium-subscription status. Do not accept the result until you are told that Green savings received the full $12,400 and Light Blue has a zero balance. Do not accept the result until you are told that Light Blue is closed and Evergreen and Green savings remain open.\n\nIf any otherwise eligible application, transfer, or closure is refused or repeatedly mishandled after you clarify the visible requirements once, become frustrated and ask for a human agent to complete the same outcome. Do not request escalation when the setup is completed correctly.\n\nRemain cautious while work is incomplete, and become relieved only after every visible outcome is confirmed. If only part of the setup is complete, ask directly about the missing application, funding, closure, or preserved accounts. Once all required outcomes are confirmed, briefly thank the agent and end with exactly this marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_mok_860003_c4f1": {
+              "user_id": "usr_mok_860003_c4f1",
+              "name": "Marcus Okafor",
+              "date_of_birth": "06/18/1980",
+              "email": "marcus.okafor860003@example.com",
+              "phone_number": "608-555-0147",
+              "address": "1847 Winnebago Street, Madison, WI 53704",
+              "rho_bank_plus_subscription": true
+            }
+          },
+          "notes": "Fresh customer identity for Marcus Okafor. His configured interaction facts are occupation self-employed photographer, reported credit score 735, annual income $132,000, and residence in Madison, Wisconsin."
+        },
+        "accounts": {
+          "data": {
+            "acct_mok_evergreen_860003_a91e": {
+              "account_id": "acct_mok_evergreen_860003_a91e",
+              "user_id": "usr_mok_860003_c4f1",
+              "class": "checking",
+              "level": "Evergreen Account",
+              "status": "OPEN",
+              "current_holdings": "3800.00",
+              "date_opened": "04/08/2024"
+            },
+            "acct_mok_lightblue_860003_b72d": {
+              "account_id": "acct_mok_lightblue_860003_b72d",
+              "user_id": "usr_mok_860003_c4f1",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "12400.00",
+              "date_opened": "08/20/2025"
+            },
+            "acct_mok_greensav_860003_d53a": {
+              "account_id": "acct_mok_greensav_860003_d53a",
+              "user_id": "usr_mok_860003_c4f1",
+              "class": "savings",
+              "level": "Green Account (savings)",
+              "status": "OPEN",
+              "current_holdings": "0.00",
+              "date_opened": "11/01/2025"
+            }
+          },
+          "notes": "Marcus has exactly the three relevant accounts. Green savings was opened 13 days before the fixed date and its still-pending opening funding is $12,400 from Light Blue. Evergreen is the retained operating checking account."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No bank-account transaction records are present for these fresh accounts, so the Light Blue Account has zero pending transactions before closure. The transfer tool mutates account balances directly and does not create a record in this table."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No credit-card application exists initially for Marcus Okafor."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational unlock state starts empty. Discoverable-tool availability is supplied by the environment catalog and exact knowledge mentions, not by seeded database rows."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_mok_860003_c4f1",
+          "address": "1847 Winnebago Street, Madison, WI 53704",
+          "email": "marcus.okafor860003@example.com",
+          "phone_number": "608-555-0147",
+          "date_of_birth": "06/18/1980",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "act_lookup_marcus_01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        }
+      },
+      {
+        "action_id": "act_unlock_account_lookup_02",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_get_marcus_accounts_03",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_mok_860003_c4f1\"}"
+        }
+      },
+      {
+        "action_id": "act_apply_gold_04",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Gold Rewards Card",
+          "customer_name": "Marcus Okafor",
+          "annual_income": 132000,
+          "rho_bank_subscription": true
+        }
+      },
+      {
+        "action_id": "act_unlock_transfer_05",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "act_transfer_to_green_06",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_mok_lightblue_860003_b72d\",\"destination_account_id\":\"acct_mok_greensav_860003_d53a\",\"amount\":12400.0}"
+        }
+      },
+      {
+        "action_id": "act_unlock_close_07",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "act_close_lightblue_08",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_mok_lightblue_860003_b72d\",\"reason\":\"Customer requested closure after consolidating funds\",\"waive_early_closure_fee\":false}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ],
+    "bank_account_closure_reason_equivalences": [
+      {
+        "account_id": "acct_mok_lightblue_860003_b72d",
+        "user_id": "usr_mok_860003_c4f1",
+        "canonical_reason": "Customer requested closure after consolidating funds",
+        "accepted_equivalent_reasons": [
+          "Customer requested closure after consolidating funds",
+          "Customer request - funds consolidated into Green Account (savings); account empty and no longer needed",
+          "Customer requested closure after moving full balance to Green Account (savings)"
+        ],
+        "evidence": "Reviewed equivalent customer-request/consolidation wording; no customer-prescribed exact string. Account, owner, status, balances, fee flags, and every other agent/user DB field stay exact."
+      }
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_credit_cards_gold_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_platinum_rewards_card_001",
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_savings_accounts_green_account_(savings)_003"
+  ]
+}

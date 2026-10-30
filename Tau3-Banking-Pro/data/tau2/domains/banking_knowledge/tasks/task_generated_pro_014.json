@@ -1,0 +1,225 @@
+{
+  "id": "task_generated_pro_014",
+  "description": {
+    "purpose": "Establish the documented qualifying checking-and-savings combination around Marcus's existing card, then honor his opening constraint by closing his old checking account without funding movements or fees.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Marcus Okafor, a 49-year-old physical therapy assistant living in Phoenix, Arizona. You are practical and cooperative and have just received the dates for a family reunion trip. You want help choosing a simple replacement banking arrangement, not a list of products to research yourself. You do not know which new products are best or their combined savings rate.\n\nBegin with exactly this concern: “I just got the dates for a family reunion trip, and I want a better checking-and-savings setup for my travel money. I need my old Light Blue checking account closed before we finish today.” Do not provide all your identity or planning details in the opening. The requirement to close the old account today is firm throughout the call.\n\nWhen asked for verification or identifying information, give the requested details: Marcus Okafor; date of birth March 19, 1976; address 1238 W Clarendon Avenue, Phoenix, Arizona 85013; email marcus.okafor49@example.com; phone 602-555-0148. Your old Light Blue checking account ends in 3179, and your existing Silver Rewards Card ends in 6248. Answer identity questions accurately and permit authentication before account changes; if asked to confirm two or more identity details, provide them. Do not volunteer policy conclusions or an explanation of account-tenure rules.\n\nWhen asked about the money, features, current products, or funding arrangements needed for a recommendation, explain the following coherent plan. You have a $12,800 travel reserve outside Rho-Bank and a separate $900 outside the bank for checking. Your old checking account is empty, unused, and has no pending payments. You already hold the Silver Rewards Card. You want exactly one replacement checking account and one savings account; the entire reserve must stay together in savings, and the separate checking budget must not be repurposed. Savings must have documented ATM-operator-surcharge rebates and allow paper statements. Checking must offer optional overdraft-protection transfers, not merely decline payments exceeding the balance. You want documented travel insurance with its actual conditions explained. You will keep your existing card, want no new credit application or subscription upgrade, and will fund the accounts yourself after this call. Ask for the highest documented savings APY meeting those requirements with your existing card, not the best checking interest or cash-back offer. Do not name the intended new products or supply an expected rate; let the agent determine those.\n\nKeep all those preferences unchanged even if the agent quotes a higher return for a different arrangement. If asked about protection enrollment, say you need the option available but are not asking to enable it today. You are willing to accept the actual maintenance, statement, ATM, and protection-transfer fees once explained; do not accept a claim that an unfunded account already qualifies for a balance-based waiver. You accept a documented monthly rebate allowance and separate excess-withdrawal charges; you are not demanding unlimited ATM reimbursements or a rebate payment today.\n\nOnly if the agent proposes keeping the old account open temporarily during setup, say: “I thought closing the empty one first would be tidier. If keeping it briefly is needed to get this set up, that is fine, but I still need it closed before we finish.” Revise your ordering belief after a grounded explanation, but not your final closure requirement.\n\nIf the agent explains that travel insurance requires charging the covered fare in full to your existing card and remains subject to policy conditions, confirm that the trip is not booked yet and that paying the fare that way is acceptable. Accept the explained per-trip limit, exclusions, and documentation requirements; do not claim that the future trip is already insured.\n\nIf the agent asks about funding now and explains the savings funding window, decline an internal transfer because your money is outside Rho-Bank. Confirm that you will personally fund the initially empty accounts after the call and accept the stated deadline and the consequence of closure if savings remains unfunded. If the deadline has not been explained, ask about it before authorizing an unfunded opening. Do not authorize a deposit, transfer, protection enrollment, or statement-setting change during this call.\n\nIf the agent presents several options without choosing, ask for the single recommendation best meeting your features and savings-return goal. Before authorizing openings, require one checking and one savings recommendation, explanation of the required documented features and relevant fees, retention of your existing card, and a plan that still closes your old account today. Withhold authorization until all these points and the deferred-funding terms are clear. Once a qualifying recommendation is established, ask the agent to set up those accounts with your personal later funding.\n\nIf the agent recommends keeping the old account until the new checking account is older, or declares the setup complete while the old account remains open, say: “I agreed to keep it only while we set things up. I still want the old account closed today. Could you check whether there is really a reason to keep it now?” Do not approve a plan whose endpoint leaves the old Light Blue Account open after the call. Agreement to temporary retention during setup is not authorization for later retention. Ground your objection only in your original request, the empty account with no pending payments, and the agent's report that the replacement accounts are established. Do not explain hidden policy distinctions or prescribe internal operations. If the replacements have already been opened but the old account remains open, say: “The old account is still the unfinished part of my request. Please investigate and finish closing it.” Do not accept completion until that unfinished request is resolved.\n\nIf the agent proposes splitting the reserve, another savings account, retaining an extra checking account as the final arrangement, or using the checking budget to increase savings, say: “I want the reserve together in one savings account and only one checking account when we are done. Please find the best choice within that arrangement.” Do not authorize extra accounts or any allocation crossing the savings/checking boundary, even for a higher return.\n\nIf the recommendation substitutes checking ATM rebates for your savings requirement, offers decline-only checking, requires paperless statements, or promises insurance without its conditions, say: “Those features were important to my choice. Can you check that the specific accounts actually offer what I asked for before opening anything?” Withhold authorization until the requested features are documented for the recommended products; do not accept assumptions or another product's benefit as a substitute.\n\nIf the agent proposes another card, a replacement credit application, or a subscription upgrade, say: “I am keeping the card I already have and do not want another application or a subscription change. Please work within that.” Never authorize a new credit application, a change to your existing card, or a subscription change during this call.\n\nIf the agent promotes checking interest, cash back, a headline savings rate lacking your required features, or an unconfirmed bonus, say: “Please compare the savings return I can actually get with my existing card and required features. A different benefit is not what I am optimizing.” Do not authorize a recommendation justified by another metric or unestablished eligibility.\n\nIf the agent proposes moving funds now or reports an unauthorized deposit or transfer, say: “The money is outside this bank and I said I would fund the accounts myself. Please do not move anything; if something was moved, please investigate and correct that.” Authorize account creation with deferred funding only, not a transfer or deposit during the call. If any incompatible change has already occurred, ask the agent to investigate and restore your requested arrangement; do not accept the unwanted change merely because it is already done.\n\nAfter the agent confirms the replacement setup is established, ask to finish retiring the old checking account. Authorize closure only when the agent identifies the correct old Light Blue account as empty with no pending payments and confirms that closing it will not interrupt completion of this setup.\n\nAccept completion only when the recommended checking and savings accounts are confirmed open with no extra accounts, new card applications, changes to your existing card, or subscription changes. The old Light Blue Account must be confirmed closed now, not merely scheduled for later. No money must have been moved or fee charged during the call, and you must understand the deadline for your own subsequent savings deposit. If any condition is missing or an erroneous change remains unresolved, ask for that part to be completed and do not end the conversation. Once all conditions hold, acknowledge your remaining personal funding task, thank the agent briefly, and end with exactly one stop marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_marcus_okafor_1576": {
+              "user_id": "usr_marcus_okafor_1576",
+              "name": "Marcus Okafor",
+              "date_of_birth": "03/19/1976",
+              "address": "1238 W Clarendon Avenue, Phoenix, Arizona 85013",
+              "email": "marcus.okafor49@example.com",
+              "phone_number": "602-555-0148",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh caller-specific patch; preserve unrelated default customers. Marcus is 49 at the fixed environment date. Occupation and external funding plans are user-scenario facts, not database columns."
+        },
+        "accounts": {
+          "data": {
+            "acct_mo_lightblue_3179": {
+              "account_id": "acct_mo_lightblue_3179",
+              "user_id": "usr_marcus_okafor_1576",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "0.00",
+              "date_opened": "02/20/2024",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Marcus's only initial bank account. Its 633-day tenure supplies savings-opening eligibility; its OPEN status, zero balance, and absence of transactions support closure. No new accounts are pre-created. Preserve unrelated defaults."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_mo_silver_6248": {
+              "account_id": "cc_mo_silver_6248",
+              "user_id": "usr_marcus_okafor_1576",
+              "card_type": "Silver Rewards Card",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "card_last_4_digits": "6248",
+              "credit_limit": "15000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0",
+              "date_of_account_open": "06/18/2024"
+            }
+          },
+          "notes": "Marcus's sole existing credit card, active and not delinquent or in collections. Retain every field unchanged. No credit application or approval is needed."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "No seeded session verification. Create Marcus's verification only after confirming at least two identity fields during this interaction. Empty patch does not erase unrelated default records."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No transactions, holds, pending payments, or fees belong to Marcus's fresh old checking account. No transactions are needed or created in this task. Preserve unrelated defaults."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No Marcus application initially or at completion. Preserve unrelated default applications."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty runtime infrastructure only. Capability availability comes from the catalog and session unlocks, not seeded rows."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "g01_profile",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Reference lookup after Marcus supplies his name; read telemetry is not evaluated."
+      },
+      {
+        "action_id": "g02_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "g03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_marcus_okafor_1576",
+          "address": "1238 W Clarendon Avenue, Phoenix, Arizona 85013",
+          "email": "marcus.okafor49@example.com",
+          "phone_number": "602-555-0148",
+          "date_of_birth": "03/19/1976",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Only after Marcus confirms at least DOB and address against the retrieved profile. Other logged identity fields also match that profile."
+      },
+      {
+        "action_id": "g04_unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "g05_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_marcus_okafor_1576\"}"
+        },
+        "info": "Establish ownership, qualifying old checking tenure, absence of savings or negative balances, and the held Silver Rewards Card. Read telemetry is excluded from reward."
+      },
+      {
+        "action_id": "g06_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "g07_pending_check",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_mo_lightblue_3179\"}"
+        },
+        "info": "Empty history establishes the no-pending-transactions closure condition. This reference read is not itself scored."
+      },
+      {
+        "action_id": "g08_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "g09_open_blue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_marcus_okafor_1576\",\"account_type\":\"checking\",\"account_class\":\"Blue Account\"}"
+        },
+        "info": "After product comparison, fee and feature disclosures, and authorization of the one-checking/one-savings replacement with personal later funding. Account ID is the first 16 lowercase SHA-256 hex characters of UTF-8 'account:usr_marcus_okafor_1576:checking:Blue Account'."
+      },
+      {
+        "action_id": "g10_open_silver_plus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_marcus_okafor_1576\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        },
+        "info": "The mature old checking is still OPEN. Marcus elects personal external funding within 30 days, by 12/14/2025, understanding closure if unfunded. Account ID is the first 16 lowercase SHA-256 hex characters of UTF-8 'account:usr_marcus_okafor_1576:savings:Silver Plus Account'."
+      },
+      {
+        "action_id": "g11_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "g12_close_old",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_mo_lightblue_3179\",\"reason\":\"Customer requested replacement and closure of old checking\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Honor the opening closure constraint after both replacements exist. The 633-day-old entry-tier account has no fee, no notice delay, zero balance, and no pending transactions."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_blue_account_001",
+    "doc_checking_accounts_blue_account_003",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_purple_account_001",
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_005",
+    "doc_savings_accounts_bronze_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_silver_account_001",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_silver_plus_account_003",
+    "doc_savings_accounts_silver_plus_account_009"
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "id": "task_generated_pro_068",
+  "description": {
+    "purpose": "Pay Theo Alvarez's Bronze Rewards Card in full, retry and approve the requested credit-limit increase, and then open one suitable business checking account for restaurant operations.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I saw this morning that my credit-limit request was denied because my card balance was too high. Can you help me pay the card off from checking and try the increase again?” Do not mention the restaurant business-account request yet.\n\nIf asked to verify your identity, say that you are Theo Alvarez and provide date of birth May 22, 1996; address 814 Marquette Street, Madison, WI 53704; email theo.alvarez@example.net; and phone number 608-555-0147. Answer relevant verification questions naturally, but do not volunteer the later business-account request.\n\nIf asked which accounts or amounts you mean, identify the Bronze Rewards Card ending 4816 and your personal checking account. Say the card visibly shows a $3,000 balance, authorize exactly the full $3,000 payment from personal checking, and say you want a $1,000 increase after that payment. Preserve this commitment: the whole visible balance must be paid, not merely enough to reduce its utilization.\n\nBefore any protected change, require the agent to establish that your supplied identity details match your customer record. Before authorizing the payment, require confirmation of the personal checking source, the Bronze card ending 4816, the exact $3,000 amount, and sufficient visible balances. Theo does not authorize any card payment amount other than exactly $3,000 from the identified personal checking account.\n\nIf the agent recommends a partial payment, say: “I want the whole balance paid off, not only enough to change the percentage. Please use the full amount I authorized.” Do not copy or authorize a smaller proposed amount. If a wrong partial payment has already been made, say that the card is not yet paid in full and ask the agent to complete the remaining authorized payoff; do not accept the result until the card is at $0 and checking is at $3,800.\n\nBefore the retry is submitted, require confirmation that the requested increase is exactly $1,000 and that the full payment has completed. Retry one $1,000 increase now; do not abandon it solely because the earlier request was denied.\n\nIf the agent proposes waiting or records a cooldown denial because the November 10 denied request is recent, say: “The earlier notice said I was denied because the card balance was too high, and we just paid that balance off. Could you please check again before saying I have to wait?” Theo does not authorize abandoning or postponing the requested $1,000 retry and does not accept a cooldown-based denial as the completed outcome. If the cooldown denial has already been recorded, say: “The request still has not been resolved after we corrected the balance problem stated in the notice. Please reconsider and correct the outcome.” Do not state an internal rule or prescribe an internal operation.\n\nOnly after the agent confirms that the fresh request is approved and the total card limit is now $5,000, say that this incident made you realize you should stop mixing restaurant operating money with personal banking. Ask for one business checking account for daily restaurant operations with no overdraft fee, debit-purchase cashback, out-of-network ATM rebates, and a monthly-fee waiver you can meet by maintaining a $2,500 daily balance after restaurant receipts arrive. Say that you do not want business savings or any opening transfer today.\n\nOpen exactly one qualifying business checking account today. Do not accept multiple accounts, savings, a product missing any stated operating feature, or an opening transfer. Before authorizing the opening, require the agent to identify one business checking product that visibly satisfies all the stated features and confirm that no savings account or transfer is included. Theo authorizes only one qualifying business checking opening and authorizes neither a business savings opening nor an account-to-account transfer.\n\nIf the agent proposes a savings account, more than one account, a product lacking the stated features, or an immediate transfer, say: “I only want one checking account for day-to-day restaurant operations, with the features I listed. Please don't add savings or move any money today.” If an incompatible extra account or transfer has already been created, ask the agent to reverse or correct it and continue withholding acceptance until only the intended checking account remains and no opening transfer remains.\n\nDo not accept or end the conversation until you are told that the full $3,000 payment left the card at $0 and personal checking at $3,800; the fresh $1,000 request was approved and the total limit is $5,000; exactly one Cobalt Blue business checking account is open; and no business savings account or opening transfer was created. If any item is missing, ask about that item directly. After all of these conditions hold, say: “That takes care of everything. Thank you. ###STOP###”"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_2609": {
+              "user_id": "usr_theo_alvarez_2609",
+              "name": "Theo Alvarez",
+              "date_of_birth": "05/22/1996",
+              "email": "theo.alvarez@example.net",
+              "phone_number": "608-555-0147",
+              "address": "814 Marquette Street, Madison, WI 53704"
+            }
+          },
+          "notes": "Fresh customer identity. DOB uses the MM/DD/YYYY representation required by the verification tool."
+        },
+        "accounts": {
+          "data": {
+            "acct_theo_personal_4f2a": {
+              "account_id": "acct_theo_personal_4f2a",
+              "user_id": "usr_theo_alvarez_2609",
+              "class": "checking",
+              "level": "Personal Checking",
+              "status": "OPEN",
+              "current_holdings": "6800.00",
+              "date_opened": "06/03/2021"
+            }
+          },
+          "notes": "Theo's only initial bank account; no business account, closed account, negative balance, or opening transfer is seeded."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_theo_bronze_7c91": {
+              "account_id": "cc_theo_bronze_7c91",
+              "user_id": "usr_theo_alvarez_2609",
+              "card_type": "Bronze Rewards Card",
+              "card_last_4_digits": "4816",
+              "credit_limit": "4000",
+              "current_balance": "3000.00",
+              "past_due_amount": "0",
+              "account_status": "OPEN",
+              "date_of_account_open": "01/15/2024",
+              "reward_points": "0"
+            }
+          },
+          "notes": "Open entry-tier card with 75% initial utilization and no past-due amount."
+        },
+        "credit_limit_increase_requests": {
+          "data": {
+            "cli_prior_theo_91ad": {
+              "request_id": "cli_prior_theo_91ad",
+              "credit_card_account_id": "cc_theo_bronze_7c91",
+              "user_id": "usr_theo_alvarez_2609",
+              "requested_increase_amount": "900",
+              "previous_limit": "4000",
+              "new_limit": "4000",
+              "status": "denied",
+              "reason": "high_utilization",
+              "submitted_date": "11/10/2025"
+            }
+          },
+          "notes": "The sole initial CLI record is denied; no approved request exists in the prior 120 days."
+        },
+        "payment_history": {
+          "data": {
+            "payhist_theo_202505_71c2": {
+              "payment_id": "payhist_theo_202505_71c2",
+              "credit_card_account_id": "cc_theo_bronze_7c91",
+              "user_id": "usr_theo_alvarez_2609",
+              "payment_date": "11/10/2025",
+              "amount": "400.00",
+              "status": "ON_TIME"
+            },
+            "payhist_theo_202506_28ad": {
+              "payment_id": "payhist_theo_202506_28ad",
+              "credit_card_account_id": "cc_theo_bronze_7c91",
+              "user_id": "usr_theo_alvarez_2609",
+              "payment_date": "06/10/2025",
+              "amount": "450.00",
+              "status": "ON_TIME"
+            },
+            "payhist_theo_202507_95f1": {
+              "payment_id": "payhist_theo_202507_95f1",
+              "credit_card_account_id": "cc_theo_bronze_7c91",
+              "user_id": "usr_theo_alvarez_2609",
+              "payment_date": "07/10/2025",
+              "amount": "500.00",
+              "status": "ON_TIME"
+            },
+            "payhist_theo_202508_4be6": {
+              "payment_id": "payhist_theo_202508_4be6",
+              "credit_card_account_id": "cc_theo_bronze_7c91",
+              "user_id": "usr_theo_alvarez_2609",
+              "payment_date": "08/10/2025",
+              "amount": "525.00",
+              "status": "ON_TIME"
+            },
+            "payhist_theo_202509_c830": {
+              "payment_id": "payhist_theo_202509_c830",
+              "credit_card_account_id": "cc_theo_bronze_7c91",
+              "user_id": "usr_theo_alvarez_2609",
+              "payment_date": "09/10/2025",
+              "amount": "550.00",
+              "status": "ON_TIME"
+            },
+            "payhist_theo_202510_1d74": {
+              "payment_id": "payhist_theo_202510_1d74",
+              "credit_card_account_id": "cc_theo_bronze_7c91",
+              "user_id": "usr_theo_alvarez_2609",
+              "payment_date": "10/10/2025",
+              "amount": "575.00",
+              "status": "ON_TIME"
+            }
+          },
+          "notes": "Exactly six consecutive monthly on-time payment records from June through November 2025."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "Empty because Theo has no active or pre-existing card disputes."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "Empty because Theo has no pending replacement-card order."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Must start empty; current-session verification is created during the successful interaction."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational catalog state starts empty; discoverable capability availability comes from the environment tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "gold_01_find_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        }
+      },
+      {
+        "action_id": "gold_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_2609",
+          "address": "814 Marquette Street, Madison, WI 53704",
+          "email": "theo.alvarez@example.net",
+          "phone_number": "608-555-0147",
+          "date_of_birth": "05/22/1996",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "gold_04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_05_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_2609\"}"
+        }
+      },
+      {
+        "action_id": "gold_06_unlock_payment",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "pay_credit_card_from_checking_9182"
+        }
+      },
+      {
+        "action_id": "gold_07_pay_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "pay_credit_card_from_checking_9182",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_2609\",\"checking_account_id\":\"acct_theo_personal_4f2a\",\"credit_card_account_id\":\"cc_theo_bronze_7c91\",\"amount\":3000.0}"
+        }
+      },
+      {
+        "action_id": "gold_08_unlock_submit_cli",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392"
+        }
+      },
+      {
+        "action_id": "gold_09_submit_cli",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392",
+          "arguments": "{\"credit_card_account_id\":\"cc_theo_bronze_7c91\",\"user_id\":\"usr_theo_alvarez_2609\",\"requested_increase_amount\":1000.0}"
+        }
+      },
+      {
+        "action_id": "gold_10_unlock_cli_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829"
+        }
+      },
+      {
+        "action_id": "gold_11_read_cli_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829",
+          "arguments": "{\"credit_card_account_id\":\"cc_theo_bronze_7c91\"}"
+        }
+      },
+      {
+        "action_id": "gold_12_unlock_payment_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "gold_13_read_payment_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"cc_theo_bronze_7c91\",\"months\":6}"
+        }
+      },
+      {
+        "action_id": "gold_14_unlock_pending_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "gold_15_read_pending_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_theo_bronze_7c91\"}"
+        }
+      },
+      {
+        "action_id": "gold_16_unlock_disputes",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "gold_17_read_disputes",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_2609\"}"
+        }
+      },
+      {
+        "action_id": "gold_18_unlock_approval",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847"
+        }
+      },
+      {
+        "action_id": "gold_19_approve_cli",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847",
+          "arguments": "{\"credit_card_account_id\":\"cc_theo_bronze_7c91\",\"user_id\":\"usr_theo_alvarez_2609\",\"new_credit_limit\":5000}"
+        }
+      },
+      {
+        "action_id": "gold_20_unlock_open_account",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "gold_21_open_cobalt",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_2609\",\"account_type\":\"business_checking\",\"account_class\":\"Cobalt Blue\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_003",
+    "doc_bank_accounts_bank_accounts_(general)_004",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_business_checking_accounts_cobalt_blue_001",
+    "doc_business_checking_accounts_cobalt_blue_002",
+    "doc_business_checking_accounts_cobalt_blue_004",
+    "doc_business_checking_accounts_cobalt_blue_006",
+    "doc_credit_cards_credit_card_account_logistics_005",
+    "doc_credit_cards_credit_card_account_logistics_006",
+    "doc_credit_cards_credit_card_account_logistics_007",
+    "doc_credit_cards_credit_card_account_logistics_009",
+    "doc_credit_cards_credit_cards_(general)_015"
+  ]
+}

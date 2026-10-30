@@ -1,0 +1,304 @@
+{
+  "id": "task_generated_pro_083",
+  "description": {
+    "purpose": "Resolve two October savings-interest shortfalls for Theo Alvarez by verifying him, applying both corrections, and submitting both corrected discrepancies for backend investigation.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concerned but concise by saying: “I just reviewed my October statement, and the interest on both of my savings accounts looks lower than what online banking had been showing. Can you check and fix it?” Do not initially state identity details, account identifiers, APY arithmetic, exact corrections, internal procedures, or product rules.\n\nIf the agent asks to identify or verify you, say you are Theo Alvarez, a 46-year-old independent event planner, and provide only the requested configured details: date of birth April 18, 1979; 1807 Barton Springs Rd, Austin, TX 78704; theo.alvarez.events@example.com; and +1-512-555-0146. Provide and confirm these identity fields before consenting to protected corrections.\n\nIf asked about the affected accounts, statement period, entries, balances, or linked products, explain that the Bronze savings account had a constant $10,000 principal and posted $16.29, while the Gold Plus savings account had a constant $25,000 principal and posted $120.02, both for October 1 through October 30, 2025. Identify the linked Bluest checking account and the Platinum Rewards, Crypto-Cash Back, and Gold Rewards cards. If asked what online banking showed, say 3.25% for Bronze and 6.35% for Gold Plus. Do not calculate the corrections or explain internal bonus-selection rules. Do not authorize monetary corrections until the agent has identified both affected savings accounts, the October period, and both posted interest entries.\n\nIf asked for the exact cause, formula, or correction amounts before the review is complete, say you are not sure and ask the agent to calculate them from the records. If the agent identifies only one discrepancy, say that both October entries were below the separate rates shown online and ask for the other account to be reviewed too.\n\nOnly after the agent confirms that one or both entries were calculated too low, ask for the missing interest to be added to both affected balances and for both confirmed errors to be investigated so they do not recur. Before authorizing corrections, require recognizable account-level amounts and confirmation that both balances—not only a later review—will be addressed. Authorize follow-up reporting only as part of a resolution that also posts both immediate corrections.\n\nBoth October savings-interest shortfalls must be corrected; resolving only one account is incomplete. The missing interest must be added to the balances; a review or report by itself is not an acceptable monetary resolution. After the immediate corrections, the confirmed calculation failures should be sent for investigation so they do not recur. You are resolving errors on existing accounts and do not want to open another deposit account or apply for another card during this call.\n\nIf the agent proposes correcting only Bronze or only Gold Plus, say: “Both entries on the same statement looked low, so please finish checking and correcting the other one too.” Do not authorize the case to be treated as complete while either affected balance remains uncorrected.\n\nIf the agent proposes submitting the issue for investigation without adding the missing interest now, say: “An investigation is useful, but the original low entries are still reflected in my balances. Please add the missing interest to both accounts first.” Do not authorize or accept a report-only outcome as resolution of the missing money.\n\nIf the agent offers both credits but declines follow-up, say: “The credits address the immediate shortage, but because both accounts were affected in the same period, please also have the confirmed errors investigated so this does not happen again.” You may authorize accurate credits, but do not accept final completion until both errors have been sent for investigation.\n\nIf the agent recommends opening a checking account, savings account, or credit card instead of correcting the existing entries, say: “No, thank you. I only want the October errors on my existing accounts fixed during this call.” Do not authorize any account opening or credit-card application.\n\nIf reports were already filed while either balance remained unchanged, say: “I appreciate the follow-up, but I still see the same balances. Please complete the missing monetary corrections on both accounts.” Do not demand any particular backend method, and do not accept or signal completion while either correction remains missing.\n\nAccept the resolution only after the agent confirms that $10.03 was added to Bronze, $6.81 was added to Gold Plus, and both corrected discrepancies were sent for backend investigation. If any one of those outcomes is missing, ask for it directly. Once all three are confirmed, become relieved, briefly thank the agent, and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_7f3c91": {
+              "user_id": "usr_theo_alvarez_7f3c91",
+              "name": "Theo Alvarez",
+              "date_of_birth": "04/18/1979",
+              "address": "1807 Barton Springs Rd, Austin, TX 78704",
+              "email": "theo.alvarez.events@example.com",
+              "phone_number": "+1-512-555-0146"
+            }
+          },
+          "notes": "Theo Alvarez is the customer identity. His configured date of birth makes him 46 on 11/14/2025."
+        },
+        "accounts": {
+          "data": {
+            "acct_bronze_theo_a91e20": {
+              "account_id": "acct_bronze_theo_a91e20",
+              "user_id": "usr_theo_alvarez_7f3c91",
+              "class": "savings",
+              "level": "Bronze Account",
+              "status": "ACTIVE",
+              "date_opened": "09/30/2025",
+              "current_holdings": "10016.29"
+            },
+            "acct_goldplus_theo_c47b82": {
+              "account_id": "acct_goldplus_theo_c47b82",
+              "user_id": "usr_theo_alvarez_7f3c91",
+              "class": "savings",
+              "level": "Gold Plus Account",
+              "status": "ACTIVE",
+              "date_opened": "09/30/2025",
+              "current_holdings": "25120.02"
+            },
+            "acct_bluest_theo_e2036d": {
+              "account_id": "acct_bluest_theo_e2036d",
+              "user_id": "usr_theo_alvarez_7f3c91",
+              "class": "checking",
+              "level": "Bluest Account",
+              "status": "ACTIVE",
+              "date_opened": "05/10/2024",
+              "current_holdings": "120000.00"
+            }
+          },
+          "notes": "The two active savings accounts contain their opening principal plus the incorrect October interest. Bluest was open before the period and remained funded at $120,000."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_platinum_theo_60ad19": {
+              "account_id": "cc_platinum_theo_60ad19",
+              "user_id": "usr_theo_alvarez_7f3c91",
+              "card_type": "Platinum Rewards Card",
+              "account_status": "ACTIVE",
+              "status": "OPEN",
+              "current_balance": "0.00",
+              "date_of_account_open": "06/12/2024",
+              "reward_points": "18420"
+            },
+            "cc_crypto_theo_48b5f1": {
+              "account_id": "cc_crypto_theo_48b5f1",
+              "user_id": "usr_theo_alvarez_7f3c91",
+              "card_type": "Crypto-Cash Back Card",
+              "account_status": "ACTIVE",
+              "status": "OPEN",
+              "current_balance": "0.00",
+              "date_of_account_open": "08/03/2024",
+              "reward_points": "7360"
+            },
+            "cc_gold_theo_1dc974": {
+              "account_id": "cc_gold_theo_1dc974",
+              "user_id": "usr_theo_alvarez_7f3c91",
+              "card_type": "Gold Rewards Card",
+              "account_status": "ACTIVE",
+              "status": "OPEN",
+              "current_balance": "0.00",
+              "date_of_account_open": "02/18/2025",
+              "reward_points": "11250"
+            }
+          },
+          "notes": "These are Theo's only credit-card accounts. All three are active, open, and held under the same profile as both savings accounts."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_bluest_funding_35b6a1": {
+              "transaction_id": "txn_bluest_funding_35b6a1",
+              "account_id": "acct_bluest_theo_e2036d",
+              "amount": 120000.0,
+              "date": "05/10/2024",
+              "description": "Opening funding deposit; balance remained $120,000 with no later debit or withdrawal through 10/30/2025.",
+              "status": "POSTED",
+              "type": "deposit"
+            },
+            "txn_bronze_funding_f4a2d7": {
+              "transaction_id": "txn_bronze_funding_f4a2d7",
+              "account_id": "acct_bronze_theo_a91e20",
+              "amount": 10000.0,
+              "date": "09/30/2025",
+              "description": "Opening funding deposit establishing a constant $10,000 principal for 10/01/2025 through 10/30/2025.",
+              "status": "POSTED",
+              "type": "deposit"
+            },
+            "txn_bronze_interest_8cc310": {
+              "transaction_id": "txn_bronze_interest_8cc310",
+              "account_id": "acct_bronze_theo_a91e20",
+              "amount": 16.29,
+              "date": "10/31/2025",
+              "description": "Monthly interest for 10/01/2025 through 10/30/2025; applied APY 2.000%; 30-day effective-annual APY basis (1+APY)^(30/365)-1; unrounded interest 16.289385.",
+              "status": "POSTED",
+              "type": "interest"
+            },
+            "txn_goldplus_funding_913de4": {
+              "transaction_id": "txn_goldplus_funding_913de4",
+              "account_id": "acct_goldplus_theo_c47b82",
+              "amount": 25000.0,
+              "date": "09/30/2025",
+              "description": "Opening funding deposit establishing a constant $25,000 principal for 10/01/2025 through 10/30/2025.",
+              "status": "POSTED",
+              "type": "deposit"
+            },
+            "txn_goldplus_interest_b0a72e": {
+              "transaction_id": "txn_goldplus_interest_b0a72e",
+              "account_id": "acct_goldplus_theo_c47b82",
+              "amount": 120.02,
+              "date": "10/31/2025",
+              "description": "Monthly interest for 10/01/2025 through 10/30/2025; applied APY 6.000%; 30-day effective-annual APY basis (1+APY)^(30/365)-1; unrounded interest 120.017800.",
+              "status": "POSTED",
+              "type": "interest"
+            }
+          },
+          "notes": "No other transactions occurred on either savings account during the 30-day interest period, and no later Bluest withdrawal reduced its qualifying daily balance. The descriptions make the correction convention explicit."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Must start empty. The successful interaction creates Theo's current-session verification record."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "No discoverable agent tool has been unlocked or called before this interaction. Runtime tool calls maintain the actual opaque unlock/called state."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "gold_01_lookup_theo",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        }
+      },
+      {
+        "action_id": "gold_02_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_7f3c91",
+          "address": "1807 Barton Springs Rd, Austin, TX 78704",
+          "email": "theo.alvarez.events@example.com",
+          "phone_number": "+1-512-555-0146",
+          "date_of_birth": "04/18/1979",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "gold_04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_05_get_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_7f3c91\"}"
+        }
+      },
+      {
+        "action_id": "gold_06_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "gold_07_get_bronze_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_bronze_theo_a91e20\"}"
+        }
+      },
+      {
+        "action_id": "gold_08_get_goldplus_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_goldplus_theo_c47b82\"}"
+        }
+      },
+      {
+        "action_id": "gold_09_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        }
+      },
+      {
+        "action_id": "gold_10_credit_bronze",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"acct_bronze_theo_a91e20\",\"amount\":10.03,\"credit_type\":\"interest_correction\"}"
+        }
+      },
+      {
+        "action_id": "gold_11_credit_goldplus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"acct_goldplus_theo_c47b82\",\"amount\":6.81,\"credit_type\":\"interest_correction\"}"
+        }
+      },
+      {
+        "action_id": "gold_12_unlock_report",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        }
+      },
+      {
+        "action_id": "gold_13_report_bronze",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"acct_bronze_theo_a91e20\",\"user_id\":\"usr_theo_alvarez_7f3c91\",\"expected_apy\":3.25,\"actual_apy\":2.0,\"amount_difference\":10.03}"
+        }
+      },
+      {
+        "action_id": "gold_14_report_goldplus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"acct_goldplus_theo_c47b82\",\"user_id\":\"usr_theo_alvarez_7f3c91\",\"expected_apy\":6.35,\"actual_apy\":6.0,\"amount_difference\":6.81}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_checking_accounts_bluest_account_001",
+    "doc_checking_accounts_bluest_account_003",
+    "doc_savings_accounts_bronze_account_001",
+    "doc_savings_accounts_bronze_account_003",
+    "doc_savings_accounts_bronze_account_006",
+    "doc_savings_accounts_bronze_account_007",
+    "doc_savings_accounts_gold_plus_account_001",
+    "doc_savings_accounts_gold_plus_account_002",
+    "doc_savings_accounts_gold_plus_account_009"
+  ]
+}

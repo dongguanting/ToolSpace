@@ -1,0 +1,391 @@
+{
+  "id": "task_generated_pro_098",
+  "description": {
+    "purpose": "Safely resolve four simultaneous debit-card PIN locks by closing and replacing the card associated with denied ATM attempts while escalating three bank-security-held cards without closing their checking accounts.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “All four of my debit cards are suddenly PIN locked, and I need help getting access sorted out.” Keep the opening concise and do not initially list the card endings, identity details, replacement preference, or desired transfer.\n\nIf the agent asks you to verify your identity, say that you are Maya Iqbal and provide only the requested configured details: date of birth June 18, 1990; address 1847 River Alder Way, Sacramento, CA 95818; email maya.iqbal.ledger@example.com; and phone number (916) 555-4072. Cooperate fully with reasonable verification questions. Do not authorize protected card actions until the agent has verified your identity using your configured contact and birth information.\n\nIf the agent asks which cards are affected or whether you recognize the failed attempts, say that the locked cards end in 4826, 1753, 6208, and 9441, and that the displayed ATM attempts for 4826 were not yours. Do not prescribe an internal procedure or quote policy thresholds.\n\nOnly after the agent explains that card 4826 cannot safely remain in use and that the other three cards have holds requiring security specialists, ask to have card 4826 permanently closed and replaced using the fastest free delivery option, and request an immediate security-team handoff for cards 1753, 6208, and 9441. Once the suspicious activity is identified, insist that card 4826 be permanently closed and replaced using the fastest delivery option that has no fee. Before authorizing closure, require the agent to identify card 4826 as the affected card and confirm that the checking account itself will remain open.\n\nIf asked about the replacement design or mailing address, choose the basic no-fee CLASSIC design and confirm 1847 River Alder Way, Sacramento, CA 95818. Before authorizing the replacement, require confirmation that delivery is expedited, the design is CLASSIC, both the delivery and design fees are zero, and shipment will go to your verified Sacramento address.\n\nIf the agent proposes simply restoring card 4826 or clearing protections on the other three cards, say: “Those attempts were not mine, and you said the other cards have security holds. Please check for a safer way to handle them.” Maya does not authorize reactivation or removal of security protection from any affected card under those circumstances. If such an unsafe action has already been taken, say: “Please restore the security protection, permanently close and replace card 4826, and arrange specialist help for the other three cards before I accept this as resolved.”\n\nIf the agent proposes paid delivery, a paid design, or standard shipping without checking for a faster free option, say: “I want the quickest option that is free and the basic no-fee design. Could you check the options for this account again?” Maya does not authorize an order carrying a delivery, design, or excess-replacement fee. If a paid or unsuitable order has already been placed, ask the agent to correct or replace it with a free expedited CLASSIC order to the verified Sacramento address, and do not accept the result until that is confirmed.\n\nIf the agent recommends closing the Evergreen checking account or any other checking account, say: “Please close only the affected card, not the checking account. I still need all of those accounts for my business records and payroll.” Maya never authorizes a bank-account closure. If an account has already been closed, ask for the account closure to be reversed or otherwise restored before continuing, and do not accept the case as complete while any checking account is closed.\n\nIf the agent tries to finish while cards 1753, 6208, and 9441 remain security held and no specialist handoff has been initiated, say: “Those three cards are still locked. Please connect me with the security team so I can continue resolving them.” Maya does not accept the case as complete while the three security-held cards have no specialist handoff. If the case was prematurely ended or the handoff omitted, ask the agent to initiate the security-team handoff for all three card endings before you accept the resolution.\n\nMaintain these commitments throughout: every PIN lock must be handled safely; do not accept ordinary reactivation of a card whose attempts you deny or whose security hold remains active; keep all four checking accounts open; and obtain immediate specialist assistance for cards 1753, 6208, and 9441 when their holds cannot be resolved safely in chat.\n\nAccept the resolution only after card 4826 is recognizably confirmed permanently closed; a free expedited CLASSIC replacement is confirmed as ordered to your Sacramento address; the security-team handoff is confirmed to cover cards 1753, 6208, and 9441; and no checking account has been closed. If any condition is missing, ask about it directly and do not stop. Once every condition is satisfied, briefly thank the agent and end with exactly this marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_maya_iqbal_859013a": {
+              "user_id": "usr_maya_iqbal_859013a",
+              "name": "Maya Iqbal",
+              "date_of_birth": "06/18/1990",
+              "address": "1847 River Alder Way, Sacramento, CA 95818",
+              "email": "maya.iqbal.ledger@example.com",
+              "phone_number": "(916) 555-4072"
+            }
+          },
+          "notes": "Fresh customer identity for Maya Iqbal, a 35-year-old small-business bookkeeper in Sacramento."
+        },
+        "accounts": {
+          "data": {
+            "acct_evergreen_859013a": {
+              "account_id": "acct_evergreen_859013a",
+              "user_id": "usr_maya_iqbal_859013a",
+              "class": "checking",
+              "level": "Evergreen Account",
+              "status": "OPEN",
+              "date_opened": "04/12/2021",
+              "current_holdings": "870.50"
+            },
+            "acct_blue_859013b": {
+              "account_id": "acct_blue_859013b",
+              "user_id": "usr_maya_iqbal_859013a",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "OPEN",
+              "date_opened": "08/19/2022",
+              "current_holdings": "2140.25"
+            },
+            "acct_green_checking_859013c": {
+              "account_id": "acct_green_checking_859013c",
+              "user_id": "usr_maya_iqbal_859013a",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "status": "OPEN",
+              "date_opened": "02/06/2023",
+              "current_holdings": "1325.80"
+            },
+            "acct_lightblue_859013d": {
+              "account_id": "acct_lightblue_859013d",
+              "user_id": "usr_maya_iqbal_859013a",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "date_opened": "09/11/2024",
+              "current_holdings": "640.00"
+            }
+          },
+          "notes": "Exactly four open checking accounts owned by Maya; the Evergreen Account is the PREMIUM-tier replacement account."
+        },
+        "debit_cards": {
+          "data": {
+            "card_maya_4826_859013a": {
+              "card_id": "card_maya_4826_859013a",
+              "account_id": "acct_evergreen_859013a",
+              "user_id": "usr_maya_iqbal_859013a",
+              "cardholder_name": "Maya Iqbal",
+              "last_4_digits": "4826",
+              "cvv": "731",
+              "expiration_date": "11/30",
+              "issue_date": "11/08/2025",
+              "issue_reason": "bank_reissue",
+              "status": "ACTIVE",
+              "pin_locked": true,
+              "pin_lock_reason": "failed_pin_attempts",
+              "pin_lock_timestamp": "11/14/2025 03:31:00 EST",
+              "pin_attempts_remaining": 0,
+              "pin_locks_last_90_days": 0,
+              "fraud_alert_active": false,
+              "alert_source": null,
+              "daily_atm_limit": 1000,
+              "daily_atm_used": 0,
+              "daily_purchase_limit": 5000,
+              "daily_purchase_used": 0,
+              "velocity_blocked": false
+            },
+            "card_maya_1753_859013b": {
+              "card_id": "card_maya_1753_859013b",
+              "account_id": "acct_blue_859013b",
+              "user_id": "usr_maya_iqbal_859013a",
+              "cardholder_name": "Maya Iqbal",
+              "last_4_digits": "1753",
+              "cvv": "284",
+              "expiration_date": "07/29",
+              "issue_date": "07/15/2024",
+              "issue_reason": "first_card",
+              "status": "ACTIVE",
+              "pin_locked": true,
+              "pin_lock_reason": "security_hold",
+              "pin_lock_timestamp": "11/14/2025 03:24:00 EST",
+              "pin_attempts_remaining": 0,
+              "pin_locks_last_90_days": 0,
+              "fraud_alert_active": true,
+              "alert_source": "bank_initiated",
+              "daily_atm_limit": 800,
+              "daily_atm_used": 0,
+              "daily_purchase_limit": 4000,
+              "daily_purchase_used": 0,
+              "velocity_blocked": false
+            },
+            "card_maya_6208_859013c": {
+              "card_id": "card_maya_6208_859013c",
+              "account_id": "acct_green_checking_859013c",
+              "user_id": "usr_maya_iqbal_859013a",
+              "cardholder_name": "Maya Iqbal",
+              "last_4_digits": "6208",
+              "cvv": "516",
+              "expiration_date": "03/30",
+              "issue_date": "03/02/2025",
+              "issue_reason": "first_card",
+              "status": "ACTIVE",
+              "pin_locked": true,
+              "pin_lock_reason": "security_hold",
+              "pin_lock_timestamp": "11/14/2025 03:26:00 EST",
+              "pin_attempts_remaining": 0,
+              "pin_locks_last_90_days": 0,
+              "fraud_alert_active": true,
+              "alert_source": "bank_initiated",
+              "daily_atm_limit": 800,
+              "daily_atm_used": 0,
+              "daily_purchase_limit": 4000,
+              "daily_purchase_used": 0,
+              "velocity_blocked": false
+            },
+            "card_maya_9441_859013d": {
+              "card_id": "card_maya_9441_859013d",
+              "account_id": "acct_lightblue_859013d",
+              "user_id": "usr_maya_iqbal_859013a",
+              "cardholder_name": "Maya Iqbal",
+              "last_4_digits": "9441",
+              "cvv": "903",
+              "expiration_date": "09/29",
+              "issue_date": "09/18/2024",
+              "issue_reason": "first_card",
+              "status": "ACTIVE",
+              "pin_locked": true,
+              "pin_lock_reason": "security_hold",
+              "pin_lock_timestamp": "11/14/2025 03:29:00 EST",
+              "pin_attempts_remaining": 0,
+              "pin_locks_last_90_days": 0,
+              "fraud_alert_active": true,
+              "alert_source": "bank_initiated",
+              "daily_atm_limit": 500,
+              "daily_atm_used": 0,
+              "daily_purchase_limit": 2500,
+              "daily_purchase_used": 0,
+              "velocity_blocked": false
+            }
+          },
+          "notes": "One active PIN-locked debit card per checking account. Card 4826 has denied ATM attempts; the other three retain bank-initiated security holds."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_4826_decline_859013a": {
+              "transaction_id": "txn_4826_decline_859013a",
+              "account_id": "acct_evergreen_859013a",
+              "date": "11/14/2025",
+              "description": "DECLINED ATM WITHDRAWAL 03:18 EST - NORTHSTAR ATM #771, RENO NV - CARD 4826; customer does not recognize location or attempt",
+              "amount": -800,
+              "type": "atm_withdrawal_declined",
+              "status": "posted"
+            },
+            "txn_4826_decline_859013b": {
+              "transaction_id": "txn_4826_decline_859013b",
+              "account_id": "acct_evergreen_859013a",
+              "date": "11/14/2025",
+              "description": "DECLINED ATM WITHDRAWAL 03:19 EST - NORTHSTAR ATM #771, RENO NV - CARD 4826; customer does not recognize location or attempt",
+              "amount": -500,
+              "type": "atm_withdrawal_declined",
+              "status": "posted"
+            }
+          },
+          "notes": "Two posted declined ATM attempts for card 4826 at an out-of-state location Maya denies recognizing. There are no pending or processing transactions and no pending refunds for this card."
+        },
+        "debit_card_orders": {
+          "data": {},
+          "notes": "No pre-existing debit-card orders; in particular, the Evergreen account has no pending order or rolling-year replacement order."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initially; current-session verification must be created during the interaction."
+        },
+        "human_transfer_requests": {
+          "data": {},
+          "notes": "Empty initially; the user transfer request creates the persistent transfer witness. This table has no summary fields."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discoverable-tool state starts empty; availability is supplied by the tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_find_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        }
+      },
+      {
+        "action_id": "act_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_maya_iqbal_859013a",
+          "address": "1847 River Alder Way, Sacramento, CA 95818",
+          "email": "maya.iqbal.ledger@example.com",
+          "phone_number": "(916) 555-4072",
+          "date_of_birth": "06/18/1990",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_accounts_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_05_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_859013a\"}"
+        }
+      },
+      {
+        "action_id": "act_06_unlock_cards_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "act_07_read_card_4826",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_evergreen_859013a\"}"
+        }
+      },
+      {
+        "action_id": "act_08_read_card_1753",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_blue_859013b\"}"
+        }
+      },
+      {
+        "action_id": "act_09_read_card_6208",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_green_checking_859013c\"}"
+        }
+      },
+      {
+        "action_id": "act_10_read_card_9441",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_lightblue_859013d\"}"
+        }
+      },
+      {
+        "action_id": "act_11_unlock_transactions_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_12_read_suspicious_attempts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_evergreen_859013a\"}"
+        }
+      },
+      {
+        "action_id": "act_13_unlock_close_card",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721"
+        }
+      },
+      {
+        "action_id": "act_14_close_card_4826",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"card_maya_4826_859013a\",\"reason\":\"fraud_suspected\"}"
+        }
+      },
+      {
+        "action_id": "act_15_unlock_order_card",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739"
+        }
+      },
+      {
+        "action_id": "act_16_order_free_expedited",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739",
+          "arguments": "{\"account_id\":\"acct_evergreen_859013a\",\"user_id\":\"usr_maya_iqbal_859013a\",\"delivery_option\":\"EXPEDITED\",\"delivery_fee\":0,\"card_design\":\"CLASSIC\",\"design_fee\":0,\"shipping_address\":\"1847 River Alder Way, Sacramento, CA 95818\"}"
+        }
+      },
+      {
+        "action_id": "act_17_security_transfer",
+        "requestor": "assistant",
+        "name": "transfer_to_human_agents",
+        "arguments": {
+          "summary": "Verified customer Maya Iqbal needs security-team review for active debit cards ending 1753, 6208, and 9441. Each remains PIN locked with pin_lock_reason security_hold and a bank-initiated fraud alert; no hold or alert was cleared. Suspicious card 4826 was separately closed and replaced.",
+          "reason": "fraud_or_security_concern"
+        }
+      },
+      {
+        "action_id": "act_18_persist_transfer_request",
+        "requestor": "user",
+        "name": "request_human_agent_transfer",
+        "arguments": {}
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "request_human_agent_transfer"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_023",
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_028",
+    "doc_bank_accounts_bank_accounts_(general)_029",
+    "doc_bank_accounts_bank_accounts_(general)_039",
+    "doc_bank_accounts_bank_accounts_(general)_041",
+    "doc_bank_accounts_bank_accounts_(general)_042"
+  ]
+}

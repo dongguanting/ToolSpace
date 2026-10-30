@@ -1,0 +1,249 @@
+{
+  "id": "task_generated_pro_074",
+  "description": {
+    "purpose": "Review Jonah Mercer's November Silver Account interest payment, apply the exact eligible correction, and submit the related backend discrepancy report.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I noticed that the interest deposit on my Silver savings account today looks lower than it should. Can you review it and help me fix it?” Do not initially volunteer your identity details, the exact transaction, all of your product holdings, an expected rate, or a correction amount.\n\nIf the agent asks for identity-verification information, say that you are Jonah Mercer and provide: date of birth June 18, 1985; address 1847 Winnebago Street, Madison, Wisconsin 53704; email jonah.mercer85@example.com; and phone number 608-555-0147. Answer reasonable verification questions cooperatively, but do not authorize a financial correction until the agent confirms that these details match the owner of the affected Silver Account.\n\nIf the agent asks which account, period, balance, transaction, or linked products are involved, identify the Silver Account and the $73.28 interest credit dated November 14. Explain that the principal stayed at $20,000 throughout the 30-day period and that you held Bluest and Blue checking accounts plus EcoCard, Gold Rewards Card, and Silver Rewards Card throughout that period. Do not state the correct rate, choose among the benefits yourself, calculate the shortage, mention internal operations, or demand a particular ordering.\n\nOnly after the agent confirms that the November interest was underpaid because the calculation reflected the wrong card benefit or otherwise confirms a system discrepancy, ask for the full shortage to be credited and add: “There is one more related thing: please have the calculation problem reported so it does not happen again next month.” Until that finding, ask for investigation rather than claiming to know the exact result.\n\nYou want the entire verified November interest shortfall corrected on the existing Silver Account, not a token or goodwill amount. After a discrepancy is confirmed, you want the underlying November calculation problem reported rather than receiving only a one-time balance adjustment. You do not want to open, close, replace, or split funds across products during this call; the objective is to correct the existing Silver Account statement.\n\nIf the agent proposes a partial, estimated, or goodwill credit, respond: “I appreciate the offer, but I want the actual interest shortage on this statement corrected. Could you verify the full difference before I agree?” Do not authorize a partial or goodwill substitute for the calculated interest correction.\n\nIf the agent offers a correction but says no follow-up will be made, respond: “Please don't leave this as only a one-time adjustment. I want the calculation issue followed up so the next interest payment is not wrong too.” You may accept the monetary correction, but do not accept the overall case as complete without confirmation that the calculation issue was reported.\n\nIf the agent recommends a new card, another savings product, a split allocation, a product switch, a closure, or a transfer instead of fixing this statement, respond: “I am not looking to change or add products today. Please calculate this statement using the accounts and cards I already held and correct that account.” Authorize no application, new account, closure, transfer, replacement, or product reallocation.\n\nBefore authorizing a financial correction, require the agent to identify the November 14 interest deposit, confirm that it was underpaid, and state the proposed correction amount. Authorize only a resolution limited to correcting the existing Silver Account and reporting that same calculation problem, with no product application, closure, or transfer.\n\nDo not accept the case as complete until the agent confirms that exactly $32.83 was credited to the existing Silver Account as the November interest correction, confirms that the underlying November discrepancy was reported after the correction, and confirms through the proposed outcome that no new product, closure, or transfer occurred. If only the credit is confirmed, ask whether the calculation issue was reported. If only a report or investigation is confirmed, continue asking for the full correction. Once all of those visible outcomes are confirmed, say: “Thank you. The full correction is in the account and the calculation problem has been reported.” Then end with exactly one marker.\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_jonah_mercer_8f31c2": {
+              "user_id": "usr_jonah_mercer_8f31c2",
+              "name": "Jonah Mercer",
+              "date_of_birth": "06/18/1985",
+              "address": "1847 Winnebago Street, Madison, WI 53704",
+              "email": "jonah.mercer85@example.com",
+              "phone_number": "608-555-0147"
+            }
+          },
+          "notes": "Fresh customer identity for Jonah Mercer. His date of birth is stored in the MM/DD/YYYY format required by verification tools; he is age 40 on 11/14/2025 and is a freelance translator living in Madison, Wisconsin."
+        },
+        "accounts": {
+          "data": {
+            "acct_silver_jonah_8f31c2": {
+              "account_id": "acct_silver_jonah_8f31c2",
+              "user_id": "usr_jonah_mercer_8f31c2",
+              "class": "savings",
+              "level": "Silver Account",
+              "status": "OPEN",
+              "current_holdings": "20073.28",
+              "date_opened": "01/12/2024"
+            },
+            "acct_bluest_jonah_8f31c2": {
+              "account_id": "acct_bluest_jonah_8f31c2",
+              "user_id": "usr_jonah_mercer_8f31c2",
+              "class": "checking",
+              "level": "Bluest Account",
+              "status": "OPEN",
+              "current_holdings": "4280.17",
+              "date_opened": "03/04/2023"
+            },
+            "acct_blue_jonah_8f31c2": {
+              "account_id": "acct_blue_jonah_8f31c2",
+              "user_id": "usr_jonah_mercer_8f31c2",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "OPEN",
+              "current_holdings": "1865.44",
+              "date_opened": "07/19/2024"
+            }
+          },
+          "notes": "Jonah owns one open Silver savings account and two open checking accounts. All predate the 10/16/2025–11/14/2025 interest period. The Silver balance consists of the $20,000 principal plus the posted $73.28 interest."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_ecocard_jonah_8f31c2": {
+              "account_id": "cc_ecocard_jonah_8f31c2",
+              "user_id": "usr_jonah_mercer_8f31c2",
+              "card_type": "EcoCard",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "date_of_account_open": "05/08/2023",
+              "current_balance": "312.40",
+              "reward_points": "18425",
+              "card_last_4_digits": "4827"
+            },
+            "cc_gold_jonah_8f31c2": {
+              "account_id": "cc_gold_jonah_8f31c2",
+              "user_id": "usr_jonah_mercer_8f31c2",
+              "card_type": "Gold Rewards Card",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "date_of_account_open": "09/21/2022",
+              "current_balance": "740.18",
+              "reward_points": "9630",
+              "card_last_4_digits": "6154"
+            },
+            "cc_silver_jonah_8f31c2": {
+              "account_id": "cc_silver_jonah_8f31c2",
+              "user_id": "usr_jonah_mercer_8f31c2",
+              "card_type": "Silver Rewards Card",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "date_of_account_open": "02/16/2024",
+              "current_balance": "128.05",
+              "reward_points": "4270",
+              "card_last_4_digits": "9036"
+            }
+          },
+          "notes": "All three comparison cards are active, open, owned by Jonah, and were opened before the disputed interest period."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_principal_jonah_8f31c2": {
+              "transaction_id": "txn_principal_jonah_8f31c2",
+              "account_id": "acct_silver_jonah_8f31c2",
+              "amount": 20000.0,
+              "date": "10/15/2025",
+              "description": "Posted principal deposit establishing the $20,000 daily balance before the 30-day interest period",
+              "status": "POSTED",
+              "type": "deposit"
+            },
+            "txn_interest_nov14_jonah_8f31c2": {
+              "transaction_id": "txn_interest_nov14_jonah_8f31c2",
+              "account_id": "acct_silver_jonah_8f31c2",
+              "amount": 73.28,
+              "date": "11/14/2025",
+              "description": "Monthly interest for 10/16/2025 through 11/14/2025; 30 days; actual APY applied 4.55%; end-of-cycle payable interest rounded to cents",
+              "status": "POSTED",
+              "type": "interest"
+            }
+          },
+          "notes": "The history visibly establishes a constant $20,000 principal during the 30-day period and a posted $73.28 interest payment calculated at the stated actual APY. There are no intervening principal-changing transactions."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Intentionally empty. Jonah must be verified and logged during the current session."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discoverable-tool state starts empty. Tool availability comes from the environment catalog, not seeded database metadata."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_find_jonah",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Jonah Mercer"
+        }
+      },
+      {
+        "action_id": "act_02_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Jonah Mercer",
+          "user_id": "usr_jonah_mercer_8f31c2",
+          "address": "1847 Winnebago Street, Madison, WI 53704",
+          "email": "jonah.mercer85@example.com",
+          "phone_number": "608-555-0147",
+          "date_of_birth": "06/18/1985",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_accounts_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_05_read_all_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_jonah_mercer_8f31c2\"}"
+        }
+      },
+      {
+        "action_id": "act_06_unlock_transactions_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_07_read_silver_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_silver_jonah_8f31c2\"}"
+        }
+      },
+      {
+        "action_id": "act_08_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        }
+      },
+      {
+        "action_id": "act_09_apply_credit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"acct_silver_jonah_8f31c2\",\"amount\":32.83,\"credit_type\":\"interest_correction\"}"
+        }
+      },
+      {
+        "action_id": "act_10_unlock_report",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        }
+      },
+      {
+        "action_id": "act_11_submit_report",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"acct_silver_jonah_8f31c2\",\"user_id\":\"usr_jonah_mercer_8f31c2\",\"expected_apy\":6.65,\"actual_apy\":4.55,\"amount_difference\":32.83}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_bank_accounts_bank_accounts_(general)_046",
+    "doc_checking_accounts_blue_account_003",
+    "doc_checking_accounts_bluest_account_003",
+    "doc_savings_accounts_silver_account_001",
+    "doc_savings_accounts_silver_account_006"
+  ]
+}

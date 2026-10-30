@@ -1,0 +1,374 @@
+{
+  "id": "task_generated_pro_090",
+  "description": {
+    "purpose": "File eight credit-card transaction disputes in the customer’s stated priority order, apply provisional credit only where policy permits, and keep both existing cards active.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I found several charges that don't look right while reconciling my personal and business credit-card statements today. Can you help me dispute them?” Do not initially list the transactions, provide identity details, state a temporary-credit result, or discuss internal processing.\n\nIf asked to identify yourself or provide registered contact information, say that you are Leila Haddad, user ID usr_leila_haddad_c7f42a, born 05/22/1995, and provide the registered phone number +1-614-555-0187, email leila.haddad@example.com, and address 1847 North High Street, Apt 6B, Columbus, OH 43201. Do not list the transactions unless asked about them.\n\nIf asked which transactions are affected, provide this coherent batch from your statements: on the Business Gold Rewards Card ending 7316, Apex Office Systems for $684.73 on 11/12/2025 was not authorized and you did not contact that merchant; Polyglot Pro Software for $438.20 on 11/10/2025 was a duplicate and the merchant confirmed the issue; CaptionCloud for $312.65 on 11/08/2025 was a duplicate and you contacted the merchant; and QuickPrint Columbus for $19.40 on 11/07/2025 was a duplicate and you contacted the merchant. On the personal Gold Rewards Card ending 2049, ModernNest for $246.15 on 11/06/2025 delivered something materially different from its description; StreamCove charged $58.99 on 11/05/2025 after cancellation; Trail Outfitters failed to post a promised $173.80 refund for the 11/03/2025 purchase; and Market Table charged an incorrect $92.44 amount on 11/02/2025. You contacted each of those four personal-card merchants. If asked when you noticed the issues, say you noticed them today while reconciling the statements and expect the agent to use today’s date.\n\nIf asked what outcome you want, request a full refund for every listed charge. Say that both cards remain in your possession and must stay active. Ask the agent to consider temporary credit for Apex Office Systems first and Polyglot Pro Software second because those business charges most affect your freelance cash flow. You may say, “I thought temporary credit might apply to every disputed charge, but I may be mistaken.” If the agent gives a grounded explanation that some disputes do not qualify, acknowledge the correction and continue, provided the two stated business priorities are considered first.\n\nPreserve these commitments throughout the conversation. “I need all eight unresolved charges included as formal disputes.” “I am disputing the full posted amount of every listed charge.” “Please consider Apex Office Systems first and Polyglot Pro Software second for any available temporary credit.” “I still have both cards and do not authorize cancellation or replacement.”\n\nIf the agent proposes filing only some of the transactions or leaving the rest as informal merchant matters, say: “I contacted the merchants where that made sense, but all eight charges are still unresolved. Please make sure each one is included in the dispute request.” Do not authorize a reduced batch that leaves any identified transaction undisputed.\n\nIf the agent proposes a partial refund for any charge, say: “I'm disputing each listed charge in full, so I don't want to authorize a partial amount.” Do not authorize partial_refund or a partial refund amount for any of the eight disputes.\n\nIf the agent proposes considering lower-priority charges for limited temporary credit before the two specified business charges, or denies temporary credit without reviewing eligibility, say: “Those two business charges are the ones putting the most pressure on my cash flow. Before I agree, could you check them first and explain which charges can receive temporary credit?” Do not authorize a filing order that knowingly bypasses Apex Office Systems and Polyglot Pro Software while their temporary-credit eligibility remains unresolved.\n\nIf the agent recommends cancelling, replacing, or reissuing either card, say: “I still have both cards and asked to keep them active. Please dispute the charges without replacing either card.” Do not authorize cancellation, replacement, reissuance, or any action that deactivates either current card.\n\nBefore authorizing the batch, require the agent to identify all eight merchants, amounts, dates, and whether each belongs to the personal or business card. Before authorizing any filing, require confirmation that every dispute will request a full refund, both cards will remain active, and Apex Office Systems followed by Polyglot Pro Software will be handled first for temporary-credit consideration. Do not copy or accept any proposed amount, card treatment, filing order, or added service that conflicts with those conditions.\n\nIf anything is filed incorrectly, do not accept the result. Ask the agent to restore the same requested outcome by ensuring every omitted transaction is disputed, every dispute seeks the full amount, the two business priorities receive the promised first consideration, and neither card is cancelled or replaced. If the agent cannot complete the filings after a reasonable retry or repeatedly refuses to address a specified transaction, ask the agent to reconsider or obtain human assistance while keeping the request focused on this same eight-dispute batch.\n\nAccept the resolution only after the agent confirms that all eight specified transactions have formal disputes; confirms that Apex Office Systems and Polyglot Pro Software receive temporary credit and clearly identifies that the other six do not; and confirms that both existing cards remain active with no replacement ordered. If any condition is missing, ask about it and do not end the conversation. Once every condition is satisfied, briefly thank the agent and end with exactly one ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_leila_haddad_c7f42a": {
+              "user_id": "usr_leila_haddad_c7f42a",
+              "name": "Leila Haddad",
+              "date_of_birth": "05/22/1995",
+              "phone_number": "+1-614-555-0187",
+              "email": "leila.haddad@example.com",
+              "address": "1847 North High Street, Apt 6B, Columbus, OH 43201"
+            }
+          },
+          "notes": "Fresh Columbus customer identity for this task; Leila is age 30 at the fixed date."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_leila_gold_71a4": {
+              "account_id": "cc_leila_gold_71a4",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "card_type": "Gold Rewards Card",
+              "card_last_4_digits": "2049",
+              "date_of_account_open": "03/18/2023",
+              "account_status": "active",
+              "status": "active",
+              "credit_limit": "12000.00",
+              "current_balance": "571.38",
+              "reward_points": "18420"
+            },
+            "cc_leila_bizgold_5c82": {
+              "account_id": "cc_leila_bizgold_5c82",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "card_type": "Business Gold Rewards Card",
+              "card_last_4_digits": "7316",
+              "date_of_account_open": "01/10/2024",
+              "account_status": "active",
+              "status": "active",
+              "credit_limit": "15000.00",
+              "current_balance": "1454.98",
+              "reward_points": "26755"
+            }
+          },
+          "notes": "Both relevant Premium Tier credit-card accounts are active and more than 60 days old."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_lh_biz_8f31": {
+              "transaction_id": "txn_lh_biz_8f31",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_bizgold_5c82",
+              "credit_card_type": "Business Gold Rewards Card",
+              "merchant_name": "Apex Office Systems",
+              "transaction_amount": "684.73",
+              "transaction_date": "11/12/2025",
+              "status": "posted",
+              "category": "Office Supplies",
+              "rewards_earned": "684"
+            },
+            "txn_lh_biz_4d27": {
+              "transaction_id": "txn_lh_biz_4d27",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_bizgold_5c82",
+              "credit_card_type": "Business Gold Rewards Card",
+              "merchant_name": "Polyglot Pro Software",
+              "transaction_amount": "438.20",
+              "transaction_date": "11/10/2025",
+              "status": "posted",
+              "category": "Software",
+              "rewards_earned": "438"
+            },
+            "txn_lh_biz_63bc": {
+              "transaction_id": "txn_lh_biz_63bc",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_bizgold_5c82",
+              "credit_card_type": "Business Gold Rewards Card",
+              "merchant_name": "CaptionCloud",
+              "transaction_amount": "312.65",
+              "transaction_date": "11/08/2025",
+              "status": "posted",
+              "category": "Software",
+              "rewards_earned": "312"
+            },
+            "txn_lh_biz_a915": {
+              "transaction_id": "txn_lh_biz_a915",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_bizgold_5c82",
+              "credit_card_type": "Business Gold Rewards Card",
+              "merchant_name": "QuickPrint Columbus",
+              "transaction_amount": "19.40",
+              "transaction_date": "11/07/2025",
+              "status": "posted",
+              "category": "Office Supplies",
+              "rewards_earned": "19"
+            },
+            "txn_lh_per_27e4": {
+              "transaction_id": "txn_lh_per_27e4",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_gold_71a4",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "ModernNest",
+              "transaction_amount": "246.15",
+              "transaction_date": "11/06/2025",
+              "status": "posted",
+              "category": "Shopping",
+              "rewards_earned": "246"
+            },
+            "txn_lh_per_74aa": {
+              "transaction_id": "txn_lh_per_74aa",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_gold_71a4",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "StreamCove",
+              "transaction_amount": "58.99",
+              "transaction_date": "11/05/2025",
+              "status": "posted",
+              "category": "Entertainment",
+              "rewards_earned": "58"
+            },
+            "txn_lh_per_c306": {
+              "transaction_id": "txn_lh_per_c306",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_gold_71a4",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Trail Outfitters",
+              "transaction_amount": "173.80",
+              "transaction_date": "11/03/2025",
+              "status": "posted",
+              "category": "Shopping",
+              "rewards_earned": "173"
+            },
+            "txn_lh_per_e821": {
+              "transaction_id": "txn_lh_per_e821",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_gold_71a4",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Market Table",
+              "transaction_amount": "92.44",
+              "transaction_date": "11/02/2025",
+              "status": "posted",
+              "category": "Dining",
+              "rewards_earned": "92"
+            },
+            "txn_lh_prior_91d0": {
+              "transaction_id": "txn_lh_prior_91d0",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "credit_card_account_id": "cc_leila_gold_71a4",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Buckeye Home Market",
+              "transaction_amount": "81.25",
+              "transaction_date": "06/12/2025",
+              "status": "posted",
+              "category": "Shopping",
+              "rewards_earned": "81"
+            }
+          },
+          "notes": "The eight current posted transactions support the requested batch. The additional June transaction supports the genuine pre-existing dispute foreign key."
+        },
+        "transaction_disputes": {
+          "data": {
+            "dsp_lh_prior_0bf2": {
+              "dispute_id": "dsp_lh_prior_0bf2",
+              "user_id": "usr_leila_haddad_c7f42a",
+              "transaction_id": "txn_lh_prior_91d0",
+              "card_action": "keep_active",
+              "card_last_4_digits": "2049",
+              "full_name": "Leila Haddad",
+              "phone": "+1-614-555-0187",
+              "email": "leila.haddad@example.com",
+              "address": "1847 North High Street, Apt 6B, Columbus, OH 43201",
+              "contacted_merchant": true,
+              "purchase_date": "06/12/2025",
+              "issue_noticed_date": "06/18/2025",
+              "dispute_reason": "duplicate_charge",
+              "resolution_requested": "full_refund",
+              "partial_refund_amount": null,
+              "eligible_for_provisional_credit": true,
+              "provisional_credit_given": true,
+              "status": "closed",
+              "submitted_at": "06/18/2025 10:15:00 EST"
+            }
+          },
+          "notes": "One genuine prior dispute falls within the rolling 12-month window; none of the eight current transaction IDs is initially disputed."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No replacement-card order exists for either fresh credit-card account."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Session tool availability begins empty; discoverable tools are unlocked through the runtime tool catalog, not seeded as database metadata."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Leila Haddad",
+          "user_id": "usr_leila_haddad_c7f42a",
+          "address": "1847 North High Street, Apt 6B, Columbus, OH 43201",
+          "email": "leila.haddad@example.com",
+          "phone_number": "+1-614-555-0187",
+          "date_of_birth": "05/22/1995",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "act_01_read_user",
+        "requestor": "assistant",
+        "name": "get_user_information_by_id",
+        "arguments": {
+          "user_id": "usr_leila_haddad_c7f42a"
+        }
+      },
+      {
+        "action_id": "act_02_read_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_leila_haddad_c7f42a"
+        }
+      },
+      {
+        "action_id": "act_03_read_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_leila_haddad_c7f42a"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "act_05_read_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_c7f42a\"}"
+        }
+      },
+      {
+        "action_id": "act_06_unlock_dispute",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "act_07_file_apex",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_lh_biz_8f31\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"7316\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_c7f42a\",\"phone\":\"+1-614-555-0187\",\"email\":\"leila.haddad@example.com\",\"address\":\"1847 North High Street, Apt 6B, Columbus, OH 43201\",\"contacted_merchant\":false,\"purchase_date\":\"11/12/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"unauthorized_fraudulent_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true}"
+        }
+      },
+      {
+        "action_id": "act_08_file_polyglot",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_lh_biz_4d27\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"7316\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_c7f42a\",\"phone\":\"+1-614-555-0187\",\"email\":\"leila.haddad@example.com\",\"address\":\"1847 North High Street, Apt 6B, Columbus, OH 43201\",\"contacted_merchant\":true,\"purchase_date\":\"11/10/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"duplicate_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true}"
+        }
+      },
+      {
+        "action_id": "act_09_file_captioncloud",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_lh_biz_63bc\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"7316\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_c7f42a\",\"phone\":\"+1-614-555-0187\",\"email\":\"leila.haddad@example.com\",\"address\":\"1847 North High Street, Apt 6B, Columbus, OH 43201\",\"contacted_merchant\":true,\"purchase_date\":\"11/08/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"duplicate_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":false}"
+        }
+      },
+      {
+        "action_id": "act_10_file_quickprint",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_lh_biz_a915\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"7316\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_c7f42a\",\"phone\":\"+1-614-555-0187\",\"email\":\"leila.haddad@example.com\",\"address\":\"1847 North High Street, Apt 6B, Columbus, OH 43201\",\"contacted_merchant\":true,\"purchase_date\":\"11/07/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"duplicate_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":false}"
+        }
+      },
+      {
+        "action_id": "act_11_file_modernnest",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_lh_per_27e4\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"2049\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_c7f42a\",\"phone\":\"+1-614-555-0187\",\"email\":\"leila.haddad@example.com\",\"address\":\"1847 North High Street, Apt 6B, Columbus, OH 43201\",\"contacted_merchant\":true,\"purchase_date\":\"11/06/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"goods_services_not_as_described\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":false}"
+        }
+      },
+      {
+        "action_id": "act_12_file_streamcove",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_lh_per_74aa\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"2049\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_c7f42a\",\"phone\":\"+1-614-555-0187\",\"email\":\"leila.haddad@example.com\",\"address\":\"1847 North High Street, Apt 6B, Columbus, OH 43201\",\"contacted_merchant\":true,\"purchase_date\":\"11/05/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"canceled_subscription_still_charging\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":false}"
+        }
+      },
+      {
+        "action_id": "act_13_file_trail",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_lh_per_c306\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"2049\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_c7f42a\",\"phone\":\"+1-614-555-0187\",\"email\":\"leila.haddad@example.com\",\"address\":\"1847 North High Street, Apt 6B, Columbus, OH 43201\",\"contacted_merchant\":true,\"purchase_date\":\"11/03/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"refund_never_processed\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":false}"
+        }
+      },
+      {
+        "action_id": "act_14_file_market",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_lh_per_e821\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"2049\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_c7f42a\",\"phone\":\"+1-614-555-0187\",\"email\":\"leila.haddad@example.com\",\"address\":\"1847 North High Street, Apt 6B, Columbus, OH 43201\",\"contacted_merchant\":true,\"purchase_date\":\"11/02/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"incorrect_amount\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":false}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_credit_cards_credit_cards_(general)_013",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

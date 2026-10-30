@@ -1,0 +1,378 @@
+{
+  "id": "task_generated_pro_021",
+  "description": {
+    "purpose": "Resolve two differently classified disputes on one missing debit card, preserve each dispute's category-specific metadata, and execute one permanent closure and one authorized replacement.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “I found a charge I didn't make while reviewing my Blue Account statement tonight. My wallet went missing Wednesday, and I still haven't found the debit card. Can you help with the charge and make the card safe?”\n\nYou are Elena Park, 43, an independent event planner in Sacramento, California. When asked for verification, provide the relevant details: DOB 04/19/1982, phone 916-555-0146, email elena.park@example.net, home address 2846 Maple Grove Way, Sacramento, CA 95818. Cooperate with verification and its recording; do not add charge details just because identity was requested.\n\nWhen asked about the suspicious charge, statement or card circumstances, answer the relevant question: your personal Blue checking card ends 6194. Cedar Trail Outfitters charged $286.40 on November 13, 2025; the transaction details show an in-store signature purchase with no PIN entry. You discovered it today, November 14, on your November 13 statement. You never made or authorized it and suspect someone used your missing card. Your wallet disappeared November 12 around 6 p.m.; this is your first report to the bank. Your PIN was not written in the wallet, shared, or believed observed, skimmed or otherwise compromised. You have not contacted Cedar Trail or filed a police report. The $28.90 November 10 Cedar Trail purchase was yours.\n\nOnly after the agent identifies the November 13 Cedar Trail purchase during the review, introduce the related $64.50 Westbank Yoga charge on November 12. You cancelled effective immediately November 6, confirmation WY-6042, with no further dues scheduled. You noticed the later charge November 13, contacted the gym that day with your confirmation, and were refused a refund. It was automatic billing around 6 a.m., while you still had the card, with no PIN or physical presentation. The November 5 payment was legitimate. Request a dispute for the later payment too.\n\nWhen arranging service, resolve only those two past charges and leave your other activity alone; decline a blanket subscription block and optional temporary credit for the membership claim. You want the missing card made permanently unusable and one replacement on the same checking account. Choose expedited delivery and metallic-silver design to your verified home address, agreeing to the quoted $25 total and no more. Before approving service changes, have the agent establish the affected card and both charges and explain the proposed action; agree when asked to use this conversation as your written statement for both claims. Before ordering, require confirmation of your delivery/design choices, address and total fee.\n\nIf a proposal or reported result conflicts with these boundaries or leaves something unfinished, point out only the relevant charge, missing-card concern or chosen option and ask the agent to check again. Withhold approval of conflicting proposals; if already done, request correction rather than accepting. Do not guess policy classifications or unseen mistakes. If the agent cannot finish or repeatedly leaves a visible problem after clarification, ask for human assistance.\n\nAccept only when both specified claims are confirmed filed, the missing card is confirmed permanently disabled, and one replacement with the agreed choices, address and cost is confirmed ordered, with no visible conflict or unfinished outcome. Final refunds need not already be awarded. Only then thank the agent briefly and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "u_elena_blue_c27": {
+              "user_id": "u_elena_blue_c27",
+              "name": "Elena Park",
+              "date_of_birth": "04/19/1982",
+              "phone_number": "916-555-0146",
+              "email": "elena.park@example.net",
+              "address": "2846 Maple Grove Way, Sacramento, CA 95818",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh sole fixture customer. No parent or delegated ownership. Narrative occupation and age are in user instructions."
+        },
+        "accounts": {
+          "data": {
+            "a_elena_blue_c27": {
+              "account_id": "a_elena_blue_c27",
+              "user_id": "u_elena_blue_c27",
+              "class": "checking",
+              "account_type": "checking",
+              "account_class": "Blue",
+              "level": "Blue Account",
+              "status": "OPEN",
+              "date_opened": "02/03/2022",
+              "current_holdings": "2436.80"
+            }
+          },
+          "notes": "One personal, unrestricted, caller-owned account supplied as a patch. No outstanding holds. No Blue-to-dispute-tier inference is needed."
+        },
+        "debit_cards": {
+          "data": {
+            "c_elena_6194_c27": {
+              "card_id": "c_elena_6194_c27",
+              "account_id": "a_elena_blue_c27",
+              "user_id": "u_elena_blue_c27",
+              "cardholder_name": "Elena Park",
+              "last_4_digits": "6194",
+              "cvv": "827",
+              "status": "ACTIVE",
+              "issue_date": "08/04/2025",
+              "issue_reason": "first_card",
+              "expiration_date": "08/29",
+              "card_design": "CLASSIC",
+              "fraud_alert_active": false,
+              "alert_source": null,
+              "pin_locked": false,
+              "pin_attempts_remaining": 3,
+              "velocity_blocked": false
+            }
+          },
+          "notes": "Only supplied card. Missing but not previously reported; no pending card, prior replacement, freeze, stolen report or security alert. No pending card purchases or refunds."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "t_elena_ct_1113_c27": {
+              "transaction_id": "t_elena_ct_1113_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/13/2025",
+              "description": "CEDAR TRAIL OUTFITTERS - SACRAMENTO CA US - card 6194 - in-store physical-card terminal, signature purchase, no PIN entry",
+              "amount": -286.4,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "t_elena_wy_1112_c27": {
+              "transaction_id": "t_elena_wy_1112_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/12/2025",
+              "description": "WESTBANK YOGA - SACRAMENTO CA US - card 6194 - weekly automatic membership billing 06:00, no physical presentation or PIN",
+              "amount": -64.5,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "t_elena_l01_c27": {
+              "transaction_id": "t_elena_l01_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/05/2025",
+              "description": "WESTBANK YOGA - card 6194 - weekly automatic membership billing",
+              "amount": -64.5,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "t_elena_l02_c27": {
+              "transaction_id": "t_elena_l02_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/06/2025",
+              "description": "HARBOR MARKET - card 6194 - grocery purchase",
+              "amount": -46.2,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "t_elena_l03_c27": {
+              "transaction_id": "t_elena_l03_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/07/2025",
+              "description": "EVENT CLIENT PAYMENT - ACH credit",
+              "amount": 1800,
+              "type": "ach_transfer_in",
+              "status": "posted",
+              "hold_amount": 0,
+              "available_amount": 1800
+            },
+            "t_elena_l04_c27": {
+              "transaction_id": "t_elena_l04_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/08/2025",
+              "description": "MOBILE CHECK DEPOSIT",
+              "amount": 250,
+              "type": "mobile_deposit",
+              "status": "posted",
+              "hold_amount": 0,
+              "available_amount": 250
+            },
+            "t_elena_l05_c27": {
+              "transaction_id": "t_elena_l05_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/09/2025",
+              "description": "SACRAMENTO TRANSIT - card 6194 - transit fare",
+              "amount": -12,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "t_elena_l06_c27": {
+              "transaction_id": "t_elena_l06_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/10/2025",
+              "description": "CEDAR TRAIL OUTFITTERS - SACRAMENTO CA US - card 6194 - in-store purchase",
+              "amount": -28.9,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "t_elena_l07_c27": {
+              "transaction_id": "t_elena_l07_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/11/2025",
+              "description": "HOMENET - card 6194 - monthly internet service automatic payment",
+              "amount": -58,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "t_elena_l08_c27": {
+              "transaction_id": "t_elena_l08_c27",
+              "account_id": "a_elena_blue_c27",
+              "date": "11/12/2025",
+              "description": "MAPLE DELI - card 6194 - morning purchase 09:15",
+              "amount": -14.75,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            }
+          },
+          "notes": "Exactly ten supplied caller-linked posted rows: two targets and eight legitimate alternatives. No pending transactions, refunds, reversals or duplicates. This is a recent activity slice, not an opening-to-date balance ledger. Statement date and cancellation testimony remain conversation facts."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty supplied fixture; create exactly one current-session verification through log_verification."
+        },
+        "debit_card_disputes": {
+          "data": {},
+          "notes": "Insert target starts empty. No pre-existing dispute is linked to the fresh customer or account after merging."
+        },
+        "debit_card_orders": {
+          "data": {},
+          "notes": "Insert target starts empty. No previous or pending order belongs to the fresh account."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty operational telemetry table, not a capability registry."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Referenced-table support for account lookup; supplies no credit-card product or workload record."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "g01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        },
+        "info": "Unscored identity lookup; match customer-provided identity fields."
+      },
+      {
+        "action_id": "g02",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "g03",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "u_elena_blue_c27",
+          "address": "2846 Maple Grove Way, Sacramento, CA 95818",
+          "email": "elena.park@example.net",
+          "phone_number": "916-555-0146",
+          "date_of_birth": "04/19/1982",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "g04",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "g05",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"u_elena_blue_c27\"}"
+        },
+        "info": "Unscored account ID, ownership, standing, tenure and funds lookup."
+      },
+      {
+        "action_id": "g06",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "g07",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"a_elena_blue_c27\"}"
+        },
+        "info": "Unscored discovery of original card ID and card eligibility evidence."
+      },
+      {
+        "action_id": "g08",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "g09",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"a_elena_blue_c27\"}"
+        },
+        "info": "Unscored discovery of disputed IDs, signs, dates and channels among legitimate activity; also establishes no pending purchases, refunds or holds."
+      },
+      {
+        "action_id": "g10",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483"
+        }
+      },
+      {
+        "action_id": "g11",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483",
+          "arguments": "{\"user_id\":\"u_elena_blue_c27\"}"
+        },
+        "info": "Unscored capacity check: zero existing caller disputes, two filings within the lowest tier limit."
+      },
+      {
+        "action_id": "g12",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281"
+        }
+      },
+      {
+        "action_id": "g13",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"t_elena_ct_1113_c27\",\"account_id\":\"a_elena_blue_c27\",\"card_id\":\"c_elena_6194_c27\",\"user_id\":\"u_elena_blue_c27\",\"dispute_category\":\"card_present_fraud\",\"transaction_date\":\"11/13/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":286.40,\"transaction_type\":\"signature_purchase\",\"card_in_possession\":false,\"pin_compromised\":\"no\",\"contacted_merchant\":false,\"police_report_filed\":false,\"written_statement_provided\":true,\"provisional_credit_eligible\":true,\"customer_max_liability_amount\":50.00,\"card_action\":\"close_and_reissue\"}"
+        }
+      },
+      {
+        "action_id": "g14",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"t_elena_wy_1112_c27\",\"account_id\":\"a_elena_blue_c27\",\"card_id\":\"c_elena_6194_c27\",\"user_id\":\"u_elena_blue_c27\",\"dispute_category\":\"recurring_charge_after_cancellation\",\"transaction_date\":\"11/12/2025\",\"discovery_date\":\"11/13/2025\",\"disputed_amount\":64.50,\"transaction_type\":\"recurring_payment\",\"card_in_possession\":false,\"pin_compromised\":\"no\",\"contacted_merchant\":true,\"police_report_filed\":false,\"written_statement_provided\":true,\"provisional_credit_eligible\":false,\"customer_max_liability_amount\":50.00,\"card_action\":\"keep_active\"}"
+        }
+      },
+      {
+        "action_id": "g15",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721"
+        }
+      },
+      {
+        "action_id": "g16",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"c_elena_6194_c27\",\"reason\":\"lost\"}"
+        }
+      },
+      {
+        "action_id": "g17",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739"
+        }
+      },
+      {
+        "action_id": "g18",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739",
+          "arguments": "{\"account_id\":\"a_elena_blue_c27\",\"user_id\":\"u_elena_blue_c27\",\"delivery_option\":\"EXPEDITED\",\"delivery_fee\":15.00,\"card_design\":\"PREMIUM\",\"design_fee\":10.00,\"shipping_address\":\"2846 Maple Grove Way, Sacramento, CA 95818\",\"excess_replacement_fee\":0.00}"
+        },
+        "info": "Creates the pending order, pending replacement and fee debit. No subsequent action requires invented generated IDs."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_023",
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_031",
+    "doc_bank_accounts_bank_accounts_(general)_032",
+    "doc_bank_accounts_bank_accounts_(general)_034"
+  ]
+}

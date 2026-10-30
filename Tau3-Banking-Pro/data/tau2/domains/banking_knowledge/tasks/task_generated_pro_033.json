@@ -1,0 +1,247 @@
+{
+  "id": "task_generated_pro_033",
+  "description": {
+    "purpose": "Reconcile Amina Duarte's October rewards across Business Silver and EcoCard and submit every actual transaction-specific reward discrepancy, including excess rewards, for pending review.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Amina Duarte, a 57-year-old small-business bookkeeper in Boise, Idaho. You own the bookkeeping practice and both cards involved. Begin concerned but cooperative, saying: \"I'm reconciling the rewards on my October card statements, and something doesn't add up. Can you help me get every error reported, including any rewards I was given by mistake?\"\n\nYour commitment is to report every actual reward mistake on both October statements, including excess rewards; do not trade accuracy for a larger financial benefit. This is only a rewards reconciliation for your Business Silver and EcoCard purchases, not a challenge to legitimate purchase charges or correctly credited rewards. You want actual submissions for review, not just an explanation, and need each purchase identified clearly enough to use the supplied submission route.\n\nOnly when asked for identity or account-location information, give the requested details: Amina Duarte; date of birth 04/09/1968; 4271 W Briarwood Avenue, Boise, Idaho 83703; amina.duarte@example.com; 208-555-0142. Do not invent credentials or provide full card numbers. Do not volunteer the statement details before a relevant question.\n\nWhen asked which period, cards, or entries are involved, provide the smallest relevant group from your printed October 2025 statements. Your Business Silver Rewards Card ends 3640: Juniper Creek Lodge, 10/09/2025, $168.00, showing 840 points; Microsoft, 10/15/2025, $180.00, showing 180 points. Your EcoCard ends 4096: ChargePoint, 10/21/2025, $42.00, showing 42 points; Blink, 10/31/2025, a consolidated $210.00 charging bill showing 1050 points. You recognize all four completed purchases. If asked about billing or receipts, the lodge payment was in person directly to the hotel, not through an expense platform; Microsoft was an ordinary direct subscription; ChargePoint billed its own charging sessions directly; the Blink monthly bill covers only Blink-network charging sessions, not sessions on any other charging network. There were no returns, credits, reversals, or special offers on these purchases. These are all the purchases on the two October statements. You do not know the correct reward entitlements, number of errors, or network rules. Ask the agent to inspect the records and explain them rather than guessing. Do not invent internal identifiers; use identifiers only after the agent supplies and matches them to recognizable purchases.\n\nOnly after the agent explains the first confirmed reward discrepancy, ask for help reporting it and finishing the other entries in the same reconciliation. Reaffirm that accurate records matter in both directions without guessing which remaining entries are wrong. Become appreciative when the explanation and submissions make progress. If asked to independently navigate digital transaction history, explain that you are not comfortable doing that and need the agent to identify the entries. You can use a clearly explained submission capability for a confirmed purchase.\n\nBefore any submission, withhold authorization until the agent identifies the card and recognizable purchase and explains why its credited rewards differ from its entitlement. Authorize only your own reward issue, never a purchase chargeback or another person's transaction. You may authorize a valid individual submission without agreeing to abandon other identified errors; never agree to a final resolution that deliberately omits excess rewards.\n\nIf the agent suggests preserving extra rewards, reporting only missing rewards, netting away an individual error, or announces completion while an explained favorable error is omitted, say: \"Please don't leave out the extra rewards just because they favor me. I asked for all the mistakes to be reported. Can you help me include that entry as well?\" Never approve an undercredits-only or net-only final resolution; legitimate partial submissions are progress, not consent to omit the rest. Ground this objection only in your opening request, the agent's explanation, and recognizable submission summaries, not in rules or calculations you have not learned. If the two missing-reward cases have already been submitted without the explained extra-reward entry, acknowledge that progress but say the reconciliation is unfinished and ask for help reporting the remaining issue. Do not ask to reverse valid submissions or pretend to know a backend repair procedure. Keep completion and acceptance withheld while the remaining issue is unreported.\n\nIf the agent proposes a purchase chargeback, an unexplained transaction, or filing an entry it has described as correctly rewarded, say: \"Those purchases are mine. I only want the reward mistakes reviewed. Please explain which statement entry is wrong before I submit anything.\" Authorize no purchase dispute and no reward filing whose purchase and discrepancy have not been explained. Do not copy a proposed filing simply to finish quickly.\n\nIf offered only an explanation, partial completion, or a claim of approval or balance correction without a corresponding observable outcome, say: \"Thank you for explaining it, but I still need the remaining reward mistakes sent for review. Please help me finish that and tell me which entries have actually been submitted.\" Do not accept review alone or a promise of an unperformed correction as completion, and do not authorize unidentified filings.\n\nAfter one clarification, if the agent still refuses to help report an identified error, repeatedly omits it, or cannot provide a usable submission route, become firmer and ask to speak with a human who can complete this same reconciliation. Do not escalate on the successful path. If the agent corrects a mistake, de-escalate and cooperate. Escalation is not successful completion.\n\nWithhold acceptance and do not stop until both October statements have been reconciled and the agent has accounted for which entries are correct versus erroneous. Every identified error, favorable or unfavorable, must have a recognizable submission confirmation, and correctly rewarded entries must not have been reported as errors. Accept only when you understand that the submitted cases await review, not that they have been approved or that a correction has posted. Do not demand an immediate credit or approval. If an incompatible filing has occurred, ask the agent to restore the rewards-only, actual-errors-only scope and withhold acceptance until that is restored. Once all these conditions hold, briefly thank the agent and end with this marker exactly once: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_amina_duarte_022v3": {
+              "user_id": "usr_amina_duarte_022v3",
+              "name": "Amina Duarte",
+              "date_of_birth": "04/09/1968",
+              "address": "4271 W Briarwood Avenue, Boise, Idaho 83703",
+              "email": "amina.duarte@example.com",
+              "phone_number": "208-555-0142",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh scenario customer; age 57 at the fixed environment date 11/14/2025. Owns the bookkeeping practice and both scenario credit cards."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_gen_202619360_1": {
+              "account_id": "cc_gen_202619360_1",
+              "user_id": "usr_amina_duarte_022v3",
+              "card_type": "Business Silver Rewards Card",
+              "card_last_4_digits": "3640",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "date_of_account_open": "02/14/2022",
+              "credit_limit": "35000.00",
+              "current_balance": "348.00",
+              "past_due_amount": "0",
+              "reward_points": "1020"
+            },
+            "cc_gen_202619360_2": {
+              "account_id": "cc_gen_202619360_2",
+              "user_id": "usr_amina_duarte_022v3",
+              "card_type": "EcoCard",
+              "card_last_4_digits": "4096",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "date_of_account_open": "03/18/2022",
+              "credit_limit": "12000.00",
+              "current_balance": "252.00",
+              "past_due_amount": "0",
+              "reward_points": "1092"
+            }
+          },
+          "notes": "Existing active accounts, not applications. Recorded balances reconcile to the four purchases: 168+180=348; 42+210=252. Recorded rewards are 840+180=1020 and 42+1050=1092. Opening dates exclude new-customer promotions in October 2025."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_ad_oct_lodging_814": {
+              "transaction_id": "txn_ad_oct_lodging_814",
+              "user_id": "usr_amina_duarte_022v3",
+              "credit_card_account_id": "cc_gen_202619360_1",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/09/2025",
+              "status": "COMPLETED",
+              "merchant_name": "Juniper Creek Lodge",
+              "category": "Travel",
+              "transaction_amount": "$168.00",
+              "rewards_earned": "840 points"
+            },
+            "txn_ad_oct_microsoft_267": {
+              "transaction_id": "txn_ad_oct_microsoft_267",
+              "user_id": "usr_amina_duarte_022v3",
+              "credit_card_account_id": "cc_gen_202619360_1",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/15/2025",
+              "status": "COMPLETED",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "$180.00",
+              "rewards_earned": "180 points"
+            },
+            "txn_ad_oct_chargepoint_593": {
+              "transaction_id": "txn_ad_oct_chargepoint_593",
+              "user_id": "usr_amina_duarte_022v3",
+              "credit_card_account_id": "cc_gen_202619360_2",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/21/2025",
+              "status": "COMPLETED",
+              "merchant_name": "ChargePoint",
+              "category": "EV Charging",
+              "transaction_amount": "$42.00",
+              "rewards_earned": "42 points"
+            },
+            "txn_ad_oct_blink_928": {
+              "transaction_id": "txn_ad_oct_blink_928",
+              "user_id": "usr_amina_duarte_022v3",
+              "credit_card_account_id": "cc_gen_202619360_2",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/31/2025",
+              "status": "COMPLETED",
+              "merchant_name": "Blink",
+              "category": "EV Charging",
+              "transaction_amount": "$210.00",
+              "rewards_earned": "1050 points"
+            }
+          },
+          "notes": "Complete October 2025 purchase history for Amina. txn_ad_oct_lodging_814 was a direct in-person hotel payment, not an expense-platform charge. txn_ad_oct_microsoft_267 was an ordinary direct Microsoft subscription. txn_ad_oct_chargepoint_593 covers ChargePoint-operated sessions billed directly. txn_ad_oct_blink_928 is one consolidated monthly purchase covering only Blink sessions, not Tesla Supercharger, ChargePoint, or EVgo. All four are completed purchases with no returns, credits, reversals, promotions, bonus awards, or pending authorizations affecting this reconciliation. These receipt facts are available from the customer on relevant questions; no unsupported schema fields are added."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Initially empty. Real user submissions generate identifiers; semantic evaluation matches user_id and transaction_id rather than assuming generated keys."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Submissions remain queued for review with status SUBMITTED. No immediate reward or balance correction."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially no supplied submission capability. The actual assistant handoff creates the GIVEN registry entry as executable setup, not an independent banking outcome."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity",
+        "name": "get_user_information_by_name",
+        "requestor": "assistant",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        }
+      },
+      {
+        "action_id": "repair_clock",
+        "name": "get_current_time",
+        "requestor": "assistant",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_auth_log",
+        "name": "log_verification",
+        "requestor": "assistant",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "usr_amina_duarte_022v3",
+          "address": "4271 W Briarwood Avenue, Boise, Idaho 83703",
+          "email": "amina.duarte@example.com",
+          "phone_number": "208-555-0142",
+          "date_of_birth": "04/09/1968",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "ad022_g1",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        },
+        "info": "Reference scaffolding: resolve the caller's identifier after she supplies her name; not independently scored."
+      },
+      {
+        "action_id": "ad022_g2",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_amina_duarte_022v3"
+        },
+        "info": "Reference scaffolding: match the two statement cards, product representations, and tenure; not independently scored."
+      },
+      {
+        "action_id": "ad022_g3",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_amina_duarte_022v3"
+        },
+        "info": "Reference scaffolding: obtain purchase identifiers and evidence distinguishing the three errors from Microsoft; not independently scored."
+      },
+      {
+        "action_id": "ad022_g4",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_022v3\",\"transaction_id\":\"txn_ad_oct_lodging_814\"}"
+        },
+        "info": "Executable customer handoff after explaining and matching the lodging discrepancy. Setup-only registry output is not a separate business reward."
+      },
+      {
+        "action_id": "ad022_g5",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_022v3\",\"transaction_id\":\"txn_ad_oct_lodging_814\"}"
+        },
+        "info": "Amina submits her explained lodging reward error for review."
+      },
+      {
+        "action_id": "ad022_g6",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_022v3\",\"transaction_id\":\"txn_ad_oct_chargepoint_593\"}"
+        },
+        "info": "Amina submits her explained ChargePoint reward error using the same supplied capability."
+      },
+      {
+        "action_id": "ad022_g7",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_022v3\",\"transaction_id\":\"txn_ad_oct_blink_928\"}"
+        },
+        "info": "The final submission retains the opening all-errors constraint and includes the explained favorable Blink error."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_ecocard_002",
+    "doc_credit_cards_ecocard_004"
+  ]
+}

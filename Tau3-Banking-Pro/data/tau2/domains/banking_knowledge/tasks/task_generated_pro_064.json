@@ -1,0 +1,284 @@
+{
+  "id": "task_generated_pro_064",
+  "description": {
+    "purpose": "Verify Elena Park and formally dispute the earlier of two duplicate debit-card charges and a later recurring charge made after cancellation, while keeping her card active and recording no provisional credit.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying, “I found what looks like the same debit-card charge twice while reconciling this week's activity. Can you help me fix it?” Do not initially mention LedgerLeaf Pro or the cancelled subscription.\n\nIf asked for the duplicate merchant, dates, or amount, say that River City Print & Parcel posted two matching $72.40 debits on November 10 and November 11, although you made only one purchase. If asked how the purchase was made, explain that it was an in-person purchase for which you signed rather than entering a PIN.\n\nIf asked to verify your identity, provide the requested configured details: your name is Elena Park, date of birth is 02/14/1998, email is elena.park1041@example.com, phone number is 804-555-0146, and address is 412 Linden Row, Richmond, VA 23220. If asked about reporting or the statement, say you noticed the problem on November 14 and the statement showing it is dated November 13. If asked about security, say you still possess the physical card and have no reason to think your PIN was compromised. If asked about merchant contact, say you contacted the merchant without resolution. If asked about a police report, say none was filed. If asked about a written statement, say you will answer factual questions but do not consent to this conversation being treated as a written statement.\n\nOnly after the agent explicitly confirms that the duplicate-charge dispute has been filed, say, “There is one more charge from the same review. LedgerLeaf Pro charged me $18.75 on November 12 even though I cancelled on October 20 and have the confirmation.” If asked, add that you contacted LedgerLeaf Pro again on November 12 without resolution. Keep the same answers about card possession, PIN safety, police-report status, and written-statement consent.\n\nYour goal throughout is to have both the repeated Print & Parcel debit and the post-cancellation LedgerLeaf charge formally disputed during this call. Keep the physical debit card usable because you still have it and have no indication that its PIN was exposed. Do not agree to a blanket block on recurring payments because other legitimate subscriptions use this card. Do not consent to this conversation being recorded as a written statement. Only one of the two matching Print & Parcel debits should be challenged because one purchase was valid.\n\nIf the agent proposes skipping either merchant issue, disputing both Print & Parcel debits, or ending after the first filing, say that one Print & Parcel purchase was valid but the repeated debit was not, and remind the agent that the separate LedgerLeaf charge occurred after cancellation. Do not authorize a resolution that disputes both matching debits, leaves either requested merchant issue unfiled, or closes the call after only one dispute.\n\nIf the agent recommends freezing, closing, or replacing the card, or blocking all recurring payments, say that you have the card, your PIN appears safe, and other legitimate recurring payments must continue, so you want the two charge problems handled without disabling the card. Withhold authorization for any card freeze, closure, replacement, or all-recurring-payment block.\n\nIf the agent proposes recording that you supplied a written statement or refuses to file solely because you declined one, say that you are willing to answer factual questions but are not agreeing to a written statement today, and ask the agent to reconsider whether the charge disputes can still be filed. Do not authorize either filing if it represents written-statement consent as true.\n\nAuthorize dispute filing only after your identity has been verified using your own configured identity information. Before authorizing the duplicate filing, require the agent to identify both matching $72.40 Print & Parcel debits and confirm that only one will be challenged. Before authorizing the LedgerLeaf filing, require the agent to acknowledge the November 12 charge and your October 20 cancellation. Authorize the proposed resolution only if it leaves the card usable, avoids a blanket recurring block, and respects your refusal to provide a written statement.\n\nDo not accept the resolution until the agent confirms that one, and only one, matching Print & Parcel debit has a formal dispute. Do not accept the resolution until the agent confirms that the posted LedgerLeaf charge after cancellation also has a formal dispute. Do not accept the resolution until the agent confirms that the debit card remains usable and no blanket recurring-payment block was added. Do not accept the resolution until the agent explains the temporary-credit outcome resulting from your decision not to provide a written statement.\n\nIf the agent repeatedly refuses or cannot complete an otherwise eligible filing after checking the transaction details, ask to be transferred to a human who can finish the same dispute request. Do not request a transfer on the successful path.\n\nOnly after every completion condition above is satisfied, say, “Thanks, that takes care of both charges.” Then end with exactly this marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_elena_park_1041": {
+              "user_id": "usr_elena_park_1041",
+              "name": "Elena Park",
+              "date_of_birth": "02/14/1998",
+              "email": "elena.park1041@example.com",
+              "phone_number": "804-555-0146",
+              "address": "412 Linden Row, Richmond, VA 23220"
+            }
+          },
+          "notes": "Elena Park is the customer identity and account owner."
+        },
+        "accounts": {
+          "data": {
+            "acct_chk_ep_1041": {
+              "account_id": "acct_chk_ep_1041",
+              "user_id": "usr_elena_park_1041",
+              "class": "checking",
+              "status": "OPEN",
+              "level": "Mid Tier",
+              "date_opened": "03/18/2022",
+              "current_holdings": "1842.63"
+            }
+          },
+          "notes": "Open Mid Tier checking account linked to the selected debit card and transactions."
+        },
+        "debit_cards": {
+          "data": {
+            "card_ep_6118": {
+              "card_id": "card_ep_6118",
+              "account_id": "acct_chk_ep_1041",
+              "user_id": "usr_elena_park_1041",
+              "last_4_digits": "6118",
+              "status": "ACTIVE",
+              "cardholder_name": "Elena Park",
+              "cvv": "417",
+              "expiration_date": "08/29",
+              "issue_date": "03/18/2022",
+              "issue_reason": "first_card",
+              "daily_purchase_limit": 3000,
+              "daily_purchase_used": 206,
+              "daily_atm_limit": 600,
+              "daily_atm_used": 0,
+              "international_enabled": false,
+              "online_enabled": true,
+              "fraud_alert_active": false,
+              "pin_locked": false,
+              "pin_attempts_remaining": 3,
+              "pin_locks_last_90_days": 0,
+              "chip_verification_failures": 0,
+              "velocity_blocked": false
+            }
+          },
+          "notes": "Active physical debit card used for both disputed merchant charges; no restriction or fraud flag is initially present."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Starts empty because current-session identity verification must be performed during the interaction."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_ep_print_1110": {
+              "transaction_id": "txn_ep_print_1110",
+              "account_id": "acct_chk_ep_1041",
+              "date": "11/10/2025",
+              "description": "DEBIT CARD PURCHASE - RIVER CITY PRINT & PARCEL RICHMOND VA",
+              "amount": -72.4,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            },
+            "txn_ep_print_1111": {
+              "transaction_id": "txn_ep_print_1111",
+              "account_id": "acct_chk_ep_1041",
+              "date": "11/11/2025",
+              "description": "DEBIT CARD PURCHASE - RIVER CITY PRINT & PARCEL RICHMOND VA",
+              "amount": -72.4,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            },
+            "txn_ep_ledger_1112": {
+              "transaction_id": "txn_ep_ledger_1112",
+              "account_id": "acct_chk_ep_1041",
+              "date": "11/12/2025",
+              "description": "RECURRING DEBIT - LEDGERLEAF PRO",
+              "amount": -18.75,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            },
+            "txn_ep_grocery_1109": {
+              "transaction_id": "txn_ep_grocery_1109",
+              "account_id": "acct_chk_ep_1041",
+              "date": "11/09/2025",
+              "description": "DEBIT CARD PURCHASE - CAPITOL MARKET RICHMOND VA",
+              "amount": -43.26,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            }
+          },
+          "notes": "Posted transaction history supporting the duplicate pair, post-cancellation recurring debit, and one unrelated distractor."
+        },
+        "debit_card_disputes": {
+          "data": {},
+          "notes": "No debit-card disputes are initially open for Elena or the selected transactions."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discoverable-tool audit state starts empty; tool availability comes from the environment catalog."
+        },
+        "task_config": {
+          "data": {
+            "config_disputes_ep_1041": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Newly filed debit-card disputes remain OPEN."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "action_01_lookup_elena",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        }
+      },
+      {
+        "action_id": "action_02_get_fixed_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "action_03_log_current_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "usr_elena_park_1041",
+          "address": "412 Linden Row, Richmond, VA 23220",
+          "email": "elena.park1041@example.com",
+          "phone_number": "804-555-0146",
+          "date_of_birth": "02/14/1998",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "action_04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "action_05_get_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_elena_park_1041\"}"
+        }
+      },
+      {
+        "action_id": "action_06_unlock_cards",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "action_07_get_cards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_chk_ep_1041\"}"
+        }
+      },
+      {
+        "action_id": "action_08_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "action_09_get_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_chk_ep_1041\"}"
+        }
+      },
+      {
+        "action_id": "action_10_unlock_dispute_status",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483"
+        }
+      },
+      {
+        "action_id": "action_11_get_initial_dispute_status",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483",
+          "arguments": "{\"user_id\":\"usr_elena_park_1041\"}"
+        }
+      },
+      {
+        "action_id": "action_12_unlock_dispute_filing",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281"
+        }
+      },
+      {
+        "action_id": "action_13_file_duplicate_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_ep_print_1110\",\"account_id\":\"acct_chk_ep_1041\",\"card_id\":\"card_ep_6118\",\"user_id\":\"usr_elena_park_1041\",\"dispute_category\":\"duplicate_charge\",\"transaction_date\":\"11/10/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":72.40,\"transaction_type\":\"signature_purchase\",\"card_in_possession\":true,\"pin_compromised\":\"no\",\"contacted_merchant\":true,\"police_report_filed\":false,\"written_statement_provided\":false,\"provisional_credit_eligible\":false,\"customer_max_liability_amount\":50.00,\"card_action\":\"keep_active\"}"
+        }
+      },
+      {
+        "action_id": "action_14_get_updated_dispute_status",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483",
+          "arguments": "{\"user_id\":\"usr_elena_park_1041\"}"
+        }
+      },
+      {
+        "action_id": "action_15_file_recurring_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_ep_ledger_1112\",\"account_id\":\"acct_chk_ep_1041\",\"card_id\":\"card_ep_6118\",\"user_id\":\"usr_elena_park_1041\",\"dispute_category\":\"recurring_charge_after_cancellation\",\"transaction_date\":\"11/12/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":18.75,\"transaction_type\":\"recurring_payment\",\"card_in_possession\":true,\"pin_compromised\":\"no\",\"contacted_merchant\":true,\"police_report_filed\":false,\"written_statement_provided\":false,\"provisional_credit_eligible\":false,\"customer_max_liability_amount\":50.00,\"card_action\":\"keep_active\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_028",
+    "doc_bank_accounts_bank_accounts_(general)_031",
+    "doc_bank_accounts_bank_accounts_(general)_032",
+    "doc_bank_accounts_bank_accounts_(general)_034"
+  ]
+}

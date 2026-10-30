@@ -1,0 +1,392 @@
+{
+  "id": "task_generated_pro_007",
+  "description": {
+    "purpose": "Apply an existing Silver Rewards Card limit increase and file a nonreceipt dispute while retaining the securely retrieved card identity.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “The espresso machine I ordered never arrived, and the seller hasn't answered my emails. Can you help dispute that charge on my Silver Rewards Card?”\n\nAnswer only the topic asked about. You are Elena Park, 34, a restaurant manager in Baltimore, Maryland; DOB 08/19/1991; address 2318 Keswick Road Apt 3, Baltimore, MD 21211; phone 410-555-0168; email elena.park@example.net. The machine cost $864.40 at Harbor Hearth Supply on 10/03/2025. Delivery was due 10/17/2025; you noticed the problem 10/20 and emailed 10/21, 10/29, and 11/13 without replies. Nothing arrived; no refund was promised or received. You authorized the purchase: this is not fraud, and your card is safely at home. The seller's $126.75 utensils purchase arrived; the $92.30 Chesapeake Market grocery charge is yours. Your desired handling is a full refund for the machine only, keeping the current card active.\n\nOnly after the agent identifies the missing purchase, and before authorizing filing, mention buying a replacement and wanting more breathing room: ask to raise this card's current $12,000 limit to $18,000. You want both services, not one instead of the other, on your existing Silver Rewards Card.\n\nIf asked for card digits, ask for help looking them up. Use the supplied secure lookup and report its actual result. Only after the agent acknowledges it, say once: “I thought it ended in 6452, but I may be mixing that up.” Accept grounded clarification; this memory is not a request to switch cards.\n\nAuthorize a service only after identity confirmation, identification of your existing card and intended purchase, disclosure of the related limit request, and an explanation of the service. You may agree to an explained handling order without prescribing internal steps.\n\nIf a proposal or reported outcome conflicts with these requests or the lookup you saw, point out the visible mismatch, withhold permission for the change, and ask the agent to check again. Consent does not cover conflicting card details, another product, cancellation, changed purchase or refund scope, or abandoning either service. If it already happened, ask for correction of the visible problem or help completing the unfinished request. Do not guess at hidden errors or unshown filing details.\n\nAccept only when the agent confirms the $18,000 limit is applied and the machine purchase is disputed for a full refund on your continuing active card, with no unresolved visible mismatch. Filing suffices; you do not require an immediate refund or assume temporary-credit eligibility means money was posted. Then thank the agent and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "elena_f053_48": {
+              "user_id": "elena_f053_48",
+              "name": "Elena Park",
+              "date_of_birth": "08/19/1991",
+              "address": "2318 Keswick Road Apt 3, Baltimore, MD 21211",
+              "email": "elena.park@example.net",
+              "phone_number": "410-555-0168"
+            }
+          },
+          "notes": "Fresh caller, age 34 at the fixed environment date. Supplied initialization patch, not table replacement."
+        },
+        "accounts": {
+          "data": {
+            "chk_elena_f053_48": {
+              "account_id": "chk_elena_f053_48",
+              "user_id": "elena_f053_48",
+              "class": "checking",
+              "level": "Blue Account",
+              "date_opened": "02/14/2024",
+              "status": "OPEN",
+              "current_holdings": "6400.00"
+            }
+          },
+          "notes": "One fixture-owned checking account, retained inventory; no payment or transfer is authorized."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_maxcombined36_20260923048_silver": {
+              "account_id": "cc_maxcombined36_20260923048_silver",
+              "user_id": "elena_f053_48",
+              "card_type": "Silver Rewards Card",
+              "date_of_account_open": "02/14/2024",
+              "current_balance": "$3600.00",
+              "credit_limit": "$12000.00",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "past_due_amount": "$0.00",
+              "reward_points": "8260 points",
+              "card_last_4_digits": "6542"
+            }
+          },
+          "notes": "Mandated precomputed account identity. Actual lookup must derive 6542 during downstream certification. Only the credit limit changes."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_elena_f053_48_machine": {
+              "transaction_id": "txn_elena_f053_48_machine",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Harbor Hearth Supply",
+              "transaction_amount": "$864.40",
+              "transaction_date": "10/03/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "864 points"
+            },
+            "txn_elena_f053_48_utensils": {
+              "transaction_id": "txn_elena_f053_48_utensils",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Harbor Hearth Supply",
+              "transaction_amount": "$126.75",
+              "transaction_date": "10/09/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "126 points"
+            },
+            "txn_elena_f053_48_groceries": {
+              "transaction_id": "txn_elena_f053_48_groceries",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Chesapeake Market",
+              "transaction_amount": "$92.30",
+              "transaction_date": "10/28/2025",
+              "category": "Groceries",
+              "status": "COMPLETED",
+              "rewards_earned": "92 points"
+            }
+          },
+          "notes": "Three owned purchases distinguish the missing machine from received utensils and recognized groceries. Partial activity history, not a balance reconciliation. Delivery and merchant-contact facts are customer evidence in instructions."
+        },
+        "payment_history": {
+          "data": {
+            "pay_elena_f053_48_06": {
+              "payment_id": "pay_elena_f053_48_06",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "payment_date": "06/05/2025",
+              "amount": "$325.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_f053_48_07": {
+              "payment_id": "pay_elena_f053_48_07",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "payment_date": "07/05/2025",
+              "amount": "$340.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_f053_48_08": {
+              "payment_id": "pay_elena_f053_48_08",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "payment_date": "08/05/2025",
+              "amount": "$360.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_f053_48_09": {
+              "payment_id": "pay_elena_f053_48_09",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "payment_date": "09/05/2025",
+              "amount": "$375.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_f053_48_10": {
+              "payment_id": "pay_elena_f053_48_10",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "payment_date": "10/05/2025",
+              "amount": "$390.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_f053_48_11": {
+              "payment_id": "pay_elena_f053_48_11",
+              "user_id": "elena_f053_48",
+              "credit_card_account_id": "cc_maxcombined36_20260923048_silver",
+              "payment_date": "11/05/2025",
+              "amount": "$410.00",
+              "status": "ON_TIME"
+            }
+          },
+          "notes": "Six consecutive monthly on-time payments owned by the caller/card. September-November meet the three-month minimum; older payments corroborate the sequence. Dates normalized to MM/DD/YYYY."
+        },
+        "credit_limit_increase_requests": {
+          "data": {},
+          "notes": "No supplied prior requests. Validate no merged-state prior requests for the fresh user/card. Submission and separate approval must be tool-produced."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No supplied disputes. Validate no merged-state disputes for Elena or the machine transaction. Filing creates an active SUBMITTED dispute."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No supplied replacement orders. Validate no merged-state orders for the selected card; no order is created."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Empty operational collection; handoff telemetry is not evaluated."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty operational collection; access comes from the catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity",
+        "name": "get_user_information_by_name",
+        "requestor": "assistant",
+        "arguments": {
+          "customer_name": "Elena Park"
+        }
+      },
+      {
+        "action_id": "repair_clock",
+        "name": "get_current_time",
+        "requestor": "assistant",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_auth_log",
+        "name": "log_verification",
+        "requestor": "assistant",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "elena_f053_48",
+          "address": "2318 Keswick Road Apt 3, Baltimore, MD 21211",
+          "email": "elena.park@example.net",
+          "phone_number": "410-555-0168",
+          "date_of_birth": "08/19/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "g_profile",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        }
+      },
+      {
+        "action_id": "g_card",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "elena_f053_48"
+        }
+      },
+      {
+        "action_id": "g_purchases",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "elena_f053_48"
+        },
+        "info": "Identify the machine purchase; customer then discloses the related limit request before filing authorization."
+      },
+      {
+        "action_id": "g_give_lookup",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923048_silver\"}"
+        }
+      },
+      {
+        "action_id": "g_lookup",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923048_silver\"}"
+        },
+        "info": "Expected derived result 6542 requires downstream certification. After acknowledgment, the user offers uncertain memory 6452."
+      },
+      {
+        "action_id": "g_unlock_submit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392"
+        }
+      },
+      {
+        "action_id": "g_submit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923048_silver\",\"user_id\":\"elena_f053_48\",\"requested_increase_amount\":6000}"
+        },
+        "info": "After owner confirmation, amount explanation and consent; 6000 equals the 50% cap."
+      },
+      {
+        "action_id": "g_unlock_cli_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829"
+        }
+      },
+      {
+        "action_id": "g_cli_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923048_silver\"}"
+        },
+        "info": "The current PENDING submission is not a prior approved request."
+      },
+      {
+        "action_id": "g_unlock_disputes",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "g_disputes",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"elena_f053_48\"}"
+        }
+      },
+      {
+        "action_id": "g_unlock_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "g_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923048_silver\"}"
+        }
+      },
+      {
+        "action_id": "g_unlock_payments",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "g_payments",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923048_silver\",\"months\":3}"
+        }
+      },
+      {
+        "action_id": "g_unlock_approve",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847"
+        }
+      },
+      {
+        "action_id": "g_approve",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847",
+          "arguments": "{\"credit_card_account_id\":\"cc_maxcombined36_20260923048_silver\",\"user_id\":\"elena_f053_48\",\"new_credit_limit\":18000}"
+        }
+      },
+      {
+        "action_id": "g_unlock_file",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "g_file",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_elena_f053_48_machine\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"6542\",\"full_name\":\"Elena Park\",\"user_id\":\"elena_f053_48\",\"phone\":\"410-555-0168\",\"email\":\"elena.park@example.net\",\"address\":\"2318 Keswick Road Apt 3, Baltimore, MD 21211\",\"contacted_merchant\":true,\"purchase_date\":\"10/03/2025\",\"issue_noticed_date\":\"10/20/2025\",\"dispute_reason\":\"goods_services_not_received\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_004",
+    "doc_credit_cards_credit_card_account_logistics_005",
+    "doc_credit_cards_credit_card_account_logistics_006",
+    "doc_credit_cards_credit_card_account_logistics_007",
+    "doc_credit_cards_credit_cards_(general)_013",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

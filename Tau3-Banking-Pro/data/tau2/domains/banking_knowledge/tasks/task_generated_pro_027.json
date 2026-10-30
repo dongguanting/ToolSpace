@@ -1,0 +1,403 @@
+{
+  "id": "task_generated_pro_027",
+  "description": {
+    "purpose": "Apply an eligible $7,500 increase to Elena Park's existing Silver Rewards Card before filing her authorized-purchase non-delivery dispute, preserving accurate intake, provisional-credit flags, card activity and balances.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concerned: “I checked my statement today and still have a $1,247.99 Mesa Camera Supply charge for a scanner that never arrived. I'd like to dispute it. I'd also like to raise my Silver Rewards Card limit from $15,000 to $22,500 for equipment purchases. Can you help with both?”\n\nWhen asked for identity, provide only the requested details: Elena Park, 48, software support specialist in Phoenix, Arizona; DOB 04/18/1977; phone 602-555-0146; email elena.park77@example.com; address 1846 E Juniper Lane, Phoenix, AZ 85016.\n\nWhen asked about the services, answer the relevant question: you authorized the photo-scanner purchase on 10/13/2025, received nothing, noticed the problem on 10/27/2025, and emailed the merchant on 10/27, 11/04 and 11/12 without a reply. You want a full refund, not a fraud allegation. Keep your current card active; you do not consent to cancellation or replacement. You need to buy elsewhere and want headroom for planned equipment purchases. You recognize the Southwest Airlines and Adobe charges. You do not have your card handy; if asked for its last four, request help looking them up. Once given the secure lookup, use it and report the returned digits; do not guess.\n\nAfter providing identity information, authorize only these two services once the agent correctly identifies the existing card, purchase and requested total, with accurate intake and your preferences respected. You do not know eligibility rules or processing order. Welcome temporary help if offered, but distinguish it from a completed merchant refund.\n\nIf a proposal or reported result conflicts with these requests, calmly identify the mismatch, withhold permission for that change and ask for another check. Do not agree to abandon either request or substitute another card. If an error has already happened, request correction; if the dispute is filed but the increase remains unfinished, ask for the remaining service while preserving the dispute. Become frustrated only after visible failure; after one unsuccessful clarification or an inability to proceed, ask for a human.\n\nAccept only after confirmation that both requested services are complete as specified, including the full-refund non-delivery filing and continued card activity. Then be relieved, thank the agent and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_elena_park_180": {
+              "user_id": "usr_elena_park_180",
+              "name": "Elena Park",
+              "date_of_birth": "04/18/1977",
+              "phone_number": "602-555-0146",
+              "email": "elena.park77@example.com",
+              "address": "1846 E Juniper Lane, Phoenix, AZ 85016"
+            }
+          },
+          "notes": "Fresh fixture customer, age 48 at the fixed banking date. Initialization is a patch; unrelated default records are not replaced."
+        },
+        "accounts": {
+          "data": {
+            "acct_elena_blue_180": {
+              "account_id": "acct_elena_blue_180",
+              "user_id": "usr_elena_park_180",
+              "class": "checking",
+              "level": "Blue",
+              "status": "ACTIVE",
+              "current_holdings": "$8500.00",
+              "date_opened": "03/06/2023"
+            }
+          },
+          "notes": "The sole customer-owned bank account, with the Blue product label. Account-selection and unchanged-balance control; no service on this account."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_batch96_20260920180_silver": {
+              "account_id": "cc_batch96_20260920180_silver",
+              "user_id": "usr_elena_park_180",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "2767",
+              "credit_limit": "$15000.00",
+              "current_balance": "$4500.00",
+              "past_due_amount": "$0.00",
+              "date_of_account_open": "11/14/2024",
+              "status": "ACTIVE",
+              "account_status": "CURRENT"
+            }
+          },
+          "notes": "The sole fixture-owned credit card. Stored digits match the supplied precomputed account-ID-derived lookup result."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_elena_scanner_180": {
+              "transaction_id": "txn_elena_scanner_180",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Mesa Camera Supply",
+              "transaction_amount": "$1247.99",
+              "transaction_date": "10/13/2025",
+              "category": "Shopping",
+              "status": "COMPLETED"
+            },
+            "txn_elena_southwest_180": {
+              "transaction_id": "txn_elena_southwest_180",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Southwest Airlines",
+              "transaction_amount": "$418.63",
+              "transaction_date": "10/15/2025",
+              "category": "Travel",
+              "status": "COMPLETED"
+            },
+            "txn_elena_adobe_180": {
+              "transaction_id": "txn_elena_adobe_180",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Adobe",
+              "transaction_amount": "$59.99",
+              "transaction_date": "11/02/2025",
+              "category": "Software",
+              "status": "COMPLETED"
+            }
+          },
+          "notes": "Three fixture-owned transactions on the target card. Only Mesa Camera Supply is disputed; Southwest Airlines and Adobe are recognized controls. Non-delivery and contact facts are customer intake, not invented transaction columns."
+        },
+        "payment_history": {
+          "data": {
+            "pay_elena_180_06": {
+              "payment_id": "pay_elena_180_06",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "payment_date": "06/10/2025",
+              "amount": "$390.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_180_07": {
+              "payment_id": "pay_elena_180_07",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "payment_date": "07/10/2025",
+              "amount": "$420.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_180_08": {
+              "payment_id": "pay_elena_180_08",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "payment_date": "08/10/2025",
+              "amount": "$410.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_180_09": {
+              "payment_id": "pay_elena_180_09",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "payment_date": "09/10/2025",
+              "amount": "$455.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_180_10": {
+              "payment_id": "pay_elena_180_10",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "payment_date": "10/10/2025",
+              "amount": "$480.00",
+              "status": "ON_TIME"
+            },
+            "pay_elena_180_11": {
+              "payment_id": "pay_elena_180_11",
+              "user_id": "usr_elena_park_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "payment_date": "11/10/2025",
+              "amount": "$525.00",
+              "status": "ON_TIME"
+            }
+          },
+          "notes": "Six genuine completed monthly payments. Dates and amounts are newly authored; the source's future 11/15/2025 payment is expressly rebased to 11/10/2025. September-November establish the latest three-month requirement."
+        },
+        "credit_limit_increase_requests": {
+          "data": {
+            "cli_elena_prior_180": {
+              "request_id": "cli_elena_prior_180",
+              "credit_card_account_id": "cc_batch96_20260920180_silver",
+              "user_id": "usr_elena_park_180",
+              "status": "APPROVED",
+              "submitted_date": "08/15/2025",
+              "submitted_at": "08/15/2025",
+              "decision_date": "08/18/2025",
+              "requested_increase_amount": 3000,
+              "previous_limit": "$12000.00",
+              "new_limit": "$15000.00",
+              "increase_amount": "$3000.00"
+            }
+          },
+          "notes": "Genuine historical approval. No current request is seeded. Submission-based cooldown is 91 days; decision date is not its origin."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No supplied pre-existing disputes. The fresh fixture user has no default-linked disputes; do not clear unrelated default records. Filing creates a same-user SUBMITTED guard witness."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No supplied replacement orders and none associated with the fresh card. Keep empty for this customer's successful resolution."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "No seeded verification. Current-session identity audit is written once after the fixed-time read and comparison of customer answers."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Starts empty. Tool availability comes from the catalog and session unlocks; telemetry is excluded from the banking-domain reward."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Starts empty. Give the last-four lookup during the session; access telemetry is operational."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "G_ID",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        },
+        "info": "Reference support: locate canonical owner and compare requested identity answers."
+      },
+      {
+        "action_id": "G_TIME",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "G_VERIFY",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "usr_elena_park_180",
+          "address": "1846 E Juniper Lane, Phoenix, AZ 85016",
+          "email": "elena.park77@example.com",
+          "phone_number": "602-555-0146",
+          "date_of_birth": "04/18/1977",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After confirming matching DOB and email, and collecting the remaining accurate contact fields."
+      },
+      {
+        "action_id": "G_CARD",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_elena_park_180"
+        }
+      },
+      {
+        "action_id": "G_TXNS",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_elena_park_180"
+        }
+      },
+      {
+        "action_id": "G_GIVE",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920180_silver\"}"
+        }
+      },
+      {
+        "action_id": "G_DIGITS",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920180_silver\"}"
+        },
+        "info": "Supplied precomputed result is 2767; user reports the result. This read is support, not independently scored."
+      },
+      {
+        "action_id": "G_UNLOCK_SUBMIT",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392"
+        }
+      },
+      {
+        "action_id": "G_SUBMIT",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920180_silver\",\"user_id\":\"usr_elena_park_180\",\"requested_increase_amount\":7500}"
+        },
+        "info": "After customer confirmation: 22500-15000=7500, exactly the inclusive 50% cap. Formal eligibility audit follows submission."
+      },
+      {
+        "action_id": "G_UNLOCK_HISTORY",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829"
+        }
+      },
+      {
+        "action_id": "G_HISTORY",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920180_silver\"}"
+        },
+        "info": "Exclude this session's submission from prior-request cooldown; historical submission was 91 days ago."
+      },
+      {
+        "action_id": "G_UNLOCK_DISPUTES",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "G_DISPUTES",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_elena_park_180\"}"
+        },
+        "info": "Complete canonical-user history establishes both no active disputes for approval and zero prior disputes for provisional eligibility."
+      },
+      {
+        "action_id": "G_UNLOCK_ORDERS",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "G_ORDERS",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920180_silver\"}"
+        }
+      },
+      {
+        "action_id": "G_UNLOCK_PAYMENTS",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "G_PAYMENTS",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920180_silver\",\"months\":6}"
+        },
+        "info": "Audit all six completed monthly records chronologically; latest three are September-November."
+      },
+      {
+        "action_id": "G_UNLOCK_APPROVE",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847"
+        }
+      },
+      {
+        "action_id": "G_APPROVE",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920180_silver\",\"user_id\":\"usr_elena_park_180\",\"new_credit_limit\":22500}"
+        },
+        "info": "All eligibility holds, including 365-day tenure, 91-day cooldown, 30% pre-increase utilization, current standing, completed payments and no disputes or replacements. Approve before creating the blocking dispute."
+      },
+      {
+        "action_id": "G_UNLOCK_FILE",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "G_FILE",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_elena_scanner_180\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"2767\",\"full_name\":\"Elena Park\",\"user_id\":\"usr_elena_park_180\",\"phone\":\"602-555-0146\",\"email\":\"elena.park77@example.com\",\"address\":\"1846 E Juniper Lane, Phoenix, AZ 85016\",\"contacted_merchant\":true,\"purchase_date\":\"10/13/2025\",\"issue_noticed_date\":\"10/27/2025\",\"dispute_reason\":\"goods_services_not_received\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true,\"partial_refund_amount\":null}"
+        },
+        "info": "Authorized non-delivery intake confirmed. Purchase age 32>30 days; account age 365>=60; $25<=$1247.99<=$5000; zero prior disputes; merchant contacted. Tool persists flags only, not a balance credit."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_004",
+    "doc_credit_cards_credit_card_account_logistics_005",
+    "doc_credit_cards_credit_card_account_logistics_006",
+    "doc_credit_cards_credit_card_account_logistics_007",
+    "doc_credit_cards_credit_cards_(general)_013",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

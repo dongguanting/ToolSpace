@@ -1,0 +1,304 @@
+{
+  "id": "task_generated_pro_047",
+  "description": {
+    "purpose": "Resolve Naomi Bennett's single missing-card ATM fraud incident through verified dispute filing without provisional credit, permanent card closure, a fee-free expedited silver replacement, and a persistent human-security handoff request.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Naomi Bennett, a 59-year-old restaurant manager living in Baltimore, Maryland. It is early November 14, 2025. After returning from your restaurant's closing shift, you noticed an ATM withdrawal you did not make and then found your debit card missing from your wallet. Be concise and cooperative, but protect your stated wishes. You do not know the bank's internal security flags, policy thresholds, eligibility calculations, or internal record identifiers.\n\nBegin with only: \"I just found an ATM withdrawal I didn't make, and when I checked my wallet my debit card was missing. Can you help me protect my account and report it?\"\n\nWhen asked relevant identity or address questions, provide the requested details: Naomi Bennett; birth date May 22, 1966; email naomi.bennett86@example.com; phone 410-555-0168; mailing address 2816 Harford Road, Baltimore, MD 21218, US. This address is current. When asked to identify the card, say it ends in 6832. Do not volunteer verification details before they are requested. Answer the bank's relevant identity questions before authorizing account or card changes.\n\nWhen asked about the withdrawal, reporting dates, card possession, or possible PIN exposure, answer the specific question using these facts: the withdrawal is $240 at Rho-Bank ATM #641 in Richmond, Virginia, dated November 13 at 11:18 p.m.; the statement showing it is dated November 13; you first noticed it early November 14. You were in Baltimore, did not make or authorize the withdrawal, did not authorize anyone else to use the card, and have not shared your PIN. You do not know whether somebody observed the PIN. The physical card is missing. You have not contacted the ATM operator or another merchant and have not filed a police report. There is only this one unfamiliar withdrawal to report. Supply the smallest coherent group of facts needed for the question, not a recital of every detail.\n\nIf asked about a written statement or agreement to use this conversation as one, say that you have not provided a separate written statement and do not agree to use this conversation as your written statement. You want the report filed now and want a security specialist to explain the statement step first. Authorize the claim only after the agent identifies the $240 Richmond withdrawal on card 6832 and understands both your denial of authorization and your separate refusal of written-statement consent.\n\nOnly when the agent explains that the missing card will be permanently retired, or confirms that it has been retired, introduce the related replacement request: \"Please send me one replacement for this same account, to my address on file, as quickly as possible without charging me. I'd prefer metallic silver if that's free. I don't want a custom image or an account upgrade. After the immediate card arrangements, I'd like to speak with security about this incident.\" This advances the conversation to replacement and specialist continuation; do not introduce another incident. If statement consent was discussed earlier, your earlier wish to discuss that step with security does not mean you have consented. Authorize permanent closure only after the agent identifies card 6832 and explains that stopping it permanently cannot be reversed; agree because it is missing. Approve the replacement only after the agent confirms your existing account, Baltimore address, delivery choice, design, and that there are no fees. Approve the handoff only for this same unauthorized-withdrawal incident, not an unrelated department or complaint.\n\nKeep these commitments throughout, applying the replacement and handoff preferences when their conversational triggers occur: Insist that a claim for the full unfamiliar $240 withdrawal be filed now; advice or a replacement alone is not enough. The missing card must be permanently unusable; do not authorize unlocking it, clearing protections to restore its use, or a temporary freeze as the finished resolution. Do not consent to treating this conversation as a written statement or request immediate provisional credit without that consent. Want exactly one replacement on your existing account at your existing address, with the fastest free shipping and metallic silver if free; do not agree to fees, an extra card, a custom image, a new account, or an upgrade. After the immediate card arrangements, continue to request human security follow-up about the incident and the written-statement step.\n\nIf the agent offers only monitoring, contacting the ATM operator, or replacing the card without filing, say: \"I didn't make that withdrawal. Please make sure my claim for the whole withdrawal is actually filed, not just noted as something to watch.\" Do not accept advice alone or authorize withdrawal of the claim; if that is all the agent has done, continue asking for the actual filing.\n\nIf the agent proposes or reports a temporary freeze, unlocking, or restoring the missing card, say: \"The card is still missing. I don't want anyone to be able to use it again. Please make sure it has been permanently stopped.\" Withhold authorization for restoring access or accepting a temporary lock as the final resolution. If already done, ask the agent to correct it and permanently stop that card; do not accept completion while it remains usable or only temporarily blocked.\n\nIf the agent says reporting requires written-statement consent, proposes counting the conversation as your statement, or reports credit based on consent you did not give, say: \"I want the report filed, but I haven't agreed to a written statement here. Please keep that distinction and let me discuss the statement with security.\" Do not authorize a filing that claims you provided a written statement or accept an outcome relying on that consent. If the agent already proceeded, ask them to correct the record and any unrequested cash adjustment and arrange security follow-up; do not suggest an internal remedy or accept completion before the distinction is restored.\n\nIf the agent proposes fees, a different or upgraded account, an extra card, a custom image, or slower delivery without checking the quickest free choice, say: \"Please don't charge me or change my account. I want one replacement here, with the quickest free delivery and the silver design only if it's free.\" Do not adopt an incompatible proposal merely because the agent recommends it. Withhold approval until the options, address, and absence of fees are established. If an incompatible order or charge has already been made, request correction to the agreed single no-fee replacement on your existing account before accepting completion.\n\nIf the agent tries to finish without addressing security follow-up, say: \"Thank you for handling the card. I still want to speak with security about how it was used and what I need to provide next.\" Do not withdraw that request or accept completion while it remains unaddressed. After the immediate filing and card arrangements are handled, use your available human-transfer request control once to submit your request for human assistance with this incident.\n\nWithhold acceptance and do not end the conversation until all of the following are confirmed: You are told that the full $240 fraud claim has actually been filed without treating the conversation as your written statement. You are told that card 6832 is permanently stopped and cannot be used again. One replacement for your existing account is confirmed with the agreed free expedited delivery, silver design, and correct Baltimore address. Your human security handoff request has been accepted for continuation of this same incident. No replacement fee, account change, or unrequested cash adjustment is left presented as completed. If anything is missing, ask about that item rather than accepting a partial outcome. Do not claim to know the policy answer before the agent explains it.\n\nOnly after every acceptance condition holds, briefly thank the agent, emit the following marker exactly once, and do not reopen the incident:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_naomi_1163": {
+              "user_id": "usr_naomi_1163",
+              "name": "Naomi Bennett",
+              "date_of_birth": "05/22/1966",
+              "address": "2816 Harford Road, Baltimore, MD 21218, US",
+              "email": "naomi.bennett86@example.com",
+              "phone_number": "410-555-0168"
+            }
+          },
+          "notes": "Customer identity. Age 59 at 2025-11-14 03:40:00 EST. Occupation is narrative only. Matching identity answers are supplied during this session, not preverified."
+        },
+        "accounts": {
+          "data": {
+            "chk_naomi_1163": {
+              "account_id": "chk_naomi_1163",
+              "user_id": "usr_naomi_1163",
+              "class": "checking",
+              "level": "PREMIUM TIER",
+              "status": "OPEN",
+              "date_opened": "04/08/2020",
+              "current_holdings": "1380.75"
+            }
+          },
+          "notes": "Naomi's sole affected account. PREMIUM TIER is the supplied human-facing tier, not an invented named product. There are no account holds, restrictions, scheduled earmarks, or other unavailable funds. The balance already includes the posted withdrawal; it is not reconstructed from a complete lifetime ledger."
+        },
+        "debit_cards": {
+          "data": {
+            "dbc_naomi_1163": {
+              "card_id": "dbc_naomi_1163",
+              "account_id": "chk_naomi_1163",
+              "user_id": "usr_naomi_1163",
+              "cardholder_name": "Naomi Bennett",
+              "last_4_digits": "6832",
+              "status": "ACTIVE",
+              "issue_date": "11/06/2025",
+              "issue_reason": "bank_reissue",
+              "expiration_date": "11/30/2029",
+              "pin_locked": true,
+              "pin_lock_reason": "security_hold",
+              "pin_lock_timestamp": "2025-11-14 03:25:00 EST",
+              "fraud_alert_active": true,
+              "alert_source": "bank_initiated",
+              "velocity_blocked": false
+            }
+          },
+          "notes": "Only initial card for this account, including the relevant replacement-history window. Zero counted replacements: bank_reissue is excluded. No PENDING card and no prior stolen report. ACTIVE lifecycle status is independent of the PIN security hold and fraud alert; closure needs no weakening of either protection."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_naomi_atm_1163": {
+              "transaction_id": "txn_naomi_atm_1163",
+              "account_id": "chk_naomi_1163",
+              "date": "11/13/2025",
+              "description": "ATM WITHDRAWAL - RHO-BANK ATM #641 RICHMOND VA - CARD 6832 - 23:18 EST",
+              "amount": -240,
+              "type": "atm_withdrawal",
+              "status": "posted",
+              "hold_amount": 0
+            }
+          },
+          "notes": "Complete relevant incident history: one posted physical-card withdrawal at a Rho-Bank ATM in the US; no duplicate, reversal, reimbursement, pending or processing transaction, pending refund, or other hold. Card association is visible in the description. The November 13 statement date, November 14 discovery, denial of authorization, missing possession, and statement refusal are customer evidence, not invented transaction fields."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Starts empty. Current-session verification is created by log_verification after matching at least two identity fields."
+        },
+        "debit_card_disputes": {
+          "data": {},
+          "notes": "No pre-existing dispute for Naomi or the affected transaction. Native filing creates the dispute. Evaluate native persistent category, amount, linkage, and no-credit fields; do not fabricate a written-statement field."
+        },
+        "debit_card_orders": {
+          "data": {},
+          "notes": "No pre-existing or pending order for the affected account. Retain only the native order and associated card effects created during replay; no generated ID is guessed."
+        },
+        "human_transfer_requests": {
+          "data": {},
+          "notes": "No pre-existing request. The user's direct request creates the native persistent handoff witness, without an invented routing column."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational table begins empty. Availability comes from the tool catalog. Unlocks are ephemeral."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No credit-card account for Naomi. Included because the selected all-accounts lookup references this real table. Fresh user and account IDs keep unrelated default records outside this scenario's counts."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a01_locate_naomi",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Naomi Bennett"
+        },
+        "info": "Reference-only lookup to bind the caller's name to her ID and matching identity fields; not an evaluated outcome."
+      },
+      {
+        "action_id": "a02_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Reference timestamp is 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "a03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Naomi Bennett",
+          "user_id": "usr_naomi_1163",
+          "address": "2816 Harford Road, Baltimore, MD 21218, US",
+          "email": "naomi.bennett86@example.com",
+          "phone_number": "410-555-0168",
+          "date_of_birth": "05/22/1966",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After Naomi answers matching identity questions, including birth date and mailing address, create fresh session verification."
+      },
+      {
+        "action_id": "a04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "a05_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_naomi_1163\"}"
+        },
+        "info": "Reference-only ID discovery and checking status, tier, tenure, ownership, and balance evidence."
+      },
+      {
+        "action_id": "a06_unlock_cards",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "a07_cards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"chk_naomi_1163\"}"
+        },
+        "info": "Reference-only discovery of card 6832, ownership, closure status, security branch, pending-card absence, and replacement history."
+      },
+      {
+        "action_id": "a08_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "a09_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_naomi_1163\"}"
+        },
+        "info": "Reference-only identification of the disputed debit, amount, physical ATM channel and bank operator; also establishes no pending transactions or refunds obstruct closure."
+      },
+      {
+        "action_id": "a10_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483"
+        }
+      },
+      {
+        "action_id": "a11_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483",
+          "arguments": "{\"user_id\":\"usr_naomi_1163\"}"
+        },
+        "info": "Reference-only evidence of no duplicate filing and capacity below the per-account open-dispute limit."
+      },
+      {
+        "action_id": "a12_unlock_filing",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281"
+        }
+      },
+      {
+        "action_id": "a13_file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_naomi_atm_1163\",\"account_id\":\"chk_naomi_1163\",\"card_id\":\"dbc_naomi_1163\",\"user_id\":\"usr_naomi_1163\",\"dispute_category\":\"card_present_fraud\",\"transaction_date\":\"11/13/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":240,\"transaction_type\":\"atm_withdrawal\",\"card_in_possession\":false,\"pin_compromised\":\"unknown\",\"contacted_merchant\":false,\"police_report_filed\":false,\"written_statement_provided\":false,\"provisional_credit_eligible\":false,\"customer_max_liability_amount\":50,\"card_action\":\"close_and_reissue\"}"
+        },
+        "info": "After transaction-specific questions and explicit refusal of written-statement consent, file the full claim. Bind the native dispute by its transaction linkage; no later call requires its generated ID."
+      },
+      {
+        "action_id": "a14_unlock_closure",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721"
+        }
+      },
+      {
+        "action_id": "a15_close_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"dbc_naomi_1163\",\"reason\":\"fraud_suspected\"}"
+        },
+        "info": "After identifying the card and obtaining consent to irreversible closure, retire it directly from ACTIVE without restoring access or clearing protections."
+      },
+      {
+        "action_id": "a16_unlock_order",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739"
+        }
+      },
+      {
+        "action_id": "a17_order_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739",
+          "arguments": "{\"account_id\":\"chk_naomi_1163\",\"user_id\":\"usr_naomi_1163\",\"delivery_option\":\"EXPEDITED\",\"delivery_fee\":0,\"card_design\":\"PREMIUM\",\"design_fee\":0,\"shipping_address\":\"2816 Harford Road, Baltimore, MD 21218, US\",\"excess_replacement_fee\":0}"
+        },
+        "info": "After closure and Naomi's approval of the account, address, free expedited delivery and complimentary silver design, create one native replacement order. Retain native associated card effects and generated identifiers without guessing them."
+      },
+      {
+        "action_id": "a18_user_handoff",
+        "requestor": "user",
+        "name": "request_human_agent_transfer",
+        "arguments": {},
+        "info": "Naomi submits her same-incident human-security continuation request after the immediate fraud and card arrangements."
+      },
+      {
+        "action_id": "a19_security_transfer_support",
+        "requestor": "assistant",
+        "name": "transfer_to_human_agents",
+        "arguments": {
+          "summary": "Naomi Bennett reported the unauthorized $240 November 13 Richmond Rho-Bank ATM withdrawal on missing debit card ending 6832. Identity was verified. The fraud dispute was filed without written-statement consent or provisional credit; the old card was permanently closed without clearing its bank-origin fraud alert or PIN security hold. One fee-free expedited metallic-silver replacement was ordered for her existing checking account and confirmed Baltimore address. Naomi submitted a human-transfer request and wants security to review the same incident and explain the written-statement step before she agrees.",
+          "reason": "fraud_or_security_concern"
+        },
+        "info": "Nonmutating handoff support, not an independent DB criterion. The persistent witness is a18_user_handoff."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "request_human_agent_transfer"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_023",
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_026",
+    "doc_bank_accounts_bank_accounts_(general)_029",
+    "doc_bank_accounts_bank_accounts_(general)_031",
+    "doc_bank_accounts_bank_accounts_(general)_032",
+    "doc_bank_accounts_bank_accounts_(general)_039",
+    "doc_bank_accounts_bank_accounts_(general)_041",
+    "doc_bank_accounts_bank_accounts_(general)_042"
+  ]
+}

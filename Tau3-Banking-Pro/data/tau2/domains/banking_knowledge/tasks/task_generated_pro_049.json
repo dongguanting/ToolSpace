@@ -1,0 +1,156 @@
+{
+  "id": "task_generated_pro_049",
+  "description": {
+    "purpose": "Select and open Theo's single qualifying business checking account with the lowest scheduled maintenance cost over twelve monthly billing cycles, after current-session identity verification and without funding or other banking changes.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Theo Alvarez, a 32-year-old independent event planner living in Madison, Wisconsin. A new client's vendor-onboarding form asks for business banking details. You want to separate future business receipts from personal banking. Be concise, cooperative, and practical, but protect your requirements rather than agreeing automatically with a recommendation.\n\nBegin by saying: \"A new client sent me a vendor form asking for my business bank details. Can you recommend one business checking account and help me open it?\" Do not initially list your identity details, business formation details, account requirements, or a product choice.\n\nWhen asked a relevant question about banking needs, balances, costs, or preferences, explain the following together: you plan a $3,800 daily operating balance after funding from outside the bank later; you need at least 1.0% APY, no overdraft fee, and at least $12 a month in rebates for eligible Rho fees on domestic U.S. out-of-network ATM cash withdrawals. You are not asking for reimbursement of separate ATM-operator surcharges or international withdrawal charges. Paperless statements are fine. You want the lowest scheduled monthly maintenance charges over the first twelve monthly billing cycles, comparing at that planned balance without special funding activity or additional products. Only one account should be opened and no money should move today. Add: \"I thought keeping a positive balance might mean there isn't a monthly maintenance fee, but I may have that wrong.\" If asked why you will not allocate more, explain that the remaining personal money is reserved for bills.\n\nWhen asked for identification or verification, provide only the requested accurate details: Theo Alvarez; date of birth June 3, 1993; 426 Juniper Lane, Madison, WI 53704; theo.alvarez@example.com; 608-555-0146. Your customer ID, available in your banking profile, is theo_alvarez_1121_070; provide it when requested. When asked about your existing banking relationship, explain that your only existing account is personal checking, open, with $7,840, and you have no business checking or credit card account and no closed account. When asked relevant business eligibility or ownership questions, explain that Alvarez Occasion Studio LLC was formed on February 18, 2023, and you are its sole owner and only intended authorized signer. You have the formation documents and ownership details available and can truthfully report their contents. Answer combined questions fully, but do not volunteer unrelated facts.\n\nPermit recording your account-opening identity verification only after you have been asked to verify your identity and have supplied and confirmed the requested accurate details. This permission is not permission to change your profile.\n\nYour commitments do not change during the conversation. Obtain one suitable recommendation and actually open exactly one business checking account; advice alone or several new products will not satisfy you. Keep the requirements of at least 1.0% APY, a $0 overdraft fee, and at least $12 monthly coverage for eligible Rho domestic U.S. out-of-network ATM fees; separate operator surcharges and international withdrawal charges are outside your requested coverage. Plan around $3,800 daily and do not commit a larger balance or split the allocation. Among accounts meeting your requirements, minimize scheduled maintenance charges over the first twelve monthly billing cycles, not the highest rate, projected interest, referral rewards, or a later-year comparison. Move no money today; leave your existing account, its money, and your contact details unchanged, and add no savings account, card, subscription, or other product.\n\nIf the agent offers a menu, proposes several openings, or tries to finish with advice alone, say: \"I need one choice and one account opened for this client form. Please finish that rather than leave me with a list.\" Do not authorize multiple openings or accept advice as completion.\n\nIf a product falls short of a required feature, or the fit has not been established, say: \"Those features still matter to me. Can you check that this account actually covers the requirements I gave you before we open it?\" Withhold opening authorization for a known feature shortfall or unresolved feature fit, even if the product is cheaper.\n\nIf the agent suggests more than $3,800, splitting money, or adding a product to get a waiver or better return, say: \"The rest of my money is for personal bills. Please work with the amount I said and one account; I don't want to split it or add anything.\" Do not authorize a larger or split allocation, an extra product, or any money movement.\n\nIf the agent replaces your cost objective with a higher rate, possible interest earnings, a referral benefit, or another time horizon, say: \"A higher rate sounds nice, but I asked for the lowest scheduled maintenance cost over those first twelve billing cycles, while keeping my required features. Please compare it on that basis.\" Do not authorize a recommendation justified by replacing your requested comparison with another metric.\n\nIf the agent proposes or reports a transfer, a charge posted during setup, an existing-account or contact change, or another product, say: \"I only asked to open the business account. Please leave my existing account and money alone. If anything else was changed, please help put that right before we finish.\" Authorize only recording your confirmed identity verification and opening the agreed single business account. If an unrequested change has already occurred, do not accept the result or stop; ask for help restoring the original scope and continue until the reported change has been put right.\n\nIf the agent explains with a clear basis that a positive balance does not itself remove a maintenance fee, revise your belief and say: \"Thanks, I had those mixed up. Please use the actual maintenance charges when choosing the account.\" If the explanation is unsupported or unclear, ask for clarification. Do not claim to know product policy, promotion ordering, or a predetermined maintenance total; let the agent establish those facts.\n\nBefore authorizing opening, require the agent to name one product, establish that it meets every feature requirement and your $3,800 balance boundary, explain its scheduled maintenance charges over the first twelve billing cycles, and establish that you can open it. If any point is missing, ask about that point rather than agreeing. Only after that explanation satisfies your commitments, acknowledge that the fee explanation makes sense and explicitly ask to open that one account with no transfer, no extra product, and no change to your existing account. Do not repeat a proposed product, amount, allocation, or added service as consent if it conflicts with your requirements.\n\nIf the agent says the recommendation is complete but has not opened the account, say: \"That helps with the choice, but I still need the account opened so I can complete the client form.\"\n\nDo not accept or stop until the agent confirms the agreed business checking account is actually open and gives its account identifier or confirmation details. Do not accept or stop until you understand the maintenance period and charges and have no unresolved question about a required feature. Do not accept or stop until only one account has been opened, no money has moved, and no existing product or contact information has changed; any reported unrequested change must first be put right. Once all these conditions hold, thank the agent briefly and end with exactly one instance of the following marker. Do not introduce another issue or use the marker earlier.\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "theo_alvarez_1121_070": {
+              "user_id": "theo_alvarez_1121_070",
+              "name": "Theo Alvarez",
+              "date_of_birth": "06/03/1993",
+              "address": "426 Juniper Lane, Madison, WI 53704",
+              "email": "theo.alvarez@example.com",
+              "phone_number": "608-555-0146",
+              "parent_user_id": null,
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Authoritative fresh caller identity. Age is 32 on the fixed simulation date 11/14/2025. Occupation, business formation facts, and preferences remain user scenario context, not invented database fields."
+        },
+        "accounts": {
+          "data": {
+            "pc_theo_1121_070": {
+              "account_id": "pc_theo_1121_070",
+              "user_id": "theo_alvarez_1121_070",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "7840.00",
+              "date_opened": "04/19/2022",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Theo's only initial account. It establishes the personal-checking and $500 eligibility prerequisites and must remain unchanged. No business account is pre-created; no funding is authorized."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Current-session verification must be performed and recorded using the fixed timestamp, not replaced by historical verification."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No credit-card records are added for Theo. This table supports the selected account-inventory operation; unrelated default customer records are not outcome targets."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Ordinary empty discoverable-call state. Tool availability comes from the catalog. Read-call telemetry and session availability bookkeeping are excluded from banking outcome evaluation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "g01_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_id",
+        "arguments": {
+          "user_id": "theo_alvarez_1121_070"
+        },
+        "info": "Retrieve the bank identity record after Theo supplies his customer ID so his verification answers can be compared."
+      },
+      {
+        "action_id": "g02_session_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns 2025-11-14 03:40:00 EST. Reference timing support for the verification record and applicable promotion, not an independently rewarded read."
+      },
+      {
+        "action_id": "g03_record_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "theo_alvarez_1121_070",
+          "address": "426 Juniper Lane, Madison, WI 53704",
+          "email": "theo.alvarez@example.com",
+          "phone_number": "608-555-0146",
+          "date_of_birth": "06/03/1993",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Theo has supplied and confirmed all four identity fields in response to verification questions; each matches g01. He permits recording this opening verification, not editing his profile. This persistent insert precedes protected opening."
+      },
+      {
+        "action_id": "g04_unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Session mechanics for the inventory operation documented in general_009, not a rewarded banking mutation."
+      },
+      {
+        "action_id": "g05_account_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"theo_alvarez_1121_070\"}"
+        },
+        "info": "Reference eligibility support: one OPEN personal checking account holding $7,840; no business checking, closed accounts, or credit cards. No transaction-history read is needed."
+      },
+      {
+        "action_id": "g06_unlock_opening",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        },
+        "info": "Session mechanics for the documented assisted account-opening operation."
+      },
+      {
+        "action_id": "g07_open_business_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"theo_alvarez_1121_070\",\"account_type\":\"business_checking\",\"account_class\":\"Sky Blue\"}"
+        },
+        "info": "After Theo truthfully supplies formation and sole-owner/signer information, the agent establishes eligibility and feature fit and explains six free cycles followed by six $25 cycles ($150), versus Hunter Green's $300 at $3,800. Theo explicitly consents to this single opening without funding or other changes. Creates the OPEN, zero-holdings account dated 11/14/2025. Its returned account_id is the first 16 lowercase hexadecimal characters of SHA-256 over the UTF-8 seed account:theo_alvarez_1121_070:business_checking:Sky Blue."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_003",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_013",
+    "doc_bank_accounts_bank_accounts_(general)_014",
+    "doc_business_checking_accounts_beige_001",
+    "doc_business_checking_accounts_cobalt_blue_001",
+    "doc_business_checking_accounts_hunter_green_001",
+    "doc_business_checking_accounts_hunter_green_010",
+    "doc_business_checking_accounts_lime_green_001",
+    "doc_business_checking_accounts_navy_blue_001",
+    "doc_business_checking_accounts_sky_blue_001",
+    "doc_business_checking_accounts_sky_blue_007",
+    "doc_business_checking_accounts_sky_blue_010",
+    "doc_business_checking_accounts_true_blue_001",
+    "doc_business_checking_accounts_world_blue_001"
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "id": "task_generated_pro_019",
+  "description": {
+    "purpose": "Correct historical Gold savings interest before permanently closing Amina Duarte's sole EcoCard, preserving her early decision against retention and keeping savings active.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Amina Duarte, a 39-year-old small-business bookkeeper living in Madison, Wisconsin. You are cooperative and concise, but firm about simplifying your finances. This call takes place on November 14, 2025, after you reviewed your October statement this morning.\n\nBegin by saying: The interest on my October savings statement looks short. I want that sorted out before I close my Rho-Bank credit card. I've decided to simplify: I don't want any Rho-Bank credit card left open when we're done, but I do want to keep my savings account.\n\nProvide personal details only in response to relevant identification or verification questions: your full name is Amina Duarte, birth date April 23, 1986, address 418 Willow Bend Lane, Madison, Wisconsin 53704, email amina.duarte@example.com, and phone number 608-555-0146. Cooperate with verification before authorizing account changes. Answer the details requested, without adding unrelated statement information.\n\nIf asked about the statement, affected products, expected benefit, or reason for closing, give the relevant details: your existing Gold savings account received $56.97 in interest on October 31; you held $12,500 throughout October, without withdrawals or other cash flows; its current balance is $12,556.97. Your only Rho-Bank credit card is an EcoCard ending 6824. You expected a card-linked savings benefit but do not know its exact rate or the correct adjustment. Keeping track of these perks is more complication than you want. Reveal only the smallest relevant group of facts in response to the question. Do not volunteer exact policy rates, calculations, internal identifiers, or an adjustment amount you have not learned from the agent.\n\nKeep your decision that no Rho-Bank credit card may remain open at completion. A bonus, fee concession, added credit, downgrade, replacement, or new card cannot substitute for closure. Settle the actual October earned-interest shortfall before closing the card; a card-retention payment cannot replace that correction. Keep the existing Gold savings account open and have its earned-interest correction placed there.\n\nAuthorize an interest correction only after the agent identifies the October Gold savings statement and explains that the proposed credit repairs unpaid interest on that same account, rather than paying you to retain the card. You may accept a grounded explanation and calculation; you do not already know the bank's answer.\n\nOnly after the agent confirms that the savings correction has actually posted, briefly thank them for fixing the statement and ask to finish the credit-card closure you already requested. This makes closure ready to proceed, not the call complete. If the agent explains that closure removes a future savings benefit, acknowledge that consequence and reaffirm that having fewer credit accounts matters more to you. Authorize closure only after the savings correction is confirmed, the agent identifies the EcoCard ending 6824, and the proposed result is permanent closure without a substitute card or retention arrangement.\n\nIf the agent recommends keeping, downgrading, or replacing the card, say: I understand that keeping it has benefits, but I am choosing fewer credit accounts. Please don't use an offer or another card instead of closing this one. Do not authorize a retention credit, waiver, downgrade, replacement, or new card as an agreement to leave a credit-card account open.\n\nIf the agent proposes keeping the EcoCard after explaining its savings benefit or offers an incentive instead of closure, say: I understand why you think keeping it would help, but I already decided that I don't want a credit card left open. Please reconsider the offer and finish the closure instead. Never approve a retention offer or other action whose proposed outcome leaves the EcoCard open. A financially attractive explanation does not change your authorization.\n\nIf an unwanted offer has already been applied, say: I didn't agree to keep the card, and it sounds like it is still open. Please sort out that unwanted offer and continue with the closure I requested. Do not accept the resolution or stop until the unwanted arrangement is resolved and the requested closure is completed. Ground your objection in your original request and preference for simpler finances. Do not claim knowledge of internal procedures, expected backend balances, or a reversal sequence.\n\nIf closure is proposed before the historical correction, or goodwill or a card credit is substituted for savings interest, say: Please settle what the savings account earned for October first. I don't want a card offer to replace checking that statement. Do not authorize closure while the agreed historical correction remains unresolved, and do not accept a retention payment as settlement of savings interest.\n\nIf the agent proposes closing or replacing savings or sending the correction elsewhere, say: I want to keep this savings account. Please correct its interest there and close only the credit card. Do not authorize savings closure, product substitution, or redirection of the interest correction.\n\nIf the agent treats the savings correction as the end of the call, ask whether the credit card has been closed and remind them that settling interest was only the prerequisite. Ask about any missing outcome rather than accepting partial completion. Do not introduce another issue or request a human transfer.\n\nAccept the completed resolution and stop only after the agent confirms that the October interest correction has posted to your existing savings account and states the resulting balance. Also require confirmation that the EcoCard is permanently closed and no Rho-Bank credit card remains open. Your existing savings account must remain open, with no unwanted retention arrangement or substitute product left in place. Until all these conditions hold, withhold acceptance and the stop marker. After all conditions are confirmed, acknowledge the complete result briefly and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_amina_duarte_7b42d9": {
+              "user_id": "usr_amina_duarte_7b42d9",
+              "name": "Amina Duarte",
+              "date_of_birth": "04/23/1986",
+              "address": "418 Willow Bend Lane, Madison, Wisconsin 53704",
+              "email": "amina.duarte@example.com",
+              "phone_number": "608-555-0146",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh sole owner; age 39 at the fixed date 11/14/2025. No parent-user relationship. Occupation is communicated only through user instructions. No default records join to this fresh user ID."
+        },
+        "accounts": {
+          "data": {
+            "sav_amina_gold_7b42d9": {
+              "account_id": "sav_amina_gold_7b42d9",
+              "user_id": "usr_amina_duarte_7b42d9",
+              "class": "savings",
+              "level": "Gold Account",
+              "current_holdings": "12556.97",
+              "date_opened": "09/30/2025",
+              "status": "ACTIVE"
+            }
+          },
+          "notes": "Amina's only deposit account. Gold Account continuously since opening. No checking pairing, other bonus product, holds, fees, or intervening cash flows. Opening principal remained $12,500 until the October interest credit; no later cash flows occurred."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_amina_eco_7b42d9": {
+              "account_id": "cc_amina_eco_7b42d9",
+              "user_id": "usr_amina_duarte_7b42d9",
+              "card_type": "EcoCard",
+              "card_last_4_digits": "6824",
+              "date_of_account_open": "09/02/2023",
+              "status": "ACTIVE",
+              "account_status": "OPEN",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0",
+              "credit_limit": "6000.00"
+            }
+          },
+          "notes": "Amina's sole credit card. Continuously active under this same profile from 09/02/2023 through October and the start of this call; no suspension or ownership change. Native open/active representations are initialized consistently. Reference closure writes only its native field; do not synchronize an additional status field."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_amina_funding_7b42d9": {
+              "transaction_id": "txn_amina_funding_7b42d9",
+              "account_id": "sav_amina_gold_7b42d9",
+              "date": "09/30/2025",
+              "amount": 12500,
+              "available_amount": 12500,
+              "hold_amount": 0,
+              "type": "ach_transfer_in",
+              "status": "posted",
+              "description": "Opening funding deposit for Gold savings; ACH funds fully available."
+            },
+            "txn_amina_oct_interest_7b42d9": {
+              "transaction_id": "txn_amina_oct_interest_7b42d9",
+              "account_id": "sav_amina_gold_7b42d9",
+              "date": "10/31/2025",
+              "amount": 56.97,
+              "available_amount": 56.97,
+              "hold_amount": 0,
+              "type": "interest_credit",
+              "status": "posted",
+              "description": "October savings interest: October 1 through October 31, 2025; 31 credited days on a 365-day year; $12,500 opening principal; effective annual yield actually applied 5.50%; no intervening cash flows."
+            }
+          },
+          "notes": "Complete relevant history for the fresh account. The original posting contains only actual statement details, not the expected bonus or correction. The native correction record is created during replay."
+        },
+        "credit_card_transaction_history": {
+          "data": {},
+          "notes": "No transactions for Amina: no pending purchases, annual fee, statement credit, or balance-affecting activity."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "No preseeded verification. Current-session verification is created after identity matching, using the exact fixed timestamp."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No active, pending, or historical dispute for Amina or her EcoCard. Empty fresh-user result supports closure eligibility."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No replacement orders for the EcoCard, eliminating delivered-versus-activated ambiguity."
+        },
+        "credit_card_closure_reasons": {
+          "data": {},
+          "notes": "No previous closure or retention attempt for this card, including the past year. The simplifying_finances record is tool-created during the interaction."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty native infrastructure. Tool availability comes from the supplied catalog, not seeded rows. Read-call telemetry is excluded from the banking-state reward."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "g01_identity",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        },
+        "info": "Read-only identity resolution; compare supplied identity details with the returned customer. Not independently rewarded."
+      },
+      {
+        "action_id": "g02_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Read-only timestamp support."
+      },
+      {
+        "action_id": "g03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "usr_amina_duarte_7b42d9",
+          "address": "418 Willow Bend Lane, Madison, Wisconsin 53704",
+          "email": "amina.duarte@example.com",
+          "phone_number": "608-555-0146",
+          "date_of_birth": "04/23/1986",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "g04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "g05_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_7b42d9\"}"
+        },
+        "info": "Discover product IDs, ownership, balances, tenure and sole applicable card. Read telemetry is not evaluated."
+      },
+      {
+        "action_id": "g06_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "g07_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"sav_amina_gold_7b42d9\"}"
+        },
+        "info": "Necessary period, principal and actual-interest evidence for the correction calculation; not an independently evaluated read."
+      },
+      {
+        "action_id": "g08_unlock_disputes",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "g09_disputes",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_7b42d9\"}"
+        },
+        "info": "Read-only closure eligibility support."
+      },
+      {
+        "action_id": "g10_unlock_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "g11_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_amina_eco_7b42d9\"}"
+        },
+        "info": "Read-only support establishes no replacement impediment."
+      },
+      {
+        "action_id": "g12_unlock_closure_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293"
+        }
+      },
+      {
+        "action_id": "g13_closure_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"cc_amina_eco_7b42d9\"}"
+        },
+        "info": "Read-only evidence that the retention branch is available; no earlier reason record exists."
+      },
+      {
+        "action_id": "g14_unlock_correction",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        }
+      },
+      {
+        "action_id": "g15_correction",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"sav_amina_gold_7b42d9\",\"amount\":6.05,\"credit_type\":\"interest_correction\"}"
+        },
+        "info": "After explaining the October unpaid-interest calculation and obtaining customer authorization, credit only the shortfall."
+      },
+      {
+        "action_id": "g16_unlock_report",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        }
+      },
+      {
+        "action_id": "g17_report",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"sav_amina_gold_7b42d9\",\"user_id\":\"usr_amina_duarte_7b42d9\",\"expected_apy\":6.1,\"actual_apy\":5.5,\"amount_difference\":6.05}"
+        },
+        "info": "Required post-credit workflow support. No report storage is exposed and no independent report-call reward is asserted."
+      },
+      {
+        "action_id": "g18_unlock_reason",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "g19_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"cc_amina_eco_7b42d9\",\"user_id\":\"usr_amina_duarte_7b42d9\",\"closure_reason\":\"simplifying_finances\"}"
+        },
+        "info": "Customer's supplied reason is fewer accounts and less benefit tracking."
+      },
+      {
+        "action_id": "g20_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834"
+        }
+      },
+      {
+        "action_id": "g21_close",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834",
+          "arguments": "{\"credit_card_account_id\":\"cc_amina_eco_7b42d9\",\"user_id\":\"usr_amina_duarte_7b42d9\"}"
+        },
+        "info": "After posted-correction confirmation, renewed closure authorization and declined retention, permanently close the sole card. Preserve only native tool side effects."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_017",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_gold_account_014"
+  ]
+}

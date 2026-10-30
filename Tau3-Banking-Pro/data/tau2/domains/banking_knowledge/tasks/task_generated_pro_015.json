@@ -1,0 +1,213 @@
+{
+  "id": "task_generated_pro_015",
+  "description": {
+    "purpose": "Implement Theo Alvarez's constrained bonus-funded savings reorganization: open Gold savings and Green checking, retain his Silver Rewards Card, and retire his established Light Blue checking without moving money today.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Theo Alvarez, a 59-year-old software support specialist living in Richmond, Virginia. This conversation takes place on November 14, 2025. Be concise, cooperative, and interested in a practical recommendation. You know your finances and preferences but do not know the product rates, compatibility rules, eligibility conclusions, required setup sequence, or funding deadline until the agent explains them.\n\nBegin with exactly this request: \"My employer just sent my bonus notice, and I'd like help putting the money into savings and tidying up my checking setup. Can you work out the best arrangement for me?\" Do not put identity details, the full comparison shortlist, or a guessed solution in the opening.\n\nWhen asked a relevant identity question, provide the requested information: Theo Alvarez; date of birth May 6, 1966; address 2418 Linden Walk, Richmond, Virginia 23220; email theo.alvarez@example.net; phone 804-555-0147. Cooperate with verification using your own requested details, and authorize changes only to your own identified accounts. Do not volunteer unrelated product preferences in response to an identity-only question.\n\nWhen asked about the funds, explain that your employer has notified you of a net $18,400 bonus payable November 20, 2025. It has not arrived. You intend to arrange an external deposit into the new savings account after getting its details. You decline any opening transfer today. When asked about allocation or costs, explain that the entire bonus is for one savings account; ordinary checking costs can come from separate future salary cash flow. You will not add savings capital to meet a higher ongoing requirement.\n\nWhen asked about choices or preferences, explain that your savings shortlist is Gold Account or Gold Plus Account, and your checking shortlist is Green Account, Green Fee-Free Account, or Gold Years Account. You want the agent to compare the complete arrangement, including the card you already hold. Seek the highest nominal savings APY within your shortlist and products appropriate for your age; do not replace this goal with minimizing fees. You are 59 and do not want a senior-oriented product intended for an older age group. Exact rates and eligibility are for the agent to determine.\n\nWhen asked about existing products, explain that your unused Light Blue checking account, ending 7316, has a zero balance and has been open since November 14, 2024. You have no pending activity on it. You also have a Silver Rewards Card ending 6204, with no current or past-due balance, and no other bank accounts or cards. You are not subscribed to a premium banking plan. You want to keep that card for travel rather than get another one. When asked broadly about your plan, provide this coherent group of planning facts together rather than making the agent guess each preference separately.\n\nPreserve these commitments throughout the conversation, revealing their details in response to relevant planning questions or incompatible proposals:\n- Keep all $18,400 earmarked for one savings account; do not split it, reserve part for checking or fees, require more savings capital, or fund either new account before the bonus arrives.\n- Require early-direct-deposit capability on the replacement checking account, while accepting that the employer's submission timing affects whether a payment arrives early.\n- Retain your existing Silver Rewards Card and its included conditional travel insurance; do not add or replace a card, add a subscription or investments, or open any deposit accounts beyond one replacement checking account and one savings account.\n- Obtain an implemented replacement arrangement and retirement of the unused Light Blue checking account without jeopardizing setup; advice alone or leaving the old account open is not completion.\n\nIf the agent asks you to choose without recommending one arrangement, say: \"I was hoping you could work out which one gives the best savings APY while meeting those requirements. I don't want to make the comparison myself.\"\n\nIf a recommendation changes your shortlist, age fit, or comparison metric, say: \"Please stay with the choices I gave you and something intended for someone my age. I'm asking for the best savings APY, not simply the lowest fees. Could you check the complete arrangement again?\" Do not authorize openings that change those boundaries or adopt an incompatible product merely because the agent proposes it.\n\nIf the agent proposes splitting the bonus, diverting it to checking or fees, adding money to meet an ongoing minimum, a savings product whose ongoing requirement exceeds your bonus, or moving money today, say: \"The whole bonus is for one savings account, and I won't have it until the payment date. Please find an arrangement that works with that amount without moving part elsewhere or assuming more money.\" Withhold authorization for every such transfer, split, extra funding requirement, or incompatible savings product.\n\nIf the proposed checking lacks confirmed early-pay capability or ordinary payday access is offered instead, say: \"Getting access before payday when payroll allows it was one of my requirements. Can you verify that this account actually offers that?\" Do not authorize checking without that capability, even for attractive fees.\n\nIf another card, subscription, investment, extra deposit account, or replacement of your existing card is proposed, say: \"I want to keep the card I already use for travel, and I don't want more products or a subscription. Please work out the best setup within that limit.\" Do not authorize any such addition or any closure or replacement of your card.\n\nIf the agent proposes prematurely closing the old checking, offers advice alone, leaves an opening or closure unfinished, or has already made an incompatible change, say: \"Please make sure the new setup is established and then finish closing the unused checking account. If something has already changed, please explain what is still missing and help get the arrangement I requested completed.\" Do not authorize a closure that strands setup or unrelated remedial products. If any incompatible action has already occurred, ask the agent to correct it and restore your requested arrangement; continue withholding acceptance until your original commitments and all completion conditions are satisfied.\n\nIf the agent explains that keeping the established checking temporarily is necessary, say: \"That's fine—please keep it until the new setup is safely in place, then finish closing it.\" You do not know that requirement in advance.\n\nBefore authorizing openings, require one recommendation within your shortlist, an explanation of its savings APY and feature fit, and confirmation that it requires neither more than your planned bonus nor any excluded product. Require an explanation of ordinary product costs and the deferred-funding deadline before authorizing setup; accept applicable ordinary costs without asking for a waiver, but authorize no transfer today and no deduction from the earmarked bonus. Do not treat a zero opening balance as a promise of waived maintenance fees. Authorize retirement of the identified Light Blue account only as part of completing the established replacement arrangement, with your existing card unchanged.\n\nWhen the agent discusses insurance, accept that future covered fares must be charged in full to your existing card and that coverage has a per-trip maximum, terms, exclusions, and documentation requirements. You intend to pay the full fare with that card when seeking its included coverage. There is no particular trip or insurance claim to handle now. Do not demand guaranteed coverage or guaranteed early payroll posting.\n\nOnly after the agent presents a supported recommendation satisfying all the authorization conditions, ask them to go ahead with that arrangement and finish retiring the old checking once the replacement is established. Confirm that you will arrange external funding when the bonus is paid and accept the explained funding deadline and consequence of remaining unfunded. Treat the explained recommendation and terms as newly learned information, not facts you knew at the opening.\n\nDo not accept completion until the agent confirms that the selected savings and replacement checking accounts have actually been opened for you. Do not accept completion until the old Light Blue account is confirmed closed with no remaining balance and your existing Silver Rewards Card unchanged. Do not accept completion until you have the new savings details and a clear external-funding deadline, understand both new accounts are unfunded today, and know no bonus funds were split or transferred during the call. Do not accept completion while the explanation leaves an unresolved contradiction about savings APY, early pay, age fit, or retaining only your existing card. Ask directly for any missing opening, closure, detail, or clarification instead of accepting a partial result.\n\nAfter all these completion conditions hold and no additional products have been introduced, briefly thank the agent and end with exactly this marker, once:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_1193": {
+              "user_id": "usr_theo_alvarez_1193",
+              "name": "Theo Alvarez",
+              "date_of_birth": "05/06/1966",
+              "address": "2418 Linden Walk, Richmond, Virginia 23220",
+              "email": "theo.alvarez@example.net",
+              "phone_number": "804-555-0147",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh caller profile. Age is 59 on the fixed date 11/14/2025. Occupation is persona context only. This customer has only the deposit account and card explicitly supplied below."
+        },
+        "accounts": {
+          "data": {
+            "acct_ta_lb_7316": {
+              "account_id": "acct_ta_lb_7316",
+              "user_id": "usr_theo_alvarez_1193",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "0.00",
+              "date_opened": "11/14/2024",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Theo's only initial deposit account. It supplies 365 days of established checking tenure and later supports zero-balance, fee-free entry-tier closure. The two tool-derived new-account keys are initially absent. No savings accounts, negative balances, or collections exist for this caller."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_ta_silver_6204": {
+              "account_id": "cc_ta_silver_6204",
+              "user_id": "usr_theo_alvarez_1193",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "6204",
+              "status": "OPEN",
+              "account_status": "OPEN",
+              "date_of_account_open": "02/21/2022",
+              "credit_limit": "18000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0"
+            }
+          },
+          "notes": "Existing unchanged card supplies the eligible Gold savings card bonus and conditional travel-insurance feature. No application, purchase, claim, or card servicing is needed."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Current-session identity verification must create Theo's record; a pre-existing audit record cannot substitute."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No pending transactions or other activity exists for acct_ta_lb_7316. The forthcoming bonus is not a posted balance, pending transaction, hold, or scheduled deposit. No transaction is generated on the successful path."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty operational call bookkeeping. Tool availability comes from the catalog. Read-call telemetry and unlock mechanics are excluded from independently evaluated customer-state outcomes."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a01_identify_theo",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        },
+        "info": "Reference-only identity lookup after the caller supplies his name. Compare the caller's requested date of birth and email against this returned customer record; both match. This read is not a reward requirement."
+      },
+      {
+        "action_id": "a02_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns the fixed verification timestamp 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "a03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_1193",
+          "address": "2418 Linden Walk, Richmond, Virginia 23220",
+          "email": "theo.alvarez@example.net",
+          "phone_number": "804-555-0147",
+          "date_of_birth": "05/06/1966",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "The caller has supplied and confirmed matching date of birth and email, satisfying the two-of-four verification requirement. Remaining logged identity fields come from his matching authoritative profile."
+      },
+      {
+        "action_id": "a04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "a05_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_1193\"}"
+        },
+        "info": "Reference-only support for discovering the old account ID, savings-opening eligibility, card ownership, and the product comparison. Returns only the established Light Blue checking and existing Silver Rewards Card for Theo."
+      },
+      {
+        "action_id": "a06_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "a07_pending_check",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_ta_lb_7316\"}"
+        },
+        "info": "Reference-only evidence for the closure precondition of no pending transactions. Returns no rows. It is not a read to reconfirm a bonus deposit."
+      },
+      {
+        "action_id": "a08_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "a09_open_gold",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_1193\",\"account_type\":\"savings\",\"account_class\":\"Gold Account\"}"
+        },
+        "info": "After explaining the constrained Gold/Green/existing-Silver recommendation, 6.45% nominal APY on future qualifying balances, ordinary costs, and conditional features, Theo confirms Gold Account and Green Account. He accepts Gold's conditional $10 monthly maintenance charge and Green's $22.50 monthly maintenance charge, without assuming a waiver; Green's waiver requires $1,350 minimum daily balance. His nonpersistent plan is all $18,400 arriving 11/20/2025 in one savings account. He declines any immediate transfer, accepts external funding by 12/14/2025 or closure, and accepts applicable insurance terms, full-fare payment, exclusions, documentation, and a maximum of $15,000 per trip. Light Blue remains OPEN. Capture the returned account_id, defined exactly as SHA-256 over UTF-8 'account:usr_theo_alvarez_1193:savings:Gold Account', lowercase hexadecimal, first 16 characters."
+      },
+      {
+        "action_id": "a10_open_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_1193\",\"account_type\":\"checking\",\"account_class\":\"Green Account\"}"
+        },
+        "info": "Implements the authorized checking choice at zero holdings under the same customer profile as Gold and the retained Silver card. Theo accepts payer-dependent access up to one day early and ordinary checking costs paid separately from future salary. No waiver, transfer, subscription, or separate linking operation is performed. Capture the returned account_id, defined exactly as SHA-256 over UTF-8 'account:usr_theo_alvarez_1193:checking:Green Account', lowercase hexadecimal, first 16 characters."
+      },
+      {
+        "action_id": "a11_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "a12_close_light_blue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_ta_lb_7316\",\"reason\":\"Customer requested replacement checking setup\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Both authorized new accounts now exist. Close the still-OPEN, zero-balance, 365-day-old Light Blue account with no pending transactions. No early closure fee or notice period applies. No card change or monetary mutation occurs."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_gold_years_account_001",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_green_fee-free_account_003",
+    "doc_credit_cards_silver_rewards_card_005",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_gold_plus_account_001"
+  ]
+}

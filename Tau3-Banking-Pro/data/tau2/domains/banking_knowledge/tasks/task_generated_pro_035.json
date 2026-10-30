@@ -1,0 +1,420 @@
+{
+  "id": "task_generated_pro_035",
+  "description": {
+    "purpose": "Apply an authorized Silver Rewards Card limit increase and file an accurate non-delivery dispute, preserving the approval-before-dispute state dependency and the strict provisional-credit purchase-age boundary.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “I checked the tracking again and my range still hasn't shipped. First, I'd like to dispute the Sierra Home Appliances charge on my Silver Rewards Card. I'd also like to raise that card's limit from $15,000 to $22,500 for a replacement appliance and the remaining kitchen work. Can you help with both?”\n\nAnswer only relevant questions with these facts: You are Leila Haddad, 54, a laboratory technician in Sacramento, California; DOB 03/09/1971; phone 916-555-0146; email leila.haddad@example.net; address 1842 Olivewood Way, Sacramento, CA 95818. You authorized a $1,247.99 induction-range purchase on 10/15/2025. Delivery was promised October 27; you noticed non-delivery October 28. Emails on October 28, November 4, and November 12 went unanswered. Nothing arrived; tracking still shows only a shipping label. You want a full-refund dispute, with your current card kept usable, not cancelled or replaced. Adobe's $64.99 subscription was received and Southwest Airlines' $386.40 booking is valid; neither is part of your complaint.\n\nIf asked for the last four digits, say your card isn't with you and ask for a secure lookup. Only after the agent provides it, use it and report the returned digits. Do not guess them.\n\nWhen discussing refunds, you initially think filing might mean an immediate final refund, but are unsure. Accept an explanation that filing starts an investigation. After supplying requested identity information, authorize a matching proposal once the agent explains the existing card, requested total limit, and appliance-dispute scope. Do not require a temporary or final refund promise to proceed.\n\nIf a proposal conflicts with these facts or goals, point out the visible mismatch and ask the agent to check again; do not authorize it. This includes dropping or deferring either service, a different limit or transaction, a partial refund, or an inaccurate fraud account. Do not consent to unrelated fund movements, product changes, or deleting a legitimate dispute. If a wrong action has occurred or either service remains unfinished, identify the visible problem and request correction rather than accepting closure. You do not know eligibility rules and cannot independently audit a processing plan that promises both outcomes.\n\nAccept only when the agent confirms the requested total limit is applied and the full-refund appliance dispute is filed, your current card remains usable, and you understand filing is not a final refund. Then say, “Thank you for sorting out both requests,” and end with:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "user_leila_haddad_20260920204": {
+              "user_id": "user_leila_haddad_20260920204",
+              "name": "Leila Haddad",
+              "date_of_birth": "03/09/1971",
+              "phone_number": "916-555-0146",
+              "email": "leila.haddad@example.net",
+              "address": "1842 Olivewood Way, Sacramento, CA 95818",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh sole fixture customer, age 54 at the banking clock. No parent user. This initialization is a patch, not a replacement of global tables."
+        },
+        "accounts": {
+          "data": {
+            "acct_leila_blue_20260920204": {
+              "account_id": "acct_leila_blue_20260920204",
+              "user_id": "user_leila_haddad_20260920204",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "ACTIVE",
+              "current_holdings": "$8500.00",
+              "date_opened": "06/18/2021"
+            }
+          },
+          "notes": "One customer-owned Blue checking control. Its holdings are not available authorization for a card payment and remain unchanged."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_batch96_20260920204_silver": {
+              "account_id": "cc_batch96_20260920204_silver",
+              "user_id": "user_leila_haddad_20260920204",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "5038",
+              "credit_limit": "$15000.00",
+              "current_balance": "$4500.00",
+              "past_due_amount": "$0.00",
+              "date_of_account_open": "11/01/2024",
+              "status": "ACTIVE",
+              "account_status": "CURRENT",
+              "reward_points": "0"
+            }
+          },
+          "notes": "Single existing mid-tier card. Supplied precomputed account/digit pair retained. Reward points are an inert required record field, not an additional objective."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_leila_range_20251015": {
+              "transaction_id": "txn_leila_range_20251015",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Sierra Home Appliances",
+              "transaction_amount": "$1247.99",
+              "transaction_date": "10/15/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "0 points"
+            },
+            "txn_leila_adobe_20251014": {
+              "transaction_id": "txn_leila_adobe_20251014",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Adobe",
+              "transaction_amount": "$64.99",
+              "transaction_date": "10/14/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "0 points"
+            },
+            "txn_leila_southwest_20251102": {
+              "transaction_id": "txn_leila_southwest_20251102",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Southwest Airlines",
+              "transaction_amount": "$386.40",
+              "transaction_date": "11/02/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "0 points"
+            }
+          },
+          "notes": "Exactly three same-user, same-card transactions. Non-receipt and merchant contact are customer intake facts, not fabricated transaction fields. Adobe and Southwest are legitimate controls. Reward entries are inert; no rewards adjudication is requested."
+        },
+        "payment_history": {
+          "data": {
+            "pay_leila_20260920204_jun": {
+              "payment_id": "pay_leila_20260920204_jun",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "payment_date": "06/10/2025",
+              "amount": "$280.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_20260920204_jul": {
+              "payment_id": "pay_leila_20260920204_jul",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "payment_date": "07/10/2025",
+              "amount": "$315.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_20260920204_aug": {
+              "payment_id": "pay_leila_20260920204_aug",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "payment_date": "08/10/2025",
+              "amount": "$295.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_20260920204_sep": {
+              "payment_id": "pay_leila_20260920204_sep",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "payment_date": "09/10/2025",
+              "amount": "$340.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_20260920204_oct": {
+              "payment_id": "pay_leila_20260920204_oct",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "payment_date": "10/10/2025",
+              "amount": "$325.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_20260920204_nov": {
+              "payment_id": "pay_leila_20260920204_nov",
+              "user_id": "user_leila_haddad_20260920204",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "payment_date": "11/10/2025",
+              "amount": "$360.00",
+              "status": "ON_TIME"
+            }
+          },
+          "notes": "Six genuine completed consecutive monthly payments. November source evidence rebased from November 15 to November 10; the other dates and amounts are newly authored as disclosed in evaluator notes."
+        },
+        "credit_limit_increase_requests": {
+          "data": {
+            "cli_leila_prior_20250816": {
+              "request_id": "cli_leila_prior_20250816",
+              "credit_card_account_id": "cc_batch96_20260920204_silver",
+              "user_id": "user_leila_haddad_20260920204",
+              "status": "APPROVED",
+              "submitted_at": "08/16/2025",
+              "submitted_date": "08/16/2025",
+              "decision_date": "08/16/2025",
+              "requested_increase_amount": 3000,
+              "previous_limit": "$12000.00",
+              "new_limit": "$15000.00",
+              "increase_amount": "$3000.00",
+              "reason": "Planned household purchases"
+            }
+          },
+          "notes": "Genuine historical approval exactly 90 calendar days before the banking date; the only pre-existing same-card request. New submission and approval must be produced by tools, as separate rows."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No initial fixture-user disputes, including none during the preceding 12 months. Unrelated merged defaults are not removed. Filing naturally creates a same-user SUBMITTED row."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No initial fixture-card orders, pending or otherwise; no replacement requested."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification starts absent and is logged exactly once after identity matching and current-time retrieval."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Empty access-support table. No capability descriptors seeded; handoff telemetry is excluded from banking reward."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty access-support table. Availability comes from the catalog; call telemetry is not an independent outcome or ordering witness."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "gold_identify",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Reference identity discovery; compare customer-supplied identity fields with the returned customer."
+      },
+      {
+        "action_id": "gold_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Leila Haddad",
+          "user_id": "user_leila_haddad_20260920204",
+          "address": "1842 Olivewood Way, Sacramento, CA 95818",
+          "email": "leila.haddad@example.net",
+          "phone_number": "916-555-0146",
+          "date_of_birth": "03/09/1971",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After confirming at least two of the four identity fields; all recorded fields match the located customer."
+      },
+      {
+        "action_id": "gold_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"user_leila_haddad_20260920204\"}"
+        },
+        "info": "Discover the owned Silver card and its original limit; expose Blue checking only as a control."
+      },
+      {
+        "action_id": "gold_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "user_leila_haddad_20260920204"
+        },
+        "info": "Direct read, not discoverable. Identify the Sierra transaction and distinguish the two legitimate controls."
+      },
+      {
+        "action_id": "gold_give_digits",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920204_silver\"}"
+        }
+      },
+      {
+        "action_id": "gold_lookup_digits",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920204_silver\"}"
+        },
+        "info": "Use the supplied precomputed result 5038 for intake; validator must verify the deterministic result."
+      },
+      {
+        "action_id": "gold_unlock_submit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392"
+        }
+      },
+      {
+        "action_id": "gold_submit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920204_silver\",\"user_id\":\"user_leila_haddad_20260920204\",\"requested_increase_amount\":7500}"
+        },
+        "info": "Before submission calculate 22500-15000=7500, equal to the 50% cap, explain the matching scope and obtain confirmation. This creates the formal request before the internal assessment; communication and read ordering are not independent DB rewards."
+      },
+      {
+        "action_id": "gold_unlock_cli_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829"
+        }
+      },
+      {
+        "action_id": "gold_cli_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920204_silver\"}"
+        },
+        "info": "Exclude the current submission from its own predecessor comparison; historical approved submission is August 16, exactly 90 days earlier."
+      },
+      {
+        "action_id": "gold_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "gold_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"user_leila_haddad_20260920204\"}"
+        },
+        "info": "Shared evidence: zero active same-user disputes for CLI and zero prior disputes in the preceding 12 months for provisional credit."
+      },
+      {
+        "action_id": "gold_unlock_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "gold_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920204_silver\"}"
+        }
+      },
+      {
+        "action_id": "gold_unlock_payments",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "gold_payments",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920204_silver\",\"months\":6}"
+        },
+        "info": "Audit June through November in order: six completed ON_TIME months, including the latest three. Combine with 378-day account age, 90-day cooldown, CURRENT standing, zero past due, 30% original utilization and absent blockers."
+      },
+      {
+        "action_id": "gold_unlock_approve",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847"
+        }
+      },
+      {
+        "action_id": "gold_approve",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847",
+          "arguments": "{\"credit_card_account_id\":\"cc_batch96_20260920204_silver\",\"user_id\":\"user_leila_haddad_20260920204\",\"new_credit_limit\":22500}"
+        },
+        "info": "Apply before the blocking dispute exists. Inserts a separate approval and changes the credit limit; does not transition the submitted row."
+      },
+      {
+        "action_id": "gold_unlock_file",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "gold_file",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_leila_range_20251015\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"5038\",\"full_name\":\"Leila Haddad\",\"user_id\":\"user_leila_haddad_20260920204\",\"phone\":\"916-555-0146\",\"email\":\"leila.haddad@example.net\",\"address\":\"1842 Olivewood Way, Sacramento, CA 95818\",\"contacted_merchant\":true,\"purchase_date\":\"10/15/2025\",\"issue_noticed_date\":\"10/28/2025\",\"dispute_reason\":\"goods_services_not_received\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":false,\"partial_refund_amount\":null}"
+        },
+        "info": "After complete intake and authorization. Target purchase is exactly 30 days old, not strictly more than 30; other provisional-credit conditions pass. Persist both flags false, with no balance credit."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_004",
+    "doc_credit_cards_credit_card_account_logistics_005",
+    "doc_credit_cards_credit_card_account_logistics_006",
+    "doc_credit_cards_credit_card_account_logistics_007",
+    "doc_credit_cards_credit_cards_(general)_013",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

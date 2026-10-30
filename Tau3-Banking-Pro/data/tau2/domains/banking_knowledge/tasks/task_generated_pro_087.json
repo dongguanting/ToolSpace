@@ -1,0 +1,272 @@
+{
+  "id": "task_generated_pro_087",
+  "description": {
+    "purpose": "Help Amina Duarte reconcile an early-payday checking shortfall without creating a substitute payroll credit, then apply the exact supported ATM fee corrections to her Purple and Light Blue checking accounts.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Amina Duarte, a 57-year-old self-employed photographer in Austin, Texas. Begin concerned but cooperative by saying: “My checking total is lower than I expected this payday morning. Can you help me figure out what's going on?” Do not initially list all transactions, calculate any correction, or ask for a predetermined credit.\n\nIf the agent asks you to verify your identity, provide your date of birth as 05/19/1968, your address as 1847 Bluebonnet Ridge, Austin, TX 78704, your email as amina.duarte47@example.com, and your phone number as +1-512-555-0196. Answer relevant verification questions accurately, but do not volunteer transaction arithmetic or internal procedures.\n\nIf the agent asks about the expected funds, affected accounts, or why the total seems low, say that today is your employer's official payday, payroll normally goes to your Green Account, and recent trip-related ATM entries on your Purple and Light Blue accounts may also be contributing. Explain that your employer processes payroll on the official pay date. Do not ask for replacement payroll money.\n\nPlease don't add replacement payroll money. I only need to know what the records show and whether it is still expected later this morning. You do not authorize any Green Account credit presented as a replacement for your employer's current-cycle direct deposit. Preserve your request for the actual deposit status even if the agent offers an advance or immediate substitute.\n\nIf the agent asks for ATM receipts, transaction amounts, withdrawal order, or prior rebates, say that the Purple receipts show 200 dollars cash with a 14-dollar operator fee and a 4-dollar bank fee, then 100 dollars cash with a 9-dollar operator fee and a 3-dollar bank fee. Mention that a 12-dollar ATM rebate is already visible earlier in November. For Light Blue, say there were three November foreign withdrawals, the first two showed no bank fee, and the last showed 100 dollars cash plus a 5-dollar bank fee. Do not calculate the monthly cap remainder or the final credits yourself.\n\nOnce the agent confirms that ATM charges or rebates do not match the applicable account terms, ask for every confirmed error to be corrected on the account where it occurred and ask for the outcome to remain separated by account. You want exact corrections, not estimates.\n\nI can see unusual entries on both accounts. Please finish checking each one and tell me the separate amount that will go back to each account before I agree. You withhold authorization until both accounts have been reviewed and each proposed account-level correction is identified.\n\nI already see a 12-dollar ATM rebate from earlier this month. Please check whether that changes what is still outstanding before you apply anything. You do not authorize the Purple correction until the visible earlier rebate has been considered.\n\nDo not authorize either ATM correction until your identity and ownership of the affected checking accounts have been established. Also withhold authorization until the agent has made clear that the Green inquiry will not create substitute payroll money and has reviewed both account histories, considered the visible earlier Purple rebate, and stated a separate proposed correction for each account.\n\nIf the agent proposes or reports a Purple amount calculated as though the full monthly rebate allowance were still unused, say exactly: “I already have a 12-dollar ATM rebate showing earlier this month. Could you check the November activity again before I approve that Purple amount?” Amina must not authorize a Purple credit whose amount was determined without considering the visible earlier rebate. If the larger Purple credit has already been applied, do not accept or stop. Say that the account still does not reconcile with the earlier rebate and ask the agent to correct the Purple result or obtain appropriate help.\n\nIf the agent refuses to review or correct a supported ATM discrepancy after you have clarified the visible records once, become more frustrated and ask to speak with a human. Do not ask for escalation if the exact corrections are completed.\n\nKeep your commitment to learning the actual status of the Green deposit without an invented replacement. Keep your commitment to having every supported ATM discrepancy corrected for the exact net amount on the account where it occurred, with separate Purple and Light Blue outcomes.\n\nDo not accept the resolution until you are told that the Green deposit is not yet posted during this early-morning inquiry and that no replacement credit was added. Do not accept until you are told that exactly 25.00 was credited to the Purple Account. Do not accept until you are told that exactly 1.00 was credited to the Light Blue Account. If either correction is missing, estimated, duplicated, assigned to the wrong account, or unresolved, ask the agent to finish correcting it and do not stop.\n\nOnly after all of those visible outcomes are confirmed, express relief, briefly thank the agent, and end with exactly one marker on its own line:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_amina_duarte_nov25_a91f": {
+              "user_id": "usr_amina_duarte_nov25_a91f",
+              "name": "Amina Duarte",
+              "date_of_birth": "05/19/1968",
+              "address": "1847 Bluebonnet Ridge, Austin, TX 78704",
+              "email": "amina.duarte47@example.com",
+              "phone_number": "+1-512-555-0196"
+            }
+          },
+          "notes": "Amina Duarte is 57 at the fixed date, lives in Austin, Texas, and is a self-employed photographer. The date of birth uses the MM/DD/YYYY representation required by log_verification."
+        },
+        "accounts": {
+          "data": {
+            "acct_green_amina_7c31": {
+              "account_id": "acct_green_amina_7c31",
+              "user_id": "usr_amina_duarte_nov25_a91f",
+              "class": "checking",
+              "level": "Green Account",
+              "status": "ACTIVE",
+              "current_holdings": "1240.00",
+              "date_opened": "03/18/2021"
+            },
+            "acct_purple_amina_b842": {
+              "account_id": "acct_purple_amina_b842",
+              "user_id": "usr_amina_duarte_nov25_a91f",
+              "class": "checking",
+              "level": "Purple Account",
+              "status": "ACTIVE",
+              "current_holdings": "850.00",
+              "date_opened": "07/09/2022"
+            },
+            "acct_lightblue_amina_d563": {
+              "account_id": "acct_lightblue_amina_d563",
+              "user_id": "usr_amina_duarte_nov25_a91f",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "ACTIVE",
+              "current_holdings": "420.00",
+              "date_opened": "01/22/2024"
+            }
+          },
+          "notes": "Three fresh ACTIVE checking accounts owned by Amina. Initial holdings precede the successful-path corrections."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_purple_rebate_1102_f1a7": {
+              "transaction_id": "txn_purple_rebate_1102_f1a7",
+              "account_id": "acct_purple_amina_b842",
+              "date": "11/02/2025",
+              "description": "POSTED NOVEMBER ATM OPERATOR-FEE REBATE; $12.00 OF PURPLE MONTHLY OPERATOR-FEE REBATE CAP APPLIED",
+              "amount": 12.0,
+              "type": "fee_rebate",
+              "status": "posted"
+            },
+            "txn_purple_foreign_1107_29ce": {
+              "transaction_id": "txn_purple_foreign_1107_29ce",
+              "account_id": "acct_purple_amina_b842",
+              "date": "11/07/2025",
+              "description": "FOREIGN IN-NETWORK PARTNER ATM WITHDRAWAL: $200.00 CASH + $14.00 THIRD-PARTY ATM OPERATOR SURCHARGE + $4.00 RHO FOREIGN ATM FEE",
+              "amount": -218.0,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "txn_purple_foreign_1109_6bd4": {
+              "transaction_id": "txn_purple_foreign_1109_6bd4",
+              "account_id": "acct_purple_amina_b842",
+              "date": "11/09/2025",
+              "description": "FOREIGN IN-NETWORK PARTNER ATM WITHDRAWAL: $100.00 CASH + $9.00 THIRD-PARTY ATM OPERATOR SURCHARGE + $3.00 RHO FOREIGN ATM FEE",
+              "amount": -112.0,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "txn_lightblue_foreign_1101_c085": {
+              "transaction_id": "txn_lightblue_foreign_1101_c085",
+              "account_id": "acct_lightblue_amina_d563",
+              "date": "11/01/2025",
+              "description": "NOVEMBER FOREIGN IN-NETWORK PARTNER ATM WITHDRAWAL #1: $80.00 CASH; $0.00 RHO FOREIGN ATM FEE",
+              "amount": -80.0,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "txn_lightblue_foreign_1105_e624": {
+              "transaction_id": "txn_lightblue_foreign_1105_e624",
+              "account_id": "acct_lightblue_amina_d563",
+              "date": "11/05/2025",
+              "description": "NOVEMBER FOREIGN IN-NETWORK PARTNER ATM WITHDRAWAL #2: $60.00 CASH; $0.00 RHO FOREIGN ATM FEE",
+              "amount": -60.0,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "txn_lightblue_foreign_1110_a38d": {
+              "transaction_id": "txn_lightblue_foreign_1110_a38d",
+              "account_id": "acct_lightblue_amina_d563",
+              "date": "11/10/2025",
+              "description": "NOVEMBER FOREIGN IN-NETWORK PARTNER ATM WITHDRAWAL #3: $100.00 CASH + $5.00 RHO FOREIGN ATM FEE",
+              "amount": -105.0,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            }
+          },
+          "notes": "The Green Account has no current-cycle direct_deposit. Purple history explicitly distinguishes eligible third-party operator surcharges from improper Rho foreign ATM fees and shows the prior monthly rebate. Light Blue history establishes the chronological foreign-withdrawal count and actual third-withdrawal fee. No fee_refund or rebate_credit exists in the preceding 14 days."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Intentionally empty. Current-session verification must be created through log_verification."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational tool availability comes from the tool catalog and required documents; no capability metadata is seeded in this table."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "usr_amina_duarte_nov25_a91f",
+          "address": "1847 Bluebonnet Ridge, Austin, TX 78704",
+          "email": "amina.duarte47@example.com",
+          "phone_number": "+1-512-555-0196",
+          "date_of_birth": "05/19/1968",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "gold_01_locate_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        }
+      },
+      {
+        "action_id": "gold_02_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_03_get_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_nov25_a91f\"}"
+        }
+      },
+      {
+        "action_id": "gold_04_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "gold_05_get_green_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_green_amina_7c31\"}"
+        }
+      },
+      {
+        "action_id": "gold_06_get_purple_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_purple_amina_b842\"}"
+        }
+      },
+      {
+        "action_id": "gold_07_get_lightblue_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_lightblue_amina_d563\"}"
+        }
+      },
+      {
+        "action_id": "gold_08_get_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_10_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829"
+        }
+      },
+      {
+        "action_id": "gold_11_credit_purple",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_purple_amina_b842\",\"amount\":25.0,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "gold_12_credit_lightblue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_lightblue_amina_d563\",\"amount\":1.0,\"credit_type\":\"fee_refund\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_017",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_checking_accounts_checking_accounts_(general)_009",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_light_blue_account_006",
+    "doc_checking_accounts_purple_account_001",
+    "doc_checking_accounts_purple_account_004"
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "id": "task_generated_pro_076",
+  "description": {
+    "purpose": "Resolve three portfolio reward discrepancies and then permanently close Maya Iqbal's eligible Crypto-Cash Back account without changing her other cards or applying a retention credit.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I reviewed my cards this morning and want to close my Crypto-Cash Back card. I don't think it's worth keeping anymore.” Do not initially list individual purchases, reward rates, expected point amounts, or internal processing steps.\n\nIf the agent asks to verify your identity, say that you are Maya Iqbal, born April 19, 1981, and provide 814 Juniper Row, Madison, WI 53703, maya.iqbal.translation@example.com, and (608) 555-0147. Mention that you are a freelance translator only if it is relevant. Otherwise, do not volunteer these details.\n\nIf the agent asks why you want to close the card or which rewards looked wrong, explain that the same statement review showed Lakeside Books for $146.50 on October 28 on the Crypto card, Madison Electric Co-op for $37.00 on November 2 on the EcoCard, and LinguaCloud Pro for $82.37 on November 6 on the Silver Rewards card. Say that their displayed rewards looked too low, but do not claim to know the correct point amounts or policy rates.\n\nOnly after the agent says the review found discrepancies on those three purchases, ask for all three purchase records to be corrected before the Crypto account is closed and agree to submit the transaction-specific reward disputes needed to pursue those corrections. Do not ask for a dispute or change to the Corner Market grocery purchase, which already looks correct to you.\n\nAfter the related reward discrepancies are resolved, insist that the Crypto-Cash Back account ending in 4821 be closed rather than retained. Every confirmed incorrect reward record from this review must be corrected; a generic credit is not an acceptable substitute. Preserve the correctly rewarded Silver grocery purchase without a dispute or change. Keep the EcoCard and Silver Rewards accounts open.\n\nIf the agent recommends keeping the Crypto account in exchange for a retention credit, say: “No thank you. I still want that card closed once the reward issue is finished.” Do not authorize a retention credit or agree to leave the Crypto account open.\n\nIf the agent proposes a goodwill or statement credit while leaving any confirmed reward entry unchanged, say: “I appreciate the offer, but I want the purchases themselves to show the right rewards. Could you fix those records rather than substitute a general credit?” Do not authorize a credit presented as a replacement for the requested reward-record corrections.\n\nIf the agent proposes disputing or changing the Corner Market purchase, or closing the EcoCard or Silver Rewards account, say: “Those aren't part of what I want changed. Please leave the grocery purchase and those two card accounts alone.” Do not authorize a dispute or reward update for that grocery purchase, and do not authorize closure of the EcoCard or Silver Rewards account.\n\nBefore authorizing permanent closure, require the agent to have correctly identified you and the Crypto-Cash Back account ending in 4821. Before authorizing disputes or corrections, require the agent to identify the three incorrect purchases and distinguish the correctly rewarded Corner Market purchase. Before authorizing final closure, require confirmation that all three reward issues are complete and that no related dispute remains unresolved.\n\nIf the agent proposes closing the Crypto account before the confirmed reward issues are finished, ask the agent to correct the purchases first because you do not want to close the account with that issue unresolved. If the agent repeatedly says an otherwise confirmed correction or eligible closure cannot be completed after a reasonable retry, ask for a human who can finish the same correction-and-closure request; do not broaden the request and do not escalate on a successful path.\n\nDo not accept the resolution until the Lakeside Books, Madison Electric Co-op, and LinguaCloud Pro purchases are confirmed corrected while Corner Market is unchanged. Also require confirmation that the Crypto-Cash Back account is closed, the EcoCard and Silver Rewards accounts remain open, and no unwanted retention or substitute goodwill credit was applied. If any condition is missing, ask directly about it and do not stop.\n\nOnly after all of those visible conditions hold, say: “Thanks, that takes care of the reward errors and the card I wanted closed.” Then end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_maya_iqbal_8f3c21": {
+              "user_id": "usr_maya_iqbal_8f3c21",
+              "name": "Maya Iqbal",
+              "date_of_birth": "04/19/1981",
+              "address": "814 Juniper Row, Madison, WI 53703",
+              "email": "maya.iqbal.translation@example.com",
+              "phone_number": "(608) 555-0147"
+            }
+          },
+          "notes": "Maya Iqbal is 44 at the fixed date and is the owner of all configured credit-card accounts. Her freelance-translator occupation is conversational context because the users schema has no occupation field."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Must begin empty. The successful path creates Maya's current-session verification record through log_verification."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cca_crypto_miq_4821_71af": {
+              "account_id": "cca_crypto_miq_4821_71af",
+              "user_id": "usr_maya_iqbal_8f3c21",
+              "card_type": "Crypto-Cash Back Card",
+              "card_last_4_digits": "4821",
+              "current_balance": "0.00",
+              "date_of_account_open": "06/10/2023",
+              "reward_points": "146 points",
+              "account_status": "active"
+            },
+            "cca_eco_miq_7316_c2d8": {
+              "account_id": "cca_eco_miq_7316_c2d8",
+              "user_id": "usr_maya_iqbal_8f3c21",
+              "card_type": "EcoCard",
+              "card_last_4_digits": "7316",
+              "current_balance": "37.00",
+              "date_of_account_open": "02/03/2024",
+              "reward_points": "37 points",
+              "account_status": "active"
+            },
+            "cca_silver_miq_2058_e49b": {
+              "account_id": "cca_silver_miq_2058_e49b",
+              "user_id": "usr_maya_iqbal_8f3c21",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "2058",
+              "current_balance": "123.37",
+              "date_of_account_open": "09/17/2022",
+              "reward_points": "123 points",
+              "account_status": "active"
+            }
+          },
+          "notes": "The Crypto account is active, older than 60 days, and has a zero balance. EcoCard and Silver Rewards must remain active."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "cctx_lakeside_14650_4b7e": {
+              "transaction_id": "cctx_lakeside_14650_4b7e",
+              "user_id": "usr_maya_iqbal_8f3c21",
+              "credit_card_account_id": "cca_crypto_miq_4821_71af",
+              "credit_card_type": "Crypto-Cash Back Card",
+              "merchant_name": "Lakeside Books",
+              "transaction_amount": "146.50",
+              "transaction_date": "10/28/2025",
+              "category": "retail",
+              "status": "posted",
+              "rewards_earned": "146 points"
+            },
+            "cctx_madison_electric_3700_9ca2": {
+              "transaction_id": "cctx_madison_electric_3700_9ca2",
+              "user_id": "usr_maya_iqbal_8f3c21",
+              "credit_card_account_id": "cca_eco_miq_7316_c2d8",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Madison Electric Co-op",
+              "transaction_amount": "37.00",
+              "transaction_date": "11/02/2025",
+              "category": "renewable_energy",
+              "status": "posted",
+              "rewards_earned": "37 points"
+            },
+            "cctx_linguacloud_8237_16de": {
+              "transaction_id": "cctx_linguacloud_8237_16de",
+              "user_id": "usr_maya_iqbal_8f3c21",
+              "credit_card_account_id": "cca_silver_miq_2058_e49b",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "LinguaCloud Pro",
+              "transaction_amount": "82.37",
+              "transaction_date": "11/06/2025",
+              "category": "software",
+              "status": "posted",
+              "rewards_earned": "82 points"
+            },
+            "cctx_corner_market_4100_a835": {
+              "transaction_id": "cctx_corner_market_4100_a835",
+              "user_id": "usr_maya_iqbal_8f3c21",
+              "credit_card_account_id": "cca_silver_miq_2058_e49b",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Corner Market",
+              "transaction_amount": "41.00",
+              "transaction_date": "11/08/2025",
+              "category": "groceries",
+              "status": "posted",
+              "rewards_earned": "41 points"
+            }
+          },
+          "notes": "The first three posted purchases are under-rewarded. The Corner Market transaction is the correctly rewarded comparison record and must remain unchanged. No refund or return record exists for the EcoCard purchase."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Starts empty. With auto_resolve_disputes enabled, each valid submission creates an approved and resolved tool-native record."
+        },
+        "task_config": {
+          "data": {
+            "reward_dispute_runtime_config": {
+              "auto_resolve_disputes": true
+            }
+          },
+          "notes": "Enables the implementation-supported immediate terminal resolution pathway for cash-back dispute submissions."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No replacement-card order exists for the Crypto account, so its pending replacement-order count is zero."
+        },
+        "credit_card_closure_reasons": {
+          "data": {},
+          "notes": "No closure-reason record exists initially for the Crypto account, including within the prior year."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "No user discoverable tool is granted initially."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "No agent discoverable tool is unlocked initially."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_maya_iqbal_8f3c21",
+          "address": "814 Juniper Row, Madison, WI 53703",
+          "email": "maya.iqbal.translation@example.com",
+          "phone_number": "(608) 555-0147",
+          "date_of_birth": "04/19/1981",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "act_01_find_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        }
+      },
+      {
+        "action_id": "act_02_get_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_maya_iqbal_8f3c21"
+        }
+      },
+      {
+        "action_id": "act_03_get_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_maya_iqbal_8f3c21"
+        }
+      },
+      {
+        "action_id": "act_04_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_06_unlock_reason_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293"
+        }
+      },
+      {
+        "action_id": "act_07_check_reason_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"cca_crypto_miq_4821_71af\"}"
+        }
+      },
+      {
+        "action_id": "act_08_unlock_pending_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "act_09_check_pending_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cca_crypto_miq_4821_71af\"}"
+        }
+      },
+      {
+        "action_id": "act_10_unlock_log_reason",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "act_11_log_closure_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"cca_crypto_miq_4821_71af\",\"user_id\":\"usr_maya_iqbal_8f3c21\",\"closure_reason\":\"unhappy_with_rewards\"}"
+        }
+      },
+      {
+        "action_id": "act_12_give_dispute_tool",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{}"
+        }
+      },
+      {
+        "action_id": "act_13_dispute_crypto",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_8f3c21\",\"transaction_id\":\"cctx_lakeside_14650_4b7e\"}"
+        }
+      },
+      {
+        "action_id": "act_14_dispute_eco",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_8f3c21\",\"transaction_id\":\"cctx_madison_electric_3700_9ca2\"}"
+        }
+      },
+      {
+        "action_id": "act_15_dispute_silver",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_8f3c21\",\"transaction_id\":\"cctx_linguacloud_8237_16de\"}"
+        }
+      },
+      {
+        "action_id": "act_16_unlock_reward_update",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "update_transaction_rewards_3847"
+        }
+      },
+      {
+        "action_id": "act_17_update_crypto_rewards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "update_transaction_rewards_3847",
+          "arguments": "{\"transaction_id\":\"cctx_lakeside_14650_4b7e\",\"new_rewards_earned\":\"293 points\"}"
+        }
+      },
+      {
+        "action_id": "act_18_update_eco_rewards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "update_transaction_rewards_3847",
+          "arguments": "{\"transaction_id\":\"cctx_madison_electric_3700_9ca2\",\"new_rewards_earned\":\"185 points\"}"
+        }
+      },
+      {
+        "action_id": "act_19_update_silver_rewards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "update_transaction_rewards_3847",
+          "arguments": "{\"transaction_id\":\"cctx_linguacloud_8237_16de\",\"new_rewards_earned\":\"329 points\"}"
+        }
+      },
+      {
+        "action_id": "act_20_unlock_crypto_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834"
+        }
+      },
+      {
+        "action_id": "act_21_close_crypto",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834",
+          "arguments": "{\"credit_card_account_id\":\"cca_crypto_miq_4821_71af\",\"user_id\":\"usr_maya_iqbal_8f3c21\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_004",
+    "doc_credit_cards_credit_cards_(general)_007",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_crypto-cash_back_001",
+    "doc_credit_cards_ecocard_001",
+    "doc_credit_cards_ecocard_002",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_002"
+  ]
+}

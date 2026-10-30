@@ -1,0 +1,286 @@
+{
+  "id": "task_generated_pro_082",
+  "description": {
+    "purpose": "Help Elena Park submit the eligible checking referral with the greatest combined bonus, then correct duplicate Rho-Bank foreign ATM fees on her two checking accounts.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying, “My cousin is ready to open a checking account, and I want to send the referral that gives the two of us the best total bonus. Can you help me choose it?” Do not initially mention the ATM fees or claim to know which product is best.\n\nIf asked for identity information, say that you are Elena Park, a 28-year-old freelance translator, and provide your date of birth as 05/22/1997, address as 412 Cedar Row, Richmond, VA 23220, email as elena.park97@example.com, and phone number as +1-804-555-0186. Do not volunteer statement details while answering identity questions.\n\nIf asked about your cousin or referral eligibility, explain that Maya Chen is 31, lives at 88 Harbor Lane, Norfolk, VA 23510, has had no Rho-Bank checking, savings, or closed account during the past year, can bring at least $500 from an external bank within 60 days, intends to leave the qualifying deposit in place, and is not using another promotion. Do not state which referral product or bonus calculation is correct.\n\nElena wants exactly one eligible checking referral for Maya and prioritizes the greatest combined bonus for the two of them. Elena will not support a referral based on false assumptions about Maya’s history, address, funding source, timing, or ability to retain the deposit. Elena wants only duplicate Rho-Bank foreign ATM fees corrected and does not seek reversal of a legitimate scheduled fee or any unrelated charge. Elena wants the referral and eligible corrections completed in this verified interaction unless a concrete verification or execution obstacle prevents it.\n\nIf a lower-total account, multiple referrals, a split strategy, or another promotion is proposed, decline and say, “I only have one cousin to refer, I don’t want another promotion added, and Maya can meet the stated deposit conditions. Please use the eligible option that gives us the largest combined bonus.” Do not authorize a lower-total product, more than one referral, or an incompatible added promotion until the comparison has been reconsidered.\n\nAuthorize the referral only after the agent has established that Maya is eligible, that the recent-referral limit permits another submission, and that the proposed single account offers the greatest combined advertised bonus among the eligible choices. When invited to submit that eligible referral, cooperate with the submission.\n\nOnly after the agent confirms that the selected referral was successfully submitted, say, “There is one more related thing. While comparing my Blue and Green accounts for Maya’s travel needs, I noticed two identical $5 Rho-Bank fee lines beside a $40 foreign ATM withdrawal on Blue and two identical $5 fee lines beside a $100 foreign ATM withdrawal on Green. Please review both and correct only any duplicates.” Until that confirmation, do not mention the ATM issue.\n\nIf asked to state the exact proper fee or refund before the records are reviewed, say, “I don’t know the policy amount. I only know that each withdrawal has two identical bank fee lines, so please check which line, if any, should remain.”\n\nIf the agent proposes correcting only one account, treating both identical fee lines as legitimate without review, or refunding both fees on either withdrawal, say, “Both statements show two identical Rho-Bank fee lines for one withdrawal. Please check both accounts and leave any fee that was actually due.” Do not authorize a partial correction or a reversal that removes the legitimate scheduled fee.\n\nIf asked to approve credits before identity, ownership, both affected accounts, and the proposed account-level outcomes are established, provide the requested identity details and say, “Please first confirm that these are my two checking accounts and tell me what duplicate line will be corrected on each.” Withhold authorization for either credit until current-session identity, ownership, both affected accounts, and the proposed correction for each account are established.\n\nIf the agent proposes ending or transferring without attempting an available referral or correction, say, “Can we complete the referral and the duplicate-fee corrections first? I’ll accept a transfer only if there is a real verification or execution obstacle.” Do not treat an unnecessary transfer as completion and do not abandon the requested outcomes.\n\nDo not accept a partial resolution. Accept the referral stage only after one Blue Account referral is recognizably confirmed as submitted. Accept the Blue correction only after one $5 duplicate-fee correction is confirmed. Accept the Green correction only after one $5 duplicate-fee correction is confirmed. Before ending, ask the agent to clarify that only the duplicate fee was refunded and that any scheduled fee actually due was left in place.\n\nOnly after all of those outcomes are confirmed, say, “That takes care of both things—thank you.” and then end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "user_elena_park_8271": {
+              "user_id": "user_elena_park_8271",
+              "name": "Elena Park",
+              "date_of_birth": "05/22/1997",
+              "address": "412 Cedar Row, Richmond, VA 23220",
+              "email": "elena.park97@example.com",
+              "phone_number": "+1-804-555-0186"
+            }
+          },
+          "notes": "Fresh Elena Park customer record. Her freelance-translator occupation is represented in the user instructions because the users schema has no occupation field."
+        },
+        "accounts": {
+          "data": {
+            "acct_elena_blue_8271": {
+              "account_id": "acct_elena_blue_8271",
+              "user_id": "user_elena_park_8271",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "ACTIVE",
+              "date_opened": "06/10/2024",
+              "current_holdings": "1840.25"
+            },
+            "acct_elena_green_8271": {
+              "account_id": "acct_elena_green_8271",
+              "user_id": "user_elena_park_8271",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "status": "ACTIVE",
+              "date_opened": "09/01/2025",
+              "current_holdings": "920.40"
+            }
+          },
+          "notes": "Elena's two active checking accounts and the targets for the duplicate-fee corrections."
+        },
+        "referrals": {
+          "data": {
+            "ref_old_blue_8271": {
+              "referral_id": "ref_old_blue_8271",
+              "referrer_id": "user_elena_park_8271",
+              "referred_account_type": "Blue Account",
+              "referral_status": "COMPLETE",
+              "date": "11/05/2025 03:39:00 EST"
+            },
+            "ref_recent_green_8271": {
+              "referral_id": "ref_recent_green_8271",
+              "referrer_id": "user_elena_park_8271",
+              "referred_account_type": "Green Account (checking)",
+              "referral_status": "COMPLETE",
+              "date": "11/09/2025 14:00:00 EST"
+            }
+          },
+          "notes": "At the fixed timestamp, the old Blue completion is outside the exact rolling nine-day window and the recent Green completion is inside it."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_blue_foreign_withdrawal_8271": {
+              "transaction_id": "txn_blue_foreign_withdrawal_8271",
+              "account_id": "acct_elena_blue_8271",
+              "date": "11/12/2025",
+              "description": "SUCCESSFUL FOREIGN-CURRENCY ATM CASH WITHDRAWAL - USD EQUIVALENT $40.00",
+              "amount": -40.0,
+              "type": "atm_withdrawal",
+              "status": "posted",
+              "hold_amount": 0.0
+            },
+            "txn_blue_rho_foreign_fee_a_8271": {
+              "transaction_id": "txn_blue_rho_foreign_fee_a_8271",
+              "account_id": "acct_elena_blue_8271",
+              "date": "11/12/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - $40 FOREIGN-CURRENCY WITHDRAWAL",
+              "amount": -5.0,
+              "type": "atm_fee",
+              "status": "posted",
+              "hold_amount": 0.0
+            },
+            "txn_blue_rho_foreign_fee_b_8271": {
+              "transaction_id": "txn_blue_rho_foreign_fee_b_8271",
+              "account_id": "acct_elena_blue_8271",
+              "date": "11/12/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - $40 FOREIGN-CURRENCY WITHDRAWAL",
+              "amount": -5.0,
+              "type": "atm_fee",
+              "status": "posted",
+              "hold_amount": 0.0
+            },
+            "txn_green_foreign_withdrawal_8271": {
+              "transaction_id": "txn_green_foreign_withdrawal_8271",
+              "account_id": "acct_elena_green_8271",
+              "date": "11/13/2025",
+              "description": "SUCCESSFUL FOREIGN-CURRENCY ATM CASH WITHDRAWAL - USD EQUIVALENT $100.00",
+              "amount": -100.0,
+              "type": "atm_withdrawal",
+              "status": "posted",
+              "hold_amount": 0.0
+            },
+            "txn_green_rho_foreign_fee_a_8271": {
+              "transaction_id": "txn_green_rho_foreign_fee_a_8271",
+              "account_id": "acct_elena_green_8271",
+              "date": "11/13/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - $100 FOREIGN-CURRENCY WITHDRAWAL",
+              "amount": -5.0,
+              "type": "atm_fee",
+              "status": "posted",
+              "hold_amount": 0.0
+            },
+            "txn_green_rho_foreign_fee_b_8271": {
+              "transaction_id": "txn_green_rho_foreign_fee_b_8271",
+              "account_id": "acct_elena_green_8271",
+              "date": "11/13/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - $100 FOREIGN-CURRENCY WITHDRAWAL",
+              "amount": -5.0,
+              "type": "atm_fee",
+              "status": "posted",
+              "hold_amount": 0.0
+            }
+          },
+          "notes": "Each account has one posted foreign-currency withdrawal and two separate posted Rho-Bank foreign ATM fee lines. No seeded credit exists, and none of the descriptions identifies a third-party operator surcharge."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty so Elena can be verified and logged exactly once in the current session."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discovery state starts empty; discoverable-tool availability comes from the tool catalog rather than seeded rows."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "golden_01_find_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        }
+      },
+      {
+        "action_id": "golden_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "golden_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "user_elena_park_8271",
+          "address": "412 Cedar Row, Richmond, VA 23220",
+          "email": "elena.park97@example.com",
+          "phone_number": "+1-804-555-0186",
+          "date_of_birth": "05/22/1997",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "golden_04_get_referrals",
+        "requestor": "assistant",
+        "name": "get_referrals_by_user",
+        "arguments": {
+          "user_id": "user_elena_park_8271"
+        }
+      },
+      {
+        "action_id": "golden_05_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "golden_06_get_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"user_elena_park_8271\"}"
+        }
+      },
+      {
+        "action_id": "golden_07_submit_referral",
+        "requestor": "user",
+        "name": "submit_referral",
+        "arguments": {
+          "user_id": "user_elena_park_8271",
+          "account_type": "Blue Account"
+        }
+      },
+      {
+        "action_id": "golden_08_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "golden_09_get_blue_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_elena_blue_8271\"}"
+        }
+      },
+      {
+        "action_id": "golden_10_get_green_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_elena_green_8271\"}"
+        }
+      },
+      {
+        "action_id": "golden_11_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829"
+        }
+      },
+      {
+        "action_id": "golden_12_credit_blue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_elena_blue_8271\",\"amount\":5.0,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "golden_13_credit_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_elena_green_8271\",\"amount\":5.0,\"credit_type\":\"fee_refund\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "submit_referral"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_017",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_047",
+    "doc_bank_accounts_bank_accounts_(general)_048",
+    "doc_checking_accounts_blue_account_001",
+    "doc_checking_accounts_blue_account_010",
+    "doc_checking_accounts_blue_account_012",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_green_account_(checking)_010",
+    "doc_checking_accounts_green_account_(checking)_012",
+    "doc_checking_accounts_green_fee-free_account_007"
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "id": "task_generated_pro_079",
+  "description": {
+    "purpose": "Identify the card-specific referral invitation that fits Marcus Okafor's existing Green checking and Silver Rewards holdings, fixed savings allocation, and travel-benefit priority, then submit exactly that referral without changing any product.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “My brother asked for a card referral link today, but the page I found is generic and I don't want to send him the wrong one. Can you help me work out which invitation fits and send that one?” Do not initially name the matching card, give identity details, list financial constraints, or claim to know the exact savings rate.\n\nIf asked who you are or which products you hold, say that you are Marcus Okafor, a 49-year-old self-employed photographer in Boise, Idaho, and that you currently have Green checking and an active Silver Rewards card. If identity details are requested, provide your date of birth as 06/18/1976, address as 1847 W Juniper Ridge Drive, Boise, Idaho 83702, email as marcus.okafor.referral@example.com, and phone number as 208-555-0147. Do not volunteer these details before a relevant request.\n\nIf asked which benefits and financial limits matter, explain that you want to keep your existing Green checking and Silver Rewards card, have exactly $10,000 set aside for a possible savings balance, prefer one-day early direct deposit over no early access, and require included travel insurance. Say that you do not want to open an account, apply for another card, close anything, transfer funds, or otherwise change your products during this call. If asked for the exact effective savings APY, say you do not know it and ask the agent to calculate it from the published benefits. If the agent explains that future covered travel fare must be charged in full to Silver Rewards for coverage to apply, acknowledge that condition.\n\nThe referral must be for the card that satisfies your included-travel-insurance priority and works with your existing Green checking and contemplated Gold savings setup. You will not authorize a new account, a new credit-card application, a closure, a transfer, or a change to your existing Green checking or Silver Rewards card. Any comparison must respect your fixed $10,000 savings allocation rather than assuming you can maintain a larger balance. You will not accept a generic credit-card invitation when the selected card can be identified.\n\nIf the agent proposes an EcoCard, another card, or a new application because it has an attractive rate, say: “I am not looking to add or promote a different card just for a higher rate. I need the invitation for the card I already use that includes the travel benefit, so please check that choice again.” Do not authorize submission of a referral for any card other than the established matching card.\n\nIf the agent proposes Gold Plus, Gold Years, another checking account, an account opening, a transfer, a closure, or another product change, say: “I only have $10,000 set aside and I am not reorganizing my accounts on this call. Please use those limits only to identify the right referral invitation.” Do not authorize any account opening, closure, transfer, credit-card application, or product alteration.\n\nIf the agent proposes a generic credit-card referral or says one has already been submitted, respond: “I called because the generic page was ambiguous. I need the invitation to identify the Silver Rewards card we just discussed, so please check that before I approve it.” Marcus must not approve or execute a referral whose visible target is merely credit card or any card other than Silver Rewards. If the generic invitation was already submitted, say: “I can still see that it is not identified as Silver Rewards. Please correct the invitation or otherwise make sure the specific Silver Rewards invitation is the one issued.” Do not accept or stop while the generic result remains the only outcome.\n\nOnly after the agent identifies Silver Rewards as matching your existing products, travel priority, early-deposit preference, and $10,000 limit, ask the agent to proceed with the Silver Rewards invitation and emphasize that it must be labeled for that card rather than generically. Withhold authorization until the card-specific invitation has been named and connected to those recognizable preferences. Also withhold authorization until the agent confirms that proceeding will submit only the referral without opening, closing, applying for, transferring, or altering another product. Finally, withhold authorization until the agent confirms that your recent referral activity leaves capacity under the current rolling-window limit.\n\nAccept the resolution only after you receive confirmation that the submitted invitation is specifically for Silver Rewards Card. Do not accept while a generic or different-card invitation, new account, application, closure, transfer, or product change remains part of the resolution. Once all of those conditions are satisfied, say: “Thanks, that is the specific invitation I needed.” ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_mokafor_7e2b91c4": {
+              "user_id": "usr_mokafor_7e2b91c4",
+              "name": "Marcus Okafor",
+              "date_of_birth": "06/18/1976",
+              "address": "1847 W Juniper Ridge Drive, Boise, ID 83702",
+              "email": "marcus.okafor.referral@example.com",
+              "phone_number": "208-555-0147",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh customer identity for Marcus Okafor. His date of birth makes him 49 on 11/14/2025; occupation remains a conversational fact because the users schema has no occupation field."
+        },
+        "accounts": {
+          "data": {
+            "acct_mokafor_green_4a8d13f2": {
+              "account_id": "acct_mokafor_green_4a8d13f2",
+              "user_id": "usr_mokafor_7e2b91c4",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "current_holdings": "18450.00",
+              "date_opened": "03/18/2022",
+              "status": "ACTIVE"
+            }
+          },
+          "notes": "Marcus's sole bank-account record for this task: an active Green Account (checking). No savings or alternative checking account is seeded."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_mokafor_silver_9c51e7a3": {
+              "account_id": "ccacct_mokafor_silver_9c51e7a3",
+              "user_id": "usr_mokafor_7e2b91c4",
+              "card_type": "Silver Rewards Card",
+              "current_balance": "842.17",
+              "reward_points": "31840",
+              "date_of_account_open": "08/09/2021",
+              "account_status": "ACTIVE",
+              "status": "OPEN",
+              "card_last_4_digits": "6042",
+              "credit_limit": "24000.00",
+              "past_due_amount": "0.00"
+            }
+          },
+          "notes": "Marcus's only credit-card account is active Silver Rewards. No competing credit-card account is present."
+        },
+        "referrals": {
+          "data": {
+            "ref_mokafor_recent_31bd8a60": {
+              "referral_id": "ref_mokafor_recent_31bd8a60",
+              "referrer_id": "usr_mokafor_7e2b91c4",
+              "referred_account_type": "Platinum Rewards Card",
+              "date": "11/10/2025",
+              "referral_status": "SUCCESSFUL"
+            },
+            "ref_mokafor_old_88f10c27": {
+              "referral_id": "ref_mokafor_old_88f10c27",
+              "referrer_id": "usr_mokafor_7e2b91c4",
+              "referred_account_type": "Bronze Rewards Card",
+              "date": "11/04/2025",
+              "referral_status": "SUCCESSFUL"
+            }
+          },
+          "notes": "The 11/10/2025 successful referral is unambiguously inside the seven-day window at the fixed 11/14/2025 time, while 11/04/2025 is unambiguously outside it regardless of time of day. No Silver Rewards Card or generic credit_card referral for the current interaction exists initially."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "Empty because Marcus has no application in this scenario and does not authorize creating one."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_mokafor_7e2b91c4",
+          "address": "1847 W Juniper Ridge Drive, Boise, ID 83702",
+          "email": "marcus.okafor.referral@example.com",
+          "phone_number": "208-555-0147",
+          "date_of_birth": "06/18/1976",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "act_lookup_marcus",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        }
+      },
+      {
+        "action_id": "act_read_silver_holding",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_mokafor_7e2b91c4"
+        }
+      },
+      {
+        "action_id": "act_read_referral_capacity",
+        "requestor": "assistant",
+        "name": "get_referrals_by_user",
+        "arguments": {
+          "user_id": "usr_mokafor_7e2b91c4"
+        }
+      },
+      {
+        "action_id": "act_submit_silver",
+        "requestor": "user",
+        "name": "submit_referral",
+        "arguments": {
+          "user_id": "usr_mokafor_7e2b91c4",
+          "account_type": "Silver Rewards Card"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "submit_referral"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_gold_years_account_001",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_green_fee-free_account_003",
+    "doc_credit_cards_credit_cards_(general)_002",
+    "doc_credit_cards_credit_cards_(general)_020",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_005",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_gold_plus_account_001",
+    "doc_savings_accounts_gold_plus_account_009"
+  ]
+}

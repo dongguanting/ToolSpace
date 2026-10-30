@@ -1,0 +1,363 @@
+{
+  "id": "task_generated_pro_063",
+  "description": {
+    "purpose": "Resolve one consolidated activity alert by filing the eligible unauthorized debit-card purchase dispute, temporarily securing the implicated card, and correcting one duplicate foreign ATM fee on each affected checking account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Amina Duarte, a 27-year-old laboratory technician living in Phoenix, Arizona. Begin concisely: \"I opened an account-activity alert today and saw a debit-card purchase I didn't authorize, plus some ATM fee lines that look duplicated. Can you review and fix this?\" Do not initially provide transaction identifiers, verification details, detailed family circumstances, exact fee corrections, or policy conclusions.\n\nIf asked to verify identity or ownership, provide your date of birth as 04/18/1998, address as 1842 E Hazelwood Street, Phoenix, Arizona 85016, email as amina.duarte@example.net, and phone number as 602-555-0148. Answer reasonable verification questions naturally, but keep the purchase circumstances and individual ATM fee rows private until relevant questions are asked.\n\nIf asked which purchase was unauthorized or how it occurred, identify the $40 Desert Grocer PIN purchase dated November 12 on your Blue Account. Explain that your sister used the card without your permission, the card has been returned to you, you had voluntarily shared the PIN with her, and you do not suspect unknown fraud. Say you noticed the issue on November 14 from the November 13 statement. If asked, say you have not contacted the merchant or filed a police report, you still have the card, and you agree that this conversation may serve as your written statement.\n\nIf asked which ATM fees appear wrong, explain that an authorized $40 foreign-currency ATM withdrawal on the Blue Account is followed by two identical $5 Rho-Bank foreign ATM fee lines, and an authorized $100 foreign-currency ATM withdrawal on the Green Account is also followed by two identical $5 Rho-Bank foreign ATM fee lines. Say you made both withdrawals and are unsure which exact fee rows should be reversed. Do not claim to know the governing formula or the proper correction before the agent reviews the records. Only after the agent confirms that one fee in each identical pair is unsupported, ask the agent to correct the duplicate charge on each account.\n\nPreserve these commitments throughout the conversation: you want the identified $40 purchase formally disputed because you did not permit it; you want the implicated card protected during the investigation without an unnecessary permanent replacement when it has been returned and fraud is not suspected; and you want the duplicate bank-origin foreign ATM fee on each affected checking account corrected without reversing either authorized withdrawal or any unrelated charge.\n\nIf the agent proposes merely monitoring the $40 purchase or treating it as authorized because your sister made it, state: \"I did not give permission for this purchase, so I still want it formally disputed.\" Do not authorize a resolution that leaves the $40 transaction without a filed dispute.\n\nIf the agent proposes leaving the card fully usable during the investigation or permanently replacing it without identifying theft or fraud, say: \"The card is back in my possession, but I want it protected while this is reviewed. Could you check whether it can be temporarily secured instead of left active or permanently replaced?\" Do not approve an outcome that leaves the card unprotected or permanently replaces it without a newly established security reason.\n\nIf the agent offers a correction for only one account, reverses an authorized withdrawal, or proposes one unexplained amount that does not separately address both fee sets, say: \"Both withdrawals were mine. The repeated bank fee beside each withdrawal is the concern, so please check the Blue and Green accounts separately.\" Authorize only corrections directed to the duplicate bank fee on each account, not reversal of either withdrawal or unrelated activity.\n\nDo not authorize corrective actions until your identity and ownership of both affected accounts have been matched, the agent has distinguished the unauthorized $40 purchase from the two authorized ATM withdrawals and their fee rows, and the agent has explained which transaction will be disputed, how the card will be protected, and that each account will receive its own duplicate-fee correction.\n\nDo not accept the resolution or stop until the agent confirms all of the following: the $40 purchase has a formal dispute; the Blue card is temporarily unusable pending investigation and has not been unnecessarily replaced; and a $5 correction has been applied to the Blue Account with a separate $5 correction applied to the Green Account. If only one item or one account is completed, ask directly about what remains.\n\nIf the agent cannot complete an otherwise eligible change after one reasonable retry, or denies the case without addressing the visible records, ask the agent to reconsider using the transaction details already provided. If the system still prevents resolution, ask for appropriate human assistance. Do not request escalation on the successful path.\n\nAfter every completion condition is confirmed, say exactly: Thanks for taking care of all three items. ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_amdu_9251": {
+              "user_id": "usr_amdu_9251",
+              "name": "Amina Duarte",
+              "date_of_birth": "04/18/1998",
+              "address": "1842 E Hazelwood Street, Phoenix, Arizona 85016",
+              "email": "amina.duarte@example.net",
+              "phone_number": "602-555-0148"
+            }
+          },
+          "notes": "Amina Duarte is the verified owner candidate for both checking accounts. Her supplied birth date makes her 27 at the fixed interaction date."
+        },
+        "accounts": {
+          "data": {
+            "acct_blue_7406": {
+              "account_id": "acct_blue_7406",
+              "user_id": "usr_amdu_9251",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "OPEN",
+              "date_opened": "06/21/2022",
+              "current_holdings": "1920.40"
+            },
+            "acct_green_2854": {
+              "account_id": "acct_green_2854",
+              "user_id": "usr_amdu_9251",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "status": "OPEN",
+              "date_opened": "02/07/2023",
+              "current_holdings": "2860.00"
+            }
+          },
+          "notes": "Both affected accounts are open checking accounts owned by Amina and were opened more than 30 days before the fixed interaction date."
+        },
+        "debit_cards": {
+          "data": {
+            "dc_blue_4186": {
+              "card_id": "dc_blue_4186",
+              "account_id": "acct_blue_7406",
+              "user_id": "usr_amdu_9251",
+              "last_4_digits": "4186",
+              "status": "ACTIVE",
+              "issue_reason": "first_card",
+              "cardholder_name": "Amina Duarte",
+              "cvv": "614",
+              "expiration_date": "08/29",
+              "issue_date": "06/21/2022",
+              "daily_atm_limit": 500,
+              "daily_purchase_limit": 4000
+            },
+            "dc_green_7392": {
+              "card_id": "dc_green_7392",
+              "account_id": "acct_green_2854",
+              "user_id": "usr_amdu_9251",
+              "last_4_digits": "7392",
+              "status": "ACTIVE",
+              "issue_reason": "first_card",
+              "cardholder_name": "Amina Duarte",
+              "cvv": "287",
+              "expiration_date": "11/29",
+              "issue_date": "02/07/2023",
+              "daily_atm_limit": 600,
+              "daily_purchase_limit": 4000
+            }
+          },
+          "notes": "The Blue card implicated in the purchase and the Green card associated with the authorized withdrawal are both initially active."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_grocery_1112_40": {
+              "transaction_id": "txn_grocery_1112_40",
+              "account_id": "acct_blue_7406",
+              "date": "11/12/2025",
+              "description": "DEBIT PURCHASE PIN - DESERT GROCER PHOENIX AZ",
+              "amount": -40.0,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "txn_blue_atm_1108_40": {
+              "transaction_id": "txn_blue_atm_1108_40",
+              "account_id": "acct_blue_7406",
+              "date": "11/08/2025",
+              "description": "ATM WITHDRAWAL - BANCO DEL SOL - FOREIGN CURRENCY - USD EQUIVALENT 40.00",
+              "amount": -40.0,
+              "type": "atm_withdrawal",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "txn_blue_fee_a_1108": {
+              "transaction_id": "txn_blue_fee_a_1108",
+              "account_id": "acct_blue_7406",
+              "date": "11/08/2025",
+              "description": "RHO-BANK FOREIGN ATM FEE - BANCO DEL SOL - BANK-ORIGIN FEE",
+              "amount": -5.0,
+              "type": "atm_fee",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "txn_blue_fee_b_1108": {
+              "transaction_id": "txn_blue_fee_b_1108",
+              "account_id": "acct_blue_7406",
+              "date": "11/08/2025",
+              "description": "RHO-BANK FOREIGN ATM FEE - BANCO DEL SOL - BANK-ORIGIN FEE - DUPLICATE",
+              "amount": -5.0,
+              "type": "atm_fee",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "txn_green_atm_1110_100": {
+              "transaction_id": "txn_green_atm_1110_100",
+              "account_id": "acct_green_2854",
+              "date": "11/10/2025",
+              "description": "ATM WITHDRAWAL - BANQUE CENTRALE - FOREIGN CURRENCY - USD EQUIVALENT 100.00",
+              "amount": -100.0,
+              "type": "atm_withdrawal",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "txn_green_fee_a_1110": {
+              "transaction_id": "txn_green_fee_a_1110",
+              "account_id": "acct_green_2854",
+              "date": "11/10/2025",
+              "description": "RHO-BANK FOREIGN ATM FEE - BANQUE CENTRALE - BANK-ORIGIN FEE",
+              "amount": -5.0,
+              "type": "atm_fee",
+              "status": "posted",
+              "hold_amount": 0
+            },
+            "txn_green_fee_b_1110": {
+              "transaction_id": "txn_green_fee_b_1110",
+              "account_id": "acct_green_2854",
+              "date": "11/10/2025",
+              "description": "RHO-BANK FOREIGN ATM FEE - BANQUE CENTRALE - BANK-ORIGIN FEE - DUPLICATE",
+              "amount": -5.0,
+              "type": "atm_fee",
+              "status": "posted",
+              "hold_amount": 0
+            }
+          },
+          "notes": "Seven posted records support the dispute and fee review. The fee descriptions explicitly identify bank-origin foreign ATM fees rather than ATM-operator surcharges. No recent checking credit is present."
+        },
+        "debit_card_disputes": {
+          "data": {},
+          "notes": "There are initially zero debit-card disputes, including zero open disputes for the Blue Account and no dispute for the selected purchase."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be created during the interaction; no verification record is pre-seeded."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable-tool availability is provided by the tool catalog; this operational table starts empty."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "action_01_locate_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        }
+      },
+      {
+        "action_id": "action_02_get_fixed_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "action_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "usr_amdu_9251",
+          "address": "1842 E Hazelwood Street, Phoenix, Arizona 85016",
+          "email": "amina.duarte@example.net",
+          "phone_number": "602-555-0148",
+          "date_of_birth": "04/18/1998",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "action_04_unlock_accounts_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "action_05_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_amdu_9251\"}"
+        }
+      },
+      {
+        "action_id": "action_06_unlock_transaction_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "action_07_read_blue_activity",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_blue_7406\"}"
+        }
+      },
+      {
+        "action_id": "action_08_read_green_activity",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_green_2854\"}"
+        }
+      },
+      {
+        "action_id": "action_09_unlock_card_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "action_10_read_blue_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_blue_7406\"}"
+        }
+      },
+      {
+        "action_id": "action_11_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483"
+        }
+      },
+      {
+        "action_id": "action_12_read_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_dispute_status_7483",
+          "arguments": "{\"user_id\":\"usr_amdu_9251\"}"
+        }
+      },
+      {
+        "action_id": "action_13_unlock_dispute_filing",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281"
+        }
+      },
+      {
+        "action_id": "action_14_file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_grocery_1112_40\",\"account_id\":\"acct_blue_7406\",\"card_id\":\"dc_blue_4186\",\"user_id\":\"usr_amdu_9251\",\"dispute_category\":\"unauthorized_transaction\",\"transaction_date\":\"11/12/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":40.0,\"transaction_type\":\"pin_purchase\",\"card_in_possession\":true,\"pin_compromised\":\"yes_shared\",\"contacted_merchant\":false,\"police_report_filed\":false,\"written_statement_provided\":true,\"provisional_credit_eligible\":false,\"customer_max_liability_amount\":50.0,\"card_action\":\"freeze_pending_investigation\"}"
+        }
+      },
+      {
+        "action_id": "action_15_unlock_card_freeze",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "freeze_debit_card_3892"
+        }
+      },
+      {
+        "action_id": "action_16_freeze_blue_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "freeze_debit_card_3892",
+          "arguments": "{\"card_id\":\"dc_blue_4186\"}"
+        }
+      },
+      {
+        "action_id": "action_17_unlock_checking_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829"
+        }
+      },
+      {
+        "action_id": "action_18_credit_blue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_blue_7406\",\"amount\":5.0,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "action_19_credit_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_green_2854\",\"amount\":5.0,\"credit_type\":\"fee_refund\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_017",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_028",
+    "doc_bank_accounts_bank_accounts_(general)_031",
+    "doc_bank_accounts_bank_accounts_(general)_032",
+    "doc_bank_accounts_bank_accounts_(general)_037",
+    "doc_checking_accounts_blue_account_001",
+    "doc_checking_accounts_blue_account_012",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_green_account_(checking)_010",
+    "doc_checking_accounts_green_account_(checking)_012"
+  ]
+}

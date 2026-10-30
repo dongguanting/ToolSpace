@@ -1,0 +1,230 @@
+{
+  "id": "task_generated_pro_004",
+  "description": {
+    "purpose": "Establish Amina's replacement banking arrangement, select the worthwhile shortlisted card application using conditional net benefits, preserve its pending endpoint, and retire her empty old checking without moving money.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “The transfer emptying my old checking just finished. Can you help me set up my savings and replacement checking now?” Be concise and cooperative.\n\nWhen asked for identity or background, provide the relevant details: Amina Duarte, 34, self-employed photographer in Boise, Idaho; DOB 03/09/1991; 2186 W Hazel Street, Boise, ID 83702; amina.duarte@example.com; 208-555-0146. Do not volunteer verification details before asked.\n\nWhen asked about accounts, budget or plans, explain: your Light Blue checking is empty after the $1,264.18 external transfer posted November 13. You have $6,000 elsewhere: a fixed $1,000 bills reserve for already-chosen Evergreen checking and $5,000 in one savings account, comparing only Green and Bronze. Compare money you keep over a full year at unchanged rates and balances, without savings withdrawals. Electronic statements are fine. You will fund both accounts yourself after this call and want the old checking retired. Do not change this allocation, split savings, add unlisted products or authorize money movements. Agree to bank opening only after the agent explains the proposed products, fees and funding arrangements and they fit this plan. Authorize retirement only after both replacement accounts are confirmed open.\n\nOnly when the agent explains the chosen savings account’s card-related benefits, ask whether Silver Rewards or EcoCard is worth applying for. Want at most one application, based on retained money after fees, not the largest advertised rate. You pay in full and plan no card purchases or ATM use; do not agree to spending or extra products. When asked for application details, give annual income $86,400, current reported credit score 704 and no Rho-Bank+ subscription. After the comparison and credit-check terms are explained and you agree, consent to the check and personally submit the application using your application capability. Do not authorize additional applications. When its receipt arrives, report that it is under review: you can wait for a decision, but ask to finish any remaining bank cleanup. A receipt is not approval or an activated benefit.\n\nFor any recognizable departure from these preferences or an unfinished outcome, withhold consent, name the visible conflict and ask the agent to check the plan again. If a fee-bearing card is recommended without a net comparison, pause submission and ask whether the extra interest really covers the fee; do not submit merely for a larger advertised rate. After an explanation, rely on the agent’s analysis unless it contradicts facts you know; do not invent rates or diagnose hidden arithmetic. If an action already departed from the plan, or the agent later acknowledges a mistaken fee comparison, request help addressing it before accepting completion; do not assume cancellation is available or submit another application. If an arithmetic error remains undisclosed, preserve your uncertainty.\n\nAccept only when both agreed bank accounts are confirmed open, the old checking is confirmed closed, you have your one application receipt and understand a decision is outstanding, and you know the deadline for making your own savings deposit. Any visible departure must first be addressed. Then thank the agent briefly and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "ad_8c72f041": {
+              "user_id": "ad_8c72f041",
+              "name": "Amina Duarte",
+              "date_of_birth": "03/09/1991",
+              "address": "2186 W Hazel Street, Boise, ID 83702",
+              "email": "amina.duarte@example.com",
+              "phone_number": "208-555-0146",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh fixture customer, age 34 at the fixed environment date. This initialization is a patch; unrelated default users are not replaced."
+        },
+        "accounts": {
+          "data": {
+            "chk_ad_8c72_old": {
+              "account_id": "chk_ad_8c72_old",
+              "user_id": "ad_8c72f041",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "account_type": "checking",
+              "account_class": "Light Blue Account",
+              "date_opened": "10/03/2024",
+              "status": "OPEN",
+              "current_holdings": "0.00"
+            }
+          },
+          "notes": "Exactly one customer-owned initial account is supplied. Its 407-day tenure supports savings opening. The customer has no other accounts, negative balances, collections or closure-for-cause history. New accounts must be created by tools, without retrofitted legacy aliases."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_ad_final_sweep_1113": {
+              "transaction_id": "txn_ad_final_sweep_1113",
+              "account_id": "chk_ad_8c72_old",
+              "date": "11/13/2025",
+              "description": "Final transfer to my external bank",
+              "amount": -1264.18,
+              "type": "ach_transfer_out",
+              "status": "posted"
+            }
+          },
+          "notes": "Recent-history excerpt: immediately before this posted outgoing sweep the account held $1,264.18; it now holds zero. There are no pending transactions for the fixture customer. Do not execute another sweep."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No supplied card accounts; the fresh customer has no existing cards. Pending submission must not create an active card. Empty patch does not replace unrelated defaults."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No pre-existing Amina Duarte application. Evaluate the single inserted application by new-row delta and exact customer_name; this table has no user_id."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Starts empty in the supplied fixture. Create one current-session verification through the direct tool after matching identity and obtaining the fixed timestamp."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "No seeded tool descriptors or availability flags. Availability comes from the tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        },
+        "info": "Reference support: compare the caller's requested identity answers with the returned record; confirm at least two identity fields."
+      },
+      {
+        "action_id": "a02",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "a03",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "ad_8c72f041",
+          "address": "2186 W Hazel Street, Boise, ID 83702",
+          "email": "amina.duarte@example.com",
+          "phone_number": "208-555-0146",
+          "date_of_birth": "03/09/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "a04",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "a05",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"ad_8c72f041\"}"
+        },
+        "info": "Unscored support for account ownership, count, tenure, standing, absence of cards and discovery of the closure target."
+      },
+      {
+        "action_id": "a06",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "a07",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_ad_8c72_old\"}"
+        },
+        "info": "Unscored support for the closure prerequisite of no pending transactions, not a demand to recheck available balance or perform a transfer."
+      },
+      {
+        "action_id": "a08",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "a09",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"ad_8c72f041\",\"account_type\":\"savings\",\"account_class\":\"Green Account\"}"
+        },
+        "info": "After Green selection and paperless acceptance, open while the mature checking remains OPEN. Customer defers funding, acknowledges 30 days through 12/14/2025 and the closure consequence. Bind the returned account ID as 9657ad8534ed3ecd."
+      },
+      {
+        "action_id": "a10",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"ad_8c72f041\",\"account_type\":\"checking\",\"account_class\":\"Evergreen Account\"}"
+        },
+        "info": "Customer confirms Evergreen after fee disclosure. Bind returned account ID as 56caa3656290538a. No funding, fee waiver, statement enrollment or APY field is written."
+      },
+      {
+        "action_id": "a11",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Silver Rewards Card",
+          "customer_name": "Amina Duarte",
+          "annual_income": 86400,
+          "rho_bank_subscription": false
+        },
+        "info": "After the conditional net comparison, accurate application details and credit-check consent, the customer submits directly. Bind the returned application_id to the inserted-row delta for Amina Duarte; do not fabricate an application identifier or approval."
+      },
+      {
+        "action_id": "a12",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "a13",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"chk_ad_8c72_old\",\"reason\":\"Customer requested replacement checking setup\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "After both replacement accounts are confirmed and the customer authorizes retirement, close only the mature empty Light Blue account."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_001",
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_evergreen_account_002",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_green_account_(savings)_002",
+    "doc_savings_accounts_green_account_(savings)_003",
+    "doc_savings_accounts_green_account_(savings)_005",
+    "doc_savings_accounts_bronze_account_001",
+    "doc_savings_accounts_bronze_account_007",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_ecocard_001"
+  ]
+}

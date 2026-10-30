@@ -1,0 +1,174 @@
+{
+  "id": "task_generated_pro_093",
+  "description": {
+    "purpose": "Help Maya choose and establish one no-annual-fee card-and-savings pairing, then place her newly received project payment into the selected savings account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concerned but calm by saying: “I just received payment for a large translation project and want to move it into savings, possibly with one suitable card, but I do not want to end up depending on an annual-fee rebate. Can you help me choose and set it up?” Do not initially name a product, quote policy thresholds, or volunteer all of your personal and financial details.\n\nIf the agent asks to verify your identity, say that you are Maya Iqbal and provide: date of birth 03/22/1965, address 812 West Lanvale Street, Baltimore, Maryland 21217, email maya.iqbal.ledger@example.com, and phone number 410-555-0186. Answer reasonable verification questions accurately.\n\nIf the agent asks about the amount, account use, eligibility, or how you want the products compared, explain that the posted translation-project payment is $25,000 and you want exactly that amount moved. Say that you expect about 18 withdrawals per month, have a reported credit score of 742, earn $94,000 annually, have an active Rho-Bank+ subscription, and have not received a Diamond invitation. Explain that you want an eligible card with no annual fee rather than relying on a future rebate. Among eligible no-annual-fee pairings that meet your access need, ask for the account with the highest documented base savings APY and then the largest documented same-profile card bonus.\n\nMaya will not select a card with a positive annual fee based on a promise that a future rebate might offset it. Maya wants exactly one card application and one new savings account, with no added or duplicate product. Maya wants exactly $25,000 transferred from her existing checking account into the one selected savings account, without splitting the allocation. The selected savings account must support Maya's expected 18 withdrawals per month. Among eligible no-annual-fee pairings that meet the access need, Maya prioritizes the highest documented base savings APY and then the largest documented same-profile card bonus.\n\nIf a positive-annual-fee card or reliance on a later rebate is proposed, say: “I would rather not count on earning a rebate later. Please check the choices that do not charge me an annual fee.” Maya does not authorize an application for any card whose disclosed annual fee is above $0.\n\nIf another card, another savings account, or a split allocation is proposed, say: “I only want one card and one savings account, and I want this project payment kept together. Please use the single pairing that best fits those preferences.” Maya authorizes no second application, second new account, or transfer amount other than $25,000 to the selected account.\n\nIf an account with fewer than 18 permitted withdrawals in the relevant period is proposed, say: “That access limit would be too low for how I use savings. Could you check the options that accommodate about 18 withdrawals?” Maya does not authorize opening an account with a disclosed limit below her expected 18 withdrawals.\n\nBefore authorizing the card application, Maya must be told that the selected card has a $0 annual fee, meets her known eligibility facts, and is the single pairing selected under her stated priorities. Once those points are explained, authorize and submit only that one application with your actual income and active subscription status.\n\nBefore authorizing the savings opening, Maya's identity must be verified and the exact account must be identified as one savings account that supports at least 18 withdrawals. Do not agree to a different or additional account.\n\nDo not authorize movement of the money merely because a product was discussed. Before authorizing the transfer, the new savings account must already exist, be recognizable as Maya's selected account, and the proposed transfer must be exactly $25,000 from her existing checking account. Only after the agent confirms that the single selected savings account has been opened and identifies it as your new account, say: “Yes, please transfer the full $25,000 from my existing checking account into that new savings account now.”\n\nIf the agent tries to finish after only explaining the products, submitting the application, or opening the account, say: “Before we finish, please make sure the one savings account is open and the full project payment has actually been moved into it.” Maya does not accept closure while the application, account opening, or authorized funding outcome remains incomplete.\n\nMaya has recognizable confirmation that exactly one application was submitted for the selected $0-annual-fee card before accepting the card outcome. Maya has recognizable confirmation that exactly one selected savings account was opened in her name before accepting the savings outcome. Maya has recognizable confirmation that $25,000 was moved into the new account and no split allocation or additional product was created before accepting the funding outcome.\n\nIf, after one clarification, the agent refuses or cannot complete an otherwise eligible application, opening, or authorized funding transfer, become firmer and ask to speak with a human agent. Do not ask for escalation during a successful resolution.\n\nRemain cautious until every outcome is confirmed. Only after exactly one $0-annual-fee card application is submitted, exactly one qualifying savings account is opened, exactly $25,000 is moved from checking into it, and no additional product or split allocation is created, become relieved, thank the agent briefly, and end with exactly: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_maya_iqbal_7f3c91": {
+              "user_id": "usr_maya_iqbal_7f3c91",
+              "name": "Maya Iqbal",
+              "date_of_birth": "03/22/1965",
+              "address": "812 West Lanvale Street, Baltimore, MD 21217",
+              "email": "maya.iqbal.ledger@example.com",
+              "phone_number": "410-555-0186",
+              "rho_bank_plus_subscription": true
+            }
+          },
+          "notes": "Fresh Maya Iqbal identity. DOB uses MM/DD/YYYY consistently with the verification tool contract."
+        },
+        "accounts": {
+          "data": {
+            "acct_maya_checking_c8427e": {
+              "account_id": "acct_maya_checking_c8427e",
+              "user_id": "usr_maya_iqbal_7f3c91",
+              "class": "checking",
+              "level": "Standard Checking Account",
+              "status": "ACTIVE",
+              "date_opened": "09/03/2024",
+              "current_holdings": "38000"
+            }
+          },
+          "notes": "Maya's only initial account is an active checking account. A $25,000 transfer leaves $13,000 and no negative balance."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Intentionally empty; current-session verification must be created during the interaction."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No pre-existing card application exists for Maya."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_maya_translation_251114_91ad": {
+              "transaction_id": "txn_maya_translation_251114_91ad",
+              "account_id": "acct_maya_checking_c8427e",
+              "amount": 25000,
+              "date": "11/14/2025",
+              "description": "Posted payment for completed translation project",
+              "status": "POSTED",
+              "type": "deposit"
+            }
+          },
+          "notes": "The sole trigger event is the posted $25,000 translation-project payment."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discoverable-tool state begins empty; availability is supplied by the tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_locate_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        }
+      },
+      {
+        "action_id": "act_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_maya_iqbal_7f3c91",
+          "address": "812 West Lanvale Street, Baltimore, MD 21217",
+          "email": "maya.iqbal.ledger@example.com",
+          "phone_number": "410-555-0186",
+          "date_of_birth": "03/22/1965",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_apply_gold_rewards",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Gold Rewards Card",
+          "customer_name": "Maya Iqbal",
+          "annual_income": 94000,
+          "rho_bank_subscription": true
+        }
+      },
+      {
+        "action_id": "act_05_unlock_open_account",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "act_06_open_gold_plus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_7f3c91\",\"account_type\":\"savings\",\"account_class\":\"Gold Plus Account\"}"
+        }
+      },
+      {
+        "action_id": "act_07_unlock_transfer",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "act_08_transfer_project_payment",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_maya_checking_c8427e\",\"destination_account_id\":\"9d46f473de50d2d6\",\"amount\":25000}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_diamond_elite_card_001",
+    "doc_credit_cards_ecocard_001",
+    "doc_credit_cards_gold_rewards_card_001",
+    "doc_credit_cards_platinum_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_gold_plus_account_001",
+    "doc_savings_accounts_gold_plus_account_002",
+    "doc_savings_accounts_gold_plus_account_009",
+    "doc_savings_accounts_silver_account_001",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_009"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "id": "task_generated_pro_020",
+  "description": {
+    "purpose": "Implement Amina Duarte's constrained, annual-card-fee-adjusted savings recommendation by opening Green savings and Evergreen checking, retaining her existing Silver Rewards Card, and closing her established empty Light Blue checking account without moving money.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Amina Duarte, a 29-year-old freelance translator living in Madison, Wisconsin. Be concise, practical, and cooperative without agreeing to changes that defeat your goals. The call takes place on November 14, 2025.\n\nBegin with only: \"A client payment just arrived, and I'd like help setting up my savings so that money earns more.\"\n\nWhen asked to identify or verify yourself, answer only the requested questions accurately. Your full name is Amina Duarte, birthday April 18, 1996, address 418 Willow Bend Lane, Apt 6, Madison, WI 53704, email amina.duarte@example.com, and phone 608-555-0142. Do not volunteer these details before a relevant question. Answer the requested identity questions before authorizing any account changes.\n\nWhen asked about the available money, explain that a final client payment has left $8,200 available at your other bank. You intend to leave the full amount in savings for a year; ask the agent to compare a constant balance using the quoted rates. Keep the whole $8,200 in one savings account; do not add funds, borrow, split it, or knowingly choose an account whose ongoing minimum you cannot maintain. Choose according to annual savings interest after the compared card's annual fee, not spending rewards, introductory purchase offers, or the highest displayed APY alone.\n\nWhen asked about your existing products or preferred setup, explain the relevant facts in the smallest coherent group that answers the question. Your Light Blue checking account, ending 4826, is unused and empty; there are no pending transactions or arrangements that need moving. You have a Silver Rewards Card ending 7319, with nothing owed or overdue. You want Evergreen to replace Light Blue, not a second checking account to keep indefinitely. Use Evergreen as the replacement checking account and consider savings only from plain Bronze, plain Gold, or Green with its documented linked benefits. Keep at most one credit card: retain your existing Silver Rewards unless a supported comparison shows that replacing it with Bronze Rewards or EcoCard improves the savings return after the annual fee. Do not add a card, subscription, or unrelated product. Finish with the replacement checking account ready and the unused Light Blue account closed; do not abandon either half of the replacement.\n\nWhen asked about funding or the practical setup, explain that you will arrange the deposit from your other bank yourself. Do not authorize any movement or debit of money during this call; you will arrange external funding after opening. You already use paperless statements and want paperless for the new savings account. Continue paperless statements without paper delivery or a separate statement-delivery change. You are willing to fund within the window the agent explains. You do not initially know the applicable rates, which choice is best, the funding deadline, or whether any card benefit has been linked. Ask for those explanations rather than inventing them. Do not volunteer policy arithmetic or an internal order of operations.\n\nIf the agent offers an unexplained menu, ask for one recommendation based on what the entire $8,200 would earn after the card's annual fee. Before authorizing openings, require the agent to identify the proposed savings account, Evergreen checking, and what will happen to your existing card, and to explain why the setup fits your budget and fee-adjusted savings goal. Authorize changes only if they respect your shortlist, one-card limit, single savings allocation, paperless preference, and instruction not to move money. Do not repeat or adopt a proposed amount, product, or added service that contradicts these limits.\n\nOnly after the agent confirms that both the new savings account and Evergreen checking are open, say: \"Now that the new accounts are ready, please close the old Light Blue account so I don't leave two checking accounts running.\" Until that confirmation, do not give this closing instruction. Authorize closure only after both new accounts are confirmed open and the agent confirms that closing Light Blue requires no debit. If the agent explains that the established checking relationship should remain available until savings is opened, cooperate, while keeping your goal of completing the replacement.\n\nIf a card change is recommended merely for a higher displayed APY, purchase rewards, or a purchase promotion, say: \"Before I agree to changing cards, can you check what I'd actually keep from this savings amount after the card fee? I'm not planning extra purchases to earn rewards.\" Do not authorize a card replacement or application without a supported annual-fee-adjusted savings advantage. If an unwanted application was already submitted, say you did not agree and ask for help correcting it while preserving the savings setup.\n\nIf the proposal involves splitting the money, adding funds, borrowing, or accepting an ongoing minimum above your budget, say: \"The $8,200 is the full amount, and I want it together in one savings account. Please work within that rather than assuming I'll add money or accept a balance shortfall.\" Do not authorize a split, larger deposit, borrowing, or a selection that assumes you will maintain more money than you have committed.\n\nIf an account outside your shortlist, another card, a subscription, or an unrelated product is proposed, say: \"I'd like to stay with the products I listed and keep only one card. Please find the best setup within those limits instead of adding another product.\" Do not authorize an application, opening, or subscription outside that scope. If an unwanted product was already added, ask for help correcting it rather than accepting it.\n\nIf the agent proposes closing Light Blue before the new setup is ready, leaving it open indefinitely, or ending after only one new account, say: \"I want the replacement ready before the old one is closed, but I don't want to finish with both checking accounts still open. Can we complete the switch?\" Withhold approval for premature closure and do not accept an incomplete replacement. If premature closure already happened, ask the agent to investigate how to finish your requested setup; do not suggest a technical remedy.\n\nIf a transfer, funding debit, closure charge, or other money movement is proposed, say: \"Please don't move or debit any money now. I'll arrange the deposit from my other bank. If there's a charge to finish the switch, please explain it before doing anything.\" No transfer, deposit debit, or fee is authorized by your request to open accounts. Ask whether opening with funding to follow is possible. If money already moved, ask the agent to review and correct the unauthorized movement before you accept completion.\n\nIf paper statements or a change away from paperless is proposed, say: \"I already use paperless statements and want to keep that. Please don't change me to paper statements.\" Do not authorize a change away from paperless.\n\nBase objections only on your budget, preferences, existing products, and what the agent has told you. You may revise an unsupported belief after a grounded explanation, but must not give up these commitments merely because the agent recommends doing so. If an unwanted action occurs, keep the conversation open and ask for correction until your recognizable goals are restored.\n\nDo not accept completion or stop until the agent confirms that the selected savings account and Evergreen checking are open. Do not accept completion or stop until the agent confirms that Light Blue is closed without a debit. Do not accept completion or stop until your existing card is retained and no unwanted card, account, or subscription has been added. Do not accept completion or stop until no money has been moved or debited and you understand the deadline for arranging external funding and the consequence of not funding. Do not accept completion or stop until you understand that the quoted return is a funded-account projection subject to the stated benefit conditions, not interest already being earned on an empty account or assurance that an unexplained card link was completed. Ask about any missing condition. Once every condition holds, briefly thank the agent, say you will arrange the deposit, and end with exactly this marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "fresh_amina_duarte_1246": {
+              "user_id": "fresh_amina_duarte_1246",
+              "name": "Amina Duarte",
+              "date_of_birth": "04/18/1996",
+              "address": "418 Willow Bend Lane, Apt 6, Madison, WI 53704",
+              "email": "amina.duarte@example.com",
+              "phone_number": "608-555-0142",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh sole-owner customer, age 29 on 11/14/2025. Occupation, external payment, and existing paperless arrangement are customer narrative, not invented database fields. No default records are owned by this user."
+        },
+        "accounts": {
+          "data": {
+            "amina_lb_1246_4826": {
+              "account_id": "amina_lb_1246_4826",
+              "user_id": "fresh_amina_duarte_1246",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "0.00",
+              "date_opened": "07/08/2024"
+            }
+          },
+          "notes": "Initially the user's only deposit account. Its 494-day tenure supplies savings eligibility and puts closure outside the entry-tier fee window. Both new-account deterministic keys are initially absent. No external bank account or planned deposit is represented as a Rho-Bank record."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "amina_silver_1246_7319": {
+              "account_id": "amina_silver_1246_7319",
+              "user_id": "fresh_amina_duarte_1246",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "7319",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "credit_limit": "14500.00",
+              "reward_points": "0.00",
+              "date_of_account_open": "03/07/2023"
+            }
+          },
+          "notes": "The user's sole existing credit card, in good standing. Retain every field unchanged. No credit-score or savings-link field is invented."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No pre-existing application for Amina; no successful-path application is created."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Current-session evidence must be created after matching caller-provided identity details."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No transaction references amina_lb_1246_4826, including no pending transaction. No external-payment, funding, fee, interest, or transfer row is seeded."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty dispatch machinery. Capabilities come from the real tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a01_identify",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        },
+        "info": "Reference-only lookup after the caller supplies her name. Match her requested identity answers against this profile; confirm at least two of DOB, email, phone, and address."
+      },
+      {
+        "action_id": "a02_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Reference-only timestamp retrieval: 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "a03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "fresh_amina_duarte_1246",
+          "address": "418 Willow Bend Lane, Apt 6, Madison, WI 53704",
+          "email": "amina.duarte@example.com",
+          "phone_number": "608-555-0142",
+          "date_of_birth": "04/18/1996",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Creates current-session verification after matching the caller's answers."
+      },
+      {
+        "action_id": "a04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Ephemeral availability only; not an evaluated banking mutation."
+      },
+      {
+        "action_id": "a05_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"fresh_amina_duarte_1246\"}"
+        },
+        "info": "Reference-only discovery of the old account and existing card IDs, checking tenure, zero savings count, statuses, balances, and ownership."
+      },
+      {
+        "action_id": "a06_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        },
+        "info": "Ephemeral availability only."
+      },
+      {
+        "action_id": "a07_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"fresh_amina_duarte_1246\",\"account_type\":\"savings\",\"account_class\":\"Green Account\"}"
+        },
+        "info": "After explaining the constrained comparison and obtaining consent, create zero-balance Green savings while Light Blue remains OPEN. The caller declines an immediate transfer, continues her existing paperless arrangement, and acknowledges the 30-day external-funding window, ending 12/14/2025. Bind the returned account_id; its exact definition is lowercase SHA-256 of UTF-8 'account:fresh_amina_duarte_1246:savings:Green Account', first 16 hexadecimal characters. The card bonus remains a conditional projection, not a linking mutation."
+      },
+      {
+        "action_id": "a08_open_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"fresh_amina_duarte_1246\",\"account_type\":\"checking\",\"account_class\":\"Evergreen Account\"}"
+        },
+        "info": "Create the authorized zero-balance replacement checking account under the same profile. Bind the returned account_id; its exact definition is lowercase SHA-256 of UTF-8 'account:fresh_amina_duarte_1246:checking:Evergreen Account', first 16 hexadecimal characters."
+      },
+      {
+        "action_id": "a09_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        },
+        "info": "Uses the lookup; availability is ephemeral."
+      },
+      {
+        "action_id": "a10_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"amina_lb_1246_4826\"}"
+        },
+        "info": "Reference-only evidence of no pending transactions before closure. This lookup is not an independently evaluated requirement."
+      },
+      {
+        "action_id": "a11_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        },
+        "info": "Ephemeral availability only."
+      },
+      {
+        "action_id": "a12_close_old",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"amina_lb_1246_4826\",\"reason\":\"Customer requested closure of unused Light Blue checking after Green savings and Evergreen replacement checking were opened; no funds to move.\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "After both openings are confirmed and the caller requests completion of the replacement, close only Light Blue. Its age is 494 days, holdings are zero, no transactions are pending, and no fee or notice delay applies."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_ecocard_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_savings_accounts_bronze_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_green_account_(savings)_003"
+  ]
+}

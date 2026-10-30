@@ -1,0 +1,256 @@
+{
+  "id": "task_generated_pro_069",
+  "description": {
+    "purpose": "Secure Maya Iqbal's compromised Silver Rewards card, open one compatible Gold savings account while eligibility is preserved, and then close only her obsolete Light Blue checking account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I just got an alert for a Silver card purchase I don't recognize. I need the card secured quickly, and I want to finish consolidating my accounts without closing something I still need.” Sound concerned and concise. You are Maya Iqbal, a 57-year-old small-business bookkeeper in Sacramento, but do not volunteer all details at once and do not claim to know the bank's eligibility rules or exact rate calculation.\n\nIf the agent asks you to verify your identity, provide your full name Maya Iqbal, date of birth 04/22/1968, primary address 1847 Juniper Landing, Sacramento, CA 95818, email maya.iqbal95001@example.com, and phone number +1-916-555-2846. Do not volunteer card or consolidation details until a relevant question is asked.\n\nIf asked which card, what happened, where to send a replacement, or how quickly you need it, identify the Silver Rewards card ending 4826, say the alert was for an $86.40 purchase at Nimbus Digital Goods that you do not recognize, confirm that 1847 Juniper Landing, Sacramento, CA 95818 is safe, state that suspected fraud is the reason, and request expedited delivery while asking what it costs. Maya wants the affected Silver Rewards card replaced with expedited delivery to her confirmed primary address and will acknowledge the disclosed shipping fee. If standard shipping is proposed, say: “The fraud alert makes speed important, so I still want expedited delivery, but please confirm the destination and fee first.” Maya does not authorize standard shipping or an undisclosed expedited charge. If the wrong shipping choice or charge was already submitted, ask for it to be corrected to expedited delivery to the primary address with the fee clearly disclosed, and do not accept the card outcome until that is restored.\n\nIf asked about consolidation, current accounts, savings preferences, or funding, explain that Green checking opened November 7 and must remain open; Light Blue is the old zero-balance account you want closed only after one savings account is safely open. Say you intend to keep no more than $18,000 in savings, want travel coverage to remain available through the Silver card you already have, do not want another checking account or another card application, and will fund the savings account externally. Maya will retain her existing Green checking and Silver Rewards product and will not open another checking account or apply for another credit card. Maya wants exactly one compatible savings account and will maintain no more than $18,000 in it; she does not authorize a split allocation or an added savings product. Maya will close only the old Light Blue Account, and only after the requested savings account is confirmed open. Maya will fund the new savings account externally and does not authorize an immediate internal transfer.\n\nIf the agent proposes a new card, a new checking account, multiple savings accounts, or a product requiring more than $18,000, say: “No, I want one savings account using the Green checking and Silver card I already have, and I will not commit more than $18,000.” Maya does not authorize any additional product application, split allocation, or balance commitment above $18,000. If such an action was already taken, insist that the added product or allocation be undone and continue only toward one compatible savings account.\n\nIf the agent proposes closing Light Blue before the savings account is confirmed open, or proposes closing Green, say: “Please leave Green alone and confirm the new savings account is open before retiring Light Blue.” Maya does not authorize any closure until the requested savings account is visibly confirmed open, and she never authorizes closure of Green. If the wrong account was closed or Light Blue was closed prematurely, ask the agent to restore the intended arrangement or obtain appropriate assistance; do not accept completion until Green and the requested savings remain open and only Light Blue is retired after the savings opening.\n\nIf the agent proposes moving money from either checking account during the call, say: “No transfer, please; I will fund the savings account externally within the allowed period.” Maya does not authorize an internal funds transfer. If an internal transfer was already made, ask for it to be reversed and do not accept the savings outcome until the account is open without that transfer.\n\nDo not authorize protected actions until your supplied identity details have been matched and current-session verification has been established. Before authorizing replacement, require confirmation of the Silver card ending 4826, your primary address, the suspected-fraud reason, expedited delivery, and the $10 fee. Before authorizing the savings opening, require the agent to establish that one proposed savings account fits the $18,000 limit and works with the Green checking and Silver card you are keeping without another product. Before authorizing closure, require confirmation that the new savings account is open and that Light Blue has a zero balance and no pending transactions.\n\nDo not accept the resolution until you are told that an expedited replacement was submitted to your primary address for the Silver card. Do not accept the resolution until you are told that exactly one Gold Account is open and no internal funding transfer was made. Do not accept the resolution until you are told that Light Blue is closed while Green and the new savings account remain open. If only part is complete, ask directly about the missing result. Once all three outcomes are confirmed, say: “That takes care of the card and the consolidation. Thank you.” Then end with exactly one marker and do not continue: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_maya_iqbal_95001": {
+              "user_id": "usr_maya_iqbal_95001",
+              "name": "Maya Iqbal",
+              "date_of_birth": "04/22/1968",
+              "address": "1847 Juniper Landing, Sacramento, CA 95818",
+              "email": "maya.iqbal95001@example.com",
+              "phone_number": "+1-916-555-2846",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh customer identity. Maya is a 57-year-old small-business bookkeeper in Sacramento; occupation is scenario context because the users schema has no occupation field."
+        },
+        "accounts": {
+          "data": {
+            "acct_light_blue_miq_95001": {
+              "account_id": "acct_light_blue_miq_95001",
+              "user_id": "usr_maya_iqbal_95001",
+              "level": "Light Blue Account",
+              "class": "checking",
+              "status": "OPEN",
+              "date_opened": "09/10/2025",
+              "current_holdings": "0.00"
+            },
+            "acct_green_miq_95001": {
+              "account_id": "acct_green_miq_95001",
+              "user_id": "usr_maya_iqbal_95001",
+              "level": "Green Account (checking)",
+              "class": "checking",
+              "status": "OPEN",
+              "date_opened": "11/07/2025",
+              "current_holdings": "1800.00"
+            }
+          },
+          "notes": "Maya initially has two open personal checking accounts and no savings accounts. Light Blue is 65 days old and Green is 7 days old at the fixed date."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Starts empty; current-session verification must be logged during the interaction."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_silver_miq_4826_95001": {
+              "account_id": "cc_silver_miq_4826_95001",
+              "user_id": "usr_maya_iqbal_95001",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "4826",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "current_balance": "86.40",
+              "date_of_account_open": "03/18/2023",
+              "reward_points": "12640",
+              "credit_limit": "18000.00",
+              "past_due_amount": "0.00"
+            }
+          },
+          "notes": "Existing active Silver Rewards account affected by the suspected-fraud alert."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "cctx_nimbus_miq_95001": {
+              "transaction_id": "cctx_nimbus_miq_95001",
+              "user_id": "usr_maya_iqbal_95001",
+              "credit_card_account_id": "cc_silver_miq_4826_95001",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Nimbus Digital Goods",
+              "transaction_amount": "86.40",
+              "transaction_date": "11/13/2025",
+              "status": "POSTED",
+              "category": "software",
+              "rewards_earned": "3.46"
+            }
+          },
+          "notes": "Sole triggering transaction; its posted merchant, amount, date, account, and status match the mobile alert."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No pending or prior replacement order is seeded."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No bank-account transactions are seeded; in particular, Light Blue has no pending transactions."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational audit/availability state starts empty. Discoverable capabilities come from the environment catalog and are unlocked during the interaction."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_find_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        }
+      },
+      {
+        "action_id": "act_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_maya_iqbal_95001",
+          "address": "1847 Juniper Landing, Sacramento, CA 95818",
+          "email": "maya.iqbal95001@example.com",
+          "phone_number": "+1-916-555-2846",
+          "date_of_birth": "04/22/1968",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_accounts_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_05_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_95001\"}"
+        }
+      },
+      {
+        "action_id": "act_06_unlock_replacement",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291"
+        }
+      },
+      {
+        "action_id": "act_07_order_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291",
+          "arguments": "{\"credit_card_account_id\":\"cc_silver_miq_4826_95001\",\"user_id\":\"usr_maya_iqbal_95001\",\"shipping_address\":\"1847 Juniper Landing, Sacramento, CA 95818\",\"reason\":\"fraud_suspected\",\"expedited_shipping\":true}"
+        }
+      },
+      {
+        "action_id": "act_08_unlock_open_gold",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "act_09_open_gold",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_95001\",\"account_type\":\"savings\",\"account_class\":\"Gold Account\"}"
+        }
+      },
+      {
+        "action_id": "act_10_unlock_light_blue_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_11_read_light_blue_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_light_blue_miq_95001\"}"
+        }
+      },
+      {
+        "action_id": "act_12_unlock_close_light_blue",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "act_13_close_light_blue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_light_blue_miq_95001\",\"reason\":\"Customer requested consolidation after opening savings\",\"waive_early_closure_fee\":false}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ],
+    "bank_account_closure_reason_equivalences": [
+      {
+        "account_id": "acct_light_blue_miq_95001",
+        "user_id": "usr_maya_iqbal_95001",
+        "canonical_reason": "Customer requested consolidation after opening savings",
+        "accepted_equivalent_reasons": [
+          "Customer requested consolidation after opening savings",
+          "Customer consolidating accounts; keeping Green Account (checking) as primary checking",
+          "Customer consolidating accounts - keeping Green Account (checking) and new Gold Account (savings)"
+        ],
+        "evidence": "Reviewed equivalent customer-request/consolidation wording; no customer-prescribed exact string. Account, owner, status, balances, fee flags, and every other agent/user DB field stay exact."
+      }
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_gold_years_account_001",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_credit_cards_credit_card_replacements_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_005",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_gold_plus_account_001",
+    "doc_savings_accounts_gold_plus_account_009"
+  ]
+}

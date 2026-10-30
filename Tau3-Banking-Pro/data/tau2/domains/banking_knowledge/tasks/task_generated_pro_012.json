@@ -1,0 +1,298 @@
+{
+  "id": "task_generated_pro_012",
+  "description": {
+    "purpose": "Complete Naomi Bennett's coordinated business checking and personal savings replacement, fund both destinations, close Bronze and Evergreen, and preserve Light Blue.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Naomi Bennett, age 45, a restaurant manager in Richmond, Virginia and sole owner of Bennett Table Catering LLC. Its registration confirmation has just arrived. Start cautiously optimistic, saying: “My catering LLC registration just came through. Can you help me reorganize my banking—set up business banking and new savings, and close the old accounts I no longer need?”\n\nWhen asked for identity verification, supply the requested details accurately: Naomi Bennett; September 9, 1980; naomi.bennett@example.net; 804-555-0164; 1864 Maplewood Avenue, Richmond, VA 23220. Permit ordinary identity verification only for servicing your own account move.\n\nWhen asked about the accounts, money, closure arrangements, or product needs, reveal the relevant portion below. A broad planning question permits the complete coherent plan; a narrow question gets only the corresponding facts. Do not volunteer these details before a relevant question.\n• Replace Bronze savings ending 6481, holding $425, and retire Evergreen checking ending 2057, holding $4,875. Keep Light Blue checking ending 7934, holding $260. You gave notice for both closures during your November 6 branch deposit visit, for closure on or after November 14 after moving the money.\n• Complete the replacement and business setup in this call. Business checking must stay free of recurring maintenance fees without a minimum balance or an expiring free period. You are considering Silver Plus for savings, can maintain about $3,500–$4,000, expect 12 withdrawals monthly, and want daily compounding. Retire Bronze and Evergreen, not Light Blue.\n• Put $1,700 of Evergreen into business banking; put its remainder and all $425 of Bronze into replacement savings. Leave Light Blue's $260 untouched, and do not change this allocation to qualify for another product.\n• If discussing benefits, you may ask about ATM fee help or extra relationship interest, but do not assume entitlement to either. You do not know the bank's eligibility thresholds, bonus criteria, or final arithmetic; leave the calculation to the agent.\n\nYou initially think of the move as cleaning up old accounts and replacing them, not as an inflexible order. If the agent proposes openings before closures without explaining why, briefly ask why the old accounts need to stay open during the move. Cooperate with a grounded explanation rather than insisting on your original expectation. Consent to financial changes only after the agent names the selected accounts, explains relevant costs and requirements, and describes a coherent disposition of your money that respects your commitments; any change from your expected order must be understandable from the explanation. Once that happens, ask the agent to go ahead and become reassured, but keep completion pending until actual results are reported.\n\nIf a recommendation conflicts with these preferences, explain the affected practical concern once and ask for a fitting plan. Do not consent to maintenance fees, business minimum-balance commitments or temporary free periods, savings that sacrifice your stated access or compounding needs for a higher rate, extra products, or abandoning any requested opening or closure. Do not copy an incompatible recommendation merely because the agent suggests it.\n\nAuthorize only the disclosed money movements and intended old-account closures, never an unexplained deduction, different allocation, use of Light Blue, or splitting savings among extra accounts. If the proposed or reported movement conflicts, restate only the affected destination or retained-account boundary and ask for correction. If an incompatible change has already happened, ask the agent to restore the agreed arrangement and keep acceptance pending until the visible conflict is resolved; do not diagnose hidden policy errors.\n\nBecome concerned if the agent changes your allocation or leaves the move unfinished, and appreciative when the problem is corrected. After one clarification, if the agent still refuses, cannot finish, or leaves an incompatible change unresolved, ask for a human who can finish the move. Do not escalate while service is proceeding successfully, and do not accept a promised handoff as completion.\n\nAccept only when the agent confirms that the agreed business and replacement savings accounts are open and funded as instructed, Bronze and Evergreen are closed, and Light Blue is unchanged. Require accounting for the business allocation and all money directed to savings, with no unexplained deduction, unfinished transfer, or visible conflict. Ask about any missing outcome rather than stopping early; you do not need internal identifiers or a particular processing sequence. Once all these conditions hold, thank the agent and end. An actual human handoff may instead end an unsuccessful interaction, but do not describe the banking move as completed. At the appropriate terminal point emit exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_naomi_bennett_804": {
+              "user_id": "usr_naomi_bennett_804",
+              "name": "Naomi Bennett",
+              "date_of_birth": "09/09/1980",
+              "email": "naomi.bennett@example.net",
+              "phone_number": "804-555-0164",
+              "address": "1864 Maplewood Avenue, Richmond, VA 23220"
+            }
+          },
+          "notes": "Caller identity. Age 45 on the fixed service date; occupation and LLC ownership are persona facts only."
+        },
+        "accounts": {
+          "data": {
+            "nb_bronze_6481": {
+              "account_id": "nb_bronze_6481",
+              "user_id": "usr_naomi_bennett_804",
+              "class": "savings",
+              "level": "Bronze Account",
+              "account_type": "savings",
+              "account_class": "Bronze Account",
+              "current_holdings": "$425.00",
+              "status": "OPEN",
+              "date_opened": "02/14/2025"
+            },
+            "nb_evergreen_2057": {
+              "account_id": "nb_evergreen_2057",
+              "user_id": "usr_naomi_bennett_804",
+              "class": "checking",
+              "level": "Evergreen Account",
+              "account_type": "checking",
+              "account_class": "Evergreen Account",
+              "current_holdings": "$4875.00",
+              "status": "OPEN",
+              "date_opened": "02/14/2025"
+            },
+            "nb_light_7934": {
+              "account_id": "nb_light_7934",
+              "user_id": "usr_naomi_bennett_804",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "account_type": "checking",
+              "account_class": "Light Blue Account",
+              "current_holdings": "$260.00",
+              "status": "OPEN",
+              "date_opened": "11/05/2025"
+            }
+          },
+          "notes": "Exactly these three initial deposit accounts belong to Naomi. No CLOSED, collections, or negative-balance accounts. Replacement accounts are absent. Evergreen alone meets both the tenure and $500 funded-personal-checking conditions; Light Blue is retained unchanged."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Naomi has no credit-card accounts; account retrieval can establish the complete relationship."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "nb_branch_deposit_6481_1106": {
+              "transaction_id": "nb_branch_deposit_6481_1106",
+              "account_id": "nb_bronze_6481",
+              "date": "11/06/2025",
+              "type": "deposit",
+              "amount": 425,
+              "available_amount": 425,
+              "hold_amount": 0,
+              "status": "COMPLETED",
+              "description": "Branch deposit. Teller memo: Naomi Bennett gave notice today to close Bronze Account ending 6481 on or after November 14 after moving its balance; account remains open pending her final instruction."
+            },
+            "nb_branch_deposit_2057_1106": {
+              "transaction_id": "nb_branch_deposit_2057_1106",
+              "account_id": "nb_evergreen_2057",
+              "date": "11/06/2025",
+              "type": "deposit",
+              "amount": 4875,
+              "available_amount": 4875,
+              "hold_amount": 0,
+              "status": "COMPLETED",
+              "description": "Branch deposit. Teller memo: Naomi Bennett gave notice today to close Evergreen Account ending 2057 on or after November 14 after moving its balance; account remains open pending her final instruction."
+            }
+          },
+          "notes": "Genuine posted branch deposits from zero prior balances, no subsequent activity and no pending transactions. Descriptions evidence prior notice, not completed closures. No background postings occur during the call. Internal transfers change balances only."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty; current-session verification must be recorded after matching at least two identity fields."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty wrapper telemetry. Tool availability comes from the catalog. Discovery and read telemetry are not evaluated banking outcomes."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "nb_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Naomi Bennett"
+        },
+        "info": "Unscored identity lookup to discover user_id and compare requested DOB and email."
+      },
+      {
+        "action_id": "nb_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Unscored timestamp support."
+      },
+      {
+        "action_id": "nb_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Naomi Bennett",
+          "user_id": "usr_naomi_bennett_804",
+          "address": "1864 Maplewood Avenue, Richmond, VA 23220",
+          "email": "naomi.bennett@example.net",
+          "phone_number": "804-555-0164",
+          "date_of_birth": "09/09/1980",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After the caller supplies matching DOB and email, log current-session verification."
+      },
+      {
+        "action_id": "nb_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "nb_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_naomi_bennett_804\"}"
+        },
+        "info": "Unscored support: IDs, eligibility counts, statuses, dates and available balances."
+      },
+      {
+        "action_id": "nb_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "nb_bronze_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"nb_bronze_6481\"}"
+        },
+        "info": "Unscored support for closure notice and absence of pending transactions, not redundant balance confirmation."
+      },
+      {
+        "action_id": "nb_evergreen_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"nb_evergreen_2057\"}"
+        },
+        "info": "Unscored support for closure notice and absence of pending transactions."
+      },
+      {
+        "action_id": "nb_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "nb_open_business",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_naomi_bennett_804\",\"account_type\":\"business_checking\",\"account_class\":\"Navy Blue\"}"
+        },
+        "info": "After informed consent to the plan; returned account ID binds 94a01fff36599363."
+      },
+      {
+        "action_id": "nb_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_naomi_bennett_804\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        },
+        "info": "Returned account ID binds 7d2fa93b94ca6a09; immediate authorized funding follows."
+      },
+      {
+        "action_id": "nb_unlock_transfer",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "nb_fund_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"nb_evergreen_2057\",\"destination_account_id\":\"7d2fa93b94ca6a09\",\"amount\":3175.00}"
+        }
+      },
+      {
+        "action_id": "nb_move_bronze",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"nb_bronze_6481\",\"destination_account_id\":\"7d2fa93b94ca6a09\",\"amount\":425.00}"
+        }
+      },
+      {
+        "action_id": "nb_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "nb_close_bronze",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"nb_bronze_6481\",\"reason\":\"Customer-requested account reorganization\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Closure reason semantics, not exact wording, are evaluated."
+      },
+      {
+        "action_id": "nb_fund_business",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"nb_evergreen_2057\",\"destination_account_id\":\"94a01fff36599363\",\"amount\":1700.00}"
+        }
+      },
+      {
+        "action_id": "nb_close_evergreen",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"nb_evergreen_2057\",\"reason\":\"Customer-requested account reorganization\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Closure reason semantics, not exact wording, are evaluated. No successful-path escalation."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_003",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_006",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_business_checking_accounts_navy_blue_001",
+    "doc_business_checking_accounts_cobalt_blue_001",
+    "doc_business_checking_accounts_sky_blue_001",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002"
+  ]
+}

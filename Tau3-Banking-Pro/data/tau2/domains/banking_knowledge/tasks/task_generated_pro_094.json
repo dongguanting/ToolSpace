@@ -1,0 +1,282 @@
+{
+  "id": "task_generated_pro_094",
+  "description": {
+    "purpose": "Review and correct two Silver-card cash-back discrepancies, then verify Theo Alvarez and close only his Business Silver Rewards Card.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “The rewards that just posted on my two Silver cards don't look right. Can you help me get them reviewed and fixed?” Do not initially mention either account closure or suggest exact corrected reward amounts.\n\nIf the agent asks which cards or purchases are affected, provide user ID usr_theo_alvarez_9207 and identify the Business Silver card ending 4812 with a $200 Apple purchase dated October 18 showing 2 points, and the personal Silver card ending 7359 with a $375 James River Hotel purchase dated October 22 showing 4 points. Do not volunteer the closure request or the full identity profile before it becomes relevant. Authorize submission of the two disputes only after the agent identifies both purchases by the correct merchant, date, amount, and card.\n\nBoth purchases must be corrected; an explanation or correction of only one purchase is not enough. Authorize reward corrections only after the agent confirms that each card type, merchant category, merchant identity, and any applicable promotion were considered. If the agent explains that Apple is treated differently from ordinary software merchants, acknowledge that you had assumed software-coded purchases were treated alike and ask that the documented result be applied.\n\nIf the agent proposes correcting only one purchase or proposes an Apple result without considering the named merchant, say: “Please check both purchases. The first one shows Apple as the merchant, so I want that detail reviewed before I agree that the reward amount is fixed.” Do not authorize an Apple correction until the agent confirms that the card, merchant, transaction date, and promotion were all considered, and do not accept a one-transaction resolution.\n\nIf the agent proposes or reports a 40-point result for the Apple purchase, say: “That seems much higher than I expected, and the statement specifically names Apple. Please check whether that merchant is treated the same as other software purchases before changing it.” Withhold authorization for that Apple update and do not proceed to the closure stage while that transaction remains proposed or set at 40 points. If 40 points were already applied, say: “The Apple reward still does not look properly reviewed. Please correct it after checking the merchant treatment; I am postponing the closure request until that transaction is fixed.” Do not reveal an exact alternative amount or any internal rule, calculation, or system operation.\n\nOnly after the agent confirms that both transaction rewards have been corrected, say that the confirmed errors have convinced you to simplify and ask to close only the Business Silver card ending 4812 while keeping the personal Silver card open. The Business Silver account must be closed rather than retained, downgraded, or given another incentive. The personal Silver account must remain open, with no change beyond correction of the hotel transaction reward.\n\nIf the agent begins identity verification for closure, provide: Theo Alvarez; date of birth April 22, 1964; 1427 Winding Brook Road, Richmond, Virginia 23220; theo.alvarez9207@example.com; and 804-555-0176. Authorize closure only after both rewards are corrected, your identity is verified, the target is confirmed as the Business Silver card ending 4812, and the agent confirms that its balance and active-dispute status permit closure. If the old replacement order is mentioned as delivered, confirm that you received it and continue with the closure request.\n\nIf the agent offers retention points, a statement credit, a downgrade, or another reason to keep the Business Silver account, say: “I appreciate the offer, but I don't want another incentive or a different version of this account. Once the corrections are complete, please close the Business Silver card.” Do not authorize a retention credit, bonus, account flag, downgrade, or substitute for closure.\n\nIf the agent proposes closing, downgrading, or otherwise changing the personal Silver account, say: “No, the personal card is staying open. I only asked for its hotel reward to be corrected.” Never authorize an account-level change to the personal Silver card ending 7359.\n\nDo not accept the resolution until both the Apple and James River Hotel rewards are confirmed corrected, the Business Silver card ending 4812 is confirmed closed, and the personal Silver card ending 7359 is confirmed to remain open with no retention substitute applied. If any condition is missing, ask for that outcome directly. Once every condition is satisfied, briefly thank the agent and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_9207": {
+              "user_id": "usr_theo_alvarez_9207",
+              "name": "Theo Alvarez",
+              "date_of_birth": "04/22/1964",
+              "address": "1427 Winding Brook Road, Richmond, VA 23220",
+              "email": "theo.alvarez9207@example.com",
+              "phone_number": "804-555-0176"
+            }
+          },
+          "notes": "Theo Alvarez is a 61-year-old laboratory technician in Richmond, Virginia, at the fixed date."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_biz_silver_4812": {
+              "account_id": "cc_biz_silver_4812",
+              "user_id": "usr_theo_alvarez_9207",
+              "card_type": "Business Silver Rewards Card",
+              "card_last_4_digits": "4812",
+              "date_of_account_open": "08/20/2025",
+              "current_balance": "0.00",
+              "reward_points": "2 points",
+              "account_status": "open"
+            },
+            "cc_silver_7359": {
+              "account_id": "cc_silver_7359",
+              "user_id": "usr_theo_alvarez_9207",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "7359",
+              "date_of_account_open": "06/01/2023",
+              "current_balance": "0.00",
+              "reward_points": "4 points",
+              "account_status": "open"
+            }
+          },
+          "notes": "Theo has exactly these two Silver credit-card accounts; no earlier Business Silver account is present."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_apple_1048": {
+              "transaction_id": "txn_apple_1048",
+              "user_id": "usr_theo_alvarez_9207",
+              "credit_card_account_id": "cc_biz_silver_4812",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Apple",
+              "category": "software",
+              "transaction_amount": "200.00",
+              "transaction_date": "10/18/2025",
+              "status": "posted",
+              "rewards_earned": "2 points"
+            },
+            "txn_hotel_6631": {
+              "transaction_id": "txn_hotel_6631",
+              "user_id": "usr_theo_alvarez_9207",
+              "credit_card_account_id": "cc_silver_7359",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "James River Hotel",
+              "category": "travel",
+              "transaction_amount": "375.00",
+              "transaction_date": "10/22/2025",
+              "status": "posted",
+              "rewards_earned": "4 points"
+            }
+          },
+          "notes": "The two posted transactions visibly support the reward reviews and independent calculations."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Initially empty. The discoverable dispute tool creates implementation-native records; auto-resolution is enabled."
+        },
+        "task_config": {
+          "data": {
+            "rewards_case_config": {
+              "auto_resolve_disputes": true
+            }
+          },
+          "notes": "Cash-back disputes submitted in this task are automatically resolved and approved."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty; closure requires a new current-session verification record."
+        },
+        "credit_card_orders": {
+          "data": {
+            "order_biz_2295": {
+              "order_id": "order_biz_2295",
+              "user_id": "usr_theo_alvarez_9207",
+              "credit_card_account_id": "cc_biz_silver_4812",
+              "status": "delivered",
+              "order_date": "09/03/2025",
+              "expected_delivery": "09/10/2025",
+              "expedited_shipping": false,
+              "reason": "damaged",
+              "shipping_address": "1427 Winding Brook Road, Richmond, VA 23220"
+            }
+          },
+          "notes": "The sole replacement order is delivered and therefore final."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No active or pending transaction dispute exists for Theo."
+        },
+        "credit_card_closure_reasons": {
+          "data": {},
+          "notes": "No prior closure-reason record exists for the Business Silver account."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "No user discoverable tool is pre-granted."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "No agent discoverable tool is pre-unlocked."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_9207",
+          "address": "1427 Winding Brook Road, Richmond, VA 23220",
+          "email": "theo.alvarez9207@example.com",
+          "phone_number": "804-555-0176",
+          "date_of_birth": "04/22/1964",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "gold_01_give_dispute_tool",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{}"
+        }
+      },
+      {
+        "action_id": "gold_02_submit_apple_dispute",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_9207\",\"transaction_id\":\"txn_apple_1048\"}"
+        }
+      },
+      {
+        "action_id": "gold_03_submit_hotel_dispute",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_9207\",\"transaction_id\":\"txn_hotel_6631\"}"
+        }
+      },
+      {
+        "action_id": "gold_04_unlock_reward_update",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "update_transaction_rewards_3847"
+        }
+      },
+      {
+        "action_id": "gold_05_correct_apple_rewards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "update_transaction_rewards_3847",
+          "arguments": "{\"transaction_id\":\"txn_apple_1048\",\"new_rewards_earned\":\"4 points\"}"
+        }
+      },
+      {
+        "action_id": "gold_06_correct_hotel_rewards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "update_transaction_rewards_3847",
+          "arguments": "{\"transaction_id\":\"txn_hotel_6631\",\"new_rewards_earned\":\"15 points\"}"
+        }
+      },
+      {
+        "action_id": "gold_07_get_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_09_unlock_closure_reason",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "gold_10_log_closure_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"cc_biz_silver_4812\",\"user_id\":\"usr_theo_alvarez_9207\",\"closure_reason\":\"unhappy_with_rewards\"}"
+        }
+      },
+      {
+        "action_id": "gold_11_unlock_account_closure",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834"
+        }
+      },
+      {
+        "action_id": "gold_12_close_business_account",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834",
+          "arguments": "{\"credit_card_account_id\":\"cc_biz_silver_4812\",\"user_id\":\"usr_theo_alvarez_9207\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_business_credit_cards_business_silver_rewards_card_012",
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_004",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_002"
+  ]
+}

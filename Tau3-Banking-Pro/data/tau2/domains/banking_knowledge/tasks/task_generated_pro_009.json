@@ -1,0 +1,214 @@
+{
+  "id": "task_generated_pro_009",
+  "description": {
+    "purpose": "Establish Theo Alvarez's suitable replacement checking and savings arrangement while preserving savings-opening eligibility, retaining his existing card, deferring funding, and retiring only the old checking.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Theo Alvarez, a 49-year-old software support specialist living in Sacramento, California. You are mildly confused by an account-comparison screen, cooperative about verification, and clear about your own spending and savings preferences. You do not know which combination is best or the bank's exact eligibility rules.\n\nBegin with exactly this concern: \"The account comparison in the app has me a bit lost. I want to replace my old checking and set up savings, but I don't want to lose the benefits I need. Can you help me choose?\" Do not begin with your full identity, allocation, shortlist, or a product recommendation.\n\nIf asked for identification or verification, provide the requested fields: Theo Alvarez; date of birth April 18, 1976; address 2861 Bellhaven Way, Sacramento, CA 95818; email theo.alvarez@example.net; phone 916-555-0148. Cooperate with ordinary identity verification and permit the agent to record successful verification after your supplied details match the bank's records.\n\nWhen asked a relevant question about your comparison, available money, existing products, required benefits, or intended changes, disclose the relevant connected facts below. Answer a broad question with a coherent account of the plan, rather than withholding facts needed to understand it. Otherwise do not volunteer these request-gated details.\n\nYour checking shortlist is Blue Account or Green Account. Your savings shortlist is Silver Plus Account or Gold Account. You want the highest savings APY among arrangements meeting your requirements. Exactly $8,400 of money outside this bank is reserved for one savings account. Keep that planned savings allocation together, do not split it, and do not increase it using money reserved for everyday checking. The savings account should meet its normal ongoing balance requirement once you fund it; you do not want a plan deliberately built around missing that requirement.\n\nYour checking must offer an optional way to cover a shortfall, not simply decline a payment without a fee. The savings account itself must offer rebates for eligible ATM operator surcharges. You want conditional travel insurance through the credit card you already hold. You are asking for the availability of these benefits, not overdraft enrollment or an insurance claim today. You are willing to charge a future covered travel fare in full to your retained card, subject to the insurance terms the agent explains. No trip or claim is being handled now.\n\nKeep your existing Silver Rewards Card ending 7318. Choose only within your two checking and two savings choices, with one replacement checking and one savings account. Do not add another card, a subscription, an extra account, or a different product. You do not currently have a premium subscription.\n\nYour old Light Blue checking is empty and was opened in June 2025. You have no pending payments, outstanding checks, or other payment arrangements to migrate from it. You want the replacement arrangement established and the old Light Blue checking closed without disrupting completion of the savings setup. You do not want to accumulate redundant checking accounts.\n\nDo not move any money during this call. Both new accounts are to remain unfunded today. You will arrange external funding afterward and will acknowledge the bank's explained deadline and the consequence of missing it. Separate everyday checking funds are not available to increase the reserved savings allocation.\n\nIf asked for exact rates, policy eligibility, account benefit limits, or which combination is correct, say you need the agent to establish those. Do not invent policy knowledge or supply the product-selection answer. Do not mention internal identifiers, tools, hidden account-opening rules, or calculations you have not learned in the conversation.\n\nBefore authorizing product creation, require one understandable recommendation within your shortlist that addresses your fixed allocation, required benefits, important costs and conditions, and deferred funding without additional products. Only after the agent explains a recommendation that respects all those commitments, ask them to go ahead with opening the selected accounts and finishing the replacement. Mark only the conditions actually explained as understood; withhold authorization if any commitment is unresolved. Accept a sensible opening sequence without prescribing internal steps. Do not repeat or approve an agent's proposed product, allocation, amount, or added service when it conflicts with your commitments.\n\nIf the agent leaves you with an unresolved list of options, say: \"I would rather you recommend the one that earns the most on my savings while meeting those requirements.\"\n\nIf the agent explains that the old checking should remain temporarily while the new arrangement is established, say: \"That's fine. I just want the replacement completed and the old one closed when it's safe to do that.\"\n\nIf the agent explains optional overdraft enrollment, a protection-transfer charge, or later enrollment, say: \"I understand. I want a checking account that offers that option; I'm not asking you to switch it on today.\"\n\nIf the agent proposes splitting your savings, increasing it from everyday funds, intentionally missing an ongoing minimum, or choosing for checking interest or rewards rather than your savings objective, say: \"The savings amount is fixed, and I want it together in one account that meets its normal balance requirements. Please compare using that amount rather than moving my everyday money or optimizing a different benefit.\" Do not authorize a plan contingent on a different allocation, an unmet required balance, or a different optimization objective.\n\nIf a recommendation substitutes fee-free declines for shortfall protection, a checking rebate for the savings benefit, or an unsupported insurance or rebate assumption, say: \"I need the account to offer a way to cover a shortfall, not just avoid a fee when a payment is declined. And I wanted the ATM rebate on the savings account itself. Could you check that before opening anything?\" Withhold authorization until each required benefit is established in the product you requested and its limitations are explained.\n\nIn particular, if the agent proposes Green checking because having no overdraft fees supposedly satisfies your protection requirement, say: \"I meant an option that can cover a shortfall, not just a payment being declined without a fee. Please check that distinction before opening the checking account.\" Do not approve the Green-based proposal while it leaves your shortfall-covering requirement unmet, even if the agent calls it cheaper or simpler. Base this response only on your stated need and the agent's description, not on an exact policy clause or knowledge of the correct product. If Green was already opened, do not accept completion. Say: \"That still leaves me without the protection option I asked for. Please investigate how to correct the setup without adding unwanted accounts or using my savings money. I still want the replacement completed.\" Do not prescribe a backend remedy or assume that any correction fee can be waived. Keep all completion conditions unsatisfied until the requested arrangement is restored.\n\nIf another card, a subscription, an extra savings account, or a product outside the shortlist is proposed, say: \"I don't want another credit application, subscription, or extra account. Please work within the choices I gave you and keep the card I already have.\" Do not authorize any additional or substituted product outside your shortlist and retained card.\n\nIf the agent proposes permanently retaining the redundant checking, closing it in a way that obstructs the setup, or ending after opening only the new accounts, say: \"I want this replacement finished, including closing the old account, but please don't close it in a way that prevents you from finishing the new setup.\" Authorize closure only as part of a plan that preserves completion of the replacement, and do not accept an unfinished reorganization.\n\nBefore authorizing closure, recognize the old Light Blue checking as the account being retired and require confirmation that the replacement arrangement has been established without an unexpected closure charge.\n\nIf any transfer or funding action is proposed during the call, say: \"Please don't transfer anything today. The money is outside the bank, and I'll arrange the funding afterward within the deadline you explain.\" No transfer, deposit, withdrawal, or use of your savings allocation is authorized during this call.\n\nAccept completion only when the recommended checking and savings are confirmed open with the required benefit availability and your existing card retained. Require confirmation that the old Light Blue checking is closed without a closure fee. Also require that no money was moved, no unwanted product or subscription was added, and you understand the deadline for externally funding the savings account. If anything is missing or a wrong setup remains unresolved, ask for it to be addressed and do not stop. Only after all these conditions hold, thank the agent briefly and end with the marker below exactly once. Do not reopen the case afterward.\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_1050": {
+              "user_id": "usr_theo_alvarez_1050",
+              "name": "Theo Alvarez",
+              "date_of_birth": "04/18/1976",
+              "address": "2861 Bellhaven Way, Sacramento, CA 95818",
+              "email": "theo.alvarez@example.net",
+              "phone_number": "916-555-0148",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh sole-owner customer. Age 49 at the supplied environment date. External funding intentions and occupation are narrative facts, not invented database fields."
+        },
+        "accounts": {
+          "data": {
+            "acct_theo_old_1050": {
+              "account_id": "acct_theo_old_1050",
+              "user_id": "usr_theo_alvarez_1050",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "0.00",
+              "date_opened": "06/09/2025",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Theo's only initial deposit account. Its 158-day tenure supplies savings eligibility; its zero balance and entry-tier age permit fee-free closure. All replacement accounts are absent initially."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_theo_silver_1050": {
+              "account_id": "cc_theo_silver_1050",
+              "user_id": "usr_theo_alvarez_1050",
+              "card_type": "Silver Rewards Card",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "card_last_4_digits": "7318",
+              "date_of_account_open": "06/18/2023",
+              "credit_limit": "18000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0"
+            }
+          },
+          "notes": "Existing activated card retained without mutation. Supports the same-profile savings bonus and conditional future travel-insurance availability, not a present insurance claim."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Successful current-session verification must be recorded using the fixed environment timestamp."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No transactions or pending items for the old checking. No historical deposit, transfer, fee, or interest record is needed or invented."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty wrapper state. Tool availability comes from the catalog. Discovery and read-call telemetry are not evaluated banking outcomes."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        },
+        "info": "Reference lookup discovers the existing user ID and identity fields; read telemetry is not evaluated."
+      },
+      {
+        "action_id": "a02",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns the supplied environment timestamp, 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "a03",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_1050",
+          "address": "2861 Bellhaven Way, Sacramento, CA 95818",
+          "email": "theo.alvarez@example.net",
+          "phone_number": "916-555-0148",
+          "date_of_birth": "04/18/1976",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Theo has supplied matching identity details during this conversation, including date of birth and address, and permits recording successful verification."
+      },
+      {
+        "action_id": "a04",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "a05",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_1050\"}"
+        },
+        "info": "Read-only support discovers the old account and retained card, establishes 158 days of active checking tenure, zero existing savings, nonnegative balances, and no collections. Not an independently evaluated action."
+      },
+      {
+        "action_id": "a06",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "a07",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_theo_old_1050\"}"
+        },
+        "info": "Read-only support establishes the closure prerequisite of no pending transactions. Not an independently evaluated action."
+      },
+      {
+        "action_id": "a08",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "a09",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_1050\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        },
+        "info": "After the suitable single recommendation and relevant limitations are explained, Theo confirms Silver Plus savings and Blue checking. His external savings plan is exactly $8,400, unsplit and not supplemented from everyday funds. He declines immediate funding and acknowledges the 30-day deadline of 12/14/2025, closure if unfunded, the $1,000 opening funding amount and $2,500 ongoing minimum. The explanation uses Tier 1 at 3.0%, not Tier 2; establishes operator-surcharge rebates on eligible ATM cash withdrawals up to the monthly allowance of 25, separate from excess-withdrawal charges; and preserves conditional card insurance with full payment of a future covered fare, up to $15,000 per trip subject to terms, exclusions, and documentation. No present trip coverage or unspecified relationship bonus is asserted. The old checking is still OPEN. The account is created with zero holdings. Its ID is the opening tool's deterministic return for seed account:usr_theo_alvarez_1050:savings:Silver Plus Account."
+      },
+      {
+        "action_id": "a10",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_1050\",\"account_type\":\"checking\",\"account_class\":\"Blue Account\"}"
+        },
+        "info": "Theo has accepted Blue's optional linked-account shortfall protection, the $12.50 charge per protection transfer, and the $20 monthly maintenance fee waived only with a $625 minimum daily balance. No enrollment or transfer is requested and no waiver is promised while unfunded. Blue supplies the listed same-profile Silver Plus pairing with a 0.35 percentage-point boost; the existing Silver Rewards card supplies 0.15 percentage points. No additional relationship bonus is assumed. The account is created with zero holdings. Its ID is the opening tool's deterministic return for seed account:usr_theo_alvarez_1050:checking:Blue Account."
+      },
+      {
+        "action_id": "a11",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "a12",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_theo_old_1050\",\"reason\":\"Customer requested replacement of old checking\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Both replacement accounts are open. Theo recognizes his old Light Blue checking as the closure target and authorizes its retirement after confirmation that the replacement exists and no closure charge applies. At age 158 days, the zero-balance entry-tier account requires neither an early-closure fee nor notice. Only its status changes."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_blue_account_003",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_credit_cards_silver_rewards_card_005",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_silver_plus_account_003",
+    "doc_savings_accounts_silver_plus_account_009"
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "id": "task_generated_pro_054",
+  "description": {
+    "purpose": "Review four credit-card statements and create six correctly linked, customer-initiated rewards disputes, pending review without changing rewards or balances.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “Hi, I was looking at my latest credit card statements and the rewards seem lower than I expected. Could you help me check?”\n\nIf asked for identifying details, answer the relevant question: Marcus Okafor, 31, laboratory technician; DOB 04/18/1994; 2716 Maplebrook Avenue, Richmond, VA 23225; marcus.okafor@example.net; 804-555-0168; customer ID u_mok_694a.\n\nIf asked about scope or purchases, request October 1–November 13, 2025 across all four cards: Silver Rewards Card, Business Platinum Rewards Card, Crypto-Cash Back, and EcoCard. You co-own the established family laboratory-supply business and are the primary owner of its business card. All purchases were authorized, with no returns. The two HarborDesk subscriptions are separate legitimate purchases. You do not know which rewards are wrong; ask the agent to investigate.\n\nOnce a discrepancy is explained for a recognizable purchase and a submission capability is offered, ask to submit it and use the supplied details. Agree only to identified rewards-discrepancy submissions, not charge disputes, credits, redemptions, product changes, or immediate unapproved adjustments; receiving a capability is not blanket consent.\n\nIf a proposal skips a card, leaves an identified item unfinished, or visibly conflicts with a discussed purchase or your requested service, withhold agreement, point out that mismatch, and ask them to check again. Do not knowingly authorize a different purchase. If a mismatch becomes visible after submission, say the intended purchase still needs attention and request help correcting or completing intake; do not claim a dispute was reversed. An opaque identifier alone does not tell you a mistake occurred; remain uncertain about unfamiliar calculations.\n\nAccept only after the agent confirms the four-card review is complete, every discrepancy identified to you has a submission confirmation for the discussed purchase, and decisions and any later adjustments remain pending. Otherwise ask about the unfinished request. Then thank the agent and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "u_mok_694a": {
+              "user_id": "u_mok_694a",
+              "name": "Marcus Okafor",
+              "date_of_birth": "04/18/1994",
+              "address": "2716 Maplebrook Avenue, Richmond, VA 23225",
+              "email": "marcus.okafor@example.net",
+              "phone_number": "804-555-0168"
+            }
+          },
+          "notes": "Fresh fixture customer, age 31 at 11/14/2025. Laboratory technician and primary owner/co-owner of an established family laboratory-supply business. Historical approval context: personal score 790, PAYDEX 82. These are background facts, not new underwriting operations. Patch over defaults, not table replacement."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_mok_silver_694a": {
+              "account_id": "cc_mok_silver_694a",
+              "user_id": "u_mok_694a",
+              "card_type": "Silver Rewards Card",
+              "date_of_account_open": "03/06/2023",
+              "status": "OPEN",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$20000.00",
+              "current_balance": "$1570.00",
+              "reward_points": "4414 points"
+            },
+            "cc_mok_business_694a": {
+              "account_id": "cc_mok_business_694a",
+              "user_id": "u_mok_694a",
+              "card_type": "Business Platinum Rewards Card",
+              "date_of_account_open": "08/17/2023",
+              "status": "OPEN",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$100000.00",
+              "current_balance": "$2502.00",
+              "reward_points": "8213 points"
+            },
+            "cc_mok_crypto_694a": {
+              "account_id": "cc_mok_crypto_694a",
+              "user_id": "u_mok_694a",
+              "card_type": "Crypto-Cash Back",
+              "date_of_account_open": "02/09/2024",
+              "status": "OPEN",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$12000.00",
+              "current_balance": "$895.00",
+              "reward_points": "1727 points"
+            },
+            "cc_mok_eco_694a": {
+              "account_id": "cc_mok_eco_694a",
+              "user_id": "u_mok_694a",
+              "card_type": "EcoCard",
+              "date_of_account_open": "05/21/2024",
+              "status": "OPEN",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$8000.00",
+              "current_balance": "$398.00",
+              "reward_points": "758 points"
+            }
+          },
+          "notes": "Exactly four supplied directly owned accounts. Balances and reward balances reflect the supplied posted purchases and recorded rewards. No active signup reward windows, transaction promotions, reward modifiers, redemptions, or other adjustments affect this review period. Older settled cycles and annual fees are outside the supplied review activity. No last-four field is needed."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_mok_101": {
+              "transaction_id": "txn_mok_101",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/02/2025",
+              "merchant_name": "Dashnote SaaS",
+              "category": "Software",
+              "transaction_amount": "$36.00",
+              "rewards_earned": "144 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_102": {
+              "transaction_id": "txn_mok_102",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/04/2025",
+              "merchant_name": "Bluewater Rail",
+              "category": "Travel",
+              "transaction_amount": "$164.00",
+              "rewards_earned": "656 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_103": {
+              "transaction_id": "txn_mok_103",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/06/2025",
+              "merchant_name": "Cedar Books",
+              "category": "Shopping",
+              "transaction_amount": "$29.00",
+              "rewards_earned": "29 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_104": {
+              "transaction_id": "txn_mok_104",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/08/2025",
+              "merchant_name": "HarborDesk Software",
+              "category": "Software",
+              "transaction_amount": "$58.00",
+              "rewards_earned": "232 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_105": {
+              "transaction_id": "txn_mok_105",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/10/2025",
+              "merchant_name": "Richmond Market",
+              "category": "Groceries",
+              "transaction_amount": "$76.00",
+              "rewards_earned": "76 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_106": {
+              "transaction_id": "txn_mok_106",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/13/2025",
+              "merchant_name": "Eastline Air",
+              "category": "Travel",
+              "transaction_amount": "$286.00",
+              "rewards_earned": "1144 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_107": {
+              "transaction_id": "txn_mok_107",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/16/2025",
+              "merchant_name": "Meadow Inn",
+              "category": "Travel",
+              "transaction_amount": "$248.00",
+              "rewards_earned": "248 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_108": {
+              "transaction_id": "txn_mok_108",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/19/2025",
+              "merchant_name": "City Noodle",
+              "category": "Dining",
+              "transaction_amount": "$32.00",
+              "rewards_earned": "32 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_109": {
+              "transaction_id": "txn_mok_109",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/22/2025",
+              "merchant_name": "Branchbox Cloud",
+              "category": "Software",
+              "transaction_amount": "$74.00",
+              "rewards_earned": "296 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_110": {
+              "transaction_id": "txn_mok_110",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/25/2025",
+              "merchant_name": "Southbend Outfitters",
+              "category": "Shopping",
+              "transaction_amount": "$115.00",
+              "rewards_earned": "115 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_111": {
+              "transaction_id": "txn_mok_111",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/28/2025",
+              "merchant_name": "Pinecrest Car Rental",
+              "category": "Travel",
+              "transaction_amount": "$192.00",
+              "rewards_earned": "768 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_112": {
+              "transaction_id": "txn_mok_112",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "11/04/2025",
+              "merchant_name": "HarborDesk Software",
+              "category": "Software",
+              "transaction_amount": "$58.00",
+              "rewards_earned": "58 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_113": {
+              "transaction_id": "txn_mok_113",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "11/08/2025",
+              "merchant_name": "Grocer Grove",
+              "category": "Groceries",
+              "transaction_amount": "$64.00",
+              "rewards_earned": "64 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_114": {
+              "transaction_id": "txn_mok_114",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_silver_694a",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "11/12/2025",
+              "merchant_name": "Railpath Tickets",
+              "category": "Travel",
+              "transaction_amount": "$138.00",
+              "rewards_earned": "552 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_201": {
+              "transaction_id": "txn_mok_201",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/01/2025",
+              "merchant_name": "Workplane Cloud",
+              "category": "Software",
+              "transaction_amount": "$320.00",
+              "rewards_earned": "1280 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_202": {
+              "transaction_id": "txn_mok_202",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/05/2025",
+              "merchant_name": "SignalReach Ads",
+              "category": "Media",
+              "transaction_amount": "$246.00",
+              "rewards_earned": "369 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_203": {
+              "transaction_id": "txn_mok_203",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/09/2025",
+              "merchant_name": "Keystone Hotel",
+              "category": "Travel",
+              "transaction_amount": "$412.00",
+              "rewards_earned": "1648 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_204": {
+              "transaction_id": "txn_mok_204",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/12/2025",
+              "merchant_name": "Bench Supply Depot",
+              "category": "Shopping",
+              "transaction_amount": "$84.00",
+              "rewards_earned": "126 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_205": {
+              "transaction_id": "txn_mok_205",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/15/2025",
+              "merchant_name": "SignalReach Ads",
+              "category": "Media",
+              "transaction_amount": "$172.00",
+              "rewards_earned": "688 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_206": {
+              "transaction_id": "txn_mok_206",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/18/2025",
+              "merchant_name": "PilotChart Software",
+              "category": "Software",
+              "transaction_amount": "$64.00",
+              "rewards_earned": "256 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_207": {
+              "transaction_id": "txn_mok_207",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/21/2025",
+              "merchant_name": "Airbridge Airlines",
+              "category": "Travel",
+              "transaction_amount": "$538.00",
+              "rewards_earned": "2152 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_208": {
+              "transaction_id": "txn_mok_208",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/24/2025",
+              "merchant_name": "Stationery House",
+              "category": "Shopping",
+              "transaction_amount": "$46.00",
+              "rewards_earned": "69 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_209": {
+              "transaction_id": "txn_mok_209",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/27/2025",
+              "merchant_name": "Ledgerleaf Software",
+              "category": "Software",
+              "transaction_amount": "$92.00",
+              "rewards_earned": "368 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_210": {
+              "transaction_id": "txn_mok_210",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "11/03/2025",
+              "merchant_name": "BrightBanner Ads",
+              "category": "Media",
+              "transaction_amount": "$214.00",
+              "rewards_earned": "321 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_211": {
+              "transaction_id": "txn_mok_211",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "11/07/2025",
+              "merchant_name": "Riverside Car Rental",
+              "category": "Travel",
+              "transaction_amount": "$186.00",
+              "rewards_earned": "744 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_212": {
+              "transaction_id": "txn_mok_212",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_business_694a",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "11/11/2025",
+              "merchant_name": "Metro Fixtures",
+              "category": "Shopping",
+              "transaction_amount": "$128.00",
+              "rewards_earned": "192 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_301": {
+              "transaction_id": "txn_mok_301",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "10/03/2025",
+              "merchant_name": "Redwood Grocery",
+              "category": "Groceries",
+              "transaction_amount": "$83.00",
+              "rewards_earned": "166 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_302": {
+              "transaction_id": "txn_mok_302",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "10/07/2025",
+              "merchant_name": "River Electric",
+              "category": "Utilities",
+              "transaction_amount": "$124.00",
+              "rewards_earned": "248 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_303": {
+              "transaction_id": "txn_mok_303",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "10/11/2025",
+              "merchant_name": "Canal Cafe",
+              "category": "Dining",
+              "transaction_amount": "$27.00",
+              "rewards_earned": "54 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_304": {
+              "transaction_id": "txn_mok_304",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "10/14/2025",
+              "merchant_name": "Oak Pharmacy",
+              "category": "Shopping",
+              "transaction_amount": "$41.00",
+              "rewards_earned": "82 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_305": {
+              "transaction_id": "txn_mok_305",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "10/17/2025",
+              "merchant_name": "Hillside Hardware",
+              "category": "Shopping",
+              "transaction_amount": "$158.00",
+              "rewards_earned": "316 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_306": {
+              "transaction_id": "txn_mok_306",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "10/20/2025",
+              "merchant_name": "Parkway Cinema",
+              "category": "Entertainment",
+              "transaction_amount": "$34.00",
+              "rewards_earned": "68 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_307": {
+              "transaction_id": "txn_mok_307",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "10/23/2025",
+              "merchant_name": "Maple Broadband",
+              "category": "Utilities",
+              "transaction_amount": "$96.00",
+              "rewards_earned": "192 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_308": {
+              "transaction_id": "txn_mok_308",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "10/26/2025",
+              "merchant_name": "Eastside Grocer",
+              "category": "Groceries",
+              "transaction_amount": "$71.00",
+              "rewards_earned": "142 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_309": {
+              "transaction_id": "txn_mok_309",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "11/02/2025",
+              "merchant_name": "Willow Market",
+              "category": "Groceries",
+              "transaction_amount": "$63.00",
+              "rewards_earned": "63 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_310": {
+              "transaction_id": "txn_mok_310",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "11/06/2025",
+              "merchant_name": "Brook Apparel",
+              "category": "Shopping",
+              "transaction_amount": "$146.00",
+              "rewards_earned": "292 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_311": {
+              "transaction_id": "txn_mok_311",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_crypto_694a",
+              "credit_card_type": "Crypto-Cash Back",
+              "transaction_date": "11/10/2025",
+              "merchant_name": "Bay Restaurant",
+              "category": "Dining",
+              "transaction_amount": "$52.00",
+              "rewards_earned": "104 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_401": {
+              "transaction_id": "txn_mok_401",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/03/2025",
+              "merchant_name": "ChargePoint",
+              "category": "Green",
+              "transaction_amount": "$24.00",
+              "rewards_earned": "120 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_402": {
+              "transaction_id": "txn_mok_402",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/07/2025",
+              "merchant_name": "Canal Cafe",
+              "category": "Dining",
+              "transaction_amount": "$35.00",
+              "rewards_earned": "35 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_403": {
+              "transaction_id": "txn_mok_403",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/11/2025",
+              "merchant_name": "Richmond Grocer",
+              "category": "Groceries",
+              "transaction_amount": "$82.00",
+              "rewards_earned": "82 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_404": {
+              "transaction_id": "txn_mok_404",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/15/2025",
+              "merchant_name": "EVgo",
+              "category": "Green",
+              "transaction_amount": "$18.00",
+              "rewards_earned": "90 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_405": {
+              "transaction_id": "txn_mok_405",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/19/2025",
+              "merchant_name": "Cedar Books",
+              "category": "Shopping",
+              "transaction_amount": "$47.00",
+              "rewards_earned": "47 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_406": {
+              "transaction_id": "txn_mok_406",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/23/2025",
+              "merchant_name": "Tesla Supercharger",
+              "category": "Green",
+              "transaction_amount": "$26.00",
+              "rewards_earned": "130 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_407": {
+              "transaction_id": "txn_mok_407",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "10/27/2025",
+              "merchant_name": "City Noodle",
+              "category": "Dining",
+              "transaction_amount": "$44.00",
+              "rewards_earned": "44 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_408": {
+              "transaction_id": "txn_mok_408",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/01/2025",
+              "merchant_name": "ChargePoint",
+              "category": "Green",
+              "transaction_amount": "$32.00",
+              "rewards_earned": "32 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_409": {
+              "transaction_id": "txn_mok_409",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/05/2025",
+              "merchant_name": "Market Lane",
+              "category": "Groceries",
+              "transaction_amount": "$68.00",
+              "rewards_earned": "68 points",
+              "status": "COMPLETED"
+            },
+            "txn_mok_410": {
+              "transaction_id": "txn_mok_410",
+              "user_id": "u_mok_694a",
+              "credit_card_account_id": "cc_mok_eco_694a",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/09/2025",
+              "merchant_name": "EVgo",
+              "category": "Green",
+              "transaction_amount": "$22.00",
+              "rewards_earned": "110 points",
+              "status": "COMPLETED"
+            }
+          },
+          "notes": "The 47 supplied rows are all of Marcus's activity in the requested period. Every category is the merchant-submitted classification, and COMPLETED denotes final settled, posted purchases. All amounts are USD. All named merchants bill directly without wallets, processors, agencies, marketplaces, or other intermediaries masking classification. Travel rows are the named providers' rail, flight, hotel, or car-rental services. Software rows are direct SaaS subscriptions or cloud services, not hardware, telecom, professional services, or stored value. HarborDesk rows txn_mok_104 and txn_mok_112 are separate legitimate subscription purchases. Business Media rows txn_mok_202, txn_mok_205, and txn_mok_210 are direct digital-ad placements billed under Media by the named ad platforms, not consulting, production, creative retainers, or intermediary charges. Shopping controls are ordinary physical goods; Dining and Groceries are ordinary food purchases; Utilities and Entertainment are ordinary eligible service purchases. EcoCard Green rows txn_mok_401, txn_mok_404, txn_mok_406, txn_mok_408, and txn_mok_410 are actual charging sessions billed directly by their named certified networks. Other EcoCard purchases are non-green, with no mixed carts. No supplied row is a fee, cash advance, cash equivalent, balance transfer, gift card, person-to-person payment, interest, bank insurance premium, return, refund, or credit. No returns, credits, promotions, reward modifiers, or other adjustments affect these purchases. These facts specify business context; no expected-rewards fields are seeded."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "No pre-existing disputes for this fresh customer or supplied purchases. New dispute IDs must come from execution; select resulting records by customer and transaction membership, not an invented ID derivation."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "New cash-back disputes remain submitted for review. This configuration remains unchanged in both trajectories."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "No supplied grant. Begin each replay with fresh session access. The normal give operation supplies access; its procedural record is not a banking reward witness."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "u_mok_694a",
+          "address": "2716 Maplebrook Avenue, Richmond, VA 23225",
+          "email": "marcus.okafor@example.net",
+          "phone_number": "804-555-0168",
+          "date_of_birth": "04/18/1994",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "g01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Reference-only identity/ID discovery; not independently scored."
+      },
+      {
+        "action_id": "g02",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "u_mok_694a"
+        },
+        "info": "Reference-only product ownership and opening-date evidence."
+      },
+      {
+        "action_id": "g03",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "u_mok_694a"
+        },
+        "info": "Reference-only complete purchase evidence and exact transaction identifiers."
+      },
+      {
+        "action_id": "g04",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{}"
+        },
+        "info": "Generic procedural grant, not a submitted dispute or scored domain effect."
+      },
+      {
+        "action_id": "g05",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"u_mok_694a\",\"transaction_id\":\"txn_mok_107\"}"
+        },
+        "info": "After explanation and consent for Meadow Inn, 10/16/2025, $248."
+      },
+      {
+        "action_id": "g06",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"u_mok_694a\",\"transaction_id\":\"txn_mok_112\"}"
+        },
+        "info": "After explanation and consent for HarborDesk Software, 11/04/2025, $58; not the October subscription."
+      },
+      {
+        "action_id": "g07",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"u_mok_694a\",\"transaction_id\":\"txn_mok_202\"}"
+        },
+        "info": "After explanation and consent for SignalReach Ads, 10/05/2025, $246."
+      },
+      {
+        "action_id": "g08",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"u_mok_694a\",\"transaction_id\":\"txn_mok_210\"}"
+        },
+        "info": "After explanation and consent for BrightBanner Ads, 11/03/2025, $214."
+      },
+      {
+        "action_id": "g09",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"u_mok_694a\",\"transaction_id\":\"txn_mok_309\"}"
+        },
+        "info": "After explanation and consent for Willow Market, 11/02/2025, $63."
+      },
+      {
+        "action_id": "g10",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"u_mok_694a\",\"transaction_id\":\"txn_mok_408\"}"
+        },
+        "info": "After explanation and consent for ChargePoint, 11/01/2025, $32. End at pending review."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_004",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_credit_cards_crypto-cash_back_001",
+    "doc_credit_cards_ecocard_002",
+    "doc_credit_cards_ecocard_004",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_002"
+  ]
+}

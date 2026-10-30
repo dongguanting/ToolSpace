@@ -1,0 +1,237 @@
+{
+  "id": "task_generated_pro_073",
+  "description": {
+    "purpose": "Help Caleb Moreno dispute a recent fraudulent in-store debit-card purchase, permanently close the exposed card, and order a no-fee expedited replacement for the same checking account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I just saw an in-store purchase on my debit account that I didn't make. Can you help me dispute it and make sure the card is secure?” Do not initially volunteer your identity details, all transaction circumstances, a preferred internal card action, or a replacement request.\n\nYou are Caleb Moreno, a 54-year-old software support specialist in Phoenix, Arizona. If the agent asks you to verify your identity or requests relevant contact information, provide these configured details accurately: date of birth 03/22/1971; address 1847 E Ocotillo Road, Phoenix, AZ 85016; email caleb.moreno854035@example.com; phone number 602-555-0186. Do not volunteer the full fraud circumstances or replacement preferences merely because identity was requested.\n\nIf the agent asks which transaction is unfamiliar or requests its visible details, identify the posted Desert Gear Outlet purchase for $286.40 dated November 13, 2025, and say you first noticed it today, November 14. Confirm that you did not make or authorize it.\n\nIf asked about the card or transaction circumstances, say that the physical card is still in your possession, you do not know how the purchase happened, and you do not believe you shared your PIN. If asked, say you have not contacted the merchant, filed a police report, or provided a written statement. Answer relevant questions cooperatively, but do not name an internal fraud category, policy rule, database field, or operation.\n\nKeep these commitments throughout the conversation: the identified $286.40 purchase must be disputed because you did not make or authorize it; you will not accept leaving the exposed card usable; and after permanent closure you want a replacement for the same checking account sent to your registered Phoenix address using the fastest option represented as having no fee.\n\nIf the agent proposes securing the card without formally disputing the identified purchase, say: “Securing the card does not address the posted purchase I did not make. Please check whether that $286.40 charge can be formally disputed.” Do not accept the call as resolved while that purchase remains undisputed.\n\nIf the agent proposes leaving the current card active or treating a temporary measure as the final resolution, say: “Someone appears to have used the card details for an in-store purchase I did not authorize. I need a permanent way to prevent this card from being used again.” Do not authorize a final resolution that leaves the exposed card usable.\n\nIf the agent proposes ending after closure, charging for replacement delivery or design, or shipping somewhere other than your registered Phoenix address, say: “I still need a usable replacement. Please use the fastest no-fee option and send it to my registered Phoenix address.” Authorize the replacement only after its destination and the absence of both delivery and design fees are confirmed.\n\nAuthorize the dispute only after the agent identifies the November 13 Desert Gear Outlet transaction for $286.40 and you confirm that it was not authorized. Authorize permanent closure only after the agent makes clear that the old card will no longer be usable. When that consequence is explained, agree to permanent closure and acknowledge that the old card cannot be reused.\n\nOnly after the agent confirms that the old debit card has been permanently closed, or clearly explains that permanent closure will leave you without a usable card, ask for a replacement sent to your registered Phoenix address using expedited delivery, a classic design, and no delivery or design fee. Do not raise this replacement request before that event. Authorize it only after the registered Phoenix address, expedited delivery, classic design, and zero delivery and design fees have all been established.\n\nIf the agent cannot complete an otherwise eligible dispute, permanent closure, or replacement after checking the relevant records, ask for appropriate human assistance rather than leaving the fraudulent purchase, exposed card, or replacement unresolved. Do not request escalation on the successful path.\n\nDo not accept the resolution or stop until the agent confirms all three visible outcomes: the identified $286.40 Desert Gear Outlet purchase has been formally disputed; the old card ending in 6418 is permanently closed; and a no-fee expedited replacement with a classic design is pending for your registered Phoenix address. If only some outcomes are confirmed, ask directly about the missing outcome. Once all three are confirmed, respond briefly with thanks and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_caleb_moreno_854035": {
+              "user_id": "usr_caleb_moreno_854035",
+              "name": "Caleb Moreno",
+              "date_of_birth": "03/22/1971",
+              "address": "1847 E Ocotillo Road, Phoenix, AZ 85016",
+              "email": "caleb.moreno854035@example.com",
+              "phone_number": "602-555-0186"
+            }
+          },
+          "notes": "Fresh customer Caleb Moreno, age 54 at the fixed date, with populated registered contact information."
+        },
+        "accounts": {
+          "data": {
+            "acct_premium_checking_854035": {
+              "account_id": "acct_premium_checking_854035",
+              "user_id": "usr_caleb_moreno_854035",
+              "class": "checking",
+              "level": "Premium Tier",
+              "status": "OPEN",
+              "date_opened": "04/18/2022",
+              "current_holdings": "1250.00"
+            }
+          },
+          "notes": "Caleb's open Premium Tier checking account; it was opened more than 30 days before the fixed date."
+        },
+        "debit_cards": {
+          "data": {
+            "dcard_exposed_6418_854035": {
+              "card_id": "dcard_exposed_6418_854035",
+              "account_id": "acct_premium_checking_854035",
+              "user_id": "usr_caleb_moreno_854035",
+              "cardholder_name": "Caleb Moreno",
+              "last_4_digits": "6418",
+              "cvv": "742",
+              "expiration_date": "06/29",
+              "issue_date": "06/03/2024",
+              "issue_reason": "first_card",
+              "status": "ACTIVE"
+            }
+          },
+          "notes": "The sole active debit card for the checking account. No other replacement card exists in the rolling twelve-month window."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_desert_gear_111325_854035": {
+              "transaction_id": "txn_desert_gear_111325_854035",
+              "account_id": "acct_premium_checking_854035",
+              "date": "11/13/2025",
+              "description": "DESERT GEAR OUTLET PHOENIX AZ",
+              "amount": -286.4,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            }
+          },
+          "notes": "The unique posted in-store debit-card purchase Caleb reports as unauthorized. No pending or processing transaction and no pending refund is present."
+        },
+        "debit_card_disputes": {
+          "data": {},
+          "notes": "No pre-existing debit-card disputes; the account's initial open-dispute count is zero."
+        },
+        "debit_card_orders": {
+          "data": {},
+          "notes": "No pre-existing pending debit-card order."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be created during the interaction."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable-tool availability comes from the tool catalog; this operational table starts empty."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_locate_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        }
+      },
+      {
+        "action_id": "act_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "usr_caleb_moreno_854035",
+          "address": "1847 E Ocotillo Road, Phoenix, AZ 85016",
+          "email": "caleb.moreno854035@example.com",
+          "phone_number": "602-555-0186",
+          "date_of_birth": "03/22/1971",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_accounts_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_05_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_caleb_moreno_854035\"}"
+        }
+      },
+      {
+        "action_id": "act_06_unlock_cards_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "act_07_read_cards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_premium_checking_854035\"}"
+        }
+      },
+      {
+        "action_id": "act_08_unlock_transactions_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_09_read_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_premium_checking_854035\"}"
+        }
+      },
+      {
+        "action_id": "act_10_unlock_dispute",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281"
+        }
+      },
+      {
+        "action_id": "act_11_file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_desert_gear_111325_854035\",\"account_id\":\"acct_premium_checking_854035\",\"card_id\":\"dcard_exposed_6418_854035\",\"user_id\":\"usr_caleb_moreno_854035\",\"dispute_category\":\"card_present_fraud\",\"transaction_date\":\"11/13/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":286.4,\"transaction_type\":\"signature_purchase\",\"card_in_possession\":true,\"pin_compromised\":\"no\",\"contacted_merchant\":false,\"police_report_filed\":false,\"written_statement_provided\":false,\"provisional_credit_eligible\":false,\"customer_max_liability_amount\":50.0,\"card_action\":\"close_and_reissue\"}"
+        }
+      },
+      {
+        "action_id": "act_12_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721"
+        }
+      },
+      {
+        "action_id": "act_13_close_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"dcard_exposed_6418_854035\",\"reason\":\"fraud_suspected\"}"
+        }
+      },
+      {
+        "action_id": "act_14_unlock_order",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739"
+        }
+      },
+      {
+        "action_id": "act_15_order_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739",
+          "arguments": "{\"account_id\":\"acct_premium_checking_854035\",\"user_id\":\"usr_caleb_moreno_854035\",\"delivery_option\":\"EXPEDITED\",\"delivery_fee\":0.0,\"card_design\":\"CLASSIC\",\"design_fee\":0.0,\"shipping_address\":\"1847 E Ocotillo Road, Phoenix, AZ 85016\",\"excess_replacement_fee\":null}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_029",
+    "doc_bank_accounts_bank_accounts_(general)_031"
+  ]
+}

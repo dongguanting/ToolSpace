@@ -1,0 +1,216 @@
+{
+  "id": "task_generated_pro_036",
+  "description": {
+    "purpose": "Complete a tenure-safe deposit-account migration. Agent-visible appointment scope: the restricted service menu is Blue Account for replacement checking and Bronze Account for savings. This is an appointment restriction, not a claim about the bank's wider product catalog. Product optimization, credit applications, and funding transactions are outside this appointment.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Marcus Okafor, 44, a software support specialist in Columbus, Ohio.\n\nBegin: “My app shows my old Light Blue checking is empty now. I'd like replacement checking and to close the old account promptly. Can we also get a savings account set up during this call?”\n\nWhen asked for identification, provide the requested details: DOB 04/08/1981; phone 614-555-0184; email marcus.okafor@example.net; address 287 Willowbend Avenue, Columbus, OH 43214.\n\nWhen asked about the change, products, or funding, explain that you expected to finish the checking switch and old-account closure before savings. Stay within the appointment's everyday-checking/basic-savings menu, with no credit card or unrelated product. You moved the old balance out and will put $8,400 into savings yourself from another bank; authorize no deposit or transfer during this call.\n\nCooperate with verification, but authorize the account changes only after understanding the proposed products, relevant costs, and plan. If the agent proposes keeping the old account open temporarily, ask why if the reason is unclear. After an understandable explanation, agree to the necessary sequence change and stop pressing your earlier preference. This agreement covers only the requested openings and closure.\n\nFor any proposal that conflicts with these boundaries, changes the agreed sequence without explanation, closes the wrong account, or leaves either opening unfinished, withhold approval: “That isn't the change I agreed to. Please check it again so we can finish what I requested.” If it already happened, use the same response and request correction; do not accept a partial migration. Identify only the visible mismatch, such as savings still missing. If complete service is promised and no problem is apparent, remain uncertain about unseen issues rather than guessing the cause.\n\nAccept only when both new accounts are confirmed with identifying details, only the old Light Blue account is confirmed closed, no money has moved, and you have been told when to fund savings and what happens if you do not. Then thank the agent and end with ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_mokafor_4718": {
+              "user_id": "usr_mokafor_4718",
+              "name": "Marcus Okafor",
+              "date_of_birth": "04/08/1981",
+              "email": "marcus.okafor@example.net",
+              "phone_number": "614-555-0184",
+              "address": "287 Willowbend Avenue, Columbus, OH 43214",
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh appointment customer. Agent-visible service scope: Blue Account replacement checking and Bronze Account savings only; this appointment does not involve comparison against the wider catalog. This initialization is a patch, not replacement of global users."
+        },
+        "accounts": {
+          "data": {
+            "acct_mokafor_7216": {
+              "account_id": "acct_mokafor_7216",
+              "user_id": "usr_mokafor_4718",
+              "account_type": "checking",
+              "account_class": "Light Blue Account",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "0.00",
+              "date_opened": "08/01/2025"
+            }
+          },
+          "notes": "One supplied fixture-owned account. Appointment menu: Blue Account for replacement checking and Bronze Account for savings. The completed outbound transfer is already reflected in the balance. No closure metadata is seeded. Unrelated global accounts are not replaced."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_mokafor_5937": {
+              "transaction_id": "txn_mokafor_5937",
+              "account_id": "acct_mokafor_7216",
+              "date": "11/12/2025",
+              "amount": -1260,
+              "type": "transfer",
+              "status": "COMPLETED",
+              "description": "External transfer to Marcus Okafor's other bank"
+            }
+          },
+          "notes": "Historical completed transaction, not a requested transfer. This is the legacy account's only supplied transaction and is necessary closure-status evidence."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "No supplied verification records. Establish current-session verification; do not inherit or seed verification for Marcus."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No supplied credit-card holdings. Included for the complete owned-account inventory lookup; unrelated global holdings are not cleared."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty runtime call registry. Tool access comes from the catalog and session unlocks, never seeded descriptors."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "G01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_email",
+        "arguments": {
+          "email": "marcus.okafor@example.net"
+        },
+        "info": "Support lookup after Marcus supplies his email; match at least two identity fields. Not an independently scored read.",
+        "compare_args": []
+      },
+      {
+        "action_id": "G02",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Fixed banking-clock support for session verification.",
+        "compare_args": []
+      },
+      {
+        "action_id": "G03",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_mokafor_4718",
+          "address": "287 Willowbend Avenue, Columbus, OH 43214",
+          "email": "marcus.okafor@example.net",
+          "phone_number": "614-555-0184",
+          "date_of_birth": "04/08/1981",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After identity confirmation. Require a newly created verification record for Marcus, not exact timestamp or wording as reward targets.",
+        "compare_args": [
+          "user_id"
+        ]
+      },
+      {
+        "action_id": "G04u",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Session access only; not a banking outcome.",
+        "compare_args": []
+      },
+      {
+        "action_id": "G04",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_mokafor_4718\"}"
+        },
+        "info": "Complete inventory establishes savings eligibility and identifies the legacy closure target. Exclude read telemetry from reward.",
+        "compare_args": []
+      },
+      {
+        "action_id": "G05u",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        },
+        "compare_args": []
+      },
+      {
+        "action_id": "G05",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_mokafor_7216\"}"
+        },
+        "info": "Necessary closure precondition: no pending transactions. Not a balance-reconfirmation read or independent reward target.",
+        "compare_args": []
+      },
+      {
+        "action_id": "G06",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        },
+        "compare_args": []
+      },
+      {
+        "action_id": "G07",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        },
+        "compare_args": []
+      },
+      {
+        "action_id": "G08",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_mokafor_4718\",\"account_type\":\"checking\",\"account_class\":\"Blue Account\"}"
+        },
+        "info": "After informed consent to Blue Account and Bronze Account and the explained migration plan. Disclose Blue's $20 monthly fee and $625 minimum-daily-balance waiver threshold, Bronze's $0 opening minimum and $0 monthly fee. Marcus agrees to keep the old checking open through savings creation and declines funding. Bind the returned checking ID as ea221d4991fb4de2."
+      },
+      {
+        "action_id": "G09",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_mokafor_4718\",\"account_type\":\"savings\",\"account_class\":\"Bronze Account\"}"
+        },
+        "info": "The legacy account is still OPEN, age 105 days; Blue is age zero. Bind returned savings ID as 72c008ae176f938d. Marcus funds externally himself; explain 12/14/2025 funding deadline and closure if unfunded. Either opening order is acceptable if the mature account remains OPEN."
+      },
+      {
+        "action_id": "G10",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_mokafor_7216\",\"reason\":\"Customer requested checking replacement\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Close only the original checking after both openings. Applicable fee $0; notice zero days; balance zero; no pending transactions. Exact closure-reason wording is not a reward target."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_checking_accounts_blue_account_001",
+    "doc_savings_accounts_bronze_account_001"
+  ]
+}

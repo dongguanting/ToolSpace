@@ -1,0 +1,359 @@
+{
+  "id": "task_generated_pro_056",
+  "description": {
+    "purpose": "Verify Maya Iqbal and correct all policy-supported ATM fee and missing-rebate errors from her November statement search, allocating the correct credit to each affected checking account without crediting the historical Dark Green activity.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I searched my statements for ATM fees, and several of the November charges and rebates don't look right. Can you review them and fix any mistakes?” Do not initially list the accounts, transaction details, policy rules, or expected correction amounts.\n\nIf asked to verify your identity, provide: Maya Iqbal, date of birth April 22, 1966, 214 W Lanvale St, Baltimore, MD 21217, maya.iqbal@example.com, and 410-555-0186. Do not volunteer these details before a relevant verification request.\n\nIf asked which accounts or period are involved, say the current items are from November 2025 on your Purple, Light Blue, Evergreen, Bluest, and Green Fee-Free checking accounts. Mention that the search also returned one very old Dark Green line from an account closed decades ago and that you are unsure whether it matters. Do not yet volunteer all itemized amounts unless asked.\n\nIf asked for visible ATM dates, amounts, channels, or fee descriptions, report the following statement details naturally: the November 3 Purple debit shows $100 cash, a $5 Rho foreign ATM fee, a $2 foreign transaction fee, and a $12 operator surcharge; Light Blue shows foreign cash withdrawals of $100 on November 2, $120 on November 5, and $80 plus a separately visible $7.50 Rho fee on November 10; Evergreen shows $100 cash plus a $5 Rho fee at a foreign Rho-network partner ATM on November 7; Bluest shows an $18 third-party ATM operator surcharge on November 9 with no visible November rebate; Green Fee-Free shows a foreign withdrawal with a separately identified $4 Rho fee and no operator surcharge on November 12; and the archived Dark Green result shows $400 cash plus a $6 foreign ATM fee on February 10, 1992. Say you do not know which lines are wrong or the correct net amounts and want the bank to determine that.\n\nOnce the agent confirms a current discrepancy, ask for it to be corrected. You want every confirmed current-period ATM fee or missing-rebate error on the five named active checking accounts corrected, not merely explained. You do not want a blanket or duplicate credit for a line that is correct, including the archived Dark Green fee. You need the correction amount attributable to each affected account so you can reconcile the statement search.\n\nIf the agent proposes correcting only one or some current accounts, or offers only a combined total while other visible lines remain unresolved, say: “The other November lines are still showing in the same report. Please finish reviewing them and tell me what was corrected on each account.” Do not authorize a proposal presented as the final resolution while any named active account remains unreviewed or its proposed correction is unspecified.\n\nIf the agent proposes a blanket amount that includes the old Dark Green line, duplicates a correction, or does not distinguish correct from incorrect fees, say: “The Dark Green line is decades old. Please verify which charges are actually wrong before applying anything.” Withhold authorization for a blanket or duplicate correction whose covered statement lines have not been identified.\n\nComplete requested identity verification using your own recognizable personal details before authorizing any correction. Before authorizing a correction, require the agent to identify the active account, the visible ATM line it addresses, and the proposed account-level amount. Authorize only a proposal that distinguishes current confirmed errors from the archived Dark Green line.\n\nDo not accept the issue as complete until you have confirmation that corrections were applied to Purple, Light Blue, Evergreen, Bluest, and Green Fee-Free. Do not accept a combined total in place of a separate recognizable credited amount for each of those five accounts. Do not accept the resolution if the archived Dark Green line has been treated as a current correction.\n\nOnly after all five active-account corrections are confirmed, each credited amount is recognizable separately, and no credit was applied for the archived Dark Green fee, thank the agent briefly and end with exactly one marker. ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_maya_iqbal_baltimore_6f42": {
+              "user_id": "usr_maya_iqbal_baltimore_6f42",
+              "name": "Maya Iqbal",
+              "date_of_birth": "04/22/1966",
+              "address": "214 W Lanvale St, Baltimore, MD 21217",
+              "email": "maya.iqbal@example.com",
+              "phone_number": "410-555-0186"
+            }
+          },
+          "notes": "Maya Iqbal is 59 on 11/14/2025 and is a self-employed photographer living in Baltimore, Maryland."
+        },
+        "accounts": {
+          "data": {
+            "acct_maya_purple_91c7": {
+              "account_id": "acct_maya_purple_91c7",
+              "class": "checking",
+              "current_holdings": "4120.00",
+              "date_opened": "08/18/2018",
+              "level": "Purple Account",
+              "status": "ACTIVE",
+              "user_id": "usr_maya_iqbal_baltimore_6f42"
+            },
+            "acct_maya_light_blue_28ad": {
+              "account_id": "acct_maya_light_blue_28ad",
+              "class": "checking",
+              "current_holdings": "2310.00",
+              "date_opened": "03/09/2021",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "user_id": "usr_maya_iqbal_baltimore_6f42"
+            },
+            "acct_maya_evergreen_54e1": {
+              "account_id": "acct_maya_evergreen_54e1",
+              "class": "checking",
+              "current_holdings": "5880.00",
+              "date_opened": "06/14/2019",
+              "level": "Evergreen Account",
+              "status": "ACTIVE",
+              "user_id": "usr_maya_iqbal_baltimore_6f42"
+            },
+            "acct_maya_bluest_b803": {
+              "account_id": "acct_maya_bluest_b803",
+              "class": "checking",
+              "current_holdings": "9100.00",
+              "date_opened": "01/22/2017",
+              "level": "Bluest Account",
+              "status": "ACTIVE",
+              "user_id": "usr_maya_iqbal_baltimore_6f42"
+            },
+            "acct_maya_green_fee_free_77d4": {
+              "account_id": "acct_maya_green_fee_free_77d4",
+              "class": "checking",
+              "current_holdings": "1760.00",
+              "date_opened": "09/30/2023",
+              "level": "Green Fee-Free Account",
+              "status": "ACTIVE",
+              "user_id": "usr_maya_iqbal_baltimore_6f42"
+            },
+            "acct_maya_dark_green_hist_c25b": {
+              "account_id": "acct_maya_dark_green_hist_c25b",
+              "class": "checking",
+              "current_holdings": "0.00",
+              "date_opened": "06/01/1991",
+              "level": "Dark Green Account",
+              "status": "CLOSED",
+              "user_id": "usr_maya_iqbal_baltimore_6f42"
+            }
+          },
+          "notes": "Five current checking accounts are eligible action targets. The Dark Green checking account was opened while Maya was 25 and is a closed historical distractor."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initially; current-session verification must be created during the successful interaction."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_purple_foreign_bundle_3b19": {
+              "transaction_id": "txn_purple_foreign_bundle_3b19",
+              "account_id": "acct_maya_purple_91c7",
+              "amount": -119,
+              "date": "11/03/2025",
+              "description": "Posted foreign cash withdrawal at a foreign Rho-network partner ATM (not an out-of-network network-access fee): $100 cash + $5 Rho foreign ATM withdrawal fee + $2 Rho foreign transaction fee + $12 third-party ATM operator surcharge; operator surcharge coded as ATM operator fee; no rebate included.",
+              "status": "posted",
+              "type": "atm_withdrawal"
+            },
+            "txn_light_blue_foreign_1_6a20": {
+              "transaction_id": "txn_light_blue_foreign_1_6a20",
+              "account_id": "acct_maya_light_blue_28ad",
+              "amount": -100,
+              "date": "11/02/2025",
+              "description": "First November foreign ATM cash withdrawal: $100 cash; Rho foreign ATM fee $0; no operator surcharge.",
+              "status": "posted",
+              "type": "atm_withdrawal"
+            },
+            "txn_light_blue_foreign_2_8d65": {
+              "transaction_id": "txn_light_blue_foreign_2_8d65",
+              "account_id": "acct_maya_light_blue_28ad",
+              "amount": -120,
+              "date": "11/05/2025",
+              "description": "Second November foreign ATM cash withdrawal: $120 cash; Rho foreign ATM fee $0; no operator surcharge.",
+              "status": "posted",
+              "type": "atm_withdrawal"
+            },
+            "txn_light_blue_foreign_3_f047": {
+              "transaction_id": "txn_light_blue_foreign_3_f047",
+              "account_id": "acct_maya_light_blue_28ad",
+              "amount": -87.5,
+              "date": "11/10/2025",
+              "description": "Third November foreign ATM cash withdrawal: $80 cash + separately identified $7.50 Rho foreign ATM withdrawal fee; no operator surcharge.",
+              "status": "posted",
+              "type": "atm_withdrawal"
+            },
+            "txn_evergreen_foreign_partner_4cc8": {
+              "transaction_id": "txn_evergreen_foreign_partner_4cc8",
+              "account_id": "acct_maya_evergreen_54e1",
+              "amount": -105,
+              "date": "11/07/2025",
+              "description": "Foreign ATM cash withdrawal at a Rho-network partner ATM: $100 cash + separately identified $5 Rho foreign ATM withdrawal fee; terminal is in-network, so no out-of-network fee applies.",
+              "status": "posted",
+              "type": "atm_withdrawal"
+            },
+            "txn_bluest_operator_fee_09af": {
+              "transaction_id": "txn_bluest_operator_fee_09af",
+              "account_id": "acct_maya_bluest_b803",
+              "amount": -18,
+              "date": "11/09/2025",
+              "description": "Posted $18 third-party ATM owner/operator surcharge, coded as ATM operator fee; not a Rho out-of-network fee; no corresponding November ATM rebate is present.",
+              "status": "posted",
+              "type": "atm_fee"
+            },
+            "txn_green_fee_free_foreign_74be": {
+              "transaction_id": "txn_green_fee_free_foreign_74be",
+              "account_id": "acct_maya_green_fee_free_77d4",
+              "amount": -64,
+              "date": "11/12/2025",
+              "description": "Foreign ATM withdrawal: $60 cash + separately identified $4 Rho foreign ATM withdrawal fee; no third-party ATM operator surcharge.",
+              "status": "posted",
+              "type": "atm_withdrawal"
+            },
+            "txn_dark_green_foreign_1992_d311": {
+              "transaction_id": "txn_dark_green_foreign_1992_d311",
+              "account_id": "acct_maya_dark_green_hist_c25b",
+              "amount": -406,
+              "date": "02/10/1992",
+              "description": "Historical foreign ATM withdrawal while holder was age 25: $400 cash + $6 Rho foreign ATM fee calculated under the 2.5% schedule with a $6 per-transaction cap.",
+              "status": "posted",
+              "type": "atm_withdrawal"
+            }
+          },
+          "notes": "The listed records are the complete relevant histories. No active account has a correction credit in the 14 days ending 11/14/2025; Purple and Bluest have no matching November operator-fee rebate."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discoverable-tool audit state starts empty; tool availability comes from the environment catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_get_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        }
+      },
+      {
+        "action_id": "act_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_maya_iqbal_baltimore_6f42",
+          "address": "214 W Lanvale St, Baltimore, MD 21217",
+          "email": "maya.iqbal@example.com",
+          "phone_number": "410-555-0186",
+          "date_of_birth": "04/22/1966",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_unlock_account_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_lookup_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_baltimore_6f42\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_transaction_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_read_purple",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_maya_purple_91c7\"}"
+        }
+      },
+      {
+        "action_id": "act_read_light_blue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_maya_light_blue_28ad\"}"
+        }
+      },
+      {
+        "action_id": "act_read_evergreen",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_maya_evergreen_54e1\"}"
+        }
+      },
+      {
+        "action_id": "act_read_bluest",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_maya_bluest_b803\"}"
+        }
+      },
+      {
+        "action_id": "act_read_green_fee_free",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_maya_green_fee_free_77d4\"}"
+        }
+      },
+      {
+        "action_id": "act_read_dark_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_maya_dark_green_hist_c25b\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_credit_tool",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829"
+        }
+      },
+      {
+        "action_id": "act_credit_purple",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_maya_purple_91c7\",\"amount\":19.0,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "act_credit_light_blue",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_maya_light_blue_28ad\",\"amount\":3.5,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "act_credit_evergreen",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_maya_evergreen_54e1\",\"amount\":2.0,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "act_credit_bluest",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_maya_bluest_b803\",\"amount\":18.0,\"credit_type\":\"rebate_credit\"}"
+        }
+      },
+      {
+        "action_id": "act_credit_green_fee_free",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"acct_maya_green_fee_free_77d4\",\"amount\":4.0,\"credit_type\":\"fee_refund\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_017",
+    "doc_checking_accounts_bluest_account_003",
+    "doc_checking_accounts_dark_green_account_001",
+    "doc_checking_accounts_dark_green_account_002",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_evergreen_account_008",
+    "doc_checking_accounts_green_fee-free_account_005",
+    "doc_checking_accounts_light_blue_account_004",
+    "doc_checking_accounts_light_blue_account_006",
+    "doc_checking_accounts_purple_account_001",
+    "doc_checking_accounts_purple_account_004"
+  ]
+}

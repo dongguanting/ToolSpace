@@ -1,0 +1,208 @@
+{
+  "id": "task_generated_pro_008",
+  "description": {
+    "purpose": "Complete Marcus Okafor's two-stage deposit-account migration while retaining his early-payroll requirement, savings-opening eligibility, intact future reserve allocation, and existing travel-capable card.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Marcus Okafor, a 31-year-old laboratory technician in Boise, Idaho. The date of this banking interaction is November 14, 2025. Be concise, cooperative, and protective of the requirements you have stated. You want one completed payroll-driven checking-and-savings migration, not just advice.\n\nBegin with: \"My employer's payroll-bank-change window opened today, and I'd like help moving to a checking-and-savings setup that earns more on my reserve. The checking must offer direct deposit at least one day early.\"\n\nOnly when asked for identification or verification, provide the requested details: Marcus Okafor; birth date March 9, 1994; 742 Juniper Meadow Way, Boise, Idaho 83706; marcus.okafor@example.net; 208-555-0174. If asked about existing products, identify your empty Light Blue checking account, opened September 1, 2025, and your existing Silver Rewards Card ending in 6829. Do not recite all identity information before it is requested. Approve use of your identified profile only after answering the requested identity questions and confirming that the profile and existing products are yours.\n\nWhen asked about your requirements, shortlist, savings plans, or funding, provide the relevant facts rather than dumping unrelated information. Your saved savings choices are Gold, Gold Plus, and Silver Plus. Your checking choices are Green checking, Green Fee-Free, and Gold Years. For cards, you are considering keeping Silver Rewards versus Bronze; you think Bronze might be cheaper but are willing to revise that belief after an explanation. Ask for one best compatible combination rather than a menu you must solve yourself.\n\nPreserve these preferences throughout the call: The replacement checking must offer at least one-day early direct deposit; ordinary dependence on when your employer submits payroll is acceptable, but zero-day early access is not. You want the highest compatible savings APY for your entire planned $18,600 reserve in one savings account, not checking interest or merely the cheapest checking. Never split the reserve, divert it to checking, or replace it with an investment. The reserve is currently outside this bank and may decline to $12,000. You do not want balance-tiered savings interest, changing interest tiers across that range, or a requirement to maintain more money than planned. Stay within your stated shortlist, reject senior-targeted checking, and do not add a subscription or unrelated product. The finished arrangement must have one open checking and one open savings account.\n\nWhen asked about travel needs, explain that you want confirmed included travel-insurance capability. You are willing to charge covered fares fully to the card and accept applicable terms, exclusions, and documentation requirements; you are not asking for approval of a particular trip or claim. Preserve that travel capability. Only keeping Silver Rewards or considering Bronze is in scope; no other card is authorized. If changing cards has no confirmed compatible advantage, prefer keeping the card you already have.\n\nWhen asked about routine checking use or fees, explain that you occasionally receive domestic wires, but their cost is secondary to early payroll and the savings arrangement. You have separate planned checking operating funds of $1,800; they are not part of your savings reserve. Do not move money today. You will send the external savings deposit next week and provide checking operating funds separately. Never authorize a transfer, card-funded deposit, or debit against the planned reserve to fund either account or cover fees. When asked whether the old checking is ready to retire, truthfully say your app shows no pending items and you have no outstanding payments against it.\n\nAuthorize savings only after the agent identifies one selection within your shortlist, explains how it fits your balance range and existing card, and acknowledges that funding is deferred rather than transferred today. When the agent explains the funding deadline and the consequence of closure if unfunded, acknowledge them and confirm you will deposit externally next week. Accept that deferred funding is not necessarily a maintenance-fee holiday: if the agent explains applicable savings or checking maintenance charges, acknowledge that later fees may apply and do not demand a present waiver or claim your future operating funds already satisfied the first statement cycle. Keep your no-funding-today preference.\n\nOnly after the agent reports that savings has actually been opened, say: \"Now that savings is set up, can we finish the checking change and retire the empty old account? Please keep the requirements we discussed.\" Before that milestone, answer relevant questions but do not independently introduce this explicit retirement request. If the agent explains that keeping the old checking open briefly is necessary for savings eligibility, accept that practical explanation. Complete the eligible migration in this call; do not sacrifice savings setup to close the old checking prematurely.\n\nBefore approving replacement checking, require confirmation that it offers at least one-day early direct deposit, is not senior-targeted, and fits the single-checking arrangement. Disclosed fees do not override early payroll. Approve closure only for your empty Light Blue account, after confirming no pending items or outstanding payments, that savings setup is not being sacrificed, and that no closure charge is due.\n\nIf the agent recommends a cheaper-wire account without establishing early payroll, treats zero-day access as sufficient, or proposes Green Fee-Free on that basis, say: \"Saving on an occasional wire is not why I am changing payroll accounts. I need the early access I mentioned at the start. Please check that before opening the replacement.\" Never approve a replacement explicitly described as having zero-day early access. If early access is unresolved, withhold approval until the agent investigates; do not supply a preferred product name. If the unsuitable replacement was already opened, say: \"That leaves me without the early payroll feature I asked for, so the move is not finished. Please investigate how to correct the setup without using my savings reserve or leaving me with extra accounts.\" Do not accept or stop while that remains unresolved, and do not prescribe a reversal or fee waiver.\n\nIf the agent proposes splitting the reserve, using it to meet checking balances, optimizing checking interest instead, substituting an investment, or choosing savings incompatible with your range or no-tier preference, say: \"That money is one reserve, and I already have separate operating money for checking. Please keep the full reserve together and compare it using the balance range I gave you.\" Do not authorize any of those alternatives.\n\nIf the agent proposes a senior account, duplicate retained checking, an unlisted card, a subscription, or unrelated products, say: \"Please stay with the choices I asked you to compare. I do not want a senior account or extra products to make the numbers work.\" Do not approve those additions or substitutions.\n\nIf the agent proposes replacing your card merely for an advertised zero annual fee or without establishing travel protection, ask: \"Does changing cards actually improve this arrangement while keeping the included travel protection? If not, I would rather keep the card I already have.\" No application or card replacement is authorized without a confirmed compatible advantage and included travel-insurance capability.\n\nIf the agent proposes immediate funding or using reserve money for fees, say: \"Please leave the funding to me as discussed. I am sending the savings deposit next week and handling the operating money separately.\" Do not authorize the proposed movement or charge.\n\nIf the agent offers only advice, completes only one portion, leaves duplicate checking accounts, or proposes closure despite an acknowledged eligibility problem, say: \"I still need the complete move, not just the recommendation. Please finish the eligible setup and retire the empty old account without losing the features we agreed on.\" Do not authorize a closure that the agent says would prevent the remaining setup, and do not accept duplicate checking as completion.\n\nDo not volunteer banking policy, rate arithmetic, a predetermined winning combination, or claims about undocumented card benefits. Base challenges on your stated preferences and what the agent tells you. Answer reasonable relevant questions, acknowledge grounded explanations, and ask about missing work rather than inventing additional errands.\n\nAccept only after the agent confirms that the selected savings and an early-payroll-compatible replacement checking are open and your existing card remains in place. Require confirmation that the empty Light Blue account is closed without a charge and that no duplicate checking remains. Require that no money was moved or charged and that you understand when to make the external savings deposit. Require that no additional card application, subscription, investment, or off-shortlist product was introduced. Do not accept while any allocation, balance-range, age-related, travel, or early-payroll preference is abandoned. Once all these conditions hold, briefly thank the agent and end with the following marker, once only:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_mokafor_1540": {
+              "user_id": "usr_mokafor_1540",
+              "name": "Marcus Okafor",
+              "date_of_birth": "03/09/1994",
+              "address": "742 Juniper Meadow Way, Boise, Idaho 83706",
+              "email": "marcus.okafor@example.net",
+              "phone_number": "208-555-0174",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh sole-owner profile. Age 31 at the fixed environment date. Occupation, shortlist, reserve, operating funds, and preferences are conversation facts, not database columns."
+        },
+        "accounts": {
+          "data": {
+            "acct_mokafor_lb_1540": {
+              "account_id": "acct_mokafor_lb_1540",
+              "user_id": "usr_mokafor_1540",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "current_holdings": "0.00",
+              "date_opened": "09/01/2025",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Marcus's only initial deposit account. Its 74-day tenure establishes savings eligibility. There are no other accounts for this fresh profile, no collections, and no negative balances. New accounts are created by the opening tool, never seeded."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_mokafor_silver_1540": {
+              "account_id": "cc_mokafor_silver_1540",
+              "user_id": "usr_mokafor_1540",
+              "card_type": "Silver Rewards Card",
+              "status": "OPEN",
+              "account_status": "OPEN",
+              "card_last_4_digits": "6829",
+              "date_of_account_open": "05/14/2024",
+              "credit_limit": "18000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0"
+            }
+          },
+          "notes": "Existing eligible same-profile card; not a new application. Every field must remain unchanged."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Current-session verification must be logged after matching caller-provided identity details."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No transactions, pending items, or holds exist for the old account. The caller also has no outstanding payments. No transaction is created by the authorized migration."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No pre-existing or pending application for Marcus. The successful migration adds none."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty operational registry. Availability comes from the tool catalog. Reads and tool-registry bookkeeping are excluded from evaluated banking outcomes."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "golden_01_identify",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        },
+        "info": "Reference scaffolding: discover the fresh profile and compare caller-supplied identity fields. Not an independently evaluated action."
+      },
+      {
+        "action_id": "golden_02_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Reference scaffolding for the current-session verification timestamp; returns 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "golden_03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_mokafor_1540",
+          "address": "742 Juniper Meadow Way, Boise, Idaho 83706",
+          "email": "marcus.okafor@example.net",
+          "phone_number": "208-555-0174",
+          "date_of_birth": "03/09/1994",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After the caller has confirmed matching identity details, including at least birth date and address."
+      },
+      {
+        "action_id": "golden_04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Ephemeral availability only; not a banking outcome."
+      },
+      {
+        "action_id": "golden_05_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_mokafor_1540\"}"
+        },
+        "info": "Reference scaffolding for ownership, savings count, good standing, old-account ID and tenure, and the existing card. Both paths use the same required documents. No transaction-history read is mandatory."
+      },
+      {
+        "action_id": "golden_06_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        },
+        "info": "Ephemeral availability only."
+      },
+      {
+        "action_id": "golden_07_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_mokafor_1540\",\"account_type\":\"savings\",\"account_class\":\"Gold Account\"}"
+        },
+        "info": "After Gold selection is explained and authorized, while Light Blue remains OPEN. Returns the account_id derived as SHA256(UTF8('account:usr_mokafor_1540:savings:Gold Account')).hexdigest()[:16]. No funding occurs; communicate 12/14/2025 deadline, closure if unfunded, and applicable maintenance terms."
+      },
+      {
+        "action_id": "golden_08_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        },
+        "info": "After savings completion triggers Marcus's migration follow-through request. Ephemeral availability only."
+      },
+      {
+        "action_id": "golden_09_close_old",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_mokafor_lb_1540\",\"reason\":\"Customer requested payroll account migration\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "After confirming no pending or outstanding items and authorization to retire this empty account without a closure charge. Savings already exists."
+      },
+      {
+        "action_id": "golden_10_open_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_mokafor_1540\",\"account_type\":\"checking\",\"account_class\":\"Green Account (checking)\"}"
+        },
+        "info": "Authorized one-day-early-capable replacement, with payer-timing qualification and maintenance terms disclosed. Returns SHA256(UTF8('account:usr_mokafor_1540:checking:Green Account (checking)')).hexdigest()[:16]. No funding or maintenance waiver is performed."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_gold_years_account_001",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_green_fee-free_account_001",
+    "doc_checking_accounts_green_fee-free_account_003",
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_005",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_gold_plus_account_001",
+    "doc_savings_accounts_gold_plus_account_009",
+    "doc_savings_accounts_silver_plus_account_001"
+  ]
+}

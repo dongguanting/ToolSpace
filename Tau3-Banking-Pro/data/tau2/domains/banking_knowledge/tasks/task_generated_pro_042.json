@@ -1,0 +1,286 @@
+{
+  "id": "task_generated_pro_042",
+  "description": {
+    "purpose": "Reconcile August and September rewards on Maya Iqbal's Business Silver and personal Silver cards and submit transaction-specific disputes for the three genuine shortfalls without changing rewards or balances.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Maya Iqbal, 36, a physical therapy assistant in Phoenix, Arizona, who also runs a small sole-proprietor scheduling-support business. You are catching up on bookkeeping and are mildly concerned about your cash back.\n\nOpen with: \"Hi, I'm catching up on my rewards and the cash back on my two Silver cards doesn't seem right. Could you take a look?\"\n\nIf asked for identification or contact details, provide only the requested information: Maya Iqbal; birth date June 9, 1989; phone 602-555-0186; email maya.iqbal639@example.com; address 4826 N 19th Avenue, Apt 12, Phoenix, AZ 85015. Do not volunteer sensitive card details or unrequested personal information.\n\nIf asked which cards, dates, purchases, or statements are involved, explain that you mean your Business Silver Rewards Card and personal Silver Rewards Card for August and September. Your detailed transaction view will not load. You recognize the purchases as yours but cannot supply transaction identifiers or identify the reward errors. You do not know the rates, promotional eligibility, or correct shortfall. Learn those findings from the agent; if an unfamiliar amount or rate needs clarification, ask for a plain-language explanation rather than inventing a correction.\n\nYour goal remains a review of August and September rewards on both existing cards, with action limited to genuine cash-back discrepancies, not challenges to your authorized purchases. An explanation alone is not enough if an error is found: you want it submitted for correction review, while understanding that submission is not immediate reimbursement.\n\nOnly after the agent identifies a discrepancy and explains the review process, ask to have the affected rewards reviewed for correction. Before authorizing or making any submission, require the agent to identify the card and purchase in ordinary terms, explain why its rewards appear wrong, and clarify that you are submitting your own rewards dispute, not challenging the purchase amount. Once that is clear, use the provided submission capability with the identifiers the agent supplies; it may be reused for other explained discrepancies. You need not independently verify the policy arithmetic.\n\nIf the agent proposes blanket filings, purchase-amount disputes, leaving one card unaddressed, or ending with an identified error merely explained, clarify the relevant gap: \"These are my purchases; I'm asking about the rewards on both cards, and any reward errors you find still need to be submitted for review. Please finish that work.\" Do not authorize purchase-amount disputes or indiscriminate filings; authorize only the explained rewards-review submissions. If an incompatible action has already occurred, do not accept closure; ask for the outstanding scope to be corrected or reviewed by a human.\n\nRemain cooperative while the review and submissions progress, and become relieved when submissions are confirmed. If the agent cannot proceed or refuses to help after one clarification of your rewards-only request, become more concerned and ask for a human to help finish the review. Do not request escalation on a progressing successful path. A request for human help is not completion.\n\nAccept and end only after both cards have been explained and every discrepancy identified in that review has a submission confirmation, with any remaining review honestly described as pending rather than an already-posted reimbursement. If something is missing, ask about that gap and do not stop. Once all these conditions hold, briefly thank the agent and end with exactly this marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_maya_iqbal_639": {
+              "user_id": "usr_maya_iqbal_639",
+              "name": "Maya Iqbal",
+              "date_of_birth": "06/09/1989",
+              "phone_number": "602-555-0186",
+              "email": "maya.iqbal639@example.com",
+              "address": "4826 N 19th Avenue, Apt 12, Phoenix, AZ 85015",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Maya is the caller and owner of both supplied card accounts. She is 36 at the fixed 11/14/2025 date. Occupation and sole-proprietor context are persona metadata, not user columns. Her personal FICO at approval was 742; no application or eligibility decision is requested."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_mi_business_639": {
+              "account_id": "cc_mi_business_639",
+              "user_id": "usr_maya_iqbal_639",
+              "card_type": "Business Silver Rewards Card",
+              "date_of_account_open": "03/10/2025",
+              "status": "ACTIVE",
+              "account_status": "CURRENT",
+              "credit_limit": "22500.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "12510"
+            },
+            "cc_mi_personal_639": {
+              "account_id": "cc_mi_personal_639",
+              "user_id": "usr_maya_iqbal_639",
+              "card_type": "Silver Rewards Card",
+              "date_of_account_open": "02/21/2024",
+              "status": "ACTIVE",
+              "account_status": "CURRENT",
+              "credit_limit": "12000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "280"
+            }
+          },
+          "notes": "These two records are Maya's complete historical card-account inventory, including closed-account history: there is no predecessor Business Silver account. cc_mi_business_639 is her first Business Silver Rewards Card account. Purchases have already been paid, explaining the zero balances; payment servicing is outside this audit. Reward points are unredeemed and equal the net recorded transaction rewards supplied here."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "MI-B-801": {
+              "transaction_id": "MI-B-801",
+              "user_id": "usr_maya_iqbal_639",
+              "credit_card_account_id": "cc_mi_business_639",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "08/08/2025",
+              "merchant_name": "Kestrel Scheduling",
+              "category": "Software",
+              "transaction_amount": "460.00",
+              "status": "POSTED",
+              "rewards_earned": "4600"
+            },
+            "MI-B-812": {
+              "transaction_id": "MI-B-812",
+              "user_id": "usr_maya_iqbal_639",
+              "credit_card_account_id": "cc_mi_business_639",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "08/12/2025",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "280.00",
+              "status": "POSTED",
+              "rewards_earned": "560"
+            },
+            "MI-B-924": {
+              "transaction_id": "MI-B-924",
+              "user_id": "usr_maya_iqbal_639",
+              "credit_card_account_id": "cc_mi_business_639",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "09/24/2025",
+              "merchant_name": "Mesa Lantern Inn",
+              "category": "Travel",
+              "transaction_amount": "735.00",
+              "status": "POSTED",
+              "rewards_earned": "7350"
+            },
+            "MI-S-815": {
+              "transaction_id": "MI-S-815",
+              "user_id": "usr_maya_iqbal_639",
+              "credit_card_account_id": "cc_mi_personal_639",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "08/15/2025",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "280.00",
+              "status": "POSTED",
+              "rewards_earned": "280"
+            },
+            "MI-S-922": {
+              "transaction_id": "MI-S-922",
+              "user_id": "usr_maya_iqbal_639",
+              "credit_card_account_id": "cc_mi_personal_639",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "09/22/2025",
+              "merchant_name": "Sonoran Basket Market",
+              "category": "Groceries",
+              "transaction_amount": "165.00",
+              "status": "POSTED",
+              "rewards_earned": "0"
+            },
+            "MI-S-820": {
+              "transaction_id": "MI-S-820",
+              "user_id": "usr_maya_iqbal_639",
+              "credit_card_account_id": "cc_mi_personal_639",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "08/20/2025",
+              "merchant_name": "Desert Star Rail",
+              "category": "Travel",
+              "transaction_amount": "350.00",
+              "status": "POSTED",
+              "rewards_earned": "1400"
+            },
+            "MI-S-904": {
+              "transaction_id": "MI-S-904",
+              "user_id": "usr_maya_iqbal_639",
+              "credit_card_account_id": "cc_mi_personal_639",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "09/04/2025",
+              "merchant_name": "Desert Star Rail",
+              "category": "Travel",
+              "transaction_amount": "-350.00",
+              "status": "POSTED",
+              "rewards_earned": "-1400",
+              "credit_reason": "Full refund of MI-S-820"
+            }
+          },
+          "notes": "Complete caller history relevant to the 08/01/2025–09/30/2025 rewards review. All seven entries have finalized historical rewards and their billing cycles ended before 11/14/2025. merchant_name identifies the actual directly billing merchant and category is the merchant's submitted category, not a customer guess. MI-B-801 is an ordinary scheduling SaaS subscription billed directly by Kestrel Scheduling. MI-B-812 and MI-S-815 are direct ordinary Microsoft software purchases, not hardware or gift cards. MI-B-924 is lodging billed directly by Mesa Lantern Inn. MI-S-922 consists solely of ordinary groceries. MI-S-820 is direct passenger-rail travel from Desert Star Rail; MI-S-904 is its sole, full posted refund. None of the purchases includes cash equivalents, stored-value products, person-to-person payments, fees, interest, or bank insurance premiums. There are no wallets, intermediary processors, booking-platform substitutions, split categories, category updates, promotional overrides, or later reward adjustments. No transaction other than MI-S-820 has a return or refund. These facts qualify the existing selected fields; no unsupported transaction-description or billing-cycle column is introduced."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Initially empty. The persistent endpoint is one user-submitted rewards dispute for each genuine discrepancy; generated dispute identifiers are taken from actual resulting rows."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty capability-delivery telemetry. Availability comes from the tool catalog. Delivery telemetry is not an evaluated business outcome."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Cash-back disputes remain SUBMITTED for review. Submissions do not modify transaction rewards, account reward points, or card balances."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_maya_iqbal_639",
+          "address": "4826 N 19th Avenue, Apt 12, Phoenix, AZ 85015",
+          "email": "maya.iqbal639@example.com",
+          "phone_number": "602-555-0186",
+          "date_of_birth": "06/09/1989",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "mi639_lookup_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        },
+        "info": "Reference scaffolding to discover the caller's user_id after the requested identity disclosure. This read is not independently scored."
+      },
+      {
+        "action_id": "mi639_read_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_maya_iqbal_639"
+        },
+        "info": "Reference scaffolding establishing products, first Business Silver account, and account-specific promotion dates; not independently scored."
+      },
+      {
+        "action_id": "mi639_read_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_maya_iqbal_639"
+        },
+        "info": "Reference scaffolding supplying purchase identifiers and calculation inputs for both cards; not independently scored."
+      },
+      {
+        "action_id": "mi639_give_submission",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_639\",\"transaction_id\":\"MI-B-801\"}"
+        },
+        "info": "After explaining the three affected purchases and pending-review endpoint, provide the reusable user capability. Ephemeral setup and delivery telemetry are not scored."
+      },
+      {
+        "action_id": "mi639_submit_business_software",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_639\",\"transaction_id\":\"MI-B-801\"}"
+        },
+        "info": "Maya submits the explained Kestrel Scheduling rewards discrepancy; no direct credit."
+      },
+      {
+        "action_id": "mi639_submit_personal_software",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_639\",\"transaction_id\":\"MI-S-815\"}"
+        },
+        "info": "Maya submits the explained personal Silver Microsoft rewards discrepancy using the same capability."
+      },
+      {
+        "action_id": "mi639_submit_personal_groceries",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_639\",\"transaction_id\":\"MI-S-922\"}"
+        },
+        "info": "Maya submits the explained grocery rewards discrepancy. No relative order among the three submissions is scored."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_business_credit_cards_business_silver_rewards_card_012",
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_002"
+  ]
+}

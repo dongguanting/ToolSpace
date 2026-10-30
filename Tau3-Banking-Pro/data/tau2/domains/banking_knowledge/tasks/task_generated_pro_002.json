@@ -1,0 +1,390 @@
+{
+  "id": "task_generated_pro_002",
+  "description": {
+    "purpose": "Resolve an authorized scanner non-delivery dispute and increase the existing Silver Rewards Card limit, preserving eligibility through outcome-sensitive sequencing.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Leila Haddad, a 54-year-old small-business bookkeeper in Madison, Wisconsin. Your November statement prompted this call. Begin: “I need to dispute an undelivered scanner charge on my Silver Rewards Card. I also want a higher limit so I can buy a replacement while this is sorted out. Can you help with both?”\n\nAnswer relevant questions without volunteering all details. For identity or registered contacts, provide the requested information: Leila Haddad; birth date 07/22/1971; 608-555-0146; leila.haddad@example.net; 1846 Maple Grove Lane, Madison, WI 53704.\n\nWhen asked about the purchase, explain that you authorized Cedar Scan Supply's $2,864.75 charge on 10/08/2025 for an archival document scanner. Delivery was expected within two weeks. You noticed the problem on 10/29/2025 and emailed on 10/29, 11/04, and 11/12 without replies. Neither goods nor a refund arrived. You want a full-refund non-delivery dispute, not a fraud allegation or a guaranteed final refund. When asked about the limit, say your current limit is $12,000 and you want a new total of $18,000 on this existing card for the replacement purchase. You have had it about a year and paid on time. Keep the card active; do not cancel or replace it.\n\nIf asked for card digits, say the card is not with you and request secure lookup help. Use the lookup when offered and report only the digits it returns. Do not guess identifiers, policy thresholds, eligibility, or processing order. Once the agent establishes your identity, identifies the correct card and scanner charge, and explains a service consistent with your requests, authorize that service.\n\nFor any conflicting proposal—including a different product, smaller refund request, fraud claim, replacement, cancellation, or abandoning either request—decline permission and identify the affected goal. If it already happened, ask for correction or review of the unresolved outcome, without guessing a policy remedy. You cannot tell whether filing first is wrong; do not challenge that order alone. If told it prevents the increase, apply the same rule rather than agreeing to abandon it. If filing is complete but the increase is refused, say the limit request remains unresolved and ask for review; do not suggest erasing the dispute.\n\nAccept completion only when the agent confirms the requested new total limit is effective, the full-refund non-delivery dispute is filed for the scanner, the card remains usable, and the temporary-credit outcome is explained without presenting the investigation as a final refund. A submission or promise to finish later is insufficient. Then briefly thank the agent and end with:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_leila_haddad_048": {
+              "user_id": "usr_leila_haddad_048",
+              "name": "Leila Haddad",
+              "date_of_birth": "07/22/1971",
+              "address": "1846 Maple Grove Lane, Madison, WI 53704",
+              "phone_number": "608-555-0146",
+              "email": "leila.haddad@example.net"
+            }
+          },
+          "notes": "Supplied sole owner, age 54 at 11/14/2025; no parent or delegation. Patch records do not replace unrelated defaults."
+        },
+        "accounts": {
+          "data": {
+            "chk_leila_048": {
+              "account_id": "chk_leila_048",
+              "user_id": "usr_leila_haddad_048",
+              "class": "checking",
+              "level": "Blue Account",
+              "date_opened": "11/01/2024",
+              "status": "OPEN",
+              "current_holdings": "$6750.00"
+            }
+          },
+          "notes": "Customer-owned unchanged inventory control, not a funding source."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_original36_20260921048_silver": {
+              "account_id": "cc_original36_20260921048_silver",
+              "user_id": "usr_leila_haddad_048",
+              "card_type": "Silver Rewards Card",
+              "date_of_account_open": "11/01/2024",
+              "credit_limit": "$12000.00",
+              "current_balance": "$9360.00",
+              "past_due_amount": "$0.00",
+              "account_status": "ACTIVE",
+              "card_last_4_digits": "6411",
+              "reward_points": "15420 points"
+            }
+          },
+          "notes": "Mandated precomputed account identifier and supplied authoritative derived digits preserved. No closure fields. Only the limit changes."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_leila_048_scanner": {
+              "transaction_id": "txn_leila_048_scanner",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Cedar Scan Supply",
+              "transaction_amount": "$2864.75",
+              "transaction_date": "10/08/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "2864 points"
+            },
+            "txn_leila_048_rail": {
+              "transaction_id": "txn_leila_048_rail",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Amtrak",
+              "transaction_amount": "$164.20",
+              "transaction_date": "10/23/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "656 points"
+            },
+            "txn_leila_048_software": {
+              "transaction_id": "txn_leila_048_software",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "LedgerNest Software",
+              "transaction_amount": "$38.40",
+              "transaction_date": "11/02/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "153 points"
+            }
+          },
+          "notes": "Scanner is the sole dispute target; non-delivery, authorization, merchant-contact attempts and issue-noticed date are customer intake, not invented transaction fields. Rail and software are unchanged controls."
+        },
+        "payment_history": {
+          "data": {
+            "pay_leila_048_06": {
+              "payment_id": "pay_leila_048_06",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "payment_date": "06/08/2025",
+              "amount": "$380.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_048_07": {
+              "payment_id": "pay_leila_048_07",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "payment_date": "07/08/2025",
+              "amount": "$420.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_048_08": {
+              "payment_id": "pay_leila_048_08",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "payment_date": "08/08/2025",
+              "amount": "$395.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_048_09": {
+              "payment_id": "pay_leila_048_09",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "payment_date": "09/08/2025",
+              "amount": "$465.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_048_10": {
+              "payment_id": "pay_leila_048_10",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "payment_date": "10/08/2025",
+              "amount": "$440.00",
+              "status": "ON_TIME"
+            },
+            "pay_leila_048_11": {
+              "payment_id": "pay_leila_048_11",
+              "user_id": "usr_leila_haddad_048",
+              "credit_card_account_id": "cc_original36_20260921048_silver",
+              "payment_date": "11/08/2025",
+              "amount": "$470.00",
+              "status": "ON_TIME"
+            }
+          },
+          "notes": "Six supplied consecutive months, all before the fixed date. September-November establish the required latest three; earlier months are retained corroboration."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty supplied fixture. Add exactly one current-session verification through the direct tool; do not remove or claim replacement of unrelated default records."
+        },
+        "credit_limit_increase_requests": {
+          "data": {},
+          "notes": "No supplied pre-existing request. Require no merged initial request scoped to this card. Bind generated submission and decision records by scoped predicates, not invented IDs."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No supplied pre-existing dispute. Require no merged initial dispute for this user. Filing inserts the only new user dispute."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No supplied replacement order; require scoped initial absence after merging and preserve it."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Empty operational table; tool availability comes from the catalog. Discovery telemetry is excluded from banking reward."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Empty operational table. Unlocks and read-call telemetry are execution support, not policy outcome witnesses."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "g_find_user",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Reference lookup only. Confirm at least birth date and email against the customer's answers before verification."
+      },
+      {
+        "action_id": "g_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "g_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Leila Haddad",
+          "user_id": "usr_leila_haddad_048",
+          "address": "1846 Maple Grove Lane, Madison, WI 53704",
+          "email": "leila.haddad@example.net",
+          "phone_number": "608-555-0146",
+          "date_of_birth": "07/22/1971",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Current-session audit support after matching identity fields; not an independent customer objective."
+      },
+      {
+        "action_id": "g_cards",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_leila_haddad_048"
+        }
+      },
+      {
+        "action_id": "g_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_leila_haddad_048"
+        }
+      },
+      {
+        "action_id": "g_give_digits",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_original36_20260921048_silver\"}"
+        }
+      },
+      {
+        "action_id": "g_digits",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "get_card_last_4_digits",
+          "arguments": "{\"credit_card_account_id\":\"cc_original36_20260921048_silver\"}"
+        },
+        "info": "Consume supplied authoritative result 6411; customer reports the returned digits and confirms intake."
+      },
+      {
+        "action_id": "g_unlock_submit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392"
+        }
+      },
+      {
+        "action_id": "g_submit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392",
+          "arguments": "{\"credit_card_account_id\":\"cc_original36_20260921048_silver\",\"user_id\":\"usr_leila_haddad_048\",\"requested_increase_amount\":6000}"
+        },
+        "info": "After owner confirmation, requested-total normalization, cap check, and consent. This is the current application."
+      },
+      {
+        "action_id": "g_unlock_cli_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829"
+        }
+      },
+      {
+        "action_id": "g_cli_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_credit_limit_increase_history_4829",
+          "arguments": "{\"credit_card_account_id\":\"cc_original36_20260921048_silver\"}"
+        }
+      },
+      {
+        "action_id": "g_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "g_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_048\"}"
+        }
+      },
+      {
+        "action_id": "g_unlock_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "g_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_original36_20260921048_silver\"}"
+        }
+      },
+      {
+        "action_id": "g_unlock_payments",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "g_payments",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"cc_original36_20260921048_silver\",\"months\":3}"
+        }
+      },
+      {
+        "action_id": "g_unlock_approve",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847"
+        }
+      },
+      {
+        "action_id": "g_approve",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847",
+          "arguments": "{\"credit_card_account_id\":\"cc_original36_20260921048_silver\",\"user_id\":\"usr_leila_haddad_048\",\"new_credit_limit\":18000}"
+        },
+        "info": "Creates a separate approval and changes the real limit before any active dispute is inserted."
+      },
+      {
+        "action_id": "g_unlock_file",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "g_file",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"txn_leila_048_scanner\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"6411\",\"full_name\":\"Leila Haddad\",\"user_id\":\"usr_leila_haddad_048\",\"phone\":\"608-555-0146\",\"email\":\"leila.haddad@example.net\",\"address\":\"1846 Maple Grove Lane, Madison, WI 53704\",\"contacted_merchant\":true,\"purchase_date\":\"10/08/2025\",\"issue_noticed_date\":\"10/29/2025\",\"dispute_reason\":\"goods_services_not_received\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true,\"partial_refund_amount\":null}"
+        },
+        "info": "Persist complete intake and assessed provisional flags only. No balance credit or final refund mutation is implemented by filing."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_004",
+    "doc_credit_cards_credit_card_account_logistics_005",
+    "doc_credit_cards_credit_card_account_logistics_006",
+    "doc_credit_cards_credit_card_account_logistics_007",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_013",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

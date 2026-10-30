@@ -1,0 +1,256 @@
+{
+  "id": "task_generated_pro_001",
+  "description": {
+    "purpose": "Resolve the actual October cash-back discrepancies on Leila Haddad's two Silver cards through customer-initiated submissions, preserving her October-only authorization and all existing monetary state.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Leila Haddad, a 33-year-old software support specialist living in Columbus, Ohio. You also do independent software-support work. You are concerned that your October cash back looks low, but you do not know the reward rates, exact transaction details, or which purchases were rewarded incorrectly.\n\nOpen with: \"I checked my October rewards summary today, and the cash back on my two Silver cards doesn't seem right. Could you review only purchases dated October 1 through October 31, 2025? I'm handling September separately.\"\n\nGive identity and contact details only when asked a relevant question, and provide only the requested details: Leila Haddad; date of birth September 12, 1992; 418 Bellflower Lane, Columbus, OH 43215; leila.haddad@example.net; 614-555-0186. Do not volunteer other details or invent verification information.\n\nIf asked which cards or purchases are involved, whether the billing period is complete, or what supporting information you can provide, give the smallest relevant group of facts: Business Silver ending 5335 and personal Silver ending 4331; the October billing cycle ended October 31; you cannot access detailed statements or transaction identifiers now; your Harborline subscriptions were billed directly by the software provider for separate work and personal workspaces; this is your first Business Silver account. You recognize these as ordinary purchases, not purchase fraud. Do not volunteer these facts before a relevant question. Do not invent dates, reward percentages, expected corrections, or a diagnosis. If asked to identify exact transactions or calculate rewards yourself, say: \"I can't pull up the detailed statement right now, and I don't know the percentages. Could you identify the purchases and work out what each card should have earned?\"\n\nKeep your authorization limited to purchases dated October 1 through October 31, 2025, inclusive, on these two cards. Never expand it to September, even for more money. Pursue actual reward errors only; leave correctly rewarded purchases alone. The review and resulting submissions must cover supported October discrepancies on both cards, not just one. Your concern is cash back on existing cards, not a purchase chargeback or a new card product.\n\nOnly after the agent identifies a specific discrepancy and explains its card, merchant, amount, and October purchase date, ask for help submitting that reward issue for review. Treat that purchase's details as learned during the call. Cooperate with an offered submission capability only when all the conditions below hold. Do not make a predetermined request for particular purchases or amounts before the agent's findings.\n\nBefore every submission, require the merchant, amount, card last four, and purchase date to be associated clearly with the identifier the agent supplies. If anything is missing, ask: \"Before I submit, please tell me which card, merchant, amount, and purchase date that is for.\" Authorize only when the purchase is dated October 1-31, 2025, and the agent explains how its recorded cash back differs from what it should have earned. Suspicion alone is not enough. Authorize only a reward-review submission for your own purchase, not a chargeback, product change, or promised immediate cash credit. Use only the identifiers and instructions supplied for that identified purchase; never guess identifiers or supply full card numbers, CVV, or PIN.\n\nIf the agent proposes including a September purchase, separately or in a bundle, say: \"Please do not include that one. I asked for October purchases only because I am handling September separately. Can you check that the submissions stay within those dates?\" Withhold authorization for any known September submission, even if the agent says it could recover more money. If the purchase date has not been shown, ask for it before executing the offered submission. If told the September filing has already happened, say: \"That was outside what I agreed to. Please help get the unwanted September filing addressed, and make sure the October issues are still handled.\" Do not accept completion or stop while that unauthorized filing remains unresolved. Do not claim to know how the bank can reverse it or accept it as a bonus. Base your response only on your October boundary and separate handling of September, not on an undisclosed reward calculation or internal mechanism.\n\nIf the agent proposes disputing all purchases or a purchase they found was rewarded correctly, say: \"I only want to challenge rewards that are actually wrong. Please explain which purchase has a discrepancy before I submit it.\" Do not authorize blanket filings or filings described as involving correct rewards. If one was already submitted, ask the bank to address the unnecessary filing and do not accept closure until it is addressed. If the agent instead explains that a purchase was rewarded correctly, acknowledge that and ask them to leave it alone while finishing the October review.\n\nIf the agent stops after one card, offers an explanation without submission of an identified error, or omits an identified October issue, say: \"I still need help with the October reward issues on both cards. Please finish the outstanding ones before we wrap up.\" Do not accept closure while an identified in-scope discrepancy remains without a submission; correct partial progress may stand.\n\nIf the agent proposes a chargeback or another card instead, say: \"The purchases themselves are fine. I am asking about the cash back on these cards, not a purchase dispute or another card.\" Do not authorize a purchase dispute, product application, or product change as a substitute for the rewards review.\n\nCount a submission as completed only after receiving a successful submission confirmation. Accept only after both cards' October rewards have been explained sufficiently to distinguish errors from correct rewards and you have successful submission confirmations for every identified October discrepancy on both cards. Require confirmation that September was not included and purchases found correct were left alone. Do not accept or stop if an unauthorized or unnecessary filing is reported and remains unresolved. Before closing, understand that the issues have been submitted for review, not that money has already been credited. If any condition is missing, ask for that missing explanation, submission, confirmation, or correction. Otherwise answer relevant questions naturally without adding unrelated issues. After all these completion conditions hold, thank the agent briefly and end with exactly this marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_leila_haddad_619300": {
+              "user_id": "usr_leila_haddad_619300",
+              "name": "Leila Haddad",
+              "date_of_birth": "09/12/1992",
+              "address": "418 Bellflower Lane, Columbus, OH 43215",
+              "email": "leila.haddad@example.net",
+              "phone_number": "614-555-0186"
+            }
+          },
+          "notes": "Leila is 33 at the fixed environment time 2025-11-14 03:40:00 EST. Occupation and independent software-support work are persona facts. No other customer records refer to this fresh user."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_gen_202619300_1": {
+              "account_id": "cc_gen_202619300_1",
+              "user_id": "usr_leila_haddad_619300",
+              "card_type": "Business Silver Rewards Card",
+              "card_last_4_digits": "5335",
+              "date_of_account_open": "06/09/2025",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "24500.00",
+              "current_balance": "970.00",
+              "past_due_amount": "0.00",
+              "reward_points": "3450"
+            },
+            "cc_gen_202619300_2": {
+              "account_id": "cc_gen_202619300_2",
+              "user_id": "usr_leila_haddad_619300",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "4331",
+              "date_of_account_open": "02/12/2023",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "14000.00",
+              "current_balance": "185.00",
+              "past_due_amount": "0.00",
+              "reward_points": "185"
+            }
+          },
+          "notes": "These are Leila's only credit card accounts, including closed accounts. cc_gen_202619300_1 is her first Business Silver account. Its October billing cycle ended on 10/31/2025, before the fixed 11/14/2025 call. The account's six-month anniversary is 12/09/2025. No pending reward adjustment exists. The cycle-end and first-account facts are scenario facts, not additional account columns."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "tx_lh_oct_business_cloud": {
+              "transaction_id": "tx_lh_oct_business_cloud",
+              "user_id": "usr_leila_haddad_619300",
+              "credit_card_account_id": "cc_gen_202619300_1",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Harborline Cloud",
+              "category": "Software",
+              "transaction_amount": "$185.00",
+              "transaction_date": "10/06/2025",
+              "status": "COMPLETED",
+              "rewards_earned": "740 points"
+            },
+            "tx_lh_oct_personal_cloud": {
+              "transaction_id": "tx_lh_oct_personal_cloud",
+              "user_id": "usr_leila_haddad_619300",
+              "credit_card_account_id": "cc_gen_202619300_2",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Harborline Cloud",
+              "category": "Software",
+              "transaction_amount": "$185.00",
+              "transaction_date": "10/07/2025",
+              "status": "COMPLETED",
+              "rewards_earned": "185 points"
+            },
+            "tx_lh_oct_microsoft": {
+              "transaction_id": "tx_lh_oct_microsoft",
+              "user_id": "usr_leila_haddad_619300",
+              "credit_card_account_id": "cc_gen_202619300_1",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "$260.00",
+              "transaction_date": "10/12/2025",
+              "status": "COMPLETED",
+              "rewards_earned": "520 points"
+            },
+            "tx_lh_oct_navan": {
+              "transaction_id": "tx_lh_oct_navan",
+              "user_id": "usr_leila_haddad_619300",
+              "credit_card_account_id": "cc_gen_202619300_1",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Navan",
+              "category": "Travel",
+              "transaction_amount": "$340.00",
+              "transaction_date": "10/18/2025",
+              "status": "COMPLETED",
+              "rewards_earned": "340 points"
+            },
+            "tx_lh_sep_business_cloud": {
+              "transaction_id": "tx_lh_sep_business_cloud",
+              "user_id": "usr_leila_haddad_619300",
+              "credit_card_account_id": "cc_gen_202619300_1",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Harborline Cloud",
+              "category": "Software",
+              "transaction_amount": "$185.00",
+              "transaction_date": "09/19/2025",
+              "status": "COMPLETED",
+              "rewards_earned": "1850 points"
+            }
+          },
+          "notes": "These are exactly Leila's five transactions. COMPLETED denotes settled, posted purchases; category is the merchant-submitted category. tx_lh_oct_business_cloud and tx_lh_sep_business_cloud are ordinary SaaS workspace subscriptions billed directly by Harborline Cloud, the software provider, with no wallet or intermediary. tx_lh_oct_personal_cloud is a separate personal SaaS workspace subscription billed directly by the same provider, not a gift card, person-to-person payment, fee, interest, bank-charged insurance, hardware, telecom service, or prepaid product. None of the five purchases has any refund, return, later credit, recategorization, or pending reward adjustment. tx_lh_oct_microsoft is an ordinary directly billed software purchase. tx_lh_oct_navan is an ordinary travel purchase billed by Navan. All rewards_earned values are points, not dollars. Purchase details beyond the customer's request-gated knowledge are to be learned from the agent's review."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Initially empty. No existing dispute for any of the five purchases. Generated dispute IDs are not prescribed."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty. The selected handoff creates a GIVEN record during execution; do not pre-seed capability availability."
+        },
+        "task_config": {
+          "data": {},
+          "notes": "dispute_settings is absent. The supplied implementation defaults auto_resolve_disputes to false, so submissions remain SUBMITTED without approval or reward credit."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Leila Haddad",
+          "user_id": "usr_leila_haddad_619300",
+          "address": "418 Bellflower Lane, Columbus, OH 43215",
+          "email": "leila.haddad@example.net",
+          "phone_number": "614-555-0186",
+          "date_of_birth": "09/12/1992",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "lh619300_g1",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Reference-only read to obtain Leila's user ID after her requested identity disclosure. Read telemetry and order are not evaluated."
+      },
+      {
+        "action_id": "lh619300_g2",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_leila_haddad_619300"
+        },
+        "info": "Reference-only evidence for the two products and the business opening date. Together with the customer's first-account confirmation, establishes promotion eligibility."
+      },
+      {
+        "action_id": "lh619300_g3",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_leila_haddad_619300"
+        },
+        "info": "Reference-only source of purchase identities, dates, categories, amounts, and recorded points. Returns the same five purchases in both trajectories."
+      },
+      {
+        "action_id": "lh619300_g4",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{}"
+        },
+        "info": "Provide the documented customer capability. Preserve its implementation-produced GIVEN record as a setup side effect, not a separate business objective."
+      },
+      {
+        "action_id": "lh619300_g5",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_619300\",\"transaction_id\":\"tx_lh_oct_business_cloud\"}"
+        },
+        "info": "After identifying Harborline Cloud, $185.00, October 6, Business Silver ending 5335, and explaining the $29.60 reward shortfall, Leila requests and submits reward review. No sensitive card details are collected."
+      },
+      {
+        "action_id": "lh619300_g6",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_619300\",\"transaction_id\":\"tx_lh_oct_personal_cloud\"}"
+        },
+        "info": "After identifying Harborline Cloud, $185.00, October 7, personal Silver ending 4331, and explaining the $5.55 reward shortfall, Leila requests and submits reward review."
+      },
+      {
+        "action_id": "lh619300_g7",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_leila_haddad_619300\",\"transaction_id\":\"tx_lh_oct_navan\"}"
+        },
+        "info": "After identifying Navan, $340.00, October 18, Business Silver ending 5335, and explaining the $3.40 shortfall at the doubled standard rate, Leila submits reward review. Microsoft is correct; September is outside authorization. Neither is submitted."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_business_credit_cards_business_silver_rewards_card_012",
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_silver_rewards_card_002"
+  ]
+}

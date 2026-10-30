@@ -1,0 +1,213 @@
+{
+  "id": "task_generated_pro_092",
+  "description": {
+    "purpose": "Help Priya Raman select one suitable savings account, move the entire balance from her old checking account into it, and then close the emptied checking account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin calmly and cautiously by saying: “My final payroll deposit has posted in my old checking account, and I want to move that money into one savings account and retire the checking account. Can you help me choose something suitable and finish that move?”\n\nIf asked to verify your identity, say that you are Priya Raman and provide your date of birth as 05/22/1971, your address as 4187 W Ponderosa Lane, Boise, Idaho 83704, your email as priya.raman@example.net, and your phone number as 208-555-0148. Do not volunteer those details before a relevant verification request.\n\nIf asked about your desired savings features, normal balance, or access pattern, explain that you can sustainably keep about $3,000, may need as many as 12 free withdrawals in a busy month, want daily compounding, value ATM-fee support and built-in goals tracking, and want exactly one new savings account. Do not claim to know which documented product is the correct one; ask the agent to compare the options.\n\nIf asked about the old account, balance, pending activity, notice, or desired allocation, identify it as your Green checking account, say that it displays $3,000, that the final payroll deposit is posted rather than pending, that you gave closure notice on November 11, and that you want the entire displayed balance moved.\n\nPreserve this commitment: you want exactly one new savings account, not a split allocation or multiple new products. Preserve this commitment: the account must be sustainable with about $3,000, provide at least 12 free monthly withdrawals, compound daily, and include ATM-fee support and built-in goals tracking. Preserve this commitment: all $3,000 must move into the destination savings account, and the Green checking account may be closed only after the transfer is complete.\n\nIf the agent recommends an additional account, proposes splitting the $3,000, or suggests leaving an extra account open as part of the resolution, decline and restate that you want one savings account for the full balance, not a more complicated arrangement. Do not authorize more than one new account or any split allocation.\n\nIf the proposed savings account requires more than you can sustain or fails any stated withdrawal, compounding, ATM-support, or goals-tracking need, do not approve it; identify the unmet personal need and ask the agent to compare the options again. Do not authorize opening or funding an account until the agent establishes in ordinary terms that it meets all of your disclosed needs.\n\nIf the agent proposes transferring only $1,000 as an opening minimum, says the move is complete while money remains in checking, or proposes closing checking before the destination is funded, say that the request was to move the whole displayed balance, not just the minimum, and ask the agent to check the remaining amount before doing anything else. Do not authorize a $1,000-only transfer or accept an outcome in which any of the $3,000 remains in the old checking account. If $1,000 was already moved, state that $2,000 is still visibly left in the old account and ask the agent to finish moving it and complete the requested closure; do not accept or stop until that is corrected.\n\nAuthorize protected account changes only after you have supplied matching identity details. Authorize opening the single proposed savings account only after the agent has described it as meeting your balance, withdrawal, compounding, ATM-support, and goals needs. Authorize the transfer only when the source is the Green checking account, the destination is the newly opened suitable savings account, and the amount is the full $3,000. Authorize closure only after the full $3,000 has reached savings, Green checking is at zero, the final transaction is posted, and the notice supplied on November 11 has elapsed.\n\nIf the agent identifies one account that meets all disclosed needs, authorize opening that one account and moving the full $3,000 into it, provided the old checking account is closed only after the money arrives. Remain cautious until completion, become firmer only if an otherwise eligible opening or closure is refused or the same unresolved mistake is repeated after one clarification, and in that failure branch ask for a human agent to help complete the same reorganization. Do not request escalation on the normal successful path.\n\nAccept the resolution only after exactly one suitable savings account is open and visibly funded with $3,000, the Green checking account is confirmed closed with no money left behind, and no unwanted additional savings account or split allocation remains. If any condition is missing, ask the agent to complete it and do not end the conversation. Only when all of those conditions are satisfied, respond with: “Thank you, that leaves the full amount in the one savings account I wanted and the old checking account closed.” Then end with exactly this marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_priya_raman_2025": {
+              "user_id": "usr_priya_raman_2025",
+              "name": "Priya Raman",
+              "date_of_birth": "05/22/1971",
+              "email": "priya.raman@example.net",
+              "phone_number": "208-555-0148",
+              "address": "4187 W Ponderosa Lane, Boise, Idaho 83704"
+            }
+          },
+          "notes": "Priya Raman is the sole fresh customer for this task. The DOB uses the MM/DD/YYYY format required by the verification tool."
+        },
+        "accounts": {
+          "data": {
+            "acct_priya_green_01": {
+              "account_id": "acct_priya_green_01",
+              "user_id": "usr_priya_raman_2025",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "status": "OPEN",
+              "current_holdings": "3000.00",
+              "date_opened": "07/01/2025"
+            }
+          },
+          "notes": "Priya initially has exactly one account: an open Green checking account with no negative balance or collections status and no personal savings accounts."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_priya_payroll_final_1114": {
+              "transaction_id": "txn_priya_payroll_final_1114",
+              "account_id": "acct_priya_green_01",
+              "type": "ach_credit",
+              "status": "POSTED",
+              "date": "11/14/2025",
+              "amount": 1800.0,
+              "description": "Final payroll deposit"
+            }
+          },
+          "notes": "The final payroll deposit is posted. There are no PENDING transactions for acct_priya_green_01."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be performed and logged during the interaction; no verification record is pre-seeded."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable-tool availability comes from the catalog. Runtime unlocks are not pre-seeded as database metadata."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "gold_01_locate_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        }
+      },
+      {
+        "action_id": "gold_02_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Priya Raman",
+          "user_id": "usr_priya_raman_2025",
+          "address": "4187 W Ponderosa Lane, Boise, Idaho 83704",
+          "email": "priya.raman@example.net",
+          "phone_number": "208-555-0148",
+          "date_of_birth": "05/22/1971",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "gold_04_unlock_accounts_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_05_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_priya_raman_2025\"}"
+        }
+      },
+      {
+        "action_id": "gold_06_unlock_transactions_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "gold_07_read_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_priya_green_01\"}"
+        }
+      },
+      {
+        "action_id": "gold_08_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "gold_09_open_silver_plus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_priya_raman_2025\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        }
+      },
+      {
+        "action_id": "gold_10_unlock_transfer",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "gold_11_transfer_full_balance",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_priya_green_01\",\"destination_account_id\":\"25e88539242c2d6c\",\"amount\":3000.0}"
+        }
+      },
+      {
+        "action_id": "gold_12_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "gold_13_close_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_priya_green_01\",\"reason\":\"Customer requested closure after full balance migration\",\"waive_early_closure_fee\":false}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ],
+    "bank_account_closure_reason_equivalences": [
+      {
+        "account_id": "acct_priya_green_01",
+        "user_id": "usr_priya_raman_2025",
+        "canonical_reason": "Customer requested closure after full balance migration",
+        "accepted_equivalent_reasons": [
+          "Customer requested closure after full balance migration",
+          "Customer request - consolidating funds into new Silver Plus savings account; closure notice provided by customer on 11/11/2025 (3-day mid-tier notice period satisfied)",
+          "Customer requested closure after consolidating full balance into new Silver Plus savings account; customer-stated closure notice given 11/11/2025"
+        ],
+        "evidence": "Reviewed equivalent customer-request/consolidation wording; no customer-prescribed exact string. Account, owner, status, balances, fee flags, and every other agent/user DB field stay exact."
+      }
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_silver_plus_account_004"
+  ]
+}

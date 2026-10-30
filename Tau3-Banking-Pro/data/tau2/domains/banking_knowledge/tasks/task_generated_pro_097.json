@@ -1,0 +1,171 @@
+{
+  "id": "task_generated_pro_097",
+  "description": {
+    "purpose": "Help Elena Park select and submit the highest-paying suitable business and personal checking referrals in her stated priority order.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I have two people ready to open accounts, and I want to use my referrals in the way that earns me the most. Can you help me choose?” Do not initially volunteer identity details, recipient profiles, referral dates, or a preferred product.\n\nIf asked to identify yourself or confirm contact information, say that you are Elena Park, born April 22, 1965, and provide 418 Alder Crest Lane, Richmond, VA 23220, elena.park.referrals@example.com, and 804-555-0186. Otherwise, keep those details private.\n\nIf asked about your checking tenure or referral history, say that your checking relationship began in January 2024 and that your dashboard shows a completed Sky Blue referral around November 5 and an older completed Purple referral. Say that you are unsure whether the November completion is still inside the rolling period and ask the agent to check rather than claiming to know the answer.\n\nIf asked about the intended recipients or their qualifications, explain that Marcus Hale is 38, owns a business formed June 12, 2023, is the distinct primary owner, is new to Rho-Bank with no checking, savings, or closed account in the last 12 months, lives at 77 Harbor Mill Road, Norfolk, VA 23510, and can deposit $15,000 of external new money within 90 days and retain it for the required period. Explain that Ruth Calder is 67, is also new to Rho-Bank with no checking, savings, or closed account in the last 12 months, lives at 906 Meadowlark Drive, Charlottesville, VA 22903, and can deposit $1,000 of external new money within 90 days and retain it for the required period. Marcus has the earlier application appointment.\n\nIf Sky Blue’s prominently displayed $250 is discussed, say: “I thought the $250 might be what I receive, but I may be mistaken. Could you compare my reward with the other suitable choices?” If the agent explains from the promotional terms that the amount is paid to the new business rather than to you, revise your belief and continue from that explanation.\n\nOptimize Elena’s own referrer payout, not the welcome bonus paid to either recipient. Submit referrals only for Marcus and Ruth; do not substitute another recipient or add an unrelated product. Marcus’s time-sensitive business referral must be completed before Ruth’s personal referral. Complete exactly the two intended referrals and do not submit a third referral or open an account for Elena.\n\nIf the agent recommends a product based only on a recipient-facing welcome bonus, say that you want the comparison based on what you receive and ask the agent to check the amounts again. Do not authorize a referral while the recommendation is based only on the recipient-facing bonus.\n\nIf the agent proposes a product that conflicts with the recipient facts or suggests replacing either person, restate that person’s visible age, business status, or available deposit and ask for a suitable choice for that same person. Do not authorize a submission for a substituted person or a product that conflicts with the facts you supplied.\n\nIf the agent proposes Ruth’s referral before Marcus’s, say that Marcus has the earlier application appointment and ask that his business referral be completed first. Withhold authorization for Ruth’s referral until Marcus’s referral is visibly confirmed.\n\nIf the agent proposes a third referral, an extra product, or an account opening for you, decline and say that you only want the two referrals for the people you identified. Never authorize a third referral or any account opening during this call.\n\nAuthorize a referral only after your identity, checking tenure, and recognizable recent referral history have been established. Authorize each proposed product only after it has been compared using your referrer payout and the intended recipient’s disclosed eligibility facts. Authorize Ruth’s referral only after Marcus’s referral has been confirmed.\n\nOnce the highest-paying suitable business choice has been established, authorize Marcus’s referral first. Only after the agent confirms that submission succeeded, authorize moving on to Ruth and remind the agent that no third referral should be added.\n\nDo not accept the resolution until you receive confirmation that Marcus’s selected business-account referral was submitted. Do not accept the resolution until you receive confirmation that Ruth’s selected personal-account referral was submitted after Marcus’s. Do not accept the resolution unless no third referral and no account opening were added.\n\nOnly after Marcus’s business referral is confirmed first, Ruth’s personal referral is confirmed second, the comparison was based on your payout, and no extra referral or account opening occurred, briefly thank the agent and end with exactly this marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_elena_park_ref_7f3a91": {
+              "user_id": "usr_elena_park_ref_7f3a91",
+              "name": "Elena Park",
+              "date_of_birth": "04/22/1965",
+              "address": "418 Alder Crest Lane, Richmond, VA 23220",
+              "email": "elena.park.referrals@example.com",
+              "phone_number": "804-555-0186"
+            }
+          },
+          "notes": "Fresh Elena Park customer record. Her configured date of birth makes her 60 at the fixed time; occupation is conversational context because the users schema has no occupation field."
+        },
+        "accounts": {
+          "data": {
+            "acct_elena_checking_4c82bd": {
+              "account_id": "acct_elena_checking_4c82bd",
+              "user_id": "usr_elena_park_ref_7f3a91",
+              "class": "checking",
+              "level": "Green Fee-Free Account",
+              "status": "OPEN",
+              "date_opened": "01/10/2024",
+              "current_holdings": "8400.00"
+            }
+          },
+          "notes": "Elena's sole relevant personal checking account establishes checking tenure and remains unchanged."
+        },
+        "referrals": {
+          "data": {
+            "ref_hist_sky_20251105_a913": {
+              "referral_id": "ref_hist_sky_20251105_a913",
+              "referrer_id": "usr_elena_park_ref_7f3a91",
+              "referred_account_type": "Sky Blue Account",
+              "referral_status": "COMPLETE",
+              "date": "11/05/2025 03:39:59 EST"
+            },
+            "ref_hist_purple_20250930_c407": {
+              "referral_id": "ref_hist_purple_20250930_c407",
+              "referrer_id": "usr_elena_park_ref_7f3a91",
+              "referred_account_type": "Purple Account",
+              "referral_status": "COMPLETE",
+              "date": "09/30/2025 12:15:00 EST"
+            }
+          },
+          "notes": "Two historical completed referrals. Both are outside the exact rolling nine-day interval at 11/14/2025 03:40:00 EST, and neither is a Lime Green or Gold Years referral."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "usr_elena_park_ref_7f3a91",
+          "address": "418 Alder Crest Lane, Richmond, VA 23220",
+          "email": "elena.park.referrals@example.com",
+          "phone_number": "804-555-0186",
+          "date_of_birth": "04/22/1965",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "lookup_elena_01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        }
+      },
+      {
+        "action_id": "read_referrals_02",
+        "requestor": "assistant",
+        "name": "get_referrals_by_user",
+        "arguments": {
+          "user_id": "usr_elena_park_ref_7f3a91"
+        }
+      },
+      {
+        "action_id": "unlock_accounts_03",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "read_accounts_04",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_elena_park_ref_7f3a91\"}"
+        }
+      },
+      {
+        "action_id": "submit_lime_05",
+        "requestor": "user",
+        "name": "submit_referral",
+        "arguments": {
+          "user_id": "usr_elena_park_ref_7f3a91",
+          "account_type": "Lime Green Account"
+        }
+      },
+      {
+        "action_id": "submit_gold_06",
+        "requestor": "user",
+        "name": "submit_referral",
+        "arguments": {
+          "user_id": "usr_elena_park_ref_7f3a91",
+          "account_type": "Gold Years Account"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "submit_referral"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_047",
+    "doc_business_checking_accounts_lime_green_003",
+    "doc_business_checking_accounts_sky_blue_001",
+    "doc_business_checking_accounts_sky_blue_002",
+    "doc_business_checking_accounts_navy_blue_001",
+    "doc_business_checking_accounts_cobalt_blue_001",
+    "doc_business_checking_accounts_hunter_green_001",
+    "doc_checking_accounts_dark_green_account_001",
+    "doc_checking_accounts_dark_green_account_010",
+    "doc_checking_accounts_gold_years_account_010",
+    "doc_checking_accounts_green_fee-free_account_007",
+    "doc_checking_accounts_purple_account_011"
+  ]
+}

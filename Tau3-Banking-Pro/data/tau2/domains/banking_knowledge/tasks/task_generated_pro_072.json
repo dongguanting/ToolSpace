@@ -1,0 +1,249 @@
+{
+  "id": "task_generated_pro_072",
+  "description": {
+    "purpose": "Investigate Theo Alvarez's October 2025 Gold Savings interest underpayment, apply the full authorized correction, and submit the underlying APY-selection discrepancy for backend investigation.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concerned but calm by saying: “The interest that just posted to my Gold savings account looks low. Can you help me figure out what happened and fix it if it is wrong?” Do not initially volunteer identity details, the balance, the posted amount, related products, an expected rate, or a correction amount.\n\nIf the agent asks to verify your identity, provide your full name, Theo Alvarez; date of birth, 03/22/1975; address, 418 Harbor Pine Ave, Baltimore, MD 21224; email, theo.alvarez1046@example.com; and phone number, 410-555-0146. Answer accurately and cooperatively, but do not use that request as a reason to volunteer account or interest details.\n\nIf the agent asks which account, statement period, balance, posting, or related products are involved, explain that the affected product is Gold Savings, that the October 31 interest credit was $378.68, that you kept $84,000 there throughout the period, and that your active related holdings are Green and Purple checking accounts plus an EcoCard and Gold Rewards Card. Do not state the correct rate, choose which products should provide the best benefits, calculate the missing interest, or name any internal operation.\n\nYou want the full interest underpayment restored to the affected Gold Savings account, not a partial or unrelated goodwill credit. You want the review to consider all of your disclosed active checking accounts and credit cards rather than accepting a result based on only one convenient product. You want the underlying rate-selection discrepancy sent for investigation after your account is corrected.\n\nOnly after the agent explains that the posting was underpaid because lower-benefit holdings were used and presents a definite correction amount, ask for the full missing interest to be restored and for the underlying selection problem to be investigated so it does not recur. Move from concerned investigation to cautious authorization, but do not accept the call as complete yet.\n\nIf the agent proposes a partial amount or a goodwill credit instead of restoring the calculated underpayment, decline and say that you want the amount actually missing from the interest posting, based on the account records. You do not authorize a goodwill credit or knowingly partial credit as the final resolution.\n\nIf the agent recommends resolving the issue using only the Purple checking account or Gold Rewards Card while ignoring your disclosed Green checking account or EcoCard, point out that you also have the other active products and ask the agent to check whether they affect the savings interest before you agree to the amount. You withhold authorization for a final correction amount until the agent confirms that every disclosed active product was considered.\n\nIf the agent proposes ending the call after the credit without confirming that the calculation problem will be investigated, say that the immediate credit helps but ask for confirmation that the underlying issue has also been sent for review. You do not accept the call as complete while the recurrence concern remains unaddressed.\n\nProvide authorization only after the agent has verified that the affected Gold Savings account belongs to you. Before authorizing a monetary correction, require confirmation that all disclosed active checking and credit-card holdings were considered and that a definite full underpayment amount was found. Authorize only a correction described as restoring the full missing interest to the affected Gold Savings account and addressing the underlying discrepancy.\n\nIf the agent offers only a courtesy amount, a partial correction, or an amount that does not account for all of the active products you disclosed, continue to withhold authorization and ask for the complete records-based correction. Do not copy or approve an amount merely because the agent proposes it.\n\nIf the agent refuses an eligible correction, cannot complete it, or repeats an unsupported calculation after one clarification, become more frustrated and ask to speak with a human who can finish resolving the interest error. Do not request a human on the successful path.\n\nDo not accept the resolution until the agent confirms the exact correction credited to Gold Savings and the resulting balance. Also do not accept until the agent confirms that the rate-selection discrepancy was submitted for backend investigation. If the credit is confirmed but the investigation is not, ask about the investigation rather than ending the conversation.\n\nAfter both the full correction and resulting balance are confirmed and the backend investigation is confirmed, express relief, briefly thank the agent, and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_1046": {
+              "user_id": "usr_theo_alvarez_1046",
+              "name": "Theo Alvarez",
+              "date_of_birth": "03/22/1975",
+              "address": "418 Harbor Pine Ave, Baltimore, MD 21224",
+              "email": "theo.alvarez1046@example.com",
+              "phone_number": "410-555-0146"
+            }
+          },
+          "notes": "Theo Alvarez is 50 years old on 11/14/2025 and is the Baltimore customer who owns every account in this task."
+        },
+        "accounts": {
+          "data": {
+            "sav_gold_ta_1046": {
+              "account_id": "sav_gold_ta_1046",
+              "user_id": "usr_theo_alvarez_1046",
+              "class": "savings",
+              "level": "Gold Account",
+              "status": "ACTIVE",
+              "current_holdings": "84378.68",
+              "date_opened": "06/12/2023"
+            },
+            "chk_green_ta_1046": {
+              "account_id": "chk_green_ta_1046",
+              "user_id": "usr_theo_alvarez_1046",
+              "class": "checking",
+              "level": "Green Account",
+              "status": "ACTIVE",
+              "current_holdings": "6420.15",
+              "date_opened": "02/08/2022"
+            },
+            "chk_purple_ta_1046": {
+              "account_id": "chk_purple_ta_1046",
+              "user_id": "usr_theo_alvarez_1046",
+              "class": "checking",
+              "level": "Purple Account",
+              "status": "ACTIVE",
+              "current_holdings": "3915.44",
+              "date_opened": "07/19/2024"
+            }
+          },
+          "notes": "The active Gold savings account and both active qualifying checking accounts are held under Theo's customer profile."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_eco_ta_1046": {
+              "account_id": "cc_eco_ta_1046",
+              "user_id": "usr_theo_alvarez_1046",
+              "card_type": "EcoCard",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "current_balance": "428.17",
+              "reward_points": "18340",
+              "credit_limit": "12000.00",
+              "card_last_4_digits": "6147",
+              "date_of_account_open": "04/15/2023"
+            },
+            "cc_gold_ta_1046": {
+              "account_id": "cc_gold_ta_1046",
+              "user_id": "usr_theo_alvarez_1046",
+              "card_type": "Gold Rewards Card",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "current_balance": "1196.08",
+              "reward_points": "27450",
+              "credit_limit": "15000.00",
+              "card_last_4_digits": "9026",
+              "date_of_account_open": "09/07/2021"
+            }
+          },
+          "notes": "Only the two relevant active eligible credit-card accounts are present, and both belong to Theo."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_gold_funding_1001_1046": {
+              "transaction_id": "txn_gold_funding_1001_1046",
+              "account_id": "sav_gold_ta_1046",
+              "date": "10/01/2025",
+              "amount": 84000.0,
+              "type": "ach_transfer_in",
+              "status": "posted",
+              "description": "ACH transfer in establishing the eligible Gold Savings balance for the October accrual period"
+            },
+            "txn_gold_interest_1031_1046": {
+              "transaction_id": "txn_gold_interest_1031_1046",
+              "account_id": "sav_gold_ta_1046",
+              "date": "10/31/2025",
+              "amount": 378.68,
+              "type": "interest_credit",
+              "status": "posted",
+              "description": "Monthly Gold Savings interest credit; applied APY 5.625% for 30 days"
+            }
+          },
+          "notes": "The two posted transactions visibly establish the unchanged $84,000 eligible principal and the $378.68 interest posting. No other transaction changes the eligible balance during the accrual interval."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification history starts empty; the successful interaction must create Theo's verification record."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable-tool audit state starts empty. Unlocks and calls are recorded by the environment when the selected discoverable tools are used."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_1046",
+          "address": "418 Harbor Pine Ave, Baltimore, MD 21224",
+          "email": "theo.alvarez1046@example.com",
+          "phone_number": "410-555-0146",
+          "date_of_birth": "03/22/1975",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "gold_01_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_03_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_04_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_1046\"}"
+        }
+      },
+      {
+        "action_id": "gold_05_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "gold_06_read_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"sav_gold_ta_1046\"}"
+        }
+      },
+      {
+        "action_id": "gold_07_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        }
+      },
+      {
+        "action_id": "gold_08_apply_credit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"sav_gold_ta_1046\",\"amount\":80.01,\"credit_type\":\"interest_correction\"}"
+        }
+      },
+      {
+        "action_id": "gold_09_unlock_report",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        }
+      },
+      {
+        "action_id": "gold_10_submit_report",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"sav_gold_ta_1046\",\"user_id\":\"usr_theo_alvarez_1046\",\"expected_apy\":6.85,\"actual_apy\":5.625,\"amount_difference\":80.01}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_bank_accounts_bank_accounts_(general)_046",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_purple_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_gold_account_014"
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "id": "task_generated_pro_041",
+  "description": {
+    "purpose": "Resolve Maya Iqbal's four-card cleanup: close eligible Green, preserve blocked Eco and Gold, and retain Crypto with one authorized entry-tier statement credit.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Maya Iqbal, a 28-year-old software support specialist in Austin, Texas. Be concise, cooperative, and willing to revise uncertain recollections after a grounded explanation.\n\nBegin only with: \"I've just gone through my November card statement and want to cut down the Rho-Bank cards I keep. Can you help me close the ones I no longer want?\"\n\nWhen asked to identify or verify yourself, provide only the requested details: Maya Iqbal; date of birth 09/06/1997; phone 512-555-0186; email maya.iqbal@example.net; address 2481 Redbud Bend, Apt 6, Austin, TX 78704. If asked, you have Rho-Bank+.\n\nWhen asked about the cards, reasons, recent activity, or funding, answer the relevant topic rather than volunteering everything. Your cards are Green Rewards, EcoCard, Gold Rewards, and Crypto-Cash Back. You want Green, Eco, and Gold closed wherever possible to simplify your finances; keeping Crypto does not replace addressing those three cards. Only Crypto is open to reconsideration for a cash statement credit: its annual fee and rewards disappoint you, but you do not want another product or reward points. Keeping Crypto requires your explicit acceptance of an explained offer. If asked about Eco's replacement, you think an envelope received yesterday contained it, but you have not confirmed that. If asked about Gold's payment, you thought an app payment went through but have no success receipt. You permit a Gold payment only as a full payoff from your checking account if sufficient funds are available, never a partial payment, overdraft, or another funding source.\n\nYou do not know official replacement or payment status, opening dates, retention rules, or the correct credit amount. Ask the agent to establish the facts. If a grounded explanation shows the replacement is still in transit or the payment failed, acknowledge that your recollection may have been mistaken, accept deferring that card, and ask to continue with the rest. If checking cannot cover a full payoff or the service cannot process it, leave Gold for a later payoff; do not pretend another payment succeeded.\n\nCooperate with identity verification and recording the reasons you supply. Before authorizing a disposition, require the agent to identify the card and explain whether it is a permanent closure or a keep-open credit. Confirm each closure or Crypto offer only against your stated choices; Gold payment consent additionally requires the full payoff amount and sufficient checking funds to be established. Once an eligible closure is explained, ask to proceed with closing the unwanted card.\n\nIf offered a benefit to keep Green, Eco, or Gold voluntarily, a product change or points for Crypto, or an ending that skips a card, decline: you are reducing your cards, not replacing them. Identify the unfinished card or unwanted substitution and ask to continue. Do not authorize voluntary retention of Green, Eco, or Gold, any product change, points, or closure of Crypto after accepting its keep-open credit. Decline the no-annual-fee downgrade if offered; you would still prefer closure unless an explained cash offer persuades you to keep Crypto.\n\nOnly when the agent presents a cash retention offer for Crypto, ask once: \"I thought my other rewards card was Platinum—wouldn't that make me a premium customer?\" After a grounded explanation of the actual card identity and Crypto's offer, revise that recollection and explicitly accept the explained cash offer and keeping Crypto. Do not supply a policy amount or diagnose a hidden tier error.\n\nIf a proposed payment is partial, differently funded, or would proceed despite insufficient checking funds, say that is not what you requested and leave Gold for a later full payoff. If an unauthorized payment, product substitution, or action contradicting your accepted disposition has already occurred, ask for correction before accepting the resolution.\n\nAccept and stop only when every requested card has a confirmed closure, a clear remaining blocker you can follow up on, or, for Crypto only, an explicitly accepted keep-open cash credit disposition, with no card skipped; after accepting Crypto's offer, require confirmation that its cash credit was applied and its product did not change. No visible unauthorized payment, substitution, or contradiction of an accepted disposition may remain unresolved. Ask briefly about any missing outcome rather than reopening resolved issues. When all these conditions hold, thank the agent briefly and end with exactly one stop marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_maya_iqbal_049v2": {
+              "user_id": "usr_maya_iqbal_049v2",
+              "name": "Maya Iqbal",
+              "date_of_birth": "09/06/1997",
+              "phone_number": "512-555-0186",
+              "email": "maya.iqbal@example.net",
+              "address": "2481 Redbud Bend, Apt 6, Austin, TX 78704",
+              "rho_bank_plus_subscription": true
+            }
+          },
+          "notes": "Fresh sole owner, age 28 at the fixed time. Preserve unrelated default customers."
+        },
+        "accounts": {
+          "data": {
+            "acct_maya_checking_049v2": {
+              "account_id": "acct_maya_checking_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "class": "checking",
+              "current_holdings": "$68.25",
+              "date_opened": "03/04/2024",
+              "status": "ACTIVE"
+            }
+          },
+          "notes": "Maya's sole deposit account and earliest bank relationship. Available funds cannot cover Gold's full payoff. No product-level claim is required."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_maya_green_049v2": {
+              "account_id": "cc_maya_green_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "card_type": "Green Rewards Card",
+              "date_of_account_open": "04/18/2024",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$6000.00",
+              "reward_points": "0 points"
+            },
+            "cc_maya_eco_049v2": {
+              "account_id": "cc_maya_eco_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "card_type": "EcoCard",
+              "date_of_account_open": "06/03/2024",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$3000.00",
+              "reward_points": "0 points"
+            },
+            "cc_maya_gold_049v2": {
+              "account_id": "cc_maya_gold_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "card_type": "Gold Rewards Card",
+              "date_of_account_open": "09/09/2024",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE",
+              "current_balance": "$236.40",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$10000.00",
+              "reward_points": "0 points"
+            },
+            "cc_maya_crypto_049v2": {
+              "account_id": "cc_maya_crypto_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "card_type": "Crypto-Cash Back Card",
+              "date_of_account_open": "09/15/2025",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$2500.00",
+              "reward_points": "0 points"
+            }
+          },
+          "notes": "Exactly four personal cards for Maya; no Platinum or additional account. No pending purchases or recent annual-fee charges. Crypto is exactly 60 days old. No physical-card operation or last-four argument is needed."
+        },
+        "credit_card_orders": {
+          "data": {
+            "order_maya_eco_049v2": {
+              "order_id": "order_maya_eco_049v2",
+              "credit_card_account_id": "cc_maya_eco_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "status": "shipped",
+              "order_date": "11/10/2025",
+              "expected_delivery": "11/17/2025",
+              "reason": "damaged",
+              "old_card_cancelled": false,
+              "expedited_shipping": false,
+              "shipping_address": "2481 Redbud Bend, Apt 6, Austin, TX 78704"
+            }
+          },
+          "notes": "Genuine pre-existing damage replacement, not a lost, stolen, or compromised card. Sole Maya order; no final delivery/cancellation update."
+        },
+        "credit_card_closure_reasons": {
+          "data": {
+            "reason_maya_green_old_049v2": {
+              "record_id": "reason_maya_green_old_049v2",
+              "credit_card_account_id": "cc_maya_green_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "closure_reason": "not_using_card",
+              "logged_at": "11/13/2024",
+              "status": "LOGGED"
+            }
+          },
+          "notes": "Only initial Maya reason; 366 days before today and outside the past year. Current Green and Crypto reasons must be newly written."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_maya_gold_purchase_049v2": {
+              "transaction_id": "txn_maya_gold_purchase_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "credit_card_account_id": "cc_maya_gold_049v2",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Juniper Office Supply",
+              "transaction_amount": "$236.40",
+              "transaction_date": "11/06/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "0 points"
+            }
+          },
+          "notes": "Only initial Maya card transaction. No completed payment, offsetting credit, pending purchase, or recent annual-fee transaction. Crypto credit starts absent."
+        },
+        "payment_history": {
+          "data": {
+            "payment_maya_gold_failed_049v2": {
+              "payment_id": "payment_maya_gold_failed_049v2",
+              "credit_card_account_id": "cc_maya_gold_049v2",
+              "user_id": "usr_maya_iqbal_049v2",
+              "amount": "$236.40",
+              "payment_date": "11/12/2025",
+              "status": "FAILED"
+            }
+          },
+          "notes": "Genuine unsuccessful app payment. No pending or completed payment, asynchronous settlement, or external funding occurs."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No initial Maya disputes. Empty patch introduces no records and does not delete unrelated customers' history."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "No seeded audit record. Maya must verify this session; empty patch preserves unrelated default verification records."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Tool-produced telemetry starts unseeded and is excluded from banking-outcome evaluation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "maya_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        },
+        "info": "Unscored identity and user-ID discovery."
+      },
+      {
+        "action_id": "maya_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "maya_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "usr_maya_iqbal_049v2",
+          "address": "2481 Redbud Bend, Apt 6, Austin, TX 78704",
+          "email": "maya.iqbal@example.net",
+          "phone_number": "512-555-0186",
+          "date_of_birth": "09/06/1997",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After Maya supplies matching date of birth and email; remaining fields come from her matched record."
+      },
+      {
+        "action_id": "maya_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "maya_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_049v2\"}"
+        },
+        "info": "Unscored discovery of account IDs, balances, product identities, ages, and earliest relationship."
+      },
+      {
+        "action_id": "maya_unlock_disputes",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "maya_disputes",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_049v2\"}"
+        },
+        "info": "Unscored evidence for closure eligibility."
+      },
+      {
+        "action_id": "maya_unlock_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "maya_green_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_green_049v2\"}"
+        }
+      },
+      {
+        "action_id": "maya_eco_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_eco_049v2\"}"
+        },
+        "info": "Shipped replacement blocks closure; no status update is authorized."
+      },
+      {
+        "action_id": "maya_crypto_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_crypto_049v2\"}"
+        }
+      },
+      {
+        "action_id": "maya_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293"
+        }
+      },
+      {
+        "action_id": "maya_green_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_green_049v2\"}"
+        }
+      },
+      {
+        "action_id": "maya_crypto_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_crypto_049v2\"}"
+        }
+      },
+      {
+        "action_id": "maya_unlock_payments",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "maya_gold_payment",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_gold_049v2\",\"months\":1}"
+        },
+        "info": "Unscored evidence resolving the remembered payment. No payment mutation follows."
+      },
+      {
+        "action_id": "maya_unlock_reasons",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "maya_green_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_green_049v2\",\"user_id\":\"usr_maya_iqbal_049v2\",\"closure_reason\":\"simplifying_finances\"}"
+        },
+        "info": "After eligibility and historical-window assessment, log Maya's supplied reason."
+      },
+      {
+        "action_id": "maya_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834"
+        }
+      },
+      {
+        "action_id": "maya_close_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_green_049v2\",\"user_id\":\"usr_maya_iqbal_049v2\"}"
+        },
+        "info": "After the mid-tier 2,000-point or $20 offer is declined and permanent closure is confirmed."
+      },
+      {
+        "action_id": "maya_crypto_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"cc_maya_crypto_049v2\",\"user_id\":\"usr_maya_iqbal_049v2\",\"closure_reason\":\"annual_fee\"}"
+        },
+        "info": "Crypto independently qualifies; this current reason is not a prior attempt."
+      },
+      {
+        "action_id": "maya_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_statement_credit_8472"
+        }
+      },
+      {
+        "action_id": "maya_crypto_credit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_statement_credit_8472",
+          "arguments": "{\"user_id\":\"usr_maya_iqbal_049v2\",\"credit_card_account_id\":\"cc_maya_crypto_049v2\",\"amount\":5,\"reason\":\"retention_offer\"}"
+        },
+        "info": "After Maya declines personal Bronze, receives the account-specific entry-tier explanation, and explicitly accepts $5 cash and keeping Crypto."
+      },
+      {
+        "action_id": "maya_confirm_credit",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_maya_iqbal_049v2"
+        },
+        "info": "Unscored confirmation of the statement-credit transaction, as directed by the statement-credit document. No read or telemetry is an independent reward condition."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_credit_cards_credit_card_account_logistics_008",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_017"
+  ]
+}

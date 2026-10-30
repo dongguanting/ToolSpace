@@ -1,0 +1,224 @@
+{
+  "id": "task_generated_pro_081",
+  "description": {
+    "purpose": "Resolve Caleb Moreno's Silver Zoom business-card closure request through an eligible, fee-aware comparison and submission of the qualifying Business Platinum alternative.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I received another business-card offer, and it has me wondering whether my Silver Zoom Card is still worth keeping. Can you help me close it?” Do not initially volunteer your identity details, the offer’s exact terms, projected spending, income, subscription status, or willingness to apply for another card.\n\nYou are Caleb Moreno, a 60-year-old freelance translator in Phoenix, Arizona. If the agent asks you to verify your identity, provide your date of birth as 04/18/1965, your address as 1847 E Desert Cove Avenue, Phoenix, AZ 85020, your email as caleb.moreno.translations@example.net, and your phone number as 602-555-0187. Caleb will allow protected closure-workflow activity only after his identity details have been requested and matched.\n\nIf the agent asks why you want to close Silver Zoom, what the competing card offers, or which benefits matter, explain that the offer gives 3.5% cash back on travel and media advertising, has no foreign transaction fee, and charges a $95 first-year fee. Explain that you expect $100,000 of first-year net purchases, all in travel or media advertising, and expect the merchants to submit eligible category codes. Do not provide your income, subscription status, or application authorization yet.\n\nCaleb will consider an in-bank alternative only if it exceeds 3.5% on both projected travel and media-advertising purchases and has no foreign transaction fee. Caleb wants the eligible alternative with the greater first-year cash back after the annual fee, not the card with merely the highest advertised rate. If Business Platinum satisfies the constraints and wins the net comparison, Caleb will apply for that card and keep Silver Zoom open; otherwise he continues seeking Silver Zoom closure. Caleb authorizes at most one new business-card application and does not want a personal card, downgrade, or additional product.\n\nIf the agent recommends a card from its advertised reward rate alone, omits the annual fee that applies to you, or does not confirm both required categories and the foreign-fee term, say: “I do not want to decide from the headline rate alone. Please confirm that both of my spending categories qualify, that there is no foreign transaction fee, and what my first-year value would be after the fee.” Caleb does not authorize an application until those user-visible terms and the net comparison are established.\n\nIf the agent proposes closing Silver Zoom after establishing that Business Platinum meets your constraints and has the greater net value, or proposes keeping Silver Zoom without completing the accepted application, say: “If that alternative really meets the terms we discussed and comes out ahead after the fee, I want to apply for it and keep Silver Zoom open. Please do not close the card or leave the application unfinished.” Caleb does not authorize Silver Zoom closure once he has accepted the qualifying application alternative.\n\nIf the agent proposes an additional card, a personal product, a downgrade, or multiple applications, say: “I only want to resolve this business-card decision. Please do not add another product or submit more than one application.” Caleb authorizes only one Business Platinum application and no other product mutation.\n\nOnly after the agent confirms that Business Platinum exceeds 3.5% for both travel and media advertising when purchases are properly coded, has no foreign transaction fee, applies the annual fee you personally owe, and beats the competitor on first-year cash back after that fee, say that this resolves your concern. Then choose the Business Platinum alternative instead of closure, state that your annual income is $185,000 and that you do not have a Rho-Bank subscription, and authorize exactly one Business Platinum Rewards Card application. Caleb authorizes the terminal choice only after explicitly choosing the application instead of closure after hearing that recognizable comparison result.\n\nCaleb does not accept the resolution until he receives confirmation that one Business Platinum Rewards Card application was submitted with his authorized information. Caleb also does not accept the resolution until he receives confirmation that the Silver Zoom account was not closed. If either confirmation is missing, ask for it directly. Do not accept any additional card, personal product, or downgrade. Only after both confirmations are given and no additional product has been initiated, briefly thank the agent and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_caleb_moreno_f7a21c": {
+              "user_id": "usr_caleb_moreno_f7a21c",
+              "name": "Caleb Moreno",
+              "date_of_birth": "04/18/1965",
+              "address": "1847 E Desert Cove Avenue, Phoenix, AZ 85020",
+              "email": "caleb.moreno.translations@example.net",
+              "phone_number": "602-555-0187",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh customer identity for Caleb Moreno. His occupation as a freelance translator is conversational scenario context because the users schema has no occupation field."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_silver_zoom_8d4b19": {
+              "account_id": "ccacct_silver_zoom_8d4b19",
+              "user_id": "usr_caleb_moreno_f7a21c",
+              "card_type": "Silver Zoom Card",
+              "card_last_4_digits": "7316",
+              "current_balance": "0.00",
+              "date_of_account_open": "03/10/2024",
+              "reward_points": "0",
+              "account_status": "active",
+              "status": "active",
+              "credit_limit": "25000.00",
+              "past_due_amount": "0.00"
+            }
+          },
+          "notes": "Caleb's active Silver Zoom Card. Both available status fields are set to active, and the balance is stored using the table's observed string representation."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No transaction disputes exist for Caleb, so there are no active or pending disputes blocking the workflow."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No replacement-card orders exist for the Silver Zoom account, including pending or shipped orders."
+        },
+        "credit_card_closure_reasons": {
+          "data": {},
+          "notes": "No pre-call closure-reason history exists for the Silver Zoom account. The successful path creates the first record."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Current-session verification must be logged during the interaction."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable-tool availability comes from the tool catalog. Unlock state is ephemeral and is not pre-seeded as a persistent business record."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No pre-existing credit-card application exists for Caleb. The successful path submits one fresh application."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "usr_caleb_moreno_f7a21c",
+          "address": "1847 E Desert Cove Avenue, Phoenix, AZ 85020",
+          "email": "caleb.moreno.translations@example.net",
+          "phone_number": "602-555-0187",
+          "date_of_birth": "04/18/1965",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "act_01_find_caleb",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        }
+      },
+      {
+        "action_id": "act_02_find_silver_zoom",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_caleb_moreno_f7a21c"
+        }
+      },
+      {
+        "action_id": "act_03_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_05_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "act_06_check_disputes",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_caleb_moreno_f7a21c\"}"
+        }
+      },
+      {
+        "action_id": "act_07_unlock_replacement_check",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "act_08_check_replacements",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_silver_zoom_8d4b19\"}"
+        }
+      },
+      {
+        "action_id": "act_09_unlock_closure_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293"
+        }
+      },
+      {
+        "action_id": "act_10_check_closure_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_silver_zoom_8d4b19\"}"
+        }
+      },
+      {
+        "action_id": "act_11_unlock_reason_logger",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "act_12_log_closure_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_silver_zoom_8d4b19\",\"user_id\":\"usr_caleb_moreno_f7a21c\",\"closure_reason\":\"found_better_card\"}"
+        }
+      },
+      {
+        "action_id": "act_13_apply_business_platinum",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Business Platinum Rewards Card",
+          "customer_name": "Caleb Moreno",
+          "annual_income": 185000,
+          "rho_bank_subscription": false
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_business_credit_cards_business_platinum_rewards_card_008",
+    "doc_business_credit_cards_business_platinum_rewards_card_011"
+  ]
+}

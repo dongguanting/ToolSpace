@@ -1,0 +1,829 @@
+{
+  "id": "task_generated_pro_039",
+  "description": {
+    "purpose": "Audit Priya Raman's 47 completed purchases across four existing cards and enable her to submit exactly six substantiated rewards discrepancies for pending review, without changing rewards or balances.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “Hi, I'm reconciling my recent card statements and the rewards don't look quite right. Could you check them for me?”\n\nIf asked for identification or contact details, provide the requested facts: Priya Raman, 31, freelance translator running an established sole-proprietor business in Phoenix, Arizona; DOB 07/18/1994; phone 602-555-0187; email priya.raman72@example.com; address 4817 N 12th Street, Apt 206, Phoenix, AZ 85014.\n\nIf asked which cards or activity, name Crypto-Cash Back, Business Platinum Rewards Card, EcoCard, and Silver Rewards Card, covering late September through yesterday. You want all four reviewed. You cannot identify which rewards are wrong or by how much. Explain that you do not want to navigate transaction histories yourself: the agent should investigate and supply the details, and you will personally use a supplied submission capability with clear guidance. You recognize the purchases; your consent covers rewards reviews only, not purchase refunds, fraud claims, card changes, or reward redemptions.\n\nOnly after the agent identifies specific discrepancies and explains the purchases, ask to submit every substantiated finding for review, whether the award was too low or too high. Before each submission, supply requested identification and make sure you understand which of your purchases it concerns and that it is a rewards review, not a charge refund. Use the provided capability yourself and report only the confirmation actually received; do not invent approval notifications.\n\nIf a proposal visibly conflicts with these requests, withhold agreement, point out the unmet request, and ask the agent to check again. If already acted on, request recovery and do not accept closure while the visible problem remains. Do not supply guesses or hints about unfamiliar arithmetic or policies.\n\nAccept only after the agent summarizes the four-card review, you receive submission confirmations for every discrepancy identified, and the agent explains what remains pending and what follow-up to expect. Pending review need not mean a completed correction. Then briefly thank the agent and end with ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "priya_72c9a1": {
+              "user_id": "priya_72c9a1",
+              "name": "Priya Raman",
+              "date_of_birth": "07/18/1994",
+              "phone_number": "602-555-0187",
+              "email": "priya.raman72@example.com",
+              "address": "4817 N 12th Street, Apt 206, Phoenix, AZ 85014"
+            }
+          },
+          "notes": "Supplied fixture customer. Priya is a freelance translator operating an established sole proprietorship in Phoenix. Prior-approval background: personal score 792 and business PAYDEX 83; no new underwriting is requested. DOB makes her 31 at the fixed 11/14/2025 environment date. This is an initialization patch, not table replacement."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_pr72_crypto": {
+              "account_id": "cc_pr72_crypto",
+              "user_id": "priya_72c9a1",
+              "card_type": "Crypto-Cash Back",
+              "date_of_account_open": "02/12/2024",
+              "status": "OPEN",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$15000.00",
+              "current_balance": "$624.18",
+              "reward_points": "2698 points"
+            },
+            "cc_pr72_business": {
+              "account_id": "cc_pr72_business",
+              "user_id": "priya_72c9a1",
+              "card_type": "Business Platinum Rewards Card",
+              "date_of_account_open": "03/19/2024",
+              "status": "OPEN",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$85000.00",
+              "current_balance": "$1886.54",
+              "reward_points": "13754 points"
+            },
+            "cc_pr72_eco": {
+              "account_id": "cc_pr72_eco",
+              "user_id": "priya_72c9a1",
+              "card_type": "EcoCard",
+              "date_of_account_open": "04/23/2024",
+              "status": "OPEN",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$12000.00",
+              "current_balance": "$742.06",
+              "reward_points": "2733 points"
+            },
+            "cc_pr72_silver": {
+              "account_id": "cc_pr72_silver",
+              "user_id": "priya_72c9a1",
+              "card_type": "Silver Rewards Card",
+              "date_of_account_open": "05/21/2024",
+              "status": "OPEN",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$24000.00",
+              "current_balance": "$1032.44",
+              "reward_points": "6006 points"
+            }
+          },
+          "notes": "Exactly four supplied customer-owned accounts, approved and active before all reviewed purchases. No subsequent product changes or purchase-rate promotions apply. Balances reflect activity and payments outside the selected recent purchase inventory as well. Preserve all account fields."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_pr72_01": {
+              "transaction_id": "txn_pr72_01",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Arizona Public Service",
+              "transaction_amount": "$108.64",
+              "transaction_date": "09/24/2025",
+              "category": "Utilities",
+              "status": "COMPLETED",
+              "rewards_earned": "217 points"
+            },
+            "txn_pr72_02": {
+              "transaction_id": "txn_pr72_02",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Dutch Bros",
+              "transaction_amount": "$11.86",
+              "transaction_date": "09/30/2025",
+              "category": "Dining",
+              "status": "COMPLETED",
+              "rewards_earned": "23 points"
+            },
+            "txn_pr72_03": {
+              "transaction_id": "txn_pr72_03",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Walgreens",
+              "transaction_amount": "$31.47",
+              "transaction_date": "10/05/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "62 points"
+            },
+            "txn_pr72_04": {
+              "transaction_id": "txn_pr72_04",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Hulu",
+              "transaction_amount": "$19.39",
+              "transaction_date": "10/10/2025",
+              "category": "Entertainment",
+              "status": "COMPLETED",
+              "rewards_earned": "38 points"
+            },
+            "txn_pr72_05": {
+              "transaction_id": "txn_pr72_05",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Lowe's",
+              "transaction_amount": "$267.58",
+              "transaction_date": "10/15/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "535 points"
+            },
+            "txn_pr72_06": {
+              "transaction_id": "txn_pr72_06",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Cox Communications",
+              "transaction_amount": "$144.26",
+              "transaction_date": "10/21/2025",
+              "category": "Utilities",
+              "status": "COMPLETED",
+              "rewards_earned": "288 points"
+            },
+            "txn_pr72_07": {
+              "transaction_id": "txn_pr72_07",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Best Buy",
+              "transaction_amount": "$498.73",
+              "transaction_date": "10/26/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "997 points"
+            },
+            "txn_pr72_08": {
+              "transaction_id": "txn_pr72_08",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Trader Joe's",
+              "transaction_amount": "$58.76",
+              "transaction_date": "10/23/2025",
+              "category": "Groceries",
+              "status": "COMPLETED",
+              "rewards_earned": "58 points"
+            },
+            "txn_pr72_09": {
+              "transaction_id": "txn_pr72_09",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "The Capital Grille",
+              "transaction_amount": "$86.42",
+              "transaction_date": "11/02/2025",
+              "category": "Dining",
+              "status": "COMPLETED",
+              "rewards_earned": "172 points"
+            },
+            "txn_pr72_10": {
+              "transaction_id": "txn_pr72_10",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Harkins Theatres",
+              "transaction_amount": "$29.67",
+              "transaction_date": "11/08/2025",
+              "category": "Entertainment",
+              "status": "COMPLETED",
+              "rewards_earned": "59 points"
+            },
+            "txn_pr72_11": {
+              "transaction_id": "txn_pr72_11",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_crypto",
+              "credit_card_type": "Crypto-Cash Back",
+              "merchant_name": "Nordstrom",
+              "transaction_amount": "$124.83",
+              "transaction_date": "11/11/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "249 points"
+            },
+            "txn_pr72_12": {
+              "transaction_id": "txn_pr72_12",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "Google Ads",
+              "transaction_amount": "$243.87",
+              "transaction_date": "10/11/2025",
+              "category": "Media",
+              "status": "COMPLETED",
+              "rewards_earned": "2438 points"
+            },
+            "txn_pr72_13": {
+              "transaction_id": "txn_pr72_13",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "LinkedIn Ads",
+              "transaction_amount": "$468.32",
+              "transaction_date": "11/03/2025",
+              "category": "Media",
+              "status": "COMPLETED",
+              "rewards_earned": "702 points"
+            },
+            "txn_pr72_14": {
+              "transaction_id": "txn_pr72_14",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "Notion",
+              "transaction_amount": "$107.46",
+              "transaction_date": "09/27/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "429 points"
+            },
+            "txn_pr72_15": {
+              "transaction_id": "txn_pr72_15",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "Twitter Ads",
+              "transaction_amount": "$318.64",
+              "transaction_date": "10/07/2025",
+              "category": "Media",
+              "status": "COMPLETED",
+              "rewards_earned": "1274 points"
+            },
+            "txn_pr72_16": {
+              "transaction_id": "txn_pr72_16",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "Hyatt Hotels",
+              "transaction_amount": "$392.57",
+              "transaction_date": "10/18/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "1570 points"
+            },
+            "txn_pr72_17": {
+              "transaction_id": "txn_pr72_17",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "AWS",
+              "transaction_amount": "$1128.46",
+              "transaction_date": "10/24/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "4513 points"
+            },
+            "txn_pr72_18": {
+              "transaction_id": "txn_pr72_18",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "United Airlines",
+              "transaction_amount": "$426.18",
+              "transaction_date": "10/02/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "639 points"
+            },
+            "txn_pr72_19": {
+              "transaction_id": "txn_pr72_19",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "Facebook Ads",
+              "transaction_amount": "$219.74",
+              "transaction_date": "10/31/2025",
+              "category": "Media",
+              "status": "COMPLETED",
+              "rewards_earned": "878 points"
+            },
+            "txn_pr72_20": {
+              "transaction_id": "txn_pr72_20",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "Salesforce implementation consulting",
+              "transaction_amount": "$168.23",
+              "transaction_date": "11/09/2025",
+              "category": "Operations",
+              "status": "COMPLETED",
+              "rewards_earned": "252 points"
+            },
+            "txn_pr72_21": {
+              "transaction_id": "txn_pr72_21",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_business",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "merchant_name": "Expedia",
+              "transaction_amount": "$264.89",
+              "transaction_date": "11/13/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "1059 points"
+            },
+            "txn_pr72_22": {
+              "transaction_id": "txn_pr72_22",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Olive Garden",
+              "transaction_amount": "$64.38",
+              "transaction_date": "09/23/2025",
+              "category": "Dining",
+              "status": "COMPLETED",
+              "rewards_earned": "64 points"
+            },
+            "txn_pr72_23": {
+              "transaction_id": "txn_pr72_23",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Seventh Generation",
+              "transaction_amount": "$132.46",
+              "transaction_date": "10/03/2025",
+              "category": "Green",
+              "status": "COMPLETED",
+              "rewards_earned": "662 points"
+            },
+            "txn_pr72_24": {
+              "transaction_id": "txn_pr72_24",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Tesla Supercharger",
+              "transaction_amount": "$28.97",
+              "transaction_date": "10/08/2025",
+              "category": "Green",
+              "status": "COMPLETED",
+              "rewards_earned": "144 points"
+            },
+            "txn_pr72_25": {
+              "transaction_id": "txn_pr72_25",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Whole Foods Market",
+              "transaction_amount": "$146.82",
+              "transaction_date": "10/12/2025",
+              "category": "Groceries",
+              "status": "COMPLETED",
+              "rewards_earned": "146 points"
+            },
+            "txn_pr72_26": {
+              "transaction_id": "txn_pr72_26",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Allbirds",
+              "transaction_amount": "$112.38",
+              "transaction_date": "10/17/2025",
+              "category": "Green",
+              "status": "COMPLETED",
+              "rewards_earned": "561 points"
+            },
+            "txn_pr72_27": {
+              "transaction_id": "txn_pr72_27",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Chipotle",
+              "transaction_amount": "$22.67",
+              "transaction_date": "10/22/2025",
+              "category": "Dining",
+              "status": "COMPLETED",
+              "rewards_earned": "22 points"
+            },
+            "txn_pr72_28": {
+              "transaction_id": "txn_pr72_28",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Sprouts Farmers Market",
+              "transaction_amount": "$78.54",
+              "transaction_date": "10/27/2025",
+              "category": "Green",
+              "status": "COMPLETED",
+              "rewards_earned": "392 points"
+            },
+            "txn_pr72_29": {
+              "transaction_id": "txn_pr72_29",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Patagonia",
+              "transaction_amount": "$156.34",
+              "transaction_date": "10/29/2025",
+              "category": "Green",
+              "status": "COMPLETED",
+              "rewards_earned": "156 points"
+            },
+            "txn_pr72_30": {
+              "transaction_id": "txn_pr72_30",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "Target",
+              "transaction_amount": "$63.92",
+              "transaction_date": "11/06/2025",
+              "category": "Green",
+              "status": "COMPLETED",
+              "rewards_earned": "63 points"
+            },
+            "txn_pr72_31": {
+              "transaction_id": "txn_pr72_31",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_eco",
+              "credit_card_type": "EcoCard",
+              "merchant_name": "REI Co-op",
+              "transaction_amount": "$104.76",
+              "transaction_date": "11/13/2025",
+              "category": "Sustainable",
+              "status": "COMPLETED",
+              "rewards_earned": "523 points"
+            },
+            "txn_pr72_32": {
+              "transaction_id": "txn_pr72_32",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Best Buy Phoenix",
+              "transaction_amount": "$436.87",
+              "transaction_date": "09/22/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "436 points"
+            },
+            "txn_pr72_33": {
+              "transaction_id": "txn_pr72_33",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "GameStop",
+              "transaction_amount": "$259.94",
+              "transaction_date": "09/25/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "259 points"
+            },
+            "txn_pr72_34": {
+              "transaction_id": "txn_pr72_34",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Amazon",
+              "transaction_amount": "$76.82",
+              "transaction_date": "10/01/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "76 points"
+            },
+            "txn_pr72_35": {
+              "transaction_id": "txn_pr72_35",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Amazon",
+              "transaction_amount": "$118.55",
+              "transaction_date": "10/06/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "118 points"
+            },
+            "txn_pr72_36": {
+              "transaction_id": "txn_pr72_36",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Amazon",
+              "transaction_amount": "$94.26",
+              "transaction_date": "10/09/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "94 points"
+            },
+            "txn_pr72_37": {
+              "transaction_id": "txn_pr72_37",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Amazon",
+              "transaction_amount": "$38.79",
+              "transaction_date": "10/16/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "38 points"
+            },
+            "txn_pr72_38": {
+              "transaction_id": "txn_pr72_38",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Amazon",
+              "transaction_amount": "$62.48",
+              "transaction_date": "11/05/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "62 points"
+            },
+            "txn_pr72_39": {
+              "transaction_id": "txn_pr72_39",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Slack Technologies",
+              "transaction_amount": "$51.73",
+              "transaction_date": "09/26/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "206 points"
+            },
+            "txn_pr72_40": {
+              "transaction_id": "txn_pr72_40",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Alaska Airlines",
+              "transaction_amount": "$286.43",
+              "transaction_date": "10/04/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "1145 points"
+            },
+            "txn_pr72_41": {
+              "transaction_id": "txn_pr72_41",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Delta Air Lines",
+              "transaction_amount": "$314.68",
+              "transaction_date": "10/13/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "1258 points"
+            },
+            "txn_pr72_42": {
+              "transaction_id": "txn_pr72_42",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Zoom Video",
+              "transaction_amount": "$18.92",
+              "transaction_date": "10/20/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "75 points"
+            },
+            "txn_pr72_43": {
+              "transaction_id": "txn_pr72_43",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Avis Car Rental",
+              "transaction_amount": "$173.26",
+              "transaction_date": "10/25/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "693 points"
+            },
+            "txn_pr72_44": {
+              "transaction_id": "txn_pr72_44",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "GitLab",
+              "transaction_amount": "$231.84",
+              "transaction_date": "11/01/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "927 points"
+            },
+            "txn_pr72_45": {
+              "transaction_id": "txn_pr72_45",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Microsoft 365",
+              "transaction_amount": "$83.47",
+              "transaction_date": "11/07/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "333 points"
+            },
+            "txn_pr72_46": {
+              "transaction_id": "txn_pr72_46",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Marriott Hotels",
+              "transaction_amount": "$214.63",
+              "transaction_date": "09/28/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "214 points"
+            },
+            "txn_pr72_47": {
+              "transaction_id": "txn_pr72_47",
+              "user_id": "priya_72c9a1",
+              "credit_card_account_id": "cc_pr72_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Costco",
+              "transaction_amount": "$72.59",
+              "transaction_date": "11/12/2025",
+              "category": "Groceries",
+              "status": "COMPLETED",
+              "rewards_earned": "72 points"
+            }
+          },
+          "notes": "Full 47-row supplied purchase inventory for Priya. All amounts are net posted eligible purchases, with no related returns, refunds, credits, chargebacks, or merchant updates. No cash equivalents, balance transfers, fees, interest, gift cards, person-to-person payments, or bank insurance premiums are represented. These are purchase accruals, not redemptions or crypto conversions. Categories are merchant-submitted classifications. The named merchant is the direct seller and merchant of record, without an intermediary masking classification. Business Media rows are direct advertising-platform purchases; Notion and AWS are direct software/cloud services; Salesforce implementation consulting is professional services, not a software subscription. Eco Green and Sustainable labels are recorded green indicators on direct qualifying purchases; Tesla Supercharger is the actual charging network; Target is a direct retail purchase bearing the Green indicator. Eco sustainable-retailer purchases are certified sustainable purchases, not mixed non-partner carts. Silver Software rows are provider-billed subscriptions/services; Travel rows are direct travel purchases; Best Buy Phoenix and GameStop are hardware purchases and Amazon rows are ordinary retail goods. Preserve the recorded classifications and rewards. These factual scope notes do not encode expected awards or dispute selection."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Explicit non-auto-resolving submission configuration. This unbound configuration record does not count toward customer-owned workload."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Output table starts empty in the supplied patch. No pre-existing disputes for this fresh customer or the supplied transaction IDs. Bind output IDs from actual replay effects."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "No pre-given submission capability. Provisioning creates its documented GIVEN registry entry; this is setup, not an independent banking outcome."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Priya Raman",
+          "user_id": "priya_72c9a1",
+          "address": "4817 N 12th Street, Apt 206, Phoenix, AZ 85014",
+          "email": "priya.raman72@example.com",
+          "phone_number": "602-555-0187",
+          "date_of_birth": "07/18/1994",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "pr72_lookup_user",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        },
+        "info": "Unscored support: obtain the caller's canonical ID and match requested identity details."
+      },
+      {
+        "action_id": "pr72_lookup_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "priya_72c9a1"
+        },
+        "info": "Unscored support: establish ownership, products, and opening dates for signup-window exclusions."
+      },
+      {
+        "action_id": "pr72_lookup_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "priya_72c9a1"
+        },
+        "info": "Unscored support: obtain the full inventory and identifiers used in the cross-card selection."
+      },
+      {
+        "action_id": "pr72_give_submission",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"priya_72c9a1\",\"transaction_id\":\"txn_pr72_46\"}"
+        },
+        "info": "Required setup after findings are explained and the customer requests rewards reviews. No independent policy proof or banking PART."
+      },
+      {
+        "action_id": "pr72_submit_46",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"priya_72c9a1\",\"transaction_id\":\"txn_pr72_46\"}"
+        }
+      },
+      {
+        "action_id": "pr72_submit_18",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"priya_72c9a1\",\"transaction_id\":\"txn_pr72_18\"}"
+        }
+      },
+      {
+        "action_id": "pr72_submit_12",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"priya_72c9a1\",\"transaction_id\":\"txn_pr72_12\"}"
+        }
+      },
+      {
+        "action_id": "pr72_submit_08",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"priya_72c9a1\",\"transaction_id\":\"txn_pr72_08\"}"
+        }
+      },
+      {
+        "action_id": "pr72_submit_29",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"priya_72c9a1\",\"transaction_id\":\"txn_pr72_29\"}"
+        }
+      },
+      {
+        "action_id": "pr72_submit_13",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"priya_72c9a1\",\"transaction_id\":\"txn_pr72_13\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_004",
+    "doc_credit_cards_credit_cards_(general)_005",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_credit_cards_(general)_007",
+    "doc_business_credit_cards_business_platinum_rewards_card_001",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_business_credit_cards_business_platinum_rewards_card_003",
+    "doc_business_credit_cards_business_platinum_rewards_card_007",
+    "doc_credit_cards_crypto-cash_back_001",
+    "doc_credit_cards_crypto-cash_back_005",
+    "doc_credit_cards_crypto-cash_back_008",
+    "doc_credit_cards_crypto-cash_back_009",
+    "doc_credit_cards_ecocard_001",
+    "doc_credit_cards_ecocard_002",
+    "doc_credit_cards_ecocard_003",
+    "doc_credit_cards_ecocard_004",
+    "doc_credit_cards_ecocard_007",
+    "doc_credit_cards_ecocard_009",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_002",
+    "doc_credit_cards_silver_rewards_card_003",
+    "doc_credit_cards_silver_rewards_card_004",
+    "doc_credit_cards_silver_rewards_card_008",
+    "doc_credit_cards_silver_rewards_card_010"
+  ]
+}

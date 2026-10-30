@@ -1,0 +1,326 @@
+{
+  "id": "task_generated_pro_060",
+  "description": {
+    "purpose": "Help Caleb Moreno dispute two unauthorized online debit-card purchases, permanently close the missing card, and order one ordinary replacement for the same Green Account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concerned but cooperative: “I just got an alert for an online purchase I don't recognize. When I checked, my debit card was missing, and I think there may be another unfamiliar charge too. Can you help me dispute them and secure the card?” Do not initially provide identity details, exact transaction details, policy conclusions, or internal processing instructions.\n\nIf the agent requests identity or contact information, provide: Caleb Moreno; date of birth 04/18/1987; 2418 Westover Hills Boulevard, Richmond, VA 23225; caleb.moreno87@example.com; and 804-555-7316. Do not volunteer transaction amounts in that verification answer. Caleb authorizes protected changes only after the agent has established that these identity and contact details match his customer record.\n\nIf asked which transactions are unfamiliar, identify both posted online purchases: $642.35 at Lumen Stage Supply Online dated 11/12/2025 and $87.40 at Northline Digital Tickets dated 11/11/2025. Say both appeared on the statement dated 11/13/2025 and were first noticed on 11/14/2025. The two exact merchants, dates, and amounts must be identified, and Caleb must confirm that neither purchase was authorized.\n\nIf asked about authorization, possession, security, merchant contact, a statement, police reporting, or replacement preferences, say that neither purchase was made or approved by Caleb; the physical card ending 4816 is missing; the PIN was not shared and is not believed compromised; the merchants were not contacted because these appear to be fraud; no police report has yet been filed; and Caleb agrees that the conversation may serve as his written statement. Request one replacement for the same Green Account, sent by standard delivery with the classic design to the Richmond address on file. Before authorizing card changes, Caleb must understand that the missing card will be permanently unusable and that exactly one standard classic replacement will be mailed to his address on file without an upgrade.\n\nCaleb wants both identified online purchases handled as unauthorized transactions, not just the larger alerting purchase. Caleb wants any temporary account protection for which these promptly reported unauthorized purchases qualify to be applied to both disputes. Because the physical card is confirmed missing and already associated with fraud, Caleb wants it permanently secured rather than left capable of later reactivation. Caleb wants exactly one replacement for the same Green Account, with standard delivery and a classic design sent to his address on file; he does not want a different product or an added credit card.\n\nIf the agent proposes handling only the $642.35 purchase, omits the $87.40 purchase, or suggests merely monitoring the second charge, say: “Both purchases are visible, unfamiliar online charges on the same missing card. Please address both before we proceed.” Do not authorize a resolution that intentionally leaves either identified transaction undisputed or leaves its qualifying temporary protection unaddressed.\n\nIf the agent proposes only a reversible freeze or suggests keeping the missing card available for later reuse, say: “The card is not merely misplaced; it is missing and has already been associated with unfamiliar purchases. I need a permanent security outcome.” Do not authorize leaving the old card in a state that can later be restored for use.\n\nIf the agent proposes paid delivery, a paid design upgrade, a different linked account, multiple debit cards, or a new credit-card product, say: “No, thank you. One ordinary replacement for the same Green Account, with standard delivery and the classic design sent to my address on file, is sufficient.” Do not authorize fees, extra cards, a different linked account, or a new credit product.\n\nIf the agent recommends a police report for the larger purchase, acknowledge the recommendation, say no report has been filed yet but Caleb will consider it, and continue with the bank resolution now.\n\nIf the agent refuses an otherwise resolvable dispute, leaves the confirmed-missing card only temporarily frozen, or repeatedly fails to complete the requested resolution after one clarification, become firmer, restate the visible problem, and ask to speak with a human who can finish securing the missing card and handling both unfamiliar charges. Do not request escalation when the requested resolution is being completed correctly.\n\nDo not accept the resolution until Caleb has recognizable confirmation that disputes were filed for both the $642.35 and $87.40 online purchases and that qualifying temporary protection was recorded for each. Do not accept until Caleb has confirmation that the missing card ending 4816 is permanently closed. Do not accept until Caleb has confirmation that exactly one standard-delivery classic replacement is pending for the same Green Account and Richmond address. If any item is missing, ask about it and do not stop.\n\nOnly after every completion condition is satisfied, become relieved and say: “Thank you—that takes care of both charges and the missing card. ###STOP###”"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_caleb_moreno_7f31c9": {
+              "user_id": "usr_caleb_moreno_7f31c9",
+              "name": "Caleb Moreno",
+              "address": "2418 Westover Hills Boulevard, Richmond, VA 23225",
+              "email": "caleb.moreno87@example.com",
+              "phone_number": "804-555-7316",
+              "date_of_birth": "04/18/1987"
+            }
+          },
+          "notes": "Fresh Caleb Moreno customer record. He is a 38-year-old independent event planner living in Richmond, Virginia; occupation is interaction context because the users schema has no occupation field."
+        },
+        "accounts": {
+          "data": {
+            "acct_green_caleb_91d4e2": {
+              "account_id": "acct_green_caleb_91d4e2",
+              "user_id": "usr_caleb_moreno_7f31c9",
+              "class": "checking",
+              "level": "Green Account",
+              "status": "OPEN",
+              "date_opened": "03/07/2023",
+              "current_holdings": "1480.75"
+            }
+          },
+          "notes": "Caleb's open Green Account. Green Account is the human-facing MID-tier checking product name."
+        },
+        "debit_cards": {
+          "data": {
+            "dcard_missing_4816_b82ea7": {
+              "card_id": "dcard_missing_4816_b82ea7",
+              "account_id": "acct_green_caleb_91d4e2",
+              "user_id": "usr_caleb_moreno_7f31c9",
+              "cardholder_name": "Caleb Moreno",
+              "last_4_digits": "4816",
+              "cvv": "714",
+              "expiration_date": "09/29",
+              "issue_date": "09/20/2024",
+              "issue_reason": "first_card",
+              "status": "ACTIVE",
+              "online_enabled": true,
+              "international_enabled": false,
+              "daily_purchase_limit": 2500,
+              "daily_purchase_used": 729,
+              "daily_atm_limit": 600,
+              "daily_atm_used": 0,
+              "fraud_alert_active": true,
+              "alert_source": "LUMEN STAGE SUPPLY ONLINE"
+            },
+            "dcard_prior_lost_c1735a": {
+              "card_id": "dcard_prior_lost_c1735a",
+              "account_id": "acct_green_caleb_91d4e2",
+              "user_id": "usr_caleb_moreno_7f31c9",
+              "cardholder_name": "Caleb Moreno",
+              "last_4_digits": "2037",
+              "cvv": "492",
+              "expiration_date": "02/29",
+              "issue_date": "02/20/2025",
+              "issue_reason": "lost",
+              "status": "CLOSED",
+              "online_enabled": false,
+              "international_enabled": false,
+              "daily_purchase_limit": 2500,
+              "daily_purchase_used": 0,
+              "daily_atm_limit": 600,
+              "daily_atm_used": 0,
+              "fraud_alert_active": false
+            }
+          },
+          "notes": "The active card ending 4816 is the confirmed-missing card. The closed February 2025 card is the sole qualifying replacement in the rolling twelve-month history."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_lumen_online_64235_4d91": {
+              "transaction_id": "txn_lumen_online_64235_4d91",
+              "account_id": "acct_green_caleb_91d4e2",
+              "date": "11/12/2025",
+              "description": "LUMEN STAGE SUPPLY ONLINE",
+              "amount": -642.35,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0,
+              "available_amount": 642.35
+            },
+            "txn_northline_online_8740_2a76": {
+              "transaction_id": "txn_northline_online_8740_2a76",
+              "account_id": "acct_green_caleb_91d4e2",
+              "date": "11/11/2025",
+              "description": "NORTHLINE DIGITAL TICKETS",
+              "amount": -87.4,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0,
+              "available_amount": 87.4
+            },
+            "txn_rivercity_market_1832_d0c5": {
+              "transaction_id": "txn_rivercity_market_1832_d0c5",
+              "account_id": "acct_green_caleb_91d4e2",
+              "date": "11/09/2025",
+              "description": "RIVER CITY MARKET RICHMOND VA",
+              "amount": -18.32,
+              "type": "debit_card_purchase",
+              "status": "posted",
+              "hold_amount": 0,
+              "available_amount": 18.32
+            }
+          },
+          "notes": "Both fraud purchases and the ordinary distractor are posted with no holds. No pending, processing, or refund transaction is represented. The interaction establishes a 11/13/2025 statement date and 11/14/2025 discovery date for both fraud purchases."
+        },
+        "debit_card_disputes": {
+          "data": {},
+          "notes": "Initially empty so both disputes must be created during the successful interaction."
+        },
+        "debit_card_orders": {
+          "data": {},
+          "notes": "Initially empty; Caleb has no pending debit-card order."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Caleb uses a fresh user ID, allowing current-session verification to be logged without a uniqueness collision."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No Rho-Bank credit-card account exists for Caleb, so the cross-product check produces no additional product action."
+        },
+        "task_config": {
+          "data": {
+            "config_disputes_persist_5c4a": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Disputes remain persistently filed for database evaluation."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational call telemetry begins empty; discoverable capability availability comes from the environment tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_find_caleb",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        }
+      },
+      {
+        "action_id": "act_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "usr_caleb_moreno_7f31c9",
+          "address": "2418 Westover Hills Boulevard, Richmond, VA 23225",
+          "email": "caleb.moreno87@example.com",
+          "phone_number": "804-555-7316",
+          "date_of_birth": "04/18/1987",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_05_get_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_caleb_moreno_7f31c9\"}"
+        }
+      },
+      {
+        "action_id": "act_06_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_07_get_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_green_caleb_91d4e2\"}"
+        }
+      },
+      {
+        "action_id": "act_08_unlock_cards",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "act_09_get_cards",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_green_caleb_91d4e2\"}"
+        }
+      },
+      {
+        "action_id": "act_10_cross_product_check",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_caleb_moreno_7f31c9"
+        }
+      },
+      {
+        "action_id": "act_11_unlock_dispute",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281"
+        }
+      },
+      {
+        "action_id": "act_12_file_lumen_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_lumen_online_64235_4d91\",\"account_id\":\"acct_green_caleb_91d4e2\",\"card_id\":\"dcard_missing_4816_b82ea7\",\"user_id\":\"usr_caleb_moreno_7f31c9\",\"dispute_category\":\"card_not_present_fraud\",\"transaction_date\":\"11/12/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":642.35,\"transaction_type\":\"online_purchase\",\"card_in_possession\":false,\"pin_compromised\":\"no\",\"contacted_merchant\":false,\"police_report_filed\":false,\"written_statement_provided\":true,\"provisional_credit_eligible\":true,\"customer_max_liability_amount\":50,\"card_action\":\"close_and_reissue\"}"
+        }
+      },
+      {
+        "action_id": "act_13_file_northline_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_northline_online_8740_2a76\",\"account_id\":\"acct_green_caleb_91d4e2\",\"card_id\":\"dcard_missing_4816_b82ea7\",\"user_id\":\"usr_caleb_moreno_7f31c9\",\"dispute_category\":\"card_not_present_fraud\",\"transaction_date\":\"11/11/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":87.40,\"transaction_type\":\"online_purchase\",\"card_in_possession\":false,\"pin_compromised\":\"no\",\"contacted_merchant\":false,\"police_report_filed\":false,\"written_statement_provided\":true,\"provisional_credit_eligible\":true,\"customer_max_liability_amount\":50,\"card_action\":\"close_and_reissue\"}"
+        }
+      },
+      {
+        "action_id": "act_14_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721"
+        }
+      },
+      {
+        "action_id": "act_15_close_missing_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"dcard_missing_4816_b82ea7\",\"reason\":\"lost\"}"
+        }
+      },
+      {
+        "action_id": "act_16_unlock_order",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739"
+        }
+      },
+      {
+        "action_id": "act_17_order_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739",
+          "arguments": "{\"account_id\":\"acct_green_caleb_91d4e2\",\"user_id\":\"usr_caleb_moreno_7f31c9\",\"delivery_option\":\"STANDARD\",\"delivery_fee\":0,\"card_design\":\"CLASSIC\",\"design_fee\":0,\"shipping_address\":\"2418 Westover Hills Boulevard, Richmond, VA 23225\",\"excess_replacement_fee\":null}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_023",
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_026",
+    "doc_bank_accounts_bank_accounts_(general)_028",
+    "doc_bank_accounts_bank_accounts_(general)_029",
+    "doc_bank_accounts_bank_accounts_(general)_030",
+    "doc_bank_accounts_bank_accounts_(general)_031",
+    "doc_bank_accounts_bank_accounts_(general)_032",
+    "doc_bank_accounts_bank_accounts_(general)_036",
+    "doc_bank_accounts_bank_accounts_(general)_037"
+  ]
+}

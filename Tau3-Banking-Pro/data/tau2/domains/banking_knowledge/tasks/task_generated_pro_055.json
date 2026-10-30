@@ -1,0 +1,220 @@
+{
+  "id": "task_generated_pro_055",
+  "description": {
+    "purpose": "Select and create Priya Raman's authorized personal checking-and-savings pair, preserving savings eligibility until creation, then retire her empty legacy checking.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “I was sorting out my household budget this morning and realized I need a separate place for emergency savings. Can you help me set up a new personal checking-and-savings pair at Rho?” You want both accounts opened today, not just recommendations.\n\nWhen asked for identity, give the requested details: Priya Raman, 34, independent event planner in Columbus, Ohio; DOB 06/12/1991; 2186 Summit Street, Columbus, OH 43202; 614-555-0168; priya.raman@example.net. You do not subscribe to Rho-Bank+.\n\nWhen asked about products or features, explain your shortlist: Evergreen checking with Green savings, or Blue checking with Silver Plus savings. Savings must permit paper statements; you will arrange delivery settings later. Ask for one recommendation. You do not want a credit card or other added product. You do not know which pair fits.\n\nWhen asked about existing accounts or funding, explain that your only Rho deposit account is Light Blue checking, opened in February 2024, now empty after you moved its money out, with nothing pending that you know of. Your emergency reserves are at another bank, mixed with everyday spending money. You will fund the new accounts externally next week, including $6,400 for savings; do not authorize an in-call transfer.\n\nApprove a compatible pair only after supplying verification details and hearing the proposed products, statement options, ordinary maintenance terms, and deferred-funding obligation. Only after the agent confirms the replacement checking has opened, ask: “Please also close my unused Light Blue account as part of this.” Confirm which unused account you mean before authorizing closure; accept a practical explanation of timing without demanding immediate closure.\n\nShared objection/recovery rule: If a proposal or reported result conflicts with a disclosed preference or leaves a requested outcome missing, briefly identify that unmet need or unwanted action and ask for revision or completion. Do not authorize an incompatible plan, including knowingly postponing savings because of closure. If an incompatible action already happened, ask for correction and keep the request unresolved. If no consequence is disclosed, do not pretend to detect an internal sequencing mistake or suggest a technical workaround.\n\nAccept only after receiving distinct opening confirmations and details for both new accounts, confirmation that Light Blue is closed, and a clear explanation that savings remains unfunded with a funding deadline, with no disclosed preference or consent boundary unresolved. Then briefly thank the agent without reopening the comparison and end with:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "pr7c42e9b1": {
+              "user_id": "pr7c42e9b1",
+              "name": "Priya Raman",
+              "date_of_birth": "06/12/1991",
+              "address": "2186 Summit Street, Columbus, OH 43202",
+              "phone_number": "614-555-0168",
+              "email": "priya.raman@example.net",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh fixture owner, age 34 at 11/14/2025. Patch preserves unrelated defaults; downstream merge validation must confirm no accidental associations with this owner."
+        },
+        "accounts": {
+          "data": {
+            "chk_pr7c42e9b1_legacy": {
+              "account_id": "chk_pr7c42e9b1_legacy",
+              "user_id": "pr7c42e9b1",
+              "class": "checking",
+              "account_type": "checking",
+              "level": "Light Blue Account",
+              "account_class": "Light Blue Account",
+              "date_opened": "02/18/2024",
+              "status": "OPEN",
+              "current_holdings": "0.00"
+            }
+          },
+          "notes": "Exactly one supplied customer-owned initial account and sole mature active checking. No parent, collections, negative balance, savings, or cause-related closure for this fresh owner. New accounts are absent initially. This is a patch, not global table replacement."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_pr7c42e9b1_final_transfer": {
+              "transaction_id": "txn_pr7c42e9b1_final_transfer",
+              "account_id": "chk_pr7c42e9b1_legacy",
+              "date": "11/10/2025",
+              "description": "ACH TRANSFER TO PERSONAL EXTERNAL BANK",
+              "amount": -1875.0,
+              "type": "ach_transfer_out",
+              "status": "posted"
+            }
+          },
+          "notes": "Recent-history excerpt corroborating the empty-account story, not a complete lifetime ledger. No pending transactions are linked to the fresh legacy account. The history read establishes absence of pending activity for closure, not the current balance."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Required by account retrieval; no supplied or default-linked credit-card accounts for the fresh owner. No card work is requested."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty supplied audit fixture. No pre-existing Priya verification; retain unrelated defaults under patch semantics. Create current-session verification through the direct tool."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty invocation telemetry; capabilities come from the catalog and session unlocks. Telemetry is excluded from evaluated banking completion."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "G01_identity",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        },
+        "info": "Reference lookup to locate owner and compare requested identity answers; not independently scored."
+      },
+      {
+        "action_id": "G02_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "G03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Priya Raman",
+          "user_id": "pr7c42e9b1",
+          "address": "2186 Summit Street, Columbus, OH 43202",
+          "email": "priya.raman@example.net",
+          "phone_number": "614-555-0168",
+          "date_of_birth": "06/12/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After confirming at least two identity fields against the lookup; reference interaction confirms all four."
+      },
+      {
+        "action_id": "G04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "G05_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"pr7c42e9b1\"}"
+        },
+        "info": "Support: inventory, ownership, tenure, standing and closure balance. Read telemetry is not reward."
+      },
+      {
+        "action_id": "G06_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "G07_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_pr7c42e9b1_legacy\"}"
+        },
+        "info": "Support for no-pending-transactions closure precondition, not a required read sequence."
+      },
+      {
+        "action_id": "G08_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "G09_open_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"pr7c42e9b1\",\"account_type\":\"checking\",\"account_class\":\"Blue Account\"}"
+        },
+        "info": "After informed pair consent. Returned ID alias: 7a2ae6b2e4f4c8dd. Confirmation activates the customer's legacy-closure request."
+      },
+      {
+        "action_id": "G10_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"pr7c42e9b1\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        },
+        "info": "Legacy checking still OPEN. Returned ID alias: cafd3044f8971c4c. Customer declines immediate funding; disclose funding by 12/14/2025 or closure."
+      },
+      {
+        "action_id": "G11_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "G12_close_legacy",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"chk_pr7c42e9b1_legacy\",\"reason\":\"Replacing unused personal checking\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "After both new accounts exist and customer confirms retirement of the identified unused account. No transfer, fee, or waiver."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ],
+    "bank_account_closure_reason_equivalences": [
+      {
+        "account_id": "chk_pr7c42e9b1_legacy",
+        "user_id": "pr7c42e9b1",
+        "canonical_reason": "Replacing unused personal checking",
+        "accepted_equivalent_reasons": [
+          "Replacing unused personal checking",
+          "Customer requested closure of unused Light Blue checking account"
+        ],
+        "evidence": "Original instructions prescribe no exact reason string; both reviewed reasons describe authorized closure of unused legacychecking. All other fields and structured codes remain strict."
+      }
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_001",
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_checking_accounts_blue_account_003",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_green_account_(savings)_004"
+  ]
+}

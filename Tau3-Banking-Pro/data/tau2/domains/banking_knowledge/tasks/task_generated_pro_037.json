@@ -1,0 +1,349 @@
+{
+  "id": "task_generated_pro_037",
+  "description": {
+    "purpose": "Reconcile October Gold savings interest from transaction evidence and independently selected checking and credit-card benefits, then apply the exact positive shortfall.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Theo Alvarez, 53, a physical therapy assistant in Richmond, Virginia. Begin: “My October savings interest looks low. Could you check whether I've received the benefits for the accounts I already have?”\n\nWhen asked for identity details, provide only those requested: DOB 07/22/1972; 2841 Parkwood Avenue, Richmond, VA 23221; 804-555-0168; theo.alvarez@example.net. Do not add account history to an identity answer.\n\nWhen asked about your statement, accounts, or balances, give the relevant facts: Gold savings paid $378.66 for October and now holds $90,378.66; it began October with $72,000, and you deposited $18,000 on October 16. Green checking holds $5,585 and Purple checking $10,020. If asked about cards, initially name Platinum Rewards, Silver Rewards, and EcoCard. Only if the agent questions Silver or identifies Gold Rewards, say, “Sorry, I meant Gold Rewards. I mix those two names up.” You do not know the correct rate or missing interest amount.\n\nYou want the full October interest owed credited to your existing Gold savings, not a new product, split destination, transfer, substitute benefit, or investigation-only settlement. Once the agent has established your identity, identified that account and October payment, and explained the proposed correction amount and destination, authorize an apparently well-supported correction; do not knowingly accept a partial settlement. Agree to investigation of the cause, without treating that request as proof of a completed repair.\n\nShared objection/recovery rule: if a proposal or reported result conflicts with these boundaries or your disclosed facts, withhold authorization and ask what remains outstanding. If it already happened, request correction and do not accept closure. Challenge a pending credit described as complete or an unsupported repair claim, but do not diagnose hidden rate or rounding errors.\n\nAccept only when the finding is explained, the agreed credit is confirmed applied to Gold savings with its resulting balance, and investigation of the cause is addressed without a guaranteed-repair claim. Otherwise use the shared rule. Then thank the agent and end with:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_095v": {
+              "user_id": "usr_theo_alvarez_095v",
+              "name": "Theo Alvarez",
+              "date_of_birth": "07/22/1972",
+              "address": "2841 Parkwood Avenue, Richmond, VA 23221",
+              "phone_number": "804-555-0168",
+              "email": "theo.alvarez@example.net",
+              "rho_bank_plus_subscription": true
+            }
+          },
+          "notes": "One supplied customer; absent parent_user_id denotes no parent relationship. Age 53 at the fixed banking date. Initialization is a patch."
+        },
+        "accounts": {
+          "data": {
+            "acct_ta_gold_6042": {
+              "account_id": "acct_ta_gold_6042",
+              "user_id": "usr_theo_alvarez_095v",
+              "class": "savings",
+              "account_class": "savings",
+              "account_type": "savings",
+              "level": "Gold Account",
+              "status": "ACTIVE",
+              "date_opened": "04/12/2023",
+              "current_holdings": "90378.66"
+            },
+            "acct_ta_green_7316": {
+              "account_id": "acct_ta_green_7316",
+              "user_id": "usr_theo_alvarez_095v",
+              "class": "checking",
+              "account_class": "checking",
+              "account_type": "checking",
+              "level": "Green Account",
+              "status": "ACTIVE",
+              "date_opened": "05/01/2022",
+              "current_holdings": "5585.00"
+            },
+            "acct_ta_purple_2809": {
+              "account_id": "acct_ta_purple_2809",
+              "user_id": "usr_theo_alvarez_095v",
+              "class": "checking",
+              "account_class": "checking",
+              "account_type": "checking",
+              "level": "Purple Account",
+              "status": "ACTIVE",
+              "date_opened": "06/10/2021",
+              "current_holdings": "10020.00"
+            }
+          },
+          "notes": "Exactly three supplied customer-owned accounts. Historical eligibility is retrievable in transaction descriptions; no closure or parent-account relationship is supplied."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_ta_platinum_415": {
+              "account_id": "cc_ta_platinum_415",
+              "user_id": "usr_theo_alvarez_095v",
+              "card_type": "Platinum Rewards Card",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE",
+              "date_of_account_open": "03/09/2022",
+              "credit_limit": "18000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0"
+            },
+            "cc_ta_gold_623": {
+              "account_id": "cc_ta_gold_623",
+              "user_id": "usr_theo_alvarez_095v",
+              "card_type": "Gold Rewards Card",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE",
+              "date_of_account_open": "04/12/2023",
+              "credit_limit": "12000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0"
+            },
+            "cc_ta_eco_807": {
+              "account_id": "cc_ta_eco_807",
+              "user_id": "usr_theo_alvarez_095v",
+              "card_type": "EcoCard",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE",
+              "date_of_account_open": "08/20/2023",
+              "credit_limit": "6000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0"
+            }
+          },
+          "notes": "Exactly three actual holdings under the supplied profile. No Silver Rewards account or stored derived card digits. These are comparison evidence, not servicing objectives."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_ta_sav_funding_oct16": {
+              "transaction_id": "txn_ta_sav_funding_oct16",
+              "account_id": "acct_ta_gold_6042",
+              "date": "10/16/2025",
+              "description": "EXTERNAL-BANK SAVINGS DEPOSIT +$18,000, fully available before accrual on 10/16/2025. October statement principal attachment: acct_ta_gold_6042, Gold Account savings, solely owned by usr_theo_alvarez_095v, continuously ACTIVE with unchanged ownership and product for 10/01/2025 through 11/14/2025 03:40 EST. Opening eligible principal on 10/01/2025 was $72,000.00, including all earlier posted interest; no unposted opening-interest carry. No holds or excluded balances. This deposit was the only October principal-changing cash flow. Principal excluding interest accumulated during the cycle was $72,000.00 on 10/01–10/15 and $90,000.00 on 10/16–10/31. No subsequent principal flows through 11/14/2025 03:40 EST. Posted holdings exclude unposted November accrual.",
+              "amount": 18000.0,
+              "available_amount": 18000.0,
+              "hold_amount": 0.0,
+              "type": "ach_transfer_in",
+              "status": "posted"
+            },
+            "txn_ta_sav_interest_oct31": {
+              "transaction_id": "txn_ta_sav_interest_oct31",
+              "account_id": "acct_ta_gold_6042",
+              "date": "10/31/2025",
+              "description": "OCTOBER SAVINGS INTEREST, posted after 10/31 accrual. Statement calculation detail: accrual dates 10/01/2025 through 10/31/2025 inclusive; 365-day denominator; effective-APY daily factor (1 + APY/100)^(1/365). Deposits enter the eligible balance before that day's accrual. Accumulated interest is retained in the daily computation, with no intermediate rounding and half-up cent rounding once at posting. Applied components: base 5.5%; Purple Account checking acct_ta_purple_2809 component 0.1 percentage points; Gold Rewards Card cc_ta_gold_623 relationship/card component 0.025 percentage points, recorded as one component. No other interest postings or adjustments through 11/14/2025 03:40 EST. October closing posted savings balance $90,378.66.",
+              "amount": 378.66,
+              "type": "interest_credit",
+              "status": "posted"
+            },
+            "txn_ta_green_payroll_oct03": {
+              "transaction_id": "txn_ta_green_payroll_oct03",
+              "account_id": "acct_ta_green_7316",
+              "date": "10/03/2025",
+              "description": "PAYROLL - RICHMOND MOBILITY THERAPY. October statement relationship panel: acct_ta_green_7316, Green Account checking, solely owned by usr_theo_alvarez_095v, ACTIVE and linked to that owner's Gold Account savings acct_ta_gold_6042 on every day 10/01/2025–10/31/2025. No ownership, association, status, or product changes through 11/14/2025 03:40 EST. Opening checking balance 10/01/2025: $4,600.00. This statement and the Purple statement comprise the complete checking inventory for this owner throughout October.",
+              "amount": 2750.0,
+              "type": "direct_deposit",
+              "status": "posted"
+            },
+            "txn_ta_green_rent_oct05": {
+              "transaction_id": "txn_ta_green_rent_oct05",
+              "account_id": "acct_ta_green_7316",
+              "date": "10/05/2025",
+              "description": "OCTOBER RENT - PARKWOOD RESIDENTIAL. October statement card panel for usr_theo_alvarez_095v: cc_ta_platinum_415 Platinum Rewards Card; cc_ta_gold_623 Gold Rewards Card; cc_ta_eco_807 EcoCard. These were the complete credit-card inventory under this owner and all were ACTIVE and associated with the owner's Gold Account savings acct_ta_gold_6042 on every day 10/01/2025–10/31/2025. No ownership, status, association, or product changes through 11/14/2025 03:40 EST.",
+              "amount": -1450.0,
+              "type": "bill_pay",
+              "status": "posted"
+            },
+            "txn_ta_green_grocery_oct11": {
+              "transaction_id": "txn_ta_green_grocery_oct11",
+              "account_id": "acct_ta_green_7316",
+              "date": "10/11/2025",
+              "description": "GROCERIES - RIVER CITY MARKET RICHMOND VA",
+              "amount": -128.4,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            },
+            "txn_ta_green_utilities_oct22": {
+              "transaction_id": "txn_ta_green_utilities_oct22",
+              "account_id": "acct_ta_green_7316",
+              "date": "10/22/2025",
+              "description": "OCTOBER UTILITIES - RICHMOND. Statement closing detail: $5,585.00 posted checking balance after the four October entries. No other posted flows, fees, transfers, or interest from 10/01/2025 through 11/14/2025 03:40 EST.",
+              "amount": -186.6,
+              "type": "bill_pay",
+              "status": "posted"
+            },
+            "txn_ta_purple_funding_oct08": {
+              "transaction_id": "txn_ta_purple_funding_oct08",
+              "account_id": "acct_ta_purple_2809",
+              "date": "10/08/2025",
+              "description": "EXTERNAL TRANSFER INTO PURPLE CHECKING. October statement relationship panel: acct_ta_purple_2809, Purple Account checking, solely owned by usr_theo_alvarez_095v, ACTIVE and linked to that owner's Gold Account savings acct_ta_gold_6042 on every day 10/01/2025–10/31/2025. No ownership, association, status, or product changes through 11/14/2025 03:40 EST. Opening checking balance 10/01/2025: $9,500.00. Together with Green Account acct_ta_green_7316, this is the complete checking inventory throughout October.",
+              "amount": 1200.0,
+              "type": "ach_transfer_in",
+              "status": "posted"
+            },
+            "txn_ta_purple_insurance_oct24": {
+              "transaction_id": "txn_ta_purple_insurance_oct24",
+              "account_id": "acct_ta_purple_2809",
+              "date": "10/24/2025",
+              "description": "AUTO INSURANCE - SIX MONTH PREMIUM. Statement closing detail: $10,020.00 posted checking balance after the two October entries. No other posted flows, fees, transfers, or interest from 10/01/2025 through 11/14/2025 03:40 EST.",
+              "amount": -680.0,
+              "type": "bill_pay",
+              "status": "posted"
+            }
+          },
+          "notes": "Eight supplied owned entries: two savings, four Green, two Purple. Existing description fields carry generated statement attachments, not new policy. Funding and posted interest support cash-flow reconciliation; payroll, rent, and Purple funding establish historical eligibility; groceries, utilities, and insurance are genuine activity distractors. All initial transaction IDs have readable nonhex suffixes and cannot equal txn_ followed by the credit tool's 16 hexadecimal characters."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty ordinary invocation telemetry. Tool availability comes from the catalog. This table is excluded from banking-domain reward and workload counts."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_095v",
+          "address": "2841 Parkwood Avenue, Richmond, VA 23221",
+          "email": "theo.alvarez@example.net",
+          "phone_number": "804-555-0168",
+          "date_of_birth": "07/22/1972",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "a01_identity",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        },
+        "info": "Reference identity lookup; match requested caller details to the returned user. No session verification-history guard or audit write is selected."
+      },
+      {
+        "action_id": "a02_unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "a03_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_095v\"}"
+        },
+        "info": "Reference discovery of owned savings, checking, and actual card IDs; not an independently evaluated read."
+      },
+      {
+        "action_id": "a04_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "a05_savings_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_ta_gold_6042\"}"
+        },
+        "info": "Reference evidence for principal timing, actual applied components, posted interest, and rounding."
+      },
+      {
+        "action_id": "a06_green_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_ta_green_7316\"}"
+        },
+        "info": "Reference historical Green relationship and complete active-card panel; no separate card read is needed."
+      },
+      {
+        "action_id": "a07_purple_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_ta_purple_2809\"}"
+        },
+        "info": "Reference historical Purple eligibility, distinguishing a qualifying lower boost from an ineligible product."
+      },
+      {
+        "action_id": "a08_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        }
+      },
+      {
+        "action_id": "a09_credit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"acct_ta_gold_6042\",\"amount\":80.0,\"credit_type\":\"interest_correction\"}"
+        },
+        "info": "After the explained correction receives consent, perform the sole scored domain mutation. The created transaction ID is tool-derived; no later call requires it."
+      },
+      {
+        "action_id": "a10_unlock_report",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        }
+      },
+      {
+        "action_id": "a11_report_support",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"acct_ta_gold_6042\",\"user_id\":\"usr_theo_alvarez_095v\",\"expected_apy\":6.85,\"actual_apy\":5.625,\"amount_difference\":80.0}"
+        },
+        "info": "Policy-required post-credit procedural support only. The missing report table prevents persistence; no report row, invocation telemetry, relative order, or backend repair is independently scored."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_bank_accounts_bank_accounts_(general)_046",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_purple_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_gold_account_013",
+    "doc_savings_accounts_gold_account_014"
+  ]
+}

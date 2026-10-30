@@ -1,0 +1,270 @@
+{
+  "id": "task_generated_pro_091",
+  "description": {
+    "purpose": "Help Caleb Moreno dispute two posted debit-card charges discovered during one statement review, permanently close the fraud-affected card, and order a free standard replacement.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Caleb Moreno, a 60-year-old freelance translator in Sacramento, California. Begin by saying: “I was reviewing my checking account after a balance alert and found two debit-card charges that don't look right. Can you help me sort them out?” Do not initially volunteer identity details, transaction specifics, policy classifications, liability limits, provisional-credit details, internal operations, or replacement preferences.\n\nIf the agent asks you to verify your identity, provide your configured details: Caleb Moreno; date of birth 03/18/1965; phone number (916) 555-2746; email caleb.moreno.translation@example.com; and address 2741 T Street, Sacramento, CA 95816. Answer relevant verification questions cooperatively, but do not move on to transaction details unless asked about the charges.\n\nIf the agent asks which transactions are affected or what happened, explain that the 11/12 Northstar Digital Market online charge for $624.35 was completely unauthorized, and that the 11/10 Riverbend Language Club recurring charge for $46.80 posted after Riverbend confirmed cancellation on 10/22. Say that you first noticed both on 11/14. Explain that you still possess the physical card ending 6418, did not share your PIN and do not believe it was compromised, contacted Riverbend about the membership charge, have not filed a police report, and agree that this conversation may serve as your written statement. You are unsure about the bank's classifications and liability rules, so rely on the agent to review them rather than asserting an internal answer.\n\nIf the agent explains that reporting time affects liability, ask whether the recent online charge and the earlier recurring charge fall into different reporting windows, without asserting dollar limits. If the agent recommends a police report because of the online charge's size, acknowledge the recommendation, say you can file one after the call, and ask the agent to continue the bank dispute now.\n\nOnly after the agent confirms that the Northstar purchase is suspected online fraud and that both charges can be formally disputed, ask the agent to submit both disputes, make the existing card number permanently unusable, and order a replacement for the same checking account using free standard delivery and the classic design at your verified address.\n\nCaleb wants both the unauthorized online purchase and the post-cancellation recurring charge formally disputed. Caleb will not keep using the compromised card number and wants a replacement for the same checking account. Caleb wants standard delivery and the classic design, with no optional delivery or design fee.\n\nIf the agent proposes filing only one dispute, say: “Both charges are still unresolved on my account, so please review and submit the other one too.” Do not accept the call as complete while either identified transaction lacks a formal dispute.\n\nIf the agent proposes leaving the old card active, merely freezing it, or omitting the replacement, say: “I don't want to keep using that card number after an online purchase I never made. Please make it permanently unusable and replace it.” Do not authorize a resolution that leaves the old card usable or omits the replacement.\n\nIf the agent proposes expedited or rush delivery, a premium or custom design, or an optional fee, say: “I don't need faster shipping or a special design. Please use the free standard and classic options I requested.” Do not authorize a replacement order carrying a delivery fee or design fee.\n\nAuthorize protected work only after your supplied identity details have been matched for the current session. Authorize the disputes only after the agent has identified the two correct posted charges and you have confirmed the facts and agreed to the written statement. Authorize the card change only after the agent confirms that the old card will become permanently unusable and that the replacement is for the same checking account. Authorize the replacement order only after standard delivery, classic design, zero optional fees, and the verified Sacramento shipping address are confirmed.\n\nDo not accept the resolution until the agent confirms that formal disputes were submitted for both the $624.35 Northstar charge and the $46.80 Riverbend charge. Do not accept the resolution until the agent confirms that the old card ending 6418 is permanently closed. Do not accept the resolution until the agent confirms that the no-fee standard/classic replacement was ordered to your verified address.\n\nIf the agent cannot complete an otherwise eligible dispute, permanent closure, or replacement after one clarification, ask to be transferred to a human who can finish the unresolved fraud and card-security request. Do not request a transfer on the successful path. Once both disputes, permanent closure, and the replacement order are confirmed, respond briefly with thanks and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_caleb_moreno_sac_859015": {
+              "user_id": "usr_caleb_moreno_sac_859015",
+              "name": "Caleb Moreno",
+              "date_of_birth": "03/18/1965",
+              "address": "2741 T Street, Sacramento, CA 95816",
+              "email": "caleb.moreno.translation@example.com",
+              "phone_number": "(916) 555-2746"
+            }
+          },
+          "notes": "Customer identity for Caleb Moreno. His occupation is supplied through the user instructions because the users schema has no occupation field."
+        },
+        "accounts": {
+          "data": {
+            "acct_caleb_checking_859015": {
+              "account_id": "acct_caleb_checking_859015",
+              "user_id": "usr_caleb_moreno_sac_859015",
+              "class": "checking",
+              "level": "Entry Tier",
+              "status": "OPEN",
+              "current_holdings": "1842.70",
+              "date_opened": "04/08/2024"
+            }
+          },
+          "notes": "Open Entry Tier personal checking account with sufficient holdings, no restrictions represented in the selected schemas, and capacity for two disputes."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_northstar_online_859015": {
+              "transaction_id": "txn_northstar_online_859015",
+              "account_id": "acct_caleb_checking_859015",
+              "date": "11/12/2025",
+              "description": "NORTHSTAR DIGITAL MARKET - ONLINE CARD PURCHASE - statement activity appeared 11/12/2025",
+              "amount": -624.35,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            },
+            "txn_riverbend_recurring_859015": {
+              "transaction_id": "txn_riverbend_recurring_859015",
+              "account_id": "acct_caleb_checking_859015",
+              "date": "11/10/2025",
+              "description": "RIVERBEND LANGUAGE CLUB - RECURRING MEMBERSHIP - statement activity appeared 11/10/2025; merchant cancellation confirmed 10/22/2025",
+              "amount": -46.8,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            },
+            "txn_grocery_distractor_859015": {
+              "transaction_id": "txn_grocery_distractor_859015",
+              "account_id": "acct_caleb_checking_859015",
+              "date": "11/08/2025",
+              "description": "CAPITOL GARDEN GROCERY - SACRAMENTO CA",
+              "amount": -82.17,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            }
+          },
+          "notes": "Three posted transactions. The two named statement entries support the disputes; the unrelated grocery purchase is a distractor. No pending records, holds, or refunds are present."
+        },
+        "debit_cards": {
+          "data": {
+            "card_caleb_6418_859015": {
+              "card_id": "card_caleb_6418_859015",
+              "account_id": "acct_caleb_checking_859015",
+              "user_id": "usr_caleb_moreno_sac_859015",
+              "cardholder_name": "Caleb Moreno",
+              "last_4_digits": "6418",
+              "cvv": "482",
+              "status": "ACTIVE",
+              "issue_date": "05/02/2024",
+              "issue_reason": "first_card",
+              "expiration_date": "05/29",
+              "online_enabled": true,
+              "pin_locked": false,
+              "fraud_alert_active": false
+            }
+          },
+          "notes": "The sole existing debit card is active, belongs to Caleb and the checking account, and has no pending replacement."
+        },
+        "debit_card_orders": {
+          "data": {},
+          "notes": "No pre-existing debit-card order. This operational table starts empty."
+        },
+        "debit_card_disputes": {
+          "data": {},
+          "notes": "No pre-existing debit-card dispute. This operational table starts empty."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification is required and must be logged during the interaction; no record is pre-seeded."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a01_find_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        }
+      },
+      {
+        "action_id": "a02_get_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "a03_log_current_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "usr_caleb_moreno_sac_859015",
+          "address": "2741 T Street, Sacramento, CA 95816",
+          "email": "caleb.moreno.translation@example.com",
+          "phone_number": "(916) 555-2746",
+          "date_of_birth": "03/18/1965",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "a04_unlock_account_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "a05_lookup_account",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_caleb_moreno_sac_859015\"}"
+        }
+      },
+      {
+        "action_id": "a06_unlock_transaction_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "a07_lookup_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_caleb_checking_859015\"}"
+        }
+      },
+      {
+        "action_id": "a08_unlock_card_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "a09_lookup_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_caleb_checking_859015\"}"
+        }
+      },
+      {
+        "action_id": "a10_unlock_dispute_tool",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281"
+        }
+      },
+      {
+        "action_id": "a11_file_northstar_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_northstar_online_859015\",\"account_id\":\"acct_caleb_checking_859015\",\"card_id\":\"card_caleb_6418_859015\",\"user_id\":\"usr_caleb_moreno_sac_859015\",\"dispute_category\":\"card_not_present_fraud\",\"transaction_date\":\"11/12/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":624.35,\"transaction_type\":\"online_purchase\",\"card_in_possession\":true,\"pin_compromised\":\"no\",\"contacted_merchant\":false,\"police_report_filed\":false,\"written_statement_provided\":true,\"provisional_credit_eligible\":true,\"customer_max_liability_amount\":50.0,\"card_action\":\"close_and_reissue\"}"
+        }
+      },
+      {
+        "action_id": "a12_file_riverbend_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_debit_card_transaction_dispute_6281",
+          "arguments": "{\"transaction_id\":\"txn_riverbend_recurring_859015\",\"account_id\":\"acct_caleb_checking_859015\",\"card_id\":\"card_caleb_6418_859015\",\"user_id\":\"usr_caleb_moreno_sac_859015\",\"dispute_category\":\"recurring_charge_after_cancellation\",\"transaction_date\":\"11/10/2025\",\"discovery_date\":\"11/14/2025\",\"disputed_amount\":46.8,\"transaction_type\":\"recurring_payment\",\"card_in_possession\":true,\"pin_compromised\":\"no\",\"contacted_merchant\":true,\"police_report_filed\":false,\"written_statement_provided\":true,\"provisional_credit_eligible\":false,\"customer_max_liability_amount\":500.0,\"card_action\":\"keep_active\"}"
+        }
+      },
+      {
+        "action_id": "a13_unlock_close_tool",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721"
+        }
+      },
+      {
+        "action_id": "a14_close_compromised_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"card_caleb_6418_859015\",\"reason\":\"fraud_suspected\"}"
+        }
+      },
+      {
+        "action_id": "a15_unlock_order_tool",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739"
+        }
+      },
+      {
+        "action_id": "a16_order_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739",
+          "arguments": "{\"account_id\":\"acct_caleb_checking_859015\",\"user_id\":\"usr_caleb_moreno_sac_859015\",\"delivery_option\":\"STANDARD\",\"delivery_fee\":0.0,\"card_design\":\"CLASSIC\",\"design_fee\":0.0,\"shipping_address\":\"2741 T Street, Sacramento, CA 95816\",\"excess_replacement_fee\":null}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_023",
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_028",
+    "doc_bank_accounts_bank_accounts_(general)_031",
+    "doc_bank_accounts_bank_accounts_(general)_032",
+    "doc_bank_accounts_bank_accounts_(general)_034",
+    "doc_bank_accounts_bank_accounts_(general)_036",
+    "doc_bank_accounts_bank_accounts_(general)_037"
+  ]
+}

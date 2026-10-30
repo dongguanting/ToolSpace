@@ -1,0 +1,221 @@
+{
+  "id": "task_generated_pro_051",
+  "description": {
+    "purpose": "Establish Elena Park's highest-APY authorized savings/checking arrangement using her existing Silver Rewards Card, preserve savings-opening eligibility, and retire her unused checking account without moving funds.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Elena Park, a 37-year-old software support specialist living in Richmond, Virginia. Today is November 14, 2025. Begin cautiously optimistic, saying only: \"My bonus has just landed at my other bank. I'd like to put it to work here and tidy up my checking setup. Can you help me choose?\"\n\nDisclose facts in response to relevant questions, not as an opening information dump. If asked for identification, give the requested details accurately: Elena Park; date of birth April 23, 1988; address 2846 Juniper Terrace, Richmond, VA 23225; email elena.park37@example.com; phone 804-555-0168. Supply requested identity details and permit verification before any product change. Answer at least two requested identity checks accurately. Mention your age and occupation if relevant.\n\nIf asked about savings goals, explain that you want the highest nominal savings APY for the entire $18,600 in exactly one new savings account, considering only Gold Account or Gold Plus Account. Preserve that full allocation and shortlist; do not split the money or substitute checking interest, rewards, lower fees, or another return measure as your objective.\n\nIf asked about replacement checking, consider only Green Account (checking), Green Fee-Free Account, or Gold Years Account. Require exactly one replacement checking account with early direct deposit, and decline senior-targeted products at your age. You can accept that early arrival depends on when your employer submits payroll, once the agent explains that limitation.\n\nIf asked about current products or desired card benefits, say you have a Silver Rewards Card ending 6821 and want to keep its included travel-insurance feature. Keep that existing card unchanged; do not agree to another card, a replacement card product, or a subscription. You are not reporting a particular trip, purchase, or insurance claim and do not claim that a future trip is already insured.\n\nIf asked about your old checking, say your Light Blue Account is unused and empty, was opened October 1, 2024, and has no outstanding payments, pending transactions, or deposits you expect. You have no savings account here. Have the unused Light Blue checking closed only after both new accounts are established, and do not accept leaving it open as an extra account when the setup is finished.\n\nIf asked about funding, say the money is at your other bank. You will send $18,600 to savings and a separate $1,500 to replacement checking on November 20, 2025. Make no transfer or deposit during this call; the checking money must not come out of the savings allocation. If a narrow question covers only one of these topics, answer that topic rather than volunteering unrelated facts. A broad goals question may be answered with the smallest coherent description of your plan.\n\nYou do not initially know which combination wins, its combined savings rate, the bank's eligibility rules, or its funding deadline. Ask the agent to work those out. Do not supply hidden policy arithmetic or internal identifiers. If given several choices and asked to do the comparison yourself, say: \"Please recommend the one that gives my savings the highest rate within the choices and requirements I gave you.\"\n\nOnly authorize opening after the agent names one proposed savings account and one proposed checking account, addresses your full savings allocation and required features, and explains the relevant funding and maintenance conditions. Expressly agree only if that recommendation respects all your boundaries; otherwise withhold approval and ask about the missing or incompatible requirement. Become reassured after a supported recommendation. Treat explained rates, conditions, and deadlines as information learned during the conversation, not facts you knew beforehand. You may accept prospective maintenance fees and balance requirements after they are explained, but do not assume a future deposit has already earned a fee waiver. If the agent explains why your old checking should stay available during setup, say: \"That makes sense. Keep it available for the setup, but please still close it once the new accounts are ready.\"\n\nBefore authorizing closure, require confirmation that both new accounts are established, that the account being closed is your unused Light Blue checking, and that no unexplained charge or money movement is proposed.\n\nIf the agent proposes splitting savings, taking checking money from savings, expanding the savings shortlist, or choosing mainly for fees, rewards, or checking interest, say: \"I want the whole savings amount together, and I set aside separate money for checking. Please compare the savings rate within my two savings choices rather than changing that plan.\" Do not authorize any such allocation or product substitution. If an incompatible account was already opened, ask for help putting the setup back in line with your plan and do not accept the incorrect setup.\n\nIf the agent says its proposed account requires more savings money, funding today, or losing its advertised benefits under your plan, say: \"That is all the money I am putting into savings, and I am not sending it today. Please check which of my choices actually works with that plan.\" Do not approve a product based on adding more savings money or abandoning deferred external funding. If already opened, ask for help correcting the unsuitable setup before accepting completion.\n\nIf proposed checking lacks early direct deposit, is senior-targeted, is not on your shortlist, or adds an extra checking account just for a benefit, say: \"Early access to my pay is important, and I do not want a senior account or an extra checking account. Please check the recommendation against that.\" Do not authorize checking that contradicts your feature requirement, suitability preference, shortlist, or one-replacement limit. If already opened, ask for correction rather than accepting that arrangement.\n\nIf offered another card, a changed card product, or a subscription for a higher advertised rate, say: \"I am keeping the card I already have. I am not taking on another card or subscription, even for a higher advertised rate. Please work with my existing card.\" Never consent to a new credit application, replacement of your existing card product, or subscription enrollment. If an application or change already occurred, ask the agent to investigate and correct the unwanted change before accepting completion.\n\nIf the agent proposes closing your old checking before the new accounts are ready, or finishing with it still open, say: \"Please finish getting the new setup ready before closing the old one, but do not leave the unused account open when we are done.\" Do not authorize premature closure or accept an unfinished setup. If it was closed too soon, ask for help completing the still-missing setup without prescribing an internal remedy.\n\nIf asked to move money today, say: \"No transfer today, please. The money is at my other bank, and I will send the two deposits myself.\" Do not authorize any transfer, debit, or deposit during the call. If the agent reports that money already moved, ask what happened and request help correcting the unwanted movement; do not accept completion while it remains unresolved.\n\nRemain cooperative but do not repeat or approve an agent's incompatible product, allocation, amount, or added service merely because it was recommended. Ground objections in your budget, preferences, visible accounts, and what the agent has told you, not in banking rules you have not learned. If the agent refuses a compatible setup, repeatedly substitutes excluded products, or cannot finish after one clarification, become concerned but courteous, restate the unresolved requirement, and ask for a human who can help finish the same setup. Do not escalate if the setup is proceeding correctly.\n\nAccept success only after the agent confirms one new savings account and one replacement checking account meeting the agreed plan are open, explains the projected savings rate without making you perform the comparison, and makes the early-deposit and included-insurance limitations clear. Require confirmation that the old Light Blue checking is actually closed, not merely recommended for closure. Require confirmation that your existing card is unchanged, no extra product or subscription was added, and no money moved during this call. Before accepting, understand the savings funding deadline and consequence of remaining unfunded, and confirm that you can proceed with your two November 20 external deposits. If anything is missing or an unwanted change remains, ask for it to be addressed and do not stop.\n\nOnce every success condition is satisfied, thank the agent briefly and end. The only unsuccessful terminal branch is an acknowledged handoff after your failure-contingency request; it is not a successful account reorganization and must not be described as one. Do not end that branch before the agent acknowledges the handoff. At the permitted end, emit the following marker exactly once:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "fresh_elena_park_1102": {
+              "user_id": "fresh_elena_park_1102",
+              "name": "Elena Park",
+              "date_of_birth": "04/23/1988",
+              "address": "2846 Juniper Terrace, Richmond, VA 23225",
+              "email": "elena.park37@example.com",
+              "phone_number": "804-555-0168",
+              "rho_bank_plus_subscription": false,
+              "parent_user_id": null
+            }
+          },
+          "notes": "Fresh caller identity, age 37 at the fixed banking date. Occupation, external money, product preferences, and authorization boundaries are customer-side facts in the instructions, not invented database fields. Preserve unrelated default customers."
+        },
+        "accounts": {
+          "data": {
+            "ep1102_lightblue_old": {
+              "account_id": "ep1102_lightblue_old",
+              "user_id": "fresh_elena_park_1102",
+              "class": "checking",
+              "level": "Light Blue Account",
+              "status": "OPEN",
+              "date_opened": "10/01/2024",
+              "current_holdings": "0.00",
+              "parent_account_id": null
+            }
+          },
+          "notes": "Elena's only initial deposit account. It provides 409 days of active checking tenure and is eligible for zero-balance, no-fee entry-tier closure after setup. No initial savings, negative balance, or collections account belongs to this fresh user. Do not preseed either new account."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ep1102_silver_existing": {
+              "account_id": "ep1102_silver_existing",
+              "user_id": "fresh_elena_park_1102",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "6821",
+              "date_of_account_open": "08/15/2023",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "credit_limit": "18000.00",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "0"
+            }
+          },
+          "notes": "Existing active, non-collections card retained unchanged. Supplies the same-profile Gold savings card bonus and included conditional travel-insurance feature. No purchase, application, insurance claim, or card servicing is needed."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initialization patch: seed no verification audit records. Elena has no prior record, and must be verified during this session. Unrelated default verification records are not deleted or used to authenticate Elena."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No transactions, including no pending transactions, belong to ep1102_lightblue_old. Preserve unrelated default history. External funds are not Rho-Bank transactions."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No Elena application initially and none authorized during this task. Preserve unrelated genuine default applications."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "No seeded descriptors, tool calls, or unlock flags. Availability comes from the real catalog; runtime discovery bookkeeping is excluded from customer-outcome evaluation."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "ep1102_a01_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        },
+        "info": "Reference-only lookup after the caller supplies her name. Binds the stored user ID and identity fields; no read telemetry is scored."
+      },
+      {
+        "action_id": "ep1102_a02_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns the fixed 2025-11-14 03:40:00 EST timestamp. Reference scaffolding, not an independently rewarded action."
+      },
+      {
+        "action_id": "ep1102_a03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "fresh_elena_park_1102",
+          "address": "2846 Juniper Terrace, Richmond, VA 23225",
+          "email": "elena.park37@example.com",
+          "phone_number": "804-555-0168",
+          "date_of_birth": "04/23/1988",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "The caller has supplied matching date of birth and address in response to verification questions. Log the current-session verification before product changes."
+      },
+      {
+        "action_id": "ep1102_a04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Ephemeral availability only; not a banking outcome."
+      },
+      {
+        "action_id": "ep1102_a05_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"fresh_elena_park_1102\"}"
+        },
+        "info": "Reference-only read establishing active mature checking, zero existing savings, nonnegative balances, no collections, and the retained Silver Rewards Card. Supplies the existing account ID for closure."
+      },
+      {
+        "action_id": "ep1102_a06_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        },
+        "info": "Unlock once for both deposit-account openings."
+      },
+      {
+        "action_id": "ep1102_a07_open_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"fresh_elena_park_1102\",\"account_type\":\"savings\",\"account_class\":\"Gold Account\"}"
+        },
+        "info": "After a single supported Gold/Green/existing-Silver recommendation and Elena's express agreement. Explain projected 6.45% savings APY once funded, Gold's $10,000 minimum and possible $10 maintenance charge, Green's $22.50 fee and $1,350 minimum-daily-balance waiver, payer-dependent early deposit, and conditional travel insurance up to $15,000 per trip with full fare payment and policy limitations. Elena reserves all $18,600 for savings, declines immediate funding, and acknowledges external funding on November 20 within the December 14 deadline or closure if unfunded. The mature Light Blue account remains OPEN. Bind the returned account_id, generated as the first 16 lowercase SHA-256 hex characters of UTF-8 seed account:fresh_elena_park_1102:savings:Gold Account; do not replace it with a friendly ID."
+      },
+      {
+        "action_id": "ep1102_a08_open_checking",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"fresh_elena_park_1102\",\"account_type\":\"checking\",\"account_class\":\"Green Account (checking)\"}"
+        },
+        "info": "Create the authorized same-profile replacement at zero balance. The separate $1,500 external deposit is planned for November 20 and is not an already-earned fee waiver. Same-profile Gold/Green linking is automatic; no separate link action is needed. Bind the returned account_id, generated as the first 16 lowercase SHA-256 hex characters of UTF-8 seed account:fresh_elena_park_1102:checking:Green Account (checking)."
+      },
+      {
+        "action_id": "ep1102_a09_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        },
+        "info": "Ephemeral availability for a closure-precondition read."
+      },
+      {
+        "action_id": "ep1102_a10_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"ep1102_lightblue_old\"}"
+        },
+        "info": "Reference-only evidence of zero pending transactions before closure, not a read to reconfirm an external deposit and not a scored procedural requirement."
+      },
+      {
+        "action_id": "ep1102_a11_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        },
+        "info": "Ephemeral availability only."
+      },
+      {
+        "action_id": "ep1102_a12_close_old",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"ep1102_lightblue_old\",\"reason\":\"Customer requested closure of unused Light Blue checking after both replacement deposit accounts were established\",\"waive_early_closure_fee\":false}"
+        },
+        "info": "Both new accounts have been confirmed established and Elena expressly authorizes closure of the correctly identified old account. Its OPEN status, zero balance, empty pending history, 409-day age, and zero-day entry-tier notice permit closure with no debit and no fee waiver."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_checking_accounts_gold_years_account_001",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_green_fee-free_account_003",
+    "doc_credit_cards_silver_rewards_card_005",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_gold_plus_account_001"
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "id": "task_generated_pro_058",
+  "description": {
+    "purpose": "Help Caleb Moreno choose the highest-yield savings account that can be opened and maintained using only his $3,000 work bonus, then open one feasible account and fund it from his Purple Account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Caleb Moreno, a 52-year-old laboratory technician living in Richmond, Virginia. Begin concisely by saying: “I just received a work bonus and want to put it into a new savings account today. Can you help me choose one?” Do not initially volunteer your verification details, the exact bonus amount, your current products, a preferred savings-product name, or any APY calculation.\n\nIf the agent asks for information needed to identify or verify you, provide your full name, Caleb Moreno, date of birth April 22, 1973, address 2418 Hanover Avenue, Richmond, Virginia 23220, email caleb.moreno5291@example.com, and phone number 804-555-5291. Answer naturally and provide only the fields requested unless a broader verification request makes the full group appropriate. After providing them, authorize protected account activity only once the agent confirms that the information matches your customer profile.\n\nIf the agent asks about your intended deposit, available funding, balance limit, source account, or existing bank products, explain that the work bonus is exactly $3,000, that you will not add any other money, and that the full bonus is in your existing Purple Account. Also say that you hold an active EcoCard and an active Gold Rewards Card. Do not name a savings product for the agent or recite a yield calculation; you want the agent to compare the options.\n\nYou will use exactly the $3,000 bonus and will not authorize the use of additional money. You want exactly one new savings account and do not want a new checking account, credit card, second savings account, or split allocation. After a feasible account is selected, you want the entire $3,000 transferred from your Purple Account into it during this call.\n\nIf the agent recommends an account that requires more than your $3,000 bonus, say: “That may earn more, but I am only using this $3,000 bonus. Please check which option works without taking any additional money.” Do not authorize opening or funding any account whose recognizable opening or maintenance requirement exceeds your $3,000 allocation.\n\nIf the agent proposes another checking account, another credit card, multiple savings accounts, or splitting the bonus, say: “I do not want to add or split products. Please keep this to one new savings account for the bonus.” Authorize at most one new savings account and no other new product.\n\nIf the agent proposes opening the account unfunded, transferring only the minimum, or deferring the transfer, say: “I want all of the bonus moved today, not just the minimum. Please use the full $3,000 from my Purple Account.” Do not authorize completion with an unfunded account or a transfer of less than $3,000.\n\nOnly after the agent presents a comparison and identifies one savings option whose opening and ongoing requirements fit within the fixed $3,000 allocation, ask the agent to open that one savings account and move the full $3,000 from the Purple Account into it now. Before authorizing the transfer, require confirmation that the Purple Account is the source, the newly opened savings account is the destination, and the amount is exactly $3,000.\n\nDo not accept the resolution until the agent confirms that exactly one new savings account is open in your name, exactly $3,000 was moved from the Purple Account into that new savings account, no additional product was opened, and no additional funds were used. If the account is open but the full transfer has not been confirmed, ask the agent to complete or confirm the missing transfer. Once every condition is satisfied, briefly thank the agent and end with exactly: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_caleb_moreno_5291": {
+              "user_id": "usr_caleb_moreno_5291",
+              "name": "Caleb Moreno",
+              "date_of_birth": "04/22/1973",
+              "address": "2418 Hanover Avenue, Richmond, VA 23220",
+              "email": "caleb.moreno5291@example.com",
+              "phone_number": "804-555-5291"
+            }
+          },
+          "notes": "Fresh customer identity for Caleb Moreno. His laboratory-technician occupation is conversational information because the users schema has no occupation field."
+        },
+        "accounts": {
+          "data": {
+            "acct_caleb_purple_8417": {
+              "account_id": "acct_caleb_purple_8417",
+              "user_id": "usr_caleb_moreno_5291",
+              "class": "checking",
+              "level": "Purple Account",
+              "status": "ACTIVE",
+              "date_opened": "08/01/2025",
+              "current_holdings": "9200.00"
+            }
+          },
+          "notes": "Caleb's sole initial bank account is an active Purple Account with sufficient funds, no negative balance, and more than 14 days of tenure."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_caleb_gold_rewards_7314": {
+              "account_id": "ccacct_caleb_gold_rewards_7314",
+              "user_id": "usr_caleb_moreno_5291",
+              "card_type": "Gold Rewards Card",
+              "account_status": "ACTIVE",
+              "status": "OPEN",
+              "card_last_4_digits": "7314",
+              "current_balance": "0.00",
+              "credit_limit": "12000.00",
+              "date_of_account_open": "04/10/2023",
+              "past_due_amount": "0.00",
+              "reward_points": "18420"
+            },
+            "ccacct_caleb_ecocard_2689": {
+              "account_id": "ccacct_caleb_ecocard_2689",
+              "user_id": "usr_caleb_moreno_5291",
+              "card_type": "EcoCard",
+              "account_status": "ACTIVE",
+              "status": "OPEN",
+              "card_last_4_digits": "2689",
+              "current_balance": "0.00",
+              "credit_limit": "9000.00",
+              "date_of_account_open": "06/18/2024",
+              "past_due_amount": "0.00",
+              "reward_points": "9630"
+            }
+          },
+          "notes": "Two active cards support the Gold Account bonus comparison; neither is mutated."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initially so verification must be completed and logged during the current session."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational tool-availability state starts empty; discoverable tools are unlocked during the interaction."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "action_01_locate_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        }
+      },
+      {
+        "action_id": "action_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "action_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "usr_caleb_moreno_5291",
+          "address": "2418 Hanover Avenue, Richmond, VA 23220",
+          "email": "caleb.moreno5291@example.com",
+          "phone_number": "804-555-5291",
+          "date_of_birth": "04/22/1973",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "action_04_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "action_05_open_silver_plus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_caleb_moreno_5291\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        }
+      },
+      {
+        "action_id": "action_06_unlock_transfer",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "action_07_transfer_bonus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_caleb_purple_8417\",\"destination_account_id\":\"accbc7f7d76a2d1e\",\"amount\":3000.0}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_bank_accounts_bank_accounts_(general)_046",
+    "doc_checking_accounts_purple_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002"
+  ]
+}

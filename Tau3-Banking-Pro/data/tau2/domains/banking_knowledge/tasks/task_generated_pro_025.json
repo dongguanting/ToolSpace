@@ -1,0 +1,280 @@
+{
+  "id": "task_generated_pro_025",
+  "description": {
+    "purpose": "Restore two account-specific October savings-interest shortfalls while preserving the customer's early prohibition on redirecting corrections between accounts.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Caleb Moreno, a 47-year-old restaurant manager living in Richmond, Virginia. Be concise, cooperative, and mildly concerned about your savings interest. The call is on November 14, 2025.\n\nOpen with: 'My new statement shows less interest than I expected on my Gold savings. Could you check it? If anything is missing, please put it back in the savings account that earned it, not my other savings account.' Every correction must stay with the account that earned it; preserve this preference throughout the conversation.\n\nOnly when asked relevant identity or contact questions, provide the requested details accurately: Caleb Moreno; date of birth March 8, 1978; 612 Rowan Terrace, Richmond, Virginia 23225; caleb.moreno47@example.com; 804-555-0146. Confirm sole ownership when asked. Cooperate with identity verification before account changes, and authorize recording only truthful verification information.\n\nWhen asked about the statement, funding, or linked products, explain that the October 31 Gold interest entry is $109.40 and that you funded Gold with $24,000 at the start of October. Both Gold and Silver were linked to your Green checking before October interest began accruing. Say, 'I thought linking meant both savings accounts got the same extra rate, but I might have that wrong.' If specifically asked about Silver's statement or funding, provide its October 31 interest entry of $60.43 and opening funding of $18,000. If asked about changes during October, there were no withdrawals or other external balance changes. If asked about credit cards, you have no Rho-Bank credit cards. Do not volunteer these request-gated details before a relevant question, but do not pretend not to know them when asked.\n\nYou do not initially know whether Silver was underpaid, the correct interest adjustments, the applicable rates, or why the bank missed a benefit. If asked for an exact correction or cause, say you can read the posted amounts but need the agent to work out what should have been paid. Do not name internal tools or claim knowledge of the bank's corrective procedures.\n\nOnly after the agent identifies an omitted linked-checking benefit on Gold, ask for Gold's missing interest to be restored and ask whether Silver could have the same problem because it uses the same checking link. Request that any confirmed missing interest be restored in its own account and that the underlying discrepancies be investigated. Do not introduce a separate Silver dispute before this finding. Once the shared issue is identified, keep asking for Silver's exposure to be resolved and both discrepancies investigated. If the agent explains from the product terms that the checking boosts differ, acknowledge that your equal-boost assumption was mistaken and let the agent calculate each account's correction. Revising that belief does not relax your allocation preference.\n\nYou want confirmed missing October interest restored, not merely explained or deferred for investigation. This call does not authorize moving existing principal, consolidating savings, opening or closing an account, changing a product, or adding a service. Before approving any credit, require the agent to identify the affected savings account, explain the missing-interest finding, and state the proposed amount and its destination. Authorize an investigation only for your identified interest discrepancy, and not as a substitute for an available correction. Do not adopt an agent's proposed amount, destination, product, or added service when it conflicts with these boundaries.\n\nIf the agent proposes placing Silver's correction in Gold, including because Gold pays more, respond: 'That interest belongs with my Silver savings. Please do not put it into Gold just because Gold pays more. Can you check the destination and keep each correction with its own account?' Never approve redirecting the Silver correction to Gold, splitting it between accounts, or moving principal to make the proposal work. If a transfer or other consolidation is proposed, say: 'Please keep that money with the account that earned it. I asked for the interest to be fixed, not for my savings to be rearranged.' Do not authorize a correction to another account or any transfer even if the total payment is unchanged or the alternative earns more.\n\nIf the misplaced correction has already been carried out, say: 'Silver is still short, and money meant for it has gone into Gold. That is not what I agreed to. Please help put this right while keeping my savings separate.' Continue toward your original goal, without claiming to know how the bank reverses a credit. Do not accept the misplaced payment as final, and do not stop until the account-specific allocation and all other completion conditions are restored.\n\nIf the agent offers only an explanation or investigation after confirming missing interest, or attempts to end after correcting only one affected account, say: 'Thanks for checking, but what happens to the interest that is still missing? Please finish dealing with the affected account as well.' Do not accept a report-only or one-account-only resolution while a confirmed shortfall remains. If only Gold has been corrected, ask what the review found for the other savings account using the same checking link and whether that result has been resolved.\n\nIf opening, closing, or changing an account is proposed instead of fixing the statement, say: 'I am not looking to change accounts today. Please resolve the interest on the accounts I already have.' Do not authorize product changes or additional products as a substitute for corrections.\n\nAccept only after the agent confirms the credits separately for Gold and Silver, with each credit going to its own account. Require confirmation that both identified discrepancies have been submitted for investigation; you do not need a promise that the underlying defect has already been fixed. No savings may have been consolidated, transferred, or changed into another product, and no confirmed shortfall may remain unresolved. Withhold acceptance and the stop marker until all these conditions hold, including recovery from any misplaced credit. Then thank the agent briefly and emit exactly one final marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_caleb_moreno_1840": {
+              "user_id": "usr_caleb_moreno_1840",
+              "name": "Caleb Moreno",
+              "date_of_birth": "03/08/1978",
+              "address": "612 Rowan Terrace, Richmond, Virginia 23225",
+              "email": "caleb.moreno47@example.com",
+              "phone_number": "804-555-0146",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Customer identity. Age 47 on 11/14/2025. Occupation is in user instructions, not a database field."
+        },
+        "accounts": {
+          "data": {
+            "acct_cm1840_green": {
+              "account_id": "acct_cm1840_green",
+              "user_id": "usr_caleb_moreno_1840",
+              "class": "checking",
+              "level": "Green Account",
+              "status": "ACTIVE",
+              "date_opened": "06/02/2021",
+              "current_holdings": "2500.00"
+            },
+            "acct_cm1840_gold": {
+              "account_id": "acct_cm1840_gold",
+              "user_id": "usr_caleb_moreno_1840",
+              "class": "savings",
+              "level": "Gold Account",
+              "status": "ACTIVE",
+              "date_opened": "10/01/2025",
+              "parent_account_id": "acct_cm1840_green",
+              "current_holdings": "24109.40"
+            },
+            "acct_cm1840_silver": {
+              "account_id": "acct_cm1840_silver",
+              "user_id": "usr_caleb_moreno_1840",
+              "class": "savings",
+              "level": "Silver Account",
+              "status": "ACTIVE",
+              "date_opened": "10/01/2025",
+              "parent_account_id": "acct_cm1840_green",
+              "current_holdings": "18060.43"
+            }
+          },
+          "notes": "Exactly three accounts belong to this fresh user. Green has no parent; the optional parent field is absent. Savings parent references represent established checking links. Historical link continuity and good standing are explicitly recorded in the cycle evidence."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No credit-card account belongs to usr_caleb_moreno_1840. Fresh IDs prevent default-database cards from joining to this profile; an empty patch does not assert that other customers have no cards."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_cm1840_gold_funding": {
+              "transaction_id": "txn_cm1840_gold_funding",
+              "account_id": "acct_cm1840_gold",
+              "date": "10/01/2025",
+              "description": "Settled opening ACH funding: $24,000 eligible and available before the first October daily accrual. No hold. Gold-to-Green checking link authorized and effective before that first accrual under Caleb Moreno's sole ownership and tax ID.",
+              "amount": 24000,
+              "available_amount": 24000,
+              "hold_amount": 0,
+              "type": "ach_transfer_in",
+              "status": "posted"
+            },
+            "txn_cm1840_silver_funding": {
+              "transaction_id": "txn_cm1840_silver_funding",
+              "account_id": "acct_cm1840_silver",
+              "date": "10/01/2025",
+              "description": "Settled opening ACH funding: $18,000 eligible and available before the first October daily accrual. No hold. Silver-to-Green checking link authorized and effective before that first accrual under Caleb Moreno's sole ownership and tax ID.",
+              "amount": 18000,
+              "available_amount": 18000,
+              "hold_amount": 0,
+              "type": "ach_transfer_in",
+              "status": "posted"
+            },
+            "txn_cm1840_gold_oct_interest": {
+              "transaction_id": "txn_cm1840_gold_oct_interest",
+              "account_id": "acct_cm1840_gold",
+              "date": "10/31/2025",
+              "description": "October interest, cycle 10/01/2025 through 10/31/2025: 31 daily accrual intervals; eligible opening principal $24,000. Applied effective annual APY 5.500%, consisting of base 5.500%, linked-checking component 0.000%, card bonus 0.000%, other bonus 0.000%. Daily rate derived from effective annual APY using a 365-day year; retain precision during daily compounding and round to cents only at monthly posting. No external balance changes, fees, holds, withdrawals, prior corrections, or pending debits in this cycle. Minimum daily eligible balance $24,000. Link to acct_cm1840_green remained effective all cycle; same sole ownership and tax ID; both accounts remained open and in good standing. Green's minimum daily balance was $2,500; no closure, unlinking, or ownership change. No Rho-Bank credit cards held during the cycle.",
+              "amount": 109.4,
+              "type": "interest_credit",
+              "status": "posted"
+            },
+            "txn_cm1840_silver_oct_interest": {
+              "transaction_id": "txn_cm1840_silver_oct_interest",
+              "account_id": "acct_cm1840_silver",
+              "date": "10/31/2025",
+              "description": "October interest, cycle 10/01/2025 through 10/31/2025: 31 daily accrual intervals; eligible opening principal $18,000. Applied effective annual APY 4.025%, consisting of higher-tier base 4.000%, established eligible relationship bonus 0.025%, linked-checking component 0.000%, and card bonus 0.000%. Relationship eligibility was already established for this cycle and its bonus was included, not newly inferred from product count. Daily rate derived from effective annual APY using a 365-day year; retain precision during daily compounding and round to cents only at monthly posting. Every daily ending eligible balance exceeded $10,000; minimum $18,000. No external balance changes, fees, holds, withdrawals, prior corrections, or pending debits in this cycle. Link to acct_cm1840_green remained effective all cycle; same sole ownership and tax ID; both accounts remained open and in good standing. Green's minimum daily balance was $2,500; no closure, unlinking, or ownership change. No Rho-Bank credit cards held during the cycle.",
+              "amount": 60.43,
+              "type": "interest_credit",
+              "status": "posted"
+            }
+          },
+          "notes": "The four initial transactions reconcile exactly to savings holdings. Descriptions supply historical accrual and component evidence through a supported, readable field. No correction transactions are pre-seeded."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be created after customer answers match at least two of the four identity fields. No operational verification record is pre-seeded."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Starts empty. Runtime alone manages discoverable-call persistence; no capability descriptors, unlock flags, or fabricated reports are seeded. Read-call telemetry is excluded from DB reward, and report-payload retention is not assumed."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "g01",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        },
+        "info": "Read-only profile resolution after the caller supplies his name. Match customer-supplied birth date and address, and any additional requested fields, before g03. Not an evaluated read requirement."
+      },
+      {
+        "action_id": "g02",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns the fixed timestamp 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "g03",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "usr_caleb_moreno_1840",
+          "address": "612 Rowan Terrace, Richmond, Virginia 23225",
+          "email": "caleb.moreno47@example.com",
+          "phone_number": "804-555-0146",
+          "date_of_birth": "03/08/1978",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Create the current-session audit record after successful two-of-four identity confirmation."
+      },
+      {
+        "action_id": "g04",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "g05",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_caleb_moreno_1840\"}"
+        },
+        "info": "Discover owned account IDs, active savings classes, common Green link, and absence of credit cards. Read-only replay scaffolding; telemetry is unscored."
+      },
+      {
+        "action_id": "g06",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "g07",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_cm1840_gold\"}"
+        },
+        "info": "Establish principal, accrual interval, posted interest, historical qualification, and omitted checking component. Explain the Gold finding; this triggers Caleb's related Silver request."
+      },
+      {
+        "action_id": "g08",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_cm1840_silver\"}"
+        },
+        "info": "After the Gold finding and related request, establish Silver's independent tier, retained relationship component, and shortfall. Both branches have the same evidence before credits. Read telemetry is unscored."
+      },
+      {
+        "action_id": "g09",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        }
+      },
+      {
+        "action_id": "g10",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"acct_cm1840_gold\",\"amount\":14.49,\"credit_type\":\"interest_correction\"}"
+        },
+        "info": "After explaining and obtaining approval for the Gold correction, credit Gold itself. Use the native returned transaction ID; no later action requires that ID."
+      },
+      {
+        "action_id": "g11",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        }
+      },
+      {
+        "action_id": "g12",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"acct_cm1840_gold\",\"user_id\":\"usr_caleb_moreno_1840\",\"expected_apy\":6.25,\"actual_apy\":5.5,\"amount_difference\":14.49}"
+        },
+        "info": "Required reference submission after Gold's credit. Report execution/confirmation is unscored under the advisory fallback; no fabricated report storage assertion."
+      },
+      {
+        "action_id": "g13",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"acct_cm1840_silver\",\"amount\":3.68,\"credit_type\":\"interest_correction\"}"
+        },
+        "info": "After explaining the Silver finding, amount, and destination and obtaining approval, preserve the opening allocation boundary. This is the decisive evaluated mutation."
+      },
+      {
+        "action_id": "g14",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"acct_cm1840_silver\",\"user_id\":\"usr_caleb_moreno_1840\",\"expected_apy\":4.275,\"actual_apy\":4.025,\"amount_difference\":3.68}"
+        },
+        "info": "Required reference submission after Silver's credit, using original applied APY and original shortfall. Report execution/confirmation is unscored under the advisory fallback."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_silver_account_001",
+    "doc_savings_accounts_silver_account_002",
+    "doc_savings_accounts_silver_account_003",
+    "doc_savings_accounts_silver_account_006"
+  ]
+}

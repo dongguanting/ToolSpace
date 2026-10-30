@@ -1,0 +1,412 @@
+{
+  "id": "task_generated_pro_061",
+  "description": {
+    "purpose": "Resolve Marcus Okafor's wallet-compromise incident by verifying him, freezing two misplaced debit cards, approving an eligible credit-limit increase before fraud-related blockers exist, replacing the exposed Gold card, and formally disputing its unauthorized charge.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I got an alert for a card purchase I don't recognize, and when I checked, my wallet was gone. Can you help protect my cards and sort out the charge? I also need to make sure I still have enough room for an upcoming work purchase.” Begin concerned but cooperative, and do not initially volunteer identity details, card numbers, the exact transaction, the requested increase amount, or any policy conclusion.\n\nIf asked to verify your identity, say that you are Marcus Okafor and provide 05/22/1967, 2147 Bluebonnet Ridge Drive, Austin, TX 78704, (512) 555-6842, and marcus.okafor@example.com. Do not volunteer card or transaction details unless the agent also asks about them. Authorize protected card changes only after the agent has verified your registered identity details.\n\nIf asked which cards were in the wallet, whether the wallet is confirmed stolen, or what protection you want, identify the Gold Rewards card ending 6407 and debit cards ending 1182 and 7749. Explain that you are still checking your clinic and car, so you want both debit cards temporarily frozen rather than permanently cancelled. Explain that the Gold card should be replaced because an unfamiliar charge has already appeared. Before authorizing card changes, make sure the agent identifies the Gold card ending 6407 and debit cards ending 1182 and 7749.\n\nIf asked about the unfamiliar transaction, the desired resolution, whether you contacted the merchant, or the effect on your available credit, identify the posted $3,200 Hill Country Electronics purchase dated 11/13/2025. Say you noticed it on 11/14/2025, did not authorize it, and have not contacted the merchant. Ask for the full charge to be formally disputed and explain that it consumed credit needed for an upcoming work-related mobility-equipment purchase, so you want a $4,000 limit increase if eligible. You are unsure of the bank's eligibility rules and should ask the agent to review them rather than stating thresholds or calculations.\n\nIf told that the pending $42.75 debit purchase may still settle after a freeze, acknowledge that an already-started purchase may finish and confirm that you still want both debit cards temporarily frozen. Before authorizing, make sure you understand that the debit freezes are reversible, the Gold replacement disables the old card, and expedited delivery will go to your verified Austin address. Authorize only the identified $3,200 full-refund dispute, the $4,000 limit request, both temporary debit freezes, and the Gold-card replacement.\n\nYou want the unfamiliar $3,200 charge formally disputed for a full refund and will not accept merely being told to contact the merchant. You want both missing debit cards temporarily frozen and do not authorize permanent debit-card closure while the wallet may still be recoverable. You want the exposed Gold Rewards card replaced with expedited delivery to your verified Austin address and do not want the old card left usable. You want the $4,000 credit-limit request resolved during this call if eligible and do not agree to abandon it merely because the fraud work is also required.\n\nIf the agent proposes only contacting the merchant, monitoring the account, or replacing the card without formally addressing the charge, say: “I didn't make that purchase, it is already posted, and I want the full $3,200 charge formally addressed rather than left on my account.” Do not authorize ending the call without a formal dispute for that transaction.\n\nIf the agent recommends permanently closing either debit card, say: “The wallet may still be at my clinic or in my car, so I want a temporary lock while I search and I am not authorizing an irreversible cancellation.” Do not authorize permanent closure of either debit card.\n\nIf the agent proposes leaving the old Gold card usable or using standard delivery after confirming expedited delivery is complimentary, say: “That card was in the missing wallet and already has an unfamiliar charge, so I want it replaced promptly and the old card disabled.” Do not authorize a resolution that leaves the old Gold card usable or omits the requested replacement.\n\nIf the agent proposes dropping, deferring, or changing the requested increase without identifying a customer-visible eligibility problem, say: “The fraud reduced the credit I have available for a work purchase. Please check whether the requested $4,000 increase can be handled during this call without weakening the fraud protection.” Do not authorize a different amount or accept completion while the requested $4,000 increase remains unaddressed.\n\nIf an otherwise supported security, dispute, replacement, or limit outcome cannot be completed after the agent checks the records, ask for a human agent to help finish the unresolved fraud protection. Do not ask for a transfer when all requested outcomes are completed.\n\nDo not accept the resolution or stop until you have confirmation that both debit cards are temporarily frozen and not permanently closed; the $4,000 increase was approved and the new limit is $12,000; the old Gold card is disabled and an expedited replacement is ordered to your verified Austin address; and the $3,200 unauthorized transaction was formally disputed for a full refund. If any outcome is missing, ask about that outcome directly. Once all four outcomes are confirmed, briefly thank the agent and emit exactly one ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_mokafor_8f31c2": {
+              "user_id": "usr_mokafor_8f31c2",
+              "name": "Marcus Okafor",
+              "date_of_birth": "05/22/1967",
+              "address": "2147 Bluebonnet Ridge Drive, Austin, TX 78704",
+              "email": "marcus.okafor@example.com",
+              "phone_number": "(512) 555-6842",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Marcus Okafor is 58 on 11/14/2025 and is a physical therapy assistant living in Austin, Texas."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Must begin empty; current-session verification is created during the successful interaction."
+        },
+        "accounts": {
+          "data": {
+            "acct_chk_bluest_51a9d4": {
+              "account_id": "acct_chk_bluest_51a9d4",
+              "user_id": "usr_mokafor_8f31c2",
+              "class": "checking",
+              "status": "OPEN",
+              "level": "Bluest",
+              "current_holdings": "5820.40",
+              "date_opened": "06/10/2025"
+            },
+            "acct_chk_lightgreen_3c7e82": {
+              "account_id": "acct_chk_lightgreen_3c7e82",
+              "user_id": "usr_mokafor_8f31c2",
+              "class": "checking",
+              "status": "OPEN",
+              "level": "Light Green",
+              "current_holdings": "2146.18",
+              "date_opened": "08/22/2025"
+            }
+          },
+          "notes": "Two open checking accounts linked to the two misplaced debit cards."
+        },
+        "debit_cards": {
+          "data": {
+            "dcard_mok_1182_94bd7a": {
+              "card_id": "dcard_mok_1182_94bd7a",
+              "account_id": "acct_chk_bluest_51a9d4",
+              "user_id": "usr_mokafor_8f31c2",
+              "cardholder_name": "Marcus Okafor",
+              "cvv": "417",
+              "expiration_date": "06/29",
+              "issue_date": "06/10/2025",
+              "issue_reason": "first_card",
+              "last_4_digits": "1182",
+              "status": "ACTIVE",
+              "daily_purchase_limit": 3000,
+              "daily_atm_limit": 600
+            },
+            "dcard_mok_7749_b2e61f": {
+              "card_id": "dcard_mok_7749_b2e61f",
+              "account_id": "acct_chk_lightgreen_3c7e82",
+              "user_id": "usr_mokafor_8f31c2",
+              "cardholder_name": "Marcus Okafor",
+              "cvv": "862",
+              "expiration_date": "08/29",
+              "issue_date": "08/22/2025",
+              "issue_reason": "first_card",
+              "last_4_digits": "7749",
+              "status": "ACTIVE",
+              "daily_purchase_limit": 2500,
+              "daily_atm_limit": 500
+            }
+          },
+          "notes": "Both cards are active, Marcus-owned, and eligible for a temporary freeze."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "batxn_pending_1182_42d75_a681": {
+              "transaction_id": "batxn_pending_1182_42d75_a681",
+              "account_id": "acct_chk_bluest_51a9d4",
+              "date": "11/14/2025",
+              "description": "PENDING DEBIT CARD PURCHASE - CARD ENDING 1182 - AUSTIN CLINIC CAFE",
+              "amount": -42.75,
+              "type": "debit_card_purchase",
+              "status": "pending"
+            }
+          },
+          "notes": "The already-authorized pending purchase may settle after the primary card is frozen."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_gold_6407_7de4b1": {
+              "account_id": "ccacct_gold_6407_7de4b1",
+              "user_id": "usr_mokafor_8f31c2",
+              "card_type": "Gold Rewards Card",
+              "credit_limit": "8000",
+              "current_balance": "4400",
+              "date_of_account_open": "02/01/2025",
+              "reward_points": "18420",
+              "account_status": "current",
+              "past_due_amount": "0",
+              "card_last_4_digits": "6407",
+              "status": "ACTIVE"
+            }
+          },
+          "notes": "Current premium-tier Gold Rewards account; status tracks the physical card while account_status tracks account standing."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "cctxn_hillcountry_3200_11f8": {
+              "transaction_id": "cctxn_hillcountry_3200_11f8",
+              "user_id": "usr_mokafor_8f31c2",
+              "credit_card_account_id": "ccacct_gold_6407_7de4b1",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Hill Country Electronics",
+              "transaction_amount": "3200",
+              "transaction_date": "11/13/2025",
+              "category": "electronics",
+              "rewards_earned": "3200",
+              "status": "posted"
+            }
+          },
+          "notes": "Posted unauthorized Gold-card transaction identified by Marcus."
+        },
+        "credit_limit_increase_requests": {
+          "data": {
+            "clireq_prior_20250914_65ac": {
+              "request_id": "clireq_prior_20250914_65ac",
+              "credit_card_account_id": "ccacct_gold_6407_7de4b1",
+              "user_id": "usr_mokafor_8f31c2",
+              "requested_increase_amount": "2000",
+              "previous_limit": "6000",
+              "new_limit": "8000",
+              "reason": "large_purchase",
+              "status": "approved",
+              "submitted_date": "09/14/2025"
+            }
+          },
+          "notes": "Most recent prior request was approved 61 days before the fixed date."
+        },
+        "payment_history": {
+          "data": {
+            "pay_gold_20250820_1c93": {
+              "payment_id": "pay_gold_20250820_1c93",
+              "credit_card_account_id": "ccacct_gold_6407_7de4b1",
+              "user_id": "usr_mokafor_8f31c2",
+              "payment_date": "09/01/2025",
+              "amount": "450",
+              "status": "on_time"
+            },
+            "pay_gold_20250920_72ae": {
+              "payment_id": "pay_gold_20250920_72ae",
+              "credit_card_account_id": "ccacct_gold_6407_7de4b1",
+              "user_id": "usr_mokafor_8f31c2",
+              "payment_date": "10/01/2025",
+              "amount": "525",
+              "status": "on_time"
+            },
+            "pay_gold_20251020_d480": {
+              "payment_id": "pay_gold_20251020_d480",
+              "credit_card_account_id": "ccacct_gold_6407_7de4b1",
+              "user_id": "usr_mokafor_8f31c2",
+              "payment_date": "11/01/2025",
+              "amount": "600",
+              "status": "on_time"
+            }
+          },
+          "notes": "Exactly three relevant consecutive monthly payments for September, October, and November 2025, all on time."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No pre-existing dispute; this keeps the CLI eligible and establishes zero prior disputes."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No pre-existing replacement order; this keeps the CLI eligible and satisfies replacement uniqueness and frequency checks."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable tools begin locked; availability is supplied by the tool catalog."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_lookup_marcus",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        }
+      },
+      {
+        "action_id": "act_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_mokafor_8f31c2",
+          "address": "2147 Bluebonnet Ridge Drive, Austin, TX 78704",
+          "email": "marcus.okafor@example.com",
+          "phone_number": "(512) 555-6842",
+          "date_of_birth": "05/22/1967",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_all_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_05_get_all_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_mokafor_8f31c2\"}"
+        }
+      },
+      {
+        "action_id": "act_06_unlock_debit_lookup",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823"
+        }
+      },
+      {
+        "action_id": "act_07_get_primary_debit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_chk_bluest_51a9d4\"}"
+        }
+      },
+      {
+        "action_id": "act_08_get_secondary_debit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_debit_cards_by_account_id_7823",
+          "arguments": "{\"account_id\":\"acct_chk_lightgreen_3c7e82\"}"
+        }
+      },
+      {
+        "action_id": "act_09_get_credit_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_mokafor_8f31c2"
+        }
+      },
+      {
+        "action_id": "act_10_unlock_freeze",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "freeze_debit_card_3892"
+        }
+      },
+      {
+        "action_id": "act_11_freeze_1182",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "freeze_debit_card_3892",
+          "arguments": "{\"card_id\":\"dcard_mok_1182_94bd7a\"}"
+        }
+      },
+      {
+        "action_id": "act_12_freeze_7749",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "freeze_debit_card_3892",
+          "arguments": "{\"card_id\":\"dcard_mok_7749_b2e61f\"}"
+        }
+      },
+      {
+        "action_id": "act_13_unlock_payment_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "act_14_get_payment_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_gold_6407_7de4b1\",\"months\":3}"
+        }
+      },
+      {
+        "action_id": "act_15_unlock_submit_cli",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392"
+        }
+      },
+      {
+        "action_id": "act_16_submit_cli",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_credit_limit_increase_request_7392",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_gold_6407_7de4b1\",\"user_id\":\"usr_mokafor_8f31c2\",\"requested_increase_amount\":4000}"
+        }
+      },
+      {
+        "action_id": "act_17_unlock_approve_cli",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847"
+        }
+      },
+      {
+        "action_id": "act_18_approve_cli",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "approve_credit_limit_increase_5847",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_gold_6407_7de4b1\",\"user_id\":\"usr_mokafor_8f31c2\",\"new_credit_limit\":12000}"
+        }
+      },
+      {
+        "action_id": "act_19_unlock_replacement",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291"
+        }
+      },
+      {
+        "action_id": "act_20_order_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_gold_6407_7de4b1\",\"user_id\":\"usr_mokafor_8f31c2\",\"shipping_address\":\"2147 Bluebonnet Ridge Drive, Austin, TX 78704\",\"reason\":\"fraud_suspected\",\"expedited_shipping\":true}"
+        }
+      },
+      {
+        "action_id": "act_21_unlock_dispute",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "act_22_file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"cctxn_hillcountry_3200_11f8\",\"card_action\":\"cancel_and_reissue\",\"card_last_4_digits\":\"6407\",\"full_name\":\"Marcus Okafor\",\"user_id\":\"usr_mokafor_8f31c2\",\"phone\":\"(512) 555-6842\",\"email\":\"marcus.okafor@example.com\",\"address\":\"2147 Bluebonnet Ridge Drive, Austin, TX 78704\",\"contacted_merchant\":false,\"purchase_date\":\"11/13/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"unauthorized_fraudulent_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_026",
+    "doc_bank_accounts_bank_accounts_(general)_028",
+    "doc_bank_accounts_bank_accounts_(general)_030",
+    "doc_credit_cards_credit_card_account_logistics_005",
+    "doc_credit_cards_credit_card_account_logistics_006",
+    "doc_credit_cards_credit_card_account_logistics_007",
+    "doc_credit_cards_credit_card_replacements_001",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

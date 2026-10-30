@@ -1,0 +1,250 @@
+{
+  "id": "task_generated_pro_030",
+  "description": {
+    "purpose": "Secure all Rho-Bank cards in Caleb Moreno's confirmed-lost wallet and selectively replace only his Silver Rewards credit card and Bluest debit card.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Caleb Moreno, a 31-year-old physical therapy assistant in Phoenix. Begin concisely: \"Hi, I lost my wallet on the light rail this morning. My Rho-Bank cards were in it, and I need them secured and the cards I still use replaced.\"\n\nThe wallet fell from your backpack during your morning commute, and transit lost-and-found has confirmed that it was not recovered. You may initially say, \"I thought freezing them might be enough, but I may be mistaken.\" If the agent explains that a confirmed-lost debit card needs irreversible protection, acknowledge the explanation and agree that both missing debit cards should be made permanently unusable. Do not agree to close either checking account.\n\nIf asked to verify your identity, provide your full name Caleb Moreno, date of birth 04/18/1994, address 1842 E Moreland St, Phoenix, AZ 85006, email caleb.moreno94@example.com, and phone number 602-555-0186. Do not volunteer exact card endings, balances, issue dates, internal records, or policy rules before a relevant question.\n\nIf asked which cards were lost, which cards should be replaced, or what delivery and design you want, identify the Bluest debit card ending 4618, the Light Green debit card ending 9054, and the Silver Rewards card ending 7732. Say that you want the Silver Rewards card and Bluest debit card replaced, but no replacement debit card for Light Green. For Silver Rewards, request no-fee standard delivery. For Bluest, request the fastest option that adds no fee and the metallic PREMIUM design, delivered to 1842 E Moreland St, Phoenix, AZ 85006.\n\nAll three cards from the confirmed-lost wallet must be made unusable; do not accept a temporary-only lock on either debit card. Replace the Silver Rewards credit card and the Bluest debit card, but do not order a replacement debit card for the Light Green account. Do not accept any shipping, design, expedited-shipping, excess-replacement, or replacement fee. Both checking accounts must remain open. Among choices that add no fee, insist on the fastest Bluest delivery and the metallic PREMIUM design.\n\nIf the agent recommends freezing either lost debit card instead of making it permanently unusable, say: \"The wallet has been confirmed lost, and I need the old card numbers made permanently unusable, not left under a reversible lock.\" Do not authorize a freeze as the final treatment of either lost debit card. If a freeze was already applied, say: \"That temporary lock does not finish what I asked for; please continue until both lost debit cards are permanently unusable.\"\n\nIf the agent proposes paid expedited credit-card shipping, any paid debit-card option, or a slower Bluest option without first establishing that the faster option costs extra, say: \"I decline any charge. Please use no-fee standard delivery for Silver Rewards and the fastest Bluest choice that still adds no fee.\" Authorize no order carrying a positive delivery, design, excess-replacement, or expedited-shipping charge.\n\nIf the agent proposes a Light Green replacement or closure of either checking account, say: \"I want the Light Green card cancelled without another card, and I still need both checking accounts kept open.\" Authorize neither a Light Green replacement order nor closure of either checking account.\n\nIf the debit cards are handled but the Silver Rewards card remains usable or is not replaced, say: \"The Silver Rewards card was in the same lost wallet, so I need that old card secured and a replacement ordered too.\" Do not accept a resolution that leaves the old Silver Rewards card available for new purchases.\n\nAuthorize protected card changes only after the agent has completed identity verification using the information you supplied. Before authorizing the orders, require recognizable confirmation that both old debit cards will become permanently unusable, only Bluest will receive a debit replacement, and both checking accounts will stay open. Before authorizing either order, require confirmation that the selected shipping and design choices add no fee. Confirm the shipping destination as 1842 E Moreland St, Phoenix, AZ 85006 before authorizing shipment. If verification cannot be completed, ask for human assistance rather than authorizing any bypass.\n\nDo not accept or end the conversation until both original debit cards are confirmed permanently closed. Do not accept or end the conversation until the old Silver Rewards card is confirmed unusable for new purchases and its no-fee standard replacement is ordered. Do not accept or end the conversation until the fee-free rush Bluest replacement with a PREMIUM design is confirmed ordered. Do not accept or end the conversation until it is confirmed that no Light Green replacement was ordered and both checking accounts remain open. If any part is missing, ask about that missing outcome rather than stopping.\n\nOnly after every one of those visible outcomes is confirmed, say: \"Thanks, that takes care of the cards from the wallet and keeps the accounts the way I wanted. ###STOP###\""
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "user_caleb_moreno_2025": {
+              "user_id": "user_caleb_moreno_2025",
+              "name": "Caleb Moreno",
+              "date_of_birth": "04/18/1994",
+              "address": "1842 E Moreland St, Phoenix, AZ 85006",
+              "email": "caleb.moreno94@example.com",
+              "phone_number": "602-555-0186"
+            }
+          },
+          "notes": "Caleb Moreno is 31 at the fixed date and owns all affected accounts and cards."
+        },
+        "accounts": {
+          "data": {
+            "acct_bluest_caleb_401": {
+              "account_id": "acct_bluest_caleb_401",
+              "user_id": "user_caleb_moreno_2025",
+              "class": "checking",
+              "level": "Bluest Account",
+              "status": "OPEN",
+              "current_holdings": "640.00",
+              "date_opened": "03/12/2021"
+            },
+            "acct_lightgreen_caleb_402": {
+              "account_id": "acct_lightgreen_caleb_402",
+              "user_id": "user_caleb_moreno_2025",
+              "class": "checking",
+              "level": "Light Green Account",
+              "status": "OPEN",
+              "current_holdings": "210.00",
+              "date_opened": "08/17/2022"
+            }
+          },
+          "notes": "Both checking accounts are open. Bluest Account is the ELITE-tier primary account; Light Green Account is the ENTRY-tier secondary account."
+        },
+        "debit_cards": {
+          "data": {
+            "dbc_bluest_caleb_4618": {
+              "card_id": "dbc_bluest_caleb_4618",
+              "account_id": "acct_bluest_caleb_401",
+              "user_id": "user_caleb_moreno_2025",
+              "cardholder_name": "Caleb Moreno",
+              "last_4_digits": "4618",
+              "cvv": "418",
+              "expiration_date": "11/29",
+              "issue_date": "11/08/2025",
+              "issue_reason": "expired",
+              "status": "ACTIVE",
+              "fraud_alert_active": false,
+              "velocity_blocked": false
+            },
+            "dbc_lightgreen_caleb_9054": {
+              "card_id": "dbc_lightgreen_caleb_9054",
+              "account_id": "acct_lightgreen_caleb_402",
+              "user_id": "user_caleb_moreno_2025",
+              "cardholder_name": "Caleb Moreno",
+              "last_4_digits": "9054",
+              "cvv": "904",
+              "expiration_date": "06/28",
+              "issue_date": "06/21/2024",
+              "issue_reason": "first_card",
+              "status": "ACTIVE",
+              "fraud_alert_active": false,
+              "velocity_blocked": false
+            }
+          },
+          "notes": "Both physical cards are in the confirmed-lost wallet. Loss is supplied by the customer rather than an invented database flag."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_bluest_posted_purchase_1845": {
+              "transaction_id": "txn_bluest_posted_purchase_1845",
+              "account_id": "acct_bluest_caleb_401",
+              "date": "11/12/2025",
+              "description": "DEBIT CARD PURCHASE - DESERT GROCER PHOENIX AZ - CARD 4618",
+              "amount": -18.45,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            },
+            "txn_lightgreen_posted_purchase_0920": {
+              "transaction_id": "txn_lightgreen_posted_purchase_0920",
+              "account_id": "acct_lightgreen_caleb_402",
+              "date": "11/10/2025",
+              "description": "DEBIT CARD PURCHASE - VALLEY COFFEE PHOENIX AZ - CARD 9054",
+              "amount": -9.2,
+              "type": "debit_card_purchase",
+              "status": "posted"
+            }
+          },
+          "notes": "The complete affected-account history contains only these posted purchases; there are no pending or processing transactions and no pending refunds."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initially. Current-session verification must be logged during the successful interaction."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_silver_caleb_7732": {
+              "account_id": "ccacct_silver_caleb_7732",
+              "user_id": "user_caleb_moreno_2025",
+              "card_type": "Silver Rewards",
+              "card_last_4_digits": "7732",
+              "account_status": "OPEN",
+              "status": "ACTIVE",
+              "current_balance": "126.40",
+              "date_of_account_open": "05/19/2022",
+              "reward_points": "1840"
+            }
+          },
+          "notes": "Caleb's active Silver Rewards card was in the same lost wallet."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No pre-existing replacement order exists for the Silver Rewards account."
+        },
+        "debit_card_orders": {
+          "data": {},
+          "notes": "No pre-existing debit-card order exists for either checking account."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable-tool availability comes from the tool catalog; session unlock state starts empty."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_locate_caleb",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        }
+      },
+      {
+        "action_id": "act_02_get_fixed_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_current_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "user_caleb_moreno_2025",
+          "address": "1842 E Moreland St, Phoenix, AZ 85006",
+          "email": "caleb.moreno94@example.com",
+          "phone_number": "602-555-0186",
+          "date_of_birth": "04/18/1994",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_unlock_debit_closure",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721"
+        }
+      },
+      {
+        "action_id": "act_05_close_bluest_lost_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"dbc_bluest_caleb_4618\",\"reason\":\"lost\"}"
+        }
+      },
+      {
+        "action_id": "act_06_close_lightgreen_lost_card",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_debit_card_4721",
+          "arguments": "{\"card_id\":\"dbc_lightgreen_caleb_9054\",\"reason\":\"lost\"}"
+        }
+      },
+      {
+        "action_id": "act_07_unlock_credit_replacement",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291"
+        }
+      },
+      {
+        "action_id": "act_08_order_silver_standard_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_silver_caleb_7732\",\"user_id\":\"user_caleb_moreno_2025\",\"shipping_address\":\"1842 E Moreland St, Phoenix, AZ 85006\",\"reason\":\"lost\",\"expedited_shipping\":false}"
+        }
+      },
+      {
+        "action_id": "act_09_unlock_bluest_debit_order",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739"
+        }
+      },
+      {
+        "action_id": "act_10_order_bluest_rush_premium",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_debit_card_5739",
+          "arguments": "{\"account_id\":\"acct_bluest_caleb_401\",\"user_id\":\"user_caleb_moreno_2025\",\"delivery_option\":\"RUSH\",\"delivery_fee\":0.0,\"card_design\":\"PREMIUM\",\"design_fee\":0.0,\"shipping_address\":\"1842 E Moreland St, Phoenix, AZ 85006\",\"excess_replacement_fee\":null}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_025",
+    "doc_bank_accounts_bank_accounts_(general)_026",
+    "doc_bank_accounts_bank_accounts_(general)_028",
+    "doc_bank_accounts_bank_accounts_(general)_029",
+    "doc_bank_accounts_bank_accounts_(general)_030",
+    "doc_credit_cards_credit_card_replacements_001"
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "id": "task_generated_pro_095",
+  "description": {
+    "purpose": "Resolve an unauthorized Gold Rewards Card charge, pay the legitimate posted balance from checking, record the customer's closure reason, and permanently close the locked account without issuing or applying for another card.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concerned but cooperative by saying: “I just got an alert for a charge I don't recognize on my Gold card, and the card now shows as locked. This is the last straw—I need the charge reviewed and I want the account shut down.” Do not initially volunteer identity details, the transaction details, or why you are moving your spending.\n\nIf asked for identity or registered contact details, provide: Amina Duarte; date of birth 04/18/1993; 1807 South Congress Avenue, Apt 4B, Austin, TX 78704; amina.duarte@example.net; and 512-555-0186. Before authorizing a protected payment or closure, require the agent to match your identity and registered contact details.\n\nIf asked which transaction is unfamiliar, provide the pending $317.40 Metro Camera Exchange charge dated 11/13/2025 on the Gold card ending 7319. Say that you did not make or authorize it and did not contact the merchant because it is fraud. Do not volunteer internal thresholds, prior-dispute counts, or eligibility rules. Authorize the fraud claim only after the merchant, amount, date, card ending digits, and requested full reversal all match.\n\nOnce the agent confirms that the Metro Camera Exchange transaction can be handled as unauthorized, ask for the entire charge to be formally disputed and reversed. The entire unfamiliar Metro Camera Exchange charge must be disputed as unauthorized, not merely noted or partially challenged. If the agent proposes monitoring it, treating it as authorized, or challenging less than the full charge, say: “I did not make that Metro Camera Exchange purchase, so please review the full $317.40 charge again.” Do not authorize a partial dispute, an authorized-purchase classification, or closure that abandons the requested fraud claim.\n\nKeep the existing card unusable. The affected Gold Rewards account must be permanently closed once the dispute and balance prerequisites are resolved. If the agent proposes leaving it merely locked or open, say: “The lock is not the final outcome I asked for; I want this account permanently closed.” Do not accept an active or merely locked account as final resolution.\n\nIf asked why you want to close the account, or if another Rho-Bank card is offered, explain that the fraud incident was the final reason to move your restaurant-related spending to another provider. You do not want a replacement card, the current card restored, a credit review, a Business Platinum application, or any other new Rho-Bank credit card. If the agent proposes any of those options, say: “No, thank you. I am moving this spending elsewhere and want the existing account closed, not replaced.” Do not authorize shipment, reissue, restoration, credit review, or a new card application. If any unwanted replacement or application has already been started, insist that it be canceled or withdrawn and continue to require permanent closure of the existing account.\n\nYou will pay the confirmed $525.35 posted balance from your own Rho-Bank checking account, but you will not authorize a larger amount. Authorize the payment only after the agent confirms that $525.35 is the posted balance, that the identified checking account can cover exactly that amount, and that the payment is needed for closure. If a larger amount, another funding account, or closure with an allegedly unpaid posted balance is proposed, say: “Please verify the current posted balance and use only my Rho-Bank checking account for the confirmed amount.” Do not authorize more than $525.35 or a debit from any other account.\n\nAuthorize permanent closure only after the agent confirms that the dispute is no longer pending, no replacement is pending, the card balance is zero, and no replacement or new application will be created.\n\nIf an otherwise supported fraud dispute or closure is refused, repeatedly mishandled, or the account remains active after the agent claims the case is complete, become firmer and ask to be transferred to a human who can finish resolving the fraud and closing the account. Do not request a transfer when the supported resolution succeeds.\n\nDo not accept the resolution until the entire Metro Camera Exchange charge has been confirmed as formally disputed as unauthorized. Do not accept the resolution until the agent confirms that exactly $525.35 was paid from your checking account and the Gold Rewards account is permanently closed. Do not accept the resolution until the agent confirms that no replacement card or new credit-card application was created. If any one of these outcomes is missing, ask about it directly and do not end the conversation.\n\nOnly after all required outcomes are confirmed, respond briefly with thanks and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_amina_duarte_7f31c9": {
+              "user_id": "usr_amina_duarte_7f31c9",
+              "name": "Amina Duarte",
+              "date_of_birth": "04/18/1993",
+              "address": "1807 South Congress Avenue, Apt 4B, Austin, TX 78704",
+              "email": "amina.duarte@example.net",
+              "phone_number": "512-555-0186"
+            }
+          },
+          "notes": "Fresh customer identity. Amina is a 32-year-old restaurant manager in Austin, Texas, at the fixed date."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Must begin empty; current-session verification is created during the successful interaction."
+        },
+        "accounts": {
+          "data": {
+            "acct_checking_amina_94d2b7": {
+              "account_id": "acct_checking_amina_94d2b7",
+              "class": "checking",
+              "current_holdings": "525.35",
+              "date_opened": "08/12/2021",
+              "level": "Checking Account",
+              "status": "open",
+              "user_id": "usr_amina_duarte_7f31c9"
+            }
+          },
+          "notes": "Amina's open Rho-Bank checking account contains exactly enough to pay the posted card balance."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_gold_7319_c6e4a1": {
+              "account_id": "ccacct_gold_7319_c6e4a1",
+              "account_status": "current",
+              "card_last_4_digits": "7319",
+              "card_type": "Gold Rewards Card",
+              "credit_limit": "12000.00",
+              "current_balance": "525.35",
+              "date_of_account_open": "05/20/2024",
+              "past_due_amount": "0.00",
+              "reward_points": "6840",
+              "status": "locked",
+              "user_id": "usr_amina_duarte_7f31c9"
+            }
+          },
+          "notes": "The compromised Gold Rewards Card is already locked. Its $525.35 posted balance excludes the pending fraud transaction."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "cctxn_metro_camera_2a8f5d": {
+              "category": "electronics",
+              "credit_card_account_id": "ccacct_gold_7319_c6e4a1",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Metro Camera Exchange",
+              "rewards_earned": "0.00",
+              "status": "pending",
+              "transaction_amount": "317.40",
+              "transaction_date": "11/13/2025",
+              "transaction_id": "cctxn_metro_camera_2a8f5d",
+              "user_id": "usr_amina_duarte_7f31c9"
+            },
+            "cctxn_prior_feb_44b1de": {
+              "category": "dining",
+              "credit_card_account_id": "ccacct_gold_7319_c6e4a1",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Hill Country Catering Supply",
+              "rewards_earned": "0.00",
+              "status": "posted",
+              "transaction_amount": "86.20",
+              "transaction_date": "02/08/2025",
+              "transaction_id": "cctxn_prior_feb_44b1de",
+              "user_id": "usr_amina_duarte_7f31c9"
+            },
+            "cctxn_prior_jun_9c73a4": {
+              "category": "office_supplies",
+              "credit_card_account_id": "ccacct_gold_7319_c6e4a1",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Central Office Market",
+              "rewards_earned": "0.00",
+              "status": "posted",
+              "transaction_amount": "129.75",
+              "transaction_date": "06/16/2025",
+              "transaction_id": "cctxn_prior_jun_9c73a4",
+              "user_id": "usr_amina_duarte_7f31c9"
+            }
+          },
+          "notes": "The pending Metro Camera Exchange charge is the target dispute. Two additional transactions support the two genuine historical disputes."
+        },
+        "transaction_disputes": {
+          "data": {
+            "disp_prior_feb_1d730a": {
+              "address": "1807 South Congress Avenue, Apt 4B, Austin, TX 78704",
+              "card_action": "keep_active",
+              "card_last_4_digits": "7319",
+              "contacted_merchant": true,
+              "dispute_id": "disp_prior_feb_1d730a",
+              "dispute_reason": "duplicate_charge",
+              "eligible_for_provisional_credit": true,
+              "email": "amina.duarte@example.net",
+              "full_name": "Amina Duarte",
+              "issue_noticed_date": "02/10/2025",
+              "partial_refund_amount": null,
+              "phone": "512-555-0186",
+              "provisional_credit_given": true,
+              "purchase_date": "02/08/2025",
+              "resolution_requested": "full_refund",
+              "status": "closed",
+              "submitted_at": "02/10/2025",
+              "transaction_id": "cctxn_prior_feb_44b1de",
+              "user_id": "usr_amina_duarte_7f31c9"
+            },
+            "disp_prior_jun_83ce29": {
+              "address": "1807 South Congress Avenue, Apt 4B, Austin, TX 78704",
+              "card_action": "keep_active",
+              "card_last_4_digits": "7319",
+              "contacted_merchant": true,
+              "dispute_id": "disp_prior_jun_83ce29",
+              "dispute_reason": "goods_services_not_received",
+              "eligible_for_provisional_credit": true,
+              "email": "amina.duarte@example.net",
+              "full_name": "Amina Duarte",
+              "issue_noticed_date": "06/18/2025",
+              "partial_refund_amount": null,
+              "phone": "512-555-0186",
+              "provisional_credit_given": true,
+              "purchase_date": "06/16/2025",
+              "resolution_requested": "full_refund",
+              "status": "closed",
+              "submitted_at": "06/18/2025",
+              "transaction_id": "cctxn_prior_jun_9c73a4",
+              "user_id": "usr_amina_duarte_7f31c9"
+            }
+          },
+          "notes": "Exactly two prior disputes fall within the twelve months preceding 11/14/2025. Both are closed, and no dispute initially exists for the Metro Camera Exchange transaction."
+        },
+        "credit_card_orders": {
+          "data": {
+            "ccorder_delivered_july_57e2bc": {
+              "credit_card_account_id": "ccacct_gold_7319_c6e4a1",
+              "expected_delivery": "07/09/2025",
+              "expedited_shipping": false,
+              "order_date": "07/01/2025",
+              "order_id": "ccorder_delivered_july_57e2bc",
+              "reason": "damaged",
+              "shipping_address": "1807 South Congress Avenue, Apt 4B, Austin, TX 78704",
+              "status": "delivered",
+              "user_id": "usr_amina_duarte_7f31c9"
+            }
+          },
+          "notes": "The sole genuine historical replacement order is delivered and therefore is not pending."
+        },
+        "credit_card_closure_reasons": {
+          "data": {},
+          "notes": "No closure reason has previously been recorded for this account."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No credit-card application exists initially, and none should be created."
+        },
+        "task_config": {
+          "data": {
+            "config_dispute_autoresolve_61af08": {
+              "auto_resolve_disputes": true
+            }
+          },
+          "notes": "Configured automatic dispute resolution makes a newly filed dispute non-pending within this scenario."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable tool availability comes from the tool catalog; this session table starts empty."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_01_find_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        }
+      },
+      {
+        "action_id": "act_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "usr_amina_duarte_7f31c9",
+          "address": "1807 South Congress Avenue, Apt 4B, Austin, TX 78704",
+          "email": "amina.duarte@example.net",
+          "phone_number": "512-555-0186",
+          "date_of_birth": "04/18/1993",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_04_get_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_amina_duarte_7f31c9"
+        }
+      },
+      {
+        "action_id": "act_05_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "act_06_get_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_7f31c9\"}"
+        }
+      },
+      {
+        "action_id": "act_07_unlock_dispute",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "act_08_file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"cctxn_metro_camera_2a8f5d\",\"card_action\":\"keep_active\",\"card_last_4_digits\":\"7319\",\"full_name\":\"Amina Duarte\",\"user_id\":\"usr_amina_duarte_7f31c9\",\"phone\":\"512-555-0186\",\"email\":\"amina.duarte@example.net\",\"address\":\"1807 South Congress Avenue, Apt 4B, Austin, TX 78704\",\"contacted_merchant\":false,\"purchase_date\":\"11/13/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"unauthorized_fraudulent_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true}"
+        }
+      },
+      {
+        "action_id": "act_09_confirm_dispute_final",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_7f31c9\"}"
+        }
+      },
+      {
+        "action_id": "act_10_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_11_get_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_7f31c9\"}"
+        }
+      },
+      {
+        "action_id": "act_12_unlock_payment",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "pay_credit_card_from_checking_9182"
+        }
+      },
+      {
+        "action_id": "act_13_pay_balance",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "pay_credit_card_from_checking_9182",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_7f31c9\",\"checking_account_id\":\"acct_checking_amina_94d2b7\",\"credit_card_account_id\":\"ccacct_gold_7319_c6e4a1\",\"amount\":525.35}"
+        }
+      },
+      {
+        "action_id": "act_14_unlock_pending_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "act_15_check_pending_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_gold_7319_c6e4a1\"}"
+        }
+      },
+      {
+        "action_id": "act_16_unlock_closure_reason",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "act_17_log_closure_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_gold_7319_c6e4a1\",\"user_id\":\"usr_amina_duarte_7f31c9\",\"closure_reason\":\"found_better_card\"}"
+        }
+      },
+      {
+        "action_id": "act_18_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834"
+        }
+      },
+      {
+        "action_id": "act_19_close_account",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_gold_7319_c6e4a1\",\"user_id\":\"usr_amina_duarte_7f31c9\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_business_credit_cards_business_platinum_rewards_card_001",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_business_credit_cards_business_platinum_rewards_card_008",
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_credit_cards_credit_card_account_logistics_009",
+    "doc_credit_cards_credit_card_replacements_001",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016"
+  ]
+}

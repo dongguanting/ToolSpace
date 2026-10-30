@@ -1,0 +1,325 @@
+{
+  "id": "task_generated_pro_048",
+  "description": {
+    "purpose": "Resolve Maya Iqbal's two unauthorized Silver purchases, protect the exposed card number, and submit one customer-authorized affordable virtual-card-capable application.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Maya Iqbal, a 47-year-old restaurant manager living in Boise, Idaho. It is November 14, 2025. After finishing a restaurant shift, you opened your card activity and discovered two posted online purchases you did not make. Begin concerned, but cooperate with relevant questions. Become relieved as real progress is made; become firmer only after a concrete failure or repeated disregard of your wishes.\n\nOpen with: “Two purchases I didn't make just showed up on my Silver card. Can you help me dispute them and replace the card? This has made me wary of using my everyday card number online.” Do not begin with identity details, application information, a selected new product, or an explanation of bank rules.\n\nWhen asked relevant identity questions, supply only the requested details: your full name is Maya Iqbal; date of birth June 22, 1978; phone 208-555-0164; email maya.iqbal@example.net; home address 2846 N Alder Grove Way, Apt 7, Boise, ID 83704. When asked to confirm delivery, confirm that complete address, including Apt 7. Cooperate with recording a successful identity check only after you have supplied the requested identity details and the agent has established that this is your own card.\n\nWhen asked about the affected purchases or what happened, identify Northbay Lens Outlet for $1,840 on November 12, 2025 and Harbor Key Digital for $286 on November 13, 2025. You first noticed both on November 14. Neither purchase was authorized, and you have not contacted either merchant. When asked about possession, you still have the physical Silver card, ending 6183. If asked about previous disputes, acknowledge two older merchant disputes, with Tamarack Tableware and Juniper Audio Depot, which are already closed; do not invent an interpretation of how the bank counts them.\n\nWhen asked what resolution you want, explain that both newly reported purchases were unauthorized and you want full-refund disputes for both; limited temporary relief does not change either claim. If temporary relief is limited, prioritize the larger purchase, rather than splitting it or prioritizing the smaller one. Accept a grounded explanation that temporary relief and a final dispute decision are different. Authorize the disputes only when the agent identifies both correct merchants and amounts, understands that neither was authorized, and preserves both full-refund requests and your larger-purchase priority.\n\nThe exposed number must stop working and be replaced; never agree to continue using it or reactivate it. Keep your Silver credit account for in-person purchases; replacing the number is not permission to close the account. When asked about delivery, choose free standard delivery and do not authorize a delivery charge. You can wait for the physical replacement once the old number is disabled. If expedited delivery is recommended with an extra fee, decline the charge and repeat this preference. Authorize replacement only after the agent identifies card 6183, confirms your complete shipping address, explains that the exposed number will be disabled, and agrees to free standard delivery while retaining the Silver credit account.\n\nOnly after the agent explains that Silver lacks virtual-card management, say: “Then I'd like one extra card for online purchases that can do that, with an annual fee no higher than $50 and no new subscription. I want to keep Silver for in-person purchases, and I don't want crypto rewards or an invitation-type card. If you find a suitable option and explain the terms, I'd like to apply today.” Before this finding, do not volunteer an application request. This finding makes the additional-card request active; it does not remove your replacement request. Following this finding, keep the request to exactly one additional ordinary personal card with virtual-card management, an annual fee at most $50, no new subscription, no crypto rewards, and no invitation-tier product. You are not relying on a promotional fee waiver or a future rebate to make a higher annual fee acceptable.\n\nWhen relevant application questions are asked, provide annual income of $68,400, no Rho-Bank+ subscription, and your most recently observed credit score of 709. Do not dump these facts in response to an unrelated identity question. You do not initially know which product fits. Listen to the comparison and review the actual terms of any proposed option. Authorize only one application after understanding its actual terms; never authorize speculative extra applications or treat submission as approval. Submit the application yourself when the suitable option and terms have been explained and you consent. Do not copy an agent's proposed product or subscription choice if it conflicts with your requirements. Authorize the application only once its virtual-card capability, annual fee, other pricing including carried-balance APR, subscription requirements, and application-only status are clear, all your product boundaries are satisfied, and your identity and income information are accurate.\n\nIf the agent proposes dropping a purchase, partial refunds, prioritizing the smaller purchase, or splitting limited relief contrary to your priority, say: “I didn't make either purchase, so I still want both disputed in full. If temporary help is limited, the bigger purchase is the one I need prioritized. Please check the options on that basis.” Do not approve dropping or reducing either claim or substituting smaller-purchase or split relief for your priority. If that already happened, request correction of the submissions and do not accept closure.\n\nIf the agent proposes keeping the exposed number usable, reactivating it, substituting a new application for replacement, or closing Silver, say: “Please stop that exposed number from being used and replace it. I still want my Silver account for in-person purchases; applying for something else would not fix the exposed number.” Authorize number replacement, not continued use, reactivation, or credit-account closure. If an incompatible action already occurred, ask for help with the still-exposed number or unwanted account change before ending.\n\nIf paid delivery is proposed, say: “I can wait for the free delivery once the old number is disabled. Please don't add a delivery charge.” Do not authorize paid delivery. If already ordered, ask for correction of the delivery choice and any resulting charge, without prescribing an internal remedy.\n\nIf a recommendation lacks virtual-card management, exceeds your annual-fee ceiling, requires a new subscription, is crypto or invitation-tier, involves multiple applications, or requires abandoning Silver, say: “My aim is to keep my everyday number out of online checkouts, not to maximize rewards or get a bigger limit. I want just one extra card within the annual-fee budget, without adding a subscription, and I want to keep my Silver account. Please compare the choices using those limits.” Do not authorize an incompatible application, subscription, or account closure even if the agent calls it more rewarding or financially attractive. If an unwanted submission already occurred, ask for help addressing it and completing only the intended suitable application; do not accept the unwanted outcome as completion.\n\nIf offered advice or a recommendation without completed submissions, or an unsupported claim of final approval, say: “Thanks, but I also wanted the requests submitted. Can you tell me what has actually been completed and help finish anything still outstanding?” Do not accept recommendation-only closure or authorize extra steps based on an unconfirmed approval. Ask about missing outcomes and remain in the conversation.\n\nNever volunteer bank dispute-count thresholds, eligibility conclusions, filing order, internal identifiers, or an intended product answer. Ground any challenge in your purchases, preferences, and what the agent has actually told you, not hidden policy knowledge.\n\nDo not accept completion until the agent confirms submission of both full-refund disputes and explains the temporary-relief request for each without claiming a final chargeback decision. Do not accept completion until the exposed number is disabled and one free standard replacement is ordered to your confirmed complete address. Do not accept completion until your accepted suitable online-use application has been submitted once, with no unwanted subscription, other application, or Silver account closure. Keep asking about anything outstanding; a recommendation is not a submission, and a submission is not approval or an immediately posted credit.\n\nIf, after one clarification, the agent still refuses to address the fraud, repeatedly disregards a protected preference, or cannot complete an essential submission, become firmer and ask for a human to handle the unresolved fraud and remaining requests. Do not escalate while the in-scope resolution is progressing successfully. An acknowledged handoff after genuine failure is an end to this unsuccessful interaction, not acceptance of a completed resolution.\n\nOn success, only after all the completion conditions above hold, thank the agent and end. On terminal failure, end only after the requested human handoff is acknowledged. In either case emit the following marker exactly once, and never while still awaiting completion or handoff:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "u_mi_5917": {
+              "user_id": "u_mi_5917",
+              "name": "Maya Iqbal",
+              "date_of_birth": "06/22/1978",
+              "phone_number": "208-555-0164",
+              "email": "maya.iqbal@example.net",
+              "address": "2846 N Alder Grove Way, Apt 7, Boise, ID 83704",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Customer identity, age 47 at the fixed date. Occupation, application income, and observed score are conversational facts, not user-table columns."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_mi_5917_silver": {
+              "account_id": "cc_mi_5917_silver",
+              "user_id": "u_mi_5917",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "6183",
+              "date_of_account_open": "05/09/2022",
+              "status": "active",
+              "account_status": "open",
+              "credit_limit": "15000",
+              "current_balance": "6800",
+              "past_due_amount": "0",
+              "reward_points": "70"
+            }
+          },
+          "notes": "Existing everyday credit product. The protective order cancels the exposed card, not the underlying account. No restoration step is needed or authorized."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "tx_mi_5917_northbay": {
+              "transaction_id": "tx_mi_5917_northbay",
+              "user_id": "u_mi_5917",
+              "credit_card_account_id": "cc_mi_5917_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Northbay Lens Outlet",
+              "transaction_amount": "1840.00",
+              "transaction_date": "11/12/2025",
+              "status": "posted",
+              "category": "Shopping",
+              "rewards_earned": "18.40"
+            },
+            "tx_mi_5917_harbor": {
+              "transaction_id": "tx_mi_5917_harbor",
+              "user_id": "u_mi_5917",
+              "credit_card_account_id": "cc_mi_5917_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Harbor Key Digital",
+              "transaction_amount": "286.00",
+              "transaction_date": "11/13/2025",
+              "status": "posted",
+              "category": "Software",
+              "rewards_earned": "2.86"
+            },
+            "tx_mi_5917_tamarack": {
+              "transaction_id": "tx_mi_5917_tamarack",
+              "user_id": "u_mi_5917",
+              "credit_card_account_id": "cc_mi_5917_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Tamarack Tableware",
+              "transaction_amount": "78.00",
+              "transaction_date": "04/18/2025",
+              "status": "posted",
+              "category": "Shopping",
+              "rewards_earned": "0.78"
+            },
+            "tx_mi_5917_juniper": {
+              "transaction_id": "tx_mi_5917_juniper",
+              "user_id": "u_mi_5917",
+              "credit_card_account_id": "cc_mi_5917_silver",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Juniper Audio Depot",
+              "transaction_amount": "132.00",
+              "transaction_date": "06/02/2025",
+              "status": "posted",
+              "category": "Shopping",
+              "rewards_earned": "1.32"
+            }
+          },
+          "notes": "Two undisputed target purchases and two genuine purchases supporting historical disputes. Online channel, lack of authorization, discovery date, and no merchant contact are customer testimony elicited during this call; no unsupported transaction columns are added."
+        },
+        "transaction_disputes": {
+          "data": {
+            "dp_mi_5917_april": {
+              "dispute_id": "dp_mi_5917_april",
+              "transaction_id": "tx_mi_5917_tamarack",
+              "user_id": "u_mi_5917",
+              "full_name": "Maya Iqbal",
+              "phone": "208-555-0164",
+              "email": "maya.iqbal@example.net",
+              "address": "2846 N Alder Grove Way, Apt 7, Boise, ID 83704",
+              "card_last_4_digits": "6183",
+              "card_action": "keep_active",
+              "contacted_merchant": true,
+              "purchase_date": "04/18/2025",
+              "issue_noticed_date": "04/19/2025",
+              "dispute_reason": "incorrect_amount",
+              "resolution_requested": "partial_refund",
+              "partial_refund_amount": 28,
+              "eligible_for_provisional_credit": false,
+              "provisional_credit_given": false,
+              "submitted_at": "2025-04-20 10:15:00 EST",
+              "status": "closed"
+            },
+            "dp_mi_5917_july": {
+              "dispute_id": "dp_mi_5917_july",
+              "transaction_id": "tx_mi_5917_juniper",
+              "user_id": "u_mi_5917",
+              "full_name": "Maya Iqbal",
+              "phone": "208-555-0164",
+              "email": "maya.iqbal@example.net",
+              "address": "2846 N Alder Grove Way, Apt 7, Boise, ID 83704",
+              "card_last_4_digits": "6183",
+              "card_action": "keep_active",
+              "contacted_merchant": true,
+              "purchase_date": "06/02/2025",
+              "issue_noticed_date": "07/14/2025",
+              "dispute_reason": "refund_never_processed",
+              "resolution_requested": "full_refund",
+              "partial_refund_amount": null,
+              "eligible_for_provisional_credit": false,
+              "provisional_credit_given": false,
+              "submitted_at": "2025-07-15 09:20:00 EST",
+              "status": "closed"
+            }
+          },
+          "notes": "Only the two explicitly required genuine historical records are seeded. Both are countable filings in the preceding 12 months and must remain unchanged. No target-purchase dispute is pre-seeded."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No replacement is seeded. Maya has no pre-existing replacement order; preserve unrelated default records under patch semantics."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "No verification is seeded. The fresh Maya identity has no prior verification; a new matching current-session record is required. An empty patch does not purport to delete unrelated default audit records. Under these supported patch semantics, the immutable task-note phrase 'verification_history must begin empty' means Maya's verification history starts empty; it does not require clearing unrelated customers' audit history."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No application is seeded for Maya. The customer submits exactly one application during the successful interaction."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "No capability descriptors or call records are seeded. Tool availability comes from the catalog; read-call telemetry is not a rewarded outcome."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Formal dispute submissions only; do not automatically adjudicate claims or post immediate balance credits."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a01_find_maya",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Maya Iqbal"
+        },
+        "info": "Reference read to obtain the canonical owner and registered verification fields after Maya supplies her name. Read invocation and telemetry are not evaluated."
+      },
+      {
+        "action_id": "a02_session_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns 2025-11-14 03:40:00 EST. Reference timestamp scaffolding, not an independent rewarded action."
+      },
+      {
+        "action_id": "a03_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Maya Iqbal",
+          "user_id": "u_mi_5917",
+          "address": "2846 N Alder Grove Way, Apt 7, Boise, ID 83704",
+          "email": "maya.iqbal@example.net",
+          "phone_number": "208-555-0164",
+          "date_of_birth": "06/22/1978",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "Maya has supplied matching DOB and phone, satisfying the two-of-four identity check; registered contact data match. Create, rather than pre-seed, the current-session verification."
+      },
+      {
+        "action_id": "a04_find_silver",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "u_mi_5917"
+        },
+        "info": "Reference read discovers the owned account, original last four, tier, and opening date needed by replacement and dispute eligibility."
+      },
+      {
+        "action_id": "a05_unlock_replacement",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291"
+        },
+        "info": "After verification, Maya confirms card 6183 and the complete shipping address. She reports unauthorized use while retaining the physical card. Expedited delivery at $10 is strongly recommended; she declines and chooses free 7–10-business-day standard delivery, retaining Silver."
+      },
+      {
+        "action_id": "a06_replace",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291",
+          "arguments": "{\"credit_card_account_id\":\"cc_mi_5917_silver\",\"user_id\":\"u_mi_5917\",\"shipping_address\":\"2846 N Alder Grove Way, Apt 7, Boise, ID 83704\",\"reason\":\"fraud_suspected\",\"expedited_shipping\":false}"
+        },
+        "info": "Order the authorized protective replacement promptly. Bind the native returned order_id; no later action requires that identifier. Cancel the exposed card without closing its credit account."
+      },
+      {
+        "action_id": "a07_find_purchases",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "u_mi_5917"
+        },
+        "info": "Reference read resolves the target transaction IDs and dates from Maya's merchant and amount reports. Both are posted purchases; Maya confirms neither was authorized, neither merchant was contacted, and both were noticed November 14."
+      },
+      {
+        "action_id": "a08_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "a09_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"u_mi_5917\"}"
+        },
+        "info": "Reference-only all-status history supplies two closed filings within the preceding 12 months. Neither the call nor discoverable read telemetry is evaluated."
+      },
+      {
+        "action_id": "a10_unlock_filing",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        },
+        "info": "Maya authorizes full-refund disputes for both identified purchases and requests available temporary relief with the larger purchase prioritized. She understands that filing and temporary relief do not constitute final decisions."
+      },
+      {
+        "action_id": "a11_file_northbay",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"tx_mi_5917_northbay\",\"card_action\":\"cancel_and_reissue\",\"card_last_4_digits\":\"6183\",\"full_name\":\"Maya Iqbal\",\"user_id\":\"u_mi_5917\",\"phone\":\"208-555-0164\",\"email\":\"maya.iqbal@example.net\",\"address\":\"2846 N Alder Grove Way, Apt 7, Boise, ID 83704\",\"contacted_merchant\":false,\"purchase_date\":\"11/12/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"unauthorized_fraudulent_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true,\"partial_refund_amount\":null}"
+        },
+        "info": "Before this filing the count is two; 25 <= 1840 <= 5000, fraud contact exception applies, and the account is 1285 days old. Bind the native returned dispute_id without inventing an identifier. No automatic credit or adjudication."
+      },
+      {
+        "action_id": "a12_file_harbor",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"tx_mi_5917_harbor\",\"card_action\":\"cancel_and_reissue\",\"card_last_4_digits\":\"6183\",\"full_name\":\"Maya Iqbal\",\"user_id\":\"u_mi_5917\",\"phone\":\"208-555-0164\",\"email\":\"maya.iqbal@example.net\",\"address\":\"2846 N Alder Grove Way, Apt 7, Boise, ID 83704\",\"contacted_merchant\":false,\"purchase_date\":\"11/13/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"unauthorized_fraudulent_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":false,\"partial_refund_amount\":null}"
+        },
+        "info": "The Northbay submission increases the prior rolling count to three. Harbor still receives its full-refund dispute, but no provisional-credit request. Bind its native dispute_id; preserve both historical records."
+      },
+      {
+        "action_id": "a13_apply_ecocard",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "EcoCard",
+          "customer_name": "Maya Iqbal",
+          "annual_income": 68400,
+          "rho_bank_subscription": false
+        },
+        "info": "Only after the Silver virtual-control finding activates Maya's request, the ordinary-card comparison, and her acceptance. Maya reports score 709 and income 68400. EcoCard virtual management, $50 annual fee, 19.99% carried-balance purchase APR, 1.0% foreign fee, and $32.50 late fee are disclosed and accepted. No subscription is required; no fee promotion is assumed. Bronze and Silver lack virtual management; Gold requires subscription and 720; Platinum charges $200 and requires 750. Maya personally submits exactly one application and understands that neither approval nor a starting limit is guaranteed. Bind the native application_id."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_card_replacements_001",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_016",
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_gold_rewards_card_001",
+    "doc_credit_cards_platinum_rewards_card_001",
+    "doc_credit_cards_ecocard_001",
+    "doc_credit_cards_ecocard_008"
+  ]
+}

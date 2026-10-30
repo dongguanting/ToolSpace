@@ -1,0 +1,167 @@
+{
+  "id": "task_generated_pro_080",
+  "description": {
+    "purpose": "Help Caleb identify and submit one business-checking referral for the highest-paying documented option that fits his tenure, referral history, and his client's international funding needs.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “A client asked me today for a business checking referral that will work for international payments. Can you help me find the best bonus I can actually qualify for and send the referral?” Do not initially volunteer identity details, the client's funding limit, ownership details, prior-referral dates, or a preferred product.\n\nIf asked for identity or contact details, say that you are Caleb Moreno, a freelance translator in Austin, Texas, born March 18, 1995. Give your address as 214 Juniper Street, Austin, TX 78704, your email as caleb.moreno.referrals@example.com, and your phone number as +1-512-555-0186. Do not use that question as a reason to volunteer the client's circumstances.\n\nIf asked about your checking tenure or the client's eligibility, ownership, address, funding, customer history, or account needs, explain that you opened your Navy Blue checking account on August 6, 2025. The client is Lone Star Localization LLC, whose primary owner is Maya Patel, age 42, at 901 Heritage Oak Drive, Round Rock, TX 78664. Neither Maya nor the business has had a Rho-Bank checking, savings, or closed account in the past year, and Maya is not the primary owner of any existing Rho-Bank business account. The business needs to hold and pay in CAD and EUR. It can bring exactly $30,000 from an external bank within 90 days, retain the qualifying funds for the required period, avoid another new-account promotion, and keep the account open and in good standing for at least 90 days.\n\nIf asked for the exact dates of your prior referral bonuses, say that you remember completing one recently and another earlier in the month but are not certain of their exact timestamps; ask the agent to review the records.\n\nYou want the largest referrer reward among options for which both you and the client can realistically qualify, not merely the largest advertised headline amount. The client's account must support international, multi-currency operations and cannot require more than the client's planned $30,000 external deposit. You want exactly one referral and do not authorize split, duplicate, or additional referral submissions. Authorize submission only after your identity, first-checking opening date, relevant recent referral history, and the client's stated circumstances have been considered.\n\nIf the agent recommends the largest advertised bonus or another premium option without reconciling your August opening date and the client's $30,000 limit, say: “I do not want to send something they cannot complete. My first account only dates from August, and the client cannot put in more than $30,000. Could you check the eligibility and fit again before I agree?” Do not authorize a referral for an option whose tenure, funding, or international-use fit remains unresolved.\n\nIf the agent recommends a product mainly for cashback or another secondary benefit, proposes multiple referrals, or leaves the requested referral unsubmitted, say: “The international fit and the best bonus we can actually complete are what matter here. Please do not add another referral, and I still need the one eligible choice submitted.” Authorize only one referral for the option established as the best eligible fit and reject any additional submission.\n\nIf the agent proposes Beige because of its headline reward, say: “My first checking account only goes back to August, and the client told me $30,000 is the most they can deposit. I am not comfortable approving that choice until you check whether we can really complete it.” Caleb must not authorize or execute a Beige referral while those visible tenure and funding concerns remain unresolved. If Beige was already submitted, say: “That confirmation does not match an option the client can complete. Please investigate whether the mistaken referral can be corrected or withdrawn before proceeding toward my same one-referral goal.” Do not state which product the bank's internal comparison should select.\n\nOnce the agent explains that one option is the highest-paying eligible fit after considering your tenure, exact referral history, and the client's requirements, say: “That sounds right. Please submit that one referral, and do not add another option.” Do not copy or authorize a proposed product unless the agent has confirmed that it supports international multi-currency use, accepts the $30,000 external-deposit plan, and is the highest-paying option remaining eligible after the relevant facts are considered.\n\nDo not treat the interaction as complete until the agent confirms that the single agreed referral was submitted, that the confirmation matches the eligible option established during the review, and that no incompatible or additional referral was submitted. If any of those conditions is missing, ask for the missing confirmation and do not accept or stop. Only after every condition is satisfied, briefly thank the agent and end with exactly one marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "caleb_moreno_2025": {
+              "user_id": "caleb_moreno_2025",
+              "name": "Caleb Moreno",
+              "date_of_birth": "03/18/1995",
+              "address": "214 Juniper Street, Austin, TX 78704",
+              "email": "caleb.moreno.referrals@example.com",
+              "phone_number": "+1-512-555-0186"
+            }
+          },
+          "notes": "Fresh Caleb Moreno identity. At the fixed date he is 30, works as a freelance translator, and lives in Austin, Texas. No user row identifies Maya Patel or Lone Star Localization LLC."
+        },
+        "accounts": {
+          "data": {
+            "acct_caleb_navy_2025": {
+              "account_id": "acct_caleb_navy_2025",
+              "user_id": "caleb_moreno_2025",
+              "class": "checking",
+              "level": "Navy Blue",
+              "status": "OPEN",
+              "date_opened": "08/06/2025",
+              "current_holdings": "1800"
+            }
+          },
+          "notes": "Caleb's earliest and only checking account. No business-checking or closed account is initialized for him."
+        },
+        "referrals": {
+          "data": {
+            "ref_caleb_recent": {
+              "referral_id": "ref_caleb_recent",
+              "referrer_id": "caleb_moreno_2025",
+              "referred_account_type": "Hunter Green",
+              "referral_status": "COMPLETE",
+              "date": "11/10/2025 11:15:00 EST"
+            },
+            "ref_caleb_old": {
+              "referral_id": "ref_caleb_old",
+              "referrer_id": "caleb_moreno_2025",
+              "referred_account_type": "World Blue",
+              "referral_status": "COMPLETE",
+              "date": "11/04/2025 02:00:00 EST"
+            }
+          },
+          "notes": "The recent referral is inside the rolling nine-day window at 11/14/2025 03:40:00 EST. The older World Blue referral is outside that window and is the only completed World Blue referral in calendar year 2025."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        },
+        "info": "Match two customer-supplied identity factors; this lookup alone is not authentication."
+      },
+      {
+        "action_id": "repair_current_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "caleb_moreno_2025",
+          "address": "214 Juniper Street, Austin, TX 78704",
+          "email": "caleb.moreno.referrals@example.com",
+          "phone_number": "+1-512-555-0186",
+          "date_of_birth": "03/18/1995",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After matching two factors, log the native caller profile before protected work."
+      },
+      {
+        "action_id": "gold_read_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        },
+        "info": "Locate Caleb's user ID and configured identity record."
+      },
+      {
+        "action_id": "gold_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Unlock the documented account-retrieval capability needed to establish earliest-checking tenure."
+      },
+      {
+        "action_id": "gold_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"caleb_moreno_2025\"}"
+        },
+        "info": "Retrieve Caleb's account opening date, product, and status."
+      },
+      {
+        "action_id": "gold_read_referrals",
+        "requestor": "assistant",
+        "name": "get_referrals_by_user",
+        "arguments": {
+          "user_id": "caleb_moreno_2025"
+        },
+        "info": "Establish the exact rolling-window count and World Blue annual count."
+      },
+      {
+        "action_id": "gold_submit_world",
+        "requestor": "user",
+        "name": "submit_referral",
+        "arguments": {
+          "user_id": "caleb_moreno_2025",
+          "account_type": "World Blue"
+        },
+        "info": "Submit the one authorized highest-paying eligible referral."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "submit_referral"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_047",
+    "doc_bank_accounts_bank_accounts_(general)_048",
+    "doc_business_checking_accounts_beige_012",
+    "doc_business_checking_accounts_cobalt_blue_001",
+    "doc_business_checking_accounts_cobalt_blue_004",
+    "doc_business_checking_accounts_hunter_green_001",
+    "doc_business_checking_accounts_lime_green_003",
+    "doc_business_checking_accounts_navy_blue_001",
+    "doc_business_checking_accounts_sky_blue_001",
+    "doc_business_checking_accounts_true_blue_002",
+    "doc_business_checking_accounts_world_blue_001",
+    "doc_business_checking_accounts_world_blue_007"
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "version": "1.0",
+  "tasks": [
+    {
+      "public_id": "task_generated_pro_001",
+      "title": "October rewards review across two Silver cards"
+    },
+    {
+      "public_id": "task_generated_pro_002",
+      "title": "Scanner non-delivery dispute and card limit request"
+    },
+    {
+      "public_id": "task_generated_pro_003",
+      "title": "Four-card rewards statement reconciliation"
+    },
+    {
+      "public_id": "task_generated_pro_004",
+      "title": "Savings and replacement checking setup after transfer"
+    },
+    {
+      "public_id": "task_generated_pro_005",
+      "title": "October savings interest and account benefits review"
+    },
+    {
+      "public_id": "task_generated_pro_006",
+      "title": "Four-card account closure review"
+    },
+    {
+      "public_id": "task_generated_pro_007",
+      "title": "Undelivered espresso machine dispute and limit increase"
+    },
+    {
+      "public_id": "task_generated_pro_008",
+      "title": "Payroll-ready checking and savings migration"
+    },
+    {
+      "public_id": "task_generated_pro_009",
+      "title": "Replacement checking and savings setup"
+    },
+    {
+      "public_id": "task_generated_pro_010",
+      "title": "Personal and business Silver rewards review"
+    },
+    {
+      "public_id": "task_generated_pro_011",
+      "title": "November ATM fee review across checking accounts"
+    },
+    {
+      "public_id": "task_generated_pro_012",
+      "title": "Business checking and personal savings migration"
+    },
+    {
+      "public_id": "task_generated_pro_013",
+      "title": "Two-card cash-back review and dispute submissions"
+    },
+    {
+      "public_id": "task_generated_pro_014",
+      "title": "Checking and savings setup with old account closure"
+    },
+    {
+      "public_id": "task_generated_pro_015",
+      "title": "Bonus-funded savings and checking reorganization"
+    },
+    {
+      "public_id": "task_generated_pro_016",
+      "title": "October purchase-level rewards review"
+    },
+    {
+      "public_id": "task_generated_pro_017",
+      "title": "Post-transfer banking setup and card application"
+    },
+    {
+      "public_id": "task_generated_pro_018",
+      "title": "Savings interest credit review and referral request"
+    },
+    {
+      "public_id": "task_generated_pro_019",
+      "title": "Savings interest review and EcoCard closure request"
+    },
+    {
+      "public_id": "task_generated_pro_020",
+      "title": "Savings and checking product comparison"
+    },
+    {
+      "public_id": "task_generated_pro_021",
+      "title": "Missing debit card disputes and card replacement"
+    },
+    {
+      "public_id": "task_generated_pro_022",
+      "title": "Four-card closure and retention review"
+    },
+    {
+      "public_id": "task_generated_pro_023",
+      "title": "Unauthorized ATM withdrawal and foreign fee review"
+    },
+    {
+      "public_id": "task_generated_pro_024",
+      "title": "Savings and checking replacement after transfer"
+    },
+    {
+      "public_id": "task_generated_pro_025",
+      "title": "Two-account savings interest review"
+    },
+    {
+      "public_id": "task_generated_pro_026",
+      "title": "Checking and savings comparison with account retirement"
+    },
+    {
+      "public_id": "task_generated_pro_027",
+      "title": "Camera purchase dispute and card limit review"
+    },
+    {
+      "public_id": "task_generated_pro_028",
+      "title": "October savings interest review and support follow-up"
+    },
+    {
+      "public_id": "task_generated_pro_029",
+      "title": "LLC deposit account reorganization"
+    },
+    {
+      "public_id": "task_generated_pro_030",
+      "title": "Lost wallet card security and replacement"
+    },
+    {
+      "public_id": "task_generated_pro_031",
+      "title": "Checking and savings replacement without transferring funds"
+    },
+    {
+      "public_id": "task_generated_pro_032",
+      "title": "Two-account savings interest correction request"
+    },
+    {
+      "public_id": "task_generated_pro_033",
+      "title": "Four-card rewards ledger reconciliation"
+    },
+    {
+      "public_id": "task_generated_pro_034",
+      "title": "November ATM fee ledger review"
+    },
+    {
+      "public_id": "task_generated_pro_035",
+      "title": "Range delivery dispute and credit limit request"
+    },
+    {
+      "public_id": "task_generated_pro_036",
+      "title": "Checking and savings migration within appointment scope"
+    },
+    {
+      "public_id": "task_generated_pro_037",
+      "title": "October savings interest calculation review"
+    },
+    {
+      "public_id": "task_generated_pro_038",
+      "title": "October Gold savings interest review"
+    },
+    {
+      "public_id": "task_generated_pro_039",
+      "title": "Four-card purchase rewards audit"
+    },
+    {
+      "public_id": "task_generated_pro_040",
+      "title": "Four-card October rewards dispute review"
+    },
+    {
+      "public_id": "task_generated_pro_041",
+      "title": "Four-card closure and retention decisions"
+    },
+    {
+      "public_id": "task_generated_pro_042",
+      "title": "August and September Silver rewards review"
+    },
+    {
+      "public_id": "task_generated_pro_043",
+      "title": "Two-card cash-back discrepancy review"
+    },
+    {
+      "public_id": "task_generated_pro_044",
+      "title": "Personal and business account reorganization"
+    },
+    {
+      "public_id": "task_generated_pro_045",
+      "title": "November rewards review across four cards"
+    },
+    {
+      "public_id": "task_generated_pro_046",
+      "title": "Silver savings interest review without a courtesy credit"
+    },
+    {
+      "public_id": "task_generated_pro_047",
+      "title": "Missing-card ATM fraud report and replacement request"
+    },
+    {
+      "public_id": "task_generated_pro_048",
+      "title": "Unauthorized Silver purchases and virtual card request"
+    },
+    {
+      "public_id": "task_generated_pro_049",
+      "title": "Business checking selection for a client deposit"
+    },
+    {
+      "public_id": "task_generated_pro_050",
+      "title": "Savings account selection for a one-time deposit"
+    },
+    {
+      "public_id": "task_generated_pro_051",
+      "title": "Savings and checking setup with existing card"
+    },
+    {
+      "public_id": "task_generated_pro_052",
+      "title": "Savings plan and replacement checking setup"
+    },
+    {
+      "public_id": "task_generated_pro_053",
+      "title": "Range delivery dispute and credit limit application"
+    },
+    {
+      "public_id": "task_generated_pro_054",
+      "title": "Four-card rewards dispute review"
+    },
+    {
+      "public_id": "task_generated_pro_055",
+      "title": "Personal checking and savings setup"
+    },
+    {
+      "public_id": "task_generated_pro_056",
+      "title": "November ATM fees and rebate review"
+    },
+    {
+      "public_id": "task_generated_pro_057",
+      "title": "Business card selection for media advertising spend"
+    },
+    {
+      "public_id": "task_generated_pro_058",
+      "title": "Savings account selection within a fixed deposit budget"
+    },
+    {
+      "public_id": "task_generated_pro_059",
+      "title": "Stolen wallet debit and credit card response"
+    },
+    {
+      "public_id": "task_generated_pro_060",
+      "title": "Online debit purchase dispute and card replacement"
+    },
+    {
+      "public_id": "task_generated_pro_061",
+      "title": "Wallet compromise and two-card fraud response"
+    },
+    {
+      "public_id": "task_generated_pro_062",
+      "title": "Unauthorized online debit purchase and replacement"
+    },
+    {
+      "public_id": "task_generated_pro_063",
+      "title": "Debit purchase alert and duplicate ATM fee review"
+    },
+    {
+      "public_id": "task_generated_pro_064",
+      "title": "Duplicate and recurring debit charge disputes"
+    },
+    {
+      "public_id": "task_generated_pro_065",
+      "title": "Checking referral and savings account setup"
+    },
+    {
+      "public_id": "task_generated_pro_066",
+      "title": "Gold savings interest review and product comparison"
+    },
+    {
+      "public_id": "task_generated_pro_067",
+      "title": "Savings account setup and checking balance transfer"
+    },
+    {
+      "public_id": "task_generated_pro_068",
+      "title": "Card payment, credit limit request, and business checking setup"
+    },
+    {
+      "public_id": "task_generated_pro_069",
+      "title": "Silver card fraud response and savings setup"
+    },
+    {
+      "public_id": "task_generated_pro_070",
+      "title": "Business and personal Platinum card service requests"
+    },
+    {
+      "public_id": "task_generated_pro_071",
+      "title": "Same-day ATM access and travel account setup"
+    },
+    {
+      "public_id": "task_generated_pro_072",
+      "title": "Gold savings interest review and discrepancy report"
+    },
+    {
+      "public_id": "task_generated_pro_073",
+      "title": "In-store debit fraud report and expedited replacement"
+    },
+    {
+      "public_id": "task_generated_pro_074",
+      "title": "Silver savings interest review and discrepancy report"
+    },
+    {
+      "public_id": "task_generated_pro_075",
+      "title": "Temporary ATM access for linked debit cards"
+    },
+    {
+      "public_id": "task_generated_pro_076",
+      "title": "Portfolio rewards review and Crypto card closure request"
+    },
+    {
+      "public_id": "task_generated_pro_077",
+      "title": "Missing debit card disputes and replacement"
+    },
+    {
+      "public_id": "task_generated_pro_078",
+      "title": "Gold savings interest review and discrepancy report"
+    },
+    {
+      "public_id": "task_generated_pro_079",
+      "title": "Card referral selection for a family member"
+    },
+    {
+      "public_id": "task_generated_pro_080",
+      "title": "Business checking referral for an international client"
+    },
+    {
+      "public_id": "task_generated_pro_081",
+      "title": "Silver Zoom business card closure and alternative review"
+    },
+    {
+      "public_id": "task_generated_pro_082",
+      "title": "Checking referral and duplicate ATM fee review"
+    },
+    {
+      "public_id": "task_generated_pro_083",
+      "title": "Two-account October savings interest review"
+    },
+    {
+      "public_id": "task_generated_pro_084",
+      "title": "Undelivered purchase dispute and credit card application"
+    },
+    {
+      "public_id": "task_generated_pro_085",
+      "title": "Gold card fraud dispute and savings setup"
+    },
+    {
+      "public_id": "task_generated_pro_086",
+      "title": "Silver card fraud dispute and savings-linked card selection"
+    },
+    {
+      "public_id": "task_generated_pro_087",
+      "title": "Payday deposit review and ATM fee corrections"
+    },
+    {
+      "public_id": "task_generated_pro_088",
+      "title": "Personal card selection and savings funding"
+    },
+    {
+      "public_id": "task_generated_pro_089",
+      "title": "Business checking referral for a colleague"
+    },
+    {
+      "public_id": "task_generated_pro_090",
+      "title": "Eight card purchase disputes and provisional credit review"
+    },
+    {
+      "public_id": "task_generated_pro_091",
+      "title": "Debit statement disputes and card replacement"
+    },
+    {
+      "public_id": "task_generated_pro_092",
+      "title": "Savings setup and old checking account closure"
+    },
+    {
+      "public_id": "task_generated_pro_093",
+      "title": "No-fee card and savings selection with project deposit"
+    },
+    {
+      "public_id": "task_generated_pro_094",
+      "title": "Two-card rewards review and business card closure"
+    },
+    {
+      "public_id": "task_generated_pro_095",
+      "title": "Gold card fraud dispute, balance payment, and closure"
+    },
+    {
+      "public_id": "task_generated_pro_096",
+      "title": "Declined purchase, human assistance, and backup card request"
+    },
+    {
+      "public_id": "task_generated_pro_097",
+      "title": "Business and personal checking referrals"
+    },
+    {
+      "public_id": "task_generated_pro_098",
+      "title": "Multiple debit PIN locks and security assistance"
+    }
+  ]
+}

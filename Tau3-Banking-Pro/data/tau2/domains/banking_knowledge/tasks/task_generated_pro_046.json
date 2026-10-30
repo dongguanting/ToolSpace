@@ -1,0 +1,383 @@
+{
+  "id": "task_generated_pro_046",
+  "description": {
+    "purpose": "Correct two linked months of missing Silver savings interest while preserving Priya Raman's opening instruction to receive no courtesy top-up.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Priya Raman, a 34-year-old physical therapy assistant living in Boise, Idaho. You are concerned about your savings statement and appreciative of useful help, but want the account reconciled rather than an arbitrary settlement.\n\nBegin with: 'My October savings interest looks low. Could you help me sort it out? Please correct only the interest actually missing, without any courtesy top-up.' Do not give identity details, a list of statement entries, or a proposed correction amount in this opening.\n\nIf asked relevant identity-verification questions, provide only the requested details accurately: your full name is Priya Raman; date of birth April 9, 1991; address 1842 W Alder Bend Lane, Boise, Idaho 83702; email priya.raman@example.com; telephone 208-555-0167. If asked for your customer identifier, it is usr_priya_b7e92_1854. Cooperate with confirming at least two requested identity details and allow the verification to be recorded after those details have been matched. Do not introduce statement calculations during verification.\n\nOnly in response to relevant questions about your accounts, statements, balances, benefits, or the reason for your concern, provide the relevant subset of these facts: the affected account is your Silver savings ending 4826, opened September 1, 2025, with a $10,000 external deposit available that day; September paid $32.29 and October paid $33.47; the current savings balance shown is $10,065.76. You have made no withdrawals or other deposits. Your linked Green checking ends in 7319 and currently shows $1,800. These are your only bank products and you have no credit cards. Both accounts are yours alone under the same tax identity. The app confirmed the checking link was completed and the relationship bonus active from savings opening; both remained active through September and October. If asked about checking eligibility, you kept at least $1,350 in checking throughout those months and both accounts remained in good standing. If asked about inconvenience, you spent two evenings trying to reconcile the statement. Do not volunteer these facts before a relevant question.\n\nIf asked about the earlier month, say you thought each monthly interest payment stood alone, but you may be mistaken. You do not know the correct combined rate, exact missing amounts, banking formula, or internal cause. If asked to determine the correction yourself, say: 'I can give you the statement entries, but I don't know the exact amount missing. Please work it out from the account records.'\n\nOnly after the agent establishes an actual shortfall and gives a grounded explanation of how September affects October, acknowledge: 'I see—I hadn't realized the earlier interest would feed into the next month. Please include whatever interest was genuinely missed.' Revise that belief, not your no-extra-compensation preference. If an explanation contradicts your statement facts or lacks a basis, ask for clarification instead of automatically agreeing.\n\nAccept only the interest actually missing; never authorize a courtesy top-up, arbitrary rounded settlement, or substitute goodwill payment. Keep seeking complete correction of October, including an earlier underpayment if it affected October, in your existing Silver savings account. Do not copy a proposed amount, destination, or added service merely because the agent recommends it. No product or checking-account changes are requested.\n\nBefore authorizing a monetary correction, require the agent to identify your Silver savings account, explain which payment was short, and present a calculated missing-interest amount rather than a courtesy settlement. A properly explained partial interest correction may be authorized while the rest remains open.\n\nIf the agent offers a round-up, flat goodwill substitute, or extra courtesy amount, say: 'Please don't add a courtesy amount. I only want the interest that was missing, even if that is a smaller payment.' If the offer is described as extra compensation for your inconvenience, say: 'I appreciate the offer, but I specifically don't want extra compensation. Please just correct the interest that was missing.' Never approve the extra courtesy credit; permission for calculated missing interest does not authorize extra compensation. Ground your refusal only in your opening preference and what the agent says is extra; do not claim knowledge of an approval threshold, internal payment categories, or an undisclosed correct amount.\n\nIf an unwanted extra has already been credited, say: 'That includes the extra payment I asked not to receive. Please help correct that so the account has only the missing interest.' Keep seeking correction without naming a backend remedy, and do not accept completion or stop while the unwanted extra remains.\n\nIf the agent finishes only September or proposes leaving October for a future statement, say: 'Thank you for fixing that month, but October is what brought me here. Can you finish checking and correcting that payment too?' If the agent offers only an explanation or report, or proposes another destination, say: 'I still need the October savings payment put right in that savings account. Please finish that rather than just recording the problem.' Do not approve a substitute destination or accept an explanation-only, report-only, or September-only resolution as completion.\n\nWithhold acceptance and stopping until the agent confirms both September and October shortfalls have been corrected in your existing Silver savings, explains the amounts and total credited, and gives the resulting savings balance. No courtesy addition may remain, no requested shortfall may remain unresolved, and no correction may be redirected to another account. Ask directly for any missing confirmation. Once all these conditions hold, briefly thank the agent, do not reopen the issue, and emit the following marker exactly once: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_priya_b7e92_1854": {
+              "user_id": "usr_priya_b7e92_1854",
+              "name": "Priya Raman",
+              "date_of_birth": "04/09/1991",
+              "address": "1842 W Alder Bend Lane, Boise, Idaho 83702",
+              "email": "priya.raman@example.com",
+              "phone_number": "208-555-0167",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh sole owner. Age 34 on the fixed banking date 11/14/2025. No parent relationship. Occupation belongs only in the user instructions. The patch has one exact-name match; match supplied identity details before recording verification."
+        },
+        "accounts": {
+          "data": {
+            "sav_priya_b7e92_4826": {
+              "account_id": "sav_priya_b7e92_4826",
+              "user_id": "usr_priya_b7e92_1854",
+              "class": "savings",
+              "level": "Silver Account",
+              "status": "OPEN",
+              "date_opened": "09/01/2025",
+              "current_holdings": "$10,065.76",
+              "parent_account_id": "chk_priya_b7e92_7319"
+            },
+            "chk_priya_b7e92_7319": {
+              "account_id": "chk_priya_b7e92_7319",
+              "user_id": "usr_priya_b7e92_1854",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "status": "OPEN",
+              "date_opened": "06/18/2021",
+              "current_holdings": "$1,800.00"
+            }
+          },
+          "notes": "These are the fresh customer's only deposit products. Existing linkage is corroborated by the opening memo and monthly statement detail. Green is evidence for the savings benefit, never a correction destination."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "No credit-card record belongs to usr_priya_b7e92_1854. Unrelated default customers' cards, if retained by patch semantics, do not qualify this customer for any bonus."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_priya_b7e92_open_sep": {
+              "transaction_id": "txn_priya_b7e92_open_sep",
+              "account_id": "sav_priya_b7e92_4826",
+              "date": "09/01/2025",
+              "description": "EXTERNAL ACH OPENING DEPOSIT. $10,000 available before the first day's interest accrual; no hold. Account-opening memo: Silver savings sav_priya_b7e92_4826 and Green checking chk_priya_b7e92_7319 share sole owner Priya Raman, customer usr_priya_b7e92_1854, and the same tax identity. On-screen link authorization completed; linked-checking benefit effective 09/01/2025 before accrual. Relationship-bonus eligibility approved and 0.025% relationship APY bonus active effective 09/01/2025. App benefit confirmation issued. Both accounts open and in good standing.",
+              "amount": 10000,
+              "type": "ach_transfer_in",
+              "status": "posted",
+              "available_amount": 10000,
+              "hold_amount": 0
+            },
+            "txn_priya_b7e92_int_sep": {
+              "transaction_id": "txn_priya_b7e92_int_sep",
+              "account_id": "sav_priya_b7e92_4826",
+              "date": "09/30/2025",
+              "description": "SEPTEMBER SAVINGS INTEREST, accrual 09/01/2025-09/30/2025 inclusive, 30 days. Opening principal $10,000.00; actual applied APY 4.000%. Statement convention: daily periodic rate (1 + APY/100)^(1/365) - 1, daily compounding, 365-day year, full precision retained within cycle, cent rounding only at monthly posting after the last day's accrual. Recorded closing balance $10,032.29. No withdrawals, fees, holds or other principal activity during this cycle after opening deposit. Relationship review: completed Green link, same sole ownership and tax identity, and active 0.025% relationship bonus maintained throughout cycle; both accounts open and in good standing. Green minimum daily balance at least $1,350.",
+              "amount": 32.29,
+              "type": "interest_credit",
+              "status": "posted"
+            },
+            "txn_priya_b7e92_int_oct": {
+              "transaction_id": "txn_priya_b7e92_int_oct",
+              "account_id": "sav_priya_b7e92_4826",
+              "date": "10/31/2025",
+              "description": "OCTOBER SAVINGS INTEREST, accrual 10/01/2025-10/31/2025 inclusive, 31 days. Recorded opening principal $10,032.29; actual applied APY 4.000%. Statement convention: daily periodic rate (1 + APY/100)^(1/365) - 1, daily compounding, 365-day year, full precision retained within cycle, cent rounding only at monthly posting after the last day's accrual. Recorded closing balance $10,065.76. No withdrawals, fees, holds or other principal activity during cycle. Relationship review: completed Green link, same sole ownership and tax identity, and active 0.025% relationship bonus maintained throughout cycle; both accounts open and in good standing. Green minimum daily balance at least $1,350. Activity through 11/14/2025: no later savings postings, no prior corrections or goodwill credits; November monthly interest not yet posted.",
+              "amount": 33.47,
+              "type": "interest_credit",
+              "status": "posted"
+            }
+          },
+          "notes": "Three genuine pre-existing savings transactions. Their sum is $10,065.76. Dated statement detail provides accrual conventions and historical eligibility without adding account-schema fields. Native correction transactions must be created by the credit tool, not preseeded or backdated."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Create current-session verification only after confirming at least two of date of birth, email, phone and address against the fresh user record."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty native envelope state. No capability descriptors or tool definitions are seeded. Tool availability comes from the catalog. Read-call telemetry and envelope bookkeeping are not banking outcomes."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity",
+        "name": "get_user_information_by_name",
+        "requestor": "assistant",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        }
+      },
+      {
+        "action_id": "repair_clock",
+        "name": "get_current_time",
+        "requestor": "assistant",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_auth_log",
+        "name": "log_verification",
+        "requestor": "assistant",
+        "arguments": {
+          "name": "Priya Raman",
+          "user_id": "usr_priya_b7e92_1854",
+          "address": "1842 W Alder Bend Lane, Boise, Idaho 83702",
+          "email": "priya.raman@example.com",
+          "phone_number": "208-555-0167",
+          "date_of_birth": "04/09/1991",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "g01_identity",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Priya Raman"
+        },
+        "info": "Unscored lookup support. Match the fresh record to the caller's requested identity details; the successful interaction confirms date of birth and email before g05."
+      },
+      {
+        "action_id": "g02_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        },
+        "info": "Ephemeral tool availability only."
+      },
+      {
+        "action_id": "g03_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_priya_b7e92_1854\"}"
+        },
+        "info": "Unscored evidence support: discovers both account IDs, ownership, savings class and OPEN statuses, and the absence of customer credit-card accounts."
+      },
+      {
+        "action_id": "g04_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Returns exactly 2025-11-14 03:40:00 EST; unscored timestamp support."
+      },
+      {
+        "action_id": "g06_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        },
+        "info": "Ephemeral tool availability only."
+      },
+      {
+        "action_id": "g07_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"sav_priya_b7e92_4826\"}"
+        },
+        "info": "Unscored evidence support necessary to compute the two credits: opening principal, active benefits, historical standing, posted payments, applied APY and accrual conventions. Required documents supply the governing rates."
+      },
+      {
+        "action_id": "g08_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        },
+        "info": "Ephemeral tool availability only."
+      },
+      {
+        "action_id": "g09_september",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"sav_priya_b7e92_4826\",\"amount\":2.18,\"credit_type\":\"interest_correction\"}"
+        },
+        "info": "Evaluated monetary effect for PART 1. Creates the tool's native correction transaction and raises savings holdings to $10,067.94. Correct historical September close is $10,034.47."
+      },
+      {
+        "action_id": "g10_october",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"sav_priya_b7e92_4826\",\"amount\":2.27,\"credit_type\":\"interest_correction\"}"
+        },
+        "info": "Evaluated monetary effect for PART 2. Uses corrected historical October opening principal, not current holdings. Final savings $10,070.21; no courtesy addition."
+      },
+      {
+        "action_id": "g11_unlock_report",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        },
+        "info": "Ephemeral tool availability only."
+      },
+      {
+        "action_id": "g12_report",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"sav_priya_b7e92_4826\",\"user_id\":\"usr_priya_b7e92_1854\",\"expected_apy\":4.275,\"actual_apy\":4.0,\"amount_difference\":4.45}"
+        },
+        "info": "Ancillary native reporting after both credits. No report storage is supplied, invented or evaluated. Invocation and envelope telemetry are not independent DB success requirements."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ],
+    "banking_reference_alternatives": [
+      {
+        "label": "authorized_consolidated_interest_445",
+        "evidence": "Old filtered51 review37 proves exact September2.18+October2.27=4.45 may be credited once after identifying both shortfalls and authorization. Report4.45 remains required; no goodwill or extra amount. Preserve split reference too.",
+        "actions": [
+          {
+            "action_id": "repair_identity",
+            "name": "get_user_information_by_name",
+            "requestor": "assistant",
+            "arguments": {
+              "customer_name": "Priya Raman"
+            }
+          },
+          {
+            "action_id": "repair_clock",
+            "name": "get_current_time",
+            "requestor": "assistant",
+            "arguments": {}
+          },
+          {
+            "action_id": "repair_auth_log",
+            "name": "log_verification",
+            "requestor": "assistant",
+            "arguments": {
+              "name": "Priya Raman",
+              "user_id": "usr_priya_b7e92_1854",
+              "address": "1842 W Alder Bend Lane, Boise, Idaho 83702",
+              "email": "priya.raman@example.com",
+              "phone_number": "208-555-0167",
+              "date_of_birth": "04/09/1991",
+              "time_verified": "2025-11-14 03:40:00 EST"
+            }
+          },
+          {
+            "action_id": "g01_identity",
+            "requestor": "assistant",
+            "name": "get_user_information_by_name",
+            "arguments": {
+              "customer_name": "Priya Raman"
+            },
+            "info": "Unscored lookup support. Match the fresh record to the caller's requested identity details; the successful interaction confirms date of birth and email before g05."
+          },
+          {
+            "action_id": "g02_unlock_accounts",
+            "requestor": "assistant",
+            "name": "unlock_discoverable_agent_tool",
+            "arguments": {
+              "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+            },
+            "info": "Ephemeral tool availability only."
+          },
+          {
+            "action_id": "g03_accounts",
+            "requestor": "assistant",
+            "name": "call_discoverable_agent_tool",
+            "arguments": {
+              "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+              "arguments": "{\"user_id\":\"usr_priya_b7e92_1854\"}"
+            },
+            "info": "Unscored evidence support: discovers both account IDs, ownership, savings class and OPEN statuses, and the absence of customer credit-card accounts."
+          },
+          {
+            "action_id": "g04_time",
+            "requestor": "assistant",
+            "name": "get_current_time",
+            "arguments": {},
+            "info": "Returns exactly 2025-11-14 03:40:00 EST; unscored timestamp support."
+          },
+          {
+            "action_id": "g06_unlock_history",
+            "requestor": "assistant",
+            "name": "unlock_discoverable_agent_tool",
+            "arguments": {
+              "agent_tool_name": "get_bank_account_transactions_9173"
+            },
+            "info": "Ephemeral tool availability only."
+          },
+          {
+            "action_id": "g07_history",
+            "requestor": "assistant",
+            "name": "call_discoverable_agent_tool",
+            "arguments": {
+              "agent_tool_name": "get_bank_account_transactions_9173",
+              "arguments": "{\"account_id\":\"sav_priya_b7e92_4826\"}"
+            },
+            "info": "Unscored evidence support necessary to compute the two credits: opening principal, active benefits, historical standing, posted payments, applied APY and accrual conventions. Required documents supply the governing rates."
+          },
+          {
+            "action_id": "g08_unlock_credit",
+            "requestor": "assistant",
+            "name": "unlock_discoverable_agent_tool",
+            "arguments": {
+              "agent_tool_name": "apply_savings_account_credit_6831"
+            },
+            "info": "Ephemeral tool availability only."
+          },
+          {
+            "action_id": "g09_september",
+            "requestor": "assistant",
+            "name": "call_discoverable_agent_tool",
+            "arguments": {
+              "agent_tool_name": "apply_savings_account_credit_6831",
+              "arguments": "{\"account_id\": \"sav_priya_b7e92_4826\", \"amount\": 4.45, \"credit_type\": \"interest_correction\"}"
+            },
+            "info": "Evaluated monetary effect for PART 1. Creates the tool's native correction transaction and raises savings holdings to $10,067.94. Correct historical September close is $10,034.47."
+          },
+          {
+            "action_id": "g11_unlock_report",
+            "requestor": "assistant",
+            "name": "unlock_discoverable_agent_tool",
+            "arguments": {
+              "agent_tool_name": "submit_interest_discrepancy_report_7294"
+            },
+            "info": "Ephemeral tool availability only."
+          },
+          {
+            "action_id": "g12_report",
+            "requestor": "assistant",
+            "name": "call_discoverable_agent_tool",
+            "arguments": {
+              "agent_tool_name": "submit_interest_discrepancy_report_7294",
+              "arguments": "{\"account_id\":\"sav_priya_b7e92_4826\",\"user_id\":\"usr_priya_b7e92_1854\",\"expected_apy\":4.275,\"actual_apy\":4.0,\"amount_difference\":4.45}"
+            },
+            "info": "Ancillary native reporting after both credits. No report storage is supplied, invented or evaluated. Invocation and envelope telemetry are not independent DB success requirements."
+          }
+        ]
+      }
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_savings_accounts_silver_account_001",
+    "doc_savings_accounts_silver_account_002",
+    "doc_savings_accounts_silver_account_003",
+    "doc_savings_accounts_silver_account_005",
+    "doc_savings_accounts_silver_account_006"
+  ]
+}

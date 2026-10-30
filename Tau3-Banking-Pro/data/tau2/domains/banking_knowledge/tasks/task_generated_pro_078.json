@@ -1,0 +1,227 @@
+{
+  "id": "task_generated_pro_078",
+  "description": {
+    "purpose": "Investigate and correct the October interest underpayment on Amina Duarte's Gold Savings account, then report the APY-selection discrepancy.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “I think the interest that posted to my savings account this month is too low. Could you help me review it and fix it if something went wrong?” Do not initially volunteer identity details, product holdings, the posted amount, an expected rate, or a correction amount.\n\nIf the agent asks for identity-verification information, say that you are Amina Duarte and provide only the requested configured details: date of birth 04/12/1986, address 1847 Alder Grove Lane, Sacramento, CA 95818, email amina.duarte.ledger@example.com, and phone number 916-555-2846. Do not volunteer the account and statement details at this stage. Provide verification information only in response to a relevant request, and permit account changes only after the agent confirms that your identity and ownership of the affected account have been established.\n\nIf asked which account, balance, or related products are involved, identify your Gold Savings account, say that its eligible October balance was about $90,000, and identify your active Green and Purple checking accounts, EcoCard, and Platinum Rewards Card. Do not state which product benefits should be selected or calculate the expected rate.\n\nIf asked about the statement transaction, amount, or accrual period, say that $460.98 posted on November 1 as the interest credit for October. Do not claim to know the exact correct interest, rate, cause, or correction amount. If asked for those details, say you are not sure and want the agent to review the records and applicable benefits.\n\nBefore authorizing a credit, require the agent to identify the affected Gold Savings account, the October statement period, and the proposed correction amount. Once the agent explains that the posted interest was underpaid and gives a correction amount based on the reviewed products, ask for the full verified underpayment to be credited to the Gold Savings account.\n\nYou want the full underpayment established by the review credited to the affected Gold Savings account, not a smaller courtesy amount or an explanation alone. If the agent proposes no credit, a partial credit, or an unrelated goodwill amount despite acknowledging the underpayment, respond: “I would like the actual underpayment from this interest period corrected in full. Could you please recheck the account details and the posted amount before I agree to anything else?” Do not authorize a substitute goodwill amount or a partial settlement while the verified interest underpayment remains unresolved.\n\nAfter the agent confirms that the full correction has been applied, ask for the underlying interest-selection problem to be investigated so future interest uses the appropriate active products. You want that preventive follow-up only after the correction is completed.\n\nIf the agent treats the credit as complete but declines or omits the follow-up, respond: “Thank you for fixing this month's amount, but I also want the underlying problem looked into so it does not happen again. Can you take care of that follow-up?” Do not accept final closure while the preventive follow-up remains unconfirmed.\n\nWithhold acceptance until the agent confirms both that the full calculated interest correction was credited to the Gold Savings account and that the underlying discrepancy was submitted for investigation after the correction. If either outcome is missing, ask directly for the missing outcome. Only after both outcomes are confirmed and nothing remains unresolved, thank the agent briefly and end with exactly one ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_amina_duarte_7q4m": {
+              "user_id": "usr_amina_duarte_7q4m",
+              "name": "Amina Duarte",
+              "date_of_birth": "04/12/1986",
+              "address": "1847 Alder Grove Lane, Sacramento, CA 95818",
+              "email": "amina.duarte.ledger@example.com",
+              "phone_number": "916-555-2846"
+            }
+          },
+          "notes": "Fresh customer identity for Amina Duarte. She is 39 on 11/14/2025 and works as a small-business bookkeeper in Sacramento, California."
+        },
+        "accounts": {
+          "data": {
+            "acct_gold_sav_amina_8v3k": {
+              "account_id": "acct_gold_sav_amina_8v3k",
+              "user_id": "usr_amina_duarte_7q4m",
+              "class": "savings",
+              "level": "Gold Savings Account",
+              "status": "ACTIVE",
+              "current_holdings": "90460.98",
+              "date_opened": "03/18/2022"
+            },
+            "acct_green_chk_amina_5n8d": {
+              "account_id": "acct_green_chk_amina_5n8d",
+              "user_id": "usr_amina_duarte_7q4m",
+              "class": "checking",
+              "level": "Green Account",
+              "status": "ACTIVE",
+              "current_holdings": "8425.36",
+              "date_opened": "08/09/2021"
+            },
+            "acct_purple_chk_amina_2r6w": {
+              "account_id": "acct_purple_chk_amina_2r6w",
+              "user_id": "usr_amina_duarte_7q4m",
+              "class": "checking",
+              "level": "Purple Account",
+              "status": "ACTIVE",
+              "current_holdings": "3178.44",
+              "date_opened": "01/22/2024"
+            }
+          },
+          "notes": "All three bank accounts are active and belong to Amina's same customer profile. The Gold Savings holdings equal the constant $90,000.00 October eligible balance plus the posted $460.98 October interest credit."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_ecocard_amina_9p2x": {
+              "account_id": "cc_ecocard_amina_9p2x",
+              "user_id": "usr_amina_duarte_7q4m",
+              "card_type": "EcoCard",
+              "account_status": "active",
+              "current_balance": "284.17",
+              "date_of_account_open": "06/14/2023",
+              "reward_points": "1940",
+              "card_last_4_digits": "7318"
+            },
+            "cc_platinum_amina_4h7c": {
+              "account_id": "cc_platinum_amina_4h7c",
+              "user_id": "usr_amina_duarte_7q4m",
+              "card_type": "Platinum Rewards Card",
+              "account_status": "active",
+              "current_balance": "912.63",
+              "date_of_account_open": "11/05/2020",
+              "reward_points": "12840",
+              "card_last_4_digits": "4062"
+            }
+          },
+          "notes": "Both qualifying credit cards are active and held under Amina's customer profile."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "txn_oct_interest_amina_1m9f": {
+              "transaction_id": "txn_oct_interest_amina_1m9f",
+              "account_id": "acct_gold_sav_amina_8v3k",
+              "date": "11/01/2025",
+              "description": "October Gold Savings interest on constant $90,000.00 eligible balance for 31 days; system applied 6.20% APY using lower relationship benefits",
+              "amount": 460.98,
+              "type": "interest_credit",
+              "status": "posted"
+            }
+          },
+          "notes": "The sole initial savings transaction is the posted October interest credit. No correction transaction is pre-seeded."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initially. A current-session verification record must be created during the interaction."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discoverable-tool state starts empty; tool availability is provided by the environment catalog, not seeded database rows."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "gold_01_locate_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        }
+      },
+      {
+        "action_id": "gold_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "usr_amina_duarte_7q4m",
+          "address": "1847 Alder Grove Lane, Sacramento, CA 95818",
+          "email": "amina.duarte.ledger@example.com",
+          "phone_number": "916-555-2846",
+          "date_of_birth": "04/12/1986",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "gold_04_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_05_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_amina_duarte_7q4m\"}"
+        }
+      },
+      {
+        "action_id": "gold_06_unlock_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "gold_07_read_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_gold_sav_amina_8v3k\"}"
+        }
+      },
+      {
+        "action_id": "gold_08_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        }
+      },
+      {
+        "action_id": "gold_09_apply_correction",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"acct_gold_sav_amina_8v3k\",\"amount\":46.9,\"credit_type\":\"interest_correction\"}"
+        }
+      },
+      {
+        "action_id": "gold_10_unlock_report",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        }
+      },
+      {
+        "action_id": "gold_11_submit_report",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"acct_gold_sav_amina_8v3k\",\"user_id\":\"usr_amina_duarte_7q4m\",\"expected_apy\":6.85,\"actual_apy\":6.2,\"amount_difference\":46.9}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_bank_accounts_bank_accounts_(general)_046",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_purple_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_gold_account_014"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "task_generated_pro_089",
+  "description": {
+    "purpose": "Determine the highest-value qualifying business checking referral for Theo Alvarez's colleague's expected $30,000 deposit and submit exactly one eligible referral.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concisely: “A colleague is about to open a business checking account and expects to bring in about $30,000. Which referral would give me the biggest bonus?” Do not initially name a preferred product or calculate the bonus.\n\nIf asked who you are or for identifying information, say you are Theo Alvarez, a 28-year-old laboratory technician in Sacramento, California. Give your date of birth as May 18, 1997, your address as 1842 Mariposa Avenue, Sacramento, CA 95818, and your customer number usr_theo_alvarez_853009 if requested. If asked about your checking relationship, say your only checking account is a Hunter Green business checking account opened April 1, 2025. Add naturally that you had assumed you might need to refer the same account type, but you are not sure. Do not volunteer Marcus's details or the prior-referral timing at this stage.\n\nIf asked about the referred business or owner, say Marcus Chen is the 33-year-old separate primary owner and lives at 905 Harbor Point Drive, West Sacramento, CA 95691. Explain that he is a different person and primary owner from you and every existing Rho-Bank business-account owner, and that he has had no Rho-Bank checking, savings, or closed account during the past 12 months.\n\nIf asked about funding, say Marcus expects to deposit exactly $30,000 in new money from an external bank within 90 days, can retain the qualifying funds for at least 30 days after the qualifying period, and will not use another new-account or sign-up promotion. If asked about your referral history, say your only completed referral was for Hunter Green on November 4, 2025, at about 8:00 PM Eastern, and you have had no other referrals this year. Do not calculate the rolling window or claim to know which product wins.\n\nTheo wants to maximize his own per-referral bonus subject to the colleague's actual $30,000 expected deposit. Theo will submit exactly one referral and will not authorize a referral that the stated customer, prospect, timing, or deposit facts make ineligible.\n\nIf the agent proposes Hunter Green or another lower-paying product merely because you own it, say: “I am not choosing based on the account name or what I already have. Please compare the bonus I could actually earn with the roughly $30,000 deposit.” Theo does not authorize or submit a referral for a lower-paying product while a higher-paying compatible option remains unresolved.\n\nIf the agent proposes Beige, True Blue, a split strategy, or multiple referrals, say: “The available new deposit is only about $30,000, and I only want one referral for the best option that fits. Please check again before I submit anything.” Theo does not authorize an account type requiring more than $30,000 and does not submit multiple referral records.\n\nIf the agent says the referral is automatically denied because of the recent-referral limit, point out that your only completed referral was on November 4 at about 8:00 PM Eastern and ask the agent to check the exact timing again.\n\nDo not authorize submission until the agent has identified one product as offering the largest bonus compatible with the stated $30,000 deposit. Do not authorize submission until the agent has established from recognizable facts that your tenure, recent referral timing, and Marcus's customer history, address, ownership, and funding circumstances do not cause denial. Authorize only one referral for the identified product, with no additional or substitute referral.\n\nOnce the agent explains that you may refer a different checking product and identifies an eligible maximizing option, drop your same-product assumption. If the recommendation fits the $30,000 limit and the other disclosed eligibility facts, ask the agent to proceed with one referral for that option.\n\nDo not accept the resolution until you are told that World Blue is the selected maximizing option for the expected $30,000 deposit. Do not accept the resolution until you receive confirmation that one World Blue referral has been submitted under your customer profile without automatic denial. If either condition is missing, ask for the missing result and do not end the conversation.\n\nAfter both completion conditions are satisfied, briefly thank the agent and end with exactly one ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_853009": {
+              "user_id": "usr_theo_alvarez_853009",
+              "name": "Theo Alvarez",
+              "date_of_birth": "05/18/1997",
+              "address": "1842 Mariposa Avenue, Sacramento, CA 95818",
+              "email": "theo.alvarez.853009@example.com",
+              "phone_number": "+1-916-555-7314",
+              "rho_bank_plus_subscription": false
+            },
+            "usr_marcus_chen_prospect_853009": {
+              "user_id": "usr_marcus_chen_prospect_853009",
+              "name": "Marcus Chen",
+              "date_of_birth": "09/08/1992",
+              "address": "905 Harbor Point Drive, West Sacramento, CA 95691",
+              "email": "marcus.chen.prospect.853009@example.com",
+              "phone_number": "+1-916-555-8462",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Theo's customer identity and Marcus Chen's prospective-owner identity. Marcus has no row in accounts, establishing that no checking, savings, or closed account is present for him in this task state."
+        },
+        "accounts": {
+          "data": {
+            "acct_theo_hunter_853009": {
+              "account_id": "acct_theo_hunter_853009",
+              "user_id": "usr_theo_alvarez_853009",
+              "class": "business_checking",
+              "level": "Hunter Green Account",
+              "status": "open",
+              "date_opened": "04/01/2025",
+              "current_holdings": "8250.00"
+            }
+          },
+          "notes": "Theo's open Hunter Green Account is his oldest and only checking account. No account belongs to Marcus Chen."
+        },
+        "referrals": {
+          "data": {
+            "ref_prior_theo_853009": {
+              "referral_id": "ref_prior_theo_853009",
+              "referrer_id": "usr_theo_alvarez_853009",
+              "referred_account_type": "Hunter Green Account",
+              "referral_status": "COMPLETE",
+              "date": "11/04/2025 20:00:00 EST"
+            }
+          },
+          "notes": "Theo's only pre-existing referral. It completed before the rolling nine-day window that begins at 11/05/2025 03:40:00 EST; no World Blue referral initially exists."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "action_submit_world_blue_referral",
+        "requestor": "user",
+        "name": "submit_referral",
+        "arguments": {
+          "user_id": "usr_theo_alvarez_853009",
+          "account_type": "World Blue Account"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "submit_referral"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_047",
+    "doc_bank_accounts_bank_accounts_(general)_048",
+    "doc_business_checking_accounts_beige_012",
+    "doc_business_checking_accounts_cobalt_blue_001",
+    "doc_business_checking_accounts_hunter_green_001",
+    "doc_business_checking_accounts_lime_green_003",
+    "doc_business_checking_accounts_navy_blue_001",
+    "doc_business_checking_accounts_sky_blue_001",
+    "doc_business_checking_accounts_true_blue_002",
+    "doc_business_checking_accounts_world_blue_001",
+    "doc_business_checking_accounts_world_blue_007"
+  ]
+}

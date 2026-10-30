@@ -1,0 +1,294 @@
+{
+  "id": "task_generated_pro_043",
+  "description": {
+    "purpose": "Investigate Naomi Bennett's two Silver-card reward schedules and submit only the four genuine cash-back discrepancies for review, without changing financial balances.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Naomi Bennett, a 48-year-old independent software support specialist living in Sacramento, California. You are concerned about your rewards and want accurate review and submission of actual errors, not an unrelated banking change.\n\nBegin with: “The cash back on my Business Silver card looks lower than I expected. Could you help me check it?” Do not initially mention the personal-card concern or suggest rates, affected purchases, or an amount.\n\nIf asked for identity or contact information, give only the requested facts: Naomi Bennett; date of birth February 8, 1977; phone 916-555-0186; email naomi.bennett@example.net; address 2816 Cedarfield Lane, Sacramento, CA 95818. If asked about the activity or period, explain that you checked the latest rewards summaries but cannot retrieve detailed statements or transaction references now. You do not know which entries are wrong; ask the bank to investigate the available recent activity. If asked directly what cards you own, answer truthfully that you have Business Silver and personal Silver Rewards cards, without introducing the later concern prematurely.\n\nOnly after the agent explains at least one business-card rewards discrepancy, ask: “Could you check my personal Silver Rewards card as well? Finding that makes me worry about the rest of my rewards.” If the personal card has already been reviewed, acknowledge that progress rather than demanding a duplicate review. Do not introduce this request without its trigger.\n\nKeep the goal of investigating and submitting warranted errors. Once the personal-card review is raised, do not abandon it, and do not knowingly dispute purchases the agent describes as correctly rewarded. If asked to determine eligibility or calculate a shortfall, say you are not sure and need the bank to work it out; do not invent policy knowledge or transaction details. You may learn the findings from the agent without independently checking their arithmetic.\n\nIf the agent proposes stopping after only one card once both are in scope, explains errors without offering submission, or includes purchases they have just described as correct, ask them to finish both reviews and submit the actual errors rather than a blanket complaint. If an incomplete action has already happened, ask them to handle the remaining issue before closing. Authorize only identified rewards-discrepancy submissions, not unrelated product changes or knowingly incorrect disputes, even if recommended. Do not copy an incompatible proposal into your request.\n\nBefore using any supplied submission capability, wait until the agent identifies the affected card and purchase, explains the suspected rewards discrepancy, and provides its transaction reference. Then follow the supplied instructions using your own identity and the confirmed reference. Do not supply sensitive card details.\n\nAccept and stop only after both cards have been addressed, their findings explained, and every error identified by the agent has a submission confirmation. Understand whether the result is a review request rather than an immediate credit and what remains in the review process. If any requested review or submission is still outstanding, ask about it instead of closing. Once these conditions hold, briefly acknowledge the submissions, thank the agent, and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_naomi_902": {
+              "user_id": "usr_naomi_902",
+              "name": "Naomi Bennett",
+              "date_of_birth": "02/08/1977",
+              "address": "2816 Cedarfield Lane, Sacramento, CA 95818",
+              "email": "naomi.bennett@example.net",
+              "phone_number": "916-555-0186",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Naomi is 48 on the fixed scenario date 11/14/2025 and works independently as a software support specialist. She is the sole owner of both supplied cards, with no parent or delegated ownership relationship. She initially suspects a business-card rewards shortfall but lacks detailed statements and transaction IDs."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_nb_business_902": {
+              "account_id": "cc_nb_business_902",
+              "user_id": "usr_naomi_902",
+              "card_type": "Business Silver Rewards Card",
+              "date_of_account_open": "04/18/2025",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "25000",
+              "current_balance": "1230",
+              "past_due_amount": "0",
+              "reward_points": "8075"
+            },
+            "cc_nb_personal_902": {
+              "account_id": "cc_nb_personal_902",
+              "user_id": "usr_naomi_902",
+              "card_type": "Silver Rewards Card",
+              "date_of_account_open": "02/07/2023",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "15000",
+              "current_balance": "362",
+              "past_due_amount": "0",
+              "reward_points": "185"
+            }
+          },
+          "notes": "Complete account history for usr_naomi_902: these are her only credit-card accounts; cc_nb_business_902 is her first and only Business Silver account, with no prior or closed Business Silver account. Both cards are legitimately approved and active. The October billing cycle for cc_nb_business_902 ended before 11/14/2025 and all three supplied October business entries have final posted rewards. No separate promotional enrollment exists or is needed. No new application or credit review is in scope. Card suffixes are omitted because they are unnecessary."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_nb_b_travel_902": {
+              "transaction_id": "txn_nb_b_travel_902",
+              "user_id": "usr_naomi_902",
+              "credit_card_account_id": "cc_nb_business_902",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/08/2025",
+              "merchant_name": "Cedar Harbor Hotel",
+              "category": "Travel",
+              "transaction_amount": "735.00",
+              "rewards_earned": "7350",
+              "status": "COMPLETED"
+            },
+            "txn_nb_b_microsoft_902": {
+              "transaction_id": "txn_nb_b_microsoft_902",
+              "user_id": "usr_naomi_902",
+              "credit_card_account_id": "cc_nb_business_902",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/12/2025",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "230.00",
+              "rewards_earned": "460",
+              "status": "COMPLETED"
+            },
+            "txn_nb_b_software_902": {
+              "transaction_id": "txn_nb_b_software_902",
+              "user_id": "usr_naomi_902",
+              "credit_card_account_id": "cc_nb_business_902",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/24/2025",
+              "merchant_name": "Signal Orchard Software",
+              "category": "Software",
+              "transaction_amount": "265.00",
+              "rewards_earned": "265",
+              "status": "COMPLETED"
+            },
+            "txn_nb_p_microsoft_902": {
+              "transaction_id": "txn_nb_p_microsoft_902",
+              "user_id": "usr_naomi_902",
+              "credit_card_account_id": "cc_nb_personal_902",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/10/2025",
+              "merchant_name": "Microsoft",
+              "category": "Software",
+              "transaction_amount": "185.00",
+              "rewards_earned": "185",
+              "status": "COMPLETED"
+            },
+            "txn_nb_p_groceries_902": {
+              "transaction_id": "txn_nb_p_groceries_902",
+              "user_id": "usr_naomi_902",
+              "credit_card_account_id": "cc_nb_personal_902",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/23/2025",
+              "merchant_name": "Riverbend Market",
+              "category": "Groceries",
+              "transaction_amount": "146.00",
+              "rewards_earned": "0",
+              "status": "COMPLETED"
+            },
+            "txn_nb_p_fee_902": {
+              "transaction_id": "txn_nb_p_fee_902",
+              "user_id": "usr_naomi_902",
+              "credit_card_account_id": "cc_nb_personal_902",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "10/25/2025",
+              "merchant_name": "Rho-Bank",
+              "category": "Fees",
+              "transaction_amount": "31.00",
+              "rewards_earned": "0",
+              "status": "COMPLETED"
+            },
+            "txn_nb_p_pending_902": {
+              "transaction_id": "txn_nb_p_pending_902",
+              "user_id": "usr_naomi_902",
+              "credit_card_account_id": "cc_nb_personal_902",
+              "credit_card_type": "Silver Rewards Card",
+              "transaction_date": "11/13/2025",
+              "merchant_name": "Alder Coast Rail",
+              "category": "Travel",
+              "transaction_amount": "360.00",
+              "rewards_earned": "0",
+              "status": "PENDING"
+            }
+          },
+          "notes": "These seven rows are the complete available recent activity for usr_naomi_902. Rewards fields are legacy points, not dollars. COMPLETED means settled and posted; all October rewards are final at the fixed call time 2025-11-14 03:40:00 EST. txn_nb_b_travel_902 is direct lodging billed by Cedar Harbor Hotel itself. txn_nb_b_microsoft_902 is a direct ordinary Microsoft software subscription, not a gift card. txn_nb_b_software_902 is a direct SaaS subscription billed by Signal Orchard Software itself, a merchant absent from the Business Silver exclusion list. txn_nb_p_microsoft_902 is a direct Microsoft software subscription, not hardware, a gift card, or a stored-value product. txn_nb_p_groceries_902 is ordinary groceries only, with no gift cards, person-to-person payments, fees, interest, or bank insurance. txn_nb_p_fee_902 is an assessed Rho-Bank fee, not a merchant purchase; its assessment is not challenged and no special reward exception applies. txn_nb_p_pending_902 is an unposted rail authorization and remains pending throughout this call; it is excluded from the posted personal balance. There are no refunds, returns, credits, later category updates, third-party wallets, processor reclassifications, mixed-category portions, or pending adjustments affecting any completed entry."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Initially empty. The user-facing submission tool creates review requests using generated dispute IDs. No existing filing is present for any supplied purchase."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Disputes are submitted for review, not automatically resolved. Submission does not repair rewards or credit money."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty handoff log. Tool availability comes from the catalog. A GIVEN row is operational support and is not an independently evaluated objective."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Naomi Bennett"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Naomi Bennett",
+          "user_id": "usr_naomi_902",
+          "address": "2816 Cedarfield Lane, Sacramento, CA 95818",
+          "email": "naomi.bennett@example.net",
+          "phone_number": "916-555-0186",
+          "date_of_birth": "02/08/1977",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "nb_lookup_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Naomi Bennett"
+        },
+        "info": "Reference-only lookup after Naomi provides her name; discovers the owner identifier. Read telemetry is not evaluated."
+      },
+      {
+        "action_id": "nb_lookup_cards",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "usr_naomi_902"
+        },
+        "info": "Reference-only evidence for product schedules and the opening-relative promotion window."
+      },
+      {
+        "action_id": "nb_lookup_activity",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_naomi_902"
+        },
+        "info": "Reference-only discovery of purchase identifiers, dates, categories, amounts, posted status, and recorded points. Explain the business finding, then address Naomi's triggered personal-card concern. Neither this read nor conversational order is independently scored."
+      },
+      {
+        "action_id": "nb_give_submission",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_naomi_902\",\"transaction_id\":\"txn_nb_b_travel_902\"}"
+        },
+        "info": "Unscored handoff after identifying the discrepancy. Supply the confirmed references for all four findings; Naomi uses the capability only after the corresponding explanation."
+      },
+      {
+        "action_id": "nb_submit_business_travel",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_naomi_902\",\"transaction_id\":\"txn_nb_b_travel_902\"}"
+        },
+        "info": "Submit the hotel rewards discrepancy for review; no financial credit."
+      },
+      {
+        "action_id": "nb_submit_business_software",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_naomi_902\",\"transaction_id\":\"txn_nb_b_software_902\"}"
+        },
+        "info": "Submit the post-promotion software discrepancy after explaining the finding and supplying this reference."
+      },
+      {
+        "action_id": "nb_submit_personal_software",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_naomi_902\",\"transaction_id\":\"txn_nb_p_microsoft_902\"}"
+        },
+        "info": "Submit the personal-card software discrepancy under the personal schedule."
+      },
+      {
+        "action_id": "nb_submit_personal_groceries",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"usr_naomi_902\",\"transaction_id\":\"txn_nb_p_groceries_902\"}"
+        },
+        "info": "Submit the omitted ordinary-purchase earnings. Filing order among the four is unrestricted; evaluate persistent outcomes only."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_business_credit_cards_business_silver_rewards_card_012",
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_002"
+  ]
+}

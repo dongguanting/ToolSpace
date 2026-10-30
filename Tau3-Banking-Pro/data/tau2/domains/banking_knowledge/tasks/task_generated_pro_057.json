@@ -1,0 +1,91 @@
+{
+  "id": "task_generated_pro_057",
+  "description": {
+    "purpose": "Choose and apply for the single business credit card that provides Naomi Bennett the greatest first-year monetary return on one planned $75,000 media advertising purchase.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin cautiously by saying: “I have a large business advertising invoice due next week and want one new business card that gives me the best first-year return on that purchase. Can you recommend one?”\n\nIf asked about the purchase amount, merchant, timing, or category, explain that it will be one $75,000 upfront payment to Desert Reach Media on November 20, 2025. The vendor has confirmed that it will submit the charge under an eligible media-advertising category code. No returns or credits are expected. Do not volunteer income, credit scores, existing-customer status, or authorization to apply before a relevant question.\n\nIf asked about existing banking relationships, the comparison metric, or splitting the payment, explain that you already have an open Rho-Bank business checking account. Say that you want cash back plus any acquisition credit that actually applies to you, minus the applicable first-year annual fee. You assign no value to unrelated travel perks. The following commitment is immutable: choose the card with the greatest net dollar return for this single planned purchase.\n\nYou will open at most one new business credit card and will keep the $75,000 invoice as one charge rather than splitting it.\n\nIf asked for identity, income, business-credit information, or application details, provide: Naomi Bennett; date of birth June 18, 1996; independent event planner; 1842 E. Coronado Rd, Phoenix, Arizona 85006; naomi.bennett.2025@example.com; +1-602-555-0147; annual income $238,000; personal credit score 789; established business with PAYDEX 81; primary owner; no Rho-Bank Plus subscription. Explain that you can provide business financials and authorize the ordinary credit review.\n\nDo not apply until one recommendation has been made and its reward, promotion, fee, net total, and purchase-capacity implications have been explained.\n\nApply only for the card that is shown to provide the highest net return under your stated metric.\n\nIf the agent lists several cards without selecting one, ask the agent to compare their net first-year dollar returns for this invoice and make one recommendation.\n\nIf the agent recommends a card based only on a headline rate, premium perks, or gross rewards, say: “I only want the best dollar return for this invoice after the first-year fee and any promotion that actually applies to me. Could you compare those totals again?” Naomi does not authorize an application based on a headline rate or unrelated perk value rather than the requested net-return comparison.\n\nIf the agent proposes multiple cards, a second product, or splitting the invoice, say: “I need one card for one upfront payment, not several applications or a split charge. Please make the best recommendation within that boundary.” Naomi authorizes no second application and no plan requiring the invoice to be divided.\n\nIf the agent proposes applying before completing the comparison or proposes a card that has not been established as the winner, say: “Please do not submit that yet. I need one clear recommendation and the net dollar total for this purchase before I agree to an application.” Naomi does not authorize any application until the comparison is complete, and she never authorizes an application for a card other than the established winner.\n\nAuthorization may be given only after the agent has named exactly one recommended business card.\n\nAuthorization may be given only after the agent has stated the recommended card’s cash-back amount, applicable promotional amount, applicable first-year annual fee, and resulting net return.\n\nAuthorization may be given only after the agent has established that the recommendation has a greater net return than both alternatives under your stated metric.\n\nAuthorization may be given only after the agent has explained that the $75,000 purchase is within the recommended product’s documented approved-limit range while making clear that approval remains subject to underwriting.\n\nOnce the agent identifies one card as the unique highest-return choice and explains its reward, promotion, fee, comparison, and capacity context, ask whether the stated cash back minus the applicable fee is the final net return. If the answer is consistent, authorize one application for that recommended card using your stated income and no Rho-Bank Plus subscription.\n\nRemain cautious until the comparison is complete, become reassured after a clear and consistent explanation, and express appreciation only after submission is confirmed. If the agent refuses to compare the cards or repeatedly cannot submit the agreed application after one clarification, ask to speak with a human. Do not request escalation during a normal successful resolution.\n\nDo not accept completion until you receive confirmation that exactly one application was submitted for the Business Platinum Rewards Card in Naomi Bennett’s name with annual income of $238,000.\n\nDo not accept completion if any Bronze or Silver application was submitted during the call.\n\nOnly after all of those completion conditions hold, briefly thank the agent and end with the stop marker below. Do not stop after a recommendation alone or after an application for a different card.\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_naomi_bennett_9a71e4": {
+              "user_id": "usr_naomi_bennett_9a71e4",
+              "name": "Naomi Bennett",
+              "date_of_birth": "06/18/1996",
+              "address": "1842 E. Coronado Rd, Phoenix, AZ 85006",
+              "email": "naomi.bennett.2025@example.com",
+              "phone_number": "+1-602-555-0147",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Naomi Bennett is the configured 29-year-old customer. Her conversational qualification facts are annual income $238,000, personal credit score 789, and occupation independent event planner; credit scores and occupation are not columns in this table."
+        },
+        "accounts": {
+          "data": {
+            "acct_naomi_business_checking_61d8af": {
+              "account_id": "acct_naomi_business_checking_61d8af",
+              "class": "business_checking",
+              "current_holdings": "98450.00",
+              "date_opened": "03/12/2022",
+              "level": "Business Checking Account",
+              "status": "open",
+              "user_id": "usr_naomi_bennett_9a71e4"
+            }
+          },
+          "notes": "This open business checking account predates 11/14/2025 and establishes Naomi's existing Rho-Bank relationship. Its balance is not used to calculate card rewards."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No card application exists initially. The successful interaction creates exactly one Business Platinum Rewards Card application; no approved account or purchase transaction is created."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "action_apply_platinum_01",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Business Platinum Rewards Card",
+          "customer_name": "Naomi Bennett",
+          "annual_income": 238000,
+          "rho_bank_subscription": false
+        },
+        "info": "Submit the single application only after the user-visible comparison and authorization conditions are satisfied.",
+        "compare_args": [
+          "card_type",
+          "customer_name",
+          "annual_income",
+          "rho_bank_subscription"
+        ]
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_bronze_rewards_card_001",
+    "doc_business_credit_cards_business_bronze_rewards_card_002",
+    "doc_business_credit_cards_business_bronze_rewards_card_010",
+    "doc_business_credit_cards_business_platinum_rewards_card_001",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_business_credit_cards_business_platinum_rewards_card_008",
+    "doc_business_credit_cards_business_platinum_rewards_card_011",
+    "doc_business_credit_cards_business_silver_rewards_card_001",
+    "doc_business_credit_cards_business_silver_rewards_card_002"
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "id": "task_generated_pro_067",
+  "description": {
+    "purpose": "Help Marcus Okafor choose and open one suitable savings account, move the full balance from Green checking into it, and close Green while preserving Blue checking.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin by saying: “My old Green checking account is due to be closed today, and I want to move its money into one savings account that fits how I actually use it. Can you help me handle both?” Do not initially volunteer identity details, balances, opening dates, detailed savings preferences, a product recommendation, or policy conclusions.\n\nIf the agent asks for identity-verification information, provide your full name Marcus Okafor, date of birth 03/22/1977, address 1824 T Street, Sacramento, CA 95811, email marcus.okafor1149@example.com, and phone number 916-555-0148 accurately and cooperatively. Do not disclose an internal customer identifier.\n\nIf asked about your savings use, preferences, or affordable balance, say that you can reliably maintain about $3,000, may make around 12 withdrawals in a busy month or statement cycle, and want daily compounding, access to a relationship bonus, ATM-fee rebates, and built-in goals tracking. You are unsure which account best satisfies all of that, so ask the agent to investigate and give one definitive recommendation rather than a list.\n\nIf asked which accounts are involved, how much to move, their age, or the closure notice, explain that Green holds $3,000, was opened in July, and received closure notice on November 11; Blue was opened recently and is the checking account you want to keep. Authorize moving the full $3,000 from Green once the selected savings account is ready.\n\nI want exactly one new savings account, not multiple accounts or a split allocation.\nThe selected account must fit my sustainable $3,000 balance, expected withdrawal activity, daily compounding, relationship-benefit availability, ATM-rebate support, and goals-tracking preferences together.\nI want the full $3,000 moved from Green into the selected savings account and then want Green closed.\nBlue checking must remain open and unchanged.\n\nIf the agent proposes multiple savings accounts, a split allocation, or another product to cover different preferences, say: “Managing another combination defeats the purpose of simplifying; please find one account that covers my requirements.” Do not authorize opening more than one new account or dividing the $3,000 among products.\nIf the agent recommends an account mainly for its yield or withdrawal count while it requires more than $3,000 or leaves out another requested feature, say: “The headline number is not enough; please check one recommendation against all of my needs.” Do not authorize opening an account until the agent confirms in understandable terms that one recommendation meets all stated constraints.\nIf the agent proposes leaving money in Green, leaving Green open after the transfer, or closing Green before making sure both outcomes can be completed, say: “The purpose of this call is to move the entire Green balance into savings and finish the planned Green closure without losing the ability to complete both.” Do not authorize a partial transfer, a premature Green closure, or ending the call with Green still open.\nIf the agent proposes closing, funding from, or otherwise changing Blue, say: “Blue is the checking account I am keeping; all of the requested movement concerns Green.” Do not authorize any change to Blue.\n\nAuthorize protected account changes only after the agent has requested and matched your ordinary identity details.\nBefore authorizing a new account, require the agent to identify one recommendation and confirm that it meets the balance, withdrawal, compounding, rebate, relationship-benefit, and goals preferences.\nBefore authorizing the transfer, require confirmation that Green is the source, the newly opened savings account is the destination, and the amount is exactly $3,000.\nBefore authorizing Green’s closure, require that the new savings account is open and funded, Green is empty, and closing Green will not leave either requested outcome incomplete.\n\nDo not accept the resolution until one suitable savings account has been opened and contains the transferred $3,000.\nDo not accept the resolution until Green has been closed after its entire balance was moved and no unwanted closure fee remains.\nDo not accept the resolution until Blue is confirmed open and unchanged.\nIf only part of the reorganization is complete, ask directly for the missing outcome. Only after every condition above is confirmed, say: “Thank you—that leaves the new savings account funded, Green closed, and Blue still open.” Then emit exactly one marker and end: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_marcus_okafor_1149": {
+              "user_id": "usr_marcus_okafor_1149",
+              "name": "Marcus Okafor",
+              "date_of_birth": "03/22/1977",
+              "address": "1824 T Street, Sacramento, CA 95811",
+              "email": "marcus.okafor1149@example.com",
+              "phone_number": "916-555-0148"
+            }
+          },
+          "notes": "Fresh customer identity. Marcus is 48 on 11/14/2025, works as a physical therapy assistant, and lives in Sacramento, California."
+        },
+        "accounts": {
+          "data": {
+            "acct_green_mo_0717": {
+              "account_id": "acct_green_mo_0717",
+              "user_id": "usr_marcus_okafor_1149",
+              "class": "checking",
+              "level": "Green Account (checking)",
+              "status": "OPEN",
+              "current_holdings": "3000.00",
+              "date_opened": "07/17/2025"
+            },
+            "acct_blue_mo_1104": {
+              "account_id": "acct_blue_mo_1104",
+              "user_id": "usr_marcus_okafor_1149",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "OPEN",
+              "current_holdings": "425.55",
+              "date_opened": "11/04/2025"
+            }
+          },
+          "notes": "Marcus initially has only these two deposit accounts. Neither has a negative balance or collections status; no savings account exists."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Must begin empty. Current-session verification is created only through log_verification."
+        },
+        "bank_account_transaction_history": {
+          "data": {},
+          "notes": "No transaction history is seeded; in particular, Green has no pending transactions."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Marcus has no linked credit card or relationship-card state that changes candidate product terms."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Runtime discoverable-tool registry starts empty; availability is provided by the tool catalog, and unlock state is not a business outcome."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "act_lookup_user",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Marcus Okafor"
+        }
+      },
+      {
+        "action_id": "act_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "act_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Marcus Okafor",
+          "user_id": "usr_marcus_okafor_1149",
+          "address": "1824 T Street, Sacramento, CA 95811",
+          "email": "marcus.okafor1149@example.com",
+          "phone_number": "916-555-0148",
+          "date_of_birth": "03/22/1977",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "act_unlock_accounts_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "act_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_marcus_okafor_1149\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_green_transactions",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "act_read_green_transactions",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"acct_green_mo_0717\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "act_open_silver_plus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_marcus_okafor_1149\",\"account_type\":\"savings\",\"account_class\":\"Silver Plus Account\"}"
+        }
+      },
+      {
+        "action_id": "act_unlock_transfer",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "act_transfer_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_green_mo_0717\",\"destination_account_id\":\"f6eb6630bfc73063\",\"amount\":3000.0}"
+        }
+      },
+      {
+        "action_id": "act_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392"
+        }
+      },
+      {
+        "action_id": "act_close_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_bank_account_7392",
+          "arguments": "{\"account_id\":\"acct_green_mo_0717\",\"reason\":\"Customer requested closure\",\"waive_early_closure_fee\":false}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ],
+    "bank_account_closure_reason_equivalences": [
+      {
+        "account_id": "acct_green_mo_0717",
+        "user_id": "usr_marcus_okafor_1149",
+        "canonical_reason": "Customer requested closure",
+        "accepted_equivalent_reasons": [
+          "Customer requested closure",
+          "Customer request - consolidating funds into savings; account past 60-day early-closure window, no fee applies",
+          "Customer request - funds consolidated into new Silver Plus savings account"
+        ],
+        "evidence": "Reviewed equivalent customer-request/consolidation wording; no customer-prescribed exact string. Account, owner, status, balances, fee flags, and every other agent/user DB field stay exact."
+      }
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_005",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_green_account_(savings)_001",
+    "doc_savings_accounts_silver_account_001",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_002",
+    "doc_savings_accounts_silver_plus_account_004"
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "id": "task_generated_pro_006",
+  "description": {
+    "purpose": "Resolve Naomi Bennett’s four-card closure review: close Green, preserve Eco’s replacement blocker and Gold’s unpaid balance, and retain unchanged Crypto after recording its annual-fee concern and applying the accepted entry-tier statement credit.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Naomi Bennett, age 32, a small-business bookkeeper in Austin, Texas. Start mildly impatient about maintaining too many cards. Open with: “My November statement notification made me realize I’m keeping too many credit cards. Can you help me close my Rho-Bank cards?”\n\nAnswer relevant questions with the smallest sufficient information; do not volunteer the following details before the related question. For verification, provide your requested details: Naomi Bennett; date of birth 05/06/1993; 2418 Willow Creek Drive, Austin, Texas 78741; phone 512-555-0146; email naomi.bennett@example.com. You have Rho-Bank+ if asked. If asked which cards, identify Green Rewards, EcoCard, Gold Rewards, and Crypto-Cash Back. If asked why, you want simpler finances; Crypto’s future annual fee especially seems hard to justify, rather than a fee already charged. If asked about Eco’s replacement, an envelope seemed to contain it, but you are not certain. If asked about Gold’s payment, you attempted $264.80 yesterday, November 13. If asked about other card ownership, you vaguely remember a Platinum card but cannot identify it in the app. Do not invent another account number or claim a payment or delivery occurs during this call. You do not know the bank’s eligibility rules or appropriate credit amount.\n\nWhen the agent explains a card’s findings and proposes its disposition, respond to that card rather than jumping through all the remaining decisions. Approve eligible closures after verification and identification of the card and action; consent to recording the reasons you supply. If Gold still needs payment, ask whether checking can cover the payoff. If the earlier attempt failed and checking cannot cover it, defer Gold. Accept leaving Eco unresolved when its delivery cannot be confirmed. If records contradict your payment, envelope, or Platinum recollection, show brief frustration, then acknowledge you may have been mistaken. During the retention discussion, you may ask whether the remembered Platinum card matters, but accept a grounded correction without demanding a special benefit.\n\nKeep the closure requests in place for the other cards even if you keep Crypto. The only exception you will consider is keeping Crypto unchanged in exchange for an explicitly accepted statement-credit offer. Refuse a downgrade or any other product switch; you would rather close Crypto. Before accepting retention, require the agent to explain the dollar amount, that the credit is for Crypto, and that you will keep that same card. Once that is clear, accept the statement-credit offer rather than points. Do not provide a credit amount yourself.\n\nIf a proposal abandons another eligible closure, changes any product, or closes Crypto after you agreed to retain it, say: “I only agreed to consider keeping Crypto as it is. Please finish the other closures, and don’t switch any of my cards.” Withhold consent for that proposal. If it was already done, request correction and do not accept the call as resolved until your agreed scope is restored.\n\nA new Gold payment requires knowing what happened to the earlier attempt, the exact payoff amount, and that checking has enough to cover it. Do not authorize a duplicate, partial, differently funded, or unclear payment, or a credit adjustment in its place. Say: “Please don’t take another payment unless we know what happened to the first one and you tell me exactly what would come from checking. Otherwise I’ll deal with Gold later.” If those conditions are not established, defer Gold; if an unauthorized action already occurred, request correction before accepting resolution.\n\nBecome relieved as definite outcomes are completed. If the agent refuses or repeatedly mishandles an explained, authorized resolution after one clarification, ask for a human to finish the unresolved request. Do not escalate merely because a genuine blocker is explained.\n\nAccept only after all four cards have a definite explained disposition: completed eligible closure, an explained unresolved blocker, or your explicitly accepted Crypto retention arrangement. Require confirmation that the accepted credit has actually been applied to Crypto without changing its product or abandoning the other closure requests; an offer or promise is not enough. Do not accept or end while any visibly unauthorized payment, product action, or scope violation remains unresolved. Ask about a missing outcome without supplying hidden policy answers. On successful completion, briefly thank the agent and end. If repeated service failure instead leads to a human handoff, end only after that handoff is confirmed, not while it is merely promised. Emit the following marker exactly once when ending:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "fresh_naomi_bennett_049": {
+              "user_id": "fresh_naomi_bennett_049",
+              "name": "Naomi Bennett",
+              "date_of_birth": "05/06/1993",
+              "address": "2418 Willow Creek Drive, Austin, Texas 78741",
+              "phone_number": "512-555-0146",
+              "email": "naomi.bennett@example.com",
+              "rho_bank_plus_subscription": true
+            }
+          },
+          "notes": "Customer identity; age 32 on 11/14/2025. Sole owner of the five specified accounts."
+        },
+        "accounts": {
+          "data": {
+            "nb_checking_049": {
+              "account_id": "nb_checking_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "class": "checking",
+              "account_class": "checking",
+              "status": "ACTIVE",
+              "date_opened": "03/07/2024",
+              "current_holdings": "$61.25"
+            }
+          },
+          "notes": "Only bank account for Naomi and earliest relationship record. No checking-product benefit is invoked; no unsupported product level is assigned. Insufficient for a $264.80 payoff."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "nb_green_049": {
+              "account_id": "nb_green_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "card_type": "Green Rewards Card",
+              "date_of_account_open": "03/22/2024",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "0 points",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE"
+            },
+            "nb_eco_049": {
+              "account_id": "nb_eco_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "card_type": "EcoCard",
+              "date_of_account_open": "06/18/2024",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "0 points",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE"
+            },
+            "nb_gold_049": {
+              "account_id": "nb_gold_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "card_type": "Gold Rewards Card",
+              "date_of_account_open": "12/09/2024",
+              "current_balance": "$264.80",
+              "past_due_amount": "$0.00",
+              "reward_points": "0 points",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE"
+            },
+            "nb_crypto_049": {
+              "account_id": "nb_crypto_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "card_type": "Crypto-Cash Back Card",
+              "date_of_account_open": "07/28/2025",
+              "current_balance": "$0.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "0 points",
+              "status": "ACTIVE",
+              "account_status": "ACTIVE"
+            }
+          },
+          "notes": "Complete credit-card inventory for Naomi; no Platinum or business card. All four exceed 60 days. Closure changes status but not account_status."
+        },
+        "credit_card_orders": {
+          "data": {
+            "nb_eco_replacement_049": {
+              "order_id": "nb_eco_replacement_049",
+              "credit_card_account_id": "nb_eco_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "order_date": "11/10/2025",
+              "expected_delivery": "11/17/2025",
+              "status": "shipped",
+              "reason": "damaged",
+              "expedited_shipping": false,
+              "old_card_cancelled": true,
+              "shipping_address": "2418 Willow Creek Drive, Austin, Texas 78741"
+            }
+          },
+          "notes": "Genuine pre-existing order; only replacement order for Naomi. The old physical card was cancelled when the replacement was ordered. Physical-card cancellation is not order cancellation or credit-account closure. Order remains shipped; no runtime repair or security-status restoration is needed."
+        },
+        "credit_card_closure_reasons": {
+          "data": {
+            "nb_green_reason_20241202": {
+              "record_id": "nb_green_reason_20241202",
+              "credit_card_account_id": "nb_green_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "closure_reason": "simplifying_finances",
+              "logged_at": "12/02/2024",
+              "status": "LOGGED"
+            }
+          },
+          "notes": "Only pre-session reason, 347 days before the fixed date. Applies to Green alone. Crypto's current reason must be created during the session."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "nb_gold_purchase_049": {
+              "transaction_id": "nb_gold_purchase_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "credit_card_account_id": "nb_gold_049",
+              "credit_card_type": "Gold Rewards Card",
+              "merchant_name": "Cedar Desk Supply",
+              "transaction_date": "11/10/2025",
+              "transaction_amount": "$264.80",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "0 points"
+            }
+          },
+          "notes": "Ordinary posted, undisputed purchase supporting Gold's entire outstanding balance. No pending purchases or annual-fee postings for Naomi; no pre-existing statement credits."
+        },
+        "payment_history": {
+          "data": {
+            "nb_gold_failed_payment_049": {
+              "payment_id": "nb_gold_failed_payment_049",
+              "credit_card_account_id": "nb_gold_049",
+              "user_id": "fresh_naomi_bennett_049",
+              "payment_date": "11/13/2025",
+              "amount": "$264.80",
+              "status": "FAILED"
+            }
+          },
+          "notes": "Genuine unsuccessful payment attempt, with no balance effect. No later successful or pending payment exists."
+        },
+        "transaction_disputes": {
+          "data": {},
+          "notes": "No active, pending, or historical disputes for Naomi."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Initially empty. Current-session verification must be written after matching identity details."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty transport telemetry table, not capability metadata and not evaluated banking state."
+        },
+        "credit_card_account_flags": {
+          "data": {},
+          "notes": "No existing fee waiver or other flag. Must remain empty for Naomi's cards."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "nb49_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Naomi Bennett"
+        },
+        "info": "Unscored identity and owner-ID discovery."
+      },
+      {
+        "action_id": "nb49_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Unscored support returning 2025-11-14 03:40:00 EST."
+      },
+      {
+        "action_id": "nb49_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Naomi Bennett",
+          "user_id": "fresh_naomi_bennett_049",
+          "address": "2418 Willow Creek Drive, Austin, Texas 78741",
+          "email": "naomi.bennett@example.com",
+          "phone_number": "512-555-0146",
+          "date_of_birth": "05/06/1993",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After Naomi supplies matching date of birth and email; other record fields also match. Creates the session audit record."
+      },
+      {
+        "action_id": "nb49_unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "nb49_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"fresh_naomi_bennett_049\"}"
+        },
+        "info": "Unscored account-ID, ownership, balance, product, and relationship-date discovery. Covers checking and all four credit accounts; no redundant separate inventory read."
+      },
+      {
+        "action_id": "nb49_unlock_disputes",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "nb49_disputes",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"fresh_naomi_bennett_049\"}"
+        },
+        "info": "Unscored evidence of no disputes before closure or retention."
+      },
+      {
+        "action_id": "nb49_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "fresh_naomi_bennett_049"
+        },
+        "info": "Unscored support distinguishing posted Gold debt from a fee and excluding pending transactions or a recent annual-fee refund entitlement before closing Green."
+      },
+      {
+        "action_id": "nb49_unlock_orders",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765"
+        }
+      },
+      {
+        "action_id": "nb49_green_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"nb_green_049\"}"
+        },
+        "info": "Unscored Green closure precondition."
+      },
+      {
+        "action_id": "nb49_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293"
+        }
+      },
+      {
+        "action_id": "nb49_green_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"nb_green_049\"}"
+        },
+        "info": "Unscored evidence selecting direct closure without another retention attempt."
+      },
+      {
+        "action_id": "nb49_unlock_close",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834"
+        }
+      },
+      {
+        "action_id": "nb49_close_green",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "close_credit_card_account_7834",
+          "arguments": "{\"credit_card_account_id\":\"nb_green_049\",\"user_id\":\"fresh_naomi_bennett_049\"}"
+        },
+        "info": "Naomi authorizes identified Green closure after verification and the eligibility explanation."
+      },
+      {
+        "action_id": "nb49_eco_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"nb_eco_049\"}"
+        },
+        "info": "Unscored evidence of shipped replacement; Eco and its order remain unchanged."
+      },
+      {
+        "action_id": "nb49_unlock_payments",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183"
+        }
+      },
+      {
+        "action_id": "nb49_gold_payments",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_payment_history_6183",
+          "arguments": "{\"credit_card_account_id\":\"nb_gold_049\",\"months\":1}"
+        },
+        "info": "Unscored evidence resolving the attempted-payment belief and new-payoff inquiry. Failed attempt and insufficient checking cause deferral; no payment execution."
+      },
+      {
+        "action_id": "nb49_crypto_orders",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_pending_replacement_orders_5765",
+          "arguments": "{\"credit_card_account_id\":\"nb_crypto_049\"}"
+        },
+        "info": "Unscored Crypto eligibility precondition."
+      },
+      {
+        "action_id": "nb49_crypto_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_closure_reason_history_8293",
+          "arguments": "{\"credit_card_account_id\":\"nb_crypto_049\"}"
+        },
+        "info": "Unscored evidence of no previous attempt, before this session's reason is inserted."
+      },
+      {
+        "action_id": "nb49_unlock_reason",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521"
+        }
+      },
+      {
+        "action_id": "nb49_log_crypto_reason",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "log_credit_card_closure_reason_4521",
+          "arguments": "{\"credit_card_account_id\":\"nb_crypto_049\",\"user_id\":\"fresh_naomi_bennett_049\",\"closure_reason\":\"annual_fee\"}"
+        },
+        "info": "After eligibility review, Naomi supplies her future annual-fee concern and consents to recording it."
+      },
+      {
+        "action_id": "nb49_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_statement_credit_8472"
+        }
+      },
+      {
+        "action_id": "nb49_credit_crypto",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_statement_credit_8472",
+          "arguments": "{\"user_id\":\"fresh_naomi_bennett_049\",\"credit_card_account_id\":\"nb_crypto_049\",\"amount\":5.0,\"reason\":\"retention_offer\"}"
+        },
+        "info": "After the personal no-fee Bronze downgrade is explained and declined, Naomi explicitly accepts the explained $5 statement credit for keeping Crypto unchanged. Writes one -$5.00 transaction and changes current_balance from $0.00 to $-5.00."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_credit_cards_credit_card_account_logistics_002",
+    "doc_credit_cards_credit_card_account_logistics_003",
+    "doc_credit_cards_credit_card_account_logistics_008",
+    "doc_credit_cards_credit_card_replacements_005",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_credit_cards_(general)_017"
+  ]
+}

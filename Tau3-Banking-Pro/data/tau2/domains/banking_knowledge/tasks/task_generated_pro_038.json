@@ -1,0 +1,327 @@
+{
+  "id": "task_generated_pro_038",
+  "description": {
+    "purpose": "Reconcile October interest on Leila Haddad's Gold savings account, credit the underpayment, and invoke backend follow-up as unscored support.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “The interest on my October savings statement seems lower than I expected. Could you review it?”\n\nAnswer only the requested topic. You are Leila Haddad, 42, a laboratory technician in Baltimore, Maryland. Identity details: DOB 02/18/1983; 410-555-0168; leila.haddad@example.net; 2417 E Pratt Street, Apt 4, Baltimore, MD 21224.\n\nIf asked about savings, October interest was $363.38. You opened Gold savings October 1, 2025, funding it with $50,000 and $28,000 that day; you added $6,400 November 5 and $1,200 November 12. You now have about $86,000 there. If asked about checking, Green has $6,470.25 and Purple $3,340.80. If asked about cards, initially name Platinum Rewards, Silver Rewards, and EcoCard. Only when the agent questions Silver or identifies Gold, say you meant Gold Rewards; use Gold thereafter. You made no checking or card openings, closures, or changes during October. You do not know the correct rate or shortfall.\n\nKeep the request about October interest on your existing Gold savings and the products actually held then. Missing interest belongs entirely in that savings account, not a new product or another destination. After answering identity questions, authorize a correction only when the agent identifies an underpayment, explains the dollar amount and affected account, and describes it as missing interest. Then ask for the cause to be investigated to prevent recurrence, alongside the immediate correction.\n\nFor any visible mismatch or incomplete substitute, withhold authorization or acceptance, identify the mismatch using your own facts, and ask for review. Reject a different period, account, split destination, new product, future recommendation, or report alone in place of the correction. If already done, request recovery. Do not guess policy math; accept supported clarification.\n\nAccept only after the agent confirms the correction and resulting savings balance, explains the cause, and confirms follow-up was submitted for investigation, with no visible inconsistency remaining. A future system repair need not be complete. Then thank the agent and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "lh42_balt_7q6": {
+              "user_id": "lh42_balt_7q6",
+              "name": "Leila Haddad",
+              "date_of_birth": "02/18/1983",
+              "address": "2417 E Pratt Street, Apt 4, Baltimore, MD 21224",
+              "phone_number": "410-555-0168",
+              "email": "leila.haddad@example.net",
+              "rho_bank_plus_subscription": true
+            }
+          },
+          "notes": "Supplied customer for this initialization patch. Age 42 at the fixed 11/14/2025 clock. Identity is checked against the current profile; no verification-log precondition exists for the selected operations."
+        },
+        "accounts": {
+          "data": {
+            "sav_lh7q6_gold": {
+              "account_id": "sav_lh7q6_gold",
+              "user_id": "lh42_balt_7q6",
+              "class": "saving",
+              "account_class": "saving",
+              "account_type": "Gold Account",
+              "level": "Gold Account",
+              "status": "OPEN",
+              "date_opened": "10/01/2025",
+              "current_holdings": "85963.38"
+            },
+            "chk_lh7q6_green": {
+              "account_id": "chk_lh7q6_green",
+              "user_id": "lh42_balt_7q6",
+              "class": "checking",
+              "account_class": "checking",
+              "account_type": "Green Account",
+              "level": "Green Account",
+              "status": "OPEN",
+              "date_opened": "07/08/2022",
+              "current_holdings": "6470.25"
+            },
+            "chk_lh7q6_purple": {
+              "account_id": "chk_lh7q6_purple",
+              "user_id": "lh42_balt_7q6",
+              "class": "checking",
+              "account_class": "checking",
+              "account_type": "Purple Account",
+              "level": "Purple Account",
+              "status": "OPEN",
+              "date_opened": "03/19/2024",
+              "current_holdings": "3340.80"
+            }
+          },
+          "notes": "Exactly three supplied customer-owned accounts. Historical eligibility is in the retrievable October statement description. Savings holdings reconcile to all five supplied savings transactions. This is a patch, not table replacement."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_lh7q6_platinum": {
+              "account_id": "cc_lh7q6_platinum",
+              "user_id": "lh42_balt_7q6",
+              "card_type": "Platinum Rewards Card",
+              "account_status": "ACTIVE",
+              "date_of_account_open": "05/24/2022",
+              "current_balance": "$624.18",
+              "credit_limit": "$22,000.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "0"
+            },
+            "cc_lh7q6_gold": {
+              "account_id": "cc_lh7q6_gold",
+              "user_id": "lh42_balt_7q6",
+              "card_type": "Gold Rewards Card",
+              "account_status": "ACTIVE",
+              "date_of_account_open": "03/11/2023",
+              "current_balance": "$238.51",
+              "credit_limit": "$14,000.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "0"
+            },
+            "cc_lh7q6_eco": {
+              "account_id": "cc_lh7q6_eco",
+              "user_id": "lh42_balt_7q6",
+              "card_type": "EcoCard",
+              "account_status": "ACTIVE",
+              "date_of_account_open": "12/04/2024",
+              "current_balance": "$91.64",
+              "credit_limit": "$7,000.00",
+              "past_due_amount": "$0.00",
+              "reward_points": "0"
+            }
+          },
+          "notes": "Complete three-card supplied candidate universe. No Silver Rewards card is held by this customer. Card numbers are omitted, not guessed. Records remain unchanged."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "btxn_lh7q6_fund_a": {
+              "transaction_id": "btxn_lh7q6_fund_a",
+              "account_id": "sav_lh7q6_gold",
+              "date": "10/01/2025",
+              "amount": 50000,
+              "type": "ach_transfer_in",
+              "status": "posted",
+              "available_amount": 50000,
+              "hold_amount": 0,
+              "description": "EXTERNAL SAVINGS FUNDING - CHESAPEAKE COMMUNITY BANK. $50,000 fully available before October 1 daily accrual. Opening statement balance before the two October 1 funding credits was $0.00; no holds."
+            },
+            "btxn_lh7q6_fund_b": {
+              "transaction_id": "btxn_lh7q6_fund_b",
+              "account_id": "sav_lh7q6_gold",
+              "date": "10/01/2025",
+              "amount": 28000,
+              "type": "ach_transfer_in",
+              "status": "posted",
+              "available_amount": 28000,
+              "hold_amount": 0,
+              "description": "EXTERNAL SAVINGS FUNDING - ATLANTIC CREDIT UNION. $28,000 fully available before October 1 daily accrual. Both October 1 funding credits were available before that day's accrual; no holds."
+            },
+            "btxn_lh7q6_oct_interest": {
+              "transaction_id": "btxn_lh7q6_oct_interest",
+              "account_id": "sav_lh7q6_gold",
+              "date": "10/31/2025",
+              "amount": 363.38,
+              "type": "interest_credit",
+              "status": "posted",
+              "description": "MONTHLY INTEREST CREDIT. October statement detail: accrual period 10/01/2025 through 10/31/2025 inclusive, 31 days. Gold savings sav_lh7q6_gold opened 10/01/2025 with $0 before funding and remained continuously open as Gold savings from the start of October 1 accrual through this statement. Funding credits of $50,000 from Chesapeake Community Bank and $28,000 from Atlantic Credit Union were fully available before October 1 daily accrual. No other October principal movements or holds. Applied effective APY: 5.625%, comprising base 5.5%, checking component 0.1 percentage points from chk_lh7q6_purple, and card component 0.025 percentage points from cc_lh7q6_gold. Statement convention: effective-APY daily compounding on a 365-day basis; retain full precision during accrual and round only the monthly payment to cents using half-up rounding. This interest payment posts after October 31 final daily accrual and earns no additional October day's interest. Historical relationship roster for customer lh42_balt_7q6: chk_lh7q6_green, Green Account checking; chk_lh7q6_purple, Purple Account checking; cc_lh7q6_platinum, Platinum Rewards Card; cc_lh7q6_gold, Gold Rewards Card; cc_lh7q6_eco, EcoCard. Both checking accounts were linked to this Gold savings under the same customer profile and continuously OPEN throughout October. All three cards were continuously ACTIVE under this same profile and associated with this Gold savings throughout October. These were the complete checking and credit-card holdings for this profile during the period, with no openings, closures, or product changes. No other promotional, tier, or independent relationship APY component was awarded."
+            },
+            "btxn_lh7q6_nov_a": {
+              "transaction_id": "btxn_lh7q6_nov_a",
+              "account_id": "sav_lh7q6_gold",
+              "date": "11/05/2025",
+              "amount": 6400,
+              "type": "ach_transfer_in",
+              "status": "posted",
+              "description": "EXTERNAL SAVINGS DEPOSIT - CHESAPEAKE COMMUNITY BANK"
+            },
+            "btxn_lh7q6_nov_b": {
+              "transaction_id": "btxn_lh7q6_nov_b",
+              "account_id": "sav_lh7q6_gold",
+              "date": "11/12/2025",
+              "amount": 1200,
+              "type": "ach_transfer_in",
+              "status": "posted",
+              "description": "EXTERNAL SAVINGS DEPOSIT - ATLANTIC CREDIT UNION"
+            },
+            "btxn_lh7q6_payroll": {
+              "transaction_id": "btxn_lh7q6_payroll",
+              "account_id": "chk_lh7q6_green",
+              "date": "10/17/2025",
+              "amount": 3520,
+              "type": "direct_deposit",
+              "status": "posted",
+              "description": "PAYROLL - HARBOR DIAGNOSTICS"
+            },
+            "btxn_lh7q6_utility": {
+              "transaction_id": "btxn_lh7q6_utility",
+              "account_id": "chk_lh7q6_green",
+              "date": "10/23/2025",
+              "amount": -145.6,
+              "type": "bill_pay",
+              "status": "posted",
+              "description": "UTILITY PAYMENT"
+            },
+            "btxn_lh7q6_wire": {
+              "transaction_id": "btxn_lh7q6_wire",
+              "account_id": "chk_lh7q6_purple",
+              "date": "10/21/2025",
+              "amount": 980,
+              "type": "wire_transfer_in",
+              "status": "posted",
+              "description": "DOMESTIC WIRE RECEIVED"
+            }
+          },
+          "notes": "Exactly eight supplied historical transactions, all linked to supplied accounts. The five savings rows are the complete savings ledger from opening through 2025-11-14 03:40:00 EST; there are no other savings movements. The three checking rows are excerpts, not complete checking ledgers. Preserve all eight rows. No initial interest_correction is present."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty infrastructure only. Catalog unlocks establish session availability. Invocation telemetry is excluded from financial reward and cannot establish report persistence."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "repair_identity",
+        "name": "get_user_information_by_name",
+        "requestor": "assistant",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        }
+      },
+      {
+        "action_id": "repair_clock",
+        "name": "get_current_time",
+        "requestor": "assistant",
+        "arguments": {}
+      },
+      {
+        "action_id": "repair_auth_log",
+        "name": "log_verification",
+        "requestor": "assistant",
+        "arguments": {
+          "name": "Leila Haddad",
+          "user_id": "lh42_balt_7q6",
+          "address": "2417 E Pratt Street, Apt 4, Baltimore, MD 21224",
+          "email": "leila.haddad@example.net",
+          "phone_number": "410-555-0168",
+          "date_of_birth": "02/18/1983",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "lh7q6_identify",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Leila Haddad"
+        },
+        "info": "Reference support: compare requested identity answers with the returned profile before the protected credit. No verification-history tool is required or available in this selection."
+      },
+      {
+        "action_id": "lh7q6_unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "lh7q6_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"lh42_balt_7q6\"}"
+        },
+        "info": "Unscored read support: establish ownership, savings class and OPEN status, and discover both checking candidates and all three actual cards."
+      },
+      {
+        "action_id": "lh7q6_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "lh7q6_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"sav_lh7q6_gold\"}"
+        },
+        "info": "Unscored read support: reconstruct October principal, applied rate, accrual convention and whole-period relationship roster; separate later deposits from October accrual."
+      },
+      {
+        "action_id": "lh7q6_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831"
+        }
+      },
+      {
+        "action_id": "lh7q6_credit",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_savings_account_credit_6831",
+          "arguments": "{\"account_id\":\"sav_lh7q6_gold\",\"amount\":76.78,\"credit_type\":\"interest_correction\"}"
+        },
+        "info": "Sole evaluated banking mutation, after matching identity, establishing ownership, reconciling the missing interest, explaining $76.78 and obtaining consent. Capture the tool-returned transaction_id; do not invent a literal hash or apply this credit twice."
+      },
+      {
+        "action_id": "lh7q6_unlock_report",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294"
+        }
+      },
+      {
+        "action_id": "lh7q6_report",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "submit_interest_discrepancy_report_7294",
+          "arguments": "{\"account_id\":\"sav_lh7q6_gold\",\"user_id\":\"lh42_balt_7q6\",\"expected_apy\":6.85,\"actual_apy\":5.625,\"amount_difference\":76.78}"
+        },
+        "info": "Policy-required, unscored procedural support after the credit. The absent report table means this invocation does not persist a report or change future APY selection. Neither invocation telemetry nor its order is a DB reward assertion."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_bank_accounts_bank_accounts_(general)_043",
+    "doc_bank_accounts_bank_accounts_(general)_044",
+    "doc_bank_accounts_bank_accounts_(general)_045",
+    "doc_bank_accounts_bank_accounts_(general)_046",
+    "doc_checking_accounts_green_account_(checking)_001",
+    "doc_checking_accounts_purple_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_003",
+    "doc_savings_accounts_gold_account_013",
+    "doc_savings_accounts_gold_account_014"
+  ]
+}

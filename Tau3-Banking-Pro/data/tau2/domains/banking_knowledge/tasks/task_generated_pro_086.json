@@ -1,0 +1,380 @@
+{
+  "id": "task_generated_pro_086",
+  "description": {
+    "purpose": "Secure Theo Alvarez's compromised Silver Rewards Card, dispute the unauthorized charge, and create the single eligible card-and-savings combination that maximizes projected net annual return on his $25,000 reserve.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concerned but cooperative by saying: “I just saw a large charge on my Silver card that I don't recognize. Please help me secure the card and get the charge sorted out.” Do not initially volunteer identity details, the detailed transaction, shipping preferences, or the later card-and-savings plan.\n\nIf the agent requests identity-verification details, provide: Theo Alvarez, date of birth 07/22/1996, registered address 1847 Alhambra Boulevard, Apt 6, Sacramento, CA 95816, email theo.alvarez@example.com, and phone 916-555-0148. Answer relevant verification questions naturally without volunteering the later product plan.\n\nIf the agent asks which charge is unauthorized or asks about the desired dispute and replacement outcome, identify the posted $4,880 Cascade AV Rentals charge dated 11/12/2025 on the Silver Rewards Card ending 2846. Say you noticed it on 11/14/2025, did not authorize it, did not contact the merchant, want the full amount disputed, and want the exposed card replaced. Request expedited delivery to the registered address and accept the disclosed $10 fee. Do not authorize the fraud actions until the agent has identified the card ending 2846, the $4,880 Cascade AV Rentals charge, the registered shipping address, expedited delivery, and the $10 fee.\n\nPreserve this commitment throughout the conversation: the compromised Silver Rewards Card must be replaced and the entire unauthorized $4,880 charge must be formally disputed. If the agent recommends keeping the current card active, replacing it without filing the dispute, or disputing only part of the charge, say: “The charge is entirely unauthorized and I do not want the exposed card left usable; please address both the card and the full charge.” Theo does not authorize a keep-active dispute, a partial refund request, or completion without a replacement order.\n\nOnly after the agent confirms that both the expedited replacement order and the formal dispute have been completed, explain that the fraud incident has convinced you to separate future event spending from your cash reserve. Ask for exactly one new card and one savings account that maximize the projected yearly return on exactly $25,000 after the annual card fee, permit at least 20 withdrawals per month, and involve no split or extra product. Provide annual income of $148,000, a credit score of 748, and an active Rho-Bank+ subscription. Remain cautious and withhold approval until the complete net comparison is established.\n\nPreserve this commitment throughout the product stage: exactly one new card and one savings account must be selected for the highest projected net annual return on $25,000 after the annual card fee, with at least 20 monthly withdrawals and no split or added product. Before authorizing an application or account opening, require the agent to establish that the proposed pair satisfies your eligibility, withdrawal requirement, and highest-net-return goal after the card fee.\n\nIf the agent recommends a pair based only on a displayed bonus, optimizes gross yield instead of the result after fees, proposes a split, or adds another product, say: “I asked for one card and one savings account with the best yearly result after the card fee and at least 20 withdrawals; please compare the complete rates and fees again.” Theo does not authorize an application or account opening until the recommendation is explicitly tied to net annual return on his $25,000 and satisfies the withdrawal and one-pair boundaries.\n\nIf the agent recommends or begins creating an EcoCard and Gold Account based on the displayed bonus without establishing that this pair has the highest net annual return, say: “I asked for the best yearly result on the full $25,000 after the card fee, not simply the largest bonus; please compare the complete rates and fees again.” Theo does not authorize an EcoCard application, a Gold Account opening, or a transfer into that account unless the complete net comparison shows it satisfies his stated objective. If the EcoCard application or Gold Account was already created, say: “Those were not authorized under the agreed comparison. Please correct the unintended setup and place the $25,000 only in the one pair that actually meets my stated net-return goal; if you cannot correct it, transfer me to a human.” Do not state which products should win or quote any hidden calculation before the agent establishes the result.\n\nWhen the agent has established the eligible single pair meeting the stated goal, cooperate with submitting exactly one application. Preserve the funding commitment: exactly $25,000 must be transferred from the existing checking account into the selected new savings account during this call. Before authorizing funding, require the agent to identify the existing checking account as the source, the newly opened selected savings account as the destination, and exactly $25,000 as the amount. Theo authorizes only one $25,000 transfer from the identified checking account to the newly selected savings account.\n\nIf the agent proposes a different amount, a split transfer, funding another account, or leaving the selected account unfunded, say: “The reserve amount is exactly $25,000. Please move that amount into the one selected savings account now.” Do not authorize any incompatible transfer.\n\nIf the agent refuses an eligible action, repeats an unsupported denial, or cannot correct a material error after one clarification, become firmer and ask to be transferred to a human. Do not request escalation on a correct successful path.\n\nDo not accept the result or stop until all of the following are confirmed: the old Silver Rewards Card is cancelled; expedited replacement is ordered; the full $4,880 dispute is filed; exactly one selected card application and one selected savings account were created with no split or added product; exactly $25,000 moved from checking to the new savings account; and no unintended application or account remains. If only part is complete, ask directly for the missing outcome. Once every condition is satisfied, briefly thank the agent and end with exactly this marker: ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_9f3c7b21": {
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "name": "Theo Alvarez",
+              "date_of_birth": "07/22/1996",
+              "address": "1847 Alhambra Boulevard, Apt 6, Sacramento, CA 95816",
+              "email": "theo.alvarez@example.com",
+              "phone_number": "916-555-0148",
+              "rho_bank_plus_subscription": true
+            }
+          },
+          "notes": "Theo Alvarez is the authoritative customer identity. At 11/14/2025 he is 29 and is an independent event planner in Sacramento, California."
+        },
+        "accounts": {
+          "data": {
+            "acct_theo_checking_42k_31a9": {
+              "account_id": "acct_theo_checking_42k_31a9",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "class": "checking",
+              "level": "Checking Account",
+              "status": "ACTIVE",
+              "current_holdings": "42000.00",
+              "date_opened": "03/18/2023"
+            }
+          },
+          "notes": "Theo has one active, positive checking account and no existing personal savings account. No account is negative or in collections."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "ccacct_theo_silver_2846_b72e": {
+              "account_id": "ccacct_theo_silver_2846_b72e",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "card_type": "Silver Rewards Card",
+              "card_last_4_digits": "2846",
+              "date_of_account_open": "06/10/2024",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "18000.00",
+              "current_balance": "5085.62",
+              "past_due_amount": "0.00",
+              "reward_points": "14620"
+            }
+          },
+          "notes": "The Silver Rewards Card is active and eligible for replacement at the start of the task."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "cctxn_cascade_av_4880_1112_f3d8": {
+              "transaction_id": "cctxn_cascade_av_4880_1112_f3d8",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "credit_card_account_id": "ccacct_theo_silver_2846_b72e",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Cascade AV Rentals",
+              "transaction_amount": "4880.00",
+              "transaction_date": "11/12/2025",
+              "status": "posted",
+              "category": "event_equipment",
+              "rewards_earned": "48.80"
+            },
+            "cctxn_prior_florist_0201_85c1": {
+              "transaction_id": "cctxn_prior_florist_0201_85c1",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "credit_card_account_id": "ccacct_theo_silver_2846_b72e",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "River City Floral Wholesale",
+              "transaction_amount": "342.10",
+              "transaction_date": "02/01/2025",
+              "status": "posted",
+              "category": "event_supplies",
+              "rewards_earned": "3.42"
+            },
+            "cctxn_prior_lighting_0817_29ab": {
+              "transaction_id": "cctxn_prior_lighting_0817_29ab",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "credit_card_account_id": "ccacct_theo_silver_2846_b72e",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Northgate Lighting Depot",
+              "transaction_amount": "611.75",
+              "transaction_date": "08/17/2025",
+              "status": "posted",
+              "category": "event_equipment",
+              "rewards_earned": "6.12"
+            },
+            "cctxn_legit_capitol_market_12940_8a44": {
+              "transaction_id": "cctxn_legit_capitol_market_12940_8a44",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "credit_card_account_id": "ccacct_theo_silver_2846_b72e",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Capitol Market Catering",
+              "transaction_amount": "129.40",
+              "transaction_date": "11/10/2025",
+              "status": "posted",
+              "category": "dining",
+              "rewards_earned": "1.29"
+            },
+            "cctxn_legit_midtown_print_7622_6dd2": {
+              "transaction_id": "cctxn_legit_midtown_print_7622_6dd2",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "credit_card_account_id": "ccacct_theo_silver_2846_b72e",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Midtown Print Studio",
+              "transaction_amount": "76.22",
+              "transaction_date": "11/08/2025",
+              "status": "posted",
+              "category": "business_services",
+              "rewards_earned": "0.76"
+            }
+          },
+          "notes": "The history includes the target posted fraud charge, two transactions underlying genuine prior disputes, and two legitimate distractors."
+        },
+        "transaction_disputes": {
+          "data": {
+            "disp_theo_prior_florist_0203_4c91": {
+              "dispute_id": "disp_theo_prior_florist_0203_4c91",
+              "transaction_id": "cctxn_prior_florist_0201_85c1",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "card_action": "keep_active",
+              "card_last_4_digits": "2846",
+              "full_name": "Theo Alvarez",
+              "phone": "916-555-0148",
+              "email": "theo.alvarez@example.com",
+              "address": "1847 Alhambra Boulevard, Apt 6, Sacramento, CA 95816",
+              "contacted_merchant": true,
+              "purchase_date": "02/01/2025",
+              "issue_noticed_date": "02/02/2025",
+              "dispute_reason": "duplicate_charge",
+              "resolution_requested": "full_refund",
+              "partial_refund_amount": null,
+              "eligible_for_provisional_credit": true,
+              "provisional_credit_given": false,
+              "status": "closed",
+              "submitted_at": "02/03/2025"
+            },
+            "disp_theo_prior_lighting_0819_10ef": {
+              "dispute_id": "disp_theo_prior_lighting_0819_10ef",
+              "transaction_id": "cctxn_prior_lighting_0817_29ab",
+              "user_id": "usr_theo_alvarez_9f3c7b21",
+              "card_action": "keep_active",
+              "card_last_4_digits": "2846",
+              "full_name": "Theo Alvarez",
+              "phone": "916-555-0148",
+              "email": "theo.alvarez@example.com",
+              "address": "1847 Alhambra Boulevard, Apt 6, Sacramento, CA 95816",
+              "contacted_merchant": true,
+              "purchase_date": "08/17/2025",
+              "issue_noticed_date": "08/18/2025",
+              "dispute_reason": "duplicate_charge",
+              "resolution_requested": "full_refund",
+              "partial_refund_amount": null,
+              "eligible_for_provisional_credit": true,
+              "provisional_credit_given": false,
+              "status": "closed",
+              "submitted_at": "08/19/2025"
+            }
+          },
+          "notes": "Exactly two genuine prior disputes fall within the 12 months preceding 11/14/2025. No dispute initially exists for the Cascade AV Rentals transaction."
+        },
+        "credit_card_orders": {
+          "data": {},
+          "notes": "No replacement order exists initially."
+        },
+        "credit_card_applications": {
+          "data": {},
+          "notes": "No credit-card application exists initially."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Current-session verification must be created during the successful interaction; this audit table is intentionally empty initially."
+        },
+        "task_config": {
+          "data": {
+            "task_config_fraud_reserve_1": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "auto_resolve_disputes is intentionally false: filing creates a persistent formal dispute record without automatically resolving the dispute or creating an additional monetary balance mutation."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Discoverable tools are available from the catalog and must be unlocked during the interaction; no capability metadata is seeded here."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "gold_01_find_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        }
+      },
+      {
+        "action_id": "gold_02_get_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_9f3c7b21",
+          "address": "1847 Alhambra Boulevard, Apt 6, Sacramento, CA 95816",
+          "email": "theo.alvarez@example.com",
+          "phone_number": "916-555-0148",
+          "date_of_birth": "07/22/1996",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "gold_04_unlock_accounts_read",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_05_read_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_9f3c7b21\"}"
+        }
+      },
+      {
+        "action_id": "gold_06_read_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "usr_theo_alvarez_9f3c7b21"
+        }
+      },
+      {
+        "action_id": "gold_07_unlock_dispute_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291"
+        }
+      },
+      {
+        "action_id": "gold_08_read_dispute_history",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_user_dispute_history_7291",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_9f3c7b21\"}"
+        }
+      },
+      {
+        "action_id": "gold_09_unlock_replacement",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291"
+        }
+      },
+      {
+        "action_id": "gold_10_order_replacement",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "order_replacement_credit_card_7291",
+          "arguments": "{\"credit_card_account_id\":\"ccacct_theo_silver_2846_b72e\",\"user_id\":\"usr_theo_alvarez_9f3c7b21\",\"shipping_address\":\"1847 Alhambra Boulevard, Apt 6, Sacramento, CA 95816\",\"reason\":\"fraud_suspected\",\"expedited_shipping\":true}"
+        }
+      },
+      {
+        "action_id": "gold_11_unlock_dispute",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829"
+        }
+      },
+      {
+        "action_id": "gold_12_file_dispute",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "file_credit_card_transaction_dispute_4829",
+          "arguments": "{\"transaction_id\":\"cctxn_cascade_av_4880_1112_f3d8\",\"card_action\":\"cancel_and_reissue\",\"card_last_4_digits\":\"2846\",\"full_name\":\"Theo Alvarez\",\"user_id\":\"usr_theo_alvarez_9f3c7b21\",\"phone\":\"916-555-0148\",\"email\":\"theo.alvarez@example.com\",\"address\":\"1847 Alhambra Boulevard, Apt 6, Sacramento, CA 95816\",\"contacted_merchant\":false,\"purchase_date\":\"11/12/2025\",\"issue_noticed_date\":\"11/14/2025\",\"dispute_reason\":\"unauthorized_fraudulent_charge\",\"resolution_requested\":\"full_refund\",\"eligible_for_provisional_credit\":true,\"partial_refund_amount\":null}"
+        }
+      },
+      {
+        "action_id": "gold_13_apply_gold",
+        "requestor": "user",
+        "name": "apply_for_credit_card",
+        "arguments": {
+          "card_type": "Gold Rewards Card",
+          "customer_name": "Theo Alvarez",
+          "annual_income": 148000,
+          "rho_bank_subscription": true
+        }
+      },
+      {
+        "action_id": "gold_14_unlock_open",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "gold_15_open_gold_plus",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_9f3c7b21\",\"account_type\":\"savings\",\"account_class\":\"Gold Plus Account\"}"
+        }
+      },
+      {
+        "action_id": "gold_16_unlock_transfer",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291"
+        }
+      },
+      {
+        "action_id": "gold_17_transfer_25000",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "transfer_funds_between_bank_accounts_7291",
+          "arguments": "{\"source_account_id\":\"acct_theo_checking_42k_31a9\",\"destination_account_id\":\"63dfae6810cd620a\",\"amount\":25000}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "apply_for_credit_card"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_credit_cards_bronze_rewards_card_001",
+    "doc_credit_cards_credit_card_replacements_001",
+    "doc_credit_cards_credit_cards_(general)_014",
+    "doc_credit_cards_credit_cards_(general)_015",
+    "doc_credit_cards_ecocard_001",
+    "doc_credit_cards_gold_rewards_card_001",
+    "doc_credit_cards_platinum_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_gold_account_014",
+    "doc_savings_accounts_gold_plus_account_001",
+    "doc_savings_accounts_gold_plus_account_002",
+    "doc_savings_accounts_gold_plus_account_009",
+    "doc_savings_accounts_silver_account_001",
+    "doc_savings_accounts_silver_plus_account_001",
+    "doc_savings_accounts_silver_plus_account_009"
+  ]
+}

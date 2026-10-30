@@ -1,0 +1,525 @@
+{
+  "id": "task_generated_pro_013",
+  "description": {
+    "purpose": "Reconcile two complete credit-card rewards ledgers, persist four customer-submitted discrepancies, and preserve rewards while those cases await review.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin concerned but cooperative: “I was looking over my rewards summary, and the cash back on my two cards doesn't seem to add up. Could you help me review it?”\n\nIf asked about identity or contact information, supply only the requested details: Elena Park, 28, small-business bookkeeper in Sacramento, California; DOB 04/22/1997; phone 916-555-0148; email elena.park@example.com; address 1826 Willow Bend Way, Sacramento, CA 95818. You have operated your independent bookkeeping business since 2022; your personal FICO was 742 at both card approvals.\n\nIf asked which cards or period, identify your Business Silver Rewards Card and personal Silver Rewards Card and request their histories since opening. This is your first Business Silver card. You lack detailed statements and do not know the affected purchases, identifiers, rates, or correct amounts; do not invent them.\n\nYou want an accurate review of both cards, including too much as well as too little cash back. Personally submit the identified rewards issues using the capability provided here, only after the agent identifies each purchase recognizably, explains the inconsistency, and provides the necessary identifiers. You are not disputing the purchases themselves. You want an honest account of completed work and outstanding steps.\n\nOnly after completing the recommended submissions and receiving confirmations, say you believe the disputes have all been approved and resolved, and ask whether the rewards can now be corrected. If asked, explain that you mean those submission confirmations, not a separate decision notice. Accept a grounded explanation that review is still outstanding.\n\nIf a proposal skips a card or identified issue, bypasses your submissions, substitutes a purchase chargeback or unrelated benefit, or visibly contradicts the confirmations or what the agent said was unfinished, withhold agreement and authorization; point out that unresolved request or contradiction and ask them to check again. If an action already happened, or the agent reveals premature changes, ask them to correct the handling and explain what remains; do not accept while that recognizable problem remains. Otherwise preserve uncertainty: you cannot diagnose concealed mistakes, and your wish for legitimate corrections does not prove approval. Become frustrated and request a human only after repeated refusal or mishandling despite clarification, not simply because review takes time.\n\nAccept only after findings across both cards are explained, you have submitted the identified issues, the confirmation-related follow-up is addressed, and you understand actual progress and the next step. Waiting for review is acceptable. Then show relief, briefly thank the agent, do not reopen the case, and end with:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "c6d48f209b": {
+              "user_id": "c6d48f209b",
+              "name": "Elena Park",
+              "date_of_birth": "04/22/1997",
+              "address": "1826 Willow Bend Way, Sacramento, CA 95818",
+              "email": "elena.park@example.com",
+              "phone_number": "916-555-0148"
+            }
+          },
+          "notes": "Fresh fixture customer, age 28 on 11/14/2025. Elena is a Sacramento small-business bookkeeper operating an independent business since 2022; historical personal FICO was 742 at both held-card approvals. Narrative underwriting history is not an additional database field."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_c6d48f209b_bs": {
+              "account_id": "cc_c6d48f209b_bs",
+              "user_id": "c6d48f209b",
+              "card_type": "Business Silver Rewards Card",
+              "date_of_account_open": "01/09/2025",
+              "status": "ACTIVE",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$24,000.00",
+              "current_balance": "$1,472.18",
+              "reward_points": "32859 points"
+            },
+            "cc_c6d48f209b_s": {
+              "account_id": "cc_c6d48f209b_s",
+              "user_id": "c6d48f209b",
+              "card_type": "Silver Rewards Card",
+              "date_of_account_open": "12/03/2024",
+              "status": "ACTIVE",
+              "account_status": "CURRENT",
+              "past_due_amount": "$0.00",
+              "credit_limit": "$15,000.00",
+              "current_balance": "$864.26",
+              "reward_points": "6751 points"
+            }
+          },
+          "notes": "These are Elena's two held cards. cc_c6d48f209b_bs is her first-ever Business Silver Rewards Card; she has no earlier Business Silver holding. Neither account has been product-changed or closed. No redemption or manual reward bonus modifies this ledger. The personal card has no separate cash-back multiplier. No promotion enrollment flag or record exists; enrollment is automatic under the offer. This initialization adds the supplied accounts without replacing unrelated default records."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "txn_6f42bd98c101": {
+              "transaction_id": "txn_6f42bd98c101",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Alaska Airlines",
+              "transaction_amount": "$486.35",
+              "transaction_date": "01/17/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "9727 points"
+            },
+            "txn_6f42bd98c102": {
+              "transaction_id": "txn_6f42bd98c102",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Figma",
+              "transaction_amount": "$72.80",
+              "transaction_date": "02/06/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "1456 points"
+            },
+            "txn_6f42bd98c103": {
+              "transaction_id": "txn_6f42bd98c103",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Hyatt Hotels",
+              "transaction_amount": "$364.25",
+              "transaction_date": "03/11/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "3642 points"
+            },
+            "txn_6f42bd98c104": {
+              "transaction_id": "txn_6f42bd98c104",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Safeway",
+              "transaction_amount": "$116.40",
+              "transaction_date": "03/29/2025",
+              "category": "Groceries",
+              "status": "COMPLETED",
+              "rewards_earned": "232 points"
+            },
+            "txn_6f42bd98c105": {
+              "transaction_id": "txn_6f42bd98c105",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Dropbox",
+              "transaction_amount": "$63.75",
+              "transaction_date": "04/17/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "1275 points"
+            },
+            "txn_6f42bd98c106": {
+              "transaction_id": "txn_6f42bd98c106",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Amtrak",
+              "transaction_amount": "$184.60",
+              "transaction_date": "05/06/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "3692 points"
+            },
+            "txn_6f42bd98c107": {
+              "transaction_id": "txn_6f42bd98c107",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Office Depot",
+              "transaction_amount": "$93.85",
+              "transaction_date": "05/24/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "187 points"
+            },
+            "txn_6f42bd98c108": {
+              "transaction_id": "txn_6f42bd98c108",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Asana",
+              "transaction_amount": "$138.40",
+              "transaction_date": "06/16/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "2768 points"
+            },
+            "txn_6f42bd98c109": {
+              "transaction_id": "txn_6f42bd98c109",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Avis",
+              "transaction_amount": "$226.55",
+              "transaction_date": "07/01/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "4531 points"
+            },
+            "txn_6f42bd98c110": {
+              "transaction_id": "txn_6f42bd98c110",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Alaska Airlines",
+              "transaction_amount": "$412.65",
+              "transaction_date": "07/22/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "1650 points"
+            },
+            "txn_6f42bd98c111": {
+              "transaction_id": "txn_6f42bd98c111",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Figma",
+              "transaction_amount": "$84.30",
+              "transaction_date": "08/14/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "843 points"
+            },
+            "txn_6f42bd98c112": {
+              "transaction_id": "txn_6f42bd98c112",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Navan",
+              "transaction_amount": "$268.45",
+              "transaction_date": "09/09/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "2684 points"
+            },
+            "txn_6f42bd98c113": {
+              "transaction_id": "txn_6f42bd98c113",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Coursera",
+              "transaction_amount": "$68.90",
+              "transaction_date": "10/07/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "68 points"
+            },
+            "txn_6f42bd98c114": {
+              "transaction_id": "txn_6f42bd98c114",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_bs",
+              "credit_card_type": "Business Silver Rewards Card",
+              "merchant_name": "Costco",
+              "transaction_amount": "$104.70",
+              "transaction_date": "11/03/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "104 points"
+            },
+            "txn_83a71e5dc201": {
+              "transaction_id": "txn_83a71e5dc201",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "WinCo Foods",
+              "transaction_amount": "$76.45",
+              "transaction_date": "12/12/2024",
+              "category": "Groceries",
+              "status": "COMPLETED",
+              "rewards_earned": "76 points"
+            },
+            "txn_83a71e5dc202": {
+              "transaction_id": "txn_83a71e5dc202",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Alaska Airlines",
+              "transaction_amount": "$324.80",
+              "transaction_date": "01/24/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "1299 points"
+            },
+            "txn_83a71e5dc203": {
+              "transaction_id": "txn_83a71e5dc203",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Notion",
+              "transaction_amount": "$38.60",
+              "transaction_date": "02/19/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "154 points"
+            },
+            "txn_83a71e5dc204": {
+              "transaction_id": "txn_83a71e5dc204",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Chipotle",
+              "transaction_amount": "$47.85",
+              "transaction_date": "03/07/2025",
+              "category": "Dining",
+              "status": "COMPLETED",
+              "rewards_earned": "47 points"
+            },
+            "txn_83a71e5dc205": {
+              "transaction_id": "txn_83a71e5dc205",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Hyatt Hotels",
+              "transaction_amount": "$286.75",
+              "transaction_date": "04/09/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "1147 points"
+            },
+            "txn_83a71e5dc206": {
+              "transaction_id": "txn_83a71e5dc206",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Bitbucket",
+              "transaction_amount": "$218.75",
+              "transaction_date": "05/13/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "2187 points"
+            },
+            "txn_83a71e5dc207": {
+              "transaction_id": "txn_83a71e5dc207",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Regal Cinemas",
+              "transaction_amount": "$32.70",
+              "transaction_date": "06/03/2025",
+              "category": "Entertainment",
+              "status": "COMPLETED",
+              "rewards_earned": "32 points"
+            },
+            "txn_83a71e5dc208": {
+              "transaction_id": "txn_83a71e5dc208",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Amtrak",
+              "transaction_amount": "$146.40",
+              "transaction_date": "07/14/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "585 points"
+            },
+            "txn_83a71e5dc209": {
+              "transaction_id": "txn_83a71e5dc209",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Target",
+              "transaction_amount": "$129.95",
+              "transaction_date": "08/08/2025",
+              "category": "Shopping",
+              "status": "COMPLETED",
+              "rewards_earned": "129 points"
+            },
+            "txn_83a71e5dc210": {
+              "transaction_id": "txn_83a71e5dc210",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Figma",
+              "transaction_amount": "$57.25",
+              "transaction_date": "09/04/2025",
+              "category": "Software",
+              "status": "COMPLETED",
+              "rewards_earned": "229 points"
+            },
+            "txn_83a71e5dc211": {
+              "transaction_id": "txn_83a71e5dc211",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Avis",
+              "transaction_amount": "$193.80",
+              "transaction_date": "10/16/2025",
+              "category": "Travel",
+              "status": "COMPLETED",
+              "rewards_earned": "775 points"
+            },
+            "txn_83a71e5dc212": {
+              "transaction_id": "txn_83a71e5dc212",
+              "user_id": "c6d48f209b",
+              "credit_card_account_id": "cc_c6d48f209b_s",
+              "credit_card_type": "Silver Rewards Card",
+              "merchant_name": "Trader Joe's",
+              "transaction_amount": "$91.60",
+              "transaction_date": "11/05/2025",
+              "category": "Groceries",
+              "status": "COMPLETED",
+              "rewards_earned": "91 points"
+            }
+          },
+          "notes": "Complete supplied purchase inventory for c6d48f209b since both cards opened: 14 business purchases and 12 personal purchases. Every supplied row is a posted purchase billed directly by its named merchant, using the displayed merchant-submitted category. Software entries are directly billed services or subscriptions, not hardware, gift cards or prepaid value. Travel entries are directly billed travel services. None involves masked third-party processors, cash equivalents, person-to-person payments, fees, interest, bank insurance, returns, refunds, credits, split-category purchases, authorization-only activity or later category corrections. No additional purchase or reward-affecting adjustment belongs to these histories."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "No pre-existing case for this fresh customer or any supplied transaction. New dispute IDs and submitted_at values are tool-generated; do not preseed or predict IDs."
+        },
+        "task_config": {
+          "data": {
+            "dispute_settings": {
+              "auto_resolve_disputes": false
+            }
+          },
+          "notes": "Cash-back submissions remain queued for review. No external adjudication or background transition occurs during this interaction."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty tool-produced telemetry. The customer capability must be handed off during the session."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty wrapper telemetry. No agent capability is pre-unlocked; wrong-path unlock is explicit. Telemetry is excluded from domain reward."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Elena Park",
+          "user_id": "c6d48f209b",
+          "address": "1826 Willow Bend Way, Sacramento, CA 95818",
+          "email": "elena.park@example.com",
+          "phone_number": "916-555-0148",
+          "date_of_birth": "04/22/1997",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "gold_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Elena Park"
+        },
+        "info": "Reference-only ID discovery after name disclosure; not independently scored."
+      },
+      {
+        "action_id": "gold_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "c6d48f209b"
+        },
+        "info": "Reference-only product and opening-date evidence for the two-card calculation."
+      },
+      {
+        "action_id": "gold_ledger",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "c6d48f209b"
+        },
+        "info": "Reference-only full audit inventory; independently calculate all 26 rows. No particular read is scored."
+      },
+      {
+        "action_id": "gold_give",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{}"
+        },
+        "info": "Ephemeral handoff, not a domain mutation proof or reward. Explain recognizable purchases and provide exact IDs before customer submissions."
+      },
+      {
+        "action_id": "gold_submit_b03",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"c6d48f209b\",\"transaction_id\":\"txn_6f42bd98c103\"}"
+        },
+        "info": "Underlying submission 1 of 4. Capture actual returned dispute ID; assert by owner and transaction, not a predicted key."
+      },
+      {
+        "action_id": "gold_submit_b10",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"c6d48f209b\",\"transaction_id\":\"txn_6f42bd98c110\"}"
+        }
+      },
+      {
+        "action_id": "gold_submit_b12",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"c6d48f209b\",\"transaction_id\":\"txn_6f42bd98c112\"}"
+        }
+      },
+      {
+        "action_id": "gold_submit_p06",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"c6d48f209b\",\"transaction_id\":\"txn_83a71e5dc206\"}"
+        },
+        "info": "After confirmations Elena makes her unsupported approval claim. No subsequent reward or financial mutation is authorized. Submission order among the four is not scored."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_business_credit_cards_business_silver_rewards_card_012",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_credit_cards_silver_rewards_card_002",
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_004",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_credit_cards_(general)_007"
+  ]
+}

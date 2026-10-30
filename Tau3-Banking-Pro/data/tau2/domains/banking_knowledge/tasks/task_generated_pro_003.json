@@ -1,0 +1,392 @@
+{
+  "id": "task_generated_pro_003",
+  "description": {
+    "purpose": "Reconcile ten recent transactions across Amina Duarte's four existing credit cards and submit precisely the seven genuine reward discrepancies without changing rewards or balances.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Amina Duarte, age 38, a self-employed small-business bookkeeper in Sacramento, California. This morning, a purchase reward on your latest mailed summary looked too small. You are concerned but do not know which entries are wrong.\n\nOpen with: \"The rewards on my latest card summary don't seem to add up. Could you review my recent card activity and help get any mistakes sorted out?\"\n\nOnly when asked for identity information, give the requested fields: Amina Duarte; born March 9, 1987; phone 916-555-0184; email amina.duarte@example.com; address 4821 Willow Lantern Way, Sacramento, CA 95822. Do not invent other identity answers.\n\nWhen asked about affected cards, the period, suspected errors, or access to records, explain that you want October 1 through today, November 14, reviewed across Diamond Elite, Business Platinum Rewards, Business Silver Rewards, and EcoCard. Your commitment is a complete review across all four cards and correction of genuine errors in either direction, not simply a larger payout. You need the agent to navigate the transactions and do the calculations; you are willing to use an explained submission capability with guidance. Do not volunteer this detail before a relevant question. You do not initially know transaction identifiers, correct rates, error counts, or correction amounts. If asked for them, say: \"I'm not sure of those details. Please work them out from the records; I can follow your guidance once you've identified the entries.\"\n\nOnly after the agent presents specific discrepancy findings, say: \"Please put all of those mistakes through for review. I can follow the submission steps you provide.\" Treat explained findings and identifiers as information learned during the conversation, not facts you knew at the opening. Before each submission, require the agent to identify the entry as your own activity and explain the affected card, merchant, date, and issue. Then follow the supplied identifiers and guidance yourself.\n\nIf the agent proposes only one card, only missing rewards, indiscriminate filings, or leaving you to identify entries yourself, respond: \"Please work out which entries are actually wrong across the cards, including anything I received in excess. I can follow guided submissions, but I can't identify the entries myself.\" Do not authorize a visibly incomplete or blanket-dispute plan as the final resolution. If something has already been skipped, ask to finish the review; if an indiscriminate filing has already happened, ask the agent to address it and finish the accurate review before accepting. You need not independently validate hidden eligibility rules or arithmetic, and must not invent policy corrections or copy an incompatible proposal merely because the agent recommends it.\n\nAccept only after the agent confirms that the requested scope was reviewed and every identified error, including excess rewards, was successfully submitted. If a stated finding remains unsubmitted or a submission visibly failed, ask to finish it and do not accept or end yet. Understand that submissions are awaiting review, not immediate reward adjustments. Once these conditions hold, briefly thank the agent and end with exactly one stop marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "U_AD_7319": {
+              "user_id": "U_AD_7319",
+              "name": "Amina Duarte",
+              "date_of_birth": "03/09/1987",
+              "phone_number": "916-555-0184",
+              "email": "amina.duarte@example.com",
+              "address": "4821 Willow Lantern Way, Sacramento, CA 95822",
+              "parent_user_id": null,
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Customer identity. Age 38 on 11/14/2025. Occupation is narrative only."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "AD_DE_712": {
+              "account_id": "AD_DE_712",
+              "user_id": "U_AD_7319",
+              "card_type": "Diamond Elite Card",
+              "date_of_account_open": "03/18/2022",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "60000",
+              "current_balance": "286",
+              "past_due_amount": "0",
+              "reward_points": "286"
+            },
+            "AD_BP_426": {
+              "account_id": "AD_BP_426",
+              "user_id": "U_AD_7319",
+              "card_type": "Business Platinum Rewards Card",
+              "date_of_account_open": "06/14/2022",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "80000",
+              "current_balance": "100",
+              "past_due_amount": "0",
+              "reward_points": "1430"
+            },
+            "AD_BS_583": {
+              "account_id": "AD_BS_583",
+              "user_id": "U_AD_7319",
+              "card_type": "Business Silver Rewards Card",
+              "date_of_account_open": "09/09/2022",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "25000",
+              "current_balance": "600",
+              "past_due_amount": "0",
+              "reward_points": "3660"
+            },
+            "AD_EC_947": {
+              "account_id": "AD_EC_947",
+              "user_id": "U_AD_7319",
+              "card_type": "EcoCard",
+              "date_of_account_open": "11/02/2022",
+              "account_status": "ACTIVE",
+              "status": "ACTIVE",
+              "credit_limit": "7500",
+              "current_balance": "190",
+              "past_due_amount": "0",
+              "reward_points": "406"
+            }
+          },
+          "notes": "Existing approved, active, current accounts. Reward totals are retained recorded points, not corrected totals. Monetary balances exclude the pending authorization and refunded principal. Optional last-four fields are omitted."
+        },
+        "credit_card_transaction_history": {
+          "data": {
+            "AD25_E76": {
+              "transaction_id": "AD25_E76",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_EC_947",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/06/2025",
+              "merchant_name": "Blink",
+              "category": "EV Charging",
+              "transaction_amount": "54.00",
+              "status": "COMPLETED",
+              "rewards_earned": "270",
+              "credit_reason": "Posted, settled charging session operated and billed by Blink, not Tesla Supercharger, ChargePoint, or EVgo. No refund, promotion, or separate reward adjustment."
+            },
+            "AD25_D84": {
+              "transaction_id": "AD25_D84",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_DE_712",
+              "credit_card_type": "Diamond Elite Card",
+              "transaction_date": "11/13/2025",
+              "merchant_name": "Juniper Housewares",
+              "category": "Shopping",
+              "transaction_amount": "190.00",
+              "status": "PENDING",
+              "rewards_earned": "0",
+              "credit_reason": "Unposted purchase authorization at 11/14/2025; excluded from posted monetary balance. No return, promotion, or separate reward adjustment."
+            },
+            "AD25_S65": {
+              "transaction_id": "AD25_S65",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_BS_583",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "11/05/2025",
+              "merchant_name": "Cedar Ledger SaaS",
+              "category": "Software",
+              "transaction_amount": "260.00",
+              "status": "COMPLETED",
+              "rewards_earned": "260",
+              "credit_reason": "Recurring cloud bookkeeping software billed online directly by Cedar Ledger SaaS, the software service provider. Posted and settled with Software merchant category coding. No return, promotion, or separate reward adjustment."
+            },
+            "AD25_P37": {
+              "transaction_id": "AD25_P37",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_BP_426",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/06/2025",
+              "merchant_name": "Lattice Desk Software",
+              "category": "Software",
+              "transaction_amount": "320.00",
+              "status": "REFUNDED",
+              "rewards_earned": "1280",
+              "credit_reason": "Full $320.00 merchant refund posted 10/27/2025 for this purchase; purchase principal fully returned. Rewards shown are retained net rewards; no separate reward reversal exists. Original software purchase billed directly by Lattice Desk Software under Software merchant category coding. No promotion or other adjustment."
+            },
+            "AD25_E19": {
+              "transaction_id": "AD25_E19",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_EC_947",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/09/2025",
+              "merchant_name": "Amazon",
+              "category": "Shopping",
+              "transaction_amount": "82.00",
+              "status": "COMPLETED",
+              "rewards_earned": "82",
+              "credit_reason": "Online marketplace order of eco-labeled cleaning supplies; payment processed by Amazon. Posted and settled. No refund, promotion, or separate reward adjustment."
+            },
+            "AD25_D61": {
+              "transaction_id": "AD25_D61",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_DE_712",
+              "credit_card_type": "Diamond Elite Card",
+              "transaction_date": "11/08/2025",
+              "merchant_name": "Riverbend Homewares",
+              "category": "Shopping",
+              "transaction_amount": "286.00",
+              "status": "COMPLETED",
+              "rewards_earned": "286",
+              "credit_reason": "Eligible posted, settled homewares purchase. No return, promotion, or separate reward adjustment."
+            },
+            "AD25_P14": {
+              "transaction_id": "AD25_P14",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_BP_426",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "11/04/2025",
+              "merchant_name": "Oak Table Cafe",
+              "category": "Dining",
+              "transaction_amount": "60.00",
+              "status": "COMPLETED",
+              "rewards_earned": "90",
+              "credit_reason": "Ordinary posted, settled dining purchase, outside travel, software, and media advertising categories. No return, promotion, or separate reward adjustment."
+            },
+            "AD25_E43": {
+              "transaction_id": "AD25_E43",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_EC_947",
+              "credit_card_type": "EcoCard",
+              "transaction_date": "11/06/2025",
+              "merchant_name": "EVgo",
+              "category": "EV Charging",
+              "transaction_amount": "54.00",
+              "status": "COMPLETED",
+              "rewards_earned": "54",
+              "credit_reason": "Posted, settled charging session operated and billed directly by EVgo. No excluded retailer involved. No refund, promotion, or separate reward adjustment."
+            },
+            "AD25_S28": {
+              "transaction_id": "AD25_S28",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_BS_583",
+              "credit_card_type": "Business Silver Rewards Card",
+              "transaction_date": "10/18/2025",
+              "merchant_name": "Dell",
+              "category": "Software",
+              "transaction_amount": "340.00",
+              "status": "COMPLETED",
+              "rewards_earned": "3400",
+              "credit_reason": "Posted, settled direct online software purchase billed by Dell under Software merchant category coding. No return, promotion, or separate reward adjustment."
+            },
+            "AD25_P92": {
+              "transaction_id": "AD25_P92",
+              "user_id": "U_AD_7319",
+              "credit_card_account_id": "AD_BP_426",
+              "credit_card_type": "Business Platinum Rewards Card",
+              "transaction_date": "10/29/2025",
+              "merchant_name": "Rho-Bank",
+              "category": "Fee",
+              "transaction_amount": "40.00",
+              "status": "COMPLETED",
+              "rewards_earned": "60",
+              "credit_reason": "Posted bank fee, not a merchant purchase. The fee itself is not disputed. No refund, promotion, or separate reward adjustment."
+            }
+          },
+          "notes": "Entire activity set for this customer from 10/01/2025 through 11/14/2025, deliberately interleaved. COMPLETED means posted and settled. Amounts are USD; rewards_earned contains points. No separate refund row is needed: AD25_P37 retains the original purchase amount after full refund."
+        },
+        "cash_back_disputes": {
+          "data": {},
+          "notes": "Initially empty. Seven user-side submissions will create the intended business outcome. Dispute IDs are supplied by tool responses, not predicted."
+        },
+        "task_config": {
+          "data": {},
+          "notes": "No dispute_settings record. The documented auto_resolve_disputes default is false."
+        },
+        "user_discoverable_tools": {
+          "data": {},
+          "notes": "Initially empty operational support table. Tool availability is supplied through the catalog and delivery action, not seeded metadata."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "verification_lookup",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        },
+        "info": "Authentication reference: compare two customer-supplied identity factors with this caller profile; conversation authentication is separately audited."
+      },
+      {
+        "action_id": "verification_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "verification_log",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Amina Duarte",
+          "user_id": "U_AD_7319",
+          "address": "4821 Willow Lantern Way, Sacramento, CA 95822",
+          "email": "amina.duarte@example.com",
+          "phone_number": "916-555-0184",
+          "date_of_birth": "03/09/1987",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After two matching identity factors, log the complete caller profile at the native session clock before protected customer work."
+      },
+      {
+        "action_id": "ad_lookup_customer",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Amina Duarte"
+        },
+        "info": "Reference-only read to obtain the customer's user_id after she supplies her name; not independently scored."
+      },
+      {
+        "action_id": "ad_read_accounts",
+        "requestor": "assistant",
+        "name": "get_credit_card_accounts_by_user",
+        "arguments": {
+          "user_id": "U_AD_7319"
+        },
+        "info": "Reference-only read establishing products, good standing, opening dates, and recorded totals. Not independently scored."
+      },
+      {
+        "action_id": "ad_read_transactions",
+        "requestor": "assistant",
+        "name": "get_credit_card_transactions_by_user",
+        "arguments": {
+          "user_id": "U_AD_7319"
+        },
+        "info": "Reference-only discovery of transaction IDs and the eligibility, refund, posting, and reward evidence needed to select the dispute set. Not independently scored."
+      },
+      {
+        "action_id": "ad_give_submission",
+        "requestor": "assistant",
+        "name": "give_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"U_AD_7319\",\"transaction_id\":\"AD25_D61\"}"
+        },
+        "info": "After explaining findings, supply the customer-side submission capability. Delivery persistence is support only; no agent-side unlock or verification-history write is required."
+      },
+      {
+        "action_id": "ad_submit_d61",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"U_AD_7319\",\"transaction_id\":\"AD25_D61\"}"
+        },
+        "info": "Amina submits after the agent identifies her Diamond Elite Riverbend Homewares purchase dated 11/08/2025 and explains the undercredit: 1430 expected versus 286 recorded points."
+      },
+      {
+        "action_id": "ad_submit_p37",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"U_AD_7319\",\"transaction_id\":\"AD25_P37\"}"
+        },
+        "info": "Amina submits after the agent identifies her Business Platinum Lattice Desk Software purchase dated 10/06/2025, its full refund, and the retained 1280-point excess."
+      },
+      {
+        "action_id": "ad_submit_p92",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"U_AD_7319\",\"transaction_id\":\"AD25_P92\"}"
+        },
+        "info": "Amina submits after the agent identifies her Business Platinum Rho-Bank fee dated 10/29/2025 and explains that its 60 reward points are excess; the fee principal is not challenged."
+      },
+      {
+        "action_id": "ad_submit_s28",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"U_AD_7319\",\"transaction_id\":\"AD25_S28\"}"
+        },
+        "info": "Amina submits after the agent identifies her Business Silver Dell purchase dated 10/18/2025 and explains the excluded-merchant rate and 3060-point excess."
+      },
+      {
+        "action_id": "ad_submit_s65",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"U_AD_7319\",\"transaction_id\":\"AD25_S65\"}"
+        },
+        "info": "Amina submits after the agent identifies her Business Silver Cedar Ledger SaaS purchase dated 11/05/2025 and explains the 2340-point undercredit."
+      },
+      {
+        "action_id": "ad_submit_e43",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"U_AD_7319\",\"transaction_id\":\"AD25_E43\"}"
+        },
+        "info": "Amina submits after the agent identifies her EcoCard EVgo session dated 11/06/2025 and explains the 216-point undercredit, binding this ID to EVgo rather than the same-date, same-amount Blink session."
+      },
+      {
+        "action_id": "ad_submit_e76",
+        "requestor": "user",
+        "name": "call_discoverable_user_tool",
+        "arguments": {
+          "discoverable_tool_name": "submit_cash_back_dispute_0589",
+          "arguments": "{\"user_id\":\"U_AD_7319\",\"transaction_id\":\"AD25_E76\"}"
+        },
+        "info": "Amina submits after the agent identifies her EcoCard Blink session dated 11/06/2025 and explains the 216-point excess, separately from EVgo despite a combined zero difference."
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "call_discoverable_user_tool"
+  ],
+  "required_documents": [
+    "doc_credit_cards_credit_cards_(general)_003",
+    "doc_credit_cards_credit_cards_(general)_006",
+    "doc_credit_cards_diamond_elite_card_003",
+    "doc_business_credit_cards_business_platinum_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_002",
+    "doc_business_credit_cards_business_silver_rewards_card_005",
+    "doc_credit_cards_ecocard_002",
+    "doc_credit_cards_ecocard_004"
+  ]
+}

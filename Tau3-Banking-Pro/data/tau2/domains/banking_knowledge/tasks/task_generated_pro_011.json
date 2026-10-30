@@ -1,0 +1,1409 @@
+{
+  "id": "task_generated_pro_011",
+  "description": {
+    "purpose": "Reconcile Caleb Moreno's complete November-to-date ATM activity across four checking products and post one exact net correction to each account.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "Begin: “Hi, I was going through my November activity and some of the ATM fees on my checking accounts look wrong. Could you review them and help get this sorted out?”\n\nIf asked for identity details, provide the requested information: Caleb Moreno, age 24, laboratory technician in Phoenix, Arizona; DOB 03/22/2001; phone 602-555-0148; email caleb.moreno@example.com; address 2186 E Willow Lane, Phoenix, AZ 85016.\n\nIf asked about the affected activity, identify your Purple, Light Blue, Dark Green, and Evergreen accounts and November 1–13, 2025. You use them as separate household budgets and recognize the small cash withdrawals at home and during your family road trip through Sonora November 6–9. You are unsure which fees are wrong. If asked about student status, you attend Phoenix College part-time and already submitted your fall 2025 enrollment proof through the secure upload option.\n\nYour goal is to resolve the ATM discrepancies across all four existing accounts, with each correction identified separately. After answering verification questions, express relief and authorize explained corrections once the agent identifies discrepancies and proposes fixing them. You may accept an explanation that legitimately owed fees offset refunds; you do not know the rules or correct amounts beforehand.\n\nDo not authorize transfers or product changes as substitutes, or accept a visibly partial fix. Ask the agent to address what remains; if an incorrect or incomplete action has already happened, ask them to correct it. If they refuse to address identified errors, become frustrated and request a human without withdrawing that request to accept an unresolved case.\n\nAfter credits are applied, ask the amount credited to each account and whether you need to do anything further. Accept only when review and corrections are confirmed complete across all four accounts, each credit amount and any next steps are explained, and no visible problem or human-transfer request remains unresolved. Alternatively, a requested human handoff may end the conversation only when confirmed, not as a successful fee resolution. Then thank the agent briefly and end with exactly one marker:\n###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "cm26a91": {
+              "user_id": "cm26a91",
+              "name": "Caleb Moreno",
+              "date_of_birth": "03/22/2001",
+              "address": "2186 E Willow Lane, Phoenix, AZ 85016",
+              "phone_number": "602-555-0148",
+              "email": "caleb.moreno@example.com"
+            }
+          },
+          "notes": "Fresh caller. Occupation and existing fall-2025 enrollment context are narrative facts, not invented user fields. Patch preserves unrelated users."
+        },
+        "accounts": {
+          "data": {
+            "chk_cm26a91_p": {
+              "account_id": "chk_cm26a91_p",
+              "user_id": "cm26a91",
+              "class": "checking",
+              "account_type": "checking",
+              "level": "Purple Account",
+              "account_class": "Purple Account",
+              "status": "OPEN",
+              "date_opened": "04/18/2023",
+              "current_holdings": "6240.50"
+            },
+            "chk_cm26a91_l": {
+              "account_id": "chk_cm26a91_l",
+              "user_id": "cm26a91",
+              "class": "checking",
+              "account_type": "checking",
+              "level": "Light Blue Account",
+              "account_class": "Light Blue Account",
+              "status": "OPEN",
+              "date_opened": "09/12/2023",
+              "current_holdings": "3428.20"
+            },
+            "chk_cm26a91_d": {
+              "account_id": "chk_cm26a91_d",
+              "user_id": "cm26a91",
+              "class": "checking",
+              "account_type": "checking",
+              "level": "Dark Green Account",
+              "account_class": "Dark Green Account",
+              "status": "OPEN",
+              "date_opened": "01/23/2024",
+              "current_holdings": "1865.75"
+            },
+            "chk_cm26a91_e": {
+              "account_id": "chk_cm26a91_e",
+              "user_id": "cm26a91",
+              "class": "checking",
+              "account_type": "checking",
+              "level": "Evergreen Account",
+              "account_class": "Evergreen Account",
+              "status": "OPEN",
+              "date_opened": "07/09/2024",
+              "current_holdings": "9230.10"
+            }
+          },
+          "notes": "The caller's four established checking accounts. Balances already incorporate supplied transactions and earlier lifetime activity. No other caller-owned financial products are supplied."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initialization fixture; no pre-existing caller verification. Preserve unrelated default rows. Current-session verification must be logged."
+        },
+        "credit_card_accounts": {
+          "data": {},
+          "notes": "Lookup support; no caller-owned credit card account. Not a replacement of default records."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational telemetry starts empty in the fixture. Availability comes from the tool catalog."
+        },
+        "bank_account_transaction_history": {
+          "data": {
+            "btxn_cm26a91_p_w01": {
+              "transaction_id": "btxn_cm26a91_p_w01",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/01/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 120; 08:00 UTC",
+              "amount": -120,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w02": {
+              "transaction_id": "btxn_cm26a91_p_w02",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/02/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK TEMPE AZ USA; Rho-Bank network; cash USD 160; 09:00 UTC",
+              "amount": -160,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w03": {
+              "transaction_id": "btxn_cm26a91_p_w03",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/03/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 90; 10:00 UTC",
+              "amount": -90,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w04": {
+              "transaction_id": "btxn_cm26a91_p_w04",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/03/2025",
+              "description": "ATM CASH WITHDRAWAL - CHASE PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 130; 10:05 UTC",
+              "amount": -130,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w05": {
+              "transaction_id": "btxn_cm26a91_p_w05",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/04/2025",
+              "description": "ATM CASH WITHDRAWAL - WELLS FARGO TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 190; 11:00 UTC",
+              "amount": -190,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w06": {
+              "transaction_id": "btxn_cm26a91_p_w06",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 240; 13:00 UTC",
+              "amount": -240,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w07": {
+              "transaction_id": "btxn_cm26a91_p_w07",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - BANORTE NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 160; 13:05 UTC",
+              "amount": -160,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w08": {
+              "transaction_id": "btxn_cm26a91_p_w08",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/07/2025",
+              "description": "ATM CASH WITHDRAWAL - SANTANDER HERMOSILLO SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 330; 14:00 UTC",
+              "amount": -330,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w09": {
+              "transaction_id": "btxn_cm26a91_p_w09",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/07/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA HERMOSILLO SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 210; 14:05 UTC",
+              "amount": -210,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w10": {
+              "transaction_id": "btxn_cm26a91_p_w10",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/05/2025",
+              "description": "ATM CASH WITHDRAWAL - BANK OF AMERICA TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 145; 12:00 UTC",
+              "amount": -145,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w11": {
+              "transaction_id": "btxn_cm26a91_p_w11",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/10/2025",
+              "description": "ATM CASH WITHDRAWAL - US BANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 155; 17:00 UTC",
+              "amount": -155,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w12": {
+              "transaction_id": "btxn_cm26a91_p_w12",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/08/2025",
+              "description": "ATM CASH WITHDRAWAL - BANAMEX GUAYMAS SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 220; 15:00 UTC",
+              "amount": -220,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w13": {
+              "transaction_id": "btxn_cm26a91_p_w13",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/11/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 180; 18:00 UTC",
+              "amount": -180,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w14": {
+              "transaction_id": "btxn_cm26a91_p_w14",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/12/2025",
+              "description": "ATM CASH WITHDRAWAL - PNC PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 170; 19:00 UTC",
+              "amount": -170,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w15": {
+              "transaction_id": "btxn_cm26a91_p_w15",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/13/2025",
+              "description": "ATM CASH WITHDRAWAL - CITIBANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 185; 20:00 UTC",
+              "amount": -185,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w16": {
+              "transaction_id": "btxn_cm26a91_p_w16",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/08/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA GUAYMAS SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 260; 15:05 UTC",
+              "amount": -260,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w17": {
+              "transaction_id": "btxn_cm26a91_p_w17",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/09/2025",
+              "description": "ATM CASH WITHDRAWAL - BANORTE NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 195; 16:00 UTC",
+              "amount": -195,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w02_b": {
+              "transaction_id": "btxn_cm26a91_p_w02_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/02/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_p_w02",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w04_b": {
+              "transaction_id": "btxn_cm26a91_p_w04_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/03/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_p_w04",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w05_b": {
+              "transaction_id": "btxn_cm26a91_p_w05_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/04/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_p_w05",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w06_b": {
+              "transaction_id": "btxn_cm26a91_p_w06_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/06/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_p_w06",
+              "amount": -7.2,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w08_b": {
+              "transaction_id": "btxn_cm26a91_p_w08_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/07/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_p_w08",
+              "amount": -9.9,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w10_b": {
+              "transaction_id": "btxn_cm26a91_p_w10_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/05/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_p_w10",
+              "amount": -3.75,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w11_b": {
+              "transaction_id": "btxn_cm26a91_p_w11_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/10/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_p_w11",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w14_b": {
+              "transaction_id": "btxn_cm26a91_p_w14_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/12/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_p_w14",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w14_b2": {
+              "transaction_id": "btxn_cm26a91_p_w14_b2",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/12/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_p_w14",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w15_b": {
+              "transaction_id": "btxn_cm26a91_p_w15_b",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/13/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_p_w15",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w04_o": {
+              "transaction_id": "btxn_cm26a91_p_w04_o",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/03/2025",
+              "description": "ATM OPERATOR FEE - btxn_cm26a91_p_w04 - CHASE PHOENIX AZ USA ordinary bank-branch ATM; terminal surcharge",
+              "amount": -6,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w05_o": {
+              "transaction_id": "btxn_cm26a91_p_w05_o",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/04/2025",
+              "description": "ATM OPERATOR FEE - btxn_cm26a91_p_w05 - WELLS FARGO TUCSON AZ USA ordinary bank-branch ATM; terminal surcharge",
+              "amount": -7,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w10_o": {
+              "transaction_id": "btxn_cm26a91_p_w10_o",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/05/2025",
+              "description": "ATM OPERATOR FEE - btxn_cm26a91_p_w10 - BANK OF AMERICA TUCSON AZ USA ordinary bank-branch ATM; terminal surcharge",
+              "amount": -8,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w11_o": {
+              "transaction_id": "btxn_cm26a91_p_w11_o",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/10/2025",
+              "description": "ATM OPERATOR FEE - btxn_cm26a91_p_w11 - US BANK PHOENIX AZ USA ordinary bank-branch ATM; terminal surcharge",
+              "amount": -5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w14_o": {
+              "transaction_id": "btxn_cm26a91_p_w14_o",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/12/2025",
+              "description": "ATM OPERATOR FEE - btxn_cm26a91_p_w14 - PNC PHOENIX AZ USA ordinary bank-branch ATM; terminal surcharge",
+              "amount": -6,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w15_o": {
+              "transaction_id": "btxn_cm26a91_p_w15_o",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/13/2025",
+              "description": "ATM OPERATOR FEE - btxn_cm26a91_p_w15 - CITIBANK PHOENIX AZ USA ordinary bank-branch ATM; terminal surcharge",
+              "amount": -4,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w04_r": {
+              "transaction_id": "btxn_cm26a91_p_w04_r",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/03/2025",
+              "description": "AUTOMATIC ATM OPERATOR FEE REBATE - btxn_cm26a91_p_w04_o for withdrawal btxn_cm26a91_p_w04",
+              "amount": 6,
+              "type": "fee_rebate",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w05_r": {
+              "transaction_id": "btxn_cm26a91_p_w05_r",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/04/2025",
+              "description": "AUTOMATIC ATM OPERATOR FEE REBATE - btxn_cm26a91_p_w05_o for withdrawal btxn_cm26a91_p_w05",
+              "amount": 7,
+              "type": "fee_rebate",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w11_r": {
+              "transaction_id": "btxn_cm26a91_p_w11_r",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/10/2025",
+              "description": "AUTOMATIC ATM OPERATOR FEE REBATE - btxn_cm26a91_p_w11_o for withdrawal btxn_cm26a91_p_w11",
+              "amount": 5,
+              "type": "fee_rebate",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w14_r": {
+              "transaction_id": "btxn_cm26a91_p_w14_r",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/12/2025",
+              "description": "AUTOMATIC ATM OPERATOR FEE REBATE - btxn_cm26a91_p_w14_o for withdrawal btxn_cm26a91_p_w14",
+              "amount": 6,
+              "type": "fee_rebate",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_w15_r": {
+              "transaction_id": "btxn_cm26a91_p_w15_r",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/13/2025",
+              "description": "AUTOMATIC ATM OPERATOR FEE REBATE - btxn_cm26a91_p_w15_o for withdrawal btxn_cm26a91_p_w15",
+              "amount": 4,
+              "type": "fee_rebate",
+              "status": "posted"
+            },
+            "btxn_cm26a91_p_pay": {
+              "transaction_id": "btxn_cm26a91_p_pay",
+              "account_id": "chk_cm26a91_p",
+              "date": "11/01/2025",
+              "description": "SPLIT PAYROLL - SONORAN CLINICAL LABS",
+              "amount": 2200,
+              "type": "direct_deposit",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w01": {
+              "transaction_id": "btxn_cm26a91_l_w01",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/01/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 50; 08:00 UTC",
+              "amount": -50,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w02": {
+              "transaction_id": "btxn_cm26a91_l_w02",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/02/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK TEMPE AZ USA; Rho-Bank network; cash USD 60; 09:00 UTC",
+              "amount": -60,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w03": {
+              "transaction_id": "btxn_cm26a91_l_w03",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/03/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 40; 10:00 UTC",
+              "amount": -40,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w04": {
+              "transaction_id": "btxn_cm26a91_l_w04",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/03/2025",
+              "description": "ATM CASH WITHDRAWAL - CHASE PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 70; 10:05 UTC",
+              "amount": -70,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w05": {
+              "transaction_id": "btxn_cm26a91_l_w05",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/04/2025",
+              "description": "ATM CASH WITHDRAWAL - WELLS FARGO TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 90; 11:00 UTC",
+              "amount": -90,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w06": {
+              "transaction_id": "btxn_cm26a91_l_w06",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/05/2025",
+              "description": "ATM CASH WITHDRAWAL - BANK OF AMERICA TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 110; 12:00 UTC",
+              "amount": -110,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w07": {
+              "transaction_id": "btxn_cm26a91_l_w07",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 90; 13:00 UTC",
+              "amount": -90,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w08": {
+              "transaction_id": "btxn_cm26a91_l_w08",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - BANORTE NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 100; 13:05 UTC",
+              "amount": -100,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w09": {
+              "transaction_id": "btxn_cm26a91_l_w09",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/10/2025",
+              "description": "ATM CASH WITHDRAWAL - PNC PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 120; 17:00 UTC",
+              "amount": -120,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w10": {
+              "transaction_id": "btxn_cm26a91_l_w10",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/07/2025",
+              "description": "ATM CASH WITHDRAWAL - SANTANDER HERMOSILLO SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 140; 14:00 UTC",
+              "amount": -140,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w11": {
+              "transaction_id": "btxn_cm26a91_l_w11",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/10/2025",
+              "description": "ATM CASH WITHDRAWAL - US BANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 60; 17:05 UTC",
+              "amount": -60,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w12": {
+              "transaction_id": "btxn_cm26a91_l_w12",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/08/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA GUAYMAS SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 160; 15:00 UTC",
+              "amount": -160,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w13": {
+              "transaction_id": "btxn_cm26a91_l_w13",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/11/2025",
+              "description": "ATM CASH WITHDRAWAL - CITIBANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 130; 18:00 UTC",
+              "amount": -130,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w14": {
+              "transaction_id": "btxn_cm26a91_l_w14",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/08/2025",
+              "description": "ATM CASH WITHDRAWAL - BANAMEX GUAYMAS SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 70; 15:05 UTC",
+              "amount": -70,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w15": {
+              "transaction_id": "btxn_cm26a91_l_w15",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/12/2025",
+              "description": "ATM CASH WITHDRAWAL - WELLS FARGO PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 145; 19:00 UTC",
+              "amount": -145,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w16": {
+              "transaction_id": "btxn_cm26a91_l_w16",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/09/2025",
+              "description": "ATM CASH WITHDRAWAL - BANORTE NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 155; 16:00 UTC",
+              "amount": -155,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w02_b": {
+              "transaction_id": "btxn_cm26a91_l_w02_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/02/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_l_w02",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w04_b": {
+              "transaction_id": "btxn_cm26a91_l_w04_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/03/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_l_w04",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w05_b": {
+              "transaction_id": "btxn_cm26a91_l_w05_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/04/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_l_w05",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w06_b": {
+              "transaction_id": "btxn_cm26a91_l_w06_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/05/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_l_w06",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w07_b": {
+              "transaction_id": "btxn_cm26a91_l_w07_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/06/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_l_w07",
+              "amount": -4,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w08_b": {
+              "transaction_id": "btxn_cm26a91_l_w08_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/06/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_l_w08",
+              "amount": -4,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w10_b": {
+              "transaction_id": "btxn_cm26a91_l_w10_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/07/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_l_w10",
+              "amount": -4,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w11_b": {
+              "transaction_id": "btxn_cm26a91_l_w11_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/10/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_l_w11",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w12_b": {
+              "transaction_id": "btxn_cm26a91_l_w12_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/08/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_l_w12",
+              "amount": -6.25,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w13_b": {
+              "transaction_id": "btxn_cm26a91_l_w13_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/11/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_l_w13",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w14_b": {
+              "transaction_id": "btxn_cm26a91_l_w14_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/08/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_l_w14",
+              "amount": -4,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w15_b": {
+              "transaction_id": "btxn_cm26a91_l_w15_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/12/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_l_w15",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_w16_b": {
+              "transaction_id": "btxn_cm26a91_l_w16_b",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/09/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_l_w16",
+              "amount": -4,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_l_pay": {
+              "transaction_id": "btxn_cm26a91_l_pay",
+              "account_id": "chk_cm26a91_l",
+              "date": "11/01/2025",
+              "description": "SPLIT PAYROLL - SONORAN CLINICAL LABS",
+              "amount": 1450,
+              "type": "direct_deposit",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w01": {
+              "transaction_id": "btxn_cm26a91_d_w01",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/01/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 30; 08:00 UTC",
+              "amount": -30,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w02": {
+              "transaction_id": "btxn_cm26a91_d_w02",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/02/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK TEMPE AZ USA; Rho-Bank network; cash USD 35; 09:00 UTC",
+              "amount": -35,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w03": {
+              "transaction_id": "btxn_cm26a91_d_w03",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/03/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 25; 10:00 UTC",
+              "amount": -25,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w04": {
+              "transaction_id": "btxn_cm26a91_d_w04",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/04/2025",
+              "description": "ATM CASH WITHDRAWAL - CHASE TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 60; 11:00 UTC",
+              "amount": -60,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w05": {
+              "transaction_id": "btxn_cm26a91_d_w05",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/04/2025",
+              "description": "ATM CASH WITHDRAWAL - WELLS FARGO TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 90; 11:05 UTC",
+              "amount": -90,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w06": {
+              "transaction_id": "btxn_cm26a91_d_w06",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/05/2025",
+              "description": "ATM CASH WITHDRAWAL - BANK OF AMERICA TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 180; 12:00 UTC",
+              "amount": -180,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w07": {
+              "transaction_id": "btxn_cm26a91_d_w07",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/10/2025",
+              "description": "ATM CASH WITHDRAWAL - PNC PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 260; 17:00 UTC",
+              "amount": -260,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w08": {
+              "transaction_id": "btxn_cm26a91_d_w08",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 40; 13:00 UTC",
+              "amount": -40,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w09": {
+              "transaction_id": "btxn_cm26a91_d_w09",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - BANORTE NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 60; 13:05 UTC",
+              "amount": -60,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w10": {
+              "transaction_id": "btxn_cm26a91_d_w10",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - SANTANDER NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 80; 13:10 UTC",
+              "amount": -80,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w11": {
+              "transaction_id": "btxn_cm26a91_d_w11",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/08/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA GUAYMAS SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 280; 15:00 UTC",
+              "amount": -280,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w12": {
+              "transaction_id": "btxn_cm26a91_d_w12",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/11/2025",
+              "description": "ATM CASH WITHDRAWAL - TD BANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 165; 18:00 UTC",
+              "amount": -165,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w13": {
+              "transaction_id": "btxn_cm26a91_d_w13",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/12/2025",
+              "description": "ATM CASH WITHDRAWAL - US BANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 95; 19:00 UTC",
+              "amount": -95,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w14": {
+              "transaction_id": "btxn_cm26a91_d_w14",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/07/2025",
+              "description": "ATM CASH WITHDRAWAL - BANORTE HERMOSILLO SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 20; 14:00 UTC",
+              "amount": -20,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w15": {
+              "transaction_id": "btxn_cm26a91_d_w15",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/13/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 40; 20:00 UTC",
+              "amount": -40,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w16": {
+              "transaction_id": "btxn_cm26a91_d_w16",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/13/2025",
+              "description": "ATM CASH WITHDRAWAL - CITIBANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 110; 20:05 UTC",
+              "amount": -110,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w01_b": {
+              "transaction_id": "btxn_cm26a91_d_w01_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/01/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_d_w01",
+              "amount": -1.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w04_b": {
+              "transaction_id": "btxn_cm26a91_d_w04_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/04/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_d_w04",
+              "amount": -0.6,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w05_b": {
+              "transaction_id": "btxn_cm26a91_d_w05_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/04/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_d_w05",
+              "amount": -1.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w06_b": {
+              "transaction_id": "btxn_cm26a91_d_w06_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/05/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_d_w06",
+              "amount": -3.6,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w07_b": {
+              "transaction_id": "btxn_cm26a91_d_w07_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/10/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_d_w07",
+              "amount": -2.6,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w08_b": {
+              "transaction_id": "btxn_cm26a91_d_w08_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/06/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_d_w08",
+              "amount": -1,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w09_b": {
+              "transaction_id": "btxn_cm26a91_d_w09_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/06/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_d_w09",
+              "amount": -1.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w10_b": {
+              "transaction_id": "btxn_cm26a91_d_w10_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/06/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_d_w10",
+              "amount": -2,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w11_b": {
+              "transaction_id": "btxn_cm26a91_d_w11_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/08/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_d_w11",
+              "amount": -7,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w13_b": {
+              "transaction_id": "btxn_cm26a91_d_w13_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/12/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_d_w13",
+              "amount": -1.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w14_b": {
+              "transaction_id": "btxn_cm26a91_d_w14_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/07/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_d_w14",
+              "amount": -0.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_w16_b": {
+              "transaction_id": "btxn_cm26a91_d_w16_b",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/13/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_d_w16",
+              "amount": -1.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_d_pay": {
+              "transaction_id": "btxn_cm26a91_d_pay",
+              "account_id": "chk_cm26a91_d",
+              "date": "11/01/2025",
+              "description": "SPLIT PAYROLL - SONORAN CLINICAL LABS",
+              "amount": 640,
+              "type": "direct_deposit",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w01": {
+              "transaction_id": "btxn_cm26a91_e_w01",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/01/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 85; 08:00 UTC",
+              "amount": -85,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w02": {
+              "transaction_id": "btxn_cm26a91_e_w02",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/02/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK TEMPE AZ USA; Rho-Bank network; cash USD 95; 09:00 UTC",
+              "amount": -95,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w03": {
+              "transaction_id": "btxn_cm26a91_e_w03",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/03/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 75; 10:00 UTC",
+              "amount": -75,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w04": {
+              "transaction_id": "btxn_cm26a91_e_w04",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/03/2025",
+              "description": "ATM CASH WITHDRAWAL - CHASE PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 65; 10:05 UTC",
+              "amount": -65,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w05": {
+              "transaction_id": "btxn_cm26a91_e_w05",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/04/2025",
+              "description": "ATM CASH WITHDRAWAL - WELLS FARGO TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 140; 11:00 UTC",
+              "amount": -140,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w06": {
+              "transaction_id": "btxn_cm26a91_e_w06",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/05/2025",
+              "description": "ATM CASH WITHDRAWAL - BANK OF AMERICA TUCSON AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 230; 12:00 UTC",
+              "amount": -230,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w07": {
+              "transaction_id": "btxn_cm26a91_e_w07",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/10/2025",
+              "description": "ATM CASH WITHDRAWAL - PNC PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 360; 17:00 UTC",
+              "amount": -360,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w08": {
+              "transaction_id": "btxn_cm26a91_e_w08",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 80; 13:00 UTC",
+              "amount": -80,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w09": {
+              "transaction_id": "btxn_cm26a91_e_w09",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/06/2025",
+              "description": "ATM CASH WITHDRAWAL - BANORTE NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 190; 13:05 UTC",
+              "amount": -190,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w10": {
+              "transaction_id": "btxn_cm26a91_e_w10",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/07/2025",
+              "description": "ATM CASH WITHDRAWAL - SANTANDER HERMOSILLO SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 320; 14:00 UTC",
+              "amount": -320,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w11": {
+              "transaction_id": "btxn_cm26a91_e_w11",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/11/2025",
+              "description": "ATM CASH WITHDRAWAL - TD BANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 170; 18:00 UTC",
+              "amount": -170,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w12": {
+              "transaction_id": "btxn_cm26a91_e_w12",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/08/2025",
+              "description": "ATM CASH WITHDRAWAL - BBVA GUAYMAS SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 135; 15:00 UTC",
+              "amount": -135,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w13": {
+              "transaction_id": "btxn_cm26a91_e_w13",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/12/2025",
+              "description": "ATM CASH WITHDRAWAL - US BANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 285; 19:00 UTC",
+              "amount": -285,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w14": {
+              "transaction_id": "btxn_cm26a91_e_w14",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/09/2025",
+              "description": "ATM CASH WITHDRAWAL - BANORTE NOGALES SONORA MX (Mexico); ordinary bank-branch ATM outside Rho-Bank network; cash USD equivalent 410; 16:00 UTC",
+              "amount": -410,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w15": {
+              "transaction_id": "btxn_cm26a91_e_w15",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/13/2025",
+              "description": "ATM CASH WITHDRAWAL - RHO-BANK PHOENIX AZ USA; Rho-Bank network; cash USD 185; 20:00 UTC",
+              "amount": -185,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w16": {
+              "transaction_id": "btxn_cm26a91_e_w16",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/13/2025",
+              "description": "ATM CASH WITHDRAWAL - CITIBANK PHOENIX AZ USA; ordinary bank-branch ATM outside Rho-Bank network; cash USD 215; 20:05 UTC",
+              "amount": -215,
+              "type": "atm_withdrawal",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w02_b": {
+              "transaction_id": "btxn_cm26a91_e_w02_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/02/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_e_w02",
+              "amount": -1.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w04_b": {
+              "transaction_id": "btxn_cm26a91_e_w04_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/03/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_e_w04",
+              "amount": -0.65,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w05_b": {
+              "transaction_id": "btxn_cm26a91_e_w05_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/04/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_e_w05",
+              "amount": -1.4,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w06_b": {
+              "transaction_id": "btxn_cm26a91_e_w06_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/05/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_e_w06",
+              "amount": -2.3,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w07_b": {
+              "transaction_id": "btxn_cm26a91_e_w07_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/10/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_e_w07",
+              "amount": -3.6,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w08_b": {
+              "transaction_id": "btxn_cm26a91_e_w08_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/06/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_e_w08",
+              "amount": -1.6,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w09_b": {
+              "transaction_id": "btxn_cm26a91_e_w09_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/06/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_e_w09",
+              "amount": -3.8,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w10_b": {
+              "transaction_id": "btxn_cm26a91_e_w10_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/07/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_e_w10",
+              "amount": -9.6,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w12_b": {
+              "transaction_id": "btxn_cm26a91_e_w12_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/08/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_e_w12",
+              "amount": -3,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w13_b": {
+              "transaction_id": "btxn_cm26a91_e_w13_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/12/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_e_w13",
+              "amount": -2.5,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w14_b": {
+              "transaction_id": "btxn_cm26a91_e_w14_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/09/2025",
+              "description": "RHO-BANK FOREIGN ATM WITHDRAWAL FEE - btxn_cm26a91_e_w14",
+              "amount": -8.2,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_w16_b": {
+              "transaction_id": "btxn_cm26a91_e_w16_b",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/13/2025",
+              "description": "RHO-BANK OUT-OF-NETWORK ATM FEE - btxn_cm26a91_e_w16",
+              "amount": -2.15,
+              "type": "atm_fee",
+              "status": "posted"
+            },
+            "btxn_cm26a91_e_pay": {
+              "transaction_id": "btxn_cm26a91_e_pay",
+              "account_id": "chk_cm26a91_e",
+              "date": "11/01/2025",
+              "description": "SPLIT PAYROLL - SONORAN CLINICAL LABS",
+              "amount": 1150,
+              "type": "direct_deposit",
+              "status": "posted"
+            }
+          },
+          "notes": "127 supplied caller-linked historical rows: Purple 39, Light Blue 30, Dark Green 29, Evergreen 29. Complete caller November ATM inventory: 65 withdrawals, 47 bank fees, six operator surcharges, five automatic operator rebates, four payroll deposits. No other caller-owned November activity or manual credits in the preceding 14 days; no fee_refund or rebate_credit initially. No currency-conversion charge is included. Patch preserves unrelated default transactions."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "a_identity",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Caleb Moreno"
+        },
+        "info": "Unscored lookup support; match customer-provided identity fields."
+      },
+      {
+        "action_id": "a_clock",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {},
+        "info": "Unscored timestamp support."
+      },
+      {
+        "action_id": "a_verify",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Caleb Moreno",
+          "user_id": "cm26a91",
+          "address": "2186 E Willow Lane, Phoenix, AZ 85016",
+          "email": "caleb.moreno@example.com",
+          "phone_number": "602-555-0148",
+          "date_of_birth": "03/22/2001",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        },
+        "info": "After confirming at least two identity fields; required session audit, not an independent financial PART."
+      },
+      {
+        "action_id": "a_unlock_accounts",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "a_accounts",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"cm26a91\"}"
+        },
+        "info": "Unscored support binds ownership, checking type, product, status and balances."
+      },
+      {
+        "action_id": "a_unlock_history",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173"
+        }
+      },
+      {
+        "action_id": "a_history_p",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_cm26a91_p\"}"
+        },
+        "info": "Unscored calculation support."
+      },
+      {
+        "action_id": "a_history_l",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_cm26a91_l\"}"
+        },
+        "info": "Unscored calculation support."
+      },
+      {
+        "action_id": "a_history_d",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_cm26a91_d\"}"
+        },
+        "info": "Unscored calculation support."
+      },
+      {
+        "action_id": "a_history_e",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_bank_account_transactions_9173",
+          "arguments": "{\"account_id\":\"chk_cm26a91_e\"}"
+        },
+        "info": "Unscored calculation support."
+      },
+      {
+        "action_id": "a_unlock_credit",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829"
+        }
+      },
+      {
+        "action_id": "a_credit_p",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"chk_cm26a91_p\",\"amount\":25.35,\"credit_type\":\"fee_refund\"}"
+        },
+        "info": "After customer authorization; combined bank-fee correction and remaining operator rebate."
+      },
+      {
+        "action_id": "a_credit_l",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"chk_cm26a91_l\",\"amount\":15.25,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "a_credit_d",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"chk_cm26a91_d\",\"amount\":1.75,\"credit_type\":\"fee_refund\"}"
+        }
+      },
+      {
+        "action_id": "a_credit_e",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "apply_checking_account_credit_5829",
+          "arguments": "{\"account_id\":\"chk_cm26a91_e\",\"amount\":2.70,\"credit_type\":\"fee_refund\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_017",
+    "doc_bank_accounts_bank_accounts_(general)_018",
+    "doc_checking_accounts_purple_account_001",
+    "doc_checking_accounts_purple_account_004",
+    "doc_checking_accounts_purple_account_007",
+    "doc_checking_accounts_purple_account_010",
+    "doc_checking_accounts_purple_account_012",
+    "doc_checking_accounts_light_blue_account_004",
+    "doc_checking_accounts_light_blue_account_006",
+    "doc_checking_accounts_dark_green_account_001",
+    "doc_checking_accounts_dark_green_account_002",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_evergreen_account_002",
+    "doc_checking_accounts_evergreen_account_008"
+  ]
+}

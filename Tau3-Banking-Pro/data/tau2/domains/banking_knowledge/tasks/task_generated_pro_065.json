@@ -1,0 +1,213 @@
+{
+  "id": "task_generated_pro_065",
+  "description": {
+    "purpose": "Help Theo Alvarez use one verified session to submit the viable checking referral with the greatest combined listed rewards and open exactly one unfunded Green Account savings account using his existing relationships, without adding another checking account, credit card, or internal transfer.",
+    "relevant_policies": null,
+    "notes": null
+  },
+  "user_scenario": {
+    "persona": null,
+    "instructions": "You are Theo Alvarez, a 61-year-old independent event planner in Columbus, Ohio. Begin calmly and concisely: “My friend is ready to use a checking referral today, and while I am in the app I also want to set up one savings account for my event reserve using what I already have. I do not want to add another card. Can you help me choose and complete both?” Treat these as connected tasks for this same authenticated session: the review of your existing products for the referral is also why you want to finish the reserve account now.\n\nIf asked to verify your identity, provide: Theo Alvarez; date of birth March 22, 1964; 1847 Franklin Park West, Columbus, OH 43205; theo.alvarez.events@example.com; and (614) 555-0186. Do not volunteer these details before a relevant verification request.\n\nIf asked about Maya or recent referrals, say Maya Brooks is 34, lives at 925 Willow Bend Drive, Dublin, OH 43017, and has had no current or closed Rho-Bank account during the prior 12 months. She can deposit at least 500 dollars from an external bank within 60 days, will retain the qualifying deposit for the required period, and is not using another promotion. Say your dashboard shows a completed referral from November 5 at 2:30 a.m., a completed referral from November 9 at noon, and an in-progress Green Fee-Free referral from November 12 at 9:15 a.m. Do not state a derived rolling count, combined reward total, or preferred product before the agent explains the comparison.\n\nIf asked about the reserve or your products, say you plan to fund a 4000-dollar event reserve from an external account later. You have Blue and Evergreen checking accounts, a Silver Rewards Card, and no savings accounts. You want exactly one savings account, no additional checking account, and no additional credit card.\n\nChoose the viable checking referral that best serves the combined rewards for you and Maya; do not optimize only for the smallest qualifying deposit. Open exactly one savings account for a planned 4000-dollar reserve and avoid an option whose disclosed recurring charge is triggered by that balance. Do not open another checking account or apply for another credit card; use your existing Evergreen checking and Silver Rewards relationships. Do not transfer money from either existing checking account during this call; you will fund the new savings account externally.\n\nIf the agent recommends a lower-deposit referral without establishing that it better serves the combined rewards, say: “Maya can manage the larger external deposit, so I do not want to give up the better overall referral rewards just to lower that requirement. Please compare the rewards again.” Do not authorize a referral submission until the agent confirms that the chosen viable option best matches the combined-reward goal.\n\nIf the agent recommends a savings account whose disclosed recurring charge would be triggered by your planned balance, say: “My reserve will be about 4000 dollars, so I do not want an account that would trigger the charge you described at that balance. Please keep the balance constraint in the comparison.” Do not authorize opening a savings product whose disclosed recurring charge would be triggered by the planned reserve balance.\n\nIf the agent proposes an EcoCard, any other new credit card, an additional checking account, or a split product package, say: “I already have the checking accounts and card I want. Please do not add or apply for another product; I only want the one savings account.” Authorize no checking-account opening and no credit-card application.\n\nIf the agent proposes transferring opening funds from Blue or Evergreen, say: “Please leave the new account unfunded for now. I will send the reserve from my external account.” Authorize the account opening but do not authorize any internal transfer.\n\nDo not authorize the protected savings opening until the requested identity details have been matched. Do not authorize the referral until the agent confirms room under the rolling and annual limits, Maya’s visible eligibility facts, and that the viable selection best serves the combined-reward goal. Do not authorize the savings opening until the agent confirms that one Green savings account can use your current eligible checking relationship without adding a checking account, card, or internal transfer.\n\nOnce those conditions are established, authorize submission of the selected referral and opening of one Green savings account, while reiterating that the savings account must remain unfunded for now. Because the referral submission is a customer action, cooperate if asked to submit the confirmed referral yourself.\n\nIf the agent refuses an apparently eligible outcome, repeatedly proposes excluded products, or cannot complete an authorized mutation after one clarification, become frustrated and ask to be transferred to a human who can finish the same referral and savings request. Do not request escalation on a successful path.\n\nDo not accept the resolution until you receive confirmation that the Blue Account referral was submitted, that one Green savings account is open and currently unfunded, and that no new checking account, credit-card application, or internal transfer was created. If any condition remains incomplete, continue asking for it and do not stop. Only after all conditions hold, say: “Thanks, that covers the referral and the new savings account without adding anything else.” ###STOP###"
+  },
+  "initial_state": {
+    "initialization_data": {
+      "agent_data": {
+        "users": {
+          "data": {
+            "usr_theo_alvarez_cbus_2025": {
+              "user_id": "usr_theo_alvarez_cbus_2025",
+              "name": "Theo Alvarez",
+              "date_of_birth": "03/22/1964",
+              "address": "1847 Franklin Park West, Columbus, OH 43205",
+              "email": "theo.alvarez.events@example.com",
+              "phone_number": "(614) 555-0186",
+              "rho_bank_plus_subscription": false
+            }
+          },
+          "notes": "Fresh Theo Alvarez identity. At the fixed date he is 61 and lives in Columbus, Ohio; his occupation is represented in the user instructions."
+        },
+        "accounts": {
+          "data": {
+            "acct_theo_blue_7f31c9": {
+              "account_id": "acct_theo_blue_7f31c9",
+              "user_id": "usr_theo_alvarez_cbus_2025",
+              "class": "checking",
+              "level": "Blue Account",
+              "status": "OPEN",
+              "current_holdings": "8600.00",
+              "date_opened": "06/18/2024"
+            },
+            "acct_theo_evergreen_4a82d6": {
+              "account_id": "acct_theo_evergreen_4a82d6",
+              "user_id": "usr_theo_alvarez_cbus_2025",
+              "class": "checking",
+              "level": "Evergreen Account",
+              "status": "OPEN",
+              "current_holdings": "2400.00",
+              "date_opened": "01/10/2025"
+            }
+          },
+          "notes": "Theo initially has exactly two open personal checking accounts, no savings accounts, no collections status, and no negative holdings."
+        },
+        "referrals": {
+          "data": {
+            "ref_theo_complete_outside_20251105": {
+              "referral_id": "ref_theo_complete_outside_20251105",
+              "referrer_id": "usr_theo_alvarez_cbus_2025",
+              "referred_account_type": "Blue Account",
+              "referral_status": "COMPLETE",
+              "date": "11/05/2025 02:30:00 EST"
+            },
+            "ref_theo_complete_inside_20251109": {
+              "referral_id": "ref_theo_complete_inside_20251109",
+              "referrer_id": "usr_theo_alvarez_cbus_2025",
+              "referred_account_type": "Blue Account",
+              "referral_status": "COMPLETE",
+              "date": "11/09/2025 12:00:00 EST"
+            },
+            "ref_theo_green_progress_20251112": {
+              "referral_id": "ref_theo_green_progress_20251112",
+              "referrer_id": "usr_theo_alvarez_cbus_2025",
+              "referred_account_type": "Green Fee-Free Account",
+              "referral_status": "IN_PROGRESS",
+              "date": "11/12/2025 09:15:00 EST"
+            }
+          },
+          "notes": "The November 5 completed bonus is outside the exact rolling nine-day window at the fixed time; the November 9 completed bonus is inside; the November 12 referral is not complete. These are Theo's only 2025 Blue-completion records, leaving annual room."
+        },
+        "verification_history": {
+          "data": {},
+          "notes": "Empty initially. Current-session verification must be logged during the successful interaction."
+        },
+        "credit_card_accounts": {
+          "data": {
+            "cc_theo_silver_rewards_91be42": {
+              "account_id": "cc_theo_silver_rewards_91be42",
+              "user_id": "usr_theo_alvarez_cbus_2025",
+              "card_type": "Silver Rewards Card",
+              "account_status": "active",
+              "status": "OPEN",
+              "current_balance": "0.00",
+              "past_due_amount": "0.00",
+              "reward_points": "18420",
+              "credit_limit": "18000.00",
+              "date_of_account_open": "08/03/2021",
+              "card_last_4_digits": "6842"
+            }
+          },
+          "notes": "Theo's existing active, open Silver Rewards Card is in good standing and has no past-due amount."
+        },
+        "agent_discoverable_tools": {
+          "data": {},
+          "notes": "Operational discovery state starts empty; discoverable tools are available from the tool catalog and must be unlocked in-session."
+        }
+      }
+    },
+    "initialization_actions": null,
+    "message_history": null
+  },
+  "evaluation_criteria": {
+    "actions": [
+      {
+        "action_id": "gold_01_find_theo",
+        "requestor": "assistant",
+        "name": "get_user_information_by_name",
+        "arguments": {
+          "customer_name": "Theo Alvarez"
+        }
+      },
+      {
+        "action_id": "gold_02_current_time",
+        "requestor": "assistant",
+        "name": "get_current_time",
+        "arguments": {}
+      },
+      {
+        "action_id": "gold_03_log_verification",
+        "requestor": "assistant",
+        "name": "log_verification",
+        "arguments": {
+          "name": "Theo Alvarez",
+          "user_id": "usr_theo_alvarez_cbus_2025",
+          "address": "1847 Franklin Park West, Columbus, OH 43205",
+          "email": "theo.alvarez.events@example.com",
+          "phone_number": "(614) 555-0186",
+          "date_of_birth": "03/22/1964",
+          "time_verified": "2025-11-14 03:40:00 EST"
+        }
+      },
+      {
+        "action_id": "gold_04_read_referrals",
+        "requestor": "assistant",
+        "name": "get_referrals_by_user",
+        "arguments": {
+          "user_id": "usr_theo_alvarez_cbus_2025"
+        }
+      },
+      {
+        "action_id": "gold_05_unlock_inventory",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847"
+        }
+      },
+      {
+        "action_id": "gold_06_read_inventory",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "get_all_user_accounts_by_user_id_3847",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_cbus_2025\"}"
+        }
+      },
+      {
+        "action_id": "gold_07_submit_blue_referral",
+        "requestor": "user",
+        "name": "submit_referral",
+        "arguments": {
+          "user_id": "usr_theo_alvarez_cbus_2025",
+          "account_type": "Blue Account"
+        }
+      },
+      {
+        "action_id": "gold_08_unlock_open_account",
+        "requestor": "assistant",
+        "name": "unlock_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821"
+        }
+      },
+      {
+        "action_id": "gold_09_open_green_savings",
+        "requestor": "assistant",
+        "name": "call_discoverable_agent_tool",
+        "arguments": {
+          "agent_tool_name": "open_bank_account_4821",
+          "arguments": "{\"user_id\":\"usr_theo_alvarez_cbus_2025\",\"account_type\":\"savings\",\"account_class\":\"Green Account\"}"
+        }
+      }
+    ],
+    "reward_basis": [
+      "DB"
+    ]
+  },
+  "user_tools": [
+    "submit_referral"
+  ],
+  "required_documents": [
+    "doc_bank_accounts_bank_accounts_(general)_002",
+    "doc_bank_accounts_bank_accounts_(general)_009",
+    "doc_bank_accounts_bank_accounts_(general)_012",
+    "doc_bank_accounts_bank_accounts_(general)_047",
+    "doc_bank_accounts_bank_accounts_(general)_048",
+    "doc_checking_accounts_blue_account_010",
+    "doc_checking_accounts_evergreen_account_001",
+    "doc_checking_accounts_green_fee-free_account_007",
+    "doc_credit_cards_ecocard_001",
+    "doc_credit_cards_silver_rewards_card_001",
+    "doc_savings_accounts_bronze_account_001",
+    "doc_savings_accounts_gold_account_001",
+    "doc_savings_accounts_green_account_(savings)_003"
+  ]
+}

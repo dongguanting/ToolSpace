@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "task_count": 98,
+  "knowledge_documents": 698,
+  "network_access": "blocked during these checks",
+  "checks": [
+    "exact task bytes and 98 unique IDs",
+    "native task loader and all task schemas",
+    "imported source and data hashes",
+    "duplicate and unknown task selection rejection",
+    "unscored remains null; zero remains a scored failure",
+    "native evaluator: golden trajectory reward 1, empty trajectory reward 0",
+    "worker success, exit failure, timeout, interruption and status artifacts",
+    "syntax of all included Python sources",
+    "public IDs and titles match ordered tasks; all task copies and per-task files match",
+    "result, status, and config use public IDs and workflow titles",
+    "task selection accepts catalog public IDs and rejects unknown IDs"
+  ],
+  "fixture_task_id": "task_generated_pro_001",
+  "fixture_retrieval": "no_knowledge (offline fixture only; live default remains alltools)",
+  "live_model_evaluation": false,
+  "checks_scope": "The checks listed above include initial package validation before the task-description metadata cleanup. The checks below were rerun after that cleanup.",
+  "metadata_cleanup_checks": [
+    "initial description cleanup retained 98 ordered public IDs and changed only description.notes at that step",
+    "all task copies and manifest checksums verified by offline --check-only",
+    "native environment evaluator: empty trajectory reward unchanged for tasks 001 and 019",
+    "two database table notes cleaned without changing any table records",
+    "native environment evaluator: reference and empty trajectory rewards unchanged for tasks 019 and 053; reference tool results and database record states agree",
+    "all task fields compared to pre-cleanup copies; only description notes, database table notes and action descriptions changed",
+    "native reference and empty trajectories for tasks 006, 020, 022 and 049 agree before and after; query outputs and database records match",
+    "all imported hashes and 98 task schemas verified after final metadata cleanup",
+    "33 reference action labels renamed; all 1,372 reference and alternative actions matched identically against positive and negative controls",
+    "98 task schemas and 1,089 imported hashes verified after action-label cleanup"
+  ]
+}
