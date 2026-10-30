@@ -13,8 +13,6 @@
   Scaling Tool-Centric Environment Synthesis<br>for Long-Horizon Agents
 </h1>
 
-##### If you like our project, please give us a star ⭐ on GitHub for the latest update.
-
 [![Paper](https://img.shields.io/badge/Paper-PDF-b5212f.svg)](https://toolspace-agent.github.io/main.pdf)
 [![Model: ToolSpace-8B](https://img.shields.io/badge/🤗%20Model-ToolSpace--8B-ffc107.svg)](https://huggingface.co/dongguanting/ToolSpace-8B)
 [![Model: ToolSpace-35B-A3B](https://img.shields.io/badge/🤗%20Model-ToolSpace--35B--A3B-ffc107.svg)](https://huggingface.co/dongguanting/ToolSpace-35B-A3B)
@@ -26,16 +24,9 @@
 
 [Demo](#demo) · [Method](#method) · [Results](#results) · [Installation](#installation) · [Repository](#repository) · [Quick Start](#quick-start) · [Citation](#citation)
 
-</div>
+##### If you like our project, please give us a star ⭐ on GitHub for the latest update.
 
-<table align="center">
-<tr>
-<td align="center" width="25%"><b>2,042</b><br><sub>canonical tools</sub></td>
-<td align="center" width="25%"><b>804</b><br><sub>environments</sub></td>
-<td align="center" width="25%"><b>34,376</b><br><sub>SFT samples</sub></td>
-<td align="center" width="25%"><b>7</b><br><sub>evaluation benchmarks</sub></td>
-</tr>
-</table>
+</div>
 
 <a id="demo"></a>
 ## 🎬 ToolSpace in One Minute
