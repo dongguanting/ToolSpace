@@ -40,10 +40,10 @@
 <a id="demo"></a>
 ## 🎬 ToolSpace in One Minute
 
-<a href="assets/demo/toolspace-overview.mp4"><img src="assets/demo/toolspace-preview.gif" alt="Watch the ToolSpace demo: typed tool dependencies, state-aware walks, rollback, replay verification, and results" width="100%"></a>
+https://github.com/user-attachments/assets/05d377d9-8247-4a8a-92b0-70aa658579af
 
 <p align="center">
-  <a href="assets/demo/toolspace-overview.mp4"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/user-attachments/assets/05d377d9-8247-4a8a-92b0-70aa658579af"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
   <a href="https://toolspace-agent.github.io/#demo"><b>Explore the interactive demo ↗</b></a><br>
   <sub>Illustrative graph simulation · executable replay available in the offline demo.</sub>
 </p>

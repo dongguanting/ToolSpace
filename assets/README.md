@@ -10,7 +10,7 @@ These assets support the root README and share the project's dark blue, violet, 
 | `readme/title-light.svg`, `readme/title-dark.svg` | Enlarged ToolSpace wordmark with the website logo aligned in a single vector, for light and dark themes. |
 | `readme/framework.png` | Figure 2 extracted from page 6 of the authors' supplied `ToolSpace_Arxiv.pdf`; figure content is unchanged. |
 | `readme/results.svg` | All seven benchmark scores, comparing backbones with ToolSpace at three model scales; transcribed from Table 1. |
-| `demo/toolspace-overview.mp4` | Edited 60-second overview, 1920 × 1080, H.264, with on-screen English captions. Silent. |
+| `demo/toolspace-overview.mp4` | Edited 60-second overview, 1920 × 1080, H.264, with on-screen English captions. Silent. The root README embeds its [GitHub-hosted attachment](https://github.com/user-attachments/assets/05d377d9-8247-4a8a-92b0-70aa658579af) as a native player. Published in [issue #1](https://github.com/dongguanting/ToolSpace/issues/1); this file is the source copy. |
 | `demo/toolspace-preview.gif` | A compact loop showing the graph walkthrough and all seven benchmark results. |
 | `demo/toolspace-poster.png` | Still frame for video previews. |
 | `demo/toolspace-overview.vtt` | English caption track for accessible playback. |
