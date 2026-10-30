@@ -24,7 +24,7 @@
 
 *From real tool traces to executable environments and long-horizon tasks through **typed dependencies, state-aware walks, and replay verification**.*
 
-[Demo](#demo) · [Method](#method) · [Results](#results) · [Repository](#repository) · [Quick Start](#quick-start) · [Citation](#citation)
+[Demo](#demo) · [Method](#method) · [Results](#results) · [Installation](#installation) · [Repository](#repository) · [Quick Start](#quick-start) · [Citation](#citation)
 
 </div>
 
@@ -115,15 +115,82 @@ Six frontier models lose **up to 32.9 points** on ToolSpace-generated Pro tasks.
 
 <sub>Source: Table 2. Parentheses show Pro − standard in percentage points. The paper reports 600 Automation-Pro tasks; the current public [Automation-Pro](Automation-Pro/) package contains 300 frozen tasks. [Tau3-Banking-Pro](Tau3-Banking-Pro/) contains 98 tasks, separate from the original 97-task banking set.</sub>
 
-<a id="repository"></a>
-## 📂 Repository Guide
+<a id="installation"></a>
+## 🔧 Installation
 
-| Directory | Use |
+### Environment Setup
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then clone the repository. Keep `TOOLSPACE_ROOT` set in the same shell for the commands below.
+
+```bash
+git clone https://github.com/dongguanting/ToolSpace.git
+cd ToolSpace
+export TOOLSPACE_ROOT="$PWD"
+```
+
+Each module uses its own environment:
+
+| Module | Python | Runtime requirements |
+| :--- | :---: | :--- |
+| Task synthesis | 3.13+ | `uv`; local Automation simulator |
+| Seven benchmarks | 3.10 / 3.12 / 3.13 | Linux; Node.js 18+; Docker for SkillsBench; Podman for Harvey-LAB |
+| Automation-Pro | 3.10+ | Local simulator and native verifiers |
+| Tau3-Banking-Pro | 3.12 | Linux; Node.js; `ripgrep`, `bubblewrap`, `socat`; working user namespaces |
+
+Benchmark setup creates separate environments under `benchmark/.runtime/` and installs pinned dependencies. It needs access to GitHub, PyPI, and Hugging Face. See the [system package installation commands](benchmark/README.md#install).
+
+<a id="api-configuration"></a>
+### API Configuration
+
+**The default online evaluation setup requires a Boyue API key** for user simulation, dense retrieval, and LLM judges. Register at [Boyue API](https://api.boyuerichdata.opensphereai.com/), open **API令牌 (API tokens)**, and create a token in the **`auto` group** ([documentation](https://boyuerichdata.apifox.cn/)).
+
+Create the evaluation configuration:
+
+```bash
+cp benchmark/.env.example benchmark/.env
+```
+
+Edit `benchmark/.env` with your endpoint and credentials:
+
+```dotenv
+# Model under evaluation: local serving or an OpenAI-compatible hosted API.
+MODEL=toolspace-model
+MODEL_BASE_URL=http://localhost:8000/v1
+MODEL_API_KEY=EMPTY
+
+# Boyue: auxiliary models used by the evaluation harness.
+BOYUE_API_KEY=sk-your-boyue-token
+BOYUE_BASE_URL=https://api.boyuerichdata.opensphereai.com/v1
+
+# BFCL-V4 web search: set either SERPER_API_KEY or SERPAPI_API_KEY.
+SERPER_API_KEY=your-serper-key
+
+# OfficeQA-Pro: a Hugging Face read token with dataset access.
+HF_TOKEN=hf_your-read-token
+```
+
+`MODEL` must match the model ID exposed by your serving endpoint. To evaluate a Boyue-hosted model, use its model ID, set `MODEL_BASE_URL` to the Boyue base URL, and set `MODEL_API_KEY` to your Boyue token.
+
+| Used by | Required service |
 | :--- | :--- |
-| [Tool-Space](Tool-Space/README.md) | Generate tasks: simulator → tool graph → workflow → task/verifier → replay. |
-| [benchmark](benchmark/README.md) | Run seven suites with pinned dependencies and unified outputs. |
-| [Automation-Pro](Automation-Pro/README.md) | Evaluate 300 automation tasks across six domains. |
-| [Tau3-Banking-Pro](Tau3-Banking-Pro/README.md) | Evaluate 98 banking tasks with 698 knowledge documents and native outcome scoring. |
+| Tau3-Banking / Tau3-Banking-Pro | Boyue: GPT-5.2 user simulator and judge/reviewer where enabled; `text-embedding-3-large` for dense retrieval |
+| JobBench | Boyue: Grok-4.3 rubric judge |
+| Harvey-LAB | Boyue: GLM-5.2 rubric judge and deliverable matching |
+| BFCL-V4 | [SerpAPI](https://serpapi.com/) or [Serper](https://serper.dev/) for web search |
+| OfficeQA-Pro | Accept access to [databricks/officeqa](https://huggingface.co/datasets/databricks/officeqa), then set `HF_TOKEN` |
+
+Boyue is a third-party OpenAI-compatible service. Alternative providers can be configured through the corresponding base URL, key, and model settings; see the [benchmark API guide](benchmark/README.md#model-apis-and-data). **Offline demos, replay, and validation need no API keys.**
+
+Benchmark launchers load `benchmark/.env` automatically. For the synthesis and Pro commands below, export the same configuration into your shell:
+
+```bash
+set -a
+source "$TOOLSPACE_ROOT/benchmark/.env"
+set +a
+```
+
+<a id="repository"></a>
+## 📂 Repository
 
 ```text
 ToolSpace/
@@ -144,44 +211,42 @@ ToolSpace/
 │   └── OfficeQA-Pro/
 ├── Automation-Pro/              # Frozen automation challenge set
 ├── Tau3-Banking-Pro/             # Frozen banking challenge set
-└── assets/                      # README figures and edited demo video
+└── assets/                      # README figures and demo media
 ```
+
+| Folder | What you get | Start here |
+| :--- | :--- | :--- |
+| `Tool-Space/` | Tool graph construction, workflow sampling, task/verifier generation, and replay | [Pipeline guide](Tool-Space/README.md) · [Input format](Tool-Space/docs/input-format.md) |
+| `benchmark/` | Seven evaluation suites, pinned dependencies, and unified outputs | [Setup and evaluation](benchmark/README.md) |
+| `Automation-Pro/` | 300 frozen automation tasks across six domains | [Validation, replay, and scoring](Automation-Pro/README.md) |
+| `Tau3-Banking-Pro/` | 98 banking tasks, 698 knowledge documents, and native outcome scoring | [Setup and evaluation](Tau3-Banking-Pro/README.md) |
 
 **Release scope:** `Tool-Space/` implements Automation-based synthesis with **47 services and 758 endpoints**. The broader tool-space and training statistics above describe the paper's experiments.
 
 <a id="quick-start"></a>
 ## 🚀 Quick Start
 
-```bash
-git clone https://github.com/dongguanting/ToolSpace.git
-cd ToolSpace
-```
+### 1. Task Synthesis
 
-Run each recipe below from the repository root, using its own dependencies.
-
-### 1 · Generate and verify a task offline
-
-Requires **Python 3.13+** and [uv](https://docs.astral.sh/uv/getting-started/installation/).
+**Offline demo — no API key required:**
 
 ```bash
-cd Tool-Space
+cd "$TOOLSPACE_ROOT/Tool-Space"
 uv sync --locked
 uv run python run_pipeline.py demo --output outputs/demo
 uv run python run_pipeline.py verify --tasks outputs/demo/tasks
 ```
 
-**No API key needed.** Environment execution and replay are real; model responses use fixtures. Use a fresh output directory. The dataset, summary, and replay report are saved under `outputs/demo/tasks/`.
+Environment execution and replay are real; model responses use fixtures. The dataset, summary, and replay report are saved under `outputs/demo/tasks/`. Use a fresh output directory for each run.
 
-<details>
-<summary><b>Generate new tasks with your model</b></summary>
-
-From `Tool-Space/`, configure an OpenAI-compatible endpoint:
+**Generate new tasks through Boyue** after completing [API Configuration](#api-configuration):
 
 ```bash
-export PRO_MODEL="your-model"
-export PRO_BASE_URL="https://api.example.com/v1"
-export PRO_API_KEY="your-key"
-export PRO_API="chat"  # Use "responses" for the Responses API.
+cd "$TOOLSPACE_ROOT/Tool-Space"
+export PRO_MODEL="your-boyue-model-id"
+export PRO_BASE_URL="$BOYUE_BASE_URL"
+export PRO_API_KEY="$BOYUE_API_KEY"
+export PRO_API="chat"  # Use "responses" if supported by your endpoint.
 
 uv run python run_pipeline.py run \
   --input examples/project_reconciliation.json \
@@ -189,29 +254,26 @@ uv run python run_pipeline.py run \
   --count 1 --seed 42 --output outputs/pro
 ```
 
-`.env` is not loaded automatically. See the [input format](Tool-Space/docs/input-format.md) and [pipeline guide](Tool-Space/README.md) for custom inputs, individual stages, and resume support.
+The synthesis CLI reads `PRO_*` from the shell; it does not load `.env` automatically. See the [pipeline guide](Tool-Space/README.md) for individual stages, custom inputs, and resume support.
 
-</details>
+### 2. Seven-Benchmark Evaluation
 
-### 2 · Run the seven-benchmark evaluation harness
-
-Requires **Linux**, `uv`, and Node.js 18+; Docker for SkillsBench, Podman for Harvey-LAB, and user namespaces for banking. See [setup and API access](benchmark/README.md#install).
+Configure `benchmark/.env` first, then install and run a smoke test:
 
 ```bash
-cd benchmark
-cp .env.example .env
-# Edit .env: MODEL, MODEL_BASE_URL, MODEL_API_KEY, and required auxiliary keys.
+cd "$TOOLSPACE_ROOT/benchmark"
 bash setup_all.sh
-
-# Start with one task, then run the full suite.
 SCOPE=smoke RUN_NAME=my-model-smoke bash AutomationBench/run.sh
+```
+
+Run one full suite or all seven:
+
+```bash
+RUN_NAME=my-model bash AutomationBench/run.sh
 RUN_NAME=my-model bash run_all.sh
 ```
 
-Run one suite with `bash <directory>/run.sh`. All launchers support `--limit N`, `--tasks ID,ID`, and `--check-only`. Outputs: `benchmark/outputs/<benchmark>/<RUN_NAME>/`.
-
-<details>
-<summary><b>Which tasks and metrics does each directory use?</b></summary>
+Replace `AutomationBench` with another directory to run a different suite. All launchers support `--limit N`, `--tasks ID,ID`, and `--check-only`. Results are written to `benchmark/outputs/<benchmark>/<RUN_NAME>/`.
 
 | Directory | Evaluation set | Metric |
 | :--- | :--- | :--- |
@@ -223,60 +285,63 @@ Run one suite with `bash <directory>/run.sh`. All launchers support `--limit N`,
 | [Harvey-LAB](benchmark/Harvey-LAB/) | Fixed 120-task sample | Official all-pass rate |
 | [OfficeQA-Pro](benchmark/OfficeQA-Pro/) | 133 questions | Official answer accuracy |
 
-OfficeQA-Pro needs [dataset access](https://huggingface.co/datasets/databricks/officeqa) and `HF_TOKEN`. Configure auxiliary model, retrieval, and search APIs in the [API guide](benchmark/README.md#model-apis-and-data).
+### 3. Automation-Pro
 
-</details>
-
-### 3 · Validate and evaluate the Pro packages
-
-<details>
-<summary><b>Automation-Pro · 300 tasks · Python 3.10+</b></summary>
+Install an isolated environment and validate the 300 task contracts:
 
 ```bash
-cd Automation-Pro
-python -m pip install -r requirements.txt
-python evaluate.py validate
+cd "$TOOLSPACE_ROOT/Automation-Pro"
+uv venv --python 3.10 .venv
+uv pip install --python .venv/bin/python -r requirements.txt
+.venv/bin/python evaluate.py validate
 ```
 
-Replay saved tool calls without a model API, or evaluate a model directly:
+Evaluate the model configured in [API Configuration](#api-configuration):
 
 ```bash
-python evaluate.py replay --input predictions.jsonl --output results/replay
-
-export OPENAI_API_KEY="your-key"
-python evaluate.py run --model your-model \
-  --base-url https://api.example.com/v1 \
-  --api chat --api-key-env OPENAI_API_KEY \
+.venv/bin/python evaluate.py run \
+  --model "$MODEL" --base-url "$MODEL_BASE_URL" \
+  --api chat --api-key-env MODEL_API_KEY \
   --output results/my-model --concurrency 4
+```
+
+Or replay an existing predictions file without a model API:
+
+```bash
+.venv/bin/python evaluate.py replay \
+  --input predictions.jsonl --output results/replay
 ```
 
 Use a fresh result directory. See the [prediction format and scoring guide](Automation-Pro/README.md).
 
-</details>
+### 4. Tau3-Banking-Pro
 
-<details>
-<summary><b>Tau3-Banking-Pro · 98 tasks · Linux / Python 3.12</b></summary>
+On Linux, install the Python environment and validate the 98-task package:
 
 ```bash
-cd Tau3-Banking-Pro
+cd "$TOOLSPACE_ROOT/Tau3-Banking-Pro"
 uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python -r requirements.txt
 .venv/bin/python evaluate.py --check-only
 ```
 
-For a live run, export the variables in `.env.example` and install the [knowledge-shell dependencies](Tau3-Banking-Pro/README.md#setup-and-offline-validation):
+For live evaluation, install the knowledge-shell runtime and use Boyue for the customer simulator and dense retrieval. The Linux packages listed in [Environment Setup](#installation) must also be available.
 
 ```bash
+npm install --prefix .runtime/shell --no-save @anthropic-ai/sandbox-runtime@0.0.23
+export USER_BASE_URL="$BOYUE_BASE_URL"
+export USER_API_KEY="$BOYUE_API_KEY"
+
 .venv/bin/python evaluate.py \
   --limit 1 --concurrency 1 --output outputs/pro98-smoke \
   --reasoning-effort max --no-review
 ```
 
-Use a supported reasoning effort; remove `--limit 1` for all 98 tasks. Report **Pro98** with the model and retrieval configuration. Scoring compares database outcomes, not exact call sequences.
+Use a reasoning effort supported by your model endpoint, a fresh output directory, and remove `--limit 1` for all 98 tasks. Report **Pro98** with the model and retrieval configuration; see the [banking evaluation guide](Tau3-Banking-Pro/README.md). Keep reference trajectories and verifier targets on the evaluator side.
 
-</details>
+## 🙏 Acknowledgments
 
-Keep reference trajectories and verifier targets on the evaluator side.
+We thank the creators of [AutomationBench](https://github.com/zapier/AutomationBench), [SkillsBench](https://github.com/benchflow-ai/skillsbench), [JobBench](https://github.com/Job-Bench/job-bench-eval), [tau2-bench](https://github.com/sierra-research/tau2-bench), [BFCL](https://github.com/ShishirPatil/gorilla), [Harvey LAB](https://github.com/harveyai/harvey-labs), and [OfficeQA](https://github.com/databricks/officeqa). Third-party components retain their respective licenses and attribution; see the license and notice files in each module.
 
 <a id="citation"></a>
 ## 📄 Citation
@@ -289,9 +354,5 @@ Keep reference trajectories and verifier targets on the evaluator side.
   url     = {https://toolspace-agent.github.io/}
 }
 ```
-
-## Acknowledgments
-
-We thank the creators of [AutomationBench](https://github.com/zapier/AutomationBench), [SkillsBench](https://github.com/benchflow-ai/skillsbench), [JobBench](https://github.com/Job-Bench/job-bench-eval), [tau2-bench](https://github.com/sierra-research/tau2-bench), [BFCL](https://github.com/ShishirPatil/gorilla), [Harvey LAB](https://github.com/harveyai/harvey-labs), and [OfficeQA](https://github.com/databricks/officeqa). Third-party components retain their respective licenses and attribution; see the license and notice files in each module.
 
 <p align="center"><a href="mailto:dongguanting@ruc.edu.cn">Contact</a></p>
