@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00.000 --> 00:04.000
+ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents.
+
+00:04.000 --> 00:08.000
+Real tools. Cross-service workflows.
+Data, state, and retry dependencies.
+
+00:08.000 --> 00:25.000
+Follow state-compatible edges. Checkpoint before execution.
+On failure: restore the checkpoint and resample the next tool.
+
+00:25.000 --> 00:27.000
+Replay from the initial state.
+Keep the task only when every assertion passes.
+
+00:27.000 --> 00:35.000
+Ground the graph. Execute the walk. Verify the task.
+77,760 graph nodes. 804 environments. 34,376 SFT samples.
+
+00:35.000 --> 00:42.000
+All seven benchmarks: AutomationBench, SkillsBench, JobBench,
+Tau3-Banking, BFCL-V4, Harvey-LAB, OfficeQA-Pro.
+8B with agent RL: 7.2 to 20.7 average.
+
+00:42.000 --> 00:49.000
+35B-A3B with agent RL: 23.0 to 43.2 average.
+Full per-benchmark results from Table 1.
+
+00:49.000 --> 00:56.000
+744B-A40B with SFT: 44.6 to 56.6 average.
+Matches Claude Opus 5's average in Table 1.
+
+00:56.000 --> 01:00.000
+ToolSpace. 8B, 35B-A3B, and 744B-A40B.
+toolspace-agent.github.io
