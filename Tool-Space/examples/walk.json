@@ -1,0 +1,18 @@
+{
+  "min_steps": 5,
+  "max_steps": 5,
+  "min_distinct_endpoints": 3,
+  "min_distinct_services": 2,
+  "min_mutations": 2,
+  "min_distinct_action_endpoints": 2,
+  "min_queries_before_action": 3,
+  "query_only": false,
+  "mutation_budget": 2,
+  "max_endpoint_repeats": 3,
+  "max_queries_before_action": 3,
+  "start_task_allowlist": [
+    "finance.project_reconciliation"
+  ],
+  "template_scope": "task",
+  "search_expansions": 2000
+}

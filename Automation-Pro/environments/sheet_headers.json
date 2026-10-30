@@ -1,0 +1,3203 @@
+{
+  "records": [
+    {
+      "spreadsheet_id": "ss_ap_turnover",
+      "worksheet_id": "ws_vendor_ap",
+      "headers": [
+        "Vendor",
+        "Avg AP Balance",
+        "Total Purchases",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.ap_turnover_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_budget_prep",
+      "worksheet_id": "ws_rate_card",
+      "headers": [
+        "Category",
+        "Growth Rate"
+      ],
+      "source_task": "finance.annual_budget_prep"
+    },
+    {
+      "spreadsheet_id": "ss_budget_prep",
+      "worksheet_id": "ws_2025_actuals",
+      "headers": [
+        "Department",
+        "2025 Salaries",
+        "2025 Travel",
+        "2025 Software",
+        "Scope"
+      ],
+      "source_task": "finance.annual_budget_prep"
+    },
+    {
+      "spreadsheet_id": "ss_budget_prep",
+      "worksheet_id": "ws_2026_budget",
+      "headers": [
+        "Department",
+        "2026 Salaries",
+        "2026 Travel",
+        "2026 Software"
+      ],
+      "source_task": "finance.annual_budget_prep"
+    },
+    {
+      "spreadsheet_id": "ss_bills_payable",
+      "worksheet_id": "ws_aging_policy",
+      "headers": [
+        "Bucket",
+        "Range"
+      ],
+      "source_task": "finance.ap_aging_report"
+    },
+    {
+      "spreadsheet_id": "ss_bills_payable",
+      "worksheet_id": "ws_unpaid",
+      "headers": [
+        "Vendor",
+        "Bill #",
+        "Amount",
+        "Due Date",
+        "Status"
+      ],
+      "source_task": "finance.ap_aging_report"
+    },
+    {
+      "spreadsheet_id": "ss_audit_sample",
+      "worksheet_id": "ws_vendor_risk",
+      "headers": [
+        "Vendor",
+        "Risk Rating"
+      ],
+      "source_task": "finance.audit_sample_selection"
+    },
+    {
+      "spreadsheet_id": "ss_audit_sample",
+      "worksheet_id": "ws_q1_transactions",
+      "headers": [
+        "TXN ID",
+        "Vendor",
+        "Amount",
+        "Status"
+      ],
+      "source_task": "finance.audit_sample_selection"
+    },
+    {
+      "spreadsheet_id": "ss_audit_sample",
+      "worksheet_id": "ws_selected_samples",
+      "headers": [
+        "TXN ID",
+        "Vendor",
+        "Amount",
+        "Reason"
+      ],
+      "source_task": "finance.audit_sample_selection"
+    },
+    {
+      "spreadsheet_id": "ss_bad_debt",
+      "worksheet_id": "ws_candidates",
+      "headers": [
+        "Customer",
+        "Invoice #",
+        "Amount",
+        "Days Past Due",
+        "Collection Attempts",
+        "Last Payment",
+        "Sales Rep",
+        "Notes"
+      ],
+      "source_task": "finance.bad_debt_writeoff"
+    },
+    {
+      "spreadsheet_id": "ss_finance_wb",
+      "worksheet_id": "ws_budget",
+      "headers": [
+        "Department",
+        "Budget",
+        "Actual",
+        "Notes"
+      ],
+      "source_task": "finance.budget_variance_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_capex",
+      "worksheet_id": "ws_pending_capex",
+      "headers": [
+        "Request ID",
+        "Item",
+        "Category",
+        "Amount",
+        "Requestor",
+        "Approvals",
+        "Business Case",
+        "Budget Remaining",
+        "Status"
+      ],
+      "source_task": "finance.capex_approval"
+    },
+    {
+      "spreadsheet_id": "ss_cashflow",
+      "worksheet_id": "ws_balance",
+      "headers": [
+        "Account",
+        "Balance",
+        "As Of"
+      ],
+      "source_task": "finance.cash_flow_forecast"
+    },
+    {
+      "spreadsheet_id": "ss_cashflow",
+      "worksheet_id": "ws_ar_due",
+      "headers": [
+        "Customer",
+        "Amount",
+        "Collection Probability",
+        "Status"
+      ],
+      "source_task": "finance.cash_flow_forecast"
+    },
+    {
+      "spreadsheet_id": "ss_cashflow",
+      "worksheet_id": "ws_ap_due",
+      "headers": [
+        "Vendor",
+        "Amount",
+        "Status"
+      ],
+      "source_task": "finance.cash_flow_forecast"
+    },
+    {
+      "spreadsheet_id": "ss_cash_sweep",
+      "worksheet_id": "ws_balances",
+      "headers": [
+        "Account",
+        "Balance",
+        "Type",
+        "Notes"
+      ],
+      "source_task": "finance.cash_sweep"
+    },
+    {
+      "spreadsheet_id": "ss_trial_balance",
+      "worksheet_id": "ws_tb",
+      "headers": [
+        "Account",
+        "Type",
+        "Balance",
+        "Notes"
+      ],
+      "source_task": "finance.closing_journal_automation"
+    },
+    {
+      "spreadsheet_id": "ss_sales_perf",
+      "worksheet_id": "ws_mar_deals",
+      "headers": [
+        "Deal",
+        "Rep",
+        "Rep Email",
+        "Deal Value",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.commission_calculation"
+    },
+    {
+      "spreadsheet_id": "ss_contracts",
+      "worksheet_id": "ws_active_contracts",
+      "headers": [
+        "Client",
+        "Email",
+        "Base Rate per Seat",
+        "Seat Count",
+        "CPI Uplift",
+        "Status"
+      ],
+      "source_task": "finance.contract_billing"
+    },
+    {
+      "spreadsheet_id": "ss_cost_alloc",
+      "worksheet_id": "ws_shared_costs",
+      "headers": [
+        "Cost Item",
+        "Amount"
+      ],
+      "source_task": "finance.cost_center_allocation"
+    },
+    {
+      "spreadsheet_id": "ss_cost_alloc",
+      "worksheet_id": "ws_allocation_pct",
+      "headers": [
+        "Department",
+        "Headcount %",
+        "Head Email"
+      ],
+      "source_task": "finance.cost_center_allocation"
+    },
+    {
+      "spreadsheet_id": "ss_cost_alloc",
+      "worksheet_id": "ws_dept_charges",
+      "headers": [
+        "Department",
+        "Amount"
+      ],
+      "source_task": "finance.cost_center_allocation"
+    },
+    {
+      "spreadsheet_id": "ss_cc_recon",
+      "worksheet_id": "ws_statement",
+      "headers": [
+        "Date",
+        "Merchant",
+        "Amount",
+        "Card"
+      ],
+      "source_task": "finance.credit_card_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_cc_recon",
+      "worksheet_id": "ws_submitted",
+      "headers": [
+        "Employee",
+        "Email",
+        "Date",
+        "Description",
+        "Amount",
+        "Receipt",
+        "Notes"
+      ],
+      "source_task": "finance.credit_card_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_credit_review",
+      "worksheet_id": "ws_customer_credit",
+      "headers": [
+        "Customer",
+        "Current Limit",
+        "Current Balance",
+        "Late Payments (6mo)",
+        "Customer Since",
+        "Status"
+      ],
+      "source_task": "finance.credit_limit_review"
+    },
+    {
+      "spreadsheet_id": "ss_defrev",
+      "worksheet_id": "ws_defrev_sched",
+      "headers": [
+        "Contract",
+        "Type",
+        "Total Deferred",
+        "Period",
+        "Start",
+        "Recognized to Date",
+        "Status",
+        "Milestone",
+        "Milestone Value",
+        "Delivery Status",
+        "Support Period",
+        "Support Start",
+        "Notes"
+      ],
+      "source_task": "finance.deferred_revenue_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_fixed_assets",
+      "worksheet_id": "ws_asset_register",
+      "headers": [
+        "Asset ID",
+        "Description",
+        "Cost",
+        "Salvage",
+        "Life (Months)",
+        "Accumulated",
+        "Status"
+      ],
+      "source_task": "finance.depreciation_schedule"
+    },
+    {
+      "spreadsheet_id": "ss_dept_exp",
+      "worksheet_id": "ws_jan_exp",
+      "headers": [
+        "Date",
+        "Department",
+        "Category",
+        "Amount",
+        "Employee"
+      ],
+      "source_task": "finance.dept_expense_rollup"
+    },
+    {
+      "spreadsheet_id": "ss_dept_exp",
+      "worksheet_id": "ws_dept_heads",
+      "headers": [
+        "Department",
+        "Head",
+        "Email"
+      ],
+      "source_task": "finance.dept_expense_rollup"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_pmts",
+      "worksheet_id": "ws_jan_pmts",
+      "headers": [
+        "Payment ID",
+        "Date",
+        "Vendor",
+        "Amount",
+        "Reference",
+        "Flag"
+      ],
+      "source_task": "finance.duplicate_payment_detection"
+    },
+    {
+      "spreadsheet_id": "ss_reimb",
+      "worksheet_id": "ws_pending_reimb",
+      "headers": [
+        "Employee",
+        "Email",
+        "Category",
+        "Amount",
+        "Status"
+      ],
+      "source_task": "finance.employee_reimbursement"
+    },
+    {
+      "spreadsheet_id": "ss_reimb",
+      "worksheet_id": "ws_payroll_batch",
+      "headers": [
+        "Employee",
+        "Amount"
+      ],
+      "source_task": "finance.employee_reimbursement"
+    },
+    {
+      "spreadsheet_id": "ss_escrow",
+      "worksheet_id": "ws_pending_escrow",
+      "headers": [
+        "Escrow ID",
+        "Amount",
+        "Depositor",
+        "Depositor Email",
+        "Beneficiary",
+        "Beneficiary Email",
+        "Conditions",
+        "Dispute",
+        "Status"
+      ],
+      "source_task": "finance.escrow_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_expenses",
+      "worksheet_id": "ws_jan_2026",
+      "headers": [
+        "Date",
+        "Category",
+        "Amount",
+        "Employee",
+        "Description",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.expense_anomaly_detection"
+    },
+    {
+      "spreadsheet_id": "ss_expenses",
+      "worksheet_id": "ws_historical",
+      "headers": [
+        "Category",
+        "Monthly Average",
+        "Typical Range Low",
+        "Typical Range High"
+      ],
+      "source_task": "finance.expense_anomaly_detection"
+    },
+    {
+      "spreadsheet_id": "ss_expenses",
+      "worksheet_id": "ws_sop",
+      "headers": [
+        "Rule",
+        "Detail"
+      ],
+      "source_task": "finance.expense_anomaly_detection"
+    },
+    {
+      "spreadsheet_id": "ss_exp_audit",
+      "worksheet_id": "ws_submissions_audit",
+      "headers": [
+        "Employee",
+        "Email",
+        "Category",
+        "Amount",
+        "Description",
+        "Receipt",
+        "Pre-Approved",
+        "Status"
+      ],
+      "source_task": "finance.expense_policy_violation"
+    },
+    {
+      "spreadsheet_id": "ss_reclass",
+      "worksheet_id": "ws_requests",
+      "headers": [
+        "Expense ID",
+        "Current Category",
+        "Requested Category",
+        "Amount",
+        "Reason",
+        "Requested By",
+        "Status"
+      ],
+      "source_task": "finance.expense_reclassification"
+    },
+    {
+      "spreadsheet_id": "ss_reclass",
+      "worksheet_id": "ws_coa",
+      "headers": [
+        "Code",
+        "Name",
+        "Type",
+        "Active"
+      ],
+      "source_task": "finance.expense_reclassification"
+    },
+    {
+      "spreadsheet_id": "ss_reclass",
+      "worksheet_id": "ws_reclass_status",
+      "headers": [
+        "Outcome",
+        "Status"
+      ],
+      "source_task": "finance.expense_reclassification"
+    },
+    {
+      "spreadsheet_id": "ss_split",
+      "worksheet_id": "ws_shared_exp",
+      "headers": [
+        "Expense",
+        "Amount",
+        "Split Method",
+        "Notes"
+      ],
+      "source_task": "finance.expense_split_allocation"
+    },
+    {
+      "spreadsheet_id": "ss_split",
+      "worksheet_id": "ws_headcount",
+      "headers": [
+        "Department",
+        "Headcount",
+        "Head Email",
+        "Sq Ft"
+      ],
+      "source_task": "finance.expense_split_allocation"
+    },
+    {
+      "spreadsheet_id": "ss_exp_log",
+      "worksheet_id": "ws_jan",
+      "headers": [
+        "Date",
+        "Category",
+        "Amount",
+        "Employee",
+        "Notes"
+      ],
+      "source_task": "finance.weekly_expense_summary"
+    },
+    {
+      "spreadsheet_id": "ss_close",
+      "worksheet_id": "ws_jan_checklist",
+      "headers": [
+        "Item",
+        "Owner",
+        "Email",
+        "Status",
+        "Due",
+        "Notes"
+      ],
+      "source_task": "finance.financial_close_checklist"
+    },
+    {
+      "spreadsheet_id": "ss_ratios",
+      "worksheet_id": "ws_reporting_policy",
+      "headers": [
+        "Policy",
+        "Detail"
+      ],
+      "source_task": "finance.financial_ratio_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_ratios",
+      "worksheet_id": "ws_financials",
+      "headers": [
+        "Item",
+        "Amount",
+        "Notes"
+      ],
+      "source_task": "finance.financial_ratio_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_ratios",
+      "worksheet_id": "ws_targets_ratios",
+      "headers": [
+        "Ratio",
+        "Target Min",
+        "Target Max",
+        "Notes"
+      ],
+      "source_task": "finance.financial_ratio_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_ratios",
+      "worksheet_id": "ws_loan_covenants",
+      "headers": [
+        "Covenant",
+        "Required",
+        "Consequence"
+      ],
+      "source_task": "finance.financial_ratio_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_yr_rollover",
+      "worksheet_id": "ws_closing_check",
+      "headers": [
+        "Item",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.fiscal_year_rollover"
+    },
+    {
+      "spreadsheet_id": "ss_yr_rollover",
+      "worksheet_id": "ws_year_end_tb",
+      "headers": [
+        "Account",
+        "Type",
+        "Balance"
+      ],
+      "source_task": "finance.fiscal_year_rollover"
+    },
+    {
+      "spreadsheet_id": "ss_fx_impact",
+      "worksheet_id": "ws_open_fx",
+      "headers": [
+        "Invoice",
+        "Customer",
+        "Currency",
+        "Foreign Amount",
+        "Booking Rate",
+        "USD at Booking"
+      ],
+      "source_task": "finance.forex_gain_loss"
+    },
+    {
+      "spreadsheet_id": "ss_fx_impact",
+      "worksheet_id": "ws_current_rates",
+      "headers": [
+        "Currency",
+        "Rate to USD",
+        "Date"
+      ],
+      "source_task": "finance.forex_gain_loss"
+    },
+    {
+      "spreadsheet_id": "ss_grants",
+      "worksheet_id": "ws_expenses_grant",
+      "headers": [
+        "Date",
+        "Description",
+        "Amount",
+        "Category",
+        "Grant"
+      ],
+      "source_task": "finance.grant_expense_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_grants",
+      "worksheet_id": "ws_grant_budgets",
+      "headers": [
+        "Grant ID",
+        "Total Budget",
+        "Spent to Date",
+        "Remaining",
+        "Allowable Categories"
+      ],
+      "source_task": "finance.grant_expense_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_ic_recon",
+      "worksheet_id": "ws_hq_books",
+      "headers": [
+        "Entity",
+        "IC Receivable",
+        "IC Payable"
+      ],
+      "source_task": "finance.intercompany_balance_recon"
+    },
+    {
+      "spreadsheet_id": "ss_ic_recon",
+      "worksheet_id": "ws_division_books",
+      "headers": [
+        "Entity",
+        "IC Receivable from HQ",
+        "IC Payable to HQ"
+      ],
+      "source_task": "finance.intercompany_balance_recon"
+    },
+    {
+      "spreadsheet_id": "ss_ic_billing",
+      "worksheet_id": "ws_shared_svcs",
+      "headers": [
+        "Service",
+        "Total Cost",
+        "Driver"
+      ],
+      "source_task": "finance.intercompany_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_ic_billing",
+      "worksheet_id": "ws_drivers",
+      "headers": [
+        "Subsidiary",
+        "Email",
+        "Headcount",
+        "FTE",
+        "Revenue"
+      ],
+      "source_task": "finance.intercompany_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_ic",
+      "worksheet_id": "ws_feb_ic",
+      "headers": [
+        "Ref",
+        "From",
+        "To",
+        "Amount",
+        "Description",
+        "Contact",
+        "Status",
+        "Notes",
+        "FX Rate"
+      ],
+      "source_task": "finance.intercompany_transfer"
+    },
+    {
+      "spreadsheet_id": "ss_inv_val",
+      "worksheet_id": "ws_count_compare",
+      "headers": [
+        "SKU",
+        "Item",
+        "System Qty",
+        "Physical Qty",
+        "Unit Cost",
+        "PO Status"
+      ],
+      "source_task": "finance.inventory_valuation"
+    },
+    {
+      "spreadsheet_id": "ss_ar_aging",
+      "worksheet_id": "ws_outstanding_ar",
+      "headers": [
+        "Customer",
+        "Billing Email",
+        "Exec Sponsor",
+        "Invoice #",
+        "Amount",
+        "Due Date",
+        "Days Overdue",
+        "Notes",
+        "Last Action"
+      ],
+      "source_task": "finance.invoice_aging_followup"
+    },
+    {
+      "spreadsheet_id": "ss_disputes",
+      "worksheet_id": "ws_open_disputes",
+      "headers": [
+        "Case #",
+        "Customer",
+        "Customer Email",
+        "Invoice #",
+        "Dispute Amount",
+        "Type",
+        "Description",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.invoice_dispute"
+    },
+    {
+      "spreadsheet_id": "ss_disputes",
+      "worksheet_id": "ws_price_list",
+      "headers": [
+        "Item",
+        "Rate"
+      ],
+      "source_task": "finance.invoice_dispute"
+    },
+    {
+      "spreadsheet_id": "ss_disputes",
+      "worksheet_id": "ws_resolutions",
+      "headers": [
+        "Case"
+      ],
+      "source_task": "finance.invoice_dispute"
+    },
+    {
+      "spreadsheet_id": "ss_inv_tracker",
+      "worksheet_id": "ws_pending",
+      "headers": [
+        "Vendor",
+        "Invoice",
+        "Amount",
+        "Notes"
+      ],
+      "source_task": "finance.invoice_email_extract"
+    },
+    {
+      "spreadsheet_id": "ss_inv_tracker",
+      "worksheet_id": "ws_blocked",
+      "headers": [
+        "Vendor Name",
+        "Reason",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.invoice_email_extract"
+    },
+    {
+      "spreadsheet_id": "ss_inv_registry",
+      "worksheet_id": "ws_registry",
+      "headers": [
+        "Invoice",
+        "Vendor",
+        "Amount"
+      ],
+      "source_task": "finance.invoice_file_organization"
+    },
+    {
+      "spreadsheet_id": "ss_recon",
+      "worksheet_id": "ws_ar_system",
+      "headers": [
+        "Invoice #",
+        "Customer",
+        "Amount",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.invoice_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_recon",
+      "worksheet_id": "ws_accounting",
+      "headers": [
+        "Invoice #",
+        "Customer",
+        "Amount",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.invoice_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_overdue",
+      "worksheet_id": "ws_overdue_list",
+      "headers": [
+        "Customer",
+        "Email",
+        "Invoice #",
+        "Amount",
+        "Due Date",
+        "Late Fee",
+        "Notes"
+      ],
+      "source_task": "finance.late_fee_calculation"
+    },
+    {
+      "spreadsheet_id": "ss_leases",
+      "worksheet_id": "ws_active_leases",
+      "headers": [
+        "Lease",
+        "Landlord",
+        "Monthly Payment",
+        "Due Day",
+        "Lease End",
+        "Auto-Renew"
+      ],
+      "source_task": "finance.lease_payment_schedule"
+    },
+    {
+      "spreadsheet_id": "ss_project_hours",
+      "worksheet_id": "ws_hours_log",
+      "headers": [
+        "Project",
+        "Hours Logged",
+        "Billable Hours",
+        "Rate",
+        "Status"
+      ],
+      "source_task": "finance.monday_project_billing"
+    },
+    {
+      "spreadsheet_id": "ss_billing_recon",
+      "worksheet_id": "ws_invoiced",
+      "headers": [
+        "Project",
+        "Total Invoiced"
+      ],
+      "source_task": "finance.monday_project_billing"
+    },
+    {
+      "spreadsheet_id": "ss_gl_var",
+      "worksheet_id": "ws_jan_actuals",
+      "headers": [
+        "Account",
+        "Type",
+        "Jan 2026",
+        "Dec 2025",
+        "Budget"
+      ],
+      "source_task": "finance.gl_variance_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_monthend",
+      "worksheet_id": "ws_accruals",
+      "headers": [
+        "Item",
+        "Type",
+        "Estimated Amount",
+        "Expense Account",
+        "Status",
+        "Total Prepaid",
+        "Period"
+      ],
+      "source_task": "finance.monthend_journal_entries"
+    },
+    {
+      "spreadsheet_id": "ss_bank_fees",
+      "worksheet_id": "ws_fee_policy",
+      "headers": [
+        "Rule",
+        "Detail"
+      ],
+      "source_task": "finance.bank_fee_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_bank_fees",
+      "worksheet_id": "ws_jan_fees",
+      "headers": [
+        "Fee Type",
+        "Charged",
+        "Transaction Count"
+      ],
+      "source_task": "finance.bank_fee_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_bank_fees",
+      "worksheet_id": "ws_fee_schedule",
+      "headers": [
+        "Fee Type",
+        "Rate"
+      ],
+      "source_task": "finance.bank_fee_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_ap_intl",
+      "worksheet_id": "ws_pending_intl",
+      "headers": [
+        "Invoice",
+        "Currency",
+        "Foreign Amount",
+        "USD"
+      ],
+      "source_task": "finance.multicurrency_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_ap_intl",
+      "worksheet_id": "ws_fx_rates",
+      "headers": [
+        "Currency",
+        "Rate to USD",
+        "Updated"
+      ],
+      "source_task": "finance.multicurrency_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_ar_tracker",
+      "worksheet_id": "ws_outstanding",
+      "headers": [
+        "Customer",
+        "Contact Email",
+        "Invoice #",
+        "Amount",
+        "Due Date",
+        "Days Overdue",
+        "Follow-Up Status",
+        "Last Contact",
+        "Notes"
+      ],
+      "source_task": "finance.overdue_invoice_followup"
+    },
+    {
+      "spreadsheet_id": "ss_fraud_scan",
+      "worksheet_id": "ws_recent_payments",
+      "headers": [
+        "Payment ID",
+        "Vendor",
+        "Amount",
+        "Time",
+        "Date",
+        "Flag",
+        "Notes"
+      ],
+      "source_task": "finance.payment_fraud_detection"
+    },
+    {
+      "spreadsheet_id": "ss_fraud_scan",
+      "worksheet_id": "ws_approved_vendors",
+      "headers": [
+        "Vendor",
+        "Status",
+        "Bank Change Date"
+      ],
+      "source_task": "finance.payment_fraud_detection"
+    },
+    {
+      "spreadsheet_id": "ss_recon_bank",
+      "worksheet_id": "ws_bank_stmt",
+      "headers": [
+        "Date",
+        "Reference",
+        "Description",
+        "Amount"
+      ],
+      "source_task": "finance.payment_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_term_changes",
+      "worksheet_id": "ws_changes",
+      "headers": [
+        "Vendor",
+        "Contact",
+        "Current Terms",
+        "New Terms",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.payment_terms_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_payroll",
+      "worksheet_id": "ws_current",
+      "headers": [
+        "Employee",
+        "Gross Pay",
+        "Department"
+      ],
+      "source_task": "finance.payroll_variance_check"
+    },
+    {
+      "spreadsheet_id": "ss_payroll",
+      "worksheet_id": "ws_previous",
+      "headers": [
+        "Employee",
+        "Gross Pay",
+        "Department"
+      ],
+      "source_task": "finance.payroll_variance_check"
+    },
+    {
+      "spreadsheet_id": "ss_petty",
+      "worksheet_id": "ws_mar_log",
+      "headers": [
+        "Date",
+        "Description",
+        "Category",
+        "Amount",
+        "Status"
+      ],
+      "source_task": "finance.petty_cash_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_petty",
+      "worksheet_id": "ws_count",
+      "headers": [
+        "Count Date",
+        "Bills and Coins"
+      ],
+      "source_task": "finance.petty_cash_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_petty",
+      "worksheet_id": "ws_fund_info",
+      "headers": [
+        "Item",
+        "Value"
+      ],
+      "source_task": "finance.petty_cash_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_po_log",
+      "worksheet_id": "ws_po_active",
+      "headers": [
+        "PO Number",
+        "Vendor",
+        "Amount",
+        "Department",
+        "Date",
+        "Status"
+      ],
+      "source_task": "finance.po_email_logging"
+    },
+    {
+      "spreadsheet_id": "ss_3way",
+      "worksheet_id": "ws_invoices_match",
+      "headers": [
+        "Vendor Invoice",
+        "Vendor",
+        "PO #",
+        "Invoice Qty",
+        "Invoice Amount",
+        "Status"
+      ],
+      "source_task": "finance.po_three_way_match"
+    },
+    {
+      "spreadsheet_id": "ss_3way",
+      "worksheet_id": "ws_pos",
+      "headers": [
+        "PO #",
+        "Vendor",
+        "Qty",
+        "Amount"
+      ],
+      "source_task": "finance.po_three_way_match"
+    },
+    {
+      "spreadsheet_id": "ss_3way",
+      "worksheet_id": "ws_receiving",
+      "headers": [
+        "PO #",
+        "Received Qty",
+        "Date"
+      ],
+      "source_task": "finance.po_three_way_match"
+    },
+    {
+      "spreadsheet_id": "ss_prepaids",
+      "worksheet_id": "ws_prepaid_items",
+      "headers": [
+        "Item",
+        "Total",
+        "Term (Months)",
+        "Start Date",
+        "Expense Account",
+        "Amortized to Date",
+        "Remaining",
+        "Notes"
+      ],
+      "source_task": "finance.prepaid_amortization"
+    },
+    {
+      "spreadsheet_id": "ss_margins",
+      "worksheet_id": "ws_q1_pl",
+      "headers": [
+        "Product Line",
+        "Revenue",
+        "COGS",
+        "Lifecycle"
+      ],
+      "source_task": "finance.profit_margin_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_margins",
+      "worksheet_id": "ws_targets",
+      "headers": [
+        "Product Line",
+        "Gross Margin Target"
+      ],
+      "source_task": "finance.profit_margin_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_proj_profit",
+      "worksheet_id": "ws_project_data",
+      "headers": [
+        "Project",
+        "Client",
+        "Revenue",
+        "Labor Costs",
+        "Material Costs",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.project_profitability"
+    },
+    {
+      "spreadsheet_id": "ss_bill_pmts",
+      "worksheet_id": "ws_approved_bills",
+      "headers": [
+        "Vendor",
+        "Email",
+        "Bill #",
+        "Amount",
+        "Due Date",
+        "Discount Terms",
+        "Notes"
+      ],
+      "source_task": "finance.qb_bill_payment_batch"
+    },
+    {
+      "spreadsheet_id": "ss_credit_limits",
+      "worksheet_id": "ws_limits",
+      "headers": [
+        "Customer",
+        "Credit Limit",
+        "Last Activity"
+      ],
+      "source_task": "finance.qb_customer_balance_review"
+    },
+    {
+      "spreadsheet_id": "ss_orders",
+      "worksheet_id": "ws_feb_orders",
+      "headers": [
+        "Order #",
+        "Customer",
+        "Customer Email",
+        "Item",
+        "Qty",
+        "Unit Price",
+        "Status",
+        "Date"
+      ],
+      "source_task": "finance.qb_invoice_from_orders"
+    },
+    {
+      "spreadsheet_id": "ss_recurring_je",
+      "worksheet_id": "ws_schedule_je",
+      "headers": [
+        "Entry",
+        "Debit Account",
+        "Credit Account",
+        "Amount",
+        "Status",
+        "Effective",
+        "Reversing"
+      ],
+      "source_task": "finance.qb_recurring_journal"
+    },
+    {
+      "spreadsheet_id": "ss_daily_sales",
+      "worksheet_id": "ws_tax_rates",
+      "headers": [
+        "State",
+        "Rate"
+      ],
+      "source_task": "finance.qb_sales_receipt_batch"
+    },
+    {
+      "spreadsheet_id": "ss_daily_sales",
+      "worksheet_id": "ws_apr10",
+      "headers": [
+        "Transaction ID",
+        "Customer",
+        "Subtotal",
+        "State",
+        "Status"
+      ],
+      "source_task": "finance.qb_sales_receipt_batch"
+    },
+    {
+      "spreadsheet_id": "ss_sales_reps",
+      "worksheet_id": "ws_assignments",
+      "headers": [
+        "Customer",
+        "Sales Rep"
+      ],
+      "source_task": "finance.qb_void_stale_invoices"
+    },
+    {
+      "spreadsheet_id": "ss_tax_est",
+      "worksheet_id": "ws_ytd_income",
+      "headers": [
+        "Month",
+        "Revenue",
+        "Deductible Expenses"
+      ],
+      "source_task": "finance.quarterly_tax_estimate"
+    },
+    {
+      "spreadsheet_id": "ss_tax_est",
+      "worksheet_id": "ws_tax_rates",
+      "headers": [
+        "Rate Type",
+        "Rate"
+      ],
+      "source_task": "finance.quarterly_tax_estimate"
+    },
+    {
+      "spreadsheet_id": "ss_tax_est",
+      "worksheet_id": "ws_credits",
+      "headers": [
+        "Credit",
+        "Annual Amount"
+      ],
+      "source_task": "finance.quarterly_tax_estimate"
+    },
+    {
+      "spreadsheet_id": "ss_tax_est",
+      "worksheet_id": "ws_prior_payments",
+      "headers": [
+        "Quarter",
+        "Amount",
+        "Date",
+        "Notes"
+      ],
+      "source_task": "finance.quarterly_tax_estimate"
+    },
+    {
+      "spreadsheet_id": "ss_refunds",
+      "worksheet_id": "ws_pending_ref",
+      "headers": [
+        "Case",
+        "Customer",
+        "Email",
+        "Invoice #",
+        "Invoice Date",
+        "Amount",
+        "Reason",
+        "Approvals",
+        "Status"
+      ],
+      "source_task": "finance.refund_processing"
+    },
+    {
+      "spreadsheet_id": "ss_revrec",
+      "worksheet_id": "ws_contracts",
+      "headers": [
+        "Contract ID",
+        "Customer",
+        "Total Value",
+        "Start Date",
+        "Term (Months)",
+        "Status"
+      ],
+      "source_task": "finance.revenue_recognition"
+    },
+    {
+      "spreadsheet_id": "ss_revrec",
+      "worksheet_id": "ws_schedule",
+      "headers": [
+        "Contract",
+        "Customer",
+        "Amount"
+      ],
+      "source_task": "finance.revenue_recognition"
+    },
+    {
+      "spreadsheet_id": "ss_sales_tax",
+      "worksheet_id": "ws_q4_revenue",
+      "headers": [
+        "Month",
+        "State",
+        "Taxable Sales",
+        "Notes"
+      ],
+      "source_task": "finance.sales_tax_remittance"
+    },
+    {
+      "spreadsheet_id": "ss_sales_tax",
+      "worksheet_id": "ws_rates_tax",
+      "headers": [
+        "State",
+        "Rate",
+        "Effective",
+        "Notes"
+      ],
+      "source_task": "finance.sales_tax_remittance"
+    },
+    {
+      "spreadsheet_id": "ss_exp_tracker",
+      "worksheet_id": "ws_submissions",
+      "headers": [
+        "Amount",
+        "Category"
+      ],
+      "source_task": "finance.slack_receipt_capture"
+    },
+    {
+      "spreadsheet_id": "ss_exp_tracker",
+      "worksheet_id": "ws_policy",
+      "headers": [
+        "Rule",
+        "Detail"
+      ],
+      "source_task": "finance.slack_receipt_capture"
+    },
+    {
+      "spreadsheet_id": "ss_subs",
+      "worksheet_id": "ws_active_subs",
+      "headers": [
+        "Customer",
+        "Email",
+        "Plan",
+        "Current Rate",
+        "Renewal Date",
+        "Auto-Renew",
+        "Start Date",
+        "Past Due"
+      ],
+      "source_task": "finance.subscription_billing"
+    },
+    {
+      "spreadsheet_id": "ss_subs",
+      "worksheet_id": "ws_rates_2026",
+      "headers": [
+        "Plan",
+        "Monthly Rate"
+      ],
+      "source_task": "finance.subscription_billing"
+    },
+    {
+      "spreadsheet_id": "ss_pay_log",
+      "worksheet_id": "ws_q4_2025",
+      "headers": [
+        "Date",
+        "Vendor",
+        "Amount",
+        "Category"
+      ],
+      "source_task": "finance.tax_prep_summary"
+    },
+    {
+      "spreadsheet_id": "ss_pay_log",
+      "worksheet_id": "ws_vendors",
+      "headers": [
+        "Vendor Name",
+        "Type",
+        "Tax ID",
+        "W-9"
+      ],
+      "source_task": "finance.tax_prep_summary"
+    },
+    {
+      "spreadsheet_id": "ss_hours",
+      "worksheet_id": "ws_jan_hours",
+      "headers": [
+        "Client",
+        "Consultant",
+        "Hours",
+        "Rate Tier",
+        "Status",
+        "Contact Email",
+        "Notes"
+      ],
+      "source_task": "finance.timesheet_to_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_hours",
+      "worksheet_id": "ws_rates",
+      "headers": [
+        "Tier",
+        "Hourly Rate"
+      ],
+      "source_task": "finance.timesheet_to_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_hours",
+      "worksheet_id": "ws_billing_policy",
+      "headers": [
+        "Rule",
+        "Detail"
+      ],
+      "source_task": "finance.timesheet_to_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_hours",
+      "worksheet_id": "ws_old_rates",
+      "headers": [
+        "Tier",
+        "Hourly Rate"
+      ],
+      "source_task": "finance.timesheet_to_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_travel_settle",
+      "worksheet_id": "ws_pending_settle",
+      "headers": [
+        "Employee",
+        "Email",
+        "Advance",
+        "Actual Expenses",
+        "Trip End",
+        "Notes"
+      ],
+      "source_task": "finance.travel_advance_settlement"
+    },
+    {
+      "spreadsheet_id": "ss_1099",
+      "worksheet_id": "ws_vendor_payments_1099",
+      "headers": [
+        "Vendor",
+        "Email",
+        "Type",
+        "Total Paid 2025",
+        "Tax ID",
+        "W-9 On File"
+      ],
+      "source_task": "finance.vendor_1099_prep"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_credits",
+      "worksheet_id": "ws_credits",
+      "headers": [
+        "Credit #",
+        "Vendor",
+        "Email",
+        "Amount",
+        "Date",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.vendor_credit_application"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_credits",
+      "worksheet_id": "ws_open_bills",
+      "headers": [
+        "Bill #",
+        "Vendor",
+        "Amount",
+        "Due Date",
+        "Status"
+      ],
+      "source_task": "finance.vendor_credit_application"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_credits",
+      "worksheet_id": "ws_vendor_info",
+      "headers": [
+        "Vendor",
+        "Rating",
+        "Category"
+      ],
+      "source_task": "finance.vendor_credit_application"
+    },
+    {
+      "spreadsheet_id": "ss_discount_analysis",
+      "worksheet_id": "ws_bills_disc",
+      "headers": [
+        "Vendor",
+        "Bill Amount",
+        "Terms",
+        "Bill Date",
+        "Notes"
+      ],
+      "source_task": "finance.vendor_early_pay_discount"
+    },
+    {
+      "spreadsheet_id": "ss_discount_analysis",
+      "worksheet_id": "ws_cash_position",
+      "headers": [
+        "Account",
+        "Balance",
+        "Date"
+      ],
+      "source_task": "finance.vendor_early_pay_discount"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_insurance",
+      "worksheet_id": "ws_certs",
+      "headers": [
+        "Vendor",
+        "Email",
+        "Certificate Expiry",
+        "Coverage",
+        "Status"
+      ],
+      "source_task": "finance.vendor_insurance_verification"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_insurance",
+      "worksheet_id": "ws_requirements",
+      "headers": [
+        "Rule",
+        "Detail"
+      ],
+      "source_task": "finance.vendor_insurance_verification"
+    },
+    {
+      "spreadsheet_id": "ss_pay_queue",
+      "worksheet_id": "ws_pending",
+      "headers": [
+        "Vendor",
+        "Email",
+        "Amount",
+        "Due Date",
+        "Approvals",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.vendor_payment_approval"
+    },
+    {
+      "spreadsheet_id": "ss_spend",
+      "worksheet_id": "ws_procurement_policy",
+      "headers": [
+        "Rule",
+        "Detail"
+      ],
+      "source_task": "finance.vendor_spend_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_spend",
+      "worksheet_id": "ws_q4_payments",
+      "headers": [
+        "Date",
+        "Vendor",
+        "Amount"
+      ],
+      "source_task": "finance.vendor_spend_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_spend",
+      "worksheet_id": "ws_contracts",
+      "headers": [
+        "Vendor",
+        "Contract End",
+        "Status"
+      ],
+      "source_task": "finance.vendor_spend_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_recon",
+      "worksheet_id": "ws_vendor_stmts",
+      "headers": [
+        "Vendor",
+        "Email",
+        "Statement Balance"
+      ],
+      "source_task": "finance.vendor_statement_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_recon",
+      "worksheet_id": "ws_our_ap",
+      "headers": [
+        "Vendor",
+        "AP Balance",
+        "Notes"
+      ],
+      "source_task": "finance.vendor_statement_reconciliation"
+    },
+    {
+      "spreadsheet_id": "ss_bank_cat",
+      "worksheet_id": "ws_uncategorized",
+      "headers": [
+        "Date",
+        "Description",
+        "Amount",
+        "Category",
+        "Status"
+      ],
+      "source_task": "finance.wave_expense_categorization"
+    },
+    {
+      "spreadsheet_id": "ss_bank_cat",
+      "worksheet_id": "ws_vendor_map",
+      "headers": [
+        "Vendor Pattern",
+        "Category"
+      ],
+      "source_task": "finance.wave_expense_categorization"
+    },
+    {
+      "spreadsheet_id": "ss_projects",
+      "worksheet_id": "ws_jan_proj",
+      "headers": [
+        "Client",
+        "Project",
+        "Hours",
+        "Rate",
+        "Status",
+        "Email"
+      ],
+      "source_task": "finance.wave_freelance_invoice"
+    },
+    {
+      "spreadsheet_id": "ss_pricing",
+      "worksheet_id": "ws_new_prices",
+      "headers": [
+        "Product",
+        "New Price",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.wave_product_catalog"
+    },
+    {
+      "spreadsheet_id": "ss_tax_rates",
+      "worksheet_id": "ws_state_rates",
+      "headers": [
+        "State",
+        "Rate",
+        "Effective",
+        "Notes"
+      ],
+      "source_task": "finance.wave_tax_compliance"
+    },
+    {
+      "spreadsheet_id": "ss_wires",
+      "worksheet_id": "ws_pending_wires",
+      "headers": [
+        "Request #",
+        "Payee",
+        "Amount",
+        "Type",
+        "Approvals",
+        "Verified",
+        "Requestor",
+        "Status"
+      ],
+      "source_task": "finance.wire_transfer_approval"
+    },
+    {
+      "spreadsheet_id": "ss_bank_recon",
+      "worksheet_id": "ws_stmt",
+      "headers": [
+        "Date",
+        "Description",
+        "Amount",
+        "Reference",
+        "Status",
+        "Notes"
+      ],
+      "source_task": "finance.xero_bank_reconcile"
+    },
+    {
+      "spreadsheet_id": "ss_claims",
+      "worksheet_id": "ws_pending_claims",
+      "headers": [
+        "Claim ID",
+        "Employee",
+        "Email",
+        "Total Amount",
+        "Missing Receipts Total",
+        "Status"
+      ],
+      "source_task": "finance.xero_expense_claim_review"
+    },
+    {
+      "spreadsheet_id": "ss_intl_pmts",
+      "worksheet_id": "ws_fx_rates",
+      "headers": [
+        "Currency",
+        "Rate per USD"
+      ],
+      "source_task": "finance.xero_multicurrency_payment"
+    },
+    {
+      "spreadsheet_id": "ss_intl_pmts",
+      "worksheet_id": "ws_received_pmts",
+      "headers": [
+        "Customer",
+        "Email",
+        "Invoice #",
+        "Currency",
+        "Amount"
+      ],
+      "source_task": "finance.xero_multicurrency_payment"
+    },
+    {
+      "spreadsheet_id": "ss_receiving",
+      "worksheet_id": "ws_received",
+      "headers": [
+        "PO #",
+        "Vendor",
+        "Ordered Qty",
+        "Received Qty",
+        "Unit Price"
+      ],
+      "source_task": "finance.xero_po_matching"
+    },
+    {
+      "spreadsheet_id": "ss_vendor_compliance",
+      "worksheet_id": "ws_sanctions",
+      "headers": [
+        "Vendor",
+        "Status",
+        "Reason",
+        "Date"
+      ],
+      "source_task": "finance.xero_vendor_onboard"
+    },
+    {
+      "spreadsheet_id": "ss_audit_prep",
+      "worksheet_id": "ws_audit_checklist",
+      "headers": [
+        "Item",
+        "Owner",
+        "Status",
+        "Sign-Off",
+        "Scope"
+      ],
+      "source_task": "finance.year_end_audit_prep"
+    },
+    {
+      "spreadsheet_id": "ss_ads",
+      "worksheet_id": "ws_campaigns",
+      "headers": [
+        "campaign_id",
+        "campaign_name",
+        "impressions",
+        "clicks",
+        "spend",
+        "conversions",
+        "campaign_type",
+        "start_date",
+        "notes"
+      ],
+      "source_task": "marketing.ad_performance_review"
+    },
+    {
+      "spreadsheet_id": "ss_ads",
+      "worksheet_id": "ws_protected_campaigns",
+      "headers": [
+        "Campaign Name",
+        "Protection Status",
+        "Approved By",
+        "Notes"
+      ],
+      "source_task": "marketing.ad_performance_review"
+    },
+    {
+      "spreadsheet_id": "ss_metrics",
+      "worksheet_id": "ws_quarterly",
+      "headers": [
+        "metric",
+        "q3_2025",
+        "q4_2025",
+        "change",
+        "notes"
+      ],
+      "source_task": "marketing.analyst_briefing"
+    },
+    {
+      "spreadsheet_id": "ss_briefings",
+      "worksheet_id": "ws_schedule",
+      "headers": [
+        "analyst_id",
+        "analyst_name",
+        "email",
+        "briefing_date",
+        "embargo_status",
+        "embargo_lift_date",
+        "notes"
+      ],
+      "source_task": "marketing.analyst_briefing"
+    },
+    {
+      "spreadsheet_id": "ss_analysts",
+      "worksheet_id": "ws_reports",
+      "headers": [
+        "report_name",
+        "analyst_firm",
+        "date",
+        "our_position",
+        "key_quote",
+        "tier",
+        "notes"
+      ],
+      "source_task": "marketing.analyst_mention_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_mentions",
+      "worksheet_id": "ws_social",
+      "headers": [
+        "platform",
+        "author",
+        "followers",
+        "sentiment",
+        "content",
+        "url",
+        "notes"
+      ],
+      "source_task": "marketing.brand_mention_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_tickets",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "platform",
+        "author",
+        "urgency",
+        "url"
+      ],
+      "source_task": "marketing.brand_mention_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_roi",
+      "worksheet_id": "ws",
+      "headers": [
+        "channel",
+        "roi",
+        "notes"
+      ],
+      "source_task": "marketing.budget_reallocation"
+    },
+    {
+      "spreadsheet_id": "ss_attribution",
+      "worksheet_id": "ws_touches",
+      "headers": [
+        "channel",
+        "first_touch_conversions",
+        "last_touch_conversions",
+        "total_touches",
+        "cost",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.campaign_attribution"
+    },
+    {
+      "spreadsheet_id": "ss_calendar",
+      "worksheet_id": "ws_campaigns",
+      "headers": [
+        "campaign",
+        "start_date",
+        "end_date",
+        "audience",
+        "manager",
+        "priority",
+        "notes"
+      ],
+      "source_task": "marketing.campaign_calendar"
+    },
+    {
+      "spreadsheet_id": "ss_handoff",
+      "worksheet_id": "ws_campaigns",
+      "headers": [
+        "campaign",
+        "owner",
+        "status",
+        "next_action",
+        "key_contact",
+        "notes"
+      ],
+      "source_task": "marketing.campaign_handoff"
+    },
+    {
+      "spreadsheet_id": "ss_handoff",
+      "worksheet_id": "ws_backup",
+      "headers": [
+        "owner",
+        "backup"
+      ],
+      "source_task": "marketing.campaign_handoff"
+    },
+    {
+      "spreadsheet_id": "ss_launch",
+      "worksheet_id": "ws_checklist",
+      "headers": [
+        "item",
+        "owner",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.campaign_launch_checklist"
+    },
+    {
+      "spreadsheet_id": "ss_retro",
+      "worksheet_id": "ws_results",
+      "headers": [
+        "campaign",
+        "kpi",
+        "goal",
+        "actual",
+        "notes"
+      ],
+      "source_task": "marketing.campaign_retrospective"
+    },
+    {
+      "spreadsheet_id": "ss_campaigns",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "campaign_name",
+        "channel",
+        "spend",
+        "attributed_revenue",
+        "end_date",
+        "notes"
+      ],
+      "source_task": "marketing.campaign_roi_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_campaigns",
+      "worksheet_id": "ws_budget",
+      "headers": [
+        "channel",
+        "quarterly_budget",
+        "spent_to_date"
+      ],
+      "source_task": "marketing.campaign_roi_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_forum",
+      "worksheet_id": "ws_questions",
+      "headers": [
+        "post_id",
+        "author_email",
+        "question",
+        "posted_date",
+        "answered",
+        "notes"
+      ],
+      "source_task": "marketing.community_engagement"
+    },
+    {
+      "spreadsheet_id": "ss_forum",
+      "worksheet_id": "ws_customers",
+      "headers": [
+        "email_domain"
+      ],
+      "source_task": "marketing.community_engagement"
+    },
+    {
+      "spreadsheet_id": "ss_cint",
+      "worksheet_id": "ws_features",
+      "headers": [
+        "feature_name",
+        "stratacorp_has",
+        "we_have",
+        "gap_status",
+        "priority",
+        "notes"
+      ],
+      "source_task": "marketing.competitive_response_plan"
+    },
+    {
+      "spreadsheet_id": "ss_news",
+      "worksheet_id": "ws_items",
+      "headers": [
+        "headline",
+        "source",
+        "company",
+        "date",
+        "type",
+        "key_details",
+        "notes",
+        "competitor_tier",
+        "status",
+        "segment"
+      ],
+      "source_task": "marketing.competitor_product_launch"
+    },
+    {
+      "spreadsheet_id": "ss_content_lib",
+      "worksheet_id": "ws_assets",
+      "headers": [
+        "title",
+        "type",
+        "owner_email",
+        "expiration_date",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.content_expiration_alert"
+    },
+    {
+      "spreadsheet_id": "ss_inv",
+      "worksheet_id": "ws_content",
+      "headers": [
+        "title",
+        "type",
+        "funnel_stage",
+        "status",
+        "keyword_difficulty",
+        "competitor_coverage",
+        "notes"
+      ],
+      "source_task": "marketing.content_gap_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_traffic",
+      "worksheet_id": "ws_regions",
+      "headers": [
+        "region",
+        "monthly_visitors",
+        "conversion_rate",
+        "notes"
+      ],
+      "source_task": "marketing.content_localization"
+    },
+    {
+      "spreadsheet_id": "ss_local",
+      "worksheet_id": "ws_translations",
+      "headers": [
+        "language",
+        "pages_translated",
+        "last_updated"
+      ],
+      "source_task": "marketing.content_localization"
+    },
+    {
+      "spreadsheet_id": "ss_ana",
+      "worksheet_id": "ws_posts",
+      "headers": [
+        "title",
+        "publish_date",
+        "pageviews",
+        "bounce_rate",
+        "avg_time_on_page",
+        "conversions",
+        "conversion_rate",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.content_performance"
+    },
+    {
+      "spreadsheet_id": "ss_analytics",
+      "worksheet_id": "ws_posts",
+      "headers": [
+        "title",
+        "url",
+        "views",
+        "avg_time_on_page",
+        "shares",
+        "publish_date",
+        "repurposed_formats",
+        "notes"
+      ],
+      "source_task": "marketing.content_repurpose"
+    },
+    {
+      "spreadsheet_id": "ss_analytics",
+      "worksheet_id": "ws_repurposed",
+      "headers": [
+        "original_title",
+        "new_format",
+        "created_date"
+      ],
+      "source_task": "marketing.content_repurpose"
+    },
+    {
+      "spreadsheet_id": "ss_queue",
+      "worksheet_id": "ws_tasks",
+      "headers": [
+        "source_post",
+        "new_format",
+        "priority",
+        "tracking_code"
+      ],
+      "source_task": "marketing.content_repurpose"
+    },
+    {
+      "spreadsheet_id": "ss_audit",
+      "worksheet_id": "ws_pages",
+      "headers": [
+        "title",
+        "url",
+        "word_count",
+        "last_updated",
+        "has_images",
+        "internal_links",
+        "monthly_traffic",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.content_scoring"
+    },
+    {
+      "spreadsheet_id": "ss_cal",
+      "worksheet_id": "ws_cal",
+      "headers": [
+        "date",
+        "channel",
+        "content",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.content_syndication"
+    },
+    {
+      "spreadsheet_id": "ss_conv_policy",
+      "worksheet_id": "ws_excluded_accounts",
+      "headers": [
+        "Identifier",
+        "Type",
+        "Notes"
+      ],
+      "source_task": "marketing.conversion_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_creative",
+      "worksheet_id": "ws_assets",
+      "headers": [
+        "asset_name",
+        "campaign",
+        "due_date",
+        "status",
+        "assignee",
+        "notes"
+      ],
+      "source_task": "marketing.creative_asset"
+    },
+    {
+      "spreadsheet_id": "ss_feedback",
+      "worksheet_id": "ws_items",
+      "headers": [
+        "source",
+        "customer",
+        "feedback_type",
+        "topic",
+        "verbatim",
+        "date",
+        "notes",
+        "country",
+        "gdpr_consent"
+      ],
+      "source_task": "marketing.customer_feedback_aggregation"
+    },
+    {
+      "spreadsheet_id": "ss_customers",
+      "worksheet_id": "ws_accounts",
+      "headers": [
+        "customer_id",
+        "company",
+        "contact_email",
+        "start_date",
+        "plan",
+        "lifetime_value",
+        "health_score",
+        "notes"
+      ],
+      "source_task": "marketing.customer_milestone"
+    },
+    {
+      "spreadsheet_id": "ss_milestones",
+      "worksheet_id": "ws_log",
+      "headers": [
+        "customer_id",
+        "company",
+        "milestone",
+        "date_reached",
+        "outreach_sent"
+      ],
+      "source_task": "marketing.customer_milestone"
+    },
+    {
+      "spreadsheet_id": "ss_recent",
+      "worksheet_id": "ws_posts",
+      "headers": [
+        "title",
+        "category",
+        "theme",
+        "publish_date"
+      ],
+      "source_task": "marketing.editorial_calendar"
+    },
+    {
+      "spreadsheet_id": "ss_ideas",
+      "worksheet_id": "ws_backlog",
+      "headers": [
+        "idea",
+        "category",
+        "theme",
+        "priority",
+        "status",
+        "word_count",
+        "mentions_competitor",
+        "notes"
+      ],
+      "source_task": "marketing.editorial_calendar"
+    },
+    {
+      "spreadsheet_id": "ss_email",
+      "worksheet_id": "ws_campaigns",
+      "headers": [
+        "campaign_name",
+        "sent",
+        "open_rate",
+        "click_rate",
+        "unsubscribe_rate",
+        "notes"
+      ],
+      "source_task": "marketing.email_campaign_analytics"
+    },
+    {
+      "spreadsheet_id": "ss_analytics",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "platform",
+        "day",
+        "time_slot",
+        "posts",
+        "avg_engagement",
+        "notes"
+      ],
+      "source_task": "marketing.engagement_optimization"
+    },
+    {
+      "spreadsheet_id": "ss_schedule",
+      "worksheet_id": "ws_optimal",
+      "headers": [
+        "platform",
+        "rank",
+        "day",
+        "time_slot",
+        "expected_engagement",
+        "engagement_lift"
+      ],
+      "source_task": "marketing.engagement_optimization"
+    },
+    {
+      "spreadsheet_id": "ss_event",
+      "worksheet_id": "ws_attendance",
+      "headers": [
+        "attendee_email",
+        "name",
+        "company",
+        "sessions_attended",
+        "checked_in",
+        "notes"
+      ],
+      "source_task": "marketing.event_followup_personalization"
+    },
+    {
+      "spreadsheet_id": "ss_event",
+      "worksheet_id": "ws_sent",
+      "headers": [
+        "email",
+        "sent_date",
+        "type",
+        "sent_by"
+      ],
+      "source_task": "marketing.event_followup_personalization"
+    },
+    {
+      "spreadsheet_id": "ss_event",
+      "worksheet_id": "ws_optout",
+      "headers": [
+        "email",
+        "reason"
+      ],
+      "source_task": "marketing.event_followup_personalization"
+    },
+    {
+      "spreadsheet_id": "ss_event",
+      "worksheet_id": "ws_exclusions",
+      "headers": [
+        "company",
+        "type"
+      ],
+      "source_task": "marketing.event_followup_personalization"
+    },
+    {
+      "spreadsheet_id": "ss_event",
+      "worksheet_id": "ws",
+      "headers": [
+        "name",
+        "email",
+        "company",
+        "ticket_type",
+        "notes"
+      ],
+      "source_task": "marketing.event_registration_sync"
+    },
+    {
+      "spreadsheet_id": "ss_event",
+      "worksheet_id": "ws_scores",
+      "headers": [
+        "email",
+        "lead_fit_score"
+      ],
+      "source_task": "marketing.event_registration_sync"
+    },
+    {
+      "spreadsheet_id": "ss_assets",
+      "worksheet_id": "ws_photos",
+      "headers": [
+        "asset_id",
+        "url",
+        "type",
+        "caption",
+        "status",
+        "platform",
+        "notes"
+      ],
+      "source_task": "marketing.facebook_photo_highlight"
+    },
+    {
+      "spreadsheet_id": "ss_serp",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "keyword",
+        "our_position",
+        "has_featured_snippet",
+        "snippet_owner",
+        "volume",
+        "notes"
+      ],
+      "source_task": "marketing.featured_snippet"
+    },
+    {
+      "spreadsheet_id": "ss_optimize",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "keyword",
+        "current_position",
+        "volume",
+        "opportunity"
+      ],
+      "source_task": "marketing.featured_snippet"
+    },
+    {
+      "spreadsheet_id": "ss_adpol",
+      "worksheet_id": "ws_thresholds",
+      "headers": [
+        "metric",
+        "threshold",
+        "action",
+        "notes"
+      ],
+      "source_task": "marketing.google_ads_pause_low_ctr"
+    },
+    {
+      "spreadsheet_id": "ss_targets",
+      "worksheet_id": "ws_sites",
+      "headers": [
+        "publication",
+        "editor_email",
+        "last_outreach",
+        "last_result",
+        "recent_topic",
+        "notes"
+      ],
+      "source_task": "marketing.guest_post_outreach"
+    },
+    {
+      "spreadsheet_id": "ss_hashtags",
+      "worksheet_id": "ws_perf",
+      "headers": [
+        "hashtag",
+        "times_used",
+        "avg_reach",
+        "avg_engagement",
+        "category",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.hashtag_performance"
+    },
+    {
+      "spreadsheet_id": "ss_hashtags",
+      "worksheet_id": "ws_topics",
+      "headers": [
+        "category",
+        "description"
+      ],
+      "source_task": "marketing.hashtag_performance"
+    },
+    {
+      "spreadsheet_id": "ss_events",
+      "worksheet_id": "ws_calendar",
+      "headers": [
+        "event_name",
+        "date",
+        "location",
+        "focus_area",
+        "expected_attendees",
+        "sponsorship_cost",
+        "notes"
+      ],
+      "source_task": "marketing.industry_event_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_contracts",
+      "worksheet_id": "ws_active",
+      "headers": [
+        "influencer",
+        "email",
+        "contract_end",
+        "total_cost",
+        "attributed_revenue",
+        "notes"
+      ],
+      "source_task": "marketing.influencer_contract_tracking"
+    },
+    {
+      "spreadsheet_id": "ss_influencers",
+      "worksheet_id": "ws_list",
+      "headers": [
+        "name",
+        "email",
+        "platform",
+        "followers",
+        "contacted",
+        "notes"
+      ],
+      "source_task": "marketing.influencer_outreach"
+    },
+    {
+      "spreadsheet_id": "ss_kw",
+      "worksheet_id": "ws_rank",
+      "headers": [
+        "keyword",
+        "page",
+        "position",
+        "impressions",
+        "notes"
+      ],
+      "source_task": "marketing.keyword_cannibalization"
+    },
+    {
+      "spreadsheet_id": "ss_pages",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "page_name",
+        "url",
+        "visitors",
+        "conversions"
+      ],
+      "source_task": "marketing.landing_page_alert"
+    },
+    {
+      "spreadsheet_id": "ss_lp",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "page_name",
+        "url",
+        "visits",
+        "conversions",
+        "conversion_rate",
+        "notes"
+      ],
+      "source_task": "marketing.landing_page_conversion"
+    },
+    {
+      "spreadsheet_id": "ss_lp",
+      "worksheet_id": "ws_pages",
+      "headers": [
+        "page",
+        "visitors",
+        "conversions",
+        "conversion_rate",
+        "bounce_rate",
+        "notes"
+      ],
+      "source_task": "marketing.landing_page_optimization"
+    },
+    {
+      "spreadsheet_id": "ss_leads",
+      "worksheet_id": "ws_new",
+      "headers": [
+        "name",
+        "email",
+        "company",
+        "title",
+        "notes"
+      ],
+      "source_task": "marketing.lead_enrichment"
+    },
+    {
+      "spreadsheet_id": "ss_leads",
+      "worksheet_id": "ws_competitors",
+      "headers": [
+        "company_name",
+        "domain",
+        "notes"
+      ],
+      "source_task": "marketing.lead_enrichment"
+    },
+    {
+      "spreadsheet_id": "ss_eng",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "email",
+        "company",
+        "touchpoints_30d",
+        "last_activity",
+        "source",
+        "notes"
+      ],
+      "source_task": "marketing.lead_scoring"
+    },
+    {
+      "spreadsheet_id": "ss_lifecycle",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "email",
+        "days_active",
+        "usage_trend",
+        "current_stage",
+        "notes"
+      ],
+      "source_task": "marketing.lifecycle_stage"
+    },
+    {
+      "spreadsheet_id": "ss_prospects",
+      "worksheet_id": "ws_sites",
+      "headers": [
+        "site",
+        "domain_authority",
+        "niche",
+        "accepts_guest_posts",
+        "contact_email",
+        "notes"
+      ],
+      "source_task": "marketing.link_building"
+    },
+    {
+      "spreadsheet_id": "ss_outreach",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "site",
+        "contact",
+        "status",
+        "pitch_angle"
+      ],
+      "source_task": "marketing.link_building"
+    },
+    {
+      "spreadsheet_id": "ss_trends",
+      "worksheet_id": "ws_kw",
+      "headers": [
+        "keyword",
+        "volume_last_month",
+        "volume_this_month",
+        "we_rank",
+        "difficulty",
+        "notes"
+      ],
+      "source_task": "marketing.market_trend"
+    },
+    {
+      "spreadsheet_id": "ss_seo_backlog",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "keyword",
+        "growth_rate",
+        "priority"
+      ],
+      "source_task": "marketing.market_trend"
+    },
+    {
+      "spreadsheet_id": "ss_deals",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "deal_name",
+        "value",
+        "touchpoints",
+        "close_date",
+        "notes"
+      ],
+      "source_task": "marketing.multi_touch_attribution"
+    },
+    {
+      "spreadsheet_id": "ss_hist",
+      "worksheet_id": "ws_sent",
+      "headers": [
+        "date",
+        "topic",
+        "notes"
+      ],
+      "source_task": "marketing.newsletter_dedup"
+    },
+    {
+      "spreadsheet_id": "ss_subscribers",
+      "worksheet_id": "ws_subs",
+      "headers": [
+        "subscriber_id",
+        "name",
+        "email",
+        "opted_in_date",
+        "last_confirmed_date",
+        "status"
+      ],
+      "source_task": "marketing.newsletter_dedup"
+    },
+    {
+      "spreadsheet_id": "ss_unsub",
+      "worksheet_id": "ws_requests",
+      "headers": [
+        "email",
+        "request_date",
+        "processed",
+        "notes"
+      ],
+      "source_task": "marketing.newsletter_unsubscribe_processing"
+    },
+    {
+      "spreadsheet_id": "ss_log",
+      "worksheet_id": "ws_log",
+      "headers": [
+        "email",
+        "action",
+        "date",
+        "lists_removed"
+      ],
+      "source_task": "marketing.newsletter_unsubscribe_processing"
+    },
+    {
+      "spreadsheet_id": "ss_partners",
+      "worksheet_id": "ws_partners",
+      "headers": [
+        "partner_name",
+        "contact_email",
+        "participating",
+        "assets_sent",
+        "notes"
+      ],
+      "source_task": "marketing.partner_comarketing"
+    },
+    {
+      "spreadsheet_id": "ss_deals",
+      "worksheet_id": "ws_closed",
+      "headers": [
+        "deal_id",
+        "partner_id",
+        "partner_name",
+        "deal_value",
+        "close_date",
+        "notes"
+      ],
+      "source_task": "marketing.partner_commission_calculation"
+    },
+    {
+      "spreadsheet_id": "ss_deals",
+      "worksheet_id": "ws_tiers",
+      "headers": [
+        "partner_id",
+        "partner_name",
+        "tier",
+        "commission_rate",
+        "email"
+      ],
+      "source_task": "marketing.partner_commission_calculation"
+    },
+    {
+      "spreadsheet_id": "ss_deals",
+      "worksheet_id": "ws_disputes",
+      "headers": [
+        "deal_id",
+        "partner_id",
+        "reason",
+        "status"
+      ],
+      "source_task": "marketing.partner_commission_calculation"
+    },
+    {
+      "spreadsheet_id": "ss_ptnr",
+      "worksheet_id": "ws_guidelines",
+      "headers": [
+        "rule_id",
+        "rule_description"
+      ],
+      "source_task": "marketing.partner_content_approval"
+    },
+    {
+      "spreadsheet_id": "ss_ptnr",
+      "worksheet_id": "ws_submissions",
+      "headers": [
+        "partner_name",
+        "contact_email",
+        "title",
+        "content_summary",
+        "has_competitor_mention",
+        "has_pricing",
+        "notes"
+      ],
+      "source_task": "marketing.partner_content_approval"
+    },
+    {
+      "spreadsheet_id": "ss_patents",
+      "worksheet_id": "ws_filings",
+      "headers": [
+        "company",
+        "patent_title",
+        "filing_date",
+        "technology_area",
+        "relevance",
+        "notes"
+      ],
+      "source_task": "marketing.patent_monitoring"
+    },
+    {
+      "spreadsheet_id": "ss_podcast",
+      "worksheet_id": "ws_episodes",
+      "headers": [
+        "episode_num",
+        "title",
+        "guest",
+        "topic",
+        "publish_date",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.podcast_episode_promotion"
+    },
+    {
+      "spreadsheet_id": "ss_subs",
+      "worksheet_id": "ws_list",
+      "headers": [
+        "email",
+        "name",
+        "subscribed_date",
+        "notes"
+      ],
+      "source_task": "marketing.podcast_episode_promotion"
+    },
+    {
+      "spreadsheet_id": "ss_mdia",
+      "worksheet_id": "ws_outlets",
+      "headers": [
+        "outlet_name",
+        "contact_email",
+        "tier",
+        "da_score",
+        "beat",
+        "notes"
+      ],
+      "source_task": "marketing.press_release_distribution"
+    },
+    {
+      "spreadsheet_id": "ss_adoption",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "account",
+        "email",
+        "mrr",
+        "automation_used",
+        "integrations_used",
+        "reporting_used"
+      ],
+      "source_task": "marketing.product_adoption"
+    },
+    {
+      "spreadsheet_id": "ss_adoption",
+      "worksheet_id": "ws_churn_risk",
+      "headers": [
+        "account",
+        "risk_note"
+      ],
+      "source_task": "marketing.product_adoption"
+    },
+    {
+      "spreadsheet_id": "ss_lnch",
+      "worksheet_id": "ws_content",
+      "headers": [
+        "content_id",
+        "headline",
+        "channel",
+        "publish_date",
+        "status",
+        "approval_date",
+        "notes"
+      ],
+      "source_task": "marketing.product_launch_channel_plan"
+    },
+    {
+      "spreadsheet_id": "ss_referrals",
+      "worksheet_id": "ws_submissions",
+      "headers": [
+        "referrer_name",
+        "referrer_email",
+        "referee_name",
+        "referee_email",
+        "processed",
+        "notes"
+      ],
+      "source_task": "marketing.referral_processing"
+    },
+    {
+      "spreadsheet_id": "ss_seo",
+      "worksheet_id": "ws_pages",
+      "headers": [
+        "url",
+        "impressions",
+        "clicks",
+        "ctr",
+        "position",
+        "notes"
+      ],
+      "source_task": "marketing.seo_audit"
+    },
+    {
+      "spreadsheet_id": "ss_rankings",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "keyword",
+        "our_position",
+        "competitor_a_position",
+        "competitor_b_position",
+        "volume",
+        "notes"
+      ],
+      "source_task": "marketing.seo_competitor_gap"
+    },
+    {
+      "spreadsheet_id": "ss_backlog",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "keyword",
+        "volume",
+        "source"
+      ],
+      "source_task": "marketing.seo_competitor_gap"
+    },
+    {
+      "spreadsheet_id": "ss_social",
+      "worksheet_id": "ws_channels",
+      "headers": [
+        "platform",
+        "followers",
+        "follower_growth",
+        "engagement_rate",
+        "posts_per_week",
+        "notes"
+      ],
+      "source_task": "marketing.social_audit"
+    },
+    {
+      "spreadsheet_id": "ss_benchmark",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "metric",
+        "our_value",
+        "industry_benchmark",
+        "platform",
+        "notes"
+      ],
+      "source_task": "marketing.social_benchmark"
+    },
+    {
+      "spreadsheet_id": "ss_benchmark",
+      "worksheet_id": "ws_competitors",
+      "headers": [
+        "competitor",
+        "rank",
+        "twitter_engagement",
+        "linkedin_follower_growth",
+        "facebook_ctr",
+        "conflict_status",
+        "notes"
+      ],
+      "source_task": "marketing.social_benchmark"
+    },
+    {
+      "spreadsheet_id": "ss_content",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "content_type",
+        "title",
+        "link",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.social_content_calendar"
+    },
+    {
+      "spreadsheet_id": "ss_calendar",
+      "worksheet_id": "ws_schedule",
+      "headers": [
+        "date",
+        "platform",
+        "content",
+        "link",
+        "batch_ref"
+      ],
+      "source_task": "marketing.social_content_calendar"
+    },
+    {
+      "spreadsheet_id": "ss_contest",
+      "worksheet_id": "ws_entries",
+      "headers": [
+        "username",
+        "post_date",
+        "used_hashtag",
+        "engagement",
+        "notes"
+      ],
+      "source_task": "marketing.social_contest"
+    },
+    {
+      "spreadsheet_id": "ss_contest",
+      "worksheet_id": "ws_followers",
+      "headers": [
+        "username",
+        "follow_date"
+      ],
+      "source_task": "marketing.social_contest"
+    },
+    {
+      "spreadsheet_id": "ss_contest",
+      "worksheet_id": "ws_previous_winners",
+      "headers": [
+        "username",
+        "prize",
+        "date"
+      ],
+      "source_task": "marketing.social_contest"
+    },
+    {
+      "spreadsheet_id": "ss_finalists",
+      "worksheet_id": "ws_valid",
+      "headers": [
+        "username",
+        "entry_date"
+      ],
+      "source_task": "marketing.social_contest"
+    },
+    {
+      "spreadsheet_id": "ss_crisis",
+      "worksheet_id": "ws_posts",
+      "headers": [
+        "platform",
+        "author",
+        "content",
+        "category",
+        "reach",
+        "customer_email"
+      ],
+      "source_task": "marketing.social_crisis_response"
+    },
+    {
+      "spreadsheet_id": "ss_mentions",
+      "worksheet_id": "ws_unresponded",
+      "headers": [
+        "platform",
+        "author",
+        "followers",
+        "mention_type",
+        "content",
+        "timestamp",
+        "notes"
+      ],
+      "source_task": "marketing.social_mention_response"
+    },
+    {
+      "spreadsheet_id": "ss_responses",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "platform",
+        "reply_to",
+        "response_draft",
+        "priority"
+      ],
+      "source_task": "marketing.social_mention_response"
+    },
+    {
+      "spreadsheet_id": "ss_social_roi",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "channel",
+        "ad_spend",
+        "conversions",
+        "revenue",
+        "notes"
+      ],
+      "source_task": "marketing.social_roi"
+    },
+    {
+      "spreadsheet_id": "ss_social",
+      "worksheet_id": "ws_posts",
+      "headers": [
+        "content",
+        "platform",
+        "status",
+        "approval",
+        "date",
+        "notes"
+      ],
+      "source_task": "marketing.social_scheduling"
+    },
+    {
+      "spreadsheet_id": "ss_market",
+      "worksheet_id": "ws_tam",
+      "headers": [
+        "segment",
+        "market_size",
+        "can_we_serve",
+        "our_current_share",
+        "segment_type",
+        "addressable_accounts",
+        "avg_deal_size",
+        "data_quality_flag",
+        "notes"
+      ],
+      "source_task": "marketing.tam_analysis"
+    },
+    {
+      "spreadsheet_id": "ss_content",
+      "worksheet_id": "ws_pages",
+      "headers": [
+        "title",
+        "url",
+        "word_count",
+        "topic",
+        "internal_links",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.topic_cluster"
+    },
+    {
+      "spreadsheet_id": "ss_social",
+      "worksheet_id": "ws_topics",
+      "headers": [
+        "topic",
+        "mentions_last_week",
+        "mentions_this_week",
+        "sentiment",
+        "notes"
+      ],
+      "source_task": "marketing.trending_topic"
+    },
+    {
+      "spreadsheet_id": "ss_ideas",
+      "worksheet_id": "ws_backlog",
+      "headers": [
+        "topic",
+        "source",
+        "priority"
+      ],
+      "source_task": "marketing.trending_topic"
+    },
+    {
+      "spreadsheet_id": "ss_trext",
+      "worksheet_id": "ws_policy",
+      "headers": [
+        "rule",
+        "value"
+      ],
+      "source_task": "marketing.trial_extension_processing"
+    },
+    {
+      "spreadsheet_id": "ss_trext",
+      "worksheet_id": "ws_requests",
+      "headers": [
+        "company",
+        "contact_email",
+        "usage_score",
+        "onboarding_complete",
+        "previous_extensions",
+        "trial_end_date",
+        "notes"
+      ],
+      "source_task": "marketing.trial_extension_processing"
+    },
+    {
+      "spreadsheet_id": "ss_mod",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "submission_id",
+        "user",
+        "content",
+        "sentiment",
+        "status",
+        "notes"
+      ],
+      "source_task": "marketing.ugc_moderation"
+    },
+    {
+      "spreadsheet_id": "ss_mod",
+      "worksheet_id": "ws_blocked",
+      "headers": [
+        "username",
+        "reason",
+        "blocked_date"
+      ],
+      "source_task": "marketing.ugc_moderation"
+    },
+    {
+      "spreadsheet_id": "ss_gallery",
+      "worksheet_id": "ws_approved",
+      "headers": [
+        "submission_id",
+        "user",
+        "content"
+      ],
+      "source_task": "marketing.ugc_moderation"
+    },
+    {
+      "spreadsheet_id": "ss_vendors",
+      "worksheet_id": "ws_contracts",
+      "headers": [
+        "vendor",
+        "service",
+        "annual_spend",
+        "expiry_date",
+        "auto_renew",
+        "notes"
+      ],
+      "source_task": "marketing.vendor_management"
+    },
+    {
+      "spreadsheet_id": "ss_videos",
+      "worksheet_id": "ws_recordings",
+      "headers": [
+        "title",
+        "date",
+        "duration",
+        "key_moments",
+        "views",
+        "notes"
+      ],
+      "source_task": "marketing.video_repurpose"
+    },
+    {
+      "spreadsheet_id": "ss_clips",
+      "worksheet_id": "ws_queue",
+      "headers": [
+        "source_video",
+        "timestamp",
+        "clip_description",
+        "platform",
+        "status"
+      ],
+      "source_task": "marketing.video_repurpose"
+    },
+    {
+      "spreadsheet_id": "ss_feedback",
+      "worksheet_id": "ws_log",
+      "headers": [
+        "customer",
+        "feedback",
+        "nps_score",
+        "source",
+        "category",
+        "routed_to",
+        "notes"
+      ],
+      "source_task": "marketing.voice_of_customer"
+    },
+    {
+      "spreadsheet_id": "ss_wbnr",
+      "worksheet_id": "ws_reg",
+      "headers": [
+        "name",
+        "email",
+        "ticket_type",
+        "amount_paid",
+        "hubspot_id",
+        "notes"
+      ],
+      "source_task": "marketing.webinar_cancellation_workflow"
+    },
+    {
+      "spreadsheet_id": "ss_deals",
+      "worksheet_id": "ws_data",
+      "headers": [
+        "deal",
+        "outcome",
+        "primary_reason",
+        "value",
+        "close_date",
+        "notes"
+      ],
+      "source_task": "marketing.win_loss_analysis"
+    }
+  ]
+}

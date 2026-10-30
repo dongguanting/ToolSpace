@@ -1,0 +1,20 @@
+name: pipeline
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked --python 3.13
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run pytest
+      - run: uv run automation-pro demo --output outputs/ci-demo
+      - run: uv run automation-pro verify --tasks outputs/ci-demo/tasks
+      - run: uv build
+      - run: |
+          uv venv validation/wheel-env --python 3.13
+          uv pip install --python validation/wheel-env/bin/python dist/*.whl
+          validation/wheel-env/bin/automation-pro demo --output outputs/wheel-demo
+          validation/wheel-env/bin/automation-pro verify --tasks outputs/wheel-demo/tasks

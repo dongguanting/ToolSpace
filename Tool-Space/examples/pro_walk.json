@@ -1,0 +1,15 @@
+{
+  "min_steps": 12,
+  "max_steps": 40,
+  "min_distinct_endpoints": 6,
+  "min_distinct_services": 3,
+  "min_mutations": 3,
+  "min_distinct_action_endpoints": 2,
+  "min_queries_before_action": 3,
+  "query_only": false,
+  "mutation_budget": 12,
+  "max_endpoint_repeats": 5,
+  "template_scope": "domain",
+  "search_expansions": 2000,
+  "cross_service_bonus": 2.0
+}

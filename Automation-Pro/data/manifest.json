@@ -1,0 +1,10 @@
+{
+  "schema_version": "automationpro-release-v1",
+  "task_count": 300,
+  "files_sha256": {
+    "data/tasks.jsonl": "4d680406309f7c1682429e59a3d7157dcb55eec698cae4e939b6eae9fbfe2832",
+    "data/questions.jsonl": "826e3382400ac992911963a171c7460756efbd9bbff749168672bff37402141a",
+    "data/index.json": "349f3979e9783193b16d0e1e6564293b300850967de0ab1f9e2c0d98df96d0b5",
+    "verifiers/reference_trajectories.jsonl": "e49744de17ef38b0881d5a45fc8f32e5b6d710385112d2dc30eca919c862f8fb"
+  }
+}

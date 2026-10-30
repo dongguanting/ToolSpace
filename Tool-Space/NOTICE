@@ -1,0 +1,26 @@
+Automation Pro Synthesis
+
+The bundled AutomationBench simulator, API schema representations, task builders,
+and assertion handlers originate from AutomationBench by Zapier, Inc.
+Original source commit recorded by the archive endpoint catalog:
+4a8e1061254004d9dac807054eed33fad7d1ff14.
+The bundled copy also includes local simulator/schema/handler fixes retained by
+the source archive; it is not represented as an untouched checkout of that commit.
+See automation_environment/vendor/AUTOMATIONBENCH_LICENSE for the complete MIT license and scope statement.
+
+Unused Zapier wrappers and runner-only helper modules are omitted; API-native
+simulator dependencies, schemas, public task builders and assertion handlers remain.
+
+Project modules adapt the archive's graph inference, checkpoint replay,
+state-aware random walk and grounded question/assertion synthesis.
+Adaptations remove archive path injection, historical private model defaults,
+fixed graph-node assumptions, historical state alignment and empirical model
+selection; add a public CLI, configurable model client, isolated environment,
+argument-grounding fixes, self-contained exports, native scoring adapters, tests and docs.
+The default grounded_decisions_v2 synthesis prompts and difficulty checks are
+preserved. No new material-field, duplication or source-preservation scoring
+rules are added. Optional archive outcome-v3/empirical-v4 experiments are outside
+this default extraction. See docs/source-mapping.md.
+
+No license for project-specific synthesis code has been selected yet.
+The repository owner must add an appropriate LICENSE before public release.

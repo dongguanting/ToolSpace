@@ -1,0 +1,20 @@
+# Source mapping
+
+Tool-Space extracts the archive's default `grounded_decisions_v2` synthesis chain. Original paths below are relative to `automationbench-data-generation-v3`; they record provenance, not runtime dependencies.
+
+| Tool-Space module | Original source | Retained behavior and packaging changes |
+| --- | --- | --- |
+| `automation_environment/vendor/automationbench/` | `assets/pipeline/AutomationBench/automationbench/` | Simulator API implementations, all 47 endpoint schemas, WorldState models, public task builders and native assertion handlers. Only package initialization is adapted to avoid benchmark-runner dependencies. Unused Zapier wrappers and runner-only helper modules are omitted; wrappers imported by API implementations remain. |
+| `automation_environment/simulator.py`, `task_catalog.py` | `assets/pipeline/code/save_envs/simulator.py` | Deterministic time/UUID execution, task definitions and complete runtime state. Tasks can come from an explicit bundle; historical recorded-ID alignment is removed because workflows execute locally. |
+| `automation_environment/catalog.py`, `snapshots.py` | `assets/pipeline/code/save_envs/catalog.py`, `store.py`, `restore_snapshot.py` | Endpoint matching, classification, content-addressed observations/checkpoints and restore. Historical directory assumptions are replaced by standalone graph inputs. |
+| `tool_graph/graph.py`, `inference.py` | `assets/pipeline/code/create_graph/build_tool_dependency_graph.py`, `extract_graph_json.py`; `save_envs/replay_correct.py` | Graph inference from observed data reuse, state dependencies and retries. Seed workflows execute locally. Calls in a parallel batch are not ordered. |
+| `tool_graph/sources.py` | `assets/pipeline/code/random_walk/sources.py` | Graph, templates and checkpoints. Replaces the fixed node-count assumption with catalog consistency and verifies content hashes. |
+| `tool_graph/arguments.py`, `walker.py`, `walks.py` | `assets/pipeline/code/random_walk/arguments.py`, `walker.py`, `generate.py` | State-aware search, grounding, executed successors, rollback and fresh replay. Grounding retains observed array scalars and known Sheets write ranges; these adaptations affect sampling, not scoring. |
+| `task_generation/prompts.py`, `difficulty.py` | `assets/pipeline/code/question_synthesis/prompts.py`, `difficulty_contract.py` | Default prompt constants and grounded decision/reconciliation checks are preserved. Optional experiment policies are excluded. |
+| `task_generation/state_assertions.py`, `synthesis.py` | `assets/pipeline/code/question_synthesis/state_assertions.py`, `synthesize.py` | State-difference evidence, chunk summaries, task planning, joint question/native assertion generation and semantic review. Only the evidence helpers used by this chain are retained; the unused generic assertion evaluator is omitted. |
+| `task_generation/pipeline.py` | `assets/pipeline/code/question_synthesis/export_automationbench.py`, `scripts/producer.py` | Coordinator and export adapter package resume fingerprints, accepted/rejected records, native rows and self-contained Pro rows. |
+| `verification/verifier.py`, `replay.py` | `assets/pipeline/AutomationBench/automationbench/rubric/__init__.py`; `question_synthesis/validate_automationbench_export.py`; `random_walk/walker.py` | Thin native `partial_credit` adapter and standalone reference replay. Checks observations, state hashes and full reference reward. |
+
+`run_pipeline.py`, model/JSON adapters, input bundles, offline fixtures, package configuration, tests, CI and documentation are engineering additions for independent execution. The original bounded writer attempts remain; no planner-repair stage or additional reward guards are introduced.
+
+Optional outcome-v3 and empirical-v4 branches from the archive are outside this extraction. Native assertions retain their original expressiveness and limitations. Vendor code includes fixes already present in the source archive and is not represented as an untouched upstream checkout; see [NOTICE](../NOTICE).

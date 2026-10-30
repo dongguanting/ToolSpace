@@ -1,0 +1,3013 @@
+{
+  "count": 300,
+  "domains": {
+    "marketing": 50,
+    "finance": 50,
+    "hr": 50,
+    "operations": 50,
+    "sales": 50,
+    "support": 50
+  },
+  "entries": [
+    {
+      "row": 1,
+      "domain": "marketing",
+      "sample_id": "rw_5206493a19d95746",
+      "question_id": "absq_eb96fcb415e9a71e",
+      "example_id": 2095494922,
+      "task_name": "marketing.generated_referral_processing_eb96fcb415e9a71e",
+      "source_task": "marketing.referral_processing",
+      "task_contract_sha256": "a05fd4d46eab09014aa6504e8d488af6aff6005a3a47cc9f075406d6508a2b7a"
+    },
+    {
+      "row": 2,
+      "domain": "marketing",
+      "sample_id": "rw_5a278e539952e51f",
+      "question_id": "absq_3f515aa20d1e8b16",
+      "example_id": 2081018829,
+      "task_name": "marketing.generated_partner_content_approval_3f515aa20d1e8b16",
+      "source_task": "marketing.partner_content_approval",
+      "task_contract_sha256": "2ca5d17429815ee80d4604da47b5f41230cb1b8d49a53c5c735f109372026e80"
+    },
+    {
+      "row": 3,
+      "domain": "marketing",
+      "sample_id": "rw_4a4ebbf5e88ee5f9",
+      "question_id": "absq_a27324a4ca1b5932",
+      "example_id": 2008421669,
+      "task_name": "marketing.generated_referral_processing_a27324a4ca1b5932",
+      "source_task": "marketing.referral_processing",
+      "task_contract_sha256": "b211e4135d443a17df3270f29a25373fdea7d711954b42a1c6608fb051ab1c95"
+    },
+    {
+      "row": 4,
+      "domain": "marketing",
+      "sample_id": "rw_dbc3262334d70bb3",
+      "question_id": "absq_1aa9732bc3253398",
+      "example_id": 2003804854,
+      "task_name": "marketing.generated_referral_processing_1aa9732bc3253398",
+      "source_task": "marketing.referral_processing",
+      "task_contract_sha256": "cd7270f35b24782acd7977e0c06eadfd94b5fa64a55668e522e7f41ea9cb3b88"
+    },
+    {
+      "row": 5,
+      "domain": "marketing",
+      "sample_id": "rw_6ef17bcf1a93f50a",
+      "question_id": "absq_8b55084b512015bf",
+      "example_id": 2016452380,
+      "task_name": "marketing.generated_newsletter_unsubscribe_processing_8b55084b512015bf",
+      "source_task": "marketing.newsletter_unsubscribe_processing",
+      "task_contract_sha256": "8bc38213a08c5f770fac87ff6a63db623d4616788aabefbf2dddd7fc5ae12a10"
+    },
+    {
+      "row": 6,
+      "domain": "marketing",
+      "sample_id": "rw_85c25f6d93bb2220",
+      "question_id": "absq_7276b3249b71b4e7",
+      "example_id": 2068686155,
+      "task_name": "marketing.generated_newsletter_sponsor_invoicing_7276b3249b71b4e7",
+      "source_task": "marketing.newsletter_sponsor_invoicing",
+      "task_contract_sha256": "d0b56a089bcca1db69f0a8a4a4915cfcd6887ad2cafe12904ecdc1aea72a9f96"
+    },
+    {
+      "row": 7,
+      "domain": "marketing",
+      "sample_id": "rw_ab0e92c45e5da158",
+      "question_id": "absq_6fd5ba82f27f53cd",
+      "example_id": 2066506219,
+      "task_name": "marketing.generated_newsletter_sponsor_invoicing_6fd5ba82f27f53cd",
+      "source_task": "marketing.newsletter_sponsor_invoicing",
+      "task_contract_sha256": "ea87e745f2b6204e40078c6dd25f398794decce6cc157e1dc209016cc7dd5690"
+    },
+    {
+      "row": 8,
+      "domain": "marketing",
+      "sample_id": "rw_4a9f695eff1c2bc0",
+      "question_id": "absq_1f922dd72ec4db60",
+      "example_id": 2069355020,
+      "task_name": "marketing.generated_partner_content_approval_1f922dd72ec4db60",
+      "source_task": "marketing.partner_content_approval",
+      "task_contract_sha256": "1337283930c147b0d0ee5a3486bf75cc5139db175ec1213f1ae12b0abb05b887"
+    },
+    {
+      "row": 9,
+      "domain": "marketing",
+      "sample_id": "rw_910f45cba5600e21",
+      "question_id": "absq_234a5e68c6f270c8",
+      "example_id": 2072232440,
+      "task_name": "marketing.generated_newsletter_unsubscribe_processing_234a5e68c6f270c8",
+      "source_task": "marketing.newsletter_unsubscribe_processing",
+      "task_contract_sha256": "ef7c356b4ffc2d97c489eb7d40c950bb103758c273d3ee4d7e13299272295487"
+    },
+    {
+      "row": 10,
+      "domain": "marketing",
+      "sample_id": "rw_f4bd9e6b0aef835d",
+      "question_id": "absq_c993dc55db6e5625",
+      "example_id": 2070285830,
+      "task_name": "marketing.generated_referral_processing_c993dc55db6e5625",
+      "source_task": "marketing.referral_processing",
+      "task_contract_sha256": "31a0fe151c92cfaa4a1e75a2873f274a5a6616e7b89893f04d3ebe55c1609006"
+    },
+    {
+      "row": 11,
+      "domain": "marketing",
+      "sample_id": "rw_141cebd372131768",
+      "question_id": "absq_f02447393620dde9",
+      "example_id": 2055063669,
+      "task_name": "marketing.generated_event_followup_personalization_f02447393620dde9",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "17e88bd86b517496edb5c4c651e553883977f36c04641bee4dde7914bb55159d"
+    },
+    {
+      "row": 12,
+      "domain": "marketing",
+      "sample_id": "rw_487001ecfa3b2de6",
+      "question_id": "absq_2b480042facbb97c",
+      "example_id": 2085735629,
+      "task_name": "marketing.generated_event_followup_personalization_2b480042facbb97c",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "f13fe5f764af5d2b306e28a996e20490b3a3c8738fa4a5ce8cc43d55c77773ec"
+    },
+    {
+      "row": 13,
+      "domain": "marketing",
+      "sample_id": "rw_78e03465bca2bc5a",
+      "question_id": "absq_a0c6b6565e458878",
+      "example_id": 2088503507,
+      "task_name": "marketing.generated_referral_processing_a0c6b6565e458878",
+      "source_task": "marketing.referral_processing",
+      "task_contract_sha256": "057e822c373b34986bbbe9bb693069529e2bdfd838d76c9024640c15592bf475"
+    },
+    {
+      "row": 14,
+      "domain": "marketing",
+      "sample_id": "rw_a791e487cf15b8e2",
+      "question_id": "absq_7e5b93a29ce4df3f",
+      "example_id": 2054205371,
+      "task_name": "marketing.generated_event_followup_personalization_7e5b93a29ce4df3f",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "a97e0ac79fb548b44cae8a31b34fe9c60735c80e209e5807a23c428af445d018"
+    },
+    {
+      "row": 15,
+      "domain": "marketing",
+      "sample_id": "rw_c85e779153c1ca04",
+      "question_id": "absq_37782b252f4900b6",
+      "example_id": 2038807494,
+      "task_name": "marketing.generated_event_followup_personalization_37782b252f4900b6",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "cbff8dad890ea3faf825e0ab9a7e793831beee0d4078b6d63d50399f51f687d6"
+    },
+    {
+      "row": 16,
+      "domain": "marketing",
+      "sample_id": "rw_8b1561322cc6075e",
+      "question_id": "absq_6b862cd1efc6f3a7",
+      "example_id": 2019673362,
+      "task_name": "marketing.generated_event_followup_personalization_6b862cd1efc6f3a7",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "ef9b9c6a7d1638ed6d60a9e7968822e101ba7d50114f7963be35376292c549d5"
+    },
+    {
+      "row": 17,
+      "domain": "marketing",
+      "sample_id": "rw_63a112a95b05da3d",
+      "question_id": "absq_d794390e7a6340ea",
+      "example_id": 2090039221,
+      "task_name": "marketing.generated_event_followup_personalization_d794390e7a6340ea",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "b0f4aeacc1f6d5143de9a2c1918325f99630a62d509c290d59cb9ec82bccbe0d"
+    },
+    {
+      "row": 18,
+      "domain": "marketing",
+      "sample_id": "rw_b538a65748ba090c",
+      "question_id": "absq_0f1d31239cca577f",
+      "example_id": 2073471968,
+      "task_name": "marketing.generated_event_followup_personalization_0f1d31239cca577f",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "88cf663798571f9c9650aa67c7912234d80f776a6f99bb65e23b853d9957f277"
+    },
+    {
+      "row": 19,
+      "domain": "marketing",
+      "sample_id": "rw_b594e65cd31da7fa",
+      "question_id": "absq_2743a0e4dc9120c9",
+      "example_id": 2022715590,
+      "task_name": "marketing.generated_utm_audit_and_fix_2743a0e4dc9120c9",
+      "source_task": "marketing.utm_audit_and_fix",
+      "task_contract_sha256": "b51edcb9913a5054ba55eac3614ec9834cfebbfcfac172790be8f98876e90806"
+    },
+    {
+      "row": 20,
+      "domain": "marketing",
+      "sample_id": "rw_9fe0226a954249ae",
+      "question_id": "absq_2c931470f83bae61",
+      "example_id": 2035518836,
+      "task_name": "marketing.generated_utm_audit_and_fix_2c931470f83bae61",
+      "source_task": "marketing.utm_audit_and_fix",
+      "task_contract_sha256": "5d6f17a87c1c9d0305eb1abb61e8fe57afd01c0be527da5096a68631be7cb97c"
+    },
+    {
+      "row": 21,
+      "domain": "marketing",
+      "sample_id": "rw_ac10fc3c89f62ee1",
+      "question_id": "absq_5bf96607be2f89d7",
+      "example_id": 2059531973,
+      "task_name": "marketing.generated_utm_audit_and_fix_5bf96607be2f89d7",
+      "source_task": "marketing.utm_audit_and_fix",
+      "task_contract_sha256": "36c58086de1ff03cb8a772c50bb74adb27ba089edd111a6341b1f92a8b74214c"
+    },
+    {
+      "row": 22,
+      "domain": "marketing",
+      "sample_id": "rw_3bbe036f089c297d",
+      "question_id": "absq_0cae06d50fadcb0b",
+      "example_id": 2022140411,
+      "task_name": "marketing.generated_referral_processing_0cae06d50fadcb0b",
+      "source_task": "marketing.referral_processing",
+      "task_contract_sha256": "5bb6e283048008aa0872be3fc21e78b31358f081915b22c5edc6c9802b30dabb"
+    },
+    {
+      "row": 23,
+      "domain": "marketing",
+      "sample_id": "rw_a8a1dc9561774763",
+      "question_id": "absq_4137c9a9eddc246e",
+      "example_id": 2003366472,
+      "task_name": "marketing.generated_newsletter_sponsor_invoicing_4137c9a9eddc246e",
+      "source_task": "marketing.newsletter_sponsor_invoicing",
+      "task_contract_sha256": "96c367e8064709e31335d08801f6c188963b97a0cb178ca5f27bd40fbb4b16bb"
+    },
+    {
+      "row": 24,
+      "domain": "marketing",
+      "sample_id": "rw_eec1219f54dc16e7",
+      "question_id": "absq_ccfb07f1e81c232b",
+      "example_id": 2089777839,
+      "task_name": "marketing.generated_event_followup_personalization_ccfb07f1e81c232b",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "9430fc53b2fb50fe0394031a2aea432830456e80b68c441a233467ae7b73b7be"
+    },
+    {
+      "row": 25,
+      "domain": "marketing",
+      "sample_id": "rw_283f44323a65b090",
+      "question_id": "absq_09a99fea43c6e10d",
+      "example_id": 2073036961,
+      "task_name": "marketing.generated_voice_of_customer_09a99fea43c6e10d",
+      "source_task": "marketing.voice_of_customer",
+      "task_contract_sha256": "05b1fe5ec399de760d39872a2f8bb66c725a5cfda99940026066c98027f8d5dc"
+    },
+    {
+      "row": 26,
+      "domain": "marketing",
+      "sample_id": "rw_1884a648c7ce99c6",
+      "question_id": "absq_030a23d91896066b",
+      "example_id": 2078790331,
+      "task_name": "marketing.generated_newsletter_unsubscribe_processing_030a23d91896066b",
+      "source_task": "marketing.newsletter_unsubscribe_processing",
+      "task_contract_sha256": "9bf01cfd105a60e299691106b41a5f212820a3cc95d7c8c5702c5931c75cecb0"
+    },
+    {
+      "row": 27,
+      "domain": "marketing",
+      "sample_id": "rw_26b289f3b2bc9479",
+      "question_id": "absq_21c64636c6210ff7",
+      "example_id": 2019703120,
+      "task_name": "marketing.generated_referral_processing_21c64636c6210ff7",
+      "source_task": "marketing.referral_processing",
+      "task_contract_sha256": "6149e2241e8fb05d7fb78ed1fd6d0f1de5b522525e7a5136d56445472b5f792e"
+    },
+    {
+      "row": 28,
+      "domain": "marketing",
+      "sample_id": "rw_4d6160b6db713737",
+      "question_id": "absq_03c614cae85bac47",
+      "example_id": 2046517720,
+      "task_name": "marketing.generated_event_followup_personalization_03c614cae85bac47",
+      "source_task": "marketing.event_followup_personalization",
+      "task_contract_sha256": "fed4d564b6212249e61309f0d6465ea65fb387d071396a8669a6ca5a59176bfe"
+    },
+    {
+      "row": 29,
+      "domain": "marketing",
+      "sample_id": "rw_c7943e412152166e",
+      "question_id": "absq_d46d6ee597ce789e",
+      "example_id": 2094971607,
+      "task_name": "marketing.generated_voice_of_customer_d46d6ee597ce789e",
+      "source_task": "marketing.voice_of_customer",
+      "task_contract_sha256": "39be45ddd3a9b2b19cd276ea7e55da254e29a26a9046e1f51492c927519541a7"
+    },
+    {
+      "row": 30,
+      "domain": "marketing",
+      "sample_id": "rw_137e9d883a2e3a0d",
+      "question_id": "absq_bf012066f4f6b386",
+      "example_id": 2054958985,
+      "task_name": "marketing.generated_referral_processing_bf012066f4f6b386",
+      "source_task": "marketing.referral_processing",
+      "task_contract_sha256": "bc7896dd5f3f65bbbc6dc5eaa6eaf457b82ffa7627d026b089ca8cf9b8f7b673"
+    },
+    {
+      "row": 31,
+      "domain": "marketing",
+      "sample_id": "rw_22ca6c6f7cf2fb6c",
+      "question_id": "absq_da27c5342513378f",
+      "example_id": 2080537009,
+      "task_name": "marketing.generated_utm_audit_and_fix_da27c5342513378f",
+      "source_task": "marketing.utm_audit_and_fix",
+      "task_contract_sha256": "4092ab62cde0108ff97a7c07c95e031d7f5c474cae3e58a6a32c190563da042f"
+    },
+    {
+      "row": 32,
+      "domain": "marketing",
+      "sample_id": "rw_25b0f50b5112473a",
+      "question_id": "absq_bf4a7b86f744fc61",
+      "example_id": 2016981385,
+      "task_name": "marketing.generated_newsletter_sponsor_invoicing_bf4a7b86f744fc61",
+      "source_task": "marketing.newsletter_sponsor_invoicing",
+      "task_contract_sha256": "e231f6667b6aafa28a8914d610fbd82259bb81d0ec870abf5075beb1986e8a48"
+    },
+    {
+      "row": 33,
+      "domain": "marketing",
+      "sample_id": "rw_fa406c196b3c8e7d",
+      "question_id": "absq_ce27889ff9ee50bd",
+      "example_id": 2011081208,
+      "task_name": "marketing.generated_partner_content_approval_ce27889ff9ee50bd",
+      "source_task": "marketing.partner_content_approval",
+      "task_contract_sha256": "32410c64fcdcafe75bec340eacc0a53928dd0fc5ecf687d9482d26153ad49eb6"
+    },
+    {
+      "row": 34,
+      "domain": "marketing",
+      "sample_id": "rw_812101fb724eeeba",
+      "question_id": "absq_dea6abedc243ee0f",
+      "example_id": 2057116233,
+      "task_name": "marketing.generated_social_contest_dea6abedc243ee0f",
+      "source_task": "marketing.social_contest",
+      "task_contract_sha256": "81530add478a53a35158f8f0c20b648b8e5c7881678db83d3e0a1417f82bb3b3"
+    },
+    {
+      "row": 35,
+      "domain": "marketing",
+      "sample_id": "rw_52120ffb1f98c842",
+      "question_id": "absq_e22da3ce3e9d4f21",
+      "example_id": 2074034863,
+      "task_name": "marketing.generated_newsletter_sponsor_invoicing_e22da3ce3e9d4f21",
+      "source_task": "marketing.newsletter_sponsor_invoicing",
+      "task_contract_sha256": "8b8acf0b23c018376e04b70e82a4886f29925275a532fb6b5538a65ff61028f2"
+    },
+    {
+      "row": 36,
+      "domain": "marketing",
+      "sample_id": "rw_6365f68790a6bbab",
+      "question_id": "absq_1ae7b11361c13856",
+      "example_id": 2048384481,
+      "task_name": "marketing.generated_utm_audit_and_fix_1ae7b11361c13856",
+      "source_task": "marketing.utm_audit_and_fix",
+      "task_contract_sha256": "0ab86a0694aa97f438e39ee4a3d4d7b5375bb3c49ba0c249ebed10ba96745de6"
+    },
+    {
+      "row": 37,
+      "domain": "marketing",
+      "sample_id": "rw_17dfaad3bd71a7d0",
+      "question_id": "absq_cdb8a220140b8377",
+      "example_id": 2076248093,
+      "task_name": "marketing.generated_analyst_briefing_cdb8a220140b8377",
+      "source_task": "marketing.analyst_briefing",
+      "task_contract_sha256": "aa97312d6dbde02a767d0dd2efdd2048e4d900cf81acb0f2119fbde6567a97e4"
+    },
+    {
+      "row": 38,
+      "domain": "marketing",
+      "sample_id": "rw_edb1ac7c8879f5af",
+      "question_id": "absq_129f3e9e82f44122",
+      "example_id": 2047640008,
+      "task_name": "marketing.generated_newsletter_sponsor_invoicing_129f3e9e82f44122",
+      "source_task": "marketing.newsletter_sponsor_invoicing",
+      "task_contract_sha256": "009b2547d63a3392495ff65f5e2f3a568d7252c9a50a03c67c88cb042084cffc"
+    },
+    {
+      "row": 39,
+      "domain": "marketing",
+      "sample_id": "rw_5e0503cca264fde2",
+      "question_id": "absq_9ef317ba887e32f0",
+      "example_id": 2059160236,
+      "task_name": "marketing.generated_voice_of_customer_9ef317ba887e32f0",
+      "source_task": "marketing.voice_of_customer",
+      "task_contract_sha256": "eed79a07bd37f1187f0bfc592723fb25d2b01a0a6b87089ad506ce9b5217d1aa"
+    },
+    {
+      "row": 40,
+      "domain": "marketing",
+      "sample_id": "rw_df81286254a3e231",
+      "question_id": "absq_3afdd0ce29ac658a",
+      "example_id": 2016174134,
+      "task_name": "marketing.generated_utm_audit_and_fix_3afdd0ce29ac658a",
+      "source_task": "marketing.utm_audit_and_fix",
+      "task_contract_sha256": "329b91f5fcf108fd1fe61e2d1e18bf980b110d787bb8166306293728a2111a1b"
+    },
+    {
+      "row": 41,
+      "domain": "marketing",
+      "sample_id": "rw_1d61a7b9ab3b08a8",
+      "question_id": "absq_035a93bc2d7d7f1f",
+      "example_id": 2063555753,
+      "task_name": "marketing.generated_partner_content_approval_035a93bc2d7d7f1f",
+      "source_task": "marketing.partner_content_approval",
+      "task_contract_sha256": "7631b61204a7b299ef1e3f09aed998bb0a0b3817e6c861a236b6cb2db681d5d6"
+    },
+    {
+      "row": 42,
+      "domain": "marketing",
+      "sample_id": "rw_eaa18f9a541cdb60",
+      "question_id": "absq_da3a4a4f28f142e2",
+      "example_id": 2021393931,
+      "task_name": "marketing.generated_voice_of_customer_da3a4a4f28f142e2",
+      "source_task": "marketing.voice_of_customer",
+      "task_contract_sha256": "aa05cb9639026d613c6b1485aaafc3ad06dfe9e1f5c0a52ea49569ef6cf6758c"
+    },
+    {
+      "row": 43,
+      "domain": "marketing",
+      "sample_id": "rw_6106f157ad4ec1de",
+      "question_id": "absq_7399e04ba20270c1",
+      "example_id": 2095851454,
+      "task_name": "marketing.generated_analyst_briefing_7399e04ba20270c1",
+      "source_task": "marketing.analyst_briefing",
+      "task_contract_sha256": "fcac634963b5bd8db2bc2e33b0cb63b7d0c8beba7d15da6a9ab6a586de63c6eb"
+    },
+    {
+      "row": 44,
+      "domain": "marketing",
+      "sample_id": "rw_1178263590c73b41",
+      "question_id": "absq_1dee0572bbc77930",
+      "example_id": 2075644700,
+      "task_name": "marketing.generated_partner_content_approval_1dee0572bbc77930",
+      "source_task": "marketing.partner_content_approval",
+      "task_contract_sha256": "cadcc9c6edc855131cd9ab1c96e55481f84c20a933c9c021421425f2154fd451"
+    },
+    {
+      "row": 45,
+      "domain": "marketing",
+      "sample_id": "rw_7d55be2da5217a24",
+      "question_id": "absq_5cf81d29b604b896",
+      "example_id": 2022506614,
+      "task_name": "marketing.generated_utm_audit_and_fix_5cf81d29b604b896",
+      "source_task": "marketing.utm_audit_and_fix",
+      "task_contract_sha256": "572df185890cad35eed07d2f9f86b668c3e70d241614ef0cc73e5f99d8c65848"
+    },
+    {
+      "row": 46,
+      "domain": "marketing",
+      "sample_id": "rw_dbc4683c93d52ceb",
+      "question_id": "absq_e28d69938213e31a",
+      "example_id": 2032992455,
+      "task_name": "marketing.generated_partner_content_approval_e28d69938213e31a",
+      "source_task": "marketing.partner_content_approval",
+      "task_contract_sha256": "8179f65cfa1b0ca597a355e087d2a4eea418c5ff6c7269e3e82850766aeb9a23"
+    },
+    {
+      "row": 47,
+      "domain": "marketing",
+      "sample_id": "rw_17e0b085acf9a76f",
+      "question_id": "absq_5a6b4a904a43ba8c",
+      "example_id": 2078531100,
+      "task_name": "marketing.generated_voice_of_customer_5a6b4a904a43ba8c",
+      "source_task": "marketing.voice_of_customer",
+      "task_contract_sha256": "c4567a7ca837f6e8298e07349cbdea5338e00f298171969dba1b69e93d5adcf3"
+    },
+    {
+      "row": 48,
+      "domain": "marketing",
+      "sample_id": "rw_74a739f029e080a9",
+      "question_id": "absq_b01a94dd1857700e",
+      "example_id": 2080519794,
+      "task_name": "marketing.generated_utm_audit_and_fix_b01a94dd1857700e",
+      "source_task": "marketing.utm_audit_and_fix",
+      "task_contract_sha256": "bf4431ae6c45b912a0528c54cb271cadfe98d10b4704fffdd222242c8b0bdedd"
+    },
+    {
+      "row": 49,
+      "domain": "marketing",
+      "sample_id": "rw_67d92ce0853db504",
+      "question_id": "absq_65048291d5aa8ce7",
+      "example_id": 2074903105,
+      "task_name": "marketing.generated_partner_content_approval_65048291d5aa8ce7",
+      "source_task": "marketing.partner_content_approval",
+      "task_contract_sha256": "49cf9d9e6c652c5ffb3e24c46581964314830fbc9485149fba1b4985d790062c"
+    },
+    {
+      "row": 50,
+      "domain": "marketing",
+      "sample_id": "rw_5e7cb92e0c70c298",
+      "question_id": "absq_2edd9e3ca02b3caf",
+      "example_id": 2098342383,
+      "task_name": "marketing.generated_partner_content_approval_2edd9e3ca02b3caf",
+      "source_task": "marketing.partner_content_approval",
+      "task_contract_sha256": "482936e90425567536521797dd95232031f570cca6552df179fa4d245968296c"
+    },
+    {
+      "row": 51,
+      "domain": "finance",
+      "sample_id": "rw_d2cad6e07f84061f",
+      "question_id": "absq_3b2f5cbe1e655366",
+      "example_id": 2058901992,
+      "task_name": "finance.generated_payment_terms_tracking_3b2f5cbe1e655366",
+      "source_task": "finance.payment_terms_tracking",
+      "task_contract_sha256": "827fab4dac27c3a86d8d4a49ea588d445b30e49abd47d54f4e1142cba856ae9e"
+    },
+    {
+      "row": 52,
+      "domain": "finance",
+      "sample_id": "rw_babb4051f86f32b5",
+      "question_id": "absq_2036a7fe806be361",
+      "example_id": 2030306794,
+      "task_name": "finance.generated_expense_split_allocation_2036a7fe806be361",
+      "source_task": "finance.expense_split_allocation",
+      "task_contract_sha256": "bd7e79098307c21da0bd31bd1384c8871b3cbf0553272902bf10187669a729ac"
+    },
+    {
+      "row": 53,
+      "domain": "finance",
+      "sample_id": "rw_be1417600c173b4e",
+      "question_id": "absq_4957b4043d150b25",
+      "example_id": 2090734323,
+      "task_name": "finance.generated_overdue_invoice_followup_4957b4043d150b25",
+      "source_task": "finance.overdue_invoice_followup",
+      "task_contract_sha256": "786fc8067575bc39f77dcd2d3c1a8ea8819052300c54060a39a8931577304222"
+    },
+    {
+      "row": 54,
+      "domain": "finance",
+      "sample_id": "rw_c22be7b9a44d01db",
+      "question_id": "absq_35d26a1ebaa0c795",
+      "example_id": 2066899226,
+      "task_name": "finance.generated_invoice_aging_followup_35d26a1ebaa0c795",
+      "source_task": "finance.invoice_aging_followup",
+      "task_contract_sha256": "dfea44b582075e2fb5fcc4a843bb2ff6cc1f295662a78622a88ac820aad92f67"
+    },
+    {
+      "row": 55,
+      "domain": "finance",
+      "sample_id": "rw_11bdaa3128abe328",
+      "question_id": "absq_a8b0585c93d9733a",
+      "example_id": 2086901605,
+      "task_name": "finance.generated_invoice_aging_followup_a8b0585c93d9733a",
+      "source_task": "finance.invoice_aging_followup",
+      "task_contract_sha256": "6c6067a13dc175bd9b6e7e2ec322edb7079b89e6fdd8c4aca8ed68de58ecc272"
+    },
+    {
+      "row": 56,
+      "domain": "finance",
+      "sample_id": "rw_0ed84c4d3e097c60",
+      "question_id": "absq_9fee514c71365e54",
+      "example_id": 2032629443,
+      "task_name": "finance.generated_invoice_aging_followup_9fee514c71365e54",
+      "source_task": "finance.invoice_aging_followup",
+      "task_contract_sha256": "acd08b24caa51f1b578a320ece0a0f288280ffd2238246add6d7d9ada14ca509"
+    },
+    {
+      "row": 57,
+      "domain": "finance",
+      "sample_id": "rw_f9d5b832b6606e85",
+      "question_id": "absq_f0903d605bdd11e1",
+      "example_id": 2027623365,
+      "task_name": "finance.generated_budget_variance_analysis_f0903d605bdd11e1",
+      "source_task": "finance.budget_variance_analysis",
+      "task_contract_sha256": "087aa01053bc54dca2b80f5f3139f54f93a6cc36a5fd8fd99e67a49c5d5df77e"
+    },
+    {
+      "row": 58,
+      "domain": "finance",
+      "sample_id": "rw_cc019ccae8c1ac84",
+      "question_id": "absq_7ec97d49f487d622",
+      "example_id": 2056220297,
+      "task_name": "finance.generated_qb_void_stale_invoices_7ec97d49f487d622",
+      "source_task": "finance.qb_void_stale_invoices",
+      "task_contract_sha256": "0446271a2e5f72f414023bd6ef9b9e5944edc139a653c76d64a82717db6063b9"
+    },
+    {
+      "row": 59,
+      "domain": "finance",
+      "sample_id": "rw_aa7b7c5b80b5f576",
+      "question_id": "absq_17134c8e30498d3f",
+      "example_id": 2011484132,
+      "task_name": "finance.generated_qb_bill_payment_batch_17134c8e30498d3f",
+      "source_task": "finance.qb_bill_payment_batch",
+      "task_contract_sha256": "42f781ef4ba287e06b7c3d041225a076789b9e4c9fa4af88df1507d48647e220"
+    },
+    {
+      "row": 60,
+      "domain": "finance",
+      "sample_id": "rw_1a4d8b7f61397b4a",
+      "question_id": "absq_b240dd408e56de8e",
+      "example_id": 2011369057,
+      "task_name": "finance.generated_invoice_file_organization_b240dd408e56de8e",
+      "source_task": "finance.invoice_file_organization",
+      "task_contract_sha256": "fde5d69ea38d43eb75d4be5dc5781a050c9b994a6a576167fa9848d88a48b2ad"
+    },
+    {
+      "row": 61,
+      "domain": "finance",
+      "sample_id": "rw_ec5ba0c53920b34b",
+      "question_id": "absq_24a90ed7d6255710",
+      "example_id": 2038623617,
+      "task_name": "finance.generated_invoice_file_organization_24a90ed7d6255710",
+      "source_task": "finance.invoice_file_organization",
+      "task_contract_sha256": "826317b95f8b9184bc9166d20c3fdd1b26abe6d7c08e673188c363d57966d929"
+    },
+    {
+      "row": 62,
+      "domain": "finance",
+      "sample_id": "rw_65958bec81a64e1d",
+      "question_id": "absq_dd867ac482767083",
+      "example_id": 2034184015,
+      "task_name": "finance.generated_year_end_audit_prep_dd867ac482767083",
+      "source_task": "finance.year_end_audit_prep",
+      "task_contract_sha256": "6709faf0bcf44b689058bbe0bc60e4d9fa6dc9e707affc1cf508912e3dbe9c71"
+    },
+    {
+      "row": 63,
+      "domain": "finance",
+      "sample_id": "rw_0d4249ffa225b6a7",
+      "question_id": "absq_e27c3cfddbd33e92",
+      "example_id": 2023056670,
+      "task_name": "finance.generated_closing_journal_automation_e27c3cfddbd33e92",
+      "source_task": "finance.closing_journal_automation",
+      "task_contract_sha256": "a357d3611ada661bfced21b7f4fb9ae5affc5a8900a3b490918b1bbea476e2b4"
+    },
+    {
+      "row": 64,
+      "domain": "finance",
+      "sample_id": "rw_28e6a2387f57d705",
+      "question_id": "absq_e875b4c1c9fcd60e",
+      "example_id": 2023508078,
+      "task_name": "finance.generated_qb_customer_onboard_e875b4c1c9fcd60e",
+      "source_task": "finance.qb_customer_onboard",
+      "task_contract_sha256": "1923fefa0da7a2b92d0396eb3c12711a37d8874fa1bb20f92ae01266fcff9fd3"
+    },
+    {
+      "row": 65,
+      "domain": "finance",
+      "sample_id": "rw_e3a01cae7fb30351",
+      "question_id": "absq_aa267baeb00c8067",
+      "example_id": 2022744648,
+      "task_name": "finance.generated_monthend_journal_entries_aa267baeb00c8067",
+      "source_task": "finance.monthend_journal_entries",
+      "task_contract_sha256": "c4f427bece76e0f14679f29c746229dcca24b03c52d94c471000e9369a905d04"
+    },
+    {
+      "row": 66,
+      "domain": "finance",
+      "sample_id": "rw_1eaaeb810f84c1fd",
+      "question_id": "absq_4591967c6a654733",
+      "example_id": 2056952344,
+      "task_name": "finance.generated_subscription_billing_4591967c6a654733",
+      "source_task": "finance.subscription_billing",
+      "task_contract_sha256": "717e1189f4ae7c541b70ab830a3e8d899f9367aef7efb636696f97d884d4d694"
+    },
+    {
+      "row": 67,
+      "domain": "finance",
+      "sample_id": "rw_c1c843cb988bc67c",
+      "question_id": "absq_2281d905be4ba36a",
+      "example_id": 2068412732,
+      "task_name": "finance.generated_closing_journal_automation_2281d905be4ba36a",
+      "source_task": "finance.closing_journal_automation",
+      "task_contract_sha256": "53ebedb9863100ec48e62b09c8b1fd58c84c0010939463b07236483438cc4416"
+    },
+    {
+      "row": 68,
+      "domain": "finance",
+      "sample_id": "rw_7fc7370176386171",
+      "question_id": "absq_de0a471a40a7821f",
+      "example_id": 2086338744,
+      "task_name": "finance.generated_qb_customer_balance_review_de0a471a40a7821f",
+      "source_task": "finance.qb_customer_balance_review",
+      "task_contract_sha256": "c3b736223ff5d0255050a3f3b023c3d9e308b8577b4957f2b78624064115bd35"
+    },
+    {
+      "row": 69,
+      "domain": "finance",
+      "sample_id": "rw_d352466d65055b65",
+      "question_id": "absq_2eeea3b17f938f87",
+      "example_id": 2021805939,
+      "task_name": "finance.generated_xero_po_matching_2eeea3b17f938f87",
+      "source_task": "finance.xero_po_matching",
+      "task_contract_sha256": "6555ee506f9c8694f5a36e75a287072117d1b1a543eb241a35eb36686489f389"
+    },
+    {
+      "row": 70,
+      "domain": "finance",
+      "sample_id": "rw_c08751373ca4daa7",
+      "question_id": "absq_0d7d9be4546b9822",
+      "example_id": 2077641934,
+      "task_name": "finance.generated_payment_terms_tracking_0d7d9be4546b9822",
+      "source_task": "finance.payment_terms_tracking",
+      "task_contract_sha256": "bf76704e9d6f0c8b8d29b196aaac3d989e3ce2266c7caff3f4ce7a1df570ce75"
+    },
+    {
+      "row": 71,
+      "domain": "finance",
+      "sample_id": "rw_c4ba0b0d27d9ab20",
+      "question_id": "absq_ee26bb6388f90380",
+      "example_id": 2005082125,
+      "task_name": "finance.generated_wave_product_catalog_ee26bb6388f90380",
+      "source_task": "finance.wave_product_catalog",
+      "task_contract_sha256": "6665d1f032cca645ca78872fdfadec88284d99fe0b9afc16e702be8ef884cfa7"
+    },
+    {
+      "row": 72,
+      "domain": "finance",
+      "sample_id": "rw_e1175aa1ca84be2f",
+      "question_id": "absq_d365b87389e58b3a",
+      "example_id": 2050025368,
+      "task_name": "finance.generated_invoice_dispute_d365b87389e58b3a",
+      "source_task": "finance.invoice_dispute",
+      "task_contract_sha256": "d1c4ff86fd2be9a64d902b3131d59f3d1fca659c54b9352e6e4156fb65abf6f6"
+    },
+    {
+      "row": 73,
+      "domain": "finance",
+      "sample_id": "rw_083cbf1d3c043edc",
+      "question_id": "absq_6e239094c1b872a6",
+      "example_id": 2097934811,
+      "task_name": "finance.generated_wave_product_catalog_6e239094c1b872a6",
+      "source_task": "finance.wave_product_catalog",
+      "task_contract_sha256": "72ed7a6463f297e85de45bf0c54660ea3a15c71ac7981be3e696467e7776ce6b"
+    },
+    {
+      "row": 74,
+      "domain": "finance",
+      "sample_id": "rw_3cc129547fd5e8c5",
+      "question_id": "absq_977af7c6f46becaa",
+      "example_id": 2051972583,
+      "task_name": "finance.generated_subscription_billing_977af7c6f46becaa",
+      "source_task": "finance.subscription_billing",
+      "task_contract_sha256": "5a63f9878a0912e7bb4af12f5cdf8a359027b4fb2b8e35ac3e24f480e6310fd1"
+    },
+    {
+      "row": 75,
+      "domain": "finance",
+      "sample_id": "rw_5635396445f95cf2",
+      "question_id": "absq_178521afd4a09118",
+      "example_id": 2092893795,
+      "task_name": "finance.generated_monday_project_billing_178521afd4a09118",
+      "source_task": "finance.monday_project_billing",
+      "task_contract_sha256": "10ce7a44af63c8e01b293cc8f47f81dee360dd2ad6e728d8c63c0fb0bada383b"
+    },
+    {
+      "row": 76,
+      "domain": "finance",
+      "sample_id": "rw_daa8ad8aefe11d56",
+      "question_id": "absq_616b604435943338",
+      "example_id": 2083341105,
+      "task_name": "finance.generated_vendor_payment_approval_616b604435943338",
+      "source_task": "finance.vendor_payment_approval",
+      "task_contract_sha256": "1c84cff6172ddc86a754cbee619346dbc526a05a3aa46dfe0b44a846bbba5fc8"
+    },
+    {
+      "row": 77,
+      "domain": "finance",
+      "sample_id": "rw_1038f610b5ac1457",
+      "question_id": "absq_289651631f297882",
+      "example_id": 2004849698,
+      "task_name": "finance.generated_vendor_payment_approval_289651631f297882",
+      "source_task": "finance.vendor_payment_approval",
+      "task_contract_sha256": "976ac9abb70809e3a30cec090c0f47f3474e9d9ced60766843144d12ce9ee6ab"
+    },
+    {
+      "row": 78,
+      "domain": "hr",
+      "sample_id": "rw_4b02894730494380",
+      "question_id": "absq_c5b382c0f021c39c",
+      "example_id": 2001943559,
+      "task_name": "hr.generated_pto_balance_alert_c5b382c0f021c39c",
+      "source_task": "hr.pto_balance_alert",
+      "task_contract_sha256": "f92d38ef1f1ba10d185967e25c3d5e3bacdae4d5a574e9889078f49cace456d8"
+    },
+    {
+      "row": 79,
+      "domain": "hr",
+      "sample_id": "rw_25e74ca9c1f7b3e1",
+      "question_id": "absq_66f8fcfc3f6342f3",
+      "example_id": 2014879801,
+      "task_name": "hr.generated_equipment_provisioning_66f8fcfc3f6342f3",
+      "source_task": "hr.equipment_provisioning",
+      "task_contract_sha256": "c7679221921c653c6e027f7543d540aa558fa63b91137ee0b8c38f0b3ca1125e"
+    },
+    {
+      "row": 80,
+      "domain": "hr",
+      "sample_id": "rw_45dd61bc515f4274",
+      "question_id": "absq_2267ec819a8589bb",
+      "example_id": 2020866333,
+      "task_name": "hr.generated_recognition_nominations_2267ec819a8589bb",
+      "source_task": "hr.recognition_nominations",
+      "task_contract_sha256": "8be4e91419a8ad6e72f7b7a7bcfb96902b30e2462bba4906c0ab6c60dc0e0b2a"
+    },
+    {
+      "row": 81,
+      "domain": "hr",
+      "sample_id": "rw_ad308fb5bbdbfbb7",
+      "question_id": "absq_5ed71541f5ac2767",
+      "example_id": 2033111317,
+      "task_name": "hr.generated_termination_checklist_5ed71541f5ac2767",
+      "source_task": "hr.termination_checklist",
+      "task_contract_sha256": "ab6367f71a104fd4a80f09538583c17aae86dfb31dd475bb647f5d134b34bcde"
+    },
+    {
+      "row": 82,
+      "domain": "hr",
+      "sample_id": "rw_aaa3cc538869461b",
+      "question_id": "absq_9719c9804d6cfea4",
+      "example_id": 2041356014,
+      "task_name": "hr.generated_trello_recruiting_event_coordination_9719c9804d6cfea4",
+      "source_task": "hr.trello_recruiting_event_coordination",
+      "task_contract_sha256": "031a16e93da0eb952298592e1f05a347379581790027cd9cf1ea52a2ebd05596"
+    },
+    {
+      "row": 83,
+      "domain": "hr",
+      "sample_id": "rw_2992067c678eb4ee",
+      "question_id": "absq_91e9e2acb5a7ee81",
+      "example_id": 2042018224,
+      "task_name": "hr.generated_compliance_training_enforcement_91e9e2acb5a7ee81",
+      "source_task": "hr.compliance_training_enforcement",
+      "task_contract_sha256": "ad3b6da0714e4daab997e0e28b7cab7bd2c3163966b1e35f6ed2f6f8b1a4e469"
+    },
+    {
+      "row": 84,
+      "domain": "hr",
+      "sample_id": "rw_758e471c1b6350fd",
+      "question_id": "absq_f570033d5aad8938",
+      "example_id": 2015393072,
+      "task_name": "hr.generated_calendly_manager_office_hours_f570033d5aad8938",
+      "source_task": "hr.calendly_manager_office_hours",
+      "task_contract_sha256": "cbd4f88d934af60bb83d60f9e5a917cdc8d78e733126a0a6f137c2dc60f35b8a"
+    },
+    {
+      "row": 85,
+      "domain": "hr",
+      "sample_id": "rw_43b0ccae197e973a",
+      "question_id": "absq_fa885e2ca6edd821",
+      "example_id": 2093379420,
+      "task_name": "hr.generated_performance_review_cycle_fa885e2ca6edd821",
+      "source_task": "hr.performance_review_cycle",
+      "task_contract_sha256": "9220b0ec1e4d59ca6199790fb91719f25b3edee9c212150d4723ef9b0c0da94a"
+    },
+    {
+      "row": 86,
+      "domain": "hr",
+      "sample_id": "rw_31f04369cb8126a5",
+      "question_id": "absq_0384bdb74a1314b6",
+      "example_id": 2091679368,
+      "task_name": "hr.generated_candidate_rejection_followup_0384bdb74a1314b6",
+      "source_task": "hr.candidate_rejection_followup",
+      "task_contract_sha256": "ce57033e018493d62505606de5b7e93292bcdba139e87f71cbf59b374f7580bf"
+    },
+    {
+      "row": 87,
+      "domain": "hr",
+      "sample_id": "rw_6cfed3a7c19aa4a6",
+      "question_id": "absq_ee37661b58a2a57e",
+      "example_id": 2033517874,
+      "task_name": "hr.generated_i9_verification_tracking_ee37661b58a2a57e",
+      "source_task": "hr.i9_verification_tracking",
+      "task_contract_sha256": "b59634982d36d881c5c733b6bc54cf9f1a9256a8c42aab0df1fd34272290e2a3"
+    },
+    {
+      "row": 88,
+      "domain": "hr",
+      "sample_id": "rw_6196a80e32f9aec2",
+      "question_id": "absq_1abd55cdaa386024",
+      "example_id": 2033506021,
+      "task_name": "hr.generated_candidate_research_dossier_1abd55cdaa386024",
+      "source_task": "hr.candidate_research_dossier",
+      "task_contract_sha256": "6404fee21859e83884da19404c2f365a0335a6867b41d00cc3135570c01420a0"
+    },
+    {
+      "row": 89,
+      "domain": "hr",
+      "sample_id": "rw_0c9b549569cd9755",
+      "question_id": "absq_82aad2cd4e8dd71a",
+      "example_id": 2084181693,
+      "task_name": "hr.generated_pto_reconciliation_82aad2cd4e8dd71a",
+      "source_task": "hr.pto_reconciliation",
+      "task_contract_sha256": "6d0edc871de00712b7088b706dee52e501736013f02ad35ad3b0a96e0a6fc3dd"
+    },
+    {
+      "row": 90,
+      "domain": "hr",
+      "sample_id": "rw_8b860febbf9f2ef8",
+      "question_id": "absq_89e8bee9ff8a53fc",
+      "example_id": 2001687144,
+      "task_name": "hr.generated_rto_compliance_check_89e8bee9ff8a53fc",
+      "source_task": "hr.rto_compliance_check",
+      "task_contract_sha256": "95a004e0912b4b39a150331b180d824e7ab7bc0bb644bdb66ed3a96d895519d3"
+    },
+    {
+      "row": 91,
+      "domain": "hr",
+      "sample_id": "rw_2928b6e1970790d2",
+      "question_id": "absq_0064e50124d763c5",
+      "example_id": 2055034744,
+      "task_name": "hr.generated_team_restructure_notification_0064e50124d763c5",
+      "source_task": "hr.team_restructure_notification",
+      "task_contract_sha256": "528bf4b88afc0601aa50de936c56a90099bfa90cd9282632c2ec03f0f2422d5a"
+    },
+    {
+      "row": 92,
+      "domain": "hr",
+      "sample_id": "rw_bf4342f8b3e41b02",
+      "question_id": "absq_d4853bcdadbf8f51",
+      "example_id": 2061656319,
+      "task_name": "hr.generated_mandatory_meeting_scheduling_d4853bcdadbf8f51",
+      "source_task": "hr.mandatory_meeting_scheduling",
+      "task_contract_sha256": "496ca4bcc36166e0480d6d9e290ca8fdb42848fad83c72b5d5f31bf5d9bce7d5"
+    },
+    {
+      "row": 93,
+      "domain": "hr",
+      "sample_id": "rw_6bdf4e273228bc71",
+      "question_id": "absq_2f6478c5b82f0e01",
+      "example_id": 2072099048,
+      "task_name": "hr.generated_handbook_acknowledgment_2f6478c5b82f0e01",
+      "source_task": "hr.handbook_acknowledgment",
+      "task_contract_sha256": "3fde37aff8bea55618ed4d35ec5da2eb4c262cc758c4394a29838f34e4b27623"
+    },
+    {
+      "row": 94,
+      "domain": "hr",
+      "sample_id": "rw_6f37280aae48899c",
+      "question_id": "absq_5bba9e2dbf968b6d",
+      "example_id": 2037812447,
+      "task_name": "hr.generated_expense_report_audit_5bba9e2dbf968b6d",
+      "source_task": "hr.expense_report_audit",
+      "task_contract_sha256": "76cf784a4db36f7c79c76ac495db5149c91882f2af10aa446d05c94d2c56f838"
+    },
+    {
+      "row": 95,
+      "domain": "hr",
+      "sample_id": "rw_ad12dd73e569069e",
+      "question_id": "absq_c2edb508ad21ce10",
+      "example_id": 2044078442,
+      "task_name": "hr.generated_recruitment_channel_roi_c2edb508ad21ce10",
+      "source_task": "hr.recruitment_channel_roi",
+      "task_contract_sha256": "4f99a94ab72fad5a07c9de107e8f054d2a7863bf0534b67bf97d249904be7e83"
+    },
+    {
+      "row": 96,
+      "domain": "hr",
+      "sample_id": "rw_fdccbcf746d1f465",
+      "question_id": "absq_cdf2ff32375ffdc7",
+      "example_id": 2085641008,
+      "task_name": "hr.generated_pto_reconciliation_cdf2ff32375ffdc7",
+      "source_task": "hr.pto_reconciliation",
+      "task_contract_sha256": "210c459d873612c738ae732a410551421b1555ed56affb5bed8b95084a30379e"
+    },
+    {
+      "row": 97,
+      "domain": "hr",
+      "sample_id": "rw_7b8c307c1357ea69",
+      "question_id": "absq_73a8073d030aa216",
+      "example_id": 2014025043,
+      "task_name": "hr.generated_policy_update_distribution_73a8073d030aa216",
+      "source_task": "hr.policy_update_distribution",
+      "task_contract_sha256": "3ab1d18cb6d4787753a26f913d98f15f198bb3cc39b55fde10bd48aef33a6814"
+    },
+    {
+      "row": 98,
+      "domain": "hr",
+      "sample_id": "rw_f9ea314f3b93a9a7",
+      "question_id": "absq_48542c4ec895babb",
+      "example_id": 2047640825,
+      "task_name": "hr.generated_comp_review_preparation_48542c4ec895babb",
+      "source_task": "hr.comp_review_preparation",
+      "task_contract_sha256": "22401be7f7bd607578a8c61b69dffcc660698c2ab7aef48d8276ed05c4bce205"
+    },
+    {
+      "row": 99,
+      "domain": "hr",
+      "sample_id": "rw_e4310b38e4a1423f",
+      "question_id": "absq_fe21eeb19258587c",
+      "example_id": 2084631093,
+      "task_name": "hr.generated_trello_recruiting_event_coordination_fe21eeb19258587c",
+      "source_task": "hr.trello_recruiting_event_coordination",
+      "task_contract_sha256": "e1d73d2263f8e7a2220edcbdecb75491ebf852b08db0609a45ac6929df8d1e1c"
+    },
+    {
+      "row": 100,
+      "domain": "hr",
+      "sample_id": "rw_290d7115e18d25b7",
+      "question_id": "absq_43dfe90c29c12d46",
+      "example_id": 2073648439,
+      "task_name": "hr.generated_trello_recruiting_event_coordination_43dfe90c29c12d46",
+      "source_task": "hr.trello_recruiting_event_coordination",
+      "task_contract_sha256": "b7ad849d19a080564ab8aee7bb9eeb6e2adcd46c34ca634102a4f1bbd763ca73"
+    },
+    {
+      "row": 101,
+      "domain": "hr",
+      "sample_id": "rw_af81158ea9488b38",
+      "question_id": "absq_75bdfb881c101b84",
+      "example_id": 2080511203,
+      "task_name": "hr.generated_promotion_announcement_75bdfb881c101b84",
+      "source_task": "hr.promotion_announcement",
+      "task_contract_sha256": "f891434256b114ead2ea5aeb4c709cab92f25cc09cf15c8b49c0fb23861f4edf"
+    },
+    {
+      "row": 102,
+      "domain": "hr",
+      "sample_id": "rw_a959c8fdb937dc8c",
+      "question_id": "absq_6a5352e170420c97",
+      "example_id": 2014906284,
+      "task_name": "hr.generated_performance_review_kickoff_6a5352e170420c97",
+      "source_task": "hr.performance_review_kickoff",
+      "task_contract_sha256": "291a7f34e0e416561f137ffe26f8bf7be96c7b19a9a073e8716ce36f817e23cb"
+    },
+    {
+      "row": 103,
+      "domain": "hr",
+      "sample_id": "rw_9fd049bb38f8dc11",
+      "question_id": "absq_a79bf07114602b37",
+      "example_id": 2054107514,
+      "task_name": "hr.generated_equipment_provisioning_a79bf07114602b37",
+      "source_task": "hr.equipment_provisioning",
+      "task_contract_sha256": "36792ef768a2d7388596f0635793465f2771b2ecd8822581fbd52ea51be142be"
+    },
+    {
+      "row": 104,
+      "domain": "hr",
+      "sample_id": "rw_d749b055936924e2",
+      "question_id": "absq_dfa28e3409ac0012",
+      "example_id": 2085263457,
+      "task_name": "hr.generated_candidate_research_dossier_dfa28e3409ac0012",
+      "source_task": "hr.candidate_research_dossier",
+      "task_contract_sha256": "f0037c9f815494738ffb91c0a49b10eacdf534d3d265c26538735029e8817f95"
+    },
+    {
+      "row": 105,
+      "domain": "finance",
+      "sample_id": "rw_2e281729ec5c1dc9",
+      "question_id": "absq_3533808569d5de25",
+      "example_id": 2016112026,
+      "task_name": "finance.generated_expense_reclassification_3533808569d5de25",
+      "source_task": "finance.expense_reclassification",
+      "task_contract_sha256": "bf649ac43e738b620fd37cb7c2447af7fd2824d92d337e4eb3ec21ab2c4fdc3d"
+    },
+    {
+      "row": 106,
+      "domain": "finance",
+      "sample_id": "rw_c541d76c28a90fd6",
+      "question_id": "absq_3eee49c53ad9de3d",
+      "example_id": 2033203464,
+      "task_name": "finance.generated_escrow_tracking_3eee49c53ad9de3d",
+      "source_task": "finance.escrow_tracking",
+      "task_contract_sha256": "c7f94a714428882d0975eb7ca84fbeadda2ab077757ad4ce3c2ca2c8f3c4d2d7"
+    },
+    {
+      "row": 107,
+      "domain": "finance",
+      "sample_id": "rw_3c68995af183203b",
+      "question_id": "absq_0b650467aacb8c66",
+      "example_id": 2084302507,
+      "task_name": "finance.generated_escrow_tracking_0b650467aacb8c66",
+      "source_task": "finance.escrow_tracking",
+      "task_contract_sha256": "f901780d3e5c857d5cd9f26c7da38e230c05ba65a7692531b3326676b5a57a3f"
+    },
+    {
+      "row": 108,
+      "domain": "finance",
+      "sample_id": "rw_955929a0c7a0bf72",
+      "question_id": "absq_dde0f5ffd0dfd258",
+      "example_id": 2060519861,
+      "task_name": "finance.generated_escrow_tracking_dde0f5ffd0dfd258",
+      "source_task": "finance.escrow_tracking",
+      "task_contract_sha256": "88e449e76432ed5fae61ace292db8710d499c0769698d0488d5f48382fc71aaf"
+    },
+    {
+      "row": 109,
+      "domain": "finance",
+      "sample_id": "rw_e4560cecf2c1d2de",
+      "question_id": "absq_c3734180dc1b0595",
+      "example_id": 2020295471,
+      "task_name": "finance.generated_expense_reclassification_c3734180dc1b0595",
+      "source_task": "finance.expense_reclassification",
+      "task_contract_sha256": "a5cc63cbbe8af8e6e1889c48331cb4c29d3541a130ea2650ee01ba2ae7a2d1d3"
+    },
+    {
+      "row": 110,
+      "domain": "finance",
+      "sample_id": "rw_61466fea958d04bc",
+      "question_id": "absq_b469b19a2bbab7f5",
+      "example_id": 2011808543,
+      "task_name": "finance.generated_vendor_insurance_verification_b469b19a2bbab7f5",
+      "source_task": "finance.vendor_insurance_verification",
+      "task_contract_sha256": "040273db7daf58c576a8fe4efcfa935d58a3208cd905ef060bdb14edb8f25d21"
+    },
+    {
+      "row": 111,
+      "domain": "operations",
+      "sample_id": "rw_c3e9c06c35524635",
+      "question_id": "absq_1d1c26068f260f8a",
+      "example_id": 2080567029,
+      "task_name": "operations.generated_monday_email_update_1d1c26068f260f8a",
+      "source_task": "operations.monday_email_update",
+      "task_contract_sha256": "376491fe3f0674f30e91478f2a7485861c6ea8f969bae7825d09fddfc27274a5"
+    },
+    {
+      "row": 112,
+      "domain": "operations",
+      "sample_id": "rw_6f57bf8adc6d187c",
+      "question_id": "absq_2e1b6d270cf3a93a",
+      "example_id": 2099752027,
+      "task_name": "operations.generated_equipment_lease_processing_2e1b6d270cf3a93a",
+      "source_task": "operations.equipment_lease_processing",
+      "task_contract_sha256": "8a17a16e1f01f0e6fe451aa0c025b487f905dc1357a9831e38ff58021174bb92"
+    },
+    {
+      "row": 113,
+      "domain": "operations",
+      "sample_id": "rw_b55f742d2d5aa1a5",
+      "question_id": "absq_b22cf3507f250b64",
+      "example_id": 2003841623,
+      "task_name": "operations.generated_monday_email_update_b22cf3507f250b64",
+      "source_task": "operations.monday_email_update",
+      "task_contract_sha256": "b0d7a721d0241c2e9d586a1d36a08f1dd81a7281147115688b2099f945b230db"
+    },
+    {
+      "row": 114,
+      "domain": "operations",
+      "sample_id": "rw_581649a193b2ee67",
+      "question_id": "absq_d1fb36131337596a",
+      "example_id": 2062090314,
+      "task_name": "operations.generated_docusign_annual_review_d1fb36131337596a",
+      "source_task": "operations.docusign_annual_review",
+      "task_contract_sha256": "662dec3ac060e48d9c69bce4db2a39aa13c48f27d1dab4e49402841e61c00a58"
+    },
+    {
+      "row": 115,
+      "domain": "operations",
+      "sample_id": "rw_28ebd10701bf4d12",
+      "question_id": "absq_94a5594630f9181e",
+      "example_id": 2024255742,
+      "task_name": "operations.generated_monday_email_update_94a5594630f9181e",
+      "source_task": "operations.monday_email_update",
+      "task_contract_sha256": "ee663d310e1f17dbf3c4e9975f8cf993c59e82f3e82624cc40f76f7a5a5d2483"
+    },
+    {
+      "row": 116,
+      "domain": "operations",
+      "sample_id": "rw_a9bbc1ad4d8d9b67",
+      "question_id": "absq_bc2a9093f7968e36",
+      "example_id": 2026124910,
+      "task_name": "operations.generated_monday_email_update_bc2a9093f7968e36",
+      "source_task": "operations.monday_email_update",
+      "task_contract_sha256": "60024d501852127359b47a43a45ef1d854dc95e623222c3d28a9d3d780aa6d98"
+    },
+    {
+      "row": 117,
+      "domain": "operations",
+      "sample_id": "rw_8dc17bee846a8a23",
+      "question_id": "absq_5b8e385781478d44",
+      "example_id": 2022160079,
+      "task_name": "operations.generated_asana_fire_drill_5b8e385781478d44",
+      "source_task": "operations.asana_fire_drill",
+      "task_contract_sha256": "ad80fcdec15baff60fe24f5e5475d711f11d506a3f70000663efdc6262a9e99a"
+    },
+    {
+      "row": 118,
+      "domain": "operations",
+      "sample_id": "rw_a6e71a2bf04e6fff",
+      "question_id": "absq_91d84b9cb815c1ab",
+      "example_id": 2062960992,
+      "task_name": "operations.generated_energy_consumption_anomaly_91d84b9cb815c1ab",
+      "source_task": "operations.energy_consumption_anomaly",
+      "task_contract_sha256": "543e6d4c1e0410a4f09f9c88a0f1e22f83ef1b0a59bdd7e357b62c63049218f8"
+    },
+    {
+      "row": 119,
+      "domain": "operations",
+      "sample_id": "rw_3ccd55243f30e097",
+      "question_id": "absq_d0e3a55ae6f24582",
+      "example_id": 2031136873,
+      "task_name": "operations.generated_parking_allocation_management_d0e3a55ae6f24582",
+      "source_task": "operations.parking_allocation_management",
+      "task_contract_sha256": "873a2b3b10b444a5652055fa131818979dcbd40ae0e7bb32035ae55aa7d0806b"
+    },
+    {
+      "row": 120,
+      "domain": "operations",
+      "sample_id": "rw_b1be6a73bff99c19",
+      "question_id": "absq_c1b01a177e98fe05",
+      "example_id": 2009814853,
+      "task_name": "operations.generated_mailchimp_subscriber_sync_c1b01a177e98fe05",
+      "source_task": "operations.mailchimp_subscriber_sync",
+      "task_contract_sha256": "7768b88eed29c96171f4fbd5f8d4604412340c1db18f94141e54176bfe8cd2ea"
+    },
+    {
+      "row": 121,
+      "domain": "operations",
+      "sample_id": "rw_563304c11ede5e53",
+      "question_id": "absq_3498d8835e9bc9e0",
+      "example_id": 2037415770,
+      "task_name": "operations.generated_access_request_validation_3498d8835e9bc9e0",
+      "source_task": "operations.access_request_validation",
+      "task_contract_sha256": "6b598f596a21da5a5fc65254875c0d6ae8b1167f2c4084040c69508937c28ca2"
+    },
+    {
+      "row": 122,
+      "domain": "operations",
+      "sample_id": "rw_82428141e164bb9d",
+      "question_id": "absq_b2b85adcf03bab52",
+      "example_id": 2075884744,
+      "task_name": "operations.generated_asana_safety_walk_log_b2b85adcf03bab52",
+      "source_task": "operations.asana_safety_walk_log",
+      "task_contract_sha256": "4485a86acba79c207dcafd5735e259a4c5f30545723c84f22fe602d2a8f0bf55"
+    },
+    {
+      "row": 123,
+      "domain": "operations",
+      "sample_id": "rw_16e58436f5254e15",
+      "question_id": "absq_9d87ce091b7ff34a",
+      "example_id": 2070382282,
+      "task_name": "operations.generated_cross_training_assignment_9d87ce091b7ff34a",
+      "source_task": "operations.cross_training_assignment",
+      "task_contract_sha256": "856d7138b490d4021d92de526d4380febe68a4cb1ace290d4605190c6beda35f"
+    },
+    {
+      "row": 124,
+      "domain": "operations",
+      "sample_id": "rw_bbd9994ca12b0c9e",
+      "question_id": "absq_04feadb224cb2adb",
+      "example_id": 2071508780,
+      "task_name": "operations.generated_cross_training_assignment_04feadb224cb2adb",
+      "source_task": "operations.cross_training_assignment",
+      "task_contract_sha256": "3950292d9ece6e695a985ee0ea8e8bc87a18fbdd4b64201226dc37bce52b95c6"
+    },
+    {
+      "row": 125,
+      "domain": "operations",
+      "sample_id": "rw_360fbceb8b85d8ca",
+      "question_id": "absq_c1528f5594cd69da",
+      "example_id": 2051756391,
+      "task_name": "operations.generated_sensor_monitoring_alert_c1528f5594cd69da",
+      "source_task": "operations.sensor_monitoring_alert",
+      "task_contract_sha256": "ce15c39369ca8c4e676cfc592ef485e2d1633489a27610253f675020bf16e947"
+    },
+    {
+      "row": 126,
+      "domain": "operations",
+      "sample_id": "rw_9b934e0b5e10b0f3",
+      "question_id": "absq_2573832dad12a518",
+      "example_id": 2065672704,
+      "task_name": "operations.generated_facebook_roas_monitoring_2573832dad12a518",
+      "source_task": "operations.facebook_roas_monitoring",
+      "task_contract_sha256": "8f5ed626ebce346f78153290db3031654b79ae3219f97d0f6c0ed423cbbba9b0"
+    },
+    {
+      "row": 127,
+      "domain": "operations",
+      "sample_id": "rw_e310f93a74c3044a",
+      "question_id": "absq_e673b4a3fb70ff2d",
+      "example_id": 2020624934,
+      "task_name": "operations.generated_access_request_validation_e673b4a3fb70ff2d",
+      "source_task": "operations.access_request_validation",
+      "task_contract_sha256": "ebd2a22656ec7865019b8b11a969904cca7ee0717f1aedadf2dfe30b80c446ec"
+    },
+    {
+      "row": 128,
+      "domain": "operations",
+      "sample_id": "rw_b4694178b409b543",
+      "question_id": "absq_cf0da087cf29fb2d",
+      "example_id": 2009537666,
+      "task_name": "operations.generated_calendar_slack_training_cf0da087cf29fb2d",
+      "source_task": "operations.calendar_slack_training",
+      "task_contract_sha256": "6ba3ba45b05f412cc76b0e168600b77c939eaa90afd520237ee8730651ba0a5b"
+    },
+    {
+      "row": 129,
+      "domain": "operations",
+      "sample_id": "rw_eea5c26f06413f72",
+      "question_id": "absq_ea8f048e5cd868f6",
+      "example_id": 2041446283,
+      "task_name": "operations.generated_confluence_gmail_policy_notice_ea8f048e5cd868f6",
+      "source_task": "operations.confluence_gmail_policy_notice",
+      "task_contract_sha256": "9e330583b03935786b77c8293498f43fb2656c06589b29d0cf4d8273950ff394"
+    },
+    {
+      "row": 130,
+      "domain": "operations",
+      "sample_id": "rw_08bc8d300b9c56a2",
+      "question_id": "absq_e38aeb88f6e45f2c",
+      "example_id": 2093009935,
+      "task_name": "operations.generated_vendor_compliance_audit_e38aeb88f6e45f2c",
+      "source_task": "operations.vendor_compliance_audit",
+      "task_contract_sha256": "a3efc9bee0fb0dc0e127cd8d3335006ece3c4e11f5805d703b5584ba05dc2188"
+    },
+    {
+      "row": 131,
+      "domain": "operations",
+      "sample_id": "rw_284bc52bb8096ac6",
+      "question_id": "absq_40c6ce777e49226f",
+      "example_id": 2045249927,
+      "task_name": "operations.generated_docusign_prospect_nda_40c6ce777e49226f",
+      "source_task": "operations.docusign_prospect_nda",
+      "task_contract_sha256": "f271bbca9f468f15c95dae215b8580fa9f0201e96e799a780b670f7f6eea6653"
+    },
+    {
+      "row": 132,
+      "domain": "operations",
+      "sample_id": "rw_b4a98cc0e7b123f0",
+      "question_id": "absq_3b620c17d0204fd4",
+      "example_id": 2036454056,
+      "task_name": "operations.generated_asana_basecamp_move_planning_3b620c17d0204fd4",
+      "source_task": "operations.asana_basecamp_move_planning",
+      "task_contract_sha256": "fc3973992bfc981b3244c58982634f80b69509d62b1723ae4774808539ffcdfd"
+    },
+    {
+      "row": 133,
+      "domain": "operations",
+      "sample_id": "rw_07c5c524c2fd9622",
+      "question_id": "absq_e061f2dde93d19c3",
+      "example_id": 2044428179,
+      "task_name": "operations.generated_equipment_calibration_scheduling_e061f2dde93d19c3",
+      "source_task": "operations.equipment_calibration_scheduling",
+      "task_contract_sha256": "0276cdba92ae31b7ab8c18c25fe09b44a22975d2abd793e637287e8fb38922f4"
+    },
+    {
+      "row": 134,
+      "domain": "operations",
+      "sample_id": "rw_b2206c2637d06ab1",
+      "question_id": "absq_a69e8800613a8337",
+      "example_id": 2089040190,
+      "task_name": "operations.generated_holiday_coverage_planning_a69e8800613a8337",
+      "source_task": "operations.holiday_coverage_planning",
+      "task_contract_sha256": "547dd3c425cba2fba12fce60db4a92c30fbd8c780f976b07c9e69f55392bb84b"
+    },
+    {
+      "row": 135,
+      "domain": "operations",
+      "sample_id": "rw_c5ccaba8684a2ee3",
+      "question_id": "absq_bd8855cf4d067285",
+      "example_id": 2027944057,
+      "task_name": "operations.generated_utility_cost_allocation_bd8855cf4d067285",
+      "source_task": "operations.utility_cost_allocation",
+      "task_contract_sha256": "17294a0cabe0e99764c4873760bde72d877c820d43c48c6bcfc9a11394461ba5"
+    },
+    {
+      "row": 136,
+      "domain": "operations",
+      "sample_id": "rw_0d672d767ac51bcb",
+      "question_id": "absq_3f7436724df05be3",
+      "example_id": 2017061080,
+      "task_name": "operations.generated_equipment_calibration_scheduling_3f7436724df05be3",
+      "source_task": "operations.equipment_calibration_scheduling",
+      "task_contract_sha256": "551f90532fcd2bfa693568fd3cb26f088923246e69a30f310d1b0e637cfdd341"
+    },
+    {
+      "row": 137,
+      "domain": "operations",
+      "sample_id": "rw_ac31b02ec9851498",
+      "question_id": "absq_41450ace5ad6d04e",
+      "example_id": 2001659803,
+      "task_name": "operations.generated_loading_dock_scheduling_41450ace5ad6d04e",
+      "source_task": "operations.loading_dock_scheduling",
+      "task_contract_sha256": "37e51416f416b639cb5d7045284eb0b9f2e261dddf0d252d5566bdcd379cc29b"
+    },
+    {
+      "row": 138,
+      "domain": "operations",
+      "sample_id": "rw_b31edad8d91e506d",
+      "question_id": "absq_f8c29dcff373bd9d",
+      "example_id": 2077465732,
+      "task_name": "operations.generated_insurance_cert_validation_f8c29dcff373bd9d",
+      "source_task": "operations.insurance_cert_validation",
+      "task_contract_sha256": "7d52c6bbdb3527f7520db29069a54171cd53471b134d2b09f8b8624362abdeca"
+    },
+    {
+      "row": 139,
+      "domain": "operations",
+      "sample_id": "rw_dada2f668ab8865c",
+      "question_id": "absq_5510b66afba2d519",
+      "example_id": 2076148470,
+      "task_name": "operations.generated_docusign_prospect_nda_5510b66afba2d519",
+      "source_task": "operations.docusign_prospect_nda",
+      "task_contract_sha256": "e4c6483b048d488e31917dfa20cf2b18e4af510502dd13f5ee4b0e842587b149"
+    },
+    {
+      "row": 140,
+      "domain": "operations",
+      "sample_id": "rw_013e6e523b2e5853",
+      "question_id": "absq_f467e8b4d177c238",
+      "example_id": 2017964768,
+      "task_name": "operations.generated_sheets_asana_approved_request_f467e8b4d177c238",
+      "source_task": "operations.sheets_asana_approved_request",
+      "task_contract_sha256": "7d2837f238ddf91d756ef7996a7af7dce9469219d3f4e5d0e115ea1c4b47e8cd"
+    },
+    {
+      "row": 141,
+      "domain": "operations",
+      "sample_id": "rw_6da1b63cc4e9ff09",
+      "question_id": "absq_02325149838210ef",
+      "example_id": 2060524619,
+      "task_name": "operations.generated_docusign_prospect_nda_02325149838210ef",
+      "source_task": "operations.docusign_prospect_nda",
+      "task_contract_sha256": "ddb4c8af2353350ebc377082e59ed5aae3fc5d89668e1d7c1ced692e89cac23e"
+    },
+    {
+      "row": 142,
+      "domain": "operations",
+      "sample_id": "rw_81b1d766db4ab1d0",
+      "question_id": "absq_59e1c779b235ca76",
+      "example_id": 2089941306,
+      "task_name": "operations.generated_confluence_gmail_policy_notice_59e1c779b235ca76",
+      "source_task": "operations.confluence_gmail_policy_notice",
+      "task_contract_sha256": "0eb61c83d25e267b7065b23baf93d275e5707641ba647381f4582d64c8d5eb44"
+    },
+    {
+      "row": 143,
+      "domain": "operations",
+      "sample_id": "rw_c8459b1cd0f8be02",
+      "question_id": "absq_fb39486a9a9ec0e5",
+      "example_id": 2060556411,
+      "task_name": "operations.generated_asana_fire_drill_fb39486a9a9ec0e5",
+      "source_task": "operations.asana_fire_drill",
+      "task_contract_sha256": "c50de9f8d756ec34b91c9a5fb0ee75c9d3cf7ee8a3f622907e4233db27ceabfe"
+    },
+    {
+      "row": 144,
+      "domain": "operations",
+      "sample_id": "rw_f318d1fdfcafe7da",
+      "question_id": "absq_431a0439faad3d81",
+      "example_id": 2050122034,
+      "task_name": "operations.generated_parking_allocation_management_431a0439faad3d81",
+      "source_task": "operations.parking_allocation_management",
+      "task_contract_sha256": "90f3a32118606b589acb03d59e4fb6eab12fc1d06a64ef23c1bba3bace046118"
+    },
+    {
+      "row": 145,
+      "domain": "operations",
+      "sample_id": "rw_6418c02f12e3650d",
+      "question_id": "absq_ffc3be771de0b8c8",
+      "example_id": 2010885155,
+      "task_name": "operations.generated_equipment_calibration_scheduling_ffc3be771de0b8c8",
+      "source_task": "operations.equipment_calibration_scheduling",
+      "task_contract_sha256": "5febcb0bed15d86cc2be450f1ed1b1bc139079fbc49722b89e23334feba93364"
+    },
+    {
+      "row": 146,
+      "domain": "operations",
+      "sample_id": "rw_2ed6f8885904e7b7",
+      "question_id": "absq_780b040f0fa06f63",
+      "example_id": 2065221185,
+      "task_name": "operations.generated_monday_slack_inventory_780b040f0fa06f63",
+      "source_task": "operations.monday_slack_inventory",
+      "task_contract_sha256": "3ec9903c373a8cc5b4208d805560dbfd32ab33347a2dbecbd56467ca8a93728f"
+    },
+    {
+      "row": 147,
+      "domain": "operations",
+      "sample_id": "rw_9d8451d0979ae718",
+      "question_id": "absq_c0418d4eb2e02f46",
+      "example_id": 2059750551,
+      "task_name": "operations.generated_parking_allocation_management_c0418d4eb2e02f46",
+      "source_task": "operations.parking_allocation_management",
+      "task_contract_sha256": "f09fad324384ed84c4f1bc3f062e3d2689490512c64c51b2ae02a569a57c67f0"
+    },
+    {
+      "row": 148,
+      "domain": "operations",
+      "sample_id": "rw_aa350603ac36eead",
+      "question_id": "absq_e71acc08805a7ee4",
+      "example_id": 2025789155,
+      "task_name": "operations.generated_server_capacity_threshold_alerts_e71acc08805a7ee4",
+      "source_task": "operations.server_capacity_threshold_alerts",
+      "task_contract_sha256": "c70f5bfb8d0821549ba37195c1478068eaa2830da2612466bd33f762e6d1313e"
+    },
+    {
+      "row": 149,
+      "domain": "operations",
+      "sample_id": "rw_193bfbd6191f85de",
+      "question_id": "absq_da0599c197bb804a",
+      "example_id": 2038280048,
+      "task_name": "operations.generated_facebook_roas_monitoring_da0599c197bb804a",
+      "source_task": "operations.facebook_roas_monitoring",
+      "task_contract_sha256": "4759833df59837e563a15737a7ba25e7966b82dec2502e86f8dcb5acde98e048"
+    },
+    {
+      "row": 150,
+      "domain": "operations",
+      "sample_id": "rw_5f5fe81473ea7b3f",
+      "question_id": "absq_c8b16fa092dc72a2",
+      "example_id": 2064551117,
+      "task_name": "operations.generated_housekeeping_schedule_c8b16fa092dc72a2",
+      "source_task": "operations.housekeeping_schedule",
+      "task_contract_sha256": "8123c9fac80772abbc0cb87ca4a787435a5a617b487852a24a354249605a42ef"
+    },
+    {
+      "row": 151,
+      "domain": "operations",
+      "sample_id": "rw_8a14b63b86c25d17",
+      "question_id": "absq_dbb492aebc22f754",
+      "example_id": 2033768697,
+      "task_name": "operations.generated_generator_load_testing_schedule_dbb492aebc22f754",
+      "source_task": "operations.generator_load_testing_schedule",
+      "task_contract_sha256": "a02713bf06b8b9a3e56c314d3aba04dddc3e93a80196908e760527f34c717e90"
+    },
+    {
+      "row": 152,
+      "domain": "operations",
+      "sample_id": "rw_6391d2ebe51319de",
+      "question_id": "absq_1ec63817aba35056",
+      "example_id": 2033444074,
+      "task_name": "operations.generated_hubspot_personalized_outreach_1ec63817aba35056",
+      "source_task": "operations.hubspot_personalized_outreach",
+      "task_contract_sha256": "8ccf18e01e14a557a57f0d2b9a88a2ea8cef43ebaf344d889da70dcb8c83bfb2"
+    },
+    {
+      "row": 153,
+      "domain": "operations",
+      "sample_id": "rw_7ff8fc8ddb00ec1f",
+      "question_id": "absq_fc7b8b338cffbb6f",
+      "example_id": 2077544515,
+      "task_name": "operations.generated_facebook_roas_monitoring_fc7b8b338cffbb6f",
+      "source_task": "operations.facebook_roas_monitoring",
+      "task_contract_sha256": "5c09fe9f38dd4b40dcad82ffa3422184606aa48dac9dfe221df2c29fe2d5e152"
+    },
+    {
+      "row": 154,
+      "domain": "operations",
+      "sample_id": "rw_bd006502b522de20",
+      "question_id": "absq_98f81a1c5a6d0f9a",
+      "example_id": 2009507130,
+      "task_name": "operations.generated_drive_notion_archive_98f81a1c5a6d0f9a",
+      "source_task": "operations.drive_notion_archive",
+      "task_contract_sha256": "183789e54e1b4de24366bfb1cdb659f4510c11ada6a79c701c34b85138e871d0"
+    },
+    {
+      "row": 155,
+      "domain": "operations",
+      "sample_id": "rw_e67c6526ef6d252f",
+      "question_id": "absq_67aed3ef0da13992",
+      "example_id": 2045007078,
+      "task_name": "operations.generated_airtable_gmail_visitor_followup_67aed3ef0da13992",
+      "source_task": "operations.airtable_gmail_visitor_followup",
+      "task_contract_sha256": "b82b52341ce734e88f4a0d4786ac3f0c8d2a56ef9223f944827cebeb042bb3e7"
+    },
+    {
+      "row": 156,
+      "domain": "operations",
+      "sample_id": "rw_1b1ba69c3c1bfdae",
+      "question_id": "absq_316e722e280629a6",
+      "example_id": 2080669706,
+      "task_name": "operations.generated_fleet_vehicle_maintenance_316e722e280629a6",
+      "source_task": "operations.fleet_vehicle_maintenance",
+      "task_contract_sha256": "afa83e836068185d4d28eaaf64314c212720c25c76b47b76a11632716b2defc7"
+    },
+    {
+      "row": 157,
+      "domain": "operations",
+      "sample_id": "rw_fde90a96d964116e",
+      "question_id": "absq_866855a54e036d09",
+      "example_id": 2023694966,
+      "task_name": "operations.generated_docusign_prospect_nda_866855a54e036d09",
+      "source_task": "operations.docusign_prospect_nda",
+      "task_contract_sha256": "535cd41b7a1e6a41dc3d76967dff920db3cd90caa2fcbd37959dba813a7a5b6e"
+    },
+    {
+      "row": 158,
+      "domain": "operations",
+      "sample_id": "rw_7e09ceb62859ea60",
+      "question_id": "absq_6617b9942c196e0b",
+      "example_id": 2084750950,
+      "task_name": "operations.generated_energy_consumption_anomaly_6617b9942c196e0b",
+      "source_task": "operations.energy_consumption_anomaly",
+      "task_contract_sha256": "bd1412c3c990a784d17624fdb420c466744081fc5e2c72be3c5b4240f279bd91"
+    },
+    {
+      "row": 159,
+      "domain": "operations",
+      "sample_id": "rw_b10b155a27bcf65a",
+      "question_id": "absq_572ba5e8f896a9b2",
+      "example_id": 2028258921,
+      "task_name": "operations.generated_hubspot_churn_prediction_572ba5e8f896a9b2",
+      "source_task": "operations.hubspot_churn_prediction",
+      "task_contract_sha256": "051ebe22d4915c50f6867774db920f24f93bb8d5b33b9c777321abe2cce8a500"
+    },
+    {
+      "row": 160,
+      "domain": "operations",
+      "sample_id": "rw_0328990aa8b2139b",
+      "question_id": "absq_128969afb86c5155",
+      "example_id": 2029327379,
+      "task_name": "operations.generated_asana_slack_sheets_audit_128969afb86c5155",
+      "source_task": "operations.asana_slack_sheets_audit",
+      "task_contract_sha256": "2b0b0088dc95a8217fee3e818e8de089a416459738929edbfa44692c6a5043b9"
+    },
+    {
+      "row": 161,
+      "domain": "finance",
+      "sample_id": "rw_455e92a27ad910b9",
+      "question_id": "absq_118261f6b608451b",
+      "example_id": 2046813788,
+      "task_name": "finance.generated_forex_gain_loss_118261f6b608451b",
+      "source_task": "finance.forex_gain_loss",
+      "task_contract_sha256": "8ee88ab6656d4da50169568ab9c1eb209b0b4a3e36bea6a60e41ac207d7549ef"
+    },
+    {
+      "row": 162,
+      "domain": "finance",
+      "sample_id": "rw_690a03b1c277e204",
+      "question_id": "absq_ba07b654ad4f97f1",
+      "example_id": 2034737323,
+      "task_name": "finance.generated_commission_calculation_ba07b654ad4f97f1",
+      "source_task": "finance.commission_calculation",
+      "task_contract_sha256": "876e8263ca9d2603c08df449ac4705a8399b4d2226f377dddb1c6d1e8507b016"
+    },
+    {
+      "row": 163,
+      "domain": "finance",
+      "sample_id": "rw_1e2d69313df94bac",
+      "question_id": "absq_b9d66a3b63987024",
+      "example_id": 2027086808,
+      "task_name": "finance.generated_annual_budget_prep_b9d66a3b63987024",
+      "source_task": "finance.annual_budget_prep",
+      "task_contract_sha256": "9334e42660df94b24cfd59bf66389d4483d0f3892c25f3bf50d29a8606e99204"
+    },
+    {
+      "row": 164,
+      "domain": "finance",
+      "sample_id": "rw_5d2bb870fe181f8d",
+      "question_id": "absq_cf939cdcc9f8dbc6",
+      "example_id": 2094436661,
+      "task_name": "finance.generated_qb_invoice_from_orders_cf939cdcc9f8dbc6",
+      "source_task": "finance.qb_invoice_from_orders",
+      "task_contract_sha256": "4395d327a3926a8e5be3f04144c24c8428af8a43bac107dd4a8700c73bfcf969"
+    },
+    {
+      "row": 165,
+      "domain": "finance",
+      "sample_id": "rw_4febb66cb3abd77b",
+      "question_id": "absq_74dccc9bb9dbc95e",
+      "example_id": 2018382045,
+      "task_name": "finance.generated_ap_turnover_analysis_74dccc9bb9dbc95e",
+      "source_task": "finance.ap_turnover_analysis",
+      "task_contract_sha256": "231152a60957dfbd28aadaba45a0f2b893f2a8a073ad3b3823937efa7553342e"
+    },
+    {
+      "row": 166,
+      "domain": "finance",
+      "sample_id": "rw_a14d5905b32dd73d",
+      "question_id": "absq_476505094bda459d",
+      "example_id": 2004019965,
+      "task_name": "finance.generated_qb_recurring_journal_476505094bda459d",
+      "source_task": "finance.qb_recurring_journal",
+      "task_contract_sha256": "7cfdb226c504eca58136302b32175db38ebb6570ed76d936f7c6c0629e587537"
+    },
+    {
+      "row": 167,
+      "domain": "finance",
+      "sample_id": "rw_48ca3cc3003ccc24",
+      "question_id": "absq_121f3e836161af69",
+      "example_id": 2004499126,
+      "task_name": "finance.generated_qb_void_stale_invoices_121f3e836161af69",
+      "source_task": "finance.qb_void_stale_invoices",
+      "task_contract_sha256": "0d16df817dd6a559a5a4102b5084b4da9b62e2928020ba3cbc792ade2da71cfd"
+    },
+    {
+      "row": 168,
+      "domain": "finance",
+      "sample_id": "rw_7ef6505937138d53",
+      "question_id": "absq_df679f3570a4f8aa",
+      "example_id": 2021917535,
+      "task_name": "finance.generated_budget_variance_analysis_df679f3570a4f8aa",
+      "source_task": "finance.budget_variance_analysis",
+      "task_contract_sha256": "66d6c8ced07e3691e239070382b389f1d9fad52ba5a26f9df441af6c8c6b52d7"
+    },
+    {
+      "row": 169,
+      "domain": "finance",
+      "sample_id": "rw_28c4e182e14809f4",
+      "question_id": "absq_0fd3ee8bc5ae8f5c",
+      "example_id": 2047846916,
+      "task_name": "finance.generated_qb_customer_onboard_0fd3ee8bc5ae8f5c",
+      "source_task": "finance.qb_customer_onboard",
+      "task_contract_sha256": "a6a034c6260ae7bb26f5ae063547a8e47ee2d673e826e74e30ba6b2dfa4ff327"
+    },
+    {
+      "row": 170,
+      "domain": "finance",
+      "sample_id": "rw_d55e98188e701bc7",
+      "question_id": "absq_587abce077b668a6",
+      "example_id": 2039973878,
+      "task_name": "finance.generated_qb_bill_payment_batch_587abce077b668a6",
+      "source_task": "finance.qb_bill_payment_batch",
+      "task_contract_sha256": "bbcb0d423a9ef72e9e3176a887a20584c8c9a81669e55e492e65de005f3376d6"
+    },
+    {
+      "row": 171,
+      "domain": "finance",
+      "sample_id": "rw_557da82154b05624",
+      "question_id": "absq_4ab5deb3c74680fc",
+      "example_id": 2017551033,
+      "task_name": "finance.generated_invoice_aging_followup_4ab5deb3c74680fc",
+      "source_task": "finance.invoice_aging_followup",
+      "task_contract_sha256": "fcc23e6b4cdb6dd4ba9d825204b6ac83bfdad9659176bcb2eeb9f8794698e790"
+    },
+    {
+      "row": 172,
+      "domain": "finance",
+      "sample_id": "rw_404cabf6bfa8fbce",
+      "question_id": "absq_9808fcc0adff873c",
+      "example_id": 2019653731,
+      "task_name": "finance.generated_xero_po_matching_9808fcc0adff873c",
+      "source_task": "finance.xero_po_matching",
+      "task_contract_sha256": "58300538f718206a3c1bfb32ab1ae14a4ac881c2478fdf4a1a8ac85c2c4768d4"
+    },
+    {
+      "row": 173,
+      "domain": "finance",
+      "sample_id": "rw_33ea32b664c0c473",
+      "question_id": "absq_45392b51763517fc",
+      "example_id": 2056351604,
+      "task_name": "finance.generated_vendor_payment_approval_45392b51763517fc",
+      "source_task": "finance.vendor_payment_approval",
+      "task_contract_sha256": "8f84bd26f94574b32a156c0777c06f5add4f9608d5ac47b91e3333c6e5e60695"
+    },
+    {
+      "row": 174,
+      "domain": "finance",
+      "sample_id": "rw_f9ac362e392809bf",
+      "question_id": "absq_642203ec7500982b",
+      "example_id": 2076747119,
+      "task_name": "finance.generated_annual_budget_prep_642203ec7500982b",
+      "source_task": "finance.annual_budget_prep",
+      "task_contract_sha256": "683ddf20fab43d8c3a55bc81bb27aeb0cfc61fd2929377f70b8b0ee8ca452fd5"
+    },
+    {
+      "row": 175,
+      "domain": "finance",
+      "sample_id": "rw_1b6f8c8c987fb048",
+      "question_id": "absq_519a27e25f1501f4",
+      "example_id": 2013956326,
+      "task_name": "finance.generated_year_end_audit_prep_519a27e25f1501f4",
+      "source_task": "finance.year_end_audit_prep",
+      "task_contract_sha256": "728535e28481abab40f4b60a8fee0498912e279b972255f15827ba294871d3c7"
+    },
+    {
+      "row": 176,
+      "domain": "finance",
+      "sample_id": "rw_1c788fd36ad4fafb",
+      "question_id": "absq_f222aa96b5932832",
+      "example_id": 2035118026,
+      "task_name": "finance.generated_monday_project_billing_f222aa96b5932832",
+      "source_task": "finance.monday_project_billing",
+      "task_contract_sha256": "2cbaa6eec41267b5c39f722c165aaabf0fe5dc16cb0b527d8a6cd6e0ce31add1"
+    },
+    {
+      "row": 177,
+      "domain": "finance",
+      "sample_id": "rw_21a167a542ae5678",
+      "question_id": "absq_1fe519c04029c1b9",
+      "example_id": 2001184590,
+      "task_name": "finance.generated_vendor_payment_approval_1fe519c04029c1b9",
+      "source_task": "finance.vendor_payment_approval",
+      "task_contract_sha256": "ca0f0367edee89a172132be46694534a1e6967f78f7200b21c59c9fd9a9971e1"
+    },
+    {
+      "row": 178,
+      "domain": "sales",
+      "sample_id": "rw_694a8c4d1d229952",
+      "question_id": "absq_c6486c1a8b348989",
+      "example_id": 2075658631,
+      "task_name": "sales.generated_cross_platform_account_health_score_c6486c1a8b348989",
+      "source_task": "sales.cross_platform_account_health_score",
+      "task_contract_sha256": "4031e9bcc4e7630fb83ae0938a2f054b9ef2493ce84f0f0a9d8a02cf6df09e10"
+    },
+    {
+      "row": 179,
+      "domain": "sales",
+      "sample_id": "rw_aa9044a0c9d03b40",
+      "question_id": "absq_774bd0dbc1cfce8f",
+      "example_id": 2060617660,
+      "task_name": "sales.generated_calendly_meeting_prep_774bd0dbc1cfce8f",
+      "source_task": "sales.calendly_meeting_prep",
+      "task_contract_sha256": "9cc4d82278e16de146cbc0c4973989fe65032eef742864cc5de1ae1a4f7153e3"
+    },
+    {
+      "row": 180,
+      "domain": "sales",
+      "sample_id": "rw_6c42da2e2dc63d35",
+      "question_id": "absq_3d43f5ff4c886af2",
+      "example_id": 2055685101,
+      "task_name": "sales.generated_calendly_meeting_prep_3d43f5ff4c886af2",
+      "source_task": "sales.calendly_meeting_prep",
+      "task_contract_sha256": "a4fd5d78b8d4514564fe751b6eeb1d1ed895d0489e84241ea96568bd0054939c"
+    },
+    {
+      "row": 181,
+      "domain": "sales",
+      "sample_id": "rw_832058e087b2bca0",
+      "question_id": "absq_6e0e4df20480259d",
+      "example_id": 2093759818,
+      "task_name": "sales.generated_zoom_recording_distribution_6e0e4df20480259d",
+      "source_task": "sales.zoom_recording_distribution",
+      "task_contract_sha256": "3d846f2ecf30466089d811b248d7b55b835b71b14df500bc1a79d97069bcdbdf"
+    },
+    {
+      "row": 182,
+      "domain": "sales",
+      "sample_id": "rw_d39b13a593277c54",
+      "question_id": "absq_4a679735f6db2be1",
+      "example_id": 2040682741,
+      "task_name": "sales.generated_calendly_meeting_prep_4a679735f6db2be1",
+      "source_task": "sales.calendly_meeting_prep",
+      "task_contract_sha256": "82b2a647e38b236c7c487d4cbbba13c3dd0ac4e62322f19f669b65d93cb8ac13"
+    },
+    {
+      "row": 183,
+      "domain": "sales",
+      "sample_id": "rw_b3266377f3220fd3",
+      "question_id": "absq_4b9ba2708ef90101",
+      "example_id": 2099202957,
+      "task_name": "sales.generated_cross_platform_account_health_score_4b9ba2708ef90101",
+      "source_task": "sales.cross_platform_account_health_score",
+      "task_contract_sha256": "92dc37f632f8f1ce408ec8ebe80f03c27223f21a2fe9be61548b84b3e5de6ac7"
+    },
+    {
+      "row": 184,
+      "domain": "sales",
+      "sample_id": "rw_714b025da1f83493",
+      "question_id": "absq_683161fadc7b67f4",
+      "example_id": 2005681222,
+      "task_name": "sales.generated_calendly_meeting_prep_683161fadc7b67f4",
+      "source_task": "sales.calendly_meeting_prep",
+      "task_contract_sha256": "42a76b13c6021e841cf8c8088aec68002fdd7a51c5488a642c16454cbd6e80d8"
+    },
+    {
+      "row": 185,
+      "domain": "sales",
+      "sample_id": "rw_4d87ac742d6e9f66",
+      "question_id": "absq_a8d91560b5799c0c",
+      "example_id": 2024220392,
+      "task_name": "sales.generated_cross_platform_account_health_score_a8d91560b5799c0c",
+      "source_task": "sales.cross_platform_account_health_score",
+      "task_contract_sha256": "9d18d26a7ec0b96eef32aef55666c5f3abfb72dcd896fbc3bb6275d92b881ea3"
+    },
+    {
+      "row": 186,
+      "domain": "sales",
+      "sample_id": "rw_c0db6ce8bdf55b26",
+      "question_id": "absq_6ef840324900195e",
+      "example_id": 2015448380,
+      "task_name": "sales.generated_calendly_meeting_prep_6ef840324900195e",
+      "source_task": "sales.calendly_meeting_prep",
+      "task_contract_sha256": "4aab41b62d40431c0ab32181928c31cde306ee72cd4b8c6605e40f0a7c7ddc30"
+    },
+    {
+      "row": 187,
+      "domain": "sales",
+      "sample_id": "rw_e81cad87dc3d0974",
+      "question_id": "absq_003656a5c6e64a2f",
+      "example_id": 2037189799,
+      "task_name": "sales.generated_calendly_meeting_prep_003656a5c6e64a2f",
+      "source_task": "sales.calendly_meeting_prep",
+      "task_contract_sha256": "e3966bc9c4ed1770306cd4d8a58c68d2a2fc64bf3bd140aed255bf798508a546"
+    },
+    {
+      "row": 188,
+      "domain": "sales",
+      "sample_id": "rw_4ffc508792b4af7d",
+      "question_id": "absq_7bbc4bb5fdf9c14c",
+      "example_id": 2097681365,
+      "task_name": "sales.generated_unreliable_label_account_review_7bbc4bb5fdf9c14c",
+      "source_task": "sales.unreliable_label_account_review",
+      "task_contract_sha256": "d3edaadf9d6e376d796cbdcba5a54ced8111bae016826b4c6f965de30878c14f"
+    },
+    {
+      "row": 189,
+      "domain": "sales",
+      "sample_id": "rw_59cbe17371d875bd",
+      "question_id": "absq_1f6a42ccb40240e1",
+      "example_id": 2095353612,
+      "task_name": "sales.generated_competitive_displacement_outreach_1f6a42ccb40240e1",
+      "source_task": "sales.competitive_displacement_outreach",
+      "task_contract_sha256": "039ac692d4cc669913152466d2515c8357eeca73e5452f6ae479ad0269411990"
+    },
+    {
+      "row": 190,
+      "domain": "sales",
+      "sample_id": "rw_20610d1a5796f4a6",
+      "question_id": "absq_7d90d5581985575c",
+      "example_id": 2008717658,
+      "task_name": "sales.generated_calendly_sequential_meetings_7d90d5581985575c",
+      "source_task": "sales.calendly_sequential_meetings",
+      "task_contract_sha256": "41b1ae83858da67b2be2f60cbe12ed494831909f51ffc234132e845193e8aa93"
+    },
+    {
+      "row": 191,
+      "domain": "sales",
+      "sample_id": "rw_0200ec3b237e13f1",
+      "question_id": "absq_d21e96f967e57cbd",
+      "example_id": 2062589421,
+      "task_name": "sales.generated_invalid_email_cleanup_d21e96f967e57cbd",
+      "source_task": "sales.invalid_email_cleanup",
+      "task_contract_sha256": "c3e93f7633b1ababe5b643c66ac613f2480fefca2a0256b5860f97a3a5b788fe"
+    },
+    {
+      "row": 192,
+      "domain": "sales",
+      "sample_id": "rw_b8aa9703edb6e123",
+      "question_id": "absq_c14ceccc374b3d0f",
+      "example_id": 2063133483,
+      "task_name": "sales.generated_calendly_discovery_call_c14ceccc374b3d0f",
+      "source_task": "sales.calendly_discovery_call",
+      "task_contract_sha256": "2d18badbf853646e368cfb416cf5628d1142182e4a1168b69fba0d87443d6b65"
+    },
+    {
+      "row": 193,
+      "domain": "sales",
+      "sample_id": "rw_19d77d789b4135d9",
+      "question_id": "absq_fe43c1176b05133a",
+      "example_id": 2095102612,
+      "task_name": "sales.generated_calendar_crm_meeting_fe43c1176b05133a",
+      "source_task": "sales.calendar_crm_meeting",
+      "task_contract_sha256": "0b9ea5c3735c99017e55b1833e7157dcca6e746999b72d19a44834d1b81dd46b"
+    },
+    {
+      "row": 194,
+      "domain": "sales",
+      "sample_id": "rw_f0441afb42cabf0f",
+      "question_id": "absq_05f1412ab2e8b768",
+      "example_id": 2057309161,
+      "task_name": "sales.generated_create_important_draft_05f1412ab2e8b768",
+      "source_task": "sales.create_important_draft",
+      "task_contract_sha256": "4081356853d8ab5da01dbc7b1bf29a97f9bfcba2a4fdff36b2410d93e792c675"
+    },
+    {
+      "row": 195,
+      "domain": "sales",
+      "sample_id": "rw_e1d48cfb41651fe2",
+      "question_id": "absq_5d6c2a83b76646b9",
+      "example_id": 2065407999,
+      "task_name": "sales.generated_slack_deal_notification_5d6c2a83b76646b9",
+      "source_task": "sales.slack_deal_notification",
+      "task_contract_sha256": "b4a96244bdc26d9592902b9d90ac0306275f0d7bcfc9e3b51325aad38faafb10"
+    },
+    {
+      "row": 196,
+      "domain": "sales",
+      "sample_id": "rw_b39c262fe3f9195b",
+      "question_id": "absq_5526db101eb5d837",
+      "example_id": 2070563500,
+      "task_name": "sales.generated_docusign_renewal_automation_5526db101eb5d837",
+      "source_task": "sales.docusign_renewal_automation",
+      "task_contract_sha256": "b77dacaae504b8c064b2f5c68e45f9588e998a2c63fcdb2d3828b99817b0caa9"
+    },
+    {
+      "row": 197,
+      "domain": "sales",
+      "sample_id": "rw_6db1e4e46d616b13",
+      "question_id": "absq_9f1c2fc3b30af136",
+      "example_id": 2026070979,
+      "task_name": "sales.generated_sheets_reconciliation_9f1c2fc3b30af136",
+      "source_task": "sales.sheets_reconciliation",
+      "task_contract_sha256": "4c318ea48931c0acc8a0b325cbb12944ff0270e9ce0f9df39cc252bbb8bc2812"
+    },
+    {
+      "row": 198,
+      "domain": "sales",
+      "sample_id": "rw_e7c15e1b09d25a8c",
+      "question_id": "absq_f21c102c5c9212b6",
+      "example_id": 2005969621,
+      "task_name": "sales.generated_zoom_calendar_conflict_f21c102c5c9212b6",
+      "source_task": "sales.zoom_calendar_conflict",
+      "task_contract_sha256": "e291ceb55be3f624f281b0e34c68dd0301fb2870e147e5d9e653fae753a90f00"
+    },
+    {
+      "row": 199,
+      "domain": "sales",
+      "sample_id": "rw_2b571abb7302d6da",
+      "question_id": "absq_3db3453e41bc028f",
+      "example_id": 2050087359,
+      "task_name": "sales.generated_linkedin_signal_monitoring_3db3453e41bc028f",
+      "source_task": "sales.linkedin_signal_monitoring",
+      "task_contract_sha256": "8c05100f500237caa8a72f45abeee89da1cdc84303a96cbb782275423a812a8f"
+    },
+    {
+      "row": 200,
+      "domain": "sales",
+      "sample_id": "rw_a3912f6e684c00d2",
+      "question_id": "absq_973b15597fae019c",
+      "example_id": 2030623634,
+      "task_name": "sales.generated_docusign_renewal_automation_973b15597fae019c",
+      "source_task": "sales.docusign_renewal_automation",
+      "task_contract_sha256": "4d8d6d882f57ee79adb27a3034f202f15b96d3f666d2ad5261f51a893463660e"
+    },
+    {
+      "row": 201,
+      "domain": "sales",
+      "sample_id": "rw_ab0c2006f30fe039",
+      "question_id": "absq_f7797bc1eb5b053c",
+      "example_id": 2009594564,
+      "task_name": "sales.generated_mark_vip_emails_read_f7797bc1eb5b053c",
+      "source_task": "sales.mark_vip_emails_read",
+      "task_contract_sha256": "230201c17b6c75e2c23e417bef40936093f329d600b3db6c2073d251364869b4"
+    },
+    {
+      "row": 202,
+      "domain": "sales",
+      "sample_id": "rw_ada964c5e09a35c0",
+      "question_id": "absq_23cd37a2ddbe2048",
+      "example_id": 2079765755,
+      "task_name": "sales.generated_implicit_rules_23cd37a2ddbe2048",
+      "source_task": "sales.implicit_rules",
+      "task_contract_sha256": "2ee61f8c3fda39878b3b2bc13e7908f528970966d4210b56c5c4ef1c0197b0c7"
+    },
+    {
+      "row": 203,
+      "domain": "sales",
+      "sample_id": "rw_cdd7bb80a2c08db2",
+      "question_id": "absq_faa176bc981466a5",
+      "example_id": 2018585269,
+      "task_name": "sales.generated_qualify_lead_faa176bc981466a5",
+      "source_task": "sales.qualify_lead",
+      "task_contract_sha256": "76ce1020c190f55b20216e766319f5ce4889300a68bec620250c4fa90d2d23e9"
+    },
+    {
+      "row": 204,
+      "domain": "sales",
+      "sample_id": "rw_3c87318d6414f2bd",
+      "question_id": "absq_ac74d865bca99fbb",
+      "example_id": 2025992507,
+      "task_name": "sales.generated_linkedin_job_change_ac74d865bca99fbb",
+      "source_task": "sales.linkedin_job_change",
+      "task_contract_sha256": "9d90f74c42af1bd837059fd964da12d4014275145212355a70101e6b37d35311"
+    },
+    {
+      "row": 205,
+      "domain": "support",
+      "sample_id": "rw_3fa9ac2bf159a0c7",
+      "question_id": "absq_5585589dac10e587",
+      "example_id": 2093143128,
+      "task_name": "support.generated_freshdesk_csat_followup_5585589dac10e587",
+      "source_task": "support.freshdesk_csat_followup",
+      "task_contract_sha256": "8783fef8804d2d1043940bb30b83b1ac0233b9478c5d8ca0bf69bfb16acafd1d"
+    },
+    {
+      "row": 206,
+      "domain": "support",
+      "sample_id": "rw_06c7446216defbd9",
+      "question_id": "absq_20a6880387748fb2",
+      "example_id": 2028020894,
+      "task_name": "support.generated_freshdesk_csat_followup_20a6880387748fb2",
+      "source_task": "support.freshdesk_csat_followup",
+      "task_contract_sha256": "29b689cdb01d59744a20a87cec9a75e0b217c7637eea1823cde84f251e70d45c"
+    },
+    {
+      "row": 207,
+      "domain": "support",
+      "sample_id": "rw_a9d9782c92ed3fea",
+      "question_id": "absq_748d411ad51f4f60",
+      "example_id": 2071161580,
+      "task_name": "support.generated_freshdesk_csat_followup_748d411ad51f4f60",
+      "source_task": "support.freshdesk_csat_followup",
+      "task_contract_sha256": "e6da82ecd09610831e9b596635d4040cbc8bcbe133b2ea2944823affc33d83ee"
+    },
+    {
+      "row": 208,
+      "domain": "support",
+      "sample_id": "rw_057c929feebe0a93",
+      "question_id": "absq_4b069aac914475d7",
+      "example_id": 2056719843,
+      "task_name": "support.generated_intercom_reactivation_campaign_4b069aac914475d7",
+      "source_task": "support.intercom_reactivation_campaign",
+      "task_contract_sha256": "b54df43066da7b251843765e654aa921595f271fdc022f31a4db04aee3691818"
+    },
+    {
+      "row": 209,
+      "domain": "support",
+      "sample_id": "rw_445a441a56e07f6c",
+      "question_id": "absq_5caa0204a83f6764",
+      "example_id": 2087725589,
+      "task_name": "support.generated_freshdesk_csat_followup_5caa0204a83f6764",
+      "source_task": "support.freshdesk_csat_followup",
+      "task_contract_sha256": "ec12641a08969aa827865e6e69bf74b27d5d1a1e9f73ecaedba58561cfaad387"
+    },
+    {
+      "row": 210,
+      "domain": "support",
+      "sample_id": "rw_0c316d045eda7942",
+      "question_id": "absq_f7364bfa282d971f",
+      "example_id": 2005668742,
+      "task_name": "support.generated_freshdesk_csat_followup_f7364bfa282d971f",
+      "source_task": "support.freshdesk_csat_followup",
+      "task_contract_sha256": "d3b6d47a0146096b875ee2c7162382bcc407084cf7f8e9a554899bdb8d92c523"
+    },
+    {
+      "row": 211,
+      "domain": "support",
+      "sample_id": "rw_f47cbc51221f198f",
+      "question_id": "absq_0496913093226f04",
+      "example_id": 2092136822,
+      "task_name": "support.generated_zoho_multitenant_isolation_0496913093226f04",
+      "source_task": "support.zoho_multitenant_isolation",
+      "task_contract_sha256": "924d8776ead0ecdaa6d53e070562bd3af0cee837fee6e94ee464fbf277a59210"
+    },
+    {
+      "row": 212,
+      "domain": "support",
+      "sample_id": "rw_1b1e1bac9fd10d06",
+      "question_id": "absq_9bc48ac81720013a",
+      "example_id": 2049956744,
+      "task_name": "support.generated_zendesk_maintenance_notify_9bc48ac81720013a",
+      "source_task": "support.zendesk_maintenance_notify",
+      "task_contract_sha256": "5c091a162745de39f8fbc565aee08a6f685a527ffc25d32f7d7e13c09e458588"
+    },
+    {
+      "row": 213,
+      "domain": "support",
+      "sample_id": "rw_e479f453fc040cfd",
+      "question_id": "absq_9ff7fe6a956c79c3",
+      "example_id": 2042166404,
+      "task_name": "support.generated_zoho_resolution_patterns_9ff7fe6a956c79c3",
+      "source_task": "support.zoho_resolution_patterns",
+      "task_contract_sha256": "19c60497f80d25d52fd71461111dca3dbe1171debb621dc6f783b14cffedcf5b"
+    },
+    {
+      "row": 214,
+      "domain": "support",
+      "sample_id": "rw_e12492234f2ec982",
+      "question_id": "absq_813a5871b0f3c22b",
+      "example_id": 2056120695,
+      "task_name": "support.generated_helpscout_customer_merge_813a5871b0f3c22b",
+      "source_task": "support.helpscout_customer_merge",
+      "task_contract_sha256": "024b330cb74e28c5caa7b0486f6e620f36176c95ed98ec8fb9516248df18047a"
+    },
+    {
+      "row": 215,
+      "domain": "support",
+      "sample_id": "rw_13abf7022405915f",
+      "question_id": "absq_2a7fa4ec951aaad6",
+      "example_id": 2024504240,
+      "task_name": "support.generated_zoho_risk_scoring_2a7fa4ec951aaad6",
+      "source_task": "support.zoho_risk_scoring",
+      "task_contract_sha256": "93f4895d2f7290fb53e5c2667b9a36d481a933ae95d0dc68105a49ea0d518341"
+    },
+    {
+      "row": 216,
+      "domain": "support",
+      "sample_id": "rw_7ad4f4b2460fbdda",
+      "question_id": "absq_3270a1ae0c1bfc8a",
+      "example_id": 2084893080,
+      "task_name": "support.generated_intercom_reactivation_campaign_3270a1ae0c1bfc8a",
+      "source_task": "support.intercom_reactivation_campaign",
+      "task_contract_sha256": "0a36268f844bb0a3b8a0cdf8971cbb542ef414a05c369c892b63b5db483c8ea5"
+    },
+    {
+      "row": 217,
+      "domain": "support",
+      "sample_id": "rw_48cbb12684c18c3a",
+      "question_id": "absq_d6f40d64d5fa5a57",
+      "example_id": 2004002852,
+      "task_name": "support.generated_gorgias_inventory_routing_d6f40d64d5fa5a57",
+      "source_task": "support.gorgias_inventory_routing",
+      "task_contract_sha256": "4ebd1e0f149a2416376c8cc23414081bae7f00f8ede828da14b239b1c168565f"
+    },
+    {
+      "row": 218,
+      "domain": "support",
+      "sample_id": "rw_da94aede6e0ed2dd",
+      "question_id": "absq_d787d548f95a75b1",
+      "example_id": 2045487315,
+      "task_name": "support.generated_reamaze_feedback_sentiment_d787d548f95a75b1",
+      "source_task": "support.reamaze_feedback_sentiment",
+      "task_contract_sha256": "d866249b99d58aed7102f5ae06cf2df622b44a2762ab4352ccbc21480ce3ea03"
+    },
+    {
+      "row": 219,
+      "domain": "support",
+      "sample_id": "rw_e6a0236c73728611",
+      "question_id": "absq_b3d9012a2f576ab6",
+      "example_id": 2050804525,
+      "task_name": "support.generated_zoho_desk_capacity_planning_b3d9012a2f576ab6",
+      "source_task": "support.zoho_desk_capacity_planning",
+      "task_contract_sha256": "9e74745d089d2f353458125952d848684ed0b423c9eaa6ff0a0e68d278bbd3bd"
+    },
+    {
+      "row": 220,
+      "domain": "support",
+      "sample_id": "rw_ca850e370b5edbaf",
+      "question_id": "absq_214145b9be5b8adc",
+      "example_id": 2094053550,
+      "task_name": "support.generated_freshdesk_csat_followup_214145b9be5b8adc",
+      "source_task": "support.freshdesk_csat_followup",
+      "task_contract_sha256": "70eb96b59921e05f442fb37b2b7aa4a28fe8e6c33104bced99882f35365cfd6e"
+    },
+    {
+      "row": 221,
+      "domain": "support",
+      "sample_id": "rw_5ad206dde6a8fd54",
+      "question_id": "absq_3abcd11f4e99c22b",
+      "example_id": 2042618159,
+      "task_name": "support.generated_reamaze_feedback_sentiment_3abcd11f4e99c22b",
+      "source_task": "support.reamaze_feedback_sentiment",
+      "task_contract_sha256": "1507e5c88de8a66b455864957086d84f96bb04611b30fca536a11aa76c4f5c17"
+    },
+    {
+      "row": 222,
+      "domain": "support",
+      "sample_id": "rw_3318fce10d293002",
+      "question_id": "absq_8a236942d82a92e6",
+      "example_id": 2094357246,
+      "task_name": "support.generated_zoho_multitenant_isolation_8a236942d82a92e6",
+      "source_task": "support.zoho_multitenant_isolation",
+      "task_contract_sha256": "0b760283aab524fa198bb7714eb5bbfda1c223d440b6b253d7976abaca84ca17"
+    },
+    {
+      "row": 223,
+      "domain": "support",
+      "sample_id": "rw_4c17a5b2bd1efc92",
+      "question_id": "absq_a2c7903d7ddd2f62",
+      "example_id": 2040625588,
+      "task_name": "support.generated_zoho_multitenant_isolation_a2c7903d7ddd2f62",
+      "source_task": "support.zoho_multitenant_isolation",
+      "task_contract_sha256": "ac6907129512c12172a94f0e67955f021f92c0e7423765fcd3ef761470dea936"
+    },
+    {
+      "row": 224,
+      "domain": "support",
+      "sample_id": "rw_c61324b8240a8bba",
+      "question_id": "absq_68d88913872c5b41",
+      "example_id": 2042915506,
+      "task_name": "support.generated_reamaze_campaign_tracking_68d88913872c5b41",
+      "source_task": "support.reamaze_campaign_tracking",
+      "task_contract_sha256": "821e7744620eba8f490c45c84399d341376e5df86892c7bccd5374a8bc4f7e16"
+    },
+    {
+      "row": 225,
+      "domain": "support",
+      "sample_id": "rw_baeffbdedfa21440",
+      "question_id": "absq_5cda2256cb963e01",
+      "example_id": 2011868380,
+      "task_name": "support.generated_zendesk_maintenance_notify_5cda2256cb963e01",
+      "source_task": "support.zendesk_maintenance_notify",
+      "task_contract_sha256": "78a686f57ec77cedf04148b1a2f408a02446e8f028e3539d2fa365a265d66cfc"
+    },
+    {
+      "row": 226,
+      "domain": "support",
+      "sample_id": "rw_f9d387232bf6e83b",
+      "question_id": "absq_100a10ceae3c75f6",
+      "example_id": 2000304720,
+      "task_name": "support.generated_reamaze_cross_platform_dedup_100a10ceae3c75f6",
+      "source_task": "support.reamaze_cross_platform_dedup",
+      "task_contract_sha256": "82a942c7d1338968c64e91156691624d925979e0385154940dd8b4958b6ccc0f"
+    },
+    {
+      "row": 227,
+      "domain": "support",
+      "sample_id": "rw_b1e7a37060b84af3",
+      "question_id": "absq_3e70122902a5a588",
+      "example_id": 2078180641,
+      "task_name": "support.generated_gorgias_inventory_routing_3e70122902a5a588",
+      "source_task": "support.gorgias_inventory_routing",
+      "task_contract_sha256": "2e04baab2315d797893ac8ac3ff28194a696313d13d31c214ca18b9e7367117f"
+    },
+    {
+      "row": 228,
+      "domain": "support",
+      "sample_id": "rw_513f281e1576f89d",
+      "question_id": "absq_a0003473be8d8f68",
+      "example_id": 2034648046,
+      "task_name": "support.generated_zendesk_customer_360_a0003473be8d8f68",
+      "source_task": "support.zendesk_customer_360",
+      "task_contract_sha256": "f023aedf643aae6e093d585aa1270a07d9aa02d1a8c57595f4098605d940414f"
+    },
+    {
+      "row": 229,
+      "domain": "support",
+      "sample_id": "rw_6e351d6196a46ce5",
+      "question_id": "absq_6ef76dcb93ff40b7",
+      "example_id": 2047822829,
+      "task_name": "support.generated_helpcrunch_usage_alerts_6ef76dcb93ff40b7",
+      "source_task": "support.helpcrunch_usage_alerts",
+      "task_contract_sha256": "347ce12e3cdce8461cda66ca3316711e09d9dff2cde3f3c000ce3f9fddde8c54"
+    },
+    {
+      "row": 230,
+      "domain": "support",
+      "sample_id": "rw_8ab664602c373a40",
+      "question_id": "absq_69d42e970876ecfd",
+      "example_id": 2068666486,
+      "task_name": "support.generated_helpscout_jira_bugs_69d42e970876ecfd",
+      "source_task": "support.helpscout_jira_bugs",
+      "task_contract_sha256": "bed293e0f65c9352241a34f7f4c1cba6036d63a700b4d99e9891a4d1e07b3ad3"
+    },
+    {
+      "row": 231,
+      "domain": "support",
+      "sample_id": "rw_cca1eaaa4b705ccf",
+      "question_id": "absq_d0625c329f59a1da",
+      "example_id": 2005587327,
+      "task_name": "support.generated_zoho_resolution_patterns_d0625c329f59a1da",
+      "source_task": "support.zoho_resolution_patterns",
+      "task_contract_sha256": "0b2e26f480655e2f184f82e4a1cc67f9ebc2cc372143bd719d1dbd6b804943cf"
+    },
+    {
+      "row": 232,
+      "domain": "support",
+      "sample_id": "rw_08f43ca38d32da02",
+      "question_id": "absq_35d2f682f5072480",
+      "example_id": 2029809131,
+      "task_name": "support.generated_freshdesk_zoho_migration_35d2f682f5072480",
+      "source_task": "support.freshdesk_zoho_migration",
+      "task_contract_sha256": "beab6b4cdbe10a4f725ad77b522184b71e043a7d97f414d07c428324c006bc28"
+    },
+    {
+      "row": 233,
+      "domain": "support",
+      "sample_id": "rw_3e04fb0fd96075a7",
+      "question_id": "absq_ccd93a062d5ecd4f",
+      "example_id": 2064525016,
+      "task_name": "support.generated_zendesk_customer_360_ccd93a062d5ecd4f",
+      "source_task": "support.zendesk_customer_360",
+      "task_contract_sha256": "beff5e117a21368d8503be9957cc576916409f3d59379bab56088daa1bfa191d"
+    },
+    {
+      "row": 234,
+      "domain": "support",
+      "sample_id": "rw_0d35fd602746794a",
+      "question_id": "absq_7fd4c11bf2afe143",
+      "example_id": 2052407758,
+      "task_name": "support.generated_helpcrunch_trial_nurture_7fd4c11bf2afe143",
+      "source_task": "support.helpcrunch_trial_nurture",
+      "task_contract_sha256": "254966c0c9f62a9ca9478f61c38e19008953831d609d8b2c4cf3a0a300b79311"
+    },
+    {
+      "row": 235,
+      "domain": "sales",
+      "sample_id": "rw_085270fb4b812340",
+      "question_id": "absq_d594e4d161c5450e",
+      "example_id": 2076445343,
+      "task_name": "sales.generated_zoom_meeting_followup_d594e4d161c5450e",
+      "source_task": "sales.zoom_meeting_followup",
+      "task_contract_sha256": "44e7bfde10094fce290722bb2d217dc6b32c5a12cf4e14b0fb2381ecc6b921c2"
+    },
+    {
+      "row": 236,
+      "domain": "sales",
+      "sample_id": "rw_0845017bed4c646d",
+      "question_id": "absq_7944a68ba445d28c",
+      "example_id": 2034625749,
+      "task_name": "sales.generated_cross_modal_renewal_processing_7944a68ba445d28c",
+      "source_task": "sales.cross_modal_renewal_processing",
+      "task_contract_sha256": "4a9146047d89e4e12dcfdf797d9dbc10b12f7d999f1b1fdc0a58950f187caf90"
+    },
+    {
+      "row": 237,
+      "domain": "sales",
+      "sample_id": "rw_45fc03f1cd3ca1ae",
+      "question_id": "absq_39b9c890882bcc3b",
+      "example_id": 2031082800,
+      "task_name": "sales.generated_multi_hop_lookup_39b9c890882bcc3b",
+      "source_task": "sales.multi_hop_lookup",
+      "task_contract_sha256": "2c7989fa370a97f6f17a62e7cca6e1a1fa098dfc4f4b008bbfd9e4c8c72c5d7b"
+    },
+    {
+      "row": 238,
+      "domain": "sales",
+      "sample_id": "rw_84c3f8be4f9a3f9d",
+      "question_id": "absq_2a5629617e997848",
+      "example_id": 2064751672,
+      "task_name": "sales.generated_chatgpt_proposal_customization_2a5629617e997848",
+      "source_task": "sales.chatgpt_proposal_customization",
+      "task_contract_sha256": "b95eaf4e90cc86ab6675756a29c4dff583eed36044628fb7516d0192d334ecef"
+    },
+    {
+      "row": 239,
+      "domain": "sales",
+      "sample_id": "rw_70f5df94bbd084f4",
+      "question_id": "absq_f853142422efdead",
+      "example_id": 2081601666,
+      "task_name": "sales.generated_cross_reference_validation_f853142422efdead",
+      "source_task": "sales.cross_reference_validation",
+      "task_contract_sha256": "a7df7f5bf0d0743d4b627117983005c669b1dc5f8118f1a29cea5a3e35f55bf6"
+    },
+    {
+      "row": 240,
+      "domain": "sales",
+      "sample_id": "rw_b2e146d06668d015",
+      "question_id": "absq_e192ad07fd7c7254",
+      "example_id": 2033095968,
+      "task_name": "sales.generated_job_posting_contact_e192ad07fd7c7254",
+      "source_task": "sales.job_posting_contact",
+      "task_contract_sha256": "2334d1c4ba54e90b7b5686e7aa53d12dc5b2a1a0ade0c48f64e28b355f1463d6"
+    },
+    {
+      "row": 241,
+      "domain": "sales",
+      "sample_id": "rw_593b7db8749bac3f",
+      "question_id": "absq_f66f3d45dacb5160",
+      "example_id": 2034790566,
+      "task_name": "sales.generated_job_posting_contact_f66f3d45dacb5160",
+      "source_task": "sales.job_posting_contact",
+      "task_contract_sha256": "15ae5565f95a7af04984be905b8fd98e6573de2f9933217131718c34c799eeb1"
+    },
+    {
+      "row": 242,
+      "domain": "sales",
+      "sample_id": "rw_831709550a59ed29",
+      "question_id": "absq_b5c330aa23ab2c5e",
+      "example_id": 2027818471,
+      "task_name": "sales.generated_chatgpt_lead_classification_pipeline_b5c330aa23ab2c5e",
+      "source_task": "sales.chatgpt_lead_classification_pipeline",
+      "task_contract_sha256": "bff21abb8bf8874b40145f35412e0c8304d7529423f30563389e17f6b1d41c97"
+    },
+    {
+      "row": 243,
+      "domain": "sales",
+      "sample_id": "rw_42d0de6e7c74f818",
+      "question_id": "absq_fa0c2bb21a256dec",
+      "example_id": 2036781407,
+      "task_name": "sales.generated_calendly_discovery_call_fa0c2bb21a256dec",
+      "source_task": "sales.calendly_discovery_call",
+      "task_contract_sha256": "7853b62d27b9ae5c237186a756ed96b3fde864c65e30d79bd2e397c622e469a6"
+    },
+    {
+      "row": 244,
+      "domain": "sales",
+      "sample_id": "rw_6efcbb1143ed30a4",
+      "question_id": "absq_cacef84990e0c76f",
+      "example_id": 2057193394,
+      "task_name": "sales.generated_slack_deal_notification_cacef84990e0c76f",
+      "source_task": "sales.slack_deal_notification",
+      "task_contract_sha256": "e6d5b63c21b8ab00fd7508106f6c96819ed2635de2f98df8a60898734b014e66"
+    },
+    {
+      "row": 245,
+      "domain": "sales",
+      "sample_id": "rw_8326e2ccc3987ba4",
+      "question_id": "absq_7c2e05b7b02d6eb4",
+      "example_id": 2087592135,
+      "task_name": "sales.generated_add_contact_to_campaign_7c2e05b7b02d6eb4",
+      "source_task": "sales.add_contact_to_campaign",
+      "task_contract_sha256": "3783ea05336cb8424c58cbd114539403d3885b0c2090d75dd0de594b6cff1fd0"
+    },
+    {
+      "row": 246,
+      "domain": "sales",
+      "sample_id": "rw_a6e3e161501c3a54",
+      "question_id": "absq_c27c365ef31c1c6c",
+      "example_id": 2079135787,
+      "task_name": "sales.generated_calendly_sequential_meetings_c27c365ef31c1c6c",
+      "source_task": "sales.calendly_sequential_meetings",
+      "task_contract_sha256": "977eee950315c883c90a2ec16431d30c408b80f42f6f78c8a91e93c85bd44b5b"
+    },
+    {
+      "row": 247,
+      "domain": "sales",
+      "sample_id": "rw_18a7fcd916458cc3",
+      "question_id": "absq_cef6cf1eef5625ab",
+      "example_id": 2077449721,
+      "task_name": "sales.generated_competitive_displacement_outreach_cef6cf1eef5625ab",
+      "source_task": "sales.competitive_displacement_outreach",
+      "task_contract_sha256": "e69b3a9124a5abe3b7c64b070578751c33196393c0e8c613c75a92331bef47a0"
+    },
+    {
+      "row": 248,
+      "domain": "sales",
+      "sample_id": "rw_c22905e7fdce6395",
+      "question_id": "absq_e65e4683008723c4",
+      "example_id": 2021151564,
+      "task_name": "sales.generated_chatgpt_contract_summary_e65e4683008723c4",
+      "source_task": "sales.chatgpt_contract_summary",
+      "task_contract_sha256": "1b7a338dd9e3342c481e1c5fa129826031580a8cdf456bb46af3e92662088bd8"
+    },
+    {
+      "row": 249,
+      "domain": "sales",
+      "sample_id": "rw_e49b894b7ab23ed6",
+      "question_id": "absq_4667e19edde59308",
+      "example_id": 2002396437,
+      "task_name": "sales.generated_add_contact_to_campaign_4667e19edde59308",
+      "source_task": "sales.add_contact_to_campaign",
+      "task_contract_sha256": "2ad37843a8642732b197129e13db72e837d437721c7919879f9c942070a335c9"
+    },
+    {
+      "row": 250,
+      "domain": "sales",
+      "sample_id": "rw_0eb38ce074e10ca8",
+      "question_id": "absq_c8d38bb8578d6347",
+      "example_id": 2004606922,
+      "task_name": "sales.generated_meeting_action_items_c8d38bb8578d6347",
+      "source_task": "sales.meeting_action_items",
+      "task_contract_sha256": "a16a4f3d584629b21e6b65674fe8034fa75d4f60574e8d9a88819c88d21ba94e"
+    },
+    {
+      "row": 251,
+      "domain": "sales",
+      "sample_id": "rw_c0875312eda14f1a",
+      "question_id": "absq_4e7055cdf2835747",
+      "example_id": 2090585917,
+      "task_name": "sales.generated_linkedin_job_change_4e7055cdf2835747",
+      "source_task": "sales.linkedin_job_change",
+      "task_contract_sha256": "2e83ca4c24f0a22f2acb0befa493dea3fa193d312038782aee48d62869eaf45c"
+    },
+    {
+      "row": 252,
+      "domain": "sales",
+      "sample_id": "rw_c9fd97f954bacbd4",
+      "question_id": "absq_5cc64458c02f2f9b",
+      "example_id": 2062105536,
+      "task_name": "sales.generated_deal_escalation_5cc64458c02f2f9b",
+      "source_task": "sales.deal_escalation",
+      "task_contract_sha256": "a97621fd09ef17a7964132d9e0d0f93dfa5ccc6b75a42be785914ad573da7726"
+    },
+    {
+      "row": 253,
+      "domain": "sales",
+      "sample_id": "rw_facad35b1ff9d0e8",
+      "question_id": "absq_fc5ba1a2c830ea40",
+      "example_id": 2031141055,
+      "task_name": "sales.generated_slack_channel_for_new_account_fc5ba1a2c830ea40",
+      "source_task": "sales.slack_channel_for_new_account",
+      "task_contract_sha256": "461e512389ca3405d8686c55d1854a58bfb7ff48aebf01b4376fbbecc9653b95"
+    },
+    {
+      "row": 254,
+      "domain": "sales",
+      "sample_id": "rw_7d7f441069a90cf8",
+      "question_id": "absq_8044793bc8eaf37c",
+      "example_id": 2075267423,
+      "task_name": "sales.generated_meeting_action_items_8044793bc8eaf37c",
+      "source_task": "sales.meeting_action_items",
+      "task_contract_sha256": "ffc9c943403d66260ffc827e5ac89c7449a585fdc6f9aa6fc0c53d0a91a935ad"
+    },
+    {
+      "row": 255,
+      "domain": "sales",
+      "sample_id": "rw_594210f8a4483a0c",
+      "question_id": "absq_b53fbd63c500971e",
+      "example_id": 2082748284,
+      "task_name": "sales.generated_cold_email_personalization_b53fbd63c500971e",
+      "source_task": "sales.cold_email_personalization",
+      "task_contract_sha256": "ae11fcb42045ac4d7b5c68f2690cc2c81774d0e818f3072f28c6d5bdd035fdd5"
+    },
+    {
+      "row": 256,
+      "domain": "sales",
+      "sample_id": "rw_7b1c88758f7d90cf",
+      "question_id": "absq_a2ccd6b62e3ea260",
+      "example_id": 2081240631,
+      "task_name": "sales.generated_priority_selection_a2ccd6b62e3ea260",
+      "source_task": "sales.priority_selection",
+      "task_contract_sha256": "a83390e5b98acd0f9b22c735d6918dfb07648dc62068ae6edb7be49c9f0c6e3d"
+    },
+    {
+      "row": 257,
+      "domain": "sales",
+      "sample_id": "rw_395f4e07f6fb15d7",
+      "question_id": "absq_8223b559a320d251",
+      "example_id": 2096252014,
+      "task_name": "sales.generated_zoom_webinar_lead_capture_8223b559a320d251",
+      "source_task": "sales.zoom_webinar_lead_capture",
+      "task_contract_sha256": "d5a9d77d0695643cae3134edd2a1c8a93d9ce7715908df9c0f32b996ed526841"
+    },
+    {
+      "row": 258,
+      "domain": "support",
+      "sample_id": "rw_034b55f60e8068c4",
+      "question_id": "absq_cf0038c15bd4788f",
+      "example_id": 2049358069,
+      "task_name": "support.generated_reamaze_cross_platform_dedup_cf0038c15bd4788f",
+      "source_task": "support.reamaze_cross_platform_dedup",
+      "task_contract_sha256": "fd5e7b27f3691843a1284c96ce0cd1fafd743564189a0343532b904da4335e3e"
+    },
+    {
+      "row": 259,
+      "domain": "support",
+      "sample_id": "rw_356623b90a55bb2c",
+      "question_id": "absq_989b5a5c78f160f6",
+      "example_id": 2055779674,
+      "task_name": "support.generated_reamaze_campaign_tracking_989b5a5c78f160f6",
+      "source_task": "support.reamaze_campaign_tracking",
+      "task_contract_sha256": "0ac791f10fa8ef5c30393893e771ce1eb9e727b1ed83f5412bab463c38f86f01"
+    },
+    {
+      "row": 260,
+      "domain": "support",
+      "sample_id": "rw_7b2833f178c6efee",
+      "question_id": "absq_0ff8674d53851f0a",
+      "example_id": 2028713714,
+      "task_name": "support.generated_helpscout_jira_bugs_0ff8674d53851f0a",
+      "source_task": "support.helpscout_jira_bugs",
+      "task_contract_sha256": "d9fee97342b419a85265c4aa4d322e8d5b1521db9a102d7d26a652dd191bcf91"
+    },
+    {
+      "row": 261,
+      "domain": "support",
+      "sample_id": "rw_51d10732220ebedf",
+      "question_id": "absq_3b86d0270625f594",
+      "example_id": 2006900243,
+      "task_name": "support.generated_reamaze_multilanguage_3b86d0270625f594",
+      "source_task": "support.reamaze_multilanguage",
+      "task_contract_sha256": "9658a6573fa09f6324d57e874e1c81d2afa9cdb86c02293873fbeffbdbcaaa08"
+    },
+    {
+      "row": 262,
+      "domain": "support",
+      "sample_id": "rw_59a2afa17ca6552d",
+      "question_id": "absq_5fe4d19d81d2e6a4",
+      "example_id": 2024141114,
+      "task_name": "support.generated_helpcrunch_usage_alerts_5fe4d19d81d2e6a4",
+      "source_task": "support.helpcrunch_usage_alerts",
+      "task_contract_sha256": "37a7542cb465d640ce2a40cb5ec54809a7c980fd611dcf03dddaf09c371cbb50"
+    },
+    {
+      "row": 263,
+      "domain": "support",
+      "sample_id": "rw_ad305370c817ce5e",
+      "question_id": "absq_830025a1ac2d0423",
+      "example_id": 2069356916,
+      "task_name": "support.generated_intercom_winback_830025a1ac2d0423",
+      "source_task": "support.intercom_winback",
+      "task_contract_sha256": "a946c417cd5861e1040c21fce66e397e7cc36b17eb3462b254b55ad5e1eb81fe"
+    },
+    {
+      "row": 264,
+      "domain": "support",
+      "sample_id": "rw_b385a7021693a898",
+      "question_id": "absq_44d26e6b3edf73ba",
+      "example_id": 2063551730,
+      "task_name": "support.generated_zendesk_gdpr_purge_44d26e6b3edf73ba",
+      "source_task": "support.zendesk_gdpr_purge",
+      "task_contract_sha256": "13f2ce24793a55595297d96f1fd6ea47bf917a2135e26b4f8ebb463981caee22"
+    },
+    {
+      "row": 265,
+      "domain": "support",
+      "sample_id": "rw_faf9b3dba06d5829",
+      "question_id": "absq_f8f0d3bb1224faae",
+      "example_id": 2071208473,
+      "task_name": "support.generated_gorgias_order_lookup_f8f0d3bb1224faae",
+      "source_task": "support.gorgias_order_lookup",
+      "task_contract_sha256": "d9b6a940c7ef31d13a93ff664c064e3bf125922e7d0fa8c301d7dfe2a0693ada"
+    },
+    {
+      "row": 266,
+      "domain": "support",
+      "sample_id": "rw_58f55b96a81ee7fe",
+      "question_id": "absq_5b3c854ae9110418",
+      "example_id": 2059822866,
+      "task_name": "support.generated_zoho_account_health_5b3c854ae9110418",
+      "source_task": "support.zoho_account_health",
+      "task_contract_sha256": "5b895ad2eec8960fbf196fa4de36133c39da02c4f7b0c3b0b4b6c309a10ed771"
+    },
+    {
+      "row": 267,
+      "domain": "support",
+      "sample_id": "rw_2f042dcd9eb717f4",
+      "question_id": "absq_9899bbffdfb01b3a",
+      "example_id": 2000411620,
+      "task_name": "support.generated_hiver_response_sla_9899bbffdfb01b3a",
+      "source_task": "support.hiver_response_sla",
+      "task_contract_sha256": "d9a2a925e32e8042016898ade6279fb80f327e42ecef3c5f84f44293e879a9e4"
+    },
+    {
+      "row": 268,
+      "domain": "support",
+      "sample_id": "rw_e5b3359bf7f525ae",
+      "question_id": "absq_652160ad762310c5",
+      "example_id": 2030344020,
+      "task_name": "support.generated_intercom_reactivation_campaign_652160ad762310c5",
+      "source_task": "support.intercom_reactivation_campaign",
+      "task_contract_sha256": "bb3d2a97d203554889d416538fa6bb54cd80e5da076cc4462622439d2dfd17ca"
+    },
+    {
+      "row": 269,
+      "domain": "support",
+      "sample_id": "rw_21457eb678948071",
+      "question_id": "absq_3baf5283189d3f41",
+      "example_id": 2084108595,
+      "task_name": "support.generated_zendesk_cross_org_merge_3baf5283189d3f41",
+      "source_task": "support.zendesk_cross_org_merge",
+      "task_contract_sha256": "aa76cc110dced89026ba2f5cb5b5c14f72d527013ebeaed596a557801aa7ac4c"
+    },
+    {
+      "row": 270,
+      "domain": "support",
+      "sample_id": "rw_0cfde42618471041",
+      "question_id": "absq_d3ecd269b7d769b1",
+      "example_id": 2034171712,
+      "task_name": "support.generated_zoho_desk_customer_journey_d3ecd269b7d769b1",
+      "source_task": "support.zoho_desk_customer_journey",
+      "task_contract_sha256": "99f2edaa0b9952439b2f06810bf4e1e5bd59263ee3e767ea1fc0cb2b79f5fe39"
+    },
+    {
+      "row": 271,
+      "domain": "support",
+      "sample_id": "rw_dc79c4e0f9c15371",
+      "question_id": "absq_b27474b4ab770467",
+      "example_id": 2000444905,
+      "task_name": "support.generated_zoho_resolution_patterns_b27474b4ab770467",
+      "source_task": "support.zoho_resolution_patterns",
+      "task_contract_sha256": "756a6a44640706d487485c2ab6ac2c69fec7c118daffefc37f12674d5dc3c835"
+    },
+    {
+      "row": 272,
+      "domain": "support",
+      "sample_id": "rw_da9310047d407a8b",
+      "question_id": "absq_a987bac690687323",
+      "example_id": 2031304260,
+      "task_name": "support.generated_helpscout_customer_merge_a987bac690687323",
+      "source_task": "support.helpscout_customer_merge",
+      "task_contract_sha256": "83add4659a34c4361eccf5ffd42d75cb84c4ed413edd70ede518da716beab116"
+    },
+    {
+      "row": 273,
+      "domain": "support",
+      "sample_id": "rw_b1ba332f017bc5de",
+      "question_id": "absq_de613a3e1bdba8da",
+      "example_id": 2072145003,
+      "task_name": "support.generated_zendesk_weekend_handoff_de613a3e1bdba8da",
+      "source_task": "support.zendesk_weekend_handoff",
+      "task_contract_sha256": "66dfb6293fbc12182bac2aba8b94f7e9320e740dffb99193ef89c22c26cc12bd"
+    },
+    {
+      "row": 274,
+      "domain": "support",
+      "sample_id": "rw_4c1f4ba95614402f",
+      "question_id": "absq_f195a90af9070c91",
+      "example_id": 2020577638,
+      "task_name": "support.generated_helpscout_weekly_report_f195a90af9070c91",
+      "source_task": "support.helpscout_weekly_report",
+      "task_contract_sha256": "55f975b892aa51e57a1b25b2ea28d4b026086466706470a75897ddad20c16aed"
+    },
+    {
+      "row": 275,
+      "domain": "support",
+      "sample_id": "rw_300176e1854e31a0",
+      "question_id": "absq_b78c9828348ae078",
+      "example_id": 2035981123,
+      "task_name": "support.generated_zendesk_customer_360_b78c9828348ae078",
+      "source_task": "support.zendesk_customer_360",
+      "task_contract_sha256": "4cffcfdd0a21a59cc12c4afe7e0e59e42bde71060cabbab0713f3319a99c6763"
+    },
+    {
+      "row": 276,
+      "domain": "support",
+      "sample_id": "rw_f2b4af35a38df4c1",
+      "question_id": "absq_746e908fd8311943",
+      "example_id": 2040036599,
+      "task_name": "support.generated_zoho_account_health_746e908fd8311943",
+      "source_task": "support.zoho_account_health",
+      "task_contract_sha256": "638b06b233e99ae1376574993213e52400c2159c177342ea86555a679f4df10c"
+    },
+    {
+      "row": 277,
+      "domain": "support",
+      "sample_id": "rw_ac03ce2008d7868b",
+      "question_id": "absq_08f402e7cfc4c055",
+      "example_id": 2001601710,
+      "task_name": "support.generated_zoho_resolution_patterns_08f402e7cfc4c055",
+      "source_task": "support.zoho_resolution_patterns",
+      "task_contract_sha256": "c8c64497611c9b1db32dfd82da6bb6be2557a2daf939954f82e218be83ceba6a"
+    },
+    {
+      "row": 278,
+      "domain": "hr",
+      "sample_id": "rw_e2c8a65e42a410c7",
+      "question_id": "absq_54ffc166c0215ac6",
+      "example_id": 2095985901,
+      "task_name": "hr.generated_salary_band_audit_54ffc166c0215ac6",
+      "source_task": "hr.salary_band_audit",
+      "task_contract_sha256": "b11e9f9a7ccf366e8fbc3e8ab17d5601b62b9b82deccce4b11219cc20d870a1f"
+    },
+    {
+      "row": 279,
+      "domain": "hr",
+      "sample_id": "rw_d282d983672b316e",
+      "question_id": "absq_02d2b1c6d0a711ed",
+      "example_id": 2078052288,
+      "task_name": "hr.generated_airtable_recruitment_analytics_02d2b1c6d0a711ed",
+      "source_task": "hr.airtable_recruitment_analytics",
+      "task_contract_sha256": "f53bfda8684c79a9e7c4dd793ce9965cdff2e75de481cfb5295516d78f470b61"
+    },
+    {
+      "row": 280,
+      "domain": "hr",
+      "sample_id": "rw_70ab99fa9a0f0daf",
+      "question_id": "absq_bac7cc09303ae795",
+      "example_id": 2084714359,
+      "task_name": "hr.generated_background_check_followup_bac7cc09303ae795",
+      "source_task": "hr.background_check_followup",
+      "task_contract_sha256": "351b1e9e045eb004ae74b567b990fe6cca59b7512681a8b8ca4253f18497b6c2"
+    },
+    {
+      "row": 281,
+      "domain": "hr",
+      "sample_id": "rw_07ce02aaa6f1f0e4",
+      "question_id": "absq_abc12a94c09a5c00",
+      "example_id": 2092986202,
+      "task_name": "hr.generated_safety_incident_reporting_abc12a94c09a5c00",
+      "source_task": "hr.safety_incident_reporting",
+      "task_contract_sha256": "77bf48bc9412803f7e98a7d0c58d4252c5963837280012ffb453532627b14ded"
+    },
+    {
+      "row": 282,
+      "domain": "hr",
+      "sample_id": "rw_077001022466108d",
+      "question_id": "absq_9d097d7d8c9f0a87",
+      "example_id": 2074395543,
+      "task_name": "hr.generated_interview_scheduling_9d097d7d8c9f0a87",
+      "source_task": "hr.interview_scheduling",
+      "task_contract_sha256": "1a0f8787ec0d3ceb7b0c6aa972cfa3d17b63efa422f5e4eb501ea354a52252b7"
+    },
+    {
+      "row": 283,
+      "domain": "hr",
+      "sample_id": "rw_cb269a17b45a475a",
+      "question_id": "absq_f0cafac7a96fa3bf",
+      "example_id": 2061289232,
+      "task_name": "hr.generated_calendly_manager_office_hours_f0cafac7a96fa3bf",
+      "source_task": "hr.calendly_manager_office_hours",
+      "task_contract_sha256": "98a9e7a4b7cdab4816bf303121e78346d8b38a030ea616d690b5f4d9adf3d24b"
+    },
+    {
+      "row": 284,
+      "domain": "hr",
+      "sample_id": "rw_79fc5a73d6daced8",
+      "question_id": "absq_2af0a0370e0f3a73",
+      "example_id": 2016042306,
+      "task_name": "hr.generated_org_restructure_update_2af0a0370e0f3a73",
+      "source_task": "hr.org_restructure_update",
+      "task_contract_sha256": "95f9c458aa84b65d3af74415616e6b57303f3855082d14e1c4942747d9308b7c"
+    },
+    {
+      "row": 285,
+      "domain": "hr",
+      "sample_id": "rw_1cf733e30475e598",
+      "question_id": "absq_a226fd30d05b78fa",
+      "example_id": 2093783865,
+      "task_name": "hr.generated_exit_interview_scheduling_a226fd30d05b78fa",
+      "source_task": "hr.exit_interview_scheduling",
+      "task_contract_sha256": "735105e9cc7b4455722d4320df97fc80ae0a1d9734eb694fbb82b73359627f2b"
+    },
+    {
+      "row": 286,
+      "domain": "hr",
+      "sample_id": "rw_a2ba031760407caa",
+      "question_id": "absq_85c1b8d8e7a9a17b",
+      "example_id": 2022839441,
+      "task_name": "hr.generated_buddy_assignment_85c1b8d8e7a9a17b",
+      "source_task": "hr.buddy_assignment",
+      "task_contract_sha256": "535a5e500a988c18d744cb7c333eafbd1ed9e004920dd3f765930e4d694efe1e"
+    },
+    {
+      "row": 287,
+      "domain": "hr",
+      "sample_id": "rw_4be79c654f3b2a63",
+      "question_id": "absq_1363b6b6efbcb3fa",
+      "example_id": 2026777282,
+      "task_name": "hr.generated_rto_compliance_check_1363b6b6efbcb3fa",
+      "source_task": "hr.rto_compliance_check",
+      "task_contract_sha256": "59d302954eb9ea89b870f449af5a31295973702a3ba616cafd20c686bebe1cbb"
+    },
+    {
+      "row": 288,
+      "domain": "hr",
+      "sample_id": "rw_1b5ae246f772e734",
+      "question_id": "absq_2aaeefb17379dbf5",
+      "example_id": 2066293155,
+      "task_name": "hr.generated_salary_adjustment_processing_2aaeefb17379dbf5",
+      "source_task": "hr.salary_adjustment_processing",
+      "task_contract_sha256": "cb395067d477cee68e12f0d98557a8206fde4eac0e4b68961cf3d4793ba902d3"
+    },
+    {
+      "row": 289,
+      "domain": "hr",
+      "sample_id": "rw_6b9a9684f3c962d7",
+      "question_id": "absq_4884ef524259b131",
+      "example_id": 2023317233,
+      "task_name": "hr.generated_team_restructure_notification_4884ef524259b131",
+      "source_task": "hr.team_restructure_notification",
+      "task_contract_sha256": "4a2c37b4b512ac784ad831ee26318aeb2cecf4411d28c834c39e23620f36eba2"
+    },
+    {
+      "row": 290,
+      "domain": "hr",
+      "sample_id": "rw_5ddedc115f191a19",
+      "question_id": "absq_6e8cc35a35d62142",
+      "example_id": 2018275320,
+      "task_name": "hr.generated_handbook_acknowledgment_6e8cc35a35d62142",
+      "source_task": "hr.handbook_acknowledgment",
+      "task_contract_sha256": "3faf729e3ff2429f0d6ac0e6530a05dfd8164c8a4b653c4b57ac1f03c4a36ac3"
+    },
+    {
+      "row": 291,
+      "domain": "hr",
+      "sample_id": "rw_ed975e012061d7e1",
+      "question_id": "absq_439e940f7f6700e4",
+      "example_id": 2015945619,
+      "task_name": "hr.generated_policy_update_distribution_439e940f7f6700e4",
+      "source_task": "hr.policy_update_distribution",
+      "task_contract_sha256": "0d016c381b2222ba24b301d92ad73619a60d193300b41bf7637ff0f0c68b6be4"
+    },
+    {
+      "row": 292,
+      "domain": "hr",
+      "sample_id": "rw_349e1aff7020c015",
+      "question_id": "absq_930a0f5b1524f096",
+      "example_id": 2098032212,
+      "task_name": "hr.generated_candidate_rejection_followup_930a0f5b1524f096",
+      "source_task": "hr.candidate_rejection_followup",
+      "task_contract_sha256": "233006a6507635a561fb7bcea6fbca417298cd394e1551e07a2db22b5ae1353d"
+    },
+    {
+      "row": 293,
+      "domain": "hr",
+      "sample_id": "rw_139117e5109da950",
+      "question_id": "absq_1800d286be501d46",
+      "example_id": 2047923909,
+      "task_name": "hr.generated_employee_transfer_approval_workflow_1800d286be501d46",
+      "source_task": "hr.employee_transfer_approval_workflow",
+      "task_contract_sha256": "0a73284f85198a424f976ff85b9dbf613a2caa415bdec506c05e7e53cf8481e8"
+    },
+    {
+      "row": 294,
+      "domain": "hr",
+      "sample_id": "rw_94d80f12da68dfd2",
+      "question_id": "absq_cf6234f091aff8ae",
+      "example_id": 2030715013,
+      "task_name": "hr.generated_expense_report_audit_cf6234f091aff8ae",
+      "source_task": "hr.expense_report_audit",
+      "task_contract_sha256": "cd06362b0b7524af5ff81007a011e3f371f3bc7c32f96eae4e512cf2093ca6ff"
+    },
+    {
+      "row": 295,
+      "domain": "hr",
+      "sample_id": "rw_6866db098a4eb644",
+      "question_id": "absq_08308affaa1138e1",
+      "example_id": 2081477907,
+      "task_name": "hr.generated_termination_checklist_08308affaa1138e1",
+      "source_task": "hr.termination_checklist",
+      "task_contract_sha256": "dfb0f67e1a5efce8413072d688370d6d1c7e3476d29c62b7b7e0ab2fe8531c6b"
+    },
+    {
+      "row": 296,
+      "domain": "hr",
+      "sample_id": "rw_b54b610f01070d56",
+      "question_id": "absq_d585e808148d4160",
+      "example_id": 2063351749,
+      "task_name": "hr.generated_training_compliance_d585e808148d4160",
+      "source_task": "hr.training_compliance",
+      "task_contract_sha256": "754b66ebe78f6c5763da2b58bc4921a9ddfb086cac91050031656fccbf64d72d"
+    },
+    {
+      "row": 297,
+      "domain": "hr",
+      "sample_id": "rw_2dea5188eb26a6ec",
+      "question_id": "absq_12c858f605a643df",
+      "example_id": 2050012714,
+      "task_name": "hr.generated_survey_distribution_12c858f605a643df",
+      "source_task": "hr.survey_distribution",
+      "task_contract_sha256": "b3520fb8aac16158b20ba14ae26d26bfb77908fa23225d3f70665ba18c6775cc"
+    },
+    {
+      "row": 298,
+      "domain": "hr",
+      "sample_id": "rw_165a7a93bf12d3b1",
+      "question_id": "absq_a305448d180adae6",
+      "example_id": 2068142883,
+      "task_name": "hr.generated_job_posting_refresh_a305448d180adae6",
+      "source_task": "hr.job_posting_refresh",
+      "task_contract_sha256": "7bc37eec7a58e4846c29347b79d085a1be4072a22319c74b1c8b71a316836725"
+    },
+    {
+      "row": 299,
+      "domain": "hr",
+      "sample_id": "rw_1182bc0ab9509590",
+      "question_id": "absq_f013e30cfef7fe92",
+      "example_id": 2049335093,
+      "task_name": "hr.generated_payroll_discrepancy_f013e30cfef7fe92",
+      "source_task": "hr.payroll_discrepancy",
+      "task_contract_sha256": "e17aad2022c5dc5a2b8831724bb8e08c9b6e19fd7f1970112754a44fd7d2e36c"
+    },
+    {
+      "row": 300,
+      "domain": "hr",
+      "sample_id": "rw_367cac864a334eb6",
+      "question_id": "absq_089c909ba6cd3df4",
+      "example_id": 2087214805,
+      "task_name": "hr.generated_slack_benefits_inquiry_089c909ba6cd3df4",
+      "source_task": "hr.slack_benefits_inquiry",
+      "task_contract_sha256": "452f06bfee9d0e8957f3547a53f5718d38bbcc81f17e982699a1d17a0c26675c"
+    }
+  ]
+}

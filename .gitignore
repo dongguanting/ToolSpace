@@ -1,0 +1,20 @@
+# Local credentials and Python environments
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+
+# Generated evaluation and pipeline output
+Automation-Pro/results/
+Automation-Pro/dist/
+Tool-Space/outputs/
+Tool-Space/validation/
+Tool-Space/dist/
+Tool-Space/build/
+*.egg-info/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
