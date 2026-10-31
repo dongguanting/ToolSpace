@@ -1,43 +1,52 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:05.000
-One task. Many systems. A reconciliation workflow spans spreadsheets, routing, and messaging.
+00:00:00.000 --> 00:00:08.000
+One intention, many systems: travel, finance, customer support, teamwork, research, and home life.
 
-00:00:05.000 --> 00:00:08.200
-Data-first synthesis can drift from real interfaces, lack execution evidence, and isolate environments.
+00:00:08.000 --> 00:00:10.000
+Real tasks cross environments. Training tasks often stop at one environment.
 
-00:00:08.200 --> 00:00:11.000
-Reverse the order. Start with tools and execution-witnessed compositions.
+00:00:10.000 --> 00:00:14.000
+ToolSpace reverses the order: start with real tools.
 
-00:00:11.000 --> 00:00:15.000
-ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents.
-
-00:00:15.000 --> 00:00:19.000
-Mine typed dependencies from real execution traces using deterministic rules.
+00:00:14.000 --> 00:00:19.000
+Connect tools that actually work together, using evidence from real execution.
 
 00:00:19.000 --> 00:00:22.000
-2,042 canonical tools. 804 environments. Data, state, and retry dependencies.
+Build environments around what those tools need.
 
-00:00:22.000 --> 00:00:27.000
-Ground environments by tool type: synthesize persistent state, restore snapshots, or reuse recorded returns.
+00:00:22.000 --> 00:00:25.000
+Follow one path: reconcile a budget, write the summary, and tell the team.
 
-00:00:27.000 --> 00:00:32.000
-AutomationBench to AutomationBench Pro: bind each next call to earlier observations.
+00:00:25.000 --> 00:00:29.000
+Read the budget and actual spend: 2000 budget, 1500 spent, 500 remaining.
 
-00:00:32.000 --> 00:00:34.340
-Reject the candidate, restore the checkpoint, and resample. The offline search reports one rejection and one backtrack.
+00:00:29.000 --> 00:00:30.500
+Read the project routing to find the finance-review channel.
 
-00:00:34.340 --> 00:00:41.000
-Read budget, actuals, and routing. Write actual spend 1500 and variance 500. Post the summary to CFINANCE01.
+00:00:30.500 --> 00:00:32.000
+Explore a candidate route that sends the message first.
 
-00:00:41.000 --> 00:00:46.000
-Reverse-synthesize a task and native assertions. Replay from the initial state: passed.
+00:00:32.000 --> 00:00:34.500
+The next write uses the wrong destination and is refused.
 
-00:00:46.000 --> 00:00:53.000
-Across seven benchmarks, ToolSpace-744B-A40B with SFT averages 56.6. The 8B and 35B variants improve further with RL after SFT.
+00:00:34.500 --> 00:00:37.000
+Restore the last state. Backtrack and undo the candidate message.
 
-00:00:53.000 --> 00:00:58.000
-AutomationBench Pro and Tau3 Banking Pro: final scores for six frontier models from paper Table 2.
+00:00:37.000 --> 00:00:39.500
+Try another route: write the summary to the correct spreadsheet.
 
-00:00:58.000 --> 00:01:00.000
-ToolSpace. Start with tools. Scale verifiable tasks. toolspace-agent.github.io
+00:00:39.500 --> 00:00:43.000
+Send the summary. The workbook is updated and the team is informed.
+
+00:00:43.000 --> 00:00:49.000
+Start over and replay the successful path. Check the saved summary and the message. Keep the verified task.
+
+00:00:49.000 --> 00:00:55.000
+Results across all seven benchmarks. ToolSpace-744B-A40B with SFT averages 56.6; 8B and 35B improve further with RL after SFT.
+
+00:00:55.000 --> 00:00:59.000
+Final scores on AutomationBench Pro and Tau3 Banking Pro.
+
+00:00:59.000 --> 00:01:00.000
+ToolSpace. Start with tools. Scale verifiable tasks.

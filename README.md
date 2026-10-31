@@ -29,10 +29,10 @@
 <a id="demo"></a>
 ## 🎬 ToolSpace in One Minute
 
-https://github.com/user-attachments/assets/23d9e0d7-d3d5-4b1c-9d9d-afecb3fda5f1
+https://github.com/user-attachments/assets/59ea5ea4-1aea-486f-aefa-cc26240f8fa4
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/23d9e0d7-d3d5-4b1c-9d9d-afecb3fda5f1"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/user-attachments/assets/59ea5ea4-1aea-486f-aefa-cc26240f8fa4"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
   <a href="https://toolspace-agent.github.io/#demo"><b>Explore the interactive demo ↗</b></a><br>
   <sub>Motivation → framework → executable walk → results · local execution with fixed model responses.</sub>
 </p>
