@@ -1,52 +1,39 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:08.000
-One intention, many systems: travel, finance, customer support, teamwork, research, and home life.
+00:00.000 --> 00:03.000
+ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents.
 
-00:00:08.000 --> 00:00:10.000
-Real tasks cross environments. Training tasks often stop at one environment.
+00:03.000 --> 00:10.600
+Real tasks span many environments. ToolSpace starts from tools and their dependencies.
 
-00:00:10.000 --> 00:00:14.000
-ToolSpace reverses the order: start with real tools.
+00:10.800 --> 00:17.800
+Connect tools, ground environments, and sample long-horizon paths.
 
-00:00:14.000 --> 00:00:19.000
-Connect tools that actually work together, using evidence from real execution.
+00:18.000 --> 00:25.000
+This project-page graph simulation follows tool calls across familiar environments.
 
-00:00:19.000 --> 00:00:22.000
-Build environments around what those tools need.
+00:25.000 --> 00:32.350
+The camera follows the selected route through the environment network.
 
-00:00:22.000 --> 00:00:25.000
-Follow one path: reconcile a budget, write the summary, and tell the team.
+00:32.350 --> 00:34.780
+A simulated candidate is rejected. Return to the previous node and resample.
 
-00:00:25.000 --> 00:00:29.000
-Read the budget and actual spend: 2000 budget, 1500 spent, 500 remaining.
+00:34.780 --> 00:42.000
+The selected path reaches ten environments in 32 accepted steps.
 
-00:00:29.000 --> 00:00:30.500
-Read the project routing to find the finance-review channel.
+00:42.000 --> 00:45.500
+ToolSpace reverse-synthesizes tasks and verifies them by replay.
+The green wave illustrates this verification stage.
 
-00:00:30.500 --> 00:00:32.000
-Explore a candidate route that sends the message first.
+00:45.500 --> 00:48.000
+The paper reports 2,042 canonical tools and 804 environments.
 
-00:00:32.000 --> 00:00:34.500
-The next write uses the wrong destination and is refused.
+00:48.000 --> 00:54.000
+ToolSpace-744B-A40B, trained with SFT, averages 56.6 across seven benchmarks.
+Smaller models improve further with agent RL after SFT.
 
-00:00:34.500 --> 00:00:37.000
-Restore the last state. Backtrack and undo the candidate message.
-
-00:00:37.000 --> 00:00:39.500
-Try another route: write the summary to the correct spreadsheet.
-
-00:00:39.500 --> 00:00:43.000
-Send the summary. The workbook is updated and the team is informed.
-
-00:00:43.000 --> 00:00:49.000
-Start over and replay the successful path. Check the saved summary and the message. Keep the verified task.
-
-00:00:49.000 --> 00:00:55.000
-Results across all seven benchmarks. ToolSpace-744B-A40B with SFT averages 56.6; 8B and 35B improve further with RL after SFT.
-
-00:00:55.000 --> 00:00:59.000
+00:54.000 --> 00:58.000
 Final scores on AutomationBench Pro and Tau3 Banking Pro.
 
-00:00:59.000 --> 00:01:00.000
+00:58.000 --> 01:00.000
 ToolSpace. Start with tools. Scale verifiable tasks.
