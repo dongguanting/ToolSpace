@@ -887,7 +887,7 @@
       "example_id": 2033506021,
       "task_name": "hr.generated_candidate_research_dossier_1abd55cdaa386024",
       "source_task": "hr.candidate_research_dossier",
-      "task_contract_sha256": "15445c23d90472c9dd023dc52b258ef692f9ef0c053d2bb06d46e0f2c60be682"
+      "task_contract_sha256": "f198ec89a0cebab2b32dfb22206119b40a0377411f72e3e11971f22171623837"
     },
     {
       "row": 89,
@@ -917,7 +917,7 @@
       "example_id": 2055034744,
       "task_name": "hr.generated_team_restructure_notification_0064e50124d763c5",
       "source_task": "hr.team_restructure_notification",
-      "task_contract_sha256": "5bdcaf16b54f25c1e6e2f64cc0357efa46915df10951fa29c5959f5f0a37a96c"
+      "task_contract_sha256": "0e58a9bf2f3a50bedbc2a78fada756faccdd7896d5177f40076d45f83628e5f0"
     },
     {
       "row": 92,
@@ -1037,7 +1037,7 @@
       "example_id": 2054107514,
       "task_name": "hr.generated_equipment_provisioning_a79bf07114602b37",
       "source_task": "hr.equipment_provisioning",
-      "task_contract_sha256": "785b2077c4ff3f2204d4b49c569e25c28082159f24149ce20405b8b7be257295"
+      "task_contract_sha256": "6c0b895b9eeecb146b9cdffba82cc9591462a32848d5996f7a4b8537e32cd8b5"
     },
     {
       "row": 104,
@@ -1047,7 +1047,7 @@
       "example_id": 2085263457,
       "task_name": "hr.generated_candidate_research_dossier_dfa28e3409ac0012",
       "source_task": "hr.candidate_research_dossier",
-      "task_contract_sha256": "64f9ce5a3f2d7171cc1b9b84e0f1cf1ddf8d08db274899dd6408a44f8b39de26"
+      "task_contract_sha256": "ee5b770f9a98ea49d0d3d509fb16de7beb7a58cace1a89fe2c28d8b3a2727e51"
     },
     {
       "row": 105,
@@ -1107,7 +1107,7 @@
       "example_id": 2011808543,
       "task_name": "finance.generated_vendor_insurance_verification_b469b19a2bbab7f5",
       "source_task": "finance.vendor_insurance_verification",
-      "task_contract_sha256": "04543743b69d2b48471b9c68d121e3bcf8c8ab1a1262266a35f5e08602573ce8"
+      "task_contract_sha256": "d9c9d591019c3bd963abbc7724a13524acf8811693b19926b0e321ab1d626e60"
     },
     {
       "row": 111,
@@ -1407,7 +1407,7 @@
       "example_id": 2017964768,
       "task_name": "operations.generated_sheets_asana_approved_request_f467e8b4d177c238",
       "source_task": "operations.sheets_asana_approved_request",
-      "task_contract_sha256": "dc860ad0a38abfb6412c5e73b00a82f46026fb89b8581dd9b915e87315c610bc"
+      "task_contract_sha256": "7461b652899c1185c87b0567ba2a80aa4eaf62317bc6731203e2b2b98e21254e"
     },
     {
       "row": 141,
@@ -1417,7 +1417,7 @@
       "example_id": 2060524619,
       "task_name": "operations.generated_docusign_prospect_nda_02325149838210ef",
       "source_task": "operations.docusign_prospect_nda",
-      "task_contract_sha256": "5670f469e233092f7712aa908f5fa286f0c7931ea58794809935e13d7158248a"
+      "task_contract_sha256": "9d31397cfc9dc4be74a669f913e196dc1018ca2db0b991c545dbaffa503c0cda"
     },
     {
       "row": 142,
@@ -1487,7 +1487,7 @@
       "example_id": 2025789155,
       "task_name": "operations.generated_server_capacity_threshold_alerts_e71acc08805a7ee4",
       "source_task": "operations.server_capacity_threshold_alerts",
-      "task_contract_sha256": "f9c75d17031a397c6847adf3368d788cae984d08308f6053e8d0821443882e67"
+      "task_contract_sha256": "44a75331d3de533c9e9198fe0615fd8c71311bed8b0534b4ae6d0523341e8973"
     },
     {
       "row": 149,
@@ -2067,7 +2067,7 @@
       "example_id": 2028020894,
       "task_name": "support.generated_freshdesk_csat_followup_20a6880387748fb2",
       "source_task": "support.freshdesk_csat_followup",
-      "task_contract_sha256": "5063d8827f76da51dbed73111a0108cff2c88d074f87764fcbfc565a4f2a7f65"
+      "task_contract_sha256": "e93e56013f4589f9da96acab16bfc8fec7770ee71f9945ea564d3df7bb6feb60"
     },
     {
       "row": 207,
@@ -2077,7 +2077,7 @@
       "example_id": 2071161580,
       "task_name": "support.generated_freshdesk_csat_followup_748d411ad51f4f60",
       "source_task": "support.freshdesk_csat_followup",
-      "task_contract_sha256": "93ddc23891cc684cc45dc4f2b8dc404cd26d1f1b80055dd551d1d30e25cedc1e"
+      "task_contract_sha256": "68ddade0e0d8cc4d4e88ad980dea93be5d6366f35d591b0cb33580f039a018cc"
     },
     {
       "row": 208,
@@ -2747,7 +2747,7 @@
       "example_id": 2020577638,
       "task_name": "support.generated_helpscout_weekly_report_f195a90af9070c91",
       "source_task": "support.helpscout_weekly_report",
-      "task_contract_sha256": "b89ef1225eb481e0ae63e020f5c1f92e1d30fde4d174d2e81729ab43a55f6fc0"
+      "task_contract_sha256": "9f773c705062760eaf87720fd13564bd735954fed67c786853b2aecdc6ebecb7"
     },
     {
       "row": 275,
@@ -2777,7 +2777,7 @@
       "example_id": 2001601710,
       "task_name": "support.generated_zoho_resolution_patterns_08f402e7cfc4c055",
       "source_task": "support.zoho_resolution_patterns",
-      "task_contract_sha256": "48d1e98fdb1000ef9e8923c0bcd74862c49da65700e88d45784e186e3a9ada48"
+      "task_contract_sha256": "c3dae72e220b655f64abf82e78d2dbdfab47c002a430cdc9cd5d57eb5914a39d"
     },
     {
       "row": 278,
@@ -2957,7 +2957,7 @@
       "example_id": 2081477907,
       "task_name": "hr.generated_termination_checklist_08308affaa1138e1",
       "source_task": "hr.termination_checklist",
-      "task_contract_sha256": "8f873da94b8a3d10e0644296fb800db2590a1eb53a92eec9de56e1484f1260ad"
+      "task_contract_sha256": "a1d91e78bad6e8ad019eae4e4730e2181024b66946af2c1471e1fd57c79e8cc2"
     },
     {
       "row": 296,

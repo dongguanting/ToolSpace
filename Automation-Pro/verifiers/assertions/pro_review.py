@@ -10,7 +10,7 @@ import hashlib
 import json
 import re
 from collections import Counter
-from verifiers.registry import AssertionRegistry
+from verifiers.registry import AssertionRegistry, negative_assertion
 from verifiers.assertions.workflow import addresses, timestamp
 
 
@@ -32,6 +32,14 @@ def any_groups(text, groups):
 
 def new_mail(world,a):
     return [m for m in world.gmail.messages if 'SENT' in m.label_ids and m.id not in set(a['baseline_ids'])]
+
+
+@AssertionRegistry.register('pro_no_new_mail_to')
+@negative_assertion('gmail')
+def no_new_mail_to(world,a):
+    """Exclude new deliveries without penalizing mail already in the environment."""
+    recipient=a['to'].casefold()
+    return all(recipient not in addresses(m.to+m.cc+m.bcc) for m in new_mail(world,a))
 
 
 def has_date(text,value):
@@ -196,6 +204,20 @@ def csat_tickets(world,a):
 
 def alert_record(text,server,spec):
     return has_record(text,server,spec['readings'].items()) and has_record(text,server,terms=spec['breaches'].keys())
+
+
+@AssertionRegistry.register('pro_alert_email_records')
+def alert_email_records(world,a):
+    """Credit server evidence in either the main alert or a permitted correction.
+
+    The separate coverage assertion enforces correction necessity and timing.
+    This retains each original server check without demanding a redundant email.
+    """
+    mails=[m for m in new_mail(world,a)
+           if addresses(m.to)=={a['to']} and a['severity'].casefold() in (m.subject or '').casefold()]
+    return all(any(alert_record(m.body_plain or '',server,spec)
+                   and re.search(r'(?<!\d)'+re.escape(str(a['threshold']))+r'(?!\d)',m.body_plain or '')
+                   for m in mails) for server,spec in a['servers'].items())
 
 
 @AssertionRegistry.register('pro_alert_email_coverage')
