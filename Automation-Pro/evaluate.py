@@ -251,23 +251,24 @@ def replay_task(row, prediction):
     errors = []
     calls = prediction.get("calls")
     if calls is None:
+        from verifiers.reference_replay import execute_steps
+
         steps = prediction.get("steps")
         if not isinstance(steps, list):
             raise ValueError("Each replay record needs a calls or steps list")
-        calls = [{"name": "api_fetch", "arguments": {
-            "method": step["method"], "url": step["url"],
-            "params": json.dumps(step.get("query") or {}),
-            "body": json.dumps(step.get("body") or {}),
-        }} for step in steps]
-    if not isinstance(calls, list):
-        raise ValueError("calls must be a list")
-    for number, call in enumerate(calls, 1):
-        try:
-            env.execute(call["name"], call.get("arguments", {}))
-        except (ValueError, TypeError, KeyError) as error:
-            errors.append({"call": number, "error": str(error)})
+        execute_steps(env, steps, errors)
+        call_count = len(steps)
+    else:
+        if not isinstance(calls, list):
+            raise ValueError("calls must be a list")
+        call_count = len(calls)
+        for number, call in enumerate(calls, 1):
+            try:
+                env.execute(call["name"], call.get("arguments", {}))
+            except (ValueError, TypeError, KeyError) as error:
+                errors.append({"call": number, "error": str(error)})
     result = {"example_id": row["example_id"], "status": "replayed", **env.score(),
-              "tool_calls": len(calls), "tool_errors": errors}
+              "tool_calls": call_count, "tool_errors": errors}
     return result, {"example_id": row["example_id"], "calls": env.calls}
 
 

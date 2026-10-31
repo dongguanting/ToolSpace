@@ -205,9 +205,7 @@ class XeroPayment(BaseModel):
     reference: Optional[str] = None
     is_reconciled: bool = False
     currency_code: str = "USD"
-    # New trial only: keep archived schema round trips byte-for-byte compatible.
-    if __import__('os').environ.get('AUTOMATIONBENCH_OUTCOME_V3') == '1':
-        currency_rate: Optional[Decimal] = None
+    currency_rate: Optional[Decimal] = None
     updated_date: datetime = Field(default_factory=datetime.now)
 
     def to_display_dict(self) -> Dict:

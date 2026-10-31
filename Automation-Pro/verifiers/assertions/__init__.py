@@ -34,3 +34,7 @@ from verifiers.assertions import quickbooks  # noqa: F401
 from verifiers.assertions import support_apps  # noqa: F401
 from verifiers.assertions import wave  # noqa: F401
 from verifiers.assertions import xero  # noqa: F401
+
+from verifiers.assertions import workflow  # noqa: F401
+
+from verifiers.assertions import pro_review  # noqa: F401

@@ -39,6 +39,16 @@ def allowed_services(info):
     return sorted(allowed)
 
 
+def sent_workflow_records(world):
+    """Identify sends without relying on timestamps of different precision."""
+    return {
+        **{("gmail", m.id): m.internal_date for m in world.gmail.messages
+           if "SENT" in m.label_ids},
+        **{("docusign", e.envelope_id): e.sent_date_time
+           for e in world.docusign.envelopes if e.sent_date_time is not None},
+    }
+
+
 class Environment:
     """An isolated mutable world; only the three API tools are agent accessible."""
 
@@ -50,6 +60,8 @@ class Environment:
         self.initial_state = copy.deepcopy(self.info["initial_state"])
         self.world = WorldState(**self.initial_state)
         self.world.meta.allowed_services = allowed_services(self.info)
+        # Execution evidence stays outside the serialized business state.
+        object.__setattr__(self.world, "_workflow_order", {})
         self.calls = []
         self.tools = {tool.__name__: tool for tool in API_TOOLS}
 
@@ -66,7 +78,11 @@ class Environment:
         arguments = {k: v for k, v in arguments.items() if v != {}}
         tool = self.tools[name]
         injected = {"world": self.world} if "world" in inspect.signature(tool).parameters else {}
+        before = sent_workflow_records(self.world)
         result = tool(**arguments, **injected)
+        for key, value in sent_workflow_records(self.world).items():
+            if key not in before or value != before[key]:
+                self.world._workflow_order[key] = len(self.calls)
         result = result if isinstance(result, str) else json.dumps(result)
         self.calls.append({"name": name, "arguments": arguments, "observation": result})
         return result
