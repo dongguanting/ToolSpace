@@ -1,37 +1,43 @@
 WEBVTT
 
-00:00.000 --> 00:04.000
+00:00:00.000 --> 00:00:05.000
+One task. Many systems. A reconciliation workflow spans spreadsheets, routing, and messaging.
+
+00:00:05.000 --> 00:00:08.200
+Data-first synthesis can drift from real interfaces, lack execution evidence, and isolate environments.
+
+00:00:08.200 --> 00:00:11.000
+Reverse the order. Start with tools and execution-witnessed compositions.
+
+00:00:11.000 --> 00:00:15.000
 ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents.
 
-00:04.000 --> 00:08.000
-Real tools. Cross-service workflows.
-Data, state, and retry dependencies.
+00:00:15.000 --> 00:00:19.000
+Mine typed dependencies from real execution traces using deterministic rules.
 
-00:08.000 --> 00:25.000
-Follow state-compatible edges. Checkpoint before execution.
-On failure: restore the checkpoint and resample the next tool.
+00:00:19.000 --> 00:00:22.000
+2,042 canonical tools. 804 environments. Data, state, and retry dependencies.
 
-00:25.000 --> 00:27.000
-Replay from the initial state.
-Keep the task only when every assertion passes.
+00:00:22.000 --> 00:00:27.000
+Ground environments by tool type: synthesize persistent state, restore snapshots, or reuse recorded returns.
 
-00:27.000 --> 00:35.000
-Ground the graph. Execute the walk. Verify the task.
-77,760 graph nodes. 804 environments. 34,376 SFT samples.
+00:00:27.000 --> 00:00:32.000
+AutomationBench to AutomationBench Pro: bind each next call to earlier observations.
 
-00:35.000 --> 00:42.000
-All seven benchmarks: AutomationBench, SkillsBench, JobBench,
-Tau3-Banking, BFCL-V4, Harvey-LAB, OfficeQA-Pro.
-8B with agent RL: 7.2 to 20.7 average.
+00:00:32.000 --> 00:00:34.340
+Reject the candidate, restore the checkpoint, and resample. The offline search reports one rejection and one backtrack.
 
-00:42.000 --> 00:49.000
-35B-A3B with agent RL: 23.0 to 43.2 average.
-Full per-benchmark results from Table 1.
+00:00:34.340 --> 00:00:41.000
+Read budget, actuals, and routing. Write actual spend 1500 and variance 500. Post the summary to CFINANCE01.
 
-00:49.000 --> 00:56.000
-744B-A40B with SFT: 44.6 to 56.6 average.
-Matches Claude Opus 5's average in Table 1.
+00:00:41.000 --> 00:00:46.000
+Reverse-synthesize a task and native assertions. Replay from the initial state: passed.
 
-00:56.000 --> 01:00.000
-ToolSpace. 8B, 35B-A3B, and 744B-A40B.
-toolspace-agent.github.io
+00:00:46.000 --> 00:00:53.000
+Across seven benchmarks, ToolSpace-744B-A40B with SFT averages 56.6. The 8B and 35B variants improve further with RL after SFT.
+
+00:00:53.000 --> 00:00:58.000
+AutomationBench Pro and Tau3 Banking Pro: final scores for six frontier models from paper Table 2.
+
+00:00:58.000 --> 00:01:00.000
+ToolSpace. Start with tools. Scale verifiable tasks. toolspace-agent.github.io

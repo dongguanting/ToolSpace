@@ -6,7 +6,8 @@
 </picture>
 
 <h1>
-  <img src="assets/readme/logo.svg" width="52" height="52" align="absmiddle" alt=""> ToolSpace<br>
+  <img src="assets/readme/title-light.svg#gh-light-mode-only" width="460" alt="ToolSpace">
+  <img src="assets/readme/title-dark.svg#gh-dark-mode-only" width="460" alt="ToolSpace"><br>
   Scaling Tool-Centric Environment Synthesis<br>for Long-Horizon Agents
 </h1>
 
@@ -28,12 +29,12 @@
 <a id="demo"></a>
 ## 🎬 ToolSpace in One Minute
 
-https://github.com/user-attachments/assets/05d377d9-8247-4a8a-92b0-70aa658579af
+https://github.com/user-attachments/assets/23d9e0d7-d3d5-4b1c-9d9d-afecb3fda5f1
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/05d377d9-8247-4a8a-92b0-70aa658579af"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/user-attachments/assets/23d9e0d7-d3d5-4b1c-9d9d-afecb3fda5f1"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
   <a href="https://toolspace-agent.github.io/#demo"><b>Explore the interactive demo ↗</b></a><br>
-  <sub>Illustrative graph simulation · executable replay available in the offline demo.</sub>
+  <sub>Motivation → framework → executable walk → results · local execution with fixed model responses.</sub>
 </p>
 
 <a id="method"></a>
@@ -92,14 +93,7 @@ Sample **state-compatible successors** by edge weight, grounding arguments in th
 
 Final scores on **AutomationBench Pro** and **Tau3 Banking Pro** (Table 2; higher is better).
 
-| Model | AutomationBench Pro | Tau3 Banking Pro |
-| :--- | ---: | ---: |
-| Claude Opus 5.5 | **26.3** | **35.7** |
-| GPT 6.1 Sol | 24.7 | 29.6 |
-| DeepSeek-V4.1-Flash | 20.0 | **35.7** |
-| GLM 5.3 | 22.7 | 20.4 |
-| Qwen 3.8 Max | 24.0 | 29.6 |
-| GLM 5.2 | 18.0 | 12.2 |
+<p align="center"><img src="assets/readme/pro-results.png" width="100%" alt="AutomationBench Pro and Tau3 Banking Pro: standard and final Pro scores for six frontier models, with final Pro scores highlighted in rose"></p>
 
 <sub>Published scores: Table 2. The paper describes 600 AutomationBench Pro tasks; the public [AutomationBench Pro](Automation-Pro/) package contains 300 frozen tasks. [Tau3 Banking Pro](Tau3-Banking-Pro/) contains 98 tasks, separate from the original 97-task banking set.</sub>
 

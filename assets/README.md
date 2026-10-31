@@ -1,20 +1,24 @@
 # README media
 
-These assets support the root README and share the project's dark blue, violet, and teal visual palette.
+The figures and video share a deep-blue palette with cyan/violet tool paths and rose Pro scores.
 
 | File | Source / purpose |
 | --- | --- |
 | `readme/logo.svg` | Logo from [the ToolSpace project website](https://toolspace-agent.github.io/logo.svg). |
-| `readme/hero.svg` | Editable vector cover, with a schematic tool-composition graph. |
-| `readme/hero.gif` | Eight-second seamless cover loop, 1280 × 480 at 16 fps: drifting graph nodes, flowing path lights, and subtle star pulses. Text stays still; the README uses the static cover when reduced motion is requested. |
-| `readme/title-light.svg`, `readme/title-dark.svg` | Legacy wordmark variants. The README now uses native heading text and the logo so GitHub light/dark themes control text contrast directly. |
-| `readme/framework.png` | Figure 2 extracted from page 6 of the authors' supplied `ToolSpace_Arxiv.pdf`; figure content is unchanged. |
-| `readme/results.svg` | Selected-model average leaderboard and all seven ToolSpace-744B-A40B scores from Table 1. Training labels distinguish SFT from SFT followed by RL. |
-| `demo/toolspace-overview.mp4` | Edited 60-second overview, 1920 × 1080, H.264, with on-screen English captions. Silent. The root README embeds its [GitHub-hosted attachment](https://github.com/user-attachments/assets/05d377d9-8247-4a8a-92b0-70aa658579af) as a native player. Published in [issue #1](https://github.com/dongguanting/ToolSpace/issues/1); this file is the source copy. |
-| `demo/toolspace-preview.gif` | A compact loop showing the graph walkthrough and all seven benchmark results. |
-| `demo/toolspace-poster.png` | Still frame for video previews. |
-| `demo/toolspace-overview.vtt` | English caption track for accessible playback. |
+| `readme/hero.svg`, `readme/hero.gif` | Editable schematic cover and its eight-second animated loop. The README selects the static cover for reduced motion. |
+| `readme/title-light.svg`, `readme/title-dark.svg` | Enlarged logo and wordmark. GitHub's `#gh-light-mode-only` / `#gh-dark-mode-only` fragments follow the active GitHub theme. |
+| `readme/framework.png` | Unchanged Figure 2 from page 6 of the authors' supplied `ToolSpace_Arxiv.pdf`. |
+| `readme/results.svg` | Table 1 selected-model leaderboard and all seven ToolSpace-744B-A40B scores. SFT and subsequent RL are labeled separately. |
+| `readme/pro-results.png` | The authors' supplied two-panel AutomationBench Pro / Banking Pro comparison, included unchanged. The README explains the paper/public-release task-count distinction. |
+| `demo/toolspace-overview.mp4` | New 60-second Remotion paper demo, 1920 × 1080 at 30 fps, H.264 + AAC. The README embeds the [native GitHub attachment](https://github.com/user-attachments/assets/23d9e0d7-d3d5-4b1c-9d9d-afecb3fda5f1), published in [issue #1](https://github.com/dongguanting/ToolSpace/issues/1). |
+| `demo/toolspace-preview.gif` | Compact excerpt of the new workflow and rollback animation. |
+| `demo/toolspace-poster.png` | Paper-introduction frame from the new video. |
+| `demo/toolspace-overview.vtt` | English caption track for the new video. |
 
-The video reframes the [website's interactive graph](https://toolspace-agent.github.io/#demo), then summarizes the method and paper-reported results. The graph is an **illustrative JavaScript simulation**, not a recording of live MCP services or the released Python replay verifier. It is labeled accordingly in the video and README. Only presentation, framing, and captions were adjusted; the simulation's transitions and outcomes were retained.
+## Video sources and scope
 
-The website and paper were consulted on 2026-10-31. The original video results sequence shows all seven benchmark scores and the reported average for each backbone (8B and 35B with SFT followed by RL; 744B with SFT). The README leaderboard was revised on 2026-11-01; the existing video is retained pending the new paper-demo production. The video pauses on a real failure event in the website simulation, then highlights each scale in the complete results table. The editable SVG files contain no scripts or external font dependencies.
+The video was rebuilt on 2026-11-01 from the supplied paper and the released offline reconciliation example. The opening windows are conceptual UI reconstructions. The full tool-space network is schematic. The five-call walkthrough follows real local simulator execution and independent replay; model responses use the bundled fixtures. The run recorded one execution rejection and one backtrack. Because the failed candidate's exact call was not logged, the branch animation illustrates the mechanism without inventing an error trace.
+
+The successful path reads Budget, Actuals and Routing, writes Actual 1500 / Variance 500 to Reconciliation, and posts to Slack channel CFINANCE01. The displayed native assertions and replay result come from that example. Scores come from Tables 1 and 2, not a new online benchmark run. The Pro image is author-supplied; its public 300-task label does not establish a rerun of the paper's reported 600-task AutomationBench Pro experiment.
+
+The electronic score is original procedural audio. [Arbor](https://github.com/RUC-NLPIR/Arbor) and [AREX-Skill](https://github.com/VectorSpaceLab/AREX-Skill) were studied for pacing, terminal/window choreography, and graph transitions; none of their footage, audio, or artwork is included. Editable vectors contain no scripts or external font dependencies.
