@@ -6,19 +6,16 @@
 </picture>
 
 <h1>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/readme/title-dark.svg">
-    <img src="assets/readme/title-light.svg" width="360" alt="ToolSpace">
-  </picture><br>
+  <img src="assets/readme/logo.svg" width="52" height="52" align="absmiddle" alt=""> ToolSpace<br>
   Scaling Tool-Centric Environment Synthesis<br>for Long-Horizon Agents
 </h1>
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-b5212f.svg)](https://toolspace-agent.github.io/main.pdf)
+![arXiv: coming soon](https://img.shields.io/badge/arXiv-coming_soon-b5212f.svg?logo=arxiv)
+[![Homepage](https://img.shields.io/badge/Project-Homepage-356BFF.svg)](https://toolspace-agent.github.io/)
+<!-- TODO: Link the arXiv badge when released. -->
 [![Model: ToolSpace-8B](https://img.shields.io/badge/🤗%20Model-ToolSpace--8B-ffc107.svg)](https://huggingface.co/dongguanting/ToolSpace-8B)
 [![Model: ToolSpace-35B-A3B](https://img.shields.io/badge/🤗%20Model-ToolSpace--35B--A3B-ffc107.svg)](https://huggingface.co/dongguanting/ToolSpace-35B-A3B)
 [![Model: ToolSpace-744B-A40B](https://img.shields.io/badge/🤗%20Model-ToolSpace--744B--A40B-ffc107.svg)](https://huggingface.co/dongguanting/ToolSpace-744B-A40B)
-![arXiv: coming soon](https://img.shields.io/badge/arXiv-coming_soon-8b949e.svg?logo=arxiv)
-<!-- TODO: Link the arXiv badge when released. -->
 
 *From real tool traces to executable environments and long-horizon tasks through **typed dependencies, state-aware walks, and replay verification**.*
 
@@ -70,9 +67,9 @@ Sample **state-compatible successors** by edge weight, grounding arguments in th
 <a id="results"></a>
 ## 📊 Main Results
 
-**Backbone → ToolSpace** on all seven benchmarks. Scores use each benchmark's native metric.
+**ToolSpace across seven long-horizon agent benchmarks.** ToolSpace-8B and ToolSpace-35B-A3B are SFT checkpoints; their **+ RL** variants continue training from those checkpoints. ToolSpace-744B-A40B uses **SFT only**. Scores use each benchmark's native metric.
 
-<p align="center"><img src="assets/readme/results.svg" alt="Backbone and ToolSpace scores on AutomationBench, SkillsBench, JobBench, Tau3-Banking, BFCL-V4, Harvey-LAB, and OfficeQA-Pro, at 8B, 35B, and 744B scales" width="100%"></p>
+<p align="center"><img src="assets/readme/results.svg" alt="Table 1 leaderboard: ToolSpace-744B-A40B (SFT) and Claude Opus 5 both average 56.6; all seven ToolSpace-744B benchmark scores are shown" width="100%"></p>
 
 <details>
 <summary><b>Per-benchmark scores · Table 1</b></summary>
@@ -93,18 +90,18 @@ Sample **state-compatible successors** by edge weight, grounding arguments in th
 
 ### Harder tasks with the Pro benchmarks
 
-Six frontier models lose **up to 32.9 points** on ToolSpace-generated Pro tasks.
+Final scores on **AutomationBench Pro** and **Tau3 Banking Pro** (Table 2; higher is better).
 
-| Model | Automation → Pro | Banking → Pro |
-| :--- | :---: | :---: |
-| Claude Opus 5.5 | 59.2 → **26.3** (−32.9) | 51.5 → **35.7** (−15.8) |
-| GPT 6.1 Sol | 50.8 → **24.7** (−26.1) | 46.4 → **29.6** (−16.8) |
-| DeepSeek-V4.1-Flash | 50.0 → **20.0** (−30.0) | 47.4 → **35.7** (−11.7) |
-| GLM 5.3 | 51.5 → **22.7** (−28.8) | 40.2 → **20.4** (−19.8) |
-| Qwen 3.8 Max | 49.7 → **24.0** (−25.7) | 55.2 → **29.6** (−25.6) |
-| GLM 5.2 | 29.3 → **18.0** (−11.3) | 37.1 → **12.2** (−24.9) |
+| Model | AutomationBench Pro | Tau3 Banking Pro |
+| :--- | ---: | ---: |
+| Claude Opus 5.5 | **26.3** | **35.7** |
+| GPT 6.1 Sol | 24.7 | 29.6 |
+| DeepSeek-V4.1-Flash | 20.0 | **35.7** |
+| GLM 5.3 | 22.7 | 20.4 |
+| Qwen 3.8 Max | 24.0 | 29.6 |
+| GLM 5.2 | 18.0 | 12.2 |
 
-<sub>Source: Table 2. Parentheses show Pro − standard in percentage points. The paper reports 600 Automation-Pro tasks; the current public [Automation-Pro](Automation-Pro/) package contains 300 frozen tasks. [Tau3-Banking-Pro](Tau3-Banking-Pro/) contains 98 tasks, separate from the original 97-task banking set.</sub>
+<sub>Published scores: Table 2. The paper describes 600 AutomationBench Pro tasks; the public [AutomationBench Pro](Automation-Pro/) package contains 300 frozen tasks. [Tau3 Banking Pro](Tau3-Banking-Pro/) contains 98 tasks, separate from the original 97-task banking set.</sub>
 
 <a id="installation"></a>
 ## 🔧 Installation
@@ -123,10 +120,10 @@ Each module uses its own environment:
 
 | Module | Python | Runtime requirements |
 | :--- | :---: | :--- |
-| Task synthesis | 3.13+ | `uv`; local Automation simulator |
+| AutomationBench Pro synthesis | 3.13+ | `uv`; local Automation simulator |
 | Seven benchmarks | 3.10 / 3.12 / 3.13 | Linux; Node.js 18+; Docker for SkillsBench; Podman for Harvey-LAB |
-| Automation-Pro | 3.10+ | Local simulator and native verifiers |
-| Tau3-Banking-Pro | 3.12 | Linux; Node.js; `ripgrep`, `bubblewrap`, `socat`; working user namespaces |
+| AutomationBench Pro | 3.10+ | Local simulator and native verifiers |
+| Tau3 Banking Pro | 3.12 | Linux; Node.js; `ripgrep`, `bubblewrap`, `socat`; working user namespaces |
 
 Benchmark setup creates separate environments under `benchmark/.runtime/` and installs pinned dependencies. It needs access to GitHub, PyPI, and Hugging Face. See the [system package installation commands](benchmark/README.md#install).
 
@@ -164,7 +161,7 @@ HF_TOKEN=hf_your-read-token
 
 | Used by | Required service |
 | :--- | :--- |
-| Tau3-Banking / Tau3-Banking-Pro | Boyue: GPT-5.2 user simulator and judge/reviewer where enabled; `text-embedding-3-large` for dense retrieval |
+| Tau3-Banking / Tau3 Banking Pro | Boyue: GPT-5.2 user simulator and judge/reviewer where enabled; `text-embedding-3-large` for dense retrieval |
 | JobBench | Boyue: Grok-4.3 rubric judge |
 | Harvey-LAB | Boyue: GLM-5.2 rubric judge and deliverable matching |
 | BFCL-V4 | [SerpAPI](https://serpapi.com/) or [Serper](https://serper.dev/) for web search |
@@ -200,8 +197,8 @@ ToolSpace/
 │   ├── BFCL-V4/
 │   ├── Harvey-LAB/
 │   └── OfficeQA-Pro/
-├── Automation-Pro/              # Frozen automation challenge set
-├── Tau3-Banking-Pro/             # Frozen banking challenge set
+├── Automation-Pro/              # AutomationBench Pro evaluation
+├── Tau3-Banking-Pro/             # Tau3 Banking Pro evaluation
 └── assets/                      # README figures and demo media
 ```
 
@@ -209,15 +206,17 @@ ToolSpace/
 | :--- | :--- | :--- |
 | `Tool-Space/` | Tool graph construction, workflow sampling, task/verifier generation, and replay | [Pipeline guide](Tool-Space/README.md) · [Input format](Tool-Space/docs/input-format.md) |
 | `benchmark/` | Seven evaluation suites, pinned dependencies, and unified outputs | [Setup and evaluation](benchmark/README.md) |
-| `Automation-Pro/` | 300 frozen automation tasks across six domains | [Validation, replay, and scoring](Automation-Pro/README.md) |
-| `Tau3-Banking-Pro/` | 98 banking tasks, 698 knowledge documents, and native outcome scoring | [Setup and evaluation](Tau3-Banking-Pro/README.md) |
+| `Automation-Pro/` | AutomationBench Pro: 300 frozen automation tasks across six domains | [Validation, replay, and scoring](Automation-Pro/README.md) |
+| `Tau3-Banking-Pro/` | Tau3 Banking Pro: 98 banking tasks, 698 knowledge documents, and native outcome scoring | [Setup and evaluation](Tau3-Banking-Pro/README.md) |
 
-**Release scope:** `Tool-Space/` implements Automation-based synthesis with **47 services and 758 endpoints**. The broader tool-space and training statistics above describe the paper's experiments.
+**Release scope:** The full ToolSpace graph is large. This release uses AutomationBench as a concrete example: it applies the ToolSpace pipeline to **47 services and 758 endpoints**, composes longer executable workflows, and synthesizes **AutomationBench Pro** tasks with verifiers. The broader tool-space and training statistics describe the paper's experiments.
 
 <a id="quick-start"></a>
 ## 🚀 Quick Start
 
-### 1. Task Synthesis
+### 1. ToolSpace Task Synthesis for AutomationBench Pro
+
+Starting from AutomationBench environments, build the tool graph, sample state-aware long-horizon workflows, jointly generate tasks and verifiers, and replay them to produce AutomationBench Pro tasks. The bundled example demonstrates this complete chain on a small reconciliation workflow.
 
 **Offline demo — no API key required:**
 
@@ -247,36 +246,7 @@ uv run python run_pipeline.py run \
 
 The synthesis CLI reads `PRO_*` from the shell; it does not load `.env` automatically. See the [pipeline guide](Tool-Space/README.md) for individual stages, custom inputs, and resume support.
 
-### 2. Seven-Benchmark Evaluation
-
-Configure `benchmark/.env` first, then install and run a smoke test:
-
-```bash
-cd "$TOOLSPACE_ROOT/benchmark"
-bash setup_all.sh
-SCOPE=smoke RUN_NAME=my-model-smoke bash AutomationBench/run.sh
-```
-
-Run one full suite or all seven:
-
-```bash
-RUN_NAME=my-model bash AutomationBench/run.sh
-RUN_NAME=my-model bash run_all.sh
-```
-
-Replace `AutomationBench` with another directory to run a different suite. All launchers support `--limit N`, `--tasks ID,ID`, and `--check-only`. Results are written to `benchmark/outputs/<benchmark>/<RUN_NAME>/`.
-
-| Directory | Evaluation set | Metric |
-| :--- | :--- | :--- |
-| [AutomationBench](benchmark/AutomationBench/) | 600 public tasks | Strict task pass rate |
-| [SkillsBench](benchmark/SkillsBench/) | 79 tasks × 3 trials | Mean official verifier reward |
-| [JobBench](benchmark/JobBench/) | 65 tasks | Mean rubric score |
-| [Tau3-Banking](benchmark/Tau3-Banking/) | 97 Banking Knowledge tasks | Native task success rate |
-| [BFCL-V4](benchmark/BFCL-V4/) | 5,217 `all_scoring` cases | Official weighted overall accuracy |
-| [Harvey-LAB](benchmark/Harvey-LAB/) | Fixed 120-task sample | Official all-pass rate |
-| [OfficeQA-Pro](benchmark/OfficeQA-Pro/) | 133 questions | Official answer accuracy |
-
-### 3. Automation-Pro
+### 2. Evaluation on AutomationBench Pro
 
 Install an isolated environment and validate the 300 task contracts:
 
@@ -305,7 +275,7 @@ Or replay an existing predictions file without a model API:
 
 Use a fresh result directory. See the [prediction format and scoring guide](Automation-Pro/README.md).
 
-### 4. Tau3-Banking-Pro
+### 3. Evaluation on Tau3 Banking Pro
 
 On Linux, install the Python environment and validate the 98-task package:
 
@@ -329,6 +299,35 @@ export USER_API_KEY="$BOYUE_API_KEY"
 ```
 
 Use a reasoning effort supported by your model endpoint, a fresh output directory, and remove `--limit 1` for all 98 tasks. Report **Pro98** with the model and retrieval configuration; see the [banking evaluation guide](Tau3-Banking-Pro/README.md). Keep reference trajectories and verifier targets on the evaluator side.
+
+### 4. Evaluation on 7 Long-Horizon Agent Benchmarks
+
+Configure `benchmark/.env` first, then install and run a smoke test:
+
+```bash
+cd "$TOOLSPACE_ROOT/benchmark"
+bash setup_all.sh
+SCOPE=smoke RUN_NAME=my-model-smoke bash AutomationBench/run.sh
+```
+
+Run one full suite or all seven:
+
+```bash
+RUN_NAME=my-model bash AutomationBench/run.sh
+RUN_NAME=my-model bash run_all.sh
+```
+
+Replace `AutomationBench` with another directory to run a different suite. All launchers support `--limit N`, `--tasks ID,ID`, and `--check-only`. Results are written to `benchmark/outputs/<benchmark>/<RUN_NAME>/`.
+
+| Directory | Evaluation set | Metric |
+| :--- | :--- | :--- |
+| [AutomationBench](benchmark/AutomationBench/) | 600 public tasks | Strict task pass rate |
+| [SkillsBench](benchmark/SkillsBench/) | 79 tasks × 3 trials | Mean official verifier reward |
+| [JobBench](benchmark/JobBench/) | 65 tasks | Mean rubric score |
+| [Tau3-Banking](benchmark/Tau3-Banking/) | 97 Banking Knowledge tasks | Native task success rate |
+| [BFCL-V4](benchmark/BFCL-V4/) | 5,217 `all_scoring` cases | Official weighted overall accuracy |
+| [Harvey-LAB](benchmark/Harvey-LAB/) | Fixed 120-task sample | Official all-pass rate |
+| [OfficeQA-Pro](benchmark/OfficeQA-Pro/) | 133 questions | Official answer accuracy |
 
 ## 🙏 Acknowledgments
 
