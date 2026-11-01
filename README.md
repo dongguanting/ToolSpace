@@ -29,12 +29,12 @@
 <a id="demo"></a>
 ## 🎬 ToolSpace in One Minute
 
-https://github.com/user-attachments/assets/805c2843-fc7c-4f42-8341-8875010c0862
+https://github.com/user-attachments/assets/2fbcfd47-ff94-4aa4-a6d2-697a27aa94b2
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/805c2843-fc7c-4f42-8341-8875010c0862"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/user-attachments/assets/2fbcfd47-ff94-4aa4-a6d2-697a27aa94b2"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
   <a href="https://toolspace-agent.github.io/#demo"><b>Explore the interactive demo ↗</b></a><br>
-  <sub>From tools to verified tasks, stronger agents, and harder benchmarks.</sub>
+  <sub>From tools to verified tasks, stronger agents, and harder benchmarks.<br>Music: <a href="https://www.youtube.com/watch?v=x0x8pHeFAgw">Dolce Vita — Peyruis</a>.</sub>
 </p>
 
 <a id="method"></a>
