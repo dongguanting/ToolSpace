@@ -29,12 +29,12 @@
 <a id="demo"></a>
 ## 🎬 ToolSpace in One Minute
 
-https://github.com/user-attachments/assets/32ac8fb8-b80e-4466-97d3-68adc42e50a9
+https://github.com/user-attachments/assets/20d119c4-fc19-475f-9e29-e32a90258167
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/32ac8fb8-b80e-4466-97d3-68adc42e50a9"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/user-attachments/assets/20d119c4-fc19-475f-9e29-e32a90258167"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
   <a href="https://toolspace-agent.github.io/#demo"><b>Explore the interactive demo ↗</b></a><br>
-  <sub>ToolSpace → cross-environment walk → replay verification → results · project-page graph simulation.</sub>
+  <sub>From tools to verified tasks, stronger agents, and harder benchmarks.</sub>
 </p>
 
 <a id="method"></a>

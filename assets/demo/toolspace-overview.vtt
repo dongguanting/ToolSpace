@@ -1,39 +1,46 @@
 WEBVTT
 
-00:00.000 --> 00:03.000
+00:00:00.000 --> 00:00:03.500
 ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents.
 
-00:03.000 --> 00:10.600
-Real tasks span many environments. ToolSpace starts from tools and their dependencies.
+00:00:03.500 --> 00:00:06.500
+Start with one environment and its tools.
 
-00:10.800 --> 00:17.800
-Connect tools, ground environments, and sample long-horizon paths.
+00:00:06.500 --> 00:00:10.600
+Follow the first four tool transitions across environments.
 
-00:18.000 --> 00:25.000
-This project-page graph simulation follows tool calls across familiar environments.
+00:00:10.600 --> 00:00:13.000
+The walk accelerates, returns from a rejected candidate, and completes across ten environments.
 
-00:25.000 --> 00:32.350
-The camera follows the selected route through the environment network.
+00:00:13.000 --> 00:00:18.300
+Expand into a wider ToolSpace. Compose many routes and select one workflow.
 
-00:32.350 --> 00:34.780
-A simulated candidate is rejected. Return to the previous node and resample.
+00:00:18.300 --> 00:00:23.500
+Replay the workflow, then reverse-synthesize a query and evaluation rubric.
 
-00:34.780 --> 00:42.000
-The selected path reaches ten environments in 32 accepted steps.
+00:00:23.500 --> 00:00:28.500
+Verified tasks train ToolSpace-744B-A40B through SFT from GLM-5.2.
 
-00:42.000 --> 00:45.500
-ToolSpace reverse-synthesizes tasks and verifies them by replay.
-The green wave illustrates this verification stage.
+00:00:28.500 --> 00:00:35.000
+56.6 average across seven benchmarks: tied with Claude Opus 5, above Kimi K3 and GPT 5.6 Sol.
 
-00:45.500 --> 00:48.000
-The paper reports 2,042 canonical tools and 804 environments.
+00:00:35.000 --> 00:00:39.000
+ToolSpace synthesizes two harder suites: AutomationBench Pro and Tau3 Banking Pro.
 
-00:48.000 --> 00:54.000
-ToolSpace-744B-A40B, trained with SFT, averages 56.6 across seven benchmarks.
-Smaller models improve further with agent RL after SFT.
+00:00:39.000 --> 00:00:43.500
+For the same evaluator, Claude Opus 5.5: AutomationBench 59.2 to Pro 26.3; Tau3 Banking 51.5 to Pro 35.7.
 
-00:54.000 --> 00:58.000
-Final scores on AutomationBench Pro and Tau3 Banking Pro.
+00:00:43.500 --> 00:00:46.000
+Final Pro scores for six frontier models, from paper Table 2.
 
-00:58.000 --> 01:00.000
-ToolSpace. Start with tools. Scale verifiable tasks.
+00:00:46.000 --> 00:00:51.000
+More environment clusters improve AutomationBench performance with Qwen3.6-35B-A3B.
+
+00:00:51.000 --> 00:00:55.500
+Increasing the training-data fraction also improves performance with the same backbone.
+
+00:00:55.500 --> 00:00:58.000
+Separate environment and data scaling experiments; sampled results from paper Figure 7.
+
+00:00:58.000 --> 00:01:00.000
+ToolSpace. toolspace-agent.github.io

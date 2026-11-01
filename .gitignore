@@ -18,3 +18,6 @@ Tool-Space/build/
 # Tool caches
 .pytest_cache/
 .ruff_cache/
+
+# Full demo video is distributed through the GitHub issue attachment
+assets/demo/toolspace-overview.mp4
