@@ -217,7 +217,7 @@
       "example_id": 2059531973,
       "task_name": "marketing.generated_utm_audit_and_fix_5bf96607be2f89d7",
       "source_task": "marketing.utm_audit_and_fix",
-      "task_contract_sha256": "36c58086de1ff03cb8a772c50bb74adb27ba089edd111a6341b1f92a8b74214c"
+      "task_contract_sha256": "16a3e2849a2671d4ca57959eddbbb881df1796a01edc5b70bf935f11d740914e"
     },
     {
       "row": 22,
@@ -237,7 +237,7 @@
       "example_id": 2003366472,
       "task_name": "marketing.generated_newsletter_sponsor_invoicing_4137c9a9eddc246e",
       "source_task": "marketing.newsletter_sponsor_invoicing",
-      "task_contract_sha256": "96c367e8064709e31335d08801f6c188963b97a0cb178ca5f27bd40fbb4b16bb"
+      "task_contract_sha256": "90c7462fe2e23c2efb7d9c78c20c2bb18794ae0373bc371d4dfd1522862b17eb"
     },
     {
       "row": 24,
@@ -257,7 +257,7 @@
       "example_id": 2073036961,
       "task_name": "marketing.generated_voice_of_customer_09a99fea43c6e10d",
       "source_task": "marketing.voice_of_customer",
-      "task_contract_sha256": "05b1fe5ec399de760d39872a2f8bb66c725a5cfda99940026066c98027f8d5dc"
+      "task_contract_sha256": "dffc2bf6c884a8a9b4c9532571a1e8278c61992b0524fe745f1e65130293b15b"
     },
     {
       "row": 26,
@@ -337,7 +337,7 @@
       "example_id": 2011081208,
       "task_name": "marketing.generated_partner_content_approval_ce27889ff9ee50bd",
       "source_task": "marketing.partner_content_approval",
-      "task_contract_sha256": "32410c64fcdcafe75bec340eacc0a53928dd0fc5ecf687d9482d26153ad49eb6"
+      "task_contract_sha256": "fad7d8915462ac360e2b602877957f40bdc57c31a04aac65e5e19bd2e8cb72e9"
     },
     {
       "row": 34,
@@ -377,7 +377,7 @@
       "example_id": 2076248093,
       "task_name": "marketing.generated_analyst_briefing_cdb8a220140b8377",
       "source_task": "marketing.analyst_briefing",
-      "task_contract_sha256": "aa97312d6dbde02a767d0dd2efdd2048e4d900cf81acb0f2119fbde6567a97e4"
+      "task_contract_sha256": "46f50a3fc88e8bd451dda292dd6f3fc42e7c597db1f244734c7c917669a59fad"
     },
     {
       "row": 38,
@@ -417,7 +417,7 @@
       "example_id": 2063555753,
       "task_name": "marketing.generated_partner_content_approval_035a93bc2d7d7f1f",
       "source_task": "marketing.partner_content_approval",
-      "task_contract_sha256": "7631b61204a7b299ef1e3f09aed998bb0a0b3817e6c861a236b6cb2db681d5d6"
+      "task_contract_sha256": "246082e93bbdf2c98f53bf47e925bf2ebcc4531fd0d75e8d044325da3a482cbb"
     },
     {
       "row": 42,
@@ -447,7 +447,7 @@
       "example_id": 2075644700,
       "task_name": "marketing.generated_partner_content_approval_1dee0572bbc77930",
       "source_task": "marketing.partner_content_approval",
-      "task_contract_sha256": "cadcc9c6edc855131cd9ab1c96e55481f84c20a933c9c021421425f2154fd451"
+      "task_contract_sha256": "b090dcecb56fdcf89505a2c96200f0564e4675f58dccd949964de5b90259fa42"
     },
     {
       "row": 45,
@@ -467,7 +467,7 @@
       "example_id": 2032992455,
       "task_name": "marketing.generated_partner_content_approval_e28d69938213e31a",
       "source_task": "marketing.partner_content_approval",
-      "task_contract_sha256": "8179f65cfa1b0ca597a355e087d2a4eea418c5ff6c7269e3e82850766aeb9a23"
+      "task_contract_sha256": "1262376c2f74c65497498e29fd0877317a8d15cc0d5bc359d64c8f964803b913"
     },
     {
       "row": 47,
@@ -477,7 +477,7 @@
       "example_id": 2078531100,
       "task_name": "marketing.generated_voice_of_customer_5a6b4a904a43ba8c",
       "source_task": "marketing.voice_of_customer",
-      "task_contract_sha256": "c4567a7ca837f6e8298e07349cbdea5338e00f298171969dba1b69e93d5adcf3"
+      "task_contract_sha256": "a77d026231b7ec5312c800e1350c16fc9f5dd80cbe8ef122ac500d9e5bfa8234"
     },
     {
       "row": 48,
@@ -497,7 +497,7 @@
       "example_id": 2074903105,
       "task_name": "marketing.generated_partner_content_approval_65048291d5aa8ce7",
       "source_task": "marketing.partner_content_approval",
-      "task_contract_sha256": "49cf9d9e6c652c5ffb3e24c46581964314830fbc9485149fba1b4985d790062c"
+      "task_contract_sha256": "9a501ab3bc62f927fdf6af648973c8ae48723257ed38477237f329c88597baea"
     },
     {
       "row": 50,
@@ -507,7 +507,7 @@
       "example_id": 2098342383,
       "task_name": "marketing.generated_partner_content_approval_2edd9e3ca02b3caf",
       "source_task": "marketing.partner_content_approval",
-      "task_contract_sha256": "482936e90425567536521797dd95232031f570cca6552df179fa4d245968296c"
+      "task_contract_sha256": "81f3ee668e3e4968021e4fcb78fdc6ccdd262fc363ae74137bdbe47a786ce4aa"
     },
     {
       "row": 51,
@@ -517,7 +517,7 @@
       "example_id": 2058901992,
       "task_name": "finance.generated_payment_terms_tracking_3b2f5cbe1e655366",
       "source_task": "finance.payment_terms_tracking",
-      "task_contract_sha256": "827fab4dac27c3a86d8d4a49ea588d445b30e49abd47d54f4e1142cba856ae9e"
+      "task_contract_sha256": "e12d12397e7733abb7f8205a44c7e2e879d1b3a3b4cfa5f933ac2131f60a91aa"
     },
     {
       "row": 52,
@@ -527,7 +527,7 @@
       "example_id": 2030306794,
       "task_name": "finance.generated_expense_split_allocation_2036a7fe806be361",
       "source_task": "finance.expense_split_allocation",
-      "task_contract_sha256": "bd7e79098307c21da0bd31bd1384c8871b3cbf0553272902bf10187669a729ac"
+      "task_contract_sha256": "d0d7fd944f633afcb4d8a6129b4c0fb0db1dd0dd488ff78951f0aaaf443e83bb"
     },
     {
       "row": 53,
@@ -537,7 +537,7 @@
       "example_id": 2090734323,
       "task_name": "finance.generated_overdue_invoice_followup_4957b4043d150b25",
       "source_task": "finance.overdue_invoice_followup",
-      "task_contract_sha256": "786fc8067575bc39f77dcd2d3c1a8ea8819052300c54060a39a8931577304222"
+      "task_contract_sha256": "a093c845604286697d7da34bf06b5e25febf347904179affcf5884d8aceef3da"
     },
     {
       "row": 54,
@@ -627,7 +627,7 @@
       "example_id": 2034184015,
       "task_name": "finance.generated_year_end_audit_prep_dd867ac482767083",
       "source_task": "finance.year_end_audit_prep",
-      "task_contract_sha256": "6709faf0bcf44b689058bbe0bc60e4d9fa6dc9e707affc1cf508912e3dbe9c71"
+      "task_contract_sha256": "bdcfd83fd3f444249c993dce10b1b4af628a2076e4b7b75d5f3fc7a3b583e864"
     },
     {
       "row": 63,
@@ -647,7 +647,7 @@
       "example_id": 2023508078,
       "task_name": "finance.generated_qb_customer_onboard_e875b4c1c9fcd60e",
       "source_task": "finance.qb_customer_onboard",
-      "task_contract_sha256": "1923fefa0da7a2b92d0396eb3c12711a37d8874fa1bb20f92ae01266fcff9fd3"
+      "task_contract_sha256": "5ecfe4803cc8cd967b4f697570333e092edbf52be0dc3670df76011d4b27c5ca"
     },
     {
       "row": 65,
@@ -707,7 +707,7 @@
       "example_id": 2077641934,
       "task_name": "finance.generated_payment_terms_tracking_0d7d9be4546b9822",
       "source_task": "finance.payment_terms_tracking",
-      "task_contract_sha256": "bf76704e9d6f0c8b8d29b196aaac3d989e3ce2266c7caff3f4ce7a1df570ce75"
+      "task_contract_sha256": "e6b73b7b797a3fca4d7bb233dc15d3506671753610e7bfb5d127c0f957bab478"
     },
     {
       "row": 71,
@@ -717,7 +717,7 @@
       "example_id": 2005082125,
       "task_name": "finance.generated_wave_product_catalog_ee26bb6388f90380",
       "source_task": "finance.wave_product_catalog",
-      "task_contract_sha256": "6665d1f032cca645ca78872fdfadec88284d99fe0b9afc16e702be8ef884cfa7"
+      "task_contract_sha256": "9f05a94d7f21a590a0235b1c2df299add5066d0703309bfcd0d4fe00dcd5631c"
     },
     {
       "row": 72,
@@ -747,7 +747,7 @@
       "example_id": 2051972583,
       "task_name": "finance.generated_subscription_billing_977af7c6f46becaa",
       "source_task": "finance.subscription_billing",
-      "task_contract_sha256": "5a63f9878a0912e7bb4af12f5cdf8a359027b4fb2b8e35ac3e24f480e6310fd1"
+      "task_contract_sha256": "76ceef8b8ecc8c01ac6cc3997f395c79064db464f238d85b7e7818f366c6cf55"
     },
     {
       "row": 75,
@@ -767,7 +767,7 @@
       "example_id": 2083341105,
       "task_name": "finance.generated_vendor_payment_approval_616b604435943338",
       "source_task": "finance.vendor_payment_approval",
-      "task_contract_sha256": "1c84cff6172ddc86a754cbee619346dbc526a05a3aa46dfe0b44a846bbba5fc8"
+      "task_contract_sha256": "3f51609d76e51494de546a0fe85bc7772e32367fec9294fbe6f1d4a2d04a6b63"
     },
     {
       "row": 77,
@@ -837,7 +837,7 @@
       "example_id": 2042018224,
       "task_name": "hr.generated_compliance_training_enforcement_91e9e2acb5a7ee81",
       "source_task": "hr.compliance_training_enforcement",
-      "task_contract_sha256": "ad3b6da0714e4daab997e0e28b7cab7bd2c3163966b1e35f6ed2f6f8b1a4e469"
+      "task_contract_sha256": "73e147d7f45de712def2d8e1e4528e38692d4064ca60cc9dab12cf90bebcf81b"
     },
     {
       "row": 84,
@@ -847,7 +847,7 @@
       "example_id": 2015393072,
       "task_name": "hr.generated_calendly_manager_office_hours_f570033d5aad8938",
       "source_task": "hr.calendly_manager_office_hours",
-      "task_contract_sha256": "cbd4f88d934af60bb83d60f9e5a917cdc8d78e733126a0a6f137c2dc60f35b8a"
+      "task_contract_sha256": "53d0b1c14ed109d98710705e313299e3997557892a4ae62edb3c975a27f853e1"
     },
     {
       "row": 85,
@@ -867,7 +867,7 @@
       "example_id": 2091679368,
       "task_name": "hr.generated_candidate_rejection_followup_0384bdb74a1314b6",
       "source_task": "hr.candidate_rejection_followup",
-      "task_contract_sha256": "ce57033e018493d62505606de5b7e93292bcdba139e87f71cbf59b374f7580bf"
+      "task_contract_sha256": "77c0b99692b0c83b13d31e419370f13b98e3380b36b1162260a882b6af6f3e0d"
     },
     {
       "row": 87,
@@ -927,7 +927,7 @@
       "example_id": 2061656319,
       "task_name": "hr.generated_mandatory_meeting_scheduling_d4853bcdadbf8f51",
       "source_task": "hr.mandatory_meeting_scheduling",
-      "task_contract_sha256": "496ca4bcc36166e0480d6d9e290ca8fdb42848fad83c72b5d5f31bf5d9bce7d5"
+      "task_contract_sha256": "8eaca43cec394e13465eb0f4f25d1b6e0947123e20f62e085db3146b5b4f2d27"
     },
     {
       "row": 93,
@@ -937,7 +937,7 @@
       "example_id": 2072099048,
       "task_name": "hr.generated_handbook_acknowledgment_2f6478c5b82f0e01",
       "source_task": "hr.handbook_acknowledgment",
-      "task_contract_sha256": "3fde37aff8bea55618ed4d35ec5da2eb4c262cc758c4394a29838f34e4b27623"
+      "task_contract_sha256": "094ac0cd05d4dcbc78eedd0ce6ba53ca34bdf7ce52ed527507688ce33a364b0b"
     },
     {
       "row": 94,
@@ -947,7 +947,7 @@
       "example_id": 2037812447,
       "task_name": "hr.generated_expense_report_audit_5bba9e2dbf968b6d",
       "source_task": "hr.expense_report_audit",
-      "task_contract_sha256": "76cf784a4db36f7c79c76ac495db5149c91882f2af10aa446d05c94d2c56f838"
+      "task_contract_sha256": "8f8abce94c8b940f043a337a49964cfb8cd06928813fd55c66591e2649dde166"
     },
     {
       "row": 95,
@@ -957,7 +957,7 @@
       "example_id": 2044078442,
       "task_name": "hr.generated_recruitment_channel_roi_c2edb508ad21ce10",
       "source_task": "hr.recruitment_channel_roi",
-      "task_contract_sha256": "4f99a94ab72fad5a07c9de107e8f054d2a7863bf0534b67bf97d249904be7e83"
+      "task_contract_sha256": "77f70f67600183701d86fd9cf1ea96d3c889f4ad025ed9f035163cd0f4554103"
     },
     {
       "row": 96,
@@ -967,7 +967,7 @@
       "example_id": 2085641008,
       "task_name": "hr.generated_pto_reconciliation_cdf2ff32375ffdc7",
       "source_task": "hr.pto_reconciliation",
-      "task_contract_sha256": "210c459d873612c738ae732a410551421b1555ed56affb5bed8b95084a30379e"
+      "task_contract_sha256": "61c0b9834917459c2a42d7983cb44616f86ae8e8e7800cef744047f11ef75704"
     },
     {
       "row": 97,
@@ -977,7 +977,7 @@
       "example_id": 2014025043,
       "task_name": "hr.generated_policy_update_distribution_73a8073d030aa216",
       "source_task": "hr.policy_update_distribution",
-      "task_contract_sha256": "3ab1d18cb6d4787753a26f913d98f15f198bb3cc39b55fde10bd48aef33a6814"
+      "task_contract_sha256": "3d0521871af3e35ebf1725d5a6c1fbddb7488741f9bc505f16bfd801ae9d8da8"
     },
     {
       "row": 98,
@@ -1037,7 +1037,7 @@
       "example_id": 2054107514,
       "task_name": "hr.generated_equipment_provisioning_a79bf07114602b37",
       "source_task": "hr.equipment_provisioning",
-      "task_contract_sha256": "6c0b895b9eeecb146b9cdffba82cc9591462a32848d5996f7a4b8537e32cd8b5"
+      "task_contract_sha256": "a4acb227564b5a8f8fa76bbe4192984b986786f77a16919ade1ba5da4aa99718"
     },
     {
       "row": 104,
@@ -1067,7 +1067,7 @@
       "example_id": 2033203464,
       "task_name": "finance.generated_escrow_tracking_3eee49c53ad9de3d",
       "source_task": "finance.escrow_tracking",
-      "task_contract_sha256": "c7f94a714428882d0975eb7ca84fbeadda2ab077757ad4ce3c2ca2c8f3c4d2d7"
+      "task_contract_sha256": "8c2aefdc79275eede9581677b7913d77497fe95cc1e17c041714584f82b66bf5"
     },
     {
       "row": 107,
@@ -1077,7 +1077,7 @@
       "example_id": 2084302507,
       "task_name": "finance.generated_escrow_tracking_0b650467aacb8c66",
       "source_task": "finance.escrow_tracking",
-      "task_contract_sha256": "f901780d3e5c857d5cd9f26c7da38e230c05ba65a7692531b3326676b5a57a3f"
+      "task_contract_sha256": "57ffd8d64b04d8e429e3fd7239be0a1d21bda37631a34a60c2b64d0aa820c95f"
     },
     {
       "row": 108,
@@ -1087,7 +1087,7 @@
       "example_id": 2060519861,
       "task_name": "finance.generated_escrow_tracking_dde0f5ffd0dfd258",
       "source_task": "finance.escrow_tracking",
-      "task_contract_sha256": "88e449e76432ed5fae61ace292db8710d499c0769698d0488d5f48382fc71aaf"
+      "task_contract_sha256": "17a039f7cc014a2d648d48fe86bf65c1bcd0273994f49c48348f3431d5f1c383"
     },
     {
       "row": 109,
@@ -1157,7 +1157,7 @@
       "example_id": 2024255742,
       "task_name": "operations.generated_monday_email_update_94a5594630f9181e",
       "source_task": "operations.monday_email_update",
-      "task_contract_sha256": "ee663d310e1f17dbf3c4e9975f8cf993c59e82f3e82624cc40f76f7a5a5d2483"
+      "task_contract_sha256": "4baed470673e7808d10b77d5f34e77ef8bb140b901134e1930e8adeacffc5a37"
     },
     {
       "row": 116,
@@ -1237,7 +1237,7 @@
       "example_id": 2070382282,
       "task_name": "operations.generated_cross_training_assignment_9d87ce091b7ff34a",
       "source_task": "operations.cross_training_assignment",
-      "task_contract_sha256": "856d7138b490d4021d92de526d4380febe68a4cb1ace290d4605190c6beda35f"
+      "task_contract_sha256": "e91627b0f1332bdf8038fd9eaa1437e27ece311753a001f01bc430649c033081"
     },
     {
       "row": 124,
@@ -1247,7 +1247,7 @@
       "example_id": 2071508780,
       "task_name": "operations.generated_cross_training_assignment_04feadb224cb2adb",
       "source_task": "operations.cross_training_assignment",
-      "task_contract_sha256": "3950292d9ece6e695a985ee0ea8e8bc87a18fbdd4b64201226dc37bce52b95c6"
+      "task_contract_sha256": "2b945b4e5623e4db5f4fe19c749956d871846be622f4e4ea3107243a20ffe494"
     },
     {
       "row": 125,
@@ -1477,7 +1477,7 @@
       "example_id": 2059750551,
       "task_name": "operations.generated_parking_allocation_management_c0418d4eb2e02f46",
       "source_task": "operations.parking_allocation_management",
-      "task_contract_sha256": "f09fad324384ed84c4f1bc3f062e3d2689490512c64c51b2ae02a569a57c67f0"
+      "task_contract_sha256": "05524f77bbc6cfcabeb592f32c1706aed5f3de45059278592ed116e756623552"
     },
     {
       "row": 148,
@@ -1817,7 +1817,7 @@
       "example_id": 2093759818,
       "task_name": "sales.generated_zoom_recording_distribution_6e0e4df20480259d",
       "source_task": "sales.zoom_recording_distribution",
-      "task_contract_sha256": "3d846f2ecf30466089d811b248d7b55b835b71b14df500bc1a79d97069bcdbdf"
+      "task_contract_sha256": "bc0345d9d74885c98d1bd245d6a610e5b25aaf2cab48bb88ad02dabc101a2047"
     },
     {
       "row": 182,
@@ -1827,7 +1827,7 @@
       "example_id": 2040682741,
       "task_name": "sales.generated_calendly_meeting_prep_4a679735f6db2be1",
       "source_task": "sales.calendly_meeting_prep",
-      "task_contract_sha256": "82b2a647e38b236c7c487d4cbbba13c3dd0ac4e62322f19f669b65d93cb8ac13"
+      "task_contract_sha256": "2374f417c7094f6af704084ae45972e1102be177156ad2f3cc5b8ccb3cf2c880"
     },
     {
       "row": 183,
@@ -1897,7 +1897,7 @@
       "example_id": 2095353612,
       "task_name": "sales.generated_competitive_displacement_outreach_1f6a42ccb40240e1",
       "source_task": "sales.competitive_displacement_outreach",
-      "task_contract_sha256": "039ac692d4cc669913152466d2515c8357eeca73e5452f6ae479ad0269411990"
+      "task_contract_sha256": "13e6f4a8ba3e80d730c972536a81e714b415af4dc074008434d5b6bb336edced"
     },
     {
       "row": 190,
@@ -1927,7 +1927,7 @@
       "example_id": 2063133483,
       "task_name": "sales.generated_calendly_discovery_call_c14ceccc374b3d0f",
       "source_task": "sales.calendly_discovery_call",
-      "task_contract_sha256": "2d18badbf853646e368cfb416cf5628d1142182e4a1168b69fba0d87443d6b65"
+      "task_contract_sha256": "51bfafaa29d54022cf0228ff2cac8e9a9089562ce82b555eaa7d5f78bd094a02"
     },
     {
       "row": 193,
@@ -2017,7 +2017,7 @@
       "example_id": 2009594564,
       "task_name": "sales.generated_mark_vip_emails_read_f7797bc1eb5b053c",
       "source_task": "sales.mark_vip_emails_read",
-      "task_contract_sha256": "230201c17b6c75e2c23e417bef40936093f329d600b3db6c2073d251364869b4"
+      "task_contract_sha256": "26afbc757211ccc16e9972b0f5df624290d6e5b00a8307b40035f9440413e0ed"
     },
     {
       "row": 202,
@@ -2087,7 +2087,7 @@
       "example_id": 2056719843,
       "task_name": "support.generated_intercom_reactivation_campaign_4b069aac914475d7",
       "source_task": "support.intercom_reactivation_campaign",
-      "task_contract_sha256": "b54df43066da7b251843765e654aa921595f271fdc022f31a4db04aee3691818"
+      "task_contract_sha256": "59bad2630e8184f4e2cc3663fe391882762516e5149e627e1811abea56380e9b"
     },
     {
       "row": 209,
@@ -2097,7 +2097,7 @@
       "example_id": 2087725589,
       "task_name": "support.generated_freshdesk_csat_followup_5caa0204a83f6764",
       "source_task": "support.freshdesk_csat_followup",
-      "task_contract_sha256": "ec12641a08969aa827865e6e69bf74b27d5d1a1e9f73ecaedba58561cfaad387"
+      "task_contract_sha256": "2dcf96b95dc63bd22aec77af20b172a5b41a7adc8dd437dc21c08ec9a99bc774"
     },
     {
       "row": 210,
@@ -2107,7 +2107,7 @@
       "example_id": 2005668742,
       "task_name": "support.generated_freshdesk_csat_followup_f7364bfa282d971f",
       "source_task": "support.freshdesk_csat_followup",
-      "task_contract_sha256": "d3b6d47a0146096b875ee2c7162382bcc407084cf7f8e9a554899bdb8d92c523"
+      "task_contract_sha256": "3b00a8707c2a7c8817b7a1c1d31ef2e4e4d8cbea543fe1f58f92ed8d1c35c006"
     },
     {
       "row": 211,
@@ -2247,7 +2247,7 @@
       "example_id": 2042915506,
       "task_name": "support.generated_reamaze_campaign_tracking_68d88913872c5b41",
       "source_task": "support.reamaze_campaign_tracking",
-      "task_contract_sha256": "821e7744620eba8f490c45c84399d341376e5df86892c7bccd5374a8bc4f7e16"
+      "task_contract_sha256": "a2a83dd206d1608ad22f5959b3d5ab571640f1e969e602f358003597d6279538"
     },
     {
       "row": 225,
@@ -2317,7 +2317,7 @@
       "example_id": 2005587327,
       "task_name": "support.generated_zoho_resolution_patterns_d0625c329f59a1da",
       "source_task": "support.zoho_resolution_patterns",
-      "task_contract_sha256": "0b2e26f480655e2f184f82e4a1cc67f9ebc2cc372143bd719d1dbd6b804943cf"
+      "task_contract_sha256": "d0b1d2df65ab4bbb33910ff9726a0b6d19e5d4ba4644fe27f285fbab9b85b85a"
     },
     {
       "row": 232,
@@ -2327,7 +2327,7 @@
       "example_id": 2029809131,
       "task_name": "support.generated_freshdesk_zoho_migration_35d2f682f5072480",
       "source_task": "support.freshdesk_zoho_migration",
-      "task_contract_sha256": "beab6b4cdbe10a4f725ad77b522184b71e043a7d97f414d07c428324c006bc28"
+      "task_contract_sha256": "cbee4be5848e4c0fe3cdba7d663b0825170c2bff4c1eccb855fd4643b7481e1a"
     },
     {
       "row": 233,
@@ -2337,7 +2337,7 @@
       "example_id": 2064525016,
       "task_name": "support.generated_zendesk_customer_360_ccd93a062d5ecd4f",
       "source_task": "support.zendesk_customer_360",
-      "task_contract_sha256": "beff5e117a21368d8503be9957cc576916409f3d59379bab56088daa1bfa191d"
+      "task_contract_sha256": "74efd2b84fb9421b08559c3d053a78471ca32b95090952c568c6e830bb07d0b7"
     },
     {
       "row": 234,
@@ -2367,7 +2367,7 @@
       "example_id": 2034625749,
       "task_name": "sales.generated_cross_modal_renewal_processing_7944a68ba445d28c",
       "source_task": "sales.cross_modal_renewal_processing",
-      "task_contract_sha256": "4a9146047d89e4e12dcfdf797d9dbc10b12f7d999f1b1fdc0a58950f187caf90"
+      "task_contract_sha256": "cb165c4ef330533f64506442c86afbdb6312a0a04de831adb1e90e693b38a9c4"
     },
     {
       "row": 237,
@@ -2397,7 +2397,7 @@
       "example_id": 2081601666,
       "task_name": "sales.generated_cross_reference_validation_f853142422efdead",
       "source_task": "sales.cross_reference_validation",
-      "task_contract_sha256": "a7df7f5bf0d0743d4b627117983005c669b1dc5f8118f1a29cea5a3e35f55bf6"
+      "task_contract_sha256": "f317c1489d6de2d6611055db3cec814972b9484349bd8f4d52e72f61d32353bc"
     },
     {
       "row": 240,
@@ -2567,7 +2567,7 @@
       "example_id": 2081240631,
       "task_name": "sales.generated_priority_selection_a2ccd6b62e3ea260",
       "source_task": "sales.priority_selection",
-      "task_contract_sha256": "a83390e5b98acd0f9b22c735d6918dfb07648dc62068ae6edb7be49c9f0c6e3d"
+      "task_contract_sha256": "e9e0662db4f7b18034c34f8fb9b992fc90a95d21896d946efed5b55b9dae72da"
     },
     {
       "row": 257,
@@ -2677,7 +2677,7 @@
       "example_id": 2000411620,
       "task_name": "support.generated_hiver_response_sla_9899bbffdfb01b3a",
       "source_task": "support.hiver_response_sla",
-      "task_contract_sha256": "d9a2a925e32e8042016898ade6279fb80f327e42ecef3c5f84f44293e879a9e4"
+      "task_contract_sha256": "ebba23e80244288e3543e94a6b84577202daa03e0fd2663bcfc275eeb2d70067"
     },
     {
       "row": 268,
@@ -2687,7 +2687,7 @@
       "example_id": 2030344020,
       "task_name": "support.generated_intercom_reactivation_campaign_652160ad762310c5",
       "source_task": "support.intercom_reactivation_campaign",
-      "task_contract_sha256": "bb3d2a97d203554889d416538fa6bb54cd80e5da076cc4462622439d2dfd17ca"
+      "task_contract_sha256": "82ae5c736b235f9d29c9f0dc07e645d3b2f974299b791595c768a53aaccc5eda"
     },
     {
       "row": 269,
@@ -2697,7 +2697,7 @@
       "example_id": 2084108595,
       "task_name": "support.generated_zendesk_cross_org_merge_3baf5283189d3f41",
       "source_task": "support.zendesk_cross_org_merge",
-      "task_contract_sha256": "aa76cc110dced89026ba2f5cb5b5c14f72d527013ebeaed596a557801aa7ac4c"
+      "task_contract_sha256": "c0d110c9f230cfdffb886140650758f2811423cf813544d7b225c9abe079f902"
     },
     {
       "row": 270,
@@ -2707,7 +2707,7 @@
       "example_id": 2034171712,
       "task_name": "support.generated_zoho_desk_customer_journey_d3ecd269b7d769b1",
       "source_task": "support.zoho_desk_customer_journey",
-      "task_contract_sha256": "99f2edaa0b9952439b2f06810bf4e1e5bd59263ee3e767ea1fc0cb2b79f5fe39"
+      "task_contract_sha256": "fea604a97e3516363b3d61fd7adea36af827cb4ad4e6a8e7c0fc7b855b3b763f"
     },
     {
       "row": 271,
@@ -2717,7 +2717,7 @@
       "example_id": 2000444905,
       "task_name": "support.generated_zoho_resolution_patterns_b27474b4ab770467",
       "source_task": "support.zoho_resolution_patterns",
-      "task_contract_sha256": "756a6a44640706d487485c2ab6ac2c69fec7c118daffefc37f12674d5dc3c835"
+      "task_contract_sha256": "325c26f6eff47c5062f92b0b006acb7f326602016f4465fa901dd6e50b589832"
     },
     {
       "row": 272,
@@ -2737,7 +2737,7 @@
       "example_id": 2072145003,
       "task_name": "support.generated_zendesk_weekend_handoff_de613a3e1bdba8da",
       "source_task": "support.zendesk_weekend_handoff",
-      "task_contract_sha256": "66dfb6293fbc12182bac2aba8b94f7e9320e740dffb99193ef89c22c26cc12bd"
+      "task_contract_sha256": "f4ac91d2e92c447f4fa48e924f615ae11c9880425d136f9929559ec357de9a77"
     },
     {
       "row": 274,
@@ -2807,7 +2807,7 @@
       "example_id": 2084714359,
       "task_name": "hr.generated_background_check_followup_bac7cc09303ae795",
       "source_task": "hr.background_check_followup",
-      "task_contract_sha256": "351b1e9e045eb004ae74b567b990fe6cca59b7512681a8b8ca4253f18497b6c2"
+      "task_contract_sha256": "3b55de4a27d90eb8f50b82cd7686b8e1a581d528ecde8597b4330257e1cac129"
     },
     {
       "row": 281,
@@ -2827,7 +2827,7 @@
       "example_id": 2074395543,
       "task_name": "hr.generated_interview_scheduling_9d097d7d8c9f0a87",
       "source_task": "hr.interview_scheduling",
-      "task_contract_sha256": "1a0f8787ec0d3ceb7b0c6aa972cfa3d17b63efa422f5e4eb501ea354a52252b7"
+      "task_contract_sha256": "d8154e9079423c676b3ae316e0fe9857ad3252ee0dae323a087dcfbeb7aacdc6"
     },
     {
       "row": 283,
@@ -2837,7 +2837,7 @@
       "example_id": 2061289232,
       "task_name": "hr.generated_calendly_manager_office_hours_f0cafac7a96fa3bf",
       "source_task": "hr.calendly_manager_office_hours",
-      "task_contract_sha256": "98a9e7a4b7cdab4816bf303121e78346d8b38a030ea616d690b5f4d9adf3d24b"
+      "task_contract_sha256": "6e00eeffb09aa845174e7596fec18514e68eb6c96eb52b2132b1ddcdcf9224cd"
     },
     {
       "row": 284,
@@ -2847,7 +2847,7 @@
       "example_id": 2016042306,
       "task_name": "hr.generated_org_restructure_update_2af0a0370e0f3a73",
       "source_task": "hr.org_restructure_update",
-      "task_contract_sha256": "95f9c458aa84b65d3af74415616e6b57303f3855082d14e1c4942747d9308b7c"
+      "task_contract_sha256": "5621e0b1e4b16d52d56918baf888a99b4b471c1b5a4b47f7b20fe1217075a1f8"
     },
     {
       "row": 285,
@@ -2857,7 +2857,7 @@
       "example_id": 2093783865,
       "task_name": "hr.generated_exit_interview_scheduling_a226fd30d05b78fa",
       "source_task": "hr.exit_interview_scheduling",
-      "task_contract_sha256": "735105e9cc7b4455722d4320df97fc80ae0a1d9734eb694fbb82b73359627f2b"
+      "task_contract_sha256": "db18060ad3c3f66e345a9034b420fb7ff49aeee3b17c8ec1a9ecbb817daef180"
     },
     {
       "row": 286,
@@ -2907,7 +2907,7 @@
       "example_id": 2018275320,
       "task_name": "hr.generated_handbook_acknowledgment_6e8cc35a35d62142",
       "source_task": "hr.handbook_acknowledgment",
-      "task_contract_sha256": "3faf729e3ff2429f0d6ac0e6530a05dfd8164c8a4b653c4b57ac1f03c4a36ac3"
+      "task_contract_sha256": "7cb48457af8a76ddd7b17a0fac6a4d8a29369a0645af1a9f4583faf8c9ab82d0"
     },
     {
       "row": 291,
@@ -2917,7 +2917,7 @@
       "example_id": 2015945619,
       "task_name": "hr.generated_policy_update_distribution_439e940f7f6700e4",
       "source_task": "hr.policy_update_distribution",
-      "task_contract_sha256": "0d016c381b2222ba24b301d92ad73619a60d193300b41bf7637ff0f0c68b6be4"
+      "task_contract_sha256": "93306d0ce162df0ec308deda811d8bdd780c7f8c6686ae9e34a399f8a0567f64"
     },
     {
       "row": 292,
@@ -2927,7 +2927,7 @@
       "example_id": 2098032212,
       "task_name": "hr.generated_candidate_rejection_followup_930a0f5b1524f096",
       "source_task": "hr.candidate_rejection_followup",
-      "task_contract_sha256": "233006a6507635a561fb7bcea6fbca417298cd394e1551e07a2db22b5ae1353d"
+      "task_contract_sha256": "d1e8e3ad5845b869ff974c9d4102723e58dbb60e4b3961ddb46483e12ca17eaa"
     },
     {
       "row": 293,
@@ -2947,7 +2947,7 @@
       "example_id": 2030715013,
       "task_name": "hr.generated_expense_report_audit_cf6234f091aff8ae",
       "source_task": "hr.expense_report_audit",
-      "task_contract_sha256": "cd06362b0b7524af5ff81007a011e3f371f3bc7c32f96eae4e512cf2093ca6ff"
+      "task_contract_sha256": "b89fd625cb346523270c3594812199533b9749f5a76ca8f2a4ec46a4ef036309"
     },
     {
       "row": 295,
@@ -2977,7 +2977,7 @@
       "example_id": 2050012714,
       "task_name": "hr.generated_survey_distribution_12c858f605a643df",
       "source_task": "hr.survey_distribution",
-      "task_contract_sha256": "b3520fb8aac16158b20ba14ae26d26bfb77908fa23225d3f70665ba18c6775cc"
+      "task_contract_sha256": "428f2d195309358614ccb7669084c4fdc72d551abe3e2efe378520f646231dea"
     },
     {
       "row": 298,

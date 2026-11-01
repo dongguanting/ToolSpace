@@ -7,11 +7,220 @@ Structured facts are associated with their ticket/category instead of matched
 against an entire message. Text formatting and free example choice are allowed.
 """
 import hashlib
+import itertools
 import json
 import re
 from collections import Counter
+from datetime import date, datetime
 from verifiers.registry import AssertionRegistry, negative_assertion
 from verifiers.assertions.workflow import addresses, timestamp
+
+
+def _check_equivalent_prose(world, assertion, base_check, field):
+    """Run a base assertion for every allowed choice of equivalent wording.
+
+    ``field`` is a list of groups; each group contains phrases with the same
+    meaning. Fixed facts remain in the base assertion and must still match.
+    This keeps the verifier strict about recipients, records, identifiers,
+    amounts and required facts while accepting ordinary paraphrases.
+    """
+    groups = assertion.get(field) or []
+    if not groups:
+        return False
+    groups = [group if isinstance(group, list) else [group] for group in groups]
+    fixed_field = {
+        "body_contains_any": "body_contains",
+        "text_contains_any": "text_contains",
+    }[field]
+    fixed = assertion.get(fixed_field)
+    fixed = list(fixed) if isinstance(fixed, list) else ([fixed] if fixed else [])
+    for choices in itertools.product(*groups):
+        candidate = dict(assertion)
+        candidate.pop(field, None)
+        candidate[fixed_field] = fixed + list(choices)
+        if base_check(world, candidate):
+            return True
+    return False
+
+
+def _check_equivalent_subject_or_body(world, assertion, base_check):
+    """Variant for a free phrase stored in a Gmail body assertion."""
+    return _check_equivalent_prose(world, assertion, base_check, "body_contains_any")
+
+
+@AssertionRegistry.register("pro_gmail_message_sent_to_with_body_contains")
+def pro_gmail_message_sent_to_with_body_contains(world, assertion):
+    from verifiers.assertions.gmail import gmail_message_sent_to_with_body_contains
+
+    return _check_equivalent_subject_or_body(world, assertion, gmail_message_sent_to_with_body_contains)
+
+
+@AssertionRegistry.register("pro_gmail_message_sent")
+def pro_gmail_message_sent(world, assertion):
+    from verifiers.assertions.gmail import gmail_message_sent
+
+    return _check_equivalent_subject_or_body(world, assertion, gmail_message_sent)
+
+
+@AssertionRegistry.register("pro_gmail_message_body_contains")
+def pro_gmail_message_body_contains(world, assertion):
+    # The legacy body-only checker accepts one phrase, while the Pro form
+    # must preserve several fixed facts alongside one equivalent phrase.
+    from verifiers.assertions.gmail import gmail_message_sent_to_with_body_contains
+
+    return _check_equivalent_prose(
+        world, assertion, gmail_message_sent_to_with_body_contains, "body_contains_any"
+    )
+
+
+@AssertionRegistry.register("pro_gmail_message_not_sent_to_with_body_contains_any")
+@negative_assertion("gmail")
+def pro_gmail_message_not_sent_to_with_body_contains_any(world, assertion):
+    """Reject a prohibited delivery when it uses any equivalent phrase."""
+    from verifiers.assertions.gmail import gmail_message_not_sent_to_with_body_contains
+
+    phrases = assertion.get("body_contains_any") or []
+    for phrase in phrases:
+        candidate = dict(assertion)
+        candidate.pop("body_contains_any", None)
+        candidate["body_contains"] = phrase
+        if not gmail_message_not_sent_to_with_body_contains(world, candidate):
+            return False
+    return bool(phrases)
+
+
+@AssertionRegistry.register("pro_workflow_email_delivered")
+def pro_workflow_email_delivered(world, assertion):
+    from verifiers.assertions.workflow import email_delivered
+
+    return _check_equivalent_prose(world, assertion, email_delivered, "body_contains_any")
+
+
+@AssertionRegistry.register("pro_slack_message_exists")
+def pro_slack_message_exists(world, assertion):
+    from verifiers.assertions.slack import slack_message_exists
+
+    return _check_equivalent_prose(world, assertion, slack_message_exists, "text_contains_any")
+
+
+@AssertionRegistry.register("pro_slack_message_in_channel")
+def pro_slack_message_in_channel(world, assertion):
+    from verifiers.assertions.slack import slack_message_in_channel
+
+    return _check_equivalent_prose(world, assertion, slack_message_in_channel, "text_contains_any")
+
+
+@AssertionRegistry.register("pro_slack_message_sent_to_channel")
+def pro_slack_message_sent_to_channel(world, assertion):
+    from verifiers.assertions.slack import slack_message_sent_to_channel
+
+    return _check_equivalent_prose(world, assertion, slack_message_sent_to_channel, "text_contains_any")
+
+
+@AssertionRegistry.register("pro_google_sheets_row_exists")
+def pro_google_sheets_row_exists(world, assertion):
+    from verifiers.assertions.google_sheets import google_sheets_row_exists
+
+    alternatives = assertion.get("cell_contains_any") or {}
+    if not alternatives:
+        return google_sheets_row_exists(world, assertion)
+    fixed = dict(assertion.get("cell_contains") or {})
+    fields = []
+    for column, options in alternatives.items():
+        options = options if isinstance(options, list) else [options]
+        fields.append((column, options))
+    for selections in itertools.product(*(options for _, options in fields)):
+        candidate = dict(assertion)
+        candidate.pop("cell_contains_any", None)
+        cell_contains = dict(fixed)
+        cell_contains.update({column: value for (column, _), value in zip(fields, selections)})
+        candidate["cell_contains"] = cell_contains
+        if google_sheets_row_exists(world, candidate):
+            return True
+    return False
+
+
+@AssertionRegistry.register("pro_salesforce_note_exists")
+def pro_salesforce_note_exists(world, assertion):
+    from verifiers.assertions.salesforce import salesforce_note_exists
+
+    return _check_equivalent_prose(world, assertion, salesforce_note_exists, "body_contains_any")
+
+
+@AssertionRegistry.register("pro_salesforce_note_exists_for_record")
+def pro_salesforce_note_exists_for_record(world, assertion):
+    from verifiers.assertions.salesforce import salesforce_note_exists_for_record
+
+    return _check_equivalent_prose(world, assertion, salesforce_note_exists_for_record, "body_contains_any")
+
+
+@AssertionRegistry.register("pro_salesforce_note_body_contains")
+def pro_salesforce_note_body_contains(world, assertion):
+    from verifiers.assertions.salesforce import salesforce_note_body_contains
+
+    return _check_equivalent_prose(world, assertion, salesforce_note_body_contains, "body_contains_any")
+
+
+def _iso_day(value):
+    if isinstance(value, datetime):
+        return value.date().isoformat()
+    if isinstance(value, date):
+        return value.isoformat()
+    if isinstance(value, str):
+        try:
+            return datetime.fromisoformat(value.replace("Z", "+00:00")).date().isoformat()
+        except ValueError:
+            return None
+    return None
+
+
+@AssertionRegistry.register("pro_salesforce_campaign_matches")
+def salesforce_campaign_matches(world, assertion):
+    campaigns = [
+        c for c in world.salesforce.campaigns
+        if c.campaign_name == assertion["campaign_name"]
+    ]
+    if len(campaigns) != 1:
+        return False
+    campaign = campaigns[0]
+    for field in ("campaign_type", "status", "is_active"):
+        if field in assertion and getattr(campaign, field, None) != assertion[field]:
+            return False
+    for field in ("start_date", "end_date"):
+        if field in assertion and _iso_day(getattr(campaign, field, None)) != assertion[field]:
+            return False
+    description = (campaign.description or "").casefold()
+    return all(str(term).casefold() in description for term in assertion.get("description_terms", []))
+
+
+@AssertionRegistry.register("pro_salesforce_campaign_members_exact")
+def salesforce_campaign_members_exact(world, assertion):
+    campaigns = [
+        c for c in world.salesforce.campaigns
+        if c.campaign_name == assertion["campaign_name"]
+    ]
+    if len(campaigns) != 1:
+        return False
+    campaign = campaigns[0]
+    expected = set()
+    for spec in assertion.get("members", []):
+        leads = [
+            lead for lead in world.salesforce.leads
+            if (getattr(lead, "email", "") or "").casefold() == spec["lead_email"].casefold()
+        ]
+        if len(leads) != 1:
+            return False
+        expected.add((leads[0].id, spec["status"]))
+    actual_members = [
+        member for member in world.salesforce.campaign_members
+        if member.CampaignId == campaign.id
+    ]
+    actual = {
+        (member.LeadId, member.Status)
+        for member in actual_members
+        if member.LeadId and not member.ContactId
+    }
+    return len(actual_members) == len(expected) and actual == expected
 
 
 def dump(x):
