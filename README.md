@@ -29,10 +29,10 @@
 <a id="demo"></a>
 ## 🎬 ToolSpace in One Minute
 
-https://github.com/user-attachments/assets/20d119c4-fc19-475f-9e29-e32a90258167
+https://github.com/user-attachments/assets/805c2843-fc7c-4f42-8341-8875010c0862
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/20d119c4-fc19-475f-9e29-e32a90258167"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/user-attachments/assets/805c2843-fc7c-4f42-8341-8875010c0862"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
   <a href="https://toolspace-agent.github.io/#demo"><b>Explore the interactive demo ↗</b></a><br>
   <sub>From tools to verified tasks, stronger agents, and harder benchmarks.</sub>
 </p>
@@ -91,9 +91,9 @@ Sample **state-compatible successors** by edge weight, grounding arguments in th
 
 ### Harder tasks with the Pro benchmarks
 
-Final scores on **AutomationBench Pro** and **Tau3 Banking Pro** (Table 2; higher is better).
+Final scores on **AutomationBench Pro** and **Tau3 Banking Pro** for seven frontier models, including **DeepSeek-V4.1-Flash-1017** (updated Table 2; higher is better).
 
-<p align="center"><img src="assets/readme/pro-results.png" width="100%" alt="AutomationBench Pro and Tau3 Banking Pro: standard and final Pro scores for six frontier models, with final Pro scores highlighted in rose"></p>
+<p align="center"><img src="assets/readme/pro-results.svg" width="100%" alt="AutomationBench Pro and Tau3 Banking Pro: standard and final Pro scores for seven frontier models, with final Pro scores highlighted in rose"></p>
 
 <sub>Published scores: Table 2. The paper describes 600 AutomationBench Pro tasks; the public [AutomationBench Pro](Automation-Pro/) package contains 300 frozen tasks. [Tau3 Banking Pro](Tau3-Banking-Pro/) contains 98 tasks, separate from the original 97-task banking set.</sub>
 

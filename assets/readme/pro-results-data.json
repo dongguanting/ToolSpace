@@ -1,0 +1,84 @@
+{
+  "source": "https://toolspace-agent.github.io/",
+  "verified_against": "Author-supplied revised Table 2",
+  "date": "2026-11-01",
+  "rows": [
+    {
+      "model": "Claude Opus 5.5",
+      "automation": {
+        "standard": 59.2,
+        "pro": 26.3
+      },
+      "banking": {
+        "standard": 51.5,
+        "pro": 35.7
+      }
+    },
+    {
+      "model": "GPT 6.1 Sol",
+      "automation": {
+        "standard": 50.8,
+        "pro": 24.7
+      },
+      "banking": {
+        "standard": 46.4,
+        "pro": 29.6
+      }
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "automation": {
+        "standard": 60.5,
+        "pro": 22.3
+      },
+      "banking": {
+        "standard": 51.3,
+        "pro": 36.9
+      }
+    },
+    {
+      "model": "DeepSeek-V4.1-Flash",
+      "automation": {
+        "standard": 54.8,
+        "pro": 20.0
+      },
+      "banking": {
+        "standard": 50.3,
+        "pro": 35.7
+      }
+    },
+    {
+      "model": "GLM 5.3",
+      "automation": {
+        "standard": 52.5,
+        "pro": 22.7
+      },
+      "banking": {
+        "standard": 40.2,
+        "pro": 20.4
+      }
+    },
+    {
+      "model": "Qwen 3.8 Max",
+      "automation": {
+        "standard": 49.7,
+        "pro": 24.0
+      },
+      "banking": {
+        "standard": 55.2,
+        "pro": 29.6
+      }
+    },
+    {
+      "model": "GLM 5.2",
+      "automation": {
+        "standard": 29.3,
+        "pro": 18.0
+      },
+      "banking": {
+        "standard": 37.1,
+        "pro": 12.2
+      }
+    }
+  ]
+}
