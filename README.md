@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="assets/readme/hero.svg">
-  <img src="assets/readme/hero.gif" alt="ToolSpace — real tools, executable worlds, long-horizon agents" width="100%">
+  <img src="assets/readme/hero.gif" alt="ToolSpace — real tools, verified trajectories, stronger agents and harder benchmarks" width="100%">
 </picture>
 
 <h1>
@@ -29,10 +29,10 @@
 <a id="demo"></a>
 ## 🎬 ToolSpace in One Minute
 
-https://github.com/user-attachments/assets/2fbcfd47-ff94-4aa4-a6d2-697a27aa94b2
+https://github.com/user-attachments/assets/8d6161f9-9e93-49e3-bafc-5ed8db4f8532
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/2fbcfd47-ff94-4aa4-a6d2-697a27aa94b2"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/user-attachments/assets/8d6161f9-9e93-49e3-bafc-5ed8db4f8532"><b>▶ Watch / download the 1080p video</b></a> &nbsp;·&nbsp;
   <a href="https://toolspace-agent.github.io/#demo"><b>Explore the interactive demo ↗</b></a><br>
   <sub>From tools to verified tasks, stronger agents, and harder benchmarks.<br>Music: <a href="https://www.youtube.com/watch?v=x0x8pHeFAgw">Dolce Vita — Peyruis</a>.</sub>
 </p>
@@ -340,3 +340,4 @@ We thank the creators of [AutomationBench](https://github.com/zapier/AutomationB
 ```
 
 <p align="center"><a href="mailto:dongguanting@ruc.edu.cn">Contact</a></p>
+
