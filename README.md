@@ -25,6 +25,19 @@
 
 ##### If you like our project, please give us a star ⭐ on GitHub for the latest update.
 
+## Contents
+
+- [🎬 ToolSpace in One Minute](#demo)
+- [🛰️ From Tool Traces to Verified Tasks](#method)
+- [📊 Main Results](#results)
+- [🔧 Installation](#installation)
+  - [API Configuration](#api-configuration)
+- [📂 Repository](#repository)
+- [🚀 Quick Start](#quick-start)
+- [🙏 Acknowledgments](#acknowledgments)
+- [📄 Citation](#citation)
+
+
 </div>
 
 <a id="demo"></a>
